@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
 Comprehensive 2-hour/day curriculum builder for:
+0. CS & Programming Foundations (NEW)
 1. Python  2. R  3. QGIS & Spatial Thinking
 4. Data Analysis & Statistical Modelling  5. Advanced Econometrics
 + Spatial Python & Spatial R integrated throughout
++ Interpretation & Analytical Thinking module (NEW)
 """
 
 import openpyxl
@@ -87,6 +89,192 @@ def write_row(ws, row_num, values, is_header=False, is_alt=False, col_start=1):
 # Each entry: (day, week, module, topic, subtopics, what_to_cover,
 #              primary_resource, secondary_resources, dataset_practice,
 #              assignment, paper_to_read, key_concepts)
+
+CS_DATA = [
+    # ── MODULE 1: HOW COMPUTERS WORK ──────────────────────────────────────────
+    (1, 1, "M1: How Computers Work", "Hardware, Memory, and What a Program Really Is",
+     "CPU (processor); RAM vs storage (SSD/HDD); binary representation of numbers and text; what the OS does; processes and threads (intuition); why Python is slow vs C (interpreted vs compiled); what happens when you run a script",
+     "You will write a lot of code before you understand what it is actually doing at the machine level. This day fills that gap. Key insight: a program is a sequence of instructions given to the CPU. RAM is a temporary scratchpad — when you load a CSV into Python, it goes into RAM. If your dataset is larger than RAM, things break. Understanding this explains why rasters crash your computer but a CSV does not. Knowing binary representation explains why R has integers vs doubles, and why floating point arithmetic produces surprises (0.1 + 0.2 ≠ 0.3 exactly).",
+     "Crash Course Computer Science (YouTube, Ep.1-4) | https://youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
+     "CS50 Week 0 (Harvard, free) | https://cs50.harvard.edu/x/2024/weeks/0/ | How Computers Work — Khan Academy | https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:computers | But How Do It Know? (book, Ch.1-3 only) | https://www.amazon.com/But-How-Know-Principles-Computers/dp/0615303765",
+     "No dataset. Practice: open Python/R and type 0.1 + 0.2. Then type 2**53 + 1 == 2**53 in Python. Then open Task Manager / Activity Monitor and watch RAM usage while loading a large CSV. These are empirical experiments about computer behaviour.",
+     "Answer these in writing (look up anything you don't know): (1) What is the difference between RAM and a hard drive? (2) Why does opening a 4GB raster file sometimes crash your laptop if it has 8GB RAM? (3) Why is Python slower than C at basic arithmetic? (4) What does 'running a script' actually mean step by step? (5) What does your OS do that your Python code doesn't have to?",
+     "None — this is the day you read the hardware explainers. CS50 Week 0 lecture is 1.5 hours; watch it at 1.5× speed.",
+     "CPU, RAM, storage, binary, OS, process, interpreted vs compiled, floating point"),
+
+    (2, 1, "M1: How Computers Work", "The Command Line: Your Research Superpower",
+     "Terminal / command prompt basics; file system navigation (pwd, ls/dir, cd); creating and moving files (mkdir, cp, mv, rm); running scripts from terminal (python3 script.py, Rscript script.R); file paths (absolute vs relative); environment variables (PATH); piping (|) and redirection (>); bash scripts (basics only)",
+     "The command line is how researchers interact with computing environments that have no graphical interface — remote servers, HPC clusters, cloud VMs like the one you are reading this on. It is also faster for repetitive operations: renaming 200 data files takes 3 seconds on the command line and 20 minutes by hand. For your thesis: downloading datasets, running scripts, and organising project directories are all more efficient from the terminal. You do not need to master it — you need to not be afraid of it.",
+     "The Unix Shell (Software Carpentry, free) | https://swcarpentry.github.io/shell-novice/ — work through Episodes 1-5",
+     "Command Line Crash Course (Zed Shaw, free) | https://learncodethehardway.org/unix/ | Bash Tutorial | https://linuxcommand.org/lc3_learning_the_shell.php | Missing Semester of CS Education (MIT, free) | https://missing.csail.mit.edu/2020/course-shell/",
+     "No external dataset. Use your own computer's file system as the dataset. Navigate to your thesis folder (or create one), organise it using only the command line.",
+     "Complete these command line tasks: (1) Navigate to your home directory and list all files including hidden ones; (2) Create a directory structure: thesis/data/raw, thesis/data/processed, thesis/code, thesis/output/figures using a single mkdir -p command; (3) Download a file from the internet using curl or wget (e.g., a CSV from a URL); (4) Count the number of lines in a CSV file using wc -l; (5) Find all .csv files in a directory and its subdirectories using find; (6) Write a one-line bash script that creates a dated backup of a file.",
+     "Read: MIT Missing Semester — Course Shell lecture notes | https://missing.csail.mit.edu/2020/course-shell/ (30 min read).",
+     "pwd, ls, cd, mkdir, cp, mv, rm, absolute/relative path, environment variable, pipe, redirection"),
+
+    (3, 2, "M2: Programming Concepts", "How Programming Languages Work — Across Python, R, and STATA",
+     "Interpreted vs compiled languages; dynamic vs static typing; object-oriented vs functional vs procedural paradigms; why Python and R are different design philosophies; what a library/package is and how it is loaded; namespaces and scope; how Python imports work; what a REPL is; scripting vs interactive computing",
+     "Python was designed as a general-purpose language that is readable and pragmatic. R was designed by statisticians as a domain-specific language for statistical computing — its defaults assume you are doing data analysis. STATA was designed for social scientists and economists with a command-based interface. Understanding these design philosophies explains why R has vectors as the base object (not scalars), why Python needs pandas for data tables, and why STATA does one dataset at a time. Knowing this helps you choose tools wisely and understand error messages that reference these concepts.",
+     "Python vs R vs STATA — Towards Data Science | https://towardsdatascience.com/python-vs-r-for-data-science-6a83e4541571 | Python Data Model (official) | https://docs.python.org/3/reference/datamodel.html",
+     "Programming Language Pragmatics Ch.1 (library) | Comparison of R and Python for data science | https://www.datacamp.com/blog/python-vs-r-for-data-science | Why R is hard to learn | https://r4stats.com/articles/why-r-is-hard-to-learn/",
+     "No dataset. Experiment: write the same operation in Python, R, and if possible STATA — compute mean of a list of 10 numbers. Notice: how many lines? What does the syntax require?",
+     "Side-by-side comparison exercise: for each of the following tasks, write the solution in both Python AND R. (1) Create a list/vector of numbers 1-10; (2) Compute mean, median, sd; (3) Filter to keep only values > 5; (4) Write a function that takes a list and returns its z-scores; (5) Load a CSV and print the first 5 rows. Write a 200-word reflection: what feels more natural in each language and why?",
+     "Read: Gentleman, R. & Ihaka, R. (1996). 'R: A Language for Data Analysis and Graphics.' Journal of Computational and Graphical Statistics, 5(3), 299-314. — the original R paper. It is short and explains the design decisions.",
+     "interpreted, compiled, dynamic typing, paradigms, namespace, scope, REPL, package/library loading"),
+
+    (4, 2, "M2: Programming Concepts", "Algorithms and Computational Thinking",
+     "What is an algorithm; pseudocode; Big-O notation (O(1), O(n), O(n²)) — intuition only, no maths; why vectorisation beats loops; sorting algorithms (concept only); recursion (concept + one example); searching; why your for loop over 1 million rows is slow; divide-and-conquer thinking",
+     "Computational thinking is the skill of decomposing a problem into steps a computer can execute. Big-O tells you whether your analysis will run in 1 second or 1 day on large data — O(n²) means if you double your data size, runtime quadruples. For social science data: loops inside loops on large datasets are the most common performance mistake. Understanding why vectorised NumPy/R operations are fast (they run in compiled C under the hood) lets you write better code without being a computer scientist.",
+     "Crash Course Computer Science Ep.13 (Algorithms) | https://youtu.be/rL8X2mlNHPM | Khan Academy: Algorithms | https://www.khanacademy.org/computing/computer-science/algorithms",
+     "CS50 Week 3 (Algorithms, Harvard, free) | https://cs50.harvard.edu/x/2024/weeks/3/ | Big-O cheat sheet | https://www.bigocheatsheet.com/ | Computational Thinking for Everyone | https://www.cs.cmu.edu/~wing/publications/Wing06.pdf",
+     "Empirical experiment: time a for loop vs vectorised operation in Python/R on a dataset of 1M rows. Use time.time() or system.time().",
+     "Timing experiment: (1) Create a list of 500,000 random numbers in Python; (2) Compute the sum using (a) a for loop, (b) sum(), (c) np.sum(); (3) Record time for each using time.time(); (4) Create a data frame in R with 500,000 rows; (5) Compute row-wise mean using (a) a for loop, (b) rowMeans(); (6) Record time; (7) Write a paragraph explaining WHY the vectorised versions are faster, referencing what you learned about how computers work.",
+     "None",
+     "algorithm, Big-O, O(n), O(n²), vectorisation, loop performance, recursion, pseudocode, divide-and-conquer"),
+
+    (5, 3, "M3: Data & Storage", "Data Structures from a CS Perspective",
+     "Arrays vs linked lists (memory layout); hash tables (how Python dicts work internally); trees (concept — how file systems and databases work); why dict lookup is O(1) but list search is O(n); stacks and queues; when each structure is appropriate; implications for pandas vs pure Python performance",
+     "You use Python dicts and lists daily without knowing why dicts are O(1) for lookup while lists are O(n). This matters: if you have 1 million rows and need to find a value, storing in a dict (hash map) vs list changes your runtime from milliseconds to minutes. For spatial data: understanding tree structures explains how GIS software rapidly finds which polygon a point falls in (R-tree spatial index). You do not need to implement these — you need to know which structure to reach for.",
+     "Crash Course Computer Science Ep.14 (Data Structures) | https://youtu.be/DuDz6B4cqVc | Python Data Structures (official docs) | https://docs.python.org/3/tutorial/datastructures.html",
+     "Problem Solving with Algorithms and Data Structures using Python (free) | https://runestone.academy/runestone/books/published/pythonds/index.html (Ch.1-3) | Visualgo (algorithm animation) | https://visualgo.net/",
+     "Benchmark exercise: compare dict vs list lookup time in Python. Compare data frame join vs nested loop join.",
+     "(1) Create a Python list with 1M items and a dict with the same 1M keys; (2) Time looking up 1000 random items in each; (3) Create two pandas DataFrames with 100K rows each and merge them using pd.merge() — time it; (4) Write the same merge using nested for loops — time it; (5) Explain in 150 words why the pandas merge is so much faster (hint: it uses hash join). (6) In R: compare which(), match(), and %in% for element lookup — which is fastest and why?",
+     "None",
+     "array, hash table, O(1) lookup, tree, stack, queue, dict vs list, pandas internals, spatial indexing"),
+
+    (6, 3, "M3: Data & Storage", "Version Control with Git",
+     "What version control is and why researchers need it; git init, add, commit, push, pull, clone; .gitignore; branches (concept + checkout); merge conflicts (how to resolve); GitHub for researchers; commit messages as a research log; git for collaboration; undoing mistakes (revert, reset)",
+     "Git is the single most important tool for research reproducibility that no methods course teaches. Every change to your analysis code is logged with a message — your commit history is a research diary. You can go back to any previous version of your analysis. You can work on two versions simultaneously using branches (e.g., one for submitting to your advisor, one for further development). For your thesis: initialise a git repository on Day 1 and commit every session. When you submit, your entire analysis history is documented.",
+     "Software Carpentry: Version Control with Git (free) | https://swcarpentry.github.io/git-novice/ — work through all episodes",
+     "Git for Scientists | https://neuroplausible.com/github | Happy Git with R (for R users) | https://happygitwithr.com/ | GitHub Desktop (GUI for beginners) | https://desktop.github.com/ | Oh My Git (interactive game) | https://ohmygit.org/",
+     "Your own thesis project folder — initialise a git repo and practice committing your previous assignments.",
+     "Set up a complete research git workflow: (1) Create a new folder, initialise a git repo; (2) Create your thesis directory structure (from Day 2 assignment); (3) Add a README.md with project description; (4) Commit with message 'Initial project structure'; (5) Create a branch called 'analysis-v1'; (6) On that branch, write a short R or Python script that loads any dataset; (7) Commit it; (8) Switch back to main and notice the script is not there; (9) Merge the branch; (10) Create a .gitignore that ignores .csv files and output/ folder.",
+     "Read: Blischak, J.D., Davenport, E.R. & Wilson, G. (2016). 'A Quick Introduction to Version Control with Git and GitHub.' PLOS Computational Biology, 12(1). | https://doi.org/10.1371/journal.pcbi.1004668",
+     "git init/add/commit/push/pull, .gitignore, branch, merge, revert, GitHub, commit message"),
+
+    (7, 4, "M4: Databases & Formats", "Databases, SQL, and Data Storage Formats",
+     "Relational databases: tables, primary keys, foreign keys, normalisation (1NF-3NF concept); SQL: SELECT, FROM, WHERE, GROUP BY, ORDER BY, JOIN (INNER, LEFT, RIGHT); SQLite in Python (sqlite3) and R (RSQLite); when to use databases vs CSV; data formats: CSV, JSON, Parquet, HDF5, GeoJSON; file size and performance trade-offs",
+     "Census data, NFHS microdata, and administrative records are often stored in relational databases. SQL is the universal language for querying them. Even if your data arrives as CSV, knowing SQL means you can query the Census API, work with government open data portals, and collaborate with economists who use SQL databases. SQLite requires no server — it is a single file database that works in Python and R with no setup.",
+     "SQLZoo (interactive SQL tutorial, free) | https://sqlzoo.net/ — complete Tutorial 1-4 | W3Schools SQL | https://www.w3schools.com/sql/",
+     "Mode SQL Tutorial | https://mode.com/sql-tutorial/ | SQLite tutorial | https://www.sqlitetutorial.net/ | DBI package in R | https://dbi.r-dbi.org/ | sqlite3 in Python | https://docs.python.org/3/library/sqlite3.html",
+     "Dataset: World Bank development data stored in a SQLite database. Create it yourself: download WDI CSV, load it into SQLite using Python, then query it with SQL.",
+     "(1) Download WDI data as CSV; (2) Load it into SQLite using Python's sqlite3 (CREATE TABLE, INSERT); (3) Write SQL queries: (a) SELECT all rows for India; (b) SELECT top 10 countries by GDP per capita in 2020; (c) JOIN two tables (indicator data + country metadata) on country code; (d) GROUP BY region and compute average literacy rate; (4) Do the same queries in R using RSQLite and DBI; (5) Compare the SQL result to a pandas/dplyr equivalent — write 150 words on when you would choose SQL over pandas.",
+     "Read: Codd, E.F. (1970). 'A Relational Model of Data for Large Shared Data Banks.' CACM, 13(6), 377-387. — the foundational paper for relational databases. Only read the abstract and first 3 pages for historical context.",
+     "relational database, primary/foreign key, normalisation, SELECT/JOIN/GROUP BY, SQLite, CSV vs Parquet, DBI"),
+
+    (8, 4, "M4: Databases & Formats", "The Research Software Ecosystem: Putting It All Together",
+     "How Python, R, QGIS, STATA, and SQL fit together as a research stack; when to use which tool; APIs and web services (what an API call is at the network level); cloud computing concepts (why Colab works; what a server is); research data management (naming conventions, folder structures, metadata, README standards); open science and FAIR data principles",
+     "A senior researcher's view of the toolkit: you will rarely use just one tool for a project. Python is best for data collection (APIs, scraping), large-scale processing, and spatial raster work. R is best for statistical analysis, econometrics, and publication-quality figures. QGIS is best for exploratory spatial work and cartography. STATA is the legacy standard in development economics (many replication archives are STATA-only). Knowing which tool to reach for, and how to pass data between them, is a practical superpower.",
+     "FAIR Data Principles | https://www.go-fair.org/fair-principles/ | Research Data Management guide (University of Edinburgh) | https://www.ed.ac.uk/information-services/research-support/research-data-service/research-data-management",
+     "The Turing Way: Research Data Management | https://the-turing-way.netlify.app/reproducible-research/rdm | Data Carpentry | https://datacarpentry.org/ | ICPSR Data Management Best Practices | https://www.icpsr.umich.edu/web/pages/datamanagement/",
+     "No new dataset. Apply to your thesis project folder.",
+     "Final CS capstone — set up your complete thesis research infrastructure: (1) A git-tracked project folder with proper directory structure; (2) A README.md documenting: project title, research question, data sources, software requirements, how to reproduce the analysis; (3) A data management plan (1 page): what data will you collect, how will you store it, what is your backup strategy, what can be shared publicly?; (4) A requirements.txt (Python) and sessionInfo() output (R) documenting your software versions; (5) A .gitignore that keeps raw data and credentials out of git.",
+     "Read: Wilkinson, M.D. et al. (2016). 'The FAIR Guiding Principles for Scientific Data Management and Stewardship.' Scientific Data, 3, 160018. | https://doi.org/10.1038/sdata.2016.18 — now a standard citation in data management sections.",
+     "research stack, tool selection, API, cloud computing, FAIR principles, data management plan, README"),
+]
+
+INTERP_DATA = [
+    # ── MODULE 1: WHAT NUMBERS MEAN ───────────────────────────────────────────
+    (1, 1, "M1: What Numbers Mean", "From Statistics to Substance: The Interpretation Gap",
+     "Statistical significance vs substantive significance; economic/policy significance; the 'so what' test; effect size benchmarks (what is a large/small Cohen's d in practice); percentage vs percentage points; per capita vs total; units of measurement as an argument; log transformations and their interpretation",
+     "The most common failure in quantitative social science is producing a correct number and then not knowing what it means. A regression coefficient of 0.03 is meaningless without knowing: (1) what the units are, (2) how that compares to the mean, (3) whether it is large enough to matter for policy. This is the 'so what' test: if your finding is true, what would change? Who would make a different decision? The failure to connect numbers to substance is why much empirical work in development economics is technically correct but policy-irrelevant.",
+     "Ziliak & McCloskey 'The Cult of Statistical Significance' Ch.1-3 (library) | Gelman & Hill 'Data Analysis Using Regression' Ch.2 (interpretation sections)",
+     "Ziliak & McCloskey (2008) The Cult of Statistical Significance | McCloskey's 'The Rhetoric of Economics' — on what economists actually argue | Andrew Gelman's blog (applied statistics) | https://statmodeling.stat.columbia.edu/",
+     "Take any regression output from a previous assignment (any module). The dataset is your existing work.",
+     "Take your IHDS regression from Econometrics Day 1 (or Statistics Day 4). For each coefficient: (1) Write the coefficient value and units; (2) Express it as a % of the mean outcome; (3) State whether the effect is large, medium, or small by field standards; (4) Write one sentence as if speaking to a policy maker: 'If we increased X by [amount], we would expect Y to change by [amount], which means...'; (5) Identify which of your coefficients is statistically significant but substantively tiny; (6) Identify which (if any) is substantively large but imprecise (wide CI). Write 300-word interpretive paragraph.",
+     "Read: McCloskey, D. & Ziliak, S. (1996). 'The Standard Error of Regressions.' Journal of Economic Literature, 34(1), 97-114. | https://www.jstor.org/stable/2729411 — the paper that changed how econometricians think about significance.",
+     "substantive significance, effect size benchmarks, so what test, units, percentage points vs percent, log interpretation"),
+
+    (2, 1, "M1: What Numbers Mean", "Reading Descriptive Statistics Like a Researcher",
+     "Mean vs median in skewed distributions and what each tells a different story; when to use which measure of spread; what a bimodal distribution signals; outliers as data quality problems vs substantive findings; the narrative of a histogram; comparing distributions across groups; contextualising numbers against benchmarks",
+     "Descriptive statistics are not neutral summaries — they are arguments. Reporting mean income in India tells a different story than median income because the distribution is highly right-skewed. The choice of which statistic to lead with is a rhetorical choice. A bimodal distribution often signals two distinct populations (e.g., formal vs informal workers) that should not be analysed together. Learning to read descriptive statistics as a narrative — what story does this distribution tell about the underlying social process? — is what separates research from data reporting.",
+     "Tukey, J.W. 'Exploratory Data Analysis' (1977) — Ch.1-3 (the classic text on reading data) | Wheelan 'Naked Statistics' Ch.2-4",
+     "Data Analysis: A Bayesian Tutorial (Sivia & Skilling) for distribution thinking | Spiegelhalter 'The Art of Statistics' Ch.1-3 | Anscombe (1973) paper (already assigned in Stats module — re-read with fresh eyes here)",
+     "Dataset: India Human Development Survey (IHDS) household income variable. Download if not already done: https://ihds.umd.edu/ihds-data",
+     "Using IHDS income data: (1) Compute mean, median, mode, SD, P10, P25, P75, P90; (2) Plot histogram and box plot; (3) Write separate one-sentence interpretations of mean and median that tell different stories about Indian household incomes; (4) Compute the ratio of P90 to P10 — what does this tell you that SD does not?; (5) Separate by rural/urban and compare distributions — write 200 words describing what a social scientist would conclude from comparing these two distributions; (6) Identify any outliers — are they data errors or real observations?",
+     "Read (reread): Anscombe, F.J. (1973). 'Graphs in Statistical Analysis.' American Statistician, 27(1), 17-21. | This time, focus on: what does Anscombe demonstrate about the inadequacy of summary statistics alone?",
+     "mean vs median narrative, bimodal distributions, outliers as signal, P90/P10 ratio, distributional comparison, histogram reading"),
+
+    (3, 2, "M2: Interpreting Models", "Interpreting Regression Coefficients: A Full Taxonomy",
+     "Continuous predictor (linear); log-linear, linear-log, log-log models and their interpretations; binary predictor (dummy variable); categorical predictor (reference category and its implications); interaction terms (what the coefficient does and does not mean); fixed effects coefficients (what they absorb and what they do not); model intercept interpretation; marginal effects vs elasticities",
+     "Most students can run a regression. Very few can interpret every coefficient correctly. The interpretation depends entirely on the functional form: in a log-linear model, the coefficient is approximately a percentage change. In a log-log model, the coefficient is an elasticity. An interaction term coefficient does not tell you the total effect of either variable — it tells you the difference in slopes. Fixed effects coefficients absorb all between-unit variation — the remaining coefficient is a within-unit effect. Getting these wrong produces incorrect policy conclusions even from correct code.",
+     "Wooldridge 'Introductory Econometrics' Ch.2 (pp. 35-50 on log models) + Ch.6 (multiple regression interpretation) | Kennedy 'A Guide to Econometrics' Ch.3 (the most practical interpretation guide)",
+     "UCLA IDRE Regression Interpretation | https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/ | Interpretation of log models | https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faqhow-do-i-interpret-a-regression-model-when-some-variables-are-log-transformed/ | Kennedy 'A Guide to Econometrics' (library)",
+     "Dataset: IHDS regression from your previous work. You are re-interpreting, not re-running.",
+     "For your IHDS regression output: (1) Write a formal interpretation of every coefficient in one sentence each, specifying units; (2) Re-run with log(income) as outcome — re-interpret all coefficients; (3) Add an interaction between education and SC/ST dummy — write out the full interpretation: 'For SC/ST individuals, a one-unit increase in education is associated with a change of [β_edu + β_interaction] in log income, compared to [β_edu] for non-SC/ST individuals'; (4) Create a table with three columns: Variable | Coefficient | Plain-English Interpretation. This table is the template for your thesis results section.",
+     "Read: King, G., Tomz, M. & Wittenberg, J. (2000). 'Making the Most of Statistical Analyses.' American Journal of Political Science, 44(2), 347-361. | https://www.jstor.org/stable/2669316 — on interpreting and presenting statistical results for maximum substantive clarity.",
+     "log-linear interpretation, log-log elasticity, dummy variable, interaction term interpretation, reference category, fixed effects absorption, marginal effects"),
+
+    (4, 2, "M2: Interpreting Models", "Interpreting Causal Claims: What Your Estimate Identifies",
+     "The counterfactual question; what OLS identifies (correlation with controls); what IV identifies (LATE — the Local Average Treatment Effect); what DiD identifies (ATT — the Average Treatment Effect on the Treated); what RDD identifies (LATE at the cutoff); internal vs external validity; SUTVA (Stable Unit Treatment Value Assumption); spillovers and their consequences; generalising from a local estimate",
+     "The most important question to ask about any causal estimate is: for whom is this effect identified, and under what conditions? IV gives you the LATE — the effect for compliers (those who change treatment status because of the instrument). This may be a small and unusual subgroup. RDD gives you the effect at the cutoff — which may not be representative of the broader population. DiD gives you the ATT — the effect on the treated group, not on everyone. Confusing these leads to policy recommendations that generalise beyond what the data supports.",
+     "Angrist & Pischke 'Mostly Harmless Econometrics' Ch.1-2 (what is causal inference?) | Imbens & Rubin 'Causal Inference for Statistics' Ch.1 (free preview) | https://www.cambridge.org/core/books/causal-inference-for-statistics-social-and-biomedical-sciences/71126BE90C58F1A431FE9B185943F2DA",
+     "The Effect Book: Causal Inference Introduction | https://theeffectbook.net/ch-CausalPaths.html | Pearl & Mackenzie 'The Book of Why' Ch.1-3 (for intuition, not formalism) | Scott Cunningham's Mixtape: Potential Outcomes | https://mixtape.scunning.com/04-potential_outcomes",
+     "Dataset: Re-use any previous causal exercise (IV from Econometrics Day 2, or DiD from Day 4).",
+     "For your chosen causal paper or exercise: (1) State the counterfactual question precisely: 'Compared to what?'; (2) Identify what the estimator identifies (LATE, ATT, etc.) and write who exactly is in that group; (3) State one threat to internal validity with a specific example from your context; (4) State one threat to external validity: to what population does this estimate generalise?; (5) Write a 200-word 'Causal Interpretation' paragraph as it would appear in a paper, using appropriately hedged language; (6) Write the same finding for a policy brief audience in 100 words — notice how different the language needs to be.",
+     "Read: Deaton, A. & Cartwright, N. (2018). 'Understanding and Misunderstanding Randomized Controlled Trials.' Social Science & Medicine, 210, 2-21. | https://doi.org/10.1016/j.socscimed.2017.12.005 — a rigorous critique of the external validity of experimental estimates.",
+     "counterfactual, LATE, ATT, SUTVA, internal validity, external validity, complier, generalisation"),
+
+    (5, 3, "M3: Interpreting Space", "Interpreting Spatial Patterns: What a Map Is and Is Not Saying",
+     "Maps as arguments, not neutral representations; the Modifiable Areal Unit Problem (MAUP); ecological fallacy; spatial clustering vs causal explanation; what a Moran's I value means substantively; LISA map interpretation; spatial spillovers (what they mean in practice); scale sensitivity; reading maps critically",
+     "A map that shows high e-waste activity concentrated in low-income areas is not evidence that e-waste causes poverty, or that poverty causes e-waste concentration. It is a description of a spatial pattern that demands a theoretical explanation. The MAUP is a fundamental problem: the same underlying data produces different patterns depending on how you draw the boundaries (wards vs districts vs zones). The ecological fallacy is using aggregate-level correlations to make individual-level claims. These are not optional caveats — they are the conditions under which any spatial finding is scientifically defensible.",
+     "Openshaw, S. (1983). 'The Modifiable Areal Unit Problem.' CATMOG 38 | Anselin, L. 'Spatial Econometrics' Ch.1 (conceptual sections) | Robinson, W.S. (1950) 'Ecological Correlations and the Behavior of Individuals' — the original ecological fallacy paper",
+     "Fotheringham & Wong (1991) 'The Modifiable Areal Unit Problem in Multivariate Statistical Analysis' | GIS Geography: MAUP | https://gisgeography.com/maup-modifiable-areal-unit-problem/ | Openshaw (1983) CATMOG | https://www.qmrg.org.uk/catmog/",
+     "Dataset: SHRUG district + sub-district data (if available). Compare your LISA map at different spatial scales.",
+     "Demonstrate MAUP empirically: (1) Take the nighttime lights data you have and aggregate to (a) sub-district, (b) district, (c) state level; (2) Run Moran's I at each level — does the spatial autocorrelation statistic change?; (3) Make LISA maps at each scale — do the clusters shift?; (4) Write 200 words: 'At which spatial scale is the analysis most appropriate for my research question, and why?'; (5) Find one published spatial paper and identify: did the authors address the MAUP? Did they address the ecological fallacy? Write 100-word critical note.",
+     "Read: Robinson, W.S. (1950). 'Ecological Correlations and the Behavior of Individuals.' American Sociological Review, 15(3), 351-357. — the original ecological fallacy paper. Short and landmark.",
+     "MAUP, ecological fallacy, spatial clustering vs causation, scale sensitivity, LISA interpretation, spatial spillover meaning"),
+
+    (6, 3, "M3: Interpreting Space", "Communicating Uncertainty: Confidence Intervals, Error Bars, and What They Mean",
+     "What a confidence interval actually means (and the three most common wrong interpretations); credible intervals (Bayesian) vs CI (frequentist); how to describe uncertainty in plain English; forest plots and coefficient plots (ggplot2/dotwhisker); the difference between 'not significant' and 'no effect'; communicating model uncertainty to non-technical audiences; why wide CIs are informative",
+     "The most common misinterpretation in all of empirical social science: 'there is a 95% probability the true value lies in this interval.' This is wrong — in frequentist statistics, the true value is fixed; the interval is random. What a 95% CI means: if you repeated this sampling procedure 100 times, approximately 95 of the resulting intervals would contain the true value. A non-significant result does not mean the effect is zero — it means the data are insufficient to distinguish the effect from zero. These distinctions matter enormously when writing up research.",
+     "Cumming, G. 'The New Statistics' | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3955264/ | Morey et al. (2016) 'The Fallacy of Placing Confidence in Confidence Intervals' | https://link.springer.com/article/10.3758/s13423-015-0947-8",
+     "dotwhisker package for R coefficient plots | https://cran.r-project.org/web/packages/dotwhisker/ | ggplot2 for error bars | Understanding CIs — StatQuest | https://youtu.be/TqOeMYtOc1w | Rethinking 'Statistical Significance' — Nature (2019) | https://www.nature.com/articles/d41586-019-00857-9",
+     "Dataset: Your regression output from any previous assignment. You are visualising and re-describing, not re-running.",
+     "(1) From your IHDS regression, plot a coefficient plot using dotwhisker or ggplot2 with 95% CI error bars; (2) Identify coefficients where the CI is very wide — write a sentence explaining what this means substantively ('We cannot rule out effects ranging from X to Y'); (3) Identify a coefficient that is not statistically significant but has a large point estimate — write 100 words explaining why reporting it as 'no effect' would be misleading; (4) Write two versions of a CI interpretation: one technically correct, one common-but-wrong; (5) Present your coefficient plot to a non-technical friend and explain each CI in one sentence.",
+     "Read: Greenland, S. et al. (2016). 'Statistical Tests, P Values, Confidence Intervals, and Power: A Guide to Misinterpretations.' European Journal of Epidemiology, 31(4), 337-350. | https://doi.org/10.1007/s10654-016-0149-3",
+     "CI interpretation, credible interval, not significant ≠ no effect, coefficient plot, forest plot, uncertainty communication"),
+
+    (7, 4, "M4: Writing it Up", "Turning Results into Research Writing: The Results Section",
+     "Structure of a results section; the claim-evidence-interpretation (CEI) structure for each finding; hedging language in academic writing ('is associated with', 'we find evidence that', 'consistent with'); what goes in a results section vs discussion; reporting conventions (APA, economics style); integrating tables and figures into the text; writing for a non-specialist reader",
+     "The results section is not a list of numbers — it is a structured argument. Each finding is: (1) a claim, (2) supported by evidence (the statistic), (3) interpreted for its meaning. 'Table 2 shows a coefficient of 0.23' is not a results section — it is a table description. A results section says: 'We find a positive association between years of education and household income (β = 0.23, SE = 0.04, p < 0.001), suggesting that each additional year of schooling is associated with approximately 23% higher income, holding other household characteristics constant.' Note: the hedge ('suggesting'), the mechanism ('each additional year'), and the condition ('holding constant').",
+     "Sword, H. 'Stylish Academic Writing' (library) | Silvia, P. 'How to Write a Lot' (for productivity) | Becker, H. 'Writing for Social Scientists'",
+     "The Elements of Style (Strunk & White) — brevity and clarity | American Economic Review Style Guide | https://www.aeaweb.org/journals/aer/submissions/accepted-articles/styleguide | Writing a Results Section (Purdue OWL) | https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/apa_sample_paper.html",
+     "Your own regression output from any previous assignment.",
+     "Take your IHDS or NFHS regression (whichever is most developed). Write a complete results section of 400-500 words that: (1) opens with the most important finding; (2) presents each coefficient using CEI structure; (3) integrates at least one table and one figure as evidence; (4) uses appropriately hedged language throughout; (5) ends with a sentence connecting the findings to your research question. Then exchange with a classmate (or read it aloud to yourself) — does every sentence make a clear claim?",
+     "Read: Belcher, W.L. (2009). 'Writing Your Journal Article in Twelve Weeks.' Ch.7 (Results section) — extremely practical guidance on academic writing from a social scientist's perspective.",
+     "CEI structure, hedging language, claim vs evidence, results vs discussion, regression reporting conventions, integrating tables and figures"),
+
+    (8, 4, "M4: Writing it Up", "Critical Reading of Empirical Papers",
+     "How to read a methods section: identifying the identification strategy; spotting threats to validity; evaluating data quality; understanding robustness checks; the anatomy of a referee report; common methodological weaknesses in development economics; replication as a reading strategy; the difference between peer-reviewed and working paper quality",
+     "Reading a methods section critically is the mirror of writing one. The questions to ask: What is the unit of analysis? What is the treatment and control? What is the identification assumption and is it stated? What data quality issues exist? What is the attrition rate? Did they test pre-trends? Did they address MAUP? Are their standard errors clustered appropriately? Building this checklist takes years in a seminar room — this day is a shortcut. The ability to read papers critically protects you from citing flawed evidence in your own work.",
+     "Angrist & Pischke 'Mostly Harmless Econometrics' Preface (what makes an empirical paper credible) | Reviewer guidelines for top journals (NBER, AER) | Critical reading framework (Morgan & Winship 'Counterfactuals and Causal Inference' Ch.1)",
+     "How to read an econometrics paper — various guides | Journal of Development Economics author guidelines | https://www.journals.elsevier.com/journal-of-development-economics | NBER Working Paper series | https://www.nber.org/papers",
+     "Choose any published paper with India data from: Journal of Development Economics, World Development, Economic and Political Weekly (EPW), or AER. Suggested: any paper from J-PAL's evidence repository | https://www.povertyactionlab.org/evidence-to-policy",
+     "Select one paper from J-PAL or AEA with India data. Answer in writing: (1) What is the research question? (2) What is the identification strategy? (3) What is the key identifying assumption — is it stated? Is it plausible? (4) What data are used — quality, coverage, potential biases? (5) Are the standard errors appropriate (clustered? heteroskedasticity-robust?)? (6) What robustness checks do they run — are they convincing? (7) What is the main threat to internal validity they don't fully address? (8) Write a 200-word mock referee comment raising your most serious concern.",
+     "Read: Hamermesh, D.S. (2007). 'Viewpoint: Replication in Economics.' Canadian Journal of Economics, 40(3), 715-733. | https://doi.org/10.1111/j.1365-2966.2007.00428.x — on why replication matters and what it reveals.",
+     "identification strategy, identifying assumption, data quality, robustness checks, referee report, threats to validity, pre-trends"),
+
+    (9, 5, "M5: Visual Interpretation", "Data Visualisation as Interpretation",
+     "When visualisations mislead: truncated y-axes; cherry-picked time periods; dual axes creating spurious correlation; inappropriate smoothing; comparing non-comparable groups without normalisation; the distinction between visualising data and visualising model results; effective use of uncertainty bands; choosing chart type to match the claim being made",
+     "Every chart makes a claim. A bar chart with a y-axis starting at 90 makes a 2% difference look like a 50% difference. Plotting two variables with dual axes can make uncorrelated series look correlated. These are not just aesthetic issues — they are epistemological ones. The chart literally changes what the viewer believes. Learning to identify these manipulations in others' work, and avoid them in your own, is a core research integrity skill. The test: does the visual representation match the statistical reality?",
+     "Wilke, C. 'Fundamentals of Data Visualization' (free) | https://clauswilke.com/dataviz/ | Cairo, A. 'How Charts Lie' (highly readable) | Tufte, E. 'The Visual Display of Quantitative Information'",
+     "Calling Bullshit (University of Washington course) | https://www.callingbullshit.org/ | Flowing Data | https://flowingdata.com/ | WTF Visualizations | https://viz.wtf/ | Junk Charts | https://junkcharts.typepad.com/",
+     "Dataset: Find 3 misleading charts in the wild (news websites, government reports, social media). Print them or screenshot them.",
+     "(1) Find 3 misleading charts online (government statistics, news, NGO reports — India context preferred); (2) For each: identify the specific misleading technique; (3) Download the underlying data and re-make the chart correctly; (4) Write a 100-word 'correction note' for each; (5) Take one of your own charts from a previous assignment — apply Tufte's data-ink ratio principle and simplify it; (6) Compare before/after and write 100 words on what the cleaner version communicates more effectively.",
+     "Read: Huff, D. (1954). 'How to Lie with Statistics.' — still the best short book on statistical manipulation. Read the whole thing (it is 144 pages, very fast). Available in many libraries.",
+     "truncated axes, dual axes, cherry-picking, inappropriate smoothing, data-ink ratio, visualisation as argument, uncertainty bands"),
+
+    (10, 5, "M5: Visual Interpretation", "From Data to Policy Argument: The Full Interpretive Chain",
+     "The research-to-policy pipeline: data → analysis → finding → interpretation → policy implication; writing for different audiences (academic paper vs policy brief vs public); quantitative findings embedded in qualitative context; what makes a finding policy-relevant; the difference between 'statistically significant' and 'actionable'; practising the translation exercise across audiences",
+     "The full chain: you have run your spatial regression, produced your LISA map, and found that informal e-waste activity is spatially clustered in low-income wards with poor formal waste infrastructure. Now what? A policy implication is not just 'government should do something' — it is a specific, falsifiable, actionable recommendation that follows from your specific finding. The connection between the statistical finding and the policy recommendation requires a chain of reasoning that the researcher must make explicit. This chain is what separates research from advocacy.",
+     "Cartwright, N. & Hardie, J. 'Evidence-Based Policy: A Practical Guide to Doing It Better' (Oxford, library) | Banerjee & Duflo 'Poor Economics' Ch.1 (model of research-to-policy) | ODI Research-to-Policy toolkit | https://odi.org/en/publications/",
+     "ODI: How to write a policy brief | https://odi.org/en/publications/how-to-write-a-policy-brief/ | IZA policy brief format | https://www.iza.org/publications/pp | CPPR policy brief examples | J-PAL policy publications | https://www.povertyactionlab.org/policy-publications",
+     "Dataset: Your most developed previous assignment — the IHDS/NFHS regression or the spatial analysis.",
+     "Full translation exercise. Take your best previous result. Write three versions: (1) Academic: a 400-word results + discussion section in journal style with citations, hedge language, caveats; (2) Policy brief: a 300-word brief for a government ministry official with no statistics training — key finding, what it means, what you recommend, what you are uncertain about; (3) Public communication: a 200-word summary for a newspaper op-ed. Read all three aloud. Notice what changes and what must stay the same. Write 150 words reflecting on what was lost and gained in each translation.",
+     "Read: Cairney, P. (2016). 'The Politics of Evidence-Based Policy Making.' Palgrave. Ch.1 only (30 pages). — on the gap between what researchers find and what policy makers do with it.",
+     "research-to-policy chain, policy brief format, audience translation, actionable recommendation, quantitative-qualitative integration, policy relevance test"),
+]
 
 PYTHON_DATA = [
     # ── MODULE 1: FOUNDATIONS ─────────────────────────────────────────────────
@@ -758,10 +946,13 @@ SPATIAL_R_DATA = [
 #  OVERVIEW DATA
 # ══════════════════════════════════════════════════════════════════════════════
 OVERVIEW_DATA = [
-    ("Module 1", "Python Foundations", 14, 28, "None",
+    ("Module 0", "CS & Programming Foundations", 8, 16, "None — start here",
+     "How computers work, the command line, algorithms, data structures, git version control, SQL/databases, and how all research software tools fit together",
+     "Confident terminal user, git-tracked thesis project, SQL basics, understanding of why code behaves the way it does"),
+    ("Module 1", "Python Foundations", 14, 28, "Module 0 (helpful, not required)",
      "Complete Python programming from scratch for research: syntax, data structures, Pandas, NumPy, visualisation, APIs, text analysis, reproducibility",
      "Jupyter Notebook, competent data manipulation, reproducible research workflow"),
-    ("Module 2", "R Language", 10, 20, "Basic programming literacy (Python helpful)",
+    ("Module 2", "R Language", 10, 20, "Module 0 + basic programming literacy",
      "R and Tidyverse for data analysis: dplyr, tidyr, ggplot2, R Markdown, statistical testing, regression, functional programming",
      "R Markdown reports, ggplot2 publication charts, dplyr pipelines"),
     ("Module 3", "Data Analysis & Statistical Modelling", 10, 20, "Python or R basics",
@@ -773,15 +964,18 @@ OVERVIEW_DATA = [
     ("Module 5", "QGIS & Spatial Thinking", 8, 16, "None (conceptual foundations first)",
      "GIS from zero: spatial data concepts, QGIS operations, geoprocessing, raster analysis, remote sensing, cartography",
      "Publication-quality maps, raster/vector analysis, Chennai spatial dataset"),
-    ("Module 6", "Spatial Python (GeoPandas)", 6, 12, "Python module + QGIS module",
+    ("Module 6", "Spatial Python (GeoPandas)", 6, 12, "Module 1 + Module 5",
      "Spatial analysis in Python: GeoPandas, spatial operations, geocoding, rasterio, interactive maps (Folium/Plotly)",
      "End-to-end spatial Python pipeline, interactive maps, raster analysis"),
-    ("Module 7", "Spatial R (sf + spdep + spatialreg)", 6, 12, "R module + QGIS module",
+    ("Module 7", "Spatial R (sf + spdep + spatialreg)", 6, 12, "Module 2 + Module 5",
      "Spatial analysis in R: sf, tmap, spdep (Moran's I, LISA), spatialreg (spatial lag/error), reproducible spatial reports",
      "Spatial regression with direct/indirect effects, LISA maps, R Markdown spatial report"),
-    ("TOTAL", "Complete Curriculum", 65, 130, "",
-     "From zero programming to advanced econometrics, spatial analysis, and reproducible research in R and Python",
-     "Thesis-ready skills across quantitative and spatial social science"),
+    ("Module 8", "Interpretation & Analytical Thinking", 10, 20, "Modules 1-4 (run alongside or after)",
+     "The interpretive layer: substantive vs statistical significance, reading regression output, causal claims, spatial pattern interpretation, uncertainty communication, writing results sections, critical paper reading, visualisation critique, policy translation",
+     "Can interpret any quantitative output substantively; writes convincing results and discussion sections; critically reads empirical papers; translates findings for non-technical audiences"),
+    ("TOTAL", "Complete Curriculum", 83, 166, "",
+     "From zero to comprehensive: CS foundations, programming, statistics, econometrics, spatial analysis, and interpretive mastery",
+     "Thesis-ready skills across quantitative, spatial, and communicative dimensions of social science research"),
 ]
 
 
@@ -828,7 +1022,7 @@ ov_headers = ["Module", "Name", "Days", "Hours", "Prerequisites",
 write_row(ov, 3, ov_headers, is_header=True)
 ov.row_dimensions[3].height = 20
 
-tab_colors = ["4472C4", "70AD47", "ED7D31", "FF0000", "9E480E", "00B0F0", "375623", "1F3864"]
+tab_colors = ["7030A0", "4472C4", "70AD47", "ED7D31", "FF0000", "9E480E", "00B0F0", "375623", "FF7F27", "1F3864"]
 for i, (row_data) in enumerate(OVERVIEW_DATA):
     row_num = i + 4
     is_alt = i % 2 == 0
@@ -880,7 +1074,9 @@ def build_sheet(wb, title, tab_color, accent_hex, data):
     # Sheet header
     ws.merge_cells(f'A1:{get_column_letter(len(SHEET_COLS))}1')
     sh = ws['A1']
-    sh.value = title.replace("🐍 ", "").replace("📊 ", "").replace("🗺 ", "").replace("📈 ", "").replace("🌍 ", "").replace("🟦 ", "").replace("🟢 ", "")
+    sh.value = (title.replace("🐍 ", "").replace("📊 ", "").replace("🗺 ", "")
+                    .replace("📈 ", "").replace("🌍 ", "").replace("🟦 ", "")
+                    .replace("🟢 ", "").replace("💻 ", "").replace("🧠 ", ""))
     sh.font = Font(name="Calibri", bold=True, size=14, color="FFFFFF")
     sh.fill = hdr_fill(accent_hex)
     sh.alignment = Alignment(horizontal="center", vertical="center")
@@ -927,6 +1123,7 @@ def build_sheet(wb, title, tab_color, accent_hex, data):
 
 
 # ── BUILD ALL SUBJECT SHEETS ──────────────────────────────────────────────────
+build_sheet(wb, "💻 CS FOUNDATIONS", "7030A0", "7030A0", CS_DATA)
 build_sheet(wb, "🐍 PYTHON", CLR["tab_py"], CLR["accent1"], PYTHON_DATA)
 build_sheet(wb, "📊 R LANGUAGE", CLR["tab_r"], CLR["accent2"], R_DATA)
 build_sheet(wb, "📈 STATISTICS & MODELLING", CLR["tab_stats"], "C55A11", STATS_DATA)
@@ -934,6 +1131,7 @@ build_sheet(wb, "💡 ADVANCED ECONOMETRICS", CLR["tab_econ"], CLR["accent5"], E
 build_sheet(wb, "🗺 QGIS & SPATIAL THINKING", CLR["tab_qgis"], CLR["tab_qgis"], QGIS_DATA)
 build_sheet(wb, "🌍 SPATIAL PYTHON", CLR["tab_spy"], "0070C0", SPATIAL_PY_DATA)
 build_sheet(wb, "🟢 SPATIAL R", CLR["tab_sr"], CLR["accent2"], SPATIAL_R_DATA)
+build_sheet(wb, "🧠 INTERPRETATION", "FF7F27", "C55A11", INTERP_DATA)
 
 
 # ── SAVE ──────────────────────────────────────────────────────────────────────
@@ -943,7 +1141,8 @@ print(f"✅  Workbook saved: {output_path}")
 print(f"    Sheets: {[s.title for s in wb.worksheets]}")
 
 # Count rows
-total_days = sum([len(PYTHON_DATA), len(R_DATA), len(STATS_DATA),
-                  len(ECON_DATA), len(QGIS_DATA), len(SPATIAL_PY_DATA), len(SPATIAL_R_DATA)])
+total_days = sum([len(CS_DATA), len(PYTHON_DATA), len(R_DATA), len(STATS_DATA),
+                  len(ECON_DATA), len(QGIS_DATA), len(SPATIAL_PY_DATA),
+                  len(SPATIAL_R_DATA), len(INTERP_DATA)])
 print(f"    Total curriculum days: {total_days}")
 print(f"    Total study hours: {total_days * 2}")
