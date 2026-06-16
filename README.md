@@ -4,7 +4,7 @@ This workspace contains a verified list of national-level Mozambique government 
 
 ## Output
 
-- **Word document:** [Mozambique_Plastic_Pollution_Policies.docx](./Mozambique_Plastic_Pollution_Policies.docx)
+- **Download (Word document):** [Mozambique_Plastic_Pollution_Policies.docx](https://github.com/shivrain/Thinkswiss/raw/cursor/mozambique-plastic-policies-7c97/Mozambique_Plastic_Pollution_Policies.docx)
 - **Generator script:** [generate_mozambique_plastic_policies_docx.py](./generate_mozambique_plastic_policies_docx.py)
 
 ## Contents
