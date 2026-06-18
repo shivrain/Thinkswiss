@@ -4,6 +4,8 @@ This workspace contains a verified list of national-level Mozambique government 
 
 ## Output
 
+- **4P Index (Excel):** [Mozambique_4P_Index.xlsx](https://github.com/shivrain/Thinkswiss/raw/cursor/mozambique-plastic-policies-7c97/Mozambique_4P_Index.xlsx)
+- **English translations (Word):** [Mozambique_Policies_English_Translations.docx](https://github.com/shivrain/Thinkswiss/raw/cursor/mozambique-plastic-policies-7c97/Mozambique_Policies_English_Translations.docx)
 - **Download (bilingual Word document, English + Portuguese titles, direct PDF links):** [Mozambique_Plastic_Pollution_Policies_Bilingual.docx](https://github.com/shivrain/Thinkswiss/raw/cursor/mozambique-plastic-policies-7c97/Mozambique_Plastic_Pollution_Policies_Bilingual.docx)
 - **Download (original Word document):** [Mozambique_Plastic_Pollution_Policies.docx](https://github.com/shivrain/Thinkswiss/raw/cursor/mozambique-plastic-policies-7c97/Mozambique_Plastic_Pollution_Policies.docx)
 - **Generator scripts:**
