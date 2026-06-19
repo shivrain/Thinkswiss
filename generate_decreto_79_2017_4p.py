@@ -2,9 +2,9 @@
 """Generate 4P Index Excel and English translation for Decreto 79/2017 only.
 
 Source legal text: FDUEM Colectânea compilation (user upload), section Dec_79_2017.txt.
-Supplementary analysis: Lexology article (user-provided URL; Cloudflare-blocked in automation),
-VdA Legal Partners flash 2018, IUCN MARPLASTICCS policy assessment 2022, Club of Mozambique /
-Lusa reporting on Diploma Ministerial 26/2025, Imani Development Africa RISE project 2022–2025.
+Primary analysis: Lexology article (user-provided text and URL).
+Implementation updates: Diploma Ministerial 26/2025, Club of Mozambique/Lusa 2025,
+IUCN MARPLASTICCS 2022, Imani Development Africa RISE 2022–2025.
 
 Regulamento sobre a Responsabilidade Alargada dos Produtores e Importadores de Embalagens —
 Decreto n.º 79/2017, de 28 de Dezembro.
@@ -26,6 +26,84 @@ WORD_OUT = Path("/workspace/Decreto_79_2017_English_Translation.docx")
 LEXOLOGY_URL = (
     "https://www.lexology.com/library/detail.aspx?g=bc88751e-ed7d-4f3f-972c-158b0f8fbbdf"
 )
+
+LEXOLOGY_ANALYSIS = """On 29 December 2017, Decree 79/2017, of 28 December 2017, approving the Regulation on the Extended Responsibility of Producers and Importers of Packaging (the "Regulation"), came into force.
+
+The Regulation's objective is the adoption of principles, rules and guidelines to increase the responsibility of producers and importers of packaging in order to safeguard the environment and public health, in the context of sustainable development.
+
+To whom is it applicable?
+
+To all public and private entities, natural or legal persons engaged in the production, import and management of packaging.
+
+What kind of packaging falls within its scope?
+
+Any packaging placed on the market, used or produced, namely at a domestic, industrial, agricultural or commercial level, including offices, shops and services, regardless of the materials used, as well as packaging waste which can be collected and processed by systems currently in place or to be put in place.
+
+Who has authority and responsibility for the management of packaging and packaging waste?
+
+Article 5 of the Regulation determines that the Ministries responsible for the Environment (e.g. the drafting and disclosure of rules and procedures in the context of the production and import of packaging and packaging waste, its supervision and the imposition of sanctions), Industry and Commerce (e.g. establishment of rules and standards applicable to import and production of packaging), and Finance (e.g. the collection of fees and fines and the supervision of the rules applicable to packaging in the context of the clearance of goods).
+
+Article 5 of the Regulation also attributes the following responsibilities and authority on producers and importers of packaging and waste operators:
+
+Producers and importers of packaging and packaging waste
+
+Jointly responsible for the management of packaging and packaging waste, pursuant to the Regulation and other applicable legislation
+Payment of fees for the management of packaging
+Return and recovery of packaging waste, whether directly or through organisations created for waste recovery
+Waste operators
+
+Ensure the environmentally safe, sustainable and rational management of packaging, in view of the need to reduce, recycle and reuse it, including the sorting, collection, handling, transportation, storage and/or elimination of packaging waste
+Foster the protection of human health and the environment against the harmful effects that may result from the disposal of packaging
+Promote community education and awareness initiatives regarding the proper management of packaging
+Register with the Ministry responsible for the Environment
+
+How does the framework of producer and importer responsibility work?
+
+Packaging producers and importers assume their responsibility through the following:
+
+Internal Management System
+Packaging Environmental Fee System
+Packaging Standardisation System
+
+Internal Management Systems (may be adopted at the producer's initiative and has two forms)
+
+Direct Internal Management System: the producer or the importer may opt, whether individually or jointly, for any one of the following procedures: i) reduction; (ii) re-use; (iii) recycling; (iv) organic recovery; (v) energetic recovery; vi) incineration. In this system the consumer of products that uses packaging pays a specific deposit amount upon purchase which is reimbursed once the used packaging is returned.
+
+Indirect Internal Management System: producer and importer responsibility for the treatment of packaging or packaging waste can be transferred, contractually, to an entity duly licensed to undertake that activity. In this system the producer or importer must bear the necessary financial costs of the processes of selective collection and sorting of packaging waste, as well as for the take back and recovery of packaging waste. The producer or importer's responsibility for the final destination of the packaging ends when a declaration of assumption of responsibility is issued by the certified waste operator to whom the packaging is delivered.
+
+Packaging Environmental Fee System
+
+Article 13 of the Regulation creates a Packaging Environmental Fee (Taxa Ambiental sobre a Embalagem, "TAE") which must be paid by all producers and importers of packaging, and it varies depending on the packaging's environmental and public health impact and the complexity of the treatment of the waste resulting from the packaging.
+
+In the case of imported packaging, the TAE is charged by the Mozambican Tax Authority (Autoridade Tributária de Moçambique).
+
+In the case of packaging produced in national territory, the TAE is paid annually on the basis of the company's production report.
+
+Packaging Standardisation System
+
+This system requires that all packaging be produced with preferably biodegradable materials or materials which can be re-used, recycled or recovered. It is for (i) producers, (ii) manufacturers of packaging or those who supply materials for the manufacture of packaging, and (iii) those who import or put packaging, materials for the manufacture of packaging or packaged goods into circulation to ensure that packaging:
+
+Is limited to the volume and dimensions required for the protection of its contents and the sale of the good
+Is designed so that it is reusable in a technically viable way which is compatible with the requirements of the good it contains
+Is recyclable
+
+Symbol and labelling of packaging
+
+In the context of the Packaging Standardisation System, the use of specific symbols is mandatory for reusable, recyclable or packaging that can be subject to recovery, and it should be placed on the packaging itself or its label so that it is clearly visible, legible and that it shall last as long as the expected lifetime of the packaging.
+
+Who supervises and what are the sanctions for breaches of the Regulation?
+
+The Ministry responsible for the Environment is responsible for the supervision, with the cooperation of Municipal Councils and District Administrations.
+
+Breaches to the Regulation are sanctionable with a fine which amount may vary between 10 and 15 times the Minimum Salary and may be increased by 30% in the event of reoccurrence. Together with the imposition of a fine, ancillary sanctions may also be imposed as stipulated in Article 21.
+
+Observations
+
+The Regulation creates a wide scope of responsibilities including financial charges, on producers and importers of packaging, as well as responsibilities for waste operators.
+
+We anticipate that the Regulation will have considerable impact on companies, who will be under an obligation to assume the management of packaging waste through the three systems of producer and importer responsibility, and will be required to pay the fees and costs, as well as the fines and ancillary sanctions in the event of breach of the Regulation.
+
+The effectiveness of the Regulation's application will depend on the approval of complementary and regulatory legislation, on the proper functioning of the Commission for the Supervision and Evaluation of the Management of Packaging ("Comissão de Monitoria e Avaliação da Gestão de Embalagens") created by this Regulation, and on the operation of the various entities involved in the extended responsibility framework."""
 
 COLUMNS = [
     "A_policy_name",
@@ -61,18 +139,17 @@ POLICY = {
     "policy_url": LEXOLOGY_URL,
     "policy_year": 2017,
     "policy_objective": (
-        "Adopt principles, norms and guidelines assigning extended responsibility to producers "
-        "and importers of packaging and packaging waste to protect public health and the environment "
-        "within sustainable development, through internal management systems, the Packaging "
-        "Environmental Fee (TAE), and packaging normalisation."
+        "Adoption of principles, rules and guidelines to increase the responsibility of "
+        "producers and importers of packaging in order to safeguard the environment and "
+        "public health, in the context of sustainable development (Lexology; Reg. Art. 2)."
     ),
     "policy_target": 0,
     "policy_target_text": "",
     "policy_type": 0.75,
     "policy_type_justification": (
         "Executive decree (Decreto n.º 79/2017) approved by the Council of Ministers on "
-        "21 November 2017 and published 28 December 2017 (Boletim da República), under "
-        "Lei 20/97 Arts. 10 and 33. Sub-legislative EPR instrument, not parliamentary legislation."
+        "21 November 2017, published 28 December 2017, entered into force 29 December 2017 "
+        "(Lexology). Sub-legislative EPR instrument under Lei 20/97 Arts. 10 and 33."
     ),
     "policy_integration": 0.75,
     "policy_sectors_list": (
@@ -109,8 +186,8 @@ POLICY = {
                 "(IUCN 2022: ~1% packaging recycled)."
             ),
             "comments": (
-                "Plastics relevance: Annex I typology includes all plastic types including polystyrene "
-                "foam. Lexology/VdA analysis confirms hierarchy as core EPR design element."
+                "Lexology: scope covers any packaging 'regardless of the materials used' plus "
+                "collectable packaging waste. Annex I includes all plastic types including polystyrene foam."
             ),
         },
         {
@@ -134,19 +211,22 @@ POLICY = {
             "instrument_type": 0.20,
             "instrument_lifecycle_stage": "Waste management",
             "instrument_description": (
-                "Art. 5: Assigns competencies to Environment Ministry (rules, fiscalization, "
-                "monitoring, valorisation oversight), Industry/Commerce Ministry (import/production "
-                "standards), and Finance Ministry (tax/fine collection, customs clearance control)."
+                "Art. 5: Environment Ministry drafts/discloses rules, supervises and imposes sanctions; "
+                "Industry and Commerce Ministry sets import/production standards; Finance Ministry "
+                "collects fees and fines and supervises packaging rules at customs clearance (Lexology)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.50,
             "instrument_implementation_text": (
-                "'Compete ao Ministério que superintende a área do Ambiente' fiscalizar, sancionar e "
-                "monitorar; MIC define normas de produção/importação; MEF garante cobrança de taxas e "
-                "controlo aduaneiro. Multi-ministry coordination (+0.25). Africa RISE/Imani project "
-                "2022–2025 supported TAE diploma and COMAGE operationalisation (+0.25)."
+                "Lexology confirms Art. 5 ministry competencies for Environment (rules, supervision, "
+                "sanctions), Industry/Commerce (standards), Finance (fee/fine collection, customs). "
+                "Multi-ministry coordination (+0.25). Africa RISE/Imani 2022–2025 supported TAE "
+                "diploma and COMAGE operationalisation (+0.25)."
             ),
-            "comments": "Multi-level governance (Rule 11); Decreto Art. 2 assigns MTA, MIC, MEF implementation.",
+            "comments": (
+                "Lexology: effectiveness depends on operation of entities in extended responsibility "
+                "framework. Decreto Art. 2 assigns MTA, MIC, MEF implementation."
+            ),
         },
         {
             "instrument_type": 0.20,
@@ -169,40 +249,40 @@ POLICY = {
             "instrument_type": 1.0,
             "instrument_lifecycle_stage": "Production",
             "instrument_description": (
-                "Art. 7: Producers and importers co-responsible for packaging and packaging-waste "
-                "management — must pay TAE fees and ensure return/valorisation of packaging waste "
-                "directly or through recovery organisations."
+                "Art. 7: Producers and importers jointly responsible for packaging and packaging-waste "
+                "management; must pay packaging management fees; must ensure return and recovery of "
+                "packaging waste directly or through recovery organisations (Lexology)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.50,
             "instrument_implementation_text": (
-                "'Os produtores e importadores são co-responsáveis pela gestão das embalagens e "
-                "resíduos de embalagens.' Mandatory co-responsibility (+0.25). TAE payment obligation "
-                "(+0.25) operationalising via DM 26/2025. Take-back/valorisation weakly implemented "
-                "for plastics (IUCN 2022; VdA 2018 anticipates significant business impact)."
+                "Lexology: producers/importers 'jointly responsible' for management, fee payment, and "
+                "return/recovery (+0.25 each obligation). TAE fee system operationalising via DM 26/2025 "
+                "(+0.25). Lexology anticipates 'considerable impact on companies' — take-back/recovery "
+                "weakly implemented for plastics (IUCN 2022)."
             ),
             "comments": (
-                "Core EPR obligation. Annex I explicitly covers all plastic types including polystyrene "
-                "foam (item 1.2)."
+                "Core EPR obligation per Lexology. Scope includes all packaging materials; Annex I "
+                "item 1.2 covers all plastic types including polystyrene foam."
             ),
         },
         {
             "instrument_type": 1.0,
             "instrument_lifecycle_stage": "Recycling",
             "instrument_description": (
-                "Art. 8: Waste operators must ensure environmentally safe, sustainable management "
-                "favouring reduction, recycling and reuse; promote environmental education; and "
-                "register with the Environment Ministry."
+                "Art. 8: Waste operators must ensure environmentally safe, sustainable and rational "
+                "packaging management (reduce, recycle, reuse; sorting, collection, handling, transport, "
+                "storage and/or disposal); protect health and environment; promote community education; "
+                "and register with Environment Ministry (Lexology)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.25,
             "instrument_implementation_text": (
-                "'Assegurar uma gestão ambientalmente segura, sustentável e racional das embalagens, "
-                "tendo em conta a necessidade da sua redução, reciclagem e reutilização.' Registration "
-                "requirement (+0.25). Limited evidence of comprehensive operator registration for "
-                "plastic packaging streams."
+                "Lexology lists four operator duties: safe management, health/environment protection, "
+                "community education, Environment Ministry registration. Registration (+0.25). Limited "
+                "evidence of comprehensive operator registration for plastic packaging streams."
             ),
-            "comments": "Applies to licensed operators handling plastic packaging waste.",
+            "comments": "Lexology attributes separate responsibilities to waste operators alongside producers.",
         },
         {
             "instrument_type": 1.0,
@@ -215,74 +295,74 @@ POLICY = {
             "instrument_in_force": 1,
             "instrument_implementation": 0.50,
             "instrument_implementation_text": (
-                "'A responsabilidade do produtor e importador de embalagens é assumida através dos "
-                "seguintes sistemas' (internal management, TAE, normalisation). Framework operative "
-                "(+0.25). IUCN 2022 / Lexology-type analysis: only TAE system substantially "
-                "implemented; internal management and normalisation need greater producer investment."
-            ),
-            "comments": "Overarching EPR architecture instrument; one row for Art. 9 system design.",
-        },
-        {
-            "instrument_type": 1.0,
-            "instrument_lifecycle_stage": "Recycling",
-            "instrument_description": (
-                "Art. 11: Direct internal management — producers/importers may individually or jointly "
-                "pursue reduction, reuse, recycling, organic recovery, energy recovery or incineration; "
-                "consumers pay a deposit at purchase refunded on return of used packaging."
-            ),
-            "instrument_in_force": 1,
-            "instrument_implementation": 0.25,
-            "instrument_implementation_text": (
-                "'o consumidor de produtos que utilizem embalagens paga um determinado valor de "
-                "depósito no acto da compra, que lhe é devolvido aquando da entrega da embalagem "
-                "utilizada.' Deposit-return mechanism defined (+0.25). No national deposit system "
-                "evidenced operational for plastic packaging (IUCN recommends Maputo pilot)."
+                "Lexology: producers/importers assume responsibility through Internal Management, "
+                "Packaging Environmental Fee, and Packaging Standardisation systems. Framework "
+                "operative (+0.25). Lexology observations: companies must manage waste through all "
+                "three systems; effectiveness depends on complementary legislation and entity operation."
             ),
             "comments": (
-                "Deposit-return (DRS) for packaging including plastics. Art. 20(2)(a) penalises "
-                "refusal to accept used packaging or refund deposits (15 minimum wages)."
+                "Overarching EPR architecture per Lexology. One row for Art. 9 system design."
             ),
         },
         {
             "instrument_type": 1.0,
             "instrument_lifecycle_stage": "Recycling",
             "instrument_description": (
-                "Art. 12: Indirect internal management — producers/importers may contract licensed "
-                "waste operators (PRO-type entities) for collection, selective sorting, take-back and "
-                "valorisation; financial counterparties required; responsibility transfers upon "
-                "certified operator assumption declaration."
+                "Art. 11: Direct Internal Management System — producer/importer may opt individually or "
+                "jointly for reduction, re-use, recycling, organic recovery, energetic recovery or "
+                "incineration; consumer pays deposit at purchase reimbursed on return of used packaging "
+                "(Lexology)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.25,
             "instrument_implementation_text": (
-                "'A responsabilidade dos produtores ou importadores... pode ser transferida, mediante "
-                "celebração de contrato, para uma entidade devidamente licenciada.' PRO framework "
-                "defined (+0.25). IUCN: indirect management system not yet operational at scale; "
-                "producer inventories and PRO mandates need development."
+                "Lexology: deposit 'reimbursed once the used packaging is returned.' Mechanism defined "
+                "(+0.25). Adopted at producer initiative — no national DRS evidenced operational for "
+                "plastic packaging (IUCN recommends Maputo pilot)."
             ),
-            "comments": "Mozambique PRO/contractual EPR model per VdA and IUCN analysis.",
+            "comments": (
+                "Lexology Internal Management System (direct form). Art. 20(2)(a): refusal to accept "
+                "used packaging or refund deposit — 15 minimum wages."
+            ),
+        },
+        {
+            "instrument_type": 1.0,
+            "instrument_lifecycle_stage": "Recycling",
+            "instrument_description": (
+                "Art. 12: Indirect Internal Management System — producer/importer responsibility for "
+                "packaging treatment transferred contractually to licensed entity; producer bears "
+                "financial costs of selective collection, sorting, take-back and recovery; "
+                "responsibility ends upon certified operator declaration of assumption (Lexology)."
+            ),
+            "instrument_in_force": 1,
+            "instrument_implementation": 0.25,
+            "instrument_implementation_text": (
+                "Lexology: contractual transfer to licensed operator; producer bears collection/sorting/"
+                "take-back/recovery costs (+0.25). Responsibility ends on operator assumption "
+                "declaration (+0.25 framework). Not yet operational at scale (IUCN 2022)."
+            ),
+            "comments": "Lexology Indirect Internal Management System; PRO-type contractual EPR model.",
         },
         {
             "instrument_type": 0.60,
             "instrument_lifecycle_stage": "Recycling",
             "instrument_description": (
-                "Art. 13–14: Creates variable Packaging Environmental Fee (TAE) payable by all "
-                "packaging producers and importers, based on environmental/public-health impact and "
-                "treatment complexity; criteria include returnability, decomposition time/impact, "
-                "treatment cost, and eco-design."
+                "Art. 13: Packaging Environmental Fee (TAE / Taxa Ambiental sobre a Embalagem) payable "
+                "by all packaging producers and importers; fee varies by environmental/public-health "
+                "impact and waste-treatment complexity. AT charges imports; domestic producers pay "
+                "annually on production report (Lexology)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.75,
             "instrument_implementation_text": (
-                "'É criada a Taxa Ambiental sobre a Embalagem (TAE).' DM 26/2025 (10 March 2025) "
-                "defines formula, categories and exemptions per Art. 15 (+0.25). Levied on primary "
-                "packaging including plastic (+0.25). AT collects on imports; annual production reports "
-                "for domestic producers (Art. 16). Payment from 2026 after management-plan period "
-                "(Club of Mozambique/Lusa). Up to 90% reduction when internal management established."
+                "Lexology: TAE created Art. 13; AT collects imported packaging; annual production-report "
+                "basis for domestic producers (+0.25 each). DM 26/2025 defines formula per Art. 15 "
+                "(Lexology flagged need for complementary legislation) (+0.25). Levied on plastic "
+                "packaging; payment from 2026; up to 90% reduction with internal management system."
             ),
             "comments": (
-                "Previously scored in_force=0 pending diploma; DM 26/2025 operationalises Art. 15. "
-                "Lexology URL and Africa RISE project document TAE as primary implemented EPR pillar."
+                "Lexology Packaging Environmental Fee System. Complementary diploma DM 26/2025 (March "
+                "2025) addresses Lexology observation on regulatory legislation dependency."
             ),
         },
         {
@@ -308,98 +388,96 @@ POLICY = {
             "instrument_type": 1.0,
             "instrument_lifecycle_stage": "Production",
             "instrument_description": (
-                "Art. 17: Packaging normalisation — packaging must preferentially use biodegradable "
-                "materials or materials permitting reuse, recycling or recovery; producers must limit "
-                "volume/weight, design for returnability, and ensure recyclability. Applies to "
-                "manufacturers, material suppliers, importers and distributors."
+                "Art. 17: Packaging Standardisation System — packaging produced with preferably "
+                "biodegradable or re-usable/recyclable/recoverable materials; producers, manufacturers, "
+                "material suppliers and importers must ensure volume/weight limits, technical "
+                "returnability, and recyclability (Lexology)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.50,
             "instrument_implementation_text": (
-                "'As embalagens devem ser produzidas com materiais preferencialmente de natureza "
-                "biodegradável ou que permitam a reutilização, reciclagem ou valorização' and 'Recicláveis.' "
-                "Mandatory language (+0.25). Art. 20(2)(d): market placement without packaging norms "
-                "— 15 min. wages (+0.25). VdA notes significant business impact; limited enforcement "
-                "data for plastic streams."
+                "Lexology: three standardisation requirements — volume/dimension limits, technical "
+                "reusability, recyclability (+0.25). Applies to producers, manufacturers, suppliers, "
+                "importers (+0.25). Art. 20(2)(d) fine 15 min. wages for non-compliant placement."
             ),
             "comments": (
-                "Annex I typology item 1.2: all plastic types including polystyrene foam. "
-                "Packaging Standardisation System per IUCN."
+                "Lexology Packaging Standardisation System. Annex I item 1.2: all plastic types "
+                "including polystyrene foam."
             ),
         },
         {
             "instrument_type": 0.40,
             "instrument_lifecycle_stage": "Consumption",
             "instrument_description": (
-                "Art. 18: Packaging normalisation symbols for reusable, recyclable or recoverable "
-                "packaging must be adopted on packaging or labels — clearly visible, legible, and "
-                "durable for packaging lifetime including after opening."
+                "Art. 18: Mandatory symbols for reusable, recyclable or recoverable packaging on "
+                "packaging or label — clearly visible, legible, lasting expected packaging lifetime "
+                "(Lexology: Symbol and labelling of packaging)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.25,
             "instrument_implementation_text": (
-                "'devem ser adoptados símbolos específicos para as embalagens reutilizáveis, recicláveis "
-                "ou valorizáveis' on packaging/labels. Information/labelling requirement (+0.25). "
-                "Symbol standards not further specified in decree — implementation depends on "
-                "complementary norms."
+                "Lexology: 'use of specific symbols is mandatory' on packaging or label, visible and "
+                "legible for packaging lifetime (+0.25). Symbol technical standards depend on "
+                "complementary norms not yet specified."
             ),
-            "comments": "Information-type labelling; scored 0.40 per mandatory visibility requirement (Rule 10).",
+            "comments": "Lexology symbol/labelling requirement under Packaging Standardisation System.",
         },
         {
             "instrument_type": 0.20,
             "instrument_lifecycle_stage": "Waste management",
             "instrument_description": (
-                "Art. 19: Environment Ministry fiscalizes Regulation compliance and decides on fines "
-                "and accessory sanctions; Municipal Councils and District Administrations must "
-                "collaborate by providing information for enforcement."
+                "Art. 19: Environment Ministry supervises Regulation compliance; Municipal Councils "
+                "and District Administrations cooperate in supervision (Lexology)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.50,
             "instrument_implementation_text": (
-                "'Compete ao Ministério que superintende a área do Ambiente fiscalizar o cumprimento "
-                "do presente Regulamento.' Authority (+0.25), fine decision power linked to Arts. 20–22 "
-                "(+0.25). Municipal collaboration duty (+0.25 monitoring)."
+                "Lexology: Environment Ministry 'responsible for the supervision' with municipal and "
+                "district cooperation (+0.25 authority, +0.25 multi-level). Linked to Arts. 20–21 "
+                "fine and ancillary sanction powers (+0.25)."
             ),
-            "comments": "Primary enforcement governance for EPR including plastic packaging.",
+            "comments": "Lexology supervision framework for EPR including plastic packaging.",
         },
         {
             "instrument_type": 0.60,
             "instrument_lifecycle_stage": "Production",
             "instrument_description": (
-                "Art. 20–22: Administrative fines — obstruction of inspection (10 min. wages); "
-                "refusal of used packaging/deposit refund, placing packaged products without waste "
-                "management assurance, non-payment of TAE, or non-compliant packaging (15 min. wages "
-                "each); 30% cumulative increase for repeat offences; accessory sanctions include "
-                "seizure, activity suspension, compulsory removal; 20-day payment deadline."
+                "Art. 20–21: Breaches sanctionable with fines of 10–15 times Minimum Salary; 30% "
+                "increase on reoccurrence; ancillary sanctions per Art. 21 may be imposed together "
+                "with fines (Lexology)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.75,
             "instrument_implementation_text": (
-                "'Constituem infracções... puníveis com sanção de multa correspondente a 10/15 Salários "
-                "Mínimos.' Explicit fines (+0.25). TAE non-payment sanction (+0.25). Accessory "
-                "sanctions Art. 21 (+0.25). Coercive fiscal execution via Juízo das Execuções Fiscais "
+                "Lexology: fines 'between 10 and 15 times the Minimum Salary', +30% reoccurrence; "
+                "ancillary sanctions with fines (+0.25 each). Decreto Art. 20 specifies obstruction "
+                "(10), TAE non-payment and packaging breaches (15). Coercive fiscal execution "
                 "if unpaid (Art. 22)."
             ),
-            "comments": "Economic enforcement; VdA flash confirms 10–15 minimum wage fine range.",
+            "comments": (
+                "Lexology economic enforcement. Companies liable for 'fines and ancillary sanctions "
+                "in the event of breach' per Lexology observations."
+            ),
         },
         {
             "instrument_type": 0.20,
             "instrument_lifecycle_stage": "Waste management",
             "instrument_description": (
-                "Art. 23: Creates COMAGE (Comissão de Monitoria e Avaliação da Gestão de Embalagens) "
-                "— multistakeholder consultative body to advise on packaging management, coordinate "
-                "authorities and operators, monitor TAE revenue use, and propose legal improvements; "
-                "operating costs funded by FNDS."
+                "Art. 23: COMAGE (Comissão de Monitoria e Avaliação da Gestão de Embalagens / "
+                "Commission for the Supervision and Evaluation of the Management of Packaging) — "
+                "multistakeholder body; proper functioning required for Regulation effectiveness "
+                "(Lexology observations)."
             ),
             "instrument_in_force": 1,
             "instrument_implementation": 0.50,
             "instrument_implementation_text": (
-                "'É criada a Comissão de Monitoria e Avaliação da Gestão de Embalagens (COMAGE).' "
-                "Body created (+0.25). Africa RISE/Imani 2022–2025 supported COMAGE operationalisation "
-                "under MTA (+0.25). Consultative not executive — implementation depends on functioning "
-                "secretariat and stakeholder participation."
+                "Lexology: effectiveness 'will depend on... the proper functioning of' COMAGE (+0.25). "
+                "Body created Art. 23 (+0.25). Africa RISE/Imani 2022–2025 supported operationalisation "
+                "under MTA (+0.25). Consultative mandate limits executive enforcement power."
             ),
-            "comments": "Lexology/Africa RISE identify COMAGE as key EPR governance institution.",
+            "comments": (
+                "Lexology observations flag COMAGE as critical dependency for EPR effectiveness."
+            ),
         },
         {
             "instrument_type": 0.60,
@@ -443,7 +521,8 @@ ENGLISH_TRANSLATION = """DECREE NO. 79/2017 OF 28 DECEMBER 2017
 Approving the Regulation on Extended Producer Responsibility of Producers and Importers of Packaging
 
 Source document: FDUEM Colectânea de Legislação sobre o Ambiente (2020), user-uploaded compilation.
-Supplementary analysis: Lexology (user-provided URL), VdA Legal Partners flash 2018, IUCN MARPLASTICCS 2022.
+Primary analysis: Lexology article (user-provided text).
+Implementation update: Diploma Ministerial 26/2025 (Club of Mozambique/Lusa, 2025).
 
 Approved by the Council of Ministers on 21 November 2017.
 Published 28 December 2017.
@@ -658,11 +737,11 @@ def write_excel(rows: list[dict]) -> None:
     meta.append(["Index", "4P Index v2"])
     meta.append(["Policy", POLICY["policy_name"]])
     meta.append(["Primary legal text", "FDUEM Colectânea — Decreto 79/2017 section (user upload)"])
-    meta.append(["Analysis source (user)", LEXOLOGY_URL])
+    meta.append(["Primary analysis", LEXOLOGY_URL])
+    meta.append(["Lexology text", "User-provided (incorporated in generator and Word doc)"])
     meta.append([
-        "Supplementary sources",
-        "VdA Legal Partners flash 2018; IUCN MARPLASTICCS 2022; Club of Mozambique/Lusa DM 26/2025; "
-        "Imani Development Africa RISE 2022–2025",
+        "Implementation updates",
+        "DM 26/2025 (March 2025); IUCN MARPLASTICCS 2022; Africa RISE/Imani Development 2022–2025",
     ])
     meta.append(["Coding date", "June 2026"])
     meta.append(["Total instrument rows", len(rows)])
@@ -692,9 +771,10 @@ def write_translation_doc() -> None:
 
     doc.add_paragraph(
         "English translation of Mozambique's Regulation on Extended Producer Responsibility for "
-        "Packaging, approved by Council of Ministers Decree No. 79/2017 of 28 December 2017, "
-        "based on the FDUEM legislation compilation (user upload). Coding supplemented by Lexology "
-        "analysis and implementation reporting on Diploma Ministerial 26/2025."
+        "Packaging, approved by Council of Ministers Decree No. 79/2017 of 28 December 2017 "
+        "(entered into force 29 December 2017), based on the FDUEM legislation compilation "
+        "(user upload). The accompanying 4P Index coding uses the Lexology legal analysis "
+        "(user-provided) cross-checked against the decree text, with DM 26/2025 implementation notes."
     )
 
     p = doc.add_paragraph()
@@ -712,7 +792,35 @@ def write_translation_doc() -> None:
     p3.add_run("Legal text source: ").bold = True
     p3.add_run("FDUEM Colectânea de Legislação sobre o Ambiente (2020), user-uploaded PDF.")
 
-    doc.add_heading("English translation", level=2)
+    doc.add_heading("Lexology legal analysis (coding source)", level=2)
+    for block in LEXOLOGY_ANALYSIS.strip().split("\n\n"):
+        text = block.strip()
+        if not text:
+            continue
+        if text.endswith("?") or text in (
+            "To whom is it applicable?",
+            "What kind of packaging falls within its scope?",
+            "Who has authority and responsibility for the management of packaging and packaging waste?",
+            "How does the framework of producer and importer responsibility work?",
+            "Who supervises and what are the sanctions for breaches of the Regulation?",
+            "Observations",
+            "Producers and importers of packaging and packaging waste",
+            "Waste operators",
+            "Internal Management System",
+            "Packaging Environmental Fee System",
+            "Packaging Standardisation System",
+            "Symbol and labelling of packaging",
+        ):
+            doc.add_heading(text.rstrip("?") if not text.endswith("?") else text, level=3)
+        elif text.startswith("Direct Internal") or text.startswith("Indirect Internal"):
+            doc.add_heading(text.split(":")[0], level=4)
+            rest = text.split(":", 1)[1].strip() if ":" in text else ""
+            if rest:
+                doc.add_paragraph(rest)
+        else:
+            doc.add_paragraph(text)
+
+    doc.add_heading("English translation of decree text", level=2)
 
     for block in ENGLISH_TRANSLATION.strip().split("\n\n"):
         text = block.strip()
