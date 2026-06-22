@@ -290,61 +290,128 @@ def create_translation_doc():
     meta.add_run("Source: https://faolex.fao.org/docs/pdf/moz213251.pdf")
 
     sections = [
-        ("Decree No. 97/2020", (
-            "The Council of Ministers approves the Regulation on Management and Planning of "
-            "Coastal Zones and Beaches as an annex forming an integral part of this Decree.\n\n"
-            "The Regulation is needed to manage, use and plan coastal zones and beaches including "
-            "conservation of sensitive ecosystems, coastal erosion control, prevention and combat "
-            "of marine pollution, and climate resilience, under Sea Law (Law No. 20/2019).\n\n"
-            "Articles 53–61 of Decree 45/2006 on beach management are revoked."
+        ("Decree No. 97/2020 — Enacting Provisions", (
+            "Under combined provisions of Sea Law (Law 20/2019) Articles 22 and 96, the Council of "
+            "Ministers decrees:\n\n"
+            "Article 1. The Regulation on Management and Planning of Coastal Zones and Beaches is "
+            "approved as an annex forming an integral part of this Decree.\n\n"
+            "Article 2. The Minister responsible for the maritime sector shall adopt procedures for "
+            "correct management and planning of coastal zones and beaches.\n\n"
+            "Article 3. The Minister may delegate specific matters to State representation bodies "
+            "and decentralized entities.\n\n"
+            "Article 4. Articles 53–61 of Decree 45/2006 (marine pollution regulation) on beach "
+            "management are revoked.\n\n"
+            "Article 5. This Decree enters into force on the date of publication."
         )),
-        ("Object and scope (Arts. 2–3)", (
-            "The Regulation defines principles and rules for sustainable integrated management "
-            "of coastal zones and beaches, including protection of beaches, dunes, mangroves and "
-            "sensitive ecosystems; water and sand quality; and beach classification.\n\n"
-            "It applies to the maritime public domain within 100 metres inland from the high-water "
-            "line, and to all users of coastal zones and beaches."
+        ("Chapter I — General Provisions", [
+            ("Object and scope (Arts. 2–3)", (
+                "Article 2 (Object): The Regulation defines principles and rules for sustainable "
+                "integrated management and planning of coastal zones and beaches, including:\n"
+                "a) guarantee of public use of the maritime-terrestrial public domain;\n"
+                "b) protection of coastline, beaches, dunes, native vegetation, mangroves, wetlands "
+                "and seagrass beds;\n"
+                "c) safety of bathers and tourists;\n"
+                "d) water and sand quality and biodiversity health;\n"
+                "e) private sector, NGO and community participation rules;\n"
+                "f) concession criteria; g) use compatibility; h) beach qualification;\n"
+                "i) bathing beach classification; j) risk-zone safeguards.\n\n"
+                "Article 3 (Scope): Applies to maritime public domain within 100 metres inland from "
+                "the high-water line, and to all natural and legal persons using coastal zones."
+            )),
+            ("Principles (Art. 4)", (
+                "Key principles include: sustainability; integrated territorial management; "
+                "co-responsibility; environmental responsibility (polluters restore/compensate); "
+                "civic and environmental education; zero waste (full valorization of coastal waste); "
+                "rational environmental component use; social equity; prevention and precaution; "
+                "polluter-pays and user-pays; coordinated scientific approach."
+            )),
+            ("Policy instruments (Art. 7)", (
+                "POEM, POLMAR, EGIZC, Mangrove Strategy, PNGA, Biodiversity Strategy, Integrated "
+                "Urban Solid Waste Strategy, and Environmental Quality and Effluents Regulation apply "
+                "in an articulated manner to coastal zone management."
+            )),
+            ("Beach administration duties (Art. 10)", (
+                "Beach administrators must: protect coastal ecosystems; prevent and combat marine "
+                "and coastal pollution; ensure adequate urban solid waste management (collection, "
+                "transport, treatment, storage, final disposal); guarantee waste is not discharged "
+                "to beaches, sea or watercourses; and promote applied marine/coastal research."
+            )),
+        ]),
+        ("Chapter III — Pollution Prevention and Conservation", [
+            ("General pollution rules (Art. 34)", (
+                "Permanent education, awareness, cleaning, monitoring and fiscalization activities "
+                "must ensure environmental quality. All parties must focus on eliminating pollution "
+                "sources and preventing disposal of any solid or liquid waste that could harm "
+                "environmental quality, health or biodiversity."
+            )),
+            ("Solid waste management (Arts. 35–36)", (
+                "Article 35: Beach users must collect food and other solid waste and deposit it in "
+                "containers, ecopoints or bins, or carry it to the nearest receptacle. Economic "
+                "operators are responsible for waste from their activities.\n\n"
+                "Article 36: Urban equipped beaches — concessionaires clean concession areas, "
+                "maritime authority cleans remaining areas. Unequipped/restricted beaches — maritime "
+                "authority, delegated entities or local communities clean as defined case by case."
+            )),
+            ("Mandatory beach services (Art. 11)", (
+                "Beaches must provide: lifeguard rescue; first aid post; police post; waste "
+                "collection and beach cleaning; sanitary facilities; and changing rooms."
+            )),
+        ]),
+        ("Chapter V — Fishing Camps and Aquaculture (Art. 47)", (
+            "Fishers and aquaculturists must observe good environmental management rules, notably:\n"
+            "a) correctly manage waste with special focus on all types of plastics including fishing "
+            "ropes, nets, buoys, lines, hooks, equipment and vessel debris; keep fishing camps and "
+            "mariculture infrastructure clean;\n"
+            "b) not destroy dunes or coastal vegetation;\n"
+            "c) collaborate with authorities on conservation best practices.\n\n"
+            "Non-compliance is sanctionable under Annex II."
         )),
-        ("Principles (Art. 4, selected)", (
-            "Environmental responsibility — those who damage natural resources must restore or "
-            "compensate.\n\n"
-            "Zero waste — full valorization of waste produced or found in coastal zones and beaches.\n\n"
-            "Polluter pays and user pays — polluters bear restoration costs; users pay fees.\n\n"
-            "Prevention and precaution — prioritize systems to prevent environmental harm."
-        )),
-        ("Pollution prevention and waste (Arts. 34–36, 50)", (
-            "Permanent education, cleaning, monitoring and fiscalization activities must ensure "
-            "environmental quality. No solid or liquid waste may be dumped, abandoned, buried or "
-            "burned in coastal zones or beaches.\n\n"
-            "Beach users must collect their waste and deposit it in containers. Economic operators "
-            "are responsible for waste from their activities. Beach cleaning is assigned to "
-            "concessionaires or the maritime authority.\n\n"
-            "Prohibited in bathing zones: use of glass and plastic packaging except in licensed "
-            "catering establishments."
-        )),
-        ("Fishing and aquaculture (Art. 47)", (
-            "Fishers and aquaculturists must correctly manage waste with special focus on all "
-            "types of plastics including fishing ropes, nets, buoys, lines, hooks, equipment and "
-            "vessel debris, and keep fishing camps and mariculture infrastructure clean."
-        )),
-        ("Sanctions (Arts. 51–53, Annex II)", (
-            "Violations are punished with fines (measured in minimum public-sector salaries), "
-            "mandatory restoration or indemnification, and accessory penalties including equipment "
-            "seizure and licence suspension.\n\n"
-            "Waste dumping: 3 minimum salaries. Illegal waste dumps in sensitive ecosystems: "
-            "12 minimum salaries. Glass packaging in bathing zones: 3 salaries and seizure."
-        )),
-        ("Note on plastics", (
-            "The Regulation explicitly mentions plastics in two provisions: the ban on plastic "
-            "packaging in bathing zones (Art. 50.1h) and the fisher/aquaculturist obligation to "
-            "manage plastic waste including fishing gear (Art. 47). Broader waste prohibitions "
-            "and beach cleaning rules address coastal plastic leakage indirectly."
+        ("Chapter VI — Prohibitions, Fiscalization and Sanctions", [
+            ("Prohibitions (Art. 50)", (
+                "Prohibited throughout coastal zones and beaches:\n"
+                "a) sand extraction except return to beach;\n"
+                "b) dumping, abandoning, burying or burning any solid or liquid waste;\n"
+                "c) destruction of sensitive ecosystems;\n"
+                "d) creating dumps in beach, dune or mangrove ecosystems;\n"
+                "h) use of glass and plastic packaging in bathing zones except licensed catering;\n"
+                "m) vehicle traffic on dunes and beach sand except as legally permitted;\n"
+                "and other conduct affecting safety, signage and environmental quality."
+            )),
+            ("Fiscalization (Arts. 48–49)", (
+                "Coordinated fiscalization by all competent entities; officials may draw up notices "
+                "and seize materials; community agents may assist. All users and operators must "
+                "cooperate with fiscalization agents."
+            )),
+            ("Sanctions (Arts. 51–53, Annex II highlights)", (
+                "Fines measured in minimum public-sector salaries, plus mandatory restoration/"
+                "indemnification; criminal sanctions may also apply. Accessory penalties include "
+                "equipment seizure, licence suspension (up to 2 years), compulsory removal and "
+                "establishment closure.\n\n"
+                "Annex II selected fines:\n"
+                "— Waste dumping: 3 minimum salaries;\n"
+                "— Illegal dumps in sensitive ecosystems: 12 salaries;\n"
+                "— Glass packaging in bathing zones: 3 salaries and seizure (Art. 50.1h also covers "
+                "plastic packaging);\n"
+                "— Economic operator non-compliance: 2–6 salaries;\n"
+                "— Payment deadline: 20 days."
+            )),
+        ]),
+        ("Note on Plastics", (
+            "Plastics are explicitly mentioned in Art. 50.1h (bathing-zone packaging ban) and Art. 47 "
+            "(fishing/aquaculture plastic waste including gear). The zero-waste principle (Art. 4f) "
+            "and waste dumping prohibition (Art. 50.1b) address coastal plastic leakage more broadly. "
+            "Operational waste services link to Decree 94/2014 and POEM action plans."
         )),
     ]
 
-    for heading, body in sections:
+    for heading, content in sections:
         add_heading(doc, heading, level=1)
-        add_para(doc, body)
+        if isinstance(content, str):
+            add_para(doc, content)
+        else:
+            for subheading, body in content:
+                add_heading(doc, subheading, level=2)
+                add_para(doc, body)
 
     doc.add_page_break()
     add_heading(doc, "4P Index Coding Summary", level=1)
