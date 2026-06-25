@@ -140,7 +140,7 @@ INSTRUMENTS = [
             'NO: "Stoffer som fremstilles eller importeres i mengder på 1 tonn eller mer per år … skal registreres" '
             '(REACH art. 6) / '
             'EN: "Substances manufactured or imported in quantities of 1 tonne or more per year … shall be '
-            "registered\" (REACH Art. 6)"
+            'registered" (REACH Art. 6)'
         ),
         "comments": "Core REACH registration duty; mandatory (skal registreres).",
     },
