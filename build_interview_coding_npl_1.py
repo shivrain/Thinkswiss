@@ -17,13 +17,29 @@ LIGHT_GREEN = "E2EFDA"
 ORANGE = "FCE4D6"
 WHITE = "FFFFFF"
 
+STAKEHOLDER = {
+  "Interview ID": "NPL_1",
+  "Country": "NEPAL",
+  "Coded actor type": "governmental",
+  "Likely affiliation": "Department of Environment / Ministry of Forests and Environment (federal)",
+  "Role in plastic governance": "National policy design, monitoring of producers/markets, awareness campaigns, SWM Act revision",
+  "Perspective": "Insider — describes measures as 'we' (government actor implementing national plastic policy)",
+  "Confidence": "High for governmental coding; see RSCT note below",
+  "RSCT note": (
+    "Page 1 contains RSCT cooperative profile notes (est. 1991, 200+ cooperatives, "
+    "grassroots loans, recently urban plastics). This does not match the interview "
+    "voice in Themes A–D, which is clearly a federal ministry/department official. "
+    "RSCT notes are treated as misplaced interviewer notes, not the coded stakeholder."
+  ),
+}
+
 CODING = {
   "Country": "NPL",
   "Country name": "NEPAL",
   "ID": "NPL_1",
   "Actortype": "governmental",
   "Problem_awareness_pop": "medium",
-  "Problem_awareness_pol": "NA",
+  "Problem_awareness_pol": "low",
   "Problem_severity": "high",
   "Problem_littering": "yes",
   "Problem_consumption": "yes",
@@ -32,7 +48,7 @@ CODING = {
   "Problem_production": "yes",
   "Problem_alternatives": "yes",
   "Problem_waste_segregation": "no",
-  "Problem_import": "no",
+  "Problem_import": "yes",
   "Impacts": "water, cities, biodiversity, health, agriculture",
   "Governance": "yes",
   "Relevance_international_pol": "no",
@@ -63,7 +79,7 @@ CODING = {
   "Pol_education": "no",
   "Pol_capacity": "no",
   "Pol_RD": "no",
-  "Pol_tax": "yes",
+  "Pol_tax": "no",
   "Pol_ban": "yes",
   "Pol_subsitutes": "yes",
   "Pol_clean_up": "no",
@@ -75,14 +91,14 @@ CODING = {
   "Sol_responsibilities": "yes",
   "Sol_epr": "yes",
   "Sol_awarness": "yes",
-  "Sol_segregation": "yes",
+  "Sol_segregation": "no",
   "Sol_upcycling": "no",
   "Sol_recycling": "yes",
   "Sol_education": "yes",
   "Sol_capacity": "no",
   "Sol_RD": "yes",
-  "Sol_tax": "yes",
-  "Sol_ban": "yes",
+  "Sol_tax": "no",
+  "Sol_ban": "no",
   "Sol_finance": "yes",
   "Sol_infrastructure": "yes",
   "Sol_subsitutes": "yes",
@@ -168,45 +184,92 @@ CODEBOOK = [
 ]
 
 NOTES = {
-  "Actortype": "Environmental Department / Ministry of Forests and Environment respondent.",
-  "Problem_awareness_pop": "Public is ignorant; people know plastic is a problem but not the full extent.",
-  "Problem_severity": "Serious issue across rivers, lakes, land, forests; microplastics in Himalayan snow.",
-  "Problem_littering": "Blocking sewer systems; leakage into waterways.",
+  "Actortype": (
+    "Federal governmental actor (Department of Environment). Uses first-person "
+    "'we' for policy implementation, ministry-only questions (4.a/4.b), and "
+    "describes Chief Secretary committee oversight."
+  ),
+  "Problem_awareness_pop": (
+    "Public is ignorant; people know plastic is a problem but not the full extent."
+  ),
+  "Problem_awareness_pol": (
+    "Low political priority among decision-makers: 'no political will', "
+    "plastics/waste 'not a priority' and 'stops at major' level."
+  ),
+  "Problem_severity": (
+    "Serious issue across rivers, lakes, land, forests; microplastics in Himalayan snow."
+  ),
+  "Problem_littering": "Blocking sewer systems; leakage into waterways; landfill pressure.",
   "Problem_consumption": "Lots of plastics are produced.",
-  "Problem_recycling": "Inadequate waste management; recycling participation via MRFs discussed.",
+  "Problem_recycling": "Inadequate waste management; limited economically viable recycling for single-use items.",
   "Problem_waste_mgmt": "Waste management for plastics is inadequate.",
   "Problem_production": "High production rates mentioned.",
   "Problem_alternatives": "Biodegradable alternatives limited and costly (~100 NPR/kg more).",
-  "Impacts": "Waterways, urban systems, forests, health (burning/indoor), agriculture gaps in Chitwan.",
+  "Problem_import": (
+    "Import is part of the problem space: ban on production, import, and use of "
+    "bags under 40 microns explicitly targets imported plastics."
+  ),
+  "Impacts": (
+    "Water (rivers/lakes), cities (sewers/urban), biodiversity (forests), "
+    "health (burning/indoor air), agriculture (research gap noted for Chitwan)."
+  ),
   "Coordination_sectoral": "Stakeholders are not collaborating or coordinating.",
-  "Coordination_levels": "Multi-level governance (national, district, municipal) with implementation gaps.",
-  "Federal government": "Department of Environment, Chief Secretary committee, Commerce and Supplies.",
-  "Local government": "Local governments lead waste management.",
+  "Coordination_levels": (
+    "Challenges differ across national, district, and municipal levels; "
+    "SWM Act revision needed for federal governance alignment."
+  ),
+  "Federal government": (
+    "Department of Environment, Chief Secretary committee, Department of Commerce and Supplies."
+  ),
+  "Local government": "Local governments lead waste management and collection.",
   "Private_sector": "Private companies and contractors in collection/recycling.",
   "Civil_society": "NGOs operate recovery facilities and awareness campaigns.",
-  "Science": "Not much research on plastic effects; more research needed.",
-  "Households": "Household waste collection with 300 NPR/month incentive for reduction.",
-  "Private_companies(hotels, shops, etc.)": "Private contractors and market monitoring.",
+  "Science": (
+    "Cites studies on microplastics; notes limited research on health/environmental effects."
+  ),
+  "Households": (
+    "Household waste reduction discussed; 300 NPR/month collector incentive mentioned "
+    "(household incentive, not a product tax)."
+  ),
+  "Private_companies(hotels, shops, etc.)": (
+    "Private contractors, plastic producers, and markets monitored by Department of Environment."
+  ),
   "Monitoring": "Implementation is always the problem; monitoring cited as barrier.",
-  "Financial_resources": "Funds exist but are not released; earmarked funds may be frozen.",
+  "Financial_resources": (
+    "Funds exist but are not released; earmarked funds may be frozen if unused."
+  ),
   "Research": "Limited knowledge and research on health/environmental effects.",
+  "Infrastructure": (
+    "Facilities exist in at least some contexts ('facility is there'); not coded as a "
+    "primary lack-of-infrastructure barrier."
+  ),
   "Enforcement": "Weak enforcement; cheaper plastics remain in use despite bans.",
   "Pol_import": "Ban on production, import, and use of plastic bags under 40 microns.",
-  "Pol_awarness": "Documentaries, traditional/social media, website materials.",
-  "Pol_tax": "300 NPR/month incentive for households reducing waste.",
+  "Pol_awarness": "Government documentaries, traditional/social media, website materials.",
+  "Pol_tax": (
+    "No levy/tax on specific products coded. The 300 NPR/month measure is a "
+    "household waste-reduction incentive for collectors, not a bag tax/levy."
+  ),
   "Pol_ban": "Ban on bags under 40 microns and plastic decorative flowers.",
-  "Pol_subsitutes": "Biodegradable starch bags discussed as existing alternative.",
-  "Pol_recycling": "Material recovery facilities and recycling to processing units.",
+  "Pol_subsitutes": "Biodegradable starch bags discussed as existing but costly alternative.",
+  "Pol_recycling": "Material recovery facilities send recyclables to processing units.",
   "Pol_waste_collection": "Collection by local governments or private contractors.",
+  "Sol_lead_agency": "High-level committee chaired by Chief Secretary oversees measures.",
+  "Sol_responsibilities": "EPR framed as key missing responsibility mechanism.",
   "Sol_epr": "EPR identified as key gap; no producer responsibility in Nepal.",
   "Sol_awarness": "Need for communication and awareness on how to act.",
+  "Sol_segregation": "Collection/recycling encouraged, but segregation not proposed as a forward solution.",
   "Sol_RD": "R&D needed for affordable alternatives.",
-  "Sol_finance": "Financial support identified in Q10 follow-up.",
-  "Sol_infrastructure": "Infrastructural support identified in Q10 follow-up.",
+  "Sol_ban": (
+    "Bans described as existing policy; forward-looking solutions emphasize EPR, "
+    "R&D, communication, and mitigation/adaptation rather than new bans."
+  ),
+  "Sol_finance": "Financial support identified in Q10.",
+  "Sol_infrastructure": "Infrastructural support identified in Q10.",
   "Sol_subsitutes": "Affordable eco-friendly substitutes needed before behaviour change.",
   "Sol_enforcement": "Enforcement procedures needed alongside bans.",
   "Sol_monitoring": "Monitoring improvements implied from implementation challenges.",
-  "Traditions to build on (free-hand)": "Follow-up asked but no specific tradition recorded in transcript.",
+  "Traditions to build on (free-hand)": "Follow-up asked (Q8) but no specific tradition recorded.",
 }
 
 
@@ -245,7 +308,8 @@ def build_workbook():
   ws.merge_cells("A2:D2")
   meta = ws["A2"]
   meta.value = (
-    "Interview: NPL_1  |  Country: NEPAL  |  Actor: Environmental Department  |  "
+    "Interview: NPL_1  |  Country: NEPAL  |  Actor: Federal governmental "
+    "(Department of Environment / Ministry)  |  "
     "Source: Interview Guideline — Environmental Department (June 2023)"
   )
   meta.fill = hfill(MID_BLUE)
@@ -309,6 +373,19 @@ def build_workbook():
     ref.cell(row=idx, column=2, value=definition).alignment = WRAP_ALIGN
   ref.column_dimensions["A"].width = 34
   ref.column_dimensions["B"].width = 70
+
+  stakeholder = wb.create_sheet("Stakeholder Analysis")
+  stakeholder.merge_cells("A1:B1")
+  stakeholder["A1"].value = "Stakeholder Analysis — NPL_1"
+  stakeholder["A1"].fill = hfill(DARK_BLUE)
+  stakeholder["A1"].font = hfont(bold=True, size=12, color=WHITE)
+  stakeholder["A1"].alignment = CENTER_ALIGN
+  for idx, (key, value) in enumerate(STAKEHOLDER.items(), start=3):
+    stakeholder.cell(row=idx, column=1, value=key).font = hfont(bold=True)
+    cell = stakeholder.cell(row=idx, column=2, value=value)
+    cell.alignment = WRAP_ALIGN
+  stakeholder.column_dimensions["A"].width = 28
+  stakeholder.column_dimensions["B"].width = 90
 
   wb.save(OUTPUT_PATH)
   print(f"Saved {OUTPUT_PATH}")
