@@ -1,7 +1,8 @@
 """Generate interview coding spreadsheet for Nepal interview NPL_1.
 
-Coding follows the Overview All Interviews codebook and is based on the
-Environmental Department interview guideline (June 2023).
+Coding follows the Overview All Interviews codebook and is verified against:
+- Notes1_Department_of_environment (primary interview notes, 23 June 2025)
+- Notes2_Department_of_environment / interview guideline (supplementary notes)
 """
 
 import openpyxl
@@ -17,20 +18,28 @@ LIGHT_GREEN = "E2EFDA"
 ORANGE = "FCE4D6"
 WHITE = "FFFFFF"
 
+SOURCES = [
+  ("Notes1 — Department of Environment (primary)", "Interview no. 5, 23 June 2025, 3:50–4:40pm"),
+  ("Notes2 — Department of Environment (supplementary)", "Interview guideline with interviewer bullet notes"),
+  ("Codebook", "Overview All Interviews — NEW Codebook"),
+]
+
 STAKEHOLDER = {
   "Interview ID": "NPL_1",
   "Country": "NEPAL",
+  "Interview number": "5",
+  "Interview date": "23 June 2025 (3:50pm – 4:40pm)",
+  "Affiliation": "Department of Environment, Ministry of Forests and Environment",
+  "Interviewee": "Deepak Diwali — Deputy Director, Pollution Control (air and plastics)",
   "Coded actor type": "governmental",
-  "Likely affiliation": "Department of Environment / Ministry of Forests and Environment (federal)",
-  "Role in plastic governance": "National policy design, monitoring of producers/markets, awareness campaigns, SWM Act revision",
-  "Perspective": "Insider — describes measures as 'we' (government actor implementing national plastic policy)",
-  "Confidence": "High for governmental coding; see RSCT note below",
-  "RSCT note": (
-    "Page 1 contains RSCT cooperative profile notes (est. 1991, 200+ cooperatives, "
-    "grassroots loans, recently urban plastics). This does not match the interview "
-    "voice in Themes A–D, which is clearly a federal ministry/department official. "
-    "RSCT notes are treated as misplaced interviewer notes, not the coded stakeholder."
+  "Role in plastic governance": (
+    "Federal monitoring of plastic producers/markets; policy instruments (import "
+    "restrictions, bans); SWM Act revision; coordination with local governments "
+    "and Department of Commerce and Supplies"
   ),
+  "Perspective": "Insider — describes DoE monitoring role, planned grants, and national policy instruments",
+  "Verification status": "Confirmed Environmental Department / Ministry interview",
+  "Source documents": "Notes1 (primary), Notes2 (supplementary)",
 }
 
 CODING = {
@@ -47,24 +56,24 @@ CODING = {
   "Problem_waste_mgmt": "yes",
   "Problem_production": "yes",
   "Problem_alternatives": "yes",
-  "Problem_waste_segregation": "no",
+  "Problem_waste_segregation": "yes",
   "Problem_import": "yes",
-  "Impacts": "water, cities, biodiversity, health, agriculture",
+  "Impacts": "water, health",
   "Governance": "yes",
   "Relevance_international_pol": "no",
   "Coordination_sectoral": "yes",
   "Coordination_levels": "yes",
-  "Unclear_responsibilities": "no",
+  "Unclear_responsibilities": "yes",
   "Actors": "yes",
   "Federal government": "yes",
   "Provincial government": "no",
   "Local government": "yes",
   "Students": "no",
   "Private_sector": "yes",
-  "Civil_society": "yes",
+  "Civil_society": "no",
   "Science": "yes",
   "Households": "yes",
-  "Education institutions": "no",
+  "Education institutions": "yes",
   "Private_companies(hotels, shops, etc.)": "yes",
   "Implementation issues": "yes",
   "Monitoring": "yes",
@@ -76,7 +85,7 @@ CODING = {
   "Pol_epr": "no",
   "Pol_import": "yes",
   "Pol_awarness": "yes",
-  "Pol_education": "no",
+  "Pol_education": "yes",
   "Pol_capacity": "no",
   "Pol_RD": "no",
   "Pol_tax": "no",
@@ -91,11 +100,11 @@ CODING = {
   "Sol_responsibilities": "yes",
   "Sol_epr": "yes",
   "Sol_awarness": "yes",
-  "Sol_segregation": "no",
+  "Sol_segregation": "yes",
   "Sol_upcycling": "no",
   "Sol_recycling": "yes",
   "Sol_education": "yes",
-  "Sol_capacity": "no",
+  "Sol_capacity": "yes",
   "Sol_RD": "yes",
   "Sol_tax": "no",
   "Sol_ban": "no",
@@ -185,91 +194,144 @@ CODEBOOK = [
 
 NOTES = {
   "Actortype": (
-    "Federal governmental actor (Department of Environment). Uses first-person "
-    "'we' for policy implementation, ministry-only questions (4.a/4.b), and "
-    "describes Chief Secretary committee oversight."
+    "Deepak Diwali, Deputy Director (Pollution Control — air and plastics), "
+    "Department of Environment. Interview no. 5, 23 June 2025."
   ),
   "Problem_awareness_pop": (
-    "Public is ignorant; people know plastic is a problem but not the full extent."
+    "Notes1 Q10: public needs awareness on health impacts; behavioural/mindset change "
+    "needed. Notes2: people know but not the full extent."
   ),
   "Problem_awareness_pol": (
-    "Low political priority among decision-makers: 'no political will', "
-    "plastics/waste 'not a priority' and 'stops at major' level."
+    "Notes2: no political will; plastics/waste not a priority at decision-maker level."
   ),
   "Problem_severity": (
-    "Serious issue across rivers, lakes, land, forests; microplastics in Himalayan snow."
+    "Notes1: problem everywhere; rivers; high leakage in water bodies; microplastics pollution."
   ),
-  "Problem_littering": "Blocking sewer systems; leakage into waterways; landfill pressure.",
-  "Problem_consumption": "Lots of plastics are produced.",
-  "Problem_recycling": "Inadequate waste management; limited economically viable recycling for single-use items.",
-  "Problem_waste_mgmt": "Waste management for plastics is inadequate.",
-  "Problem_production": "High production rates mentioned.",
-  "Problem_alternatives": "Biodegradable alternatives limited and costly (~100 NPR/kg more).",
+  "Problem_littering": (
+    "Notes2: landfills full, blocking sewer systems. Notes1: leakage into water bodies."
+  ),
+  "Problem_consumption": "Notes2: lots of plastics produced.",
+  "Problem_recycling": (
+    "Notes1: single-use plastics not economically viable to recycle; MRFs to recycling units."
+  ),
+  "Problem_waste_mgmt": (
+    "Notes1: lack of plastic waste management; high leakage in water bodies."
+  ),
+  "Problem_production": "Notes2: high production rates.",
+  "Problem_alternatives": (
+    "Notes1: non-availability of alternative options; biodegradable plastics costly."
+  ),
+  "Problem_waste_segregation": (
+    "Notes1 Q10: need for separate collection and segregation of plastics implied as gap."
+  ),
   "Problem_import": (
-    "Import is part of the problem space: ban on production, import, and use of "
-    "bags under 40 microns explicitly targets imported plastics."
+    "Notes1: restriction on import and use of plastic less than 40 microns in place."
   ),
   "Impacts": (
-    "Water (rivers/lakes), cities (sewers/urban), biodiversity (forests), "
-    "health (burning/indoor air), agriculture (research gap noted for Chitwan)."
+    "Notes1: rivers/water bodies, microplastics. Notes1 Q10: health impacts. "
+    "Notes2: burning/indoor health, agriculture research gap (Chitwan)."
   ),
-  "Coordination_sectoral": "Stakeholders are not collaborating or coordinating.",
+  "Coordination_sectoral": "Notes2: stakeholders not collaborating or coordinating.",
   "Coordination_levels": (
-    "Challenges differ across national, district, and municipal levels; "
-    "SWM Act revision needed for federal governance alignment."
+    "Notes1 Q10: central govt policy vs LG implementation; municipals manage landfills, "
+    "DoE monitors markets — multi-level split."
+  ),
+  "Unclear_responsibilities": (
+    "Notes1 Q5: LG responsible on ground but DoE role questioned; municipals manage "
+    "landfills but DoE does not monitor them."
   ),
   "Federal government": (
-    "Department of Environment, Chief Secretary committee, Department of Commerce and Supplies."
+    "Department of Environment, Department of Commerce and Supplies, central government policy."
   ),
-  "Local government": "Local governments lead waste management and collection.",
-  "Private_sector": "Private companies and contractors in collection/recycling.",
-  "Civil_society": "NGOs operate recovery facilities and awareness campaigns.",
-  "Science": (
-    "Cites studies on microplastics; notes limited research on health/environmental effects."
+  "Local government": (
+    "Notes1: LG responsible on ground; municipals manage landfills; LG monitors markets."
   ),
+  "Private_sector": "Notes1: recycling industry; formally established industries monitored.",
+  "Science": "Notes2: not much research on effects of plastics; more research needed.",
   "Households": (
-    "Household waste reduction discussed; 300 NPR/month collector incentive mentioned "
-    "(household incentive, not a product tax)."
+    "Notes1 Q9–10: waste producers; implementation at household level; "
+    "Notes2: 300 NPR household incentive."
+  ),
+  "Education institutions": (
+    "Notes1 Q10: schools mentioned for implementation; kids already taught about plastics."
   ),
   "Private_companies(hotels, shops, etc.)": (
-    "Private contractors, plastic producers, and markets monitored by Department of Environment."
+    "Notes1: plastic producers monitored; informal industries harder to surveil."
   ),
-  "Monitoring": "Implementation is always the problem; monitoring cited as barrier.",
+  "Monitoring": (
+    "Notes1: lack of surveillance; monitors only 2–3 times/year; too few staff. "
+    "Notes2: implementation/monitoring is the problem."
+  ),
   "Financial_resources": (
-    "Funds exist but are not released; earmarked funds may be frozen if unused."
+    "Notes2: funds exist but not released; earmarked funds frozen if unused. "
+    "Notes1: grant/subsidy provisions being developed for industry shift."
   ),
-  "Research": "Limited knowledge and research on health/environmental effects.",
+  "Research": "Notes2: not much research/knowledge on plastic effects.",
   "Infrastructure": (
-    "Facilities exist in at least some contexts ('facility is there'); not coded as a "
-    "primary lack-of-infrastructure barrier."
+    "Notes2: facilities exist in some contexts. Notes1: MRFs in use — not coded as "
+    "primary infrastructure gap."
   ),
-  "Enforcement": "Weak enforcement; cheaper plastics remain in use despite bans.",
-  "Pol_import": "Ban on production, import, and use of plastic bags under 40 microns.",
-  "Pol_awarness": "Government documentaries, traditional/social media, website materials.",
+  "Enforcement": (
+    "Notes1: no penalty in place; lack of surveillance. Notes1/2: weak enforcement."
+  ),
+  "Pol_import": "Notes1: restriction on import and use of plastic <40 microns.",
+  "Pol_awarness": "Notes1 Q10: awareness campaigns and advocacy through documentaries.",
+  "Pol_education": "Notes1 Q10: education in schools; kids taught about plastics.",
   "Pol_tax": (
-    "No levy/tax on specific products coded. The 300 NPR/month measure is a "
-    "household waste-reduction incentive for collectors, not a bag tax/levy."
+    "No product levy/tax coded. Notes1: planned grant/subsidy for industry shift "
+    "(financial incentive, not a bag tax)."
   ),
-  "Pol_ban": "Ban on bags under 40 microns and plastic decorative flowers.",
-  "Pol_subsitutes": "Biodegradable starch bags discussed as existing but costly alternative.",
-  "Pol_recycling": "Material recovery facilities send recyclables to processing units.",
-  "Pol_waste_collection": "Collection by local governments or private contractors.",
-  "Sol_lead_agency": "High-level committee chaired by Chief Secretary oversees measures.",
-  "Sol_responsibilities": "EPR framed as key missing responsibility mechanism.",
-  "Sol_epr": "EPR identified as key gap; no producer responsibility in Nepal.",
-  "Sol_awarness": "Need for communication and awareness on how to act.",
-  "Sol_segregation": "Collection/recycling encouraged, but segregation not proposed as a forward solution.",
-  "Sol_RD": "R&D needed for affordable alternatives.",
-  "Sol_ban": (
-    "Bans described as existing policy; forward-looking solutions emphasize EPR, "
-    "R&D, communication, and mitigation/adaptation rather than new bans."
+  "Pol_ban": "Notes1: ban on plastic flowers and bags (<40 microns).",
+  "Pol_subsitutes": (
+    "Notes1: biodegradable plastics produced; govt exploring subsidies for "
+    "environment-friendly alternatives."
   ),
-  "Sol_finance": "Financial support identified in Q10.",
-  "Sol_infrastructure": "Infrastructural support identified in Q10.",
-  "Sol_subsitutes": "Affordable eco-friendly substitutes needed before behaviour change.",
-  "Sol_enforcement": "Enforcement procedures needed alongside bans.",
-  "Sol_monitoring": "Monitoring improvements implied from implementation challenges.",
-  "Traditions to build on (free-hand)": "Follow-up asked (Q8) but no specific tradition recorded.",
+  "Pol_recycling": (
+    "Notes1: MRFs and recycling units; circular economy discussed."
+  ),
+  "Pol_waste_collection": (
+    "Notes1 Q10: collection system with separate collection needed/implied as measure."
+  ),
+  "Sol_lead_agency": (
+    "Notes1: need for a specific plastics management guideline (national framework)."
+  ),
+  "Sol_responsibilities": (
+    "Notes1: EPR / polluters-pay principle; clarify DoE monitoring role."
+  ),
+  "Sol_epr": "Notes1: no EPR in Nepal; polluters-pay principle recommended.",
+  "Sol_awarness": (
+    "Notes1 Q10: awareness on health impacts; behavioural/mindset change needed."
+  ),
+  "Sol_segregation": (
+    "Notes1 Theme D & Q10: segregation of plastics; separate collection; "
+    "systematic circulation/circular economy."
+  ),
+  "Sol_recycling": "Notes1: circular economy; MRFs to recycling units.",
+  "Sol_education": (
+    "Notes1 Q9–10: education for plastic producers; schools; public learning on health impacts."
+  ),
+  "Sol_capacity": (
+    "Notes1: inadequate monitoring due to too few staff (only 2–3 inspections/year)."
+  ),
+  "Sol_RD": (
+    "Notes2: R&D for alternatives needed. Notes1: need environment-friendly plastics."
+  ),
+  "Sol_finance": (
+    "Notes1: incentives for alternatives; planned grants to shift industry from 40-micron plastics."
+  ),
+  "Sol_infrastructure": (
+    "Notes1 Q10: collection system, separate collection, biodegradable waste to manure."
+  ),
+  "Sol_subsitutes": (
+    "Notes1: need affordable eco-friendly alternatives; subsidy for biodegradable products."
+  ),
+  "Sol_enforcement": "Notes1: no penalty in place; need stronger enforcement.",
+  "Sol_monitoring": (
+    "Notes1: strengthen DoE monitoring; increase frequency beyond 2–3 times/year."
+  ),
+  "Traditions to build on (free-hand)": (
+    "Notes2 follow-up asked; Notes1 cites Bhaktapur as example only — no tradition coded."
+  ),
 }
 
 
@@ -308,9 +370,9 @@ def build_workbook():
   ws.merge_cells("A2:D2")
   meta = ws["A2"]
   meta.value = (
-    "Interview: NPL_1  |  Country: NEPAL  |  Actor: Federal governmental "
-    "(Department of Environment / Ministry)  |  "
-    "Source: Interview Guideline — Environmental Department (June 2023)"
+    "Interview: NPL_1 (no. 5)  |  Country: NEPAL  |  "
+    "Department of Environment — Deepak Diwali, Deputy Director  |  "
+    "23 June 2025  |  Verified against Notes1 & Notes2"
   )
   meta.fill = hfill(MID_BLUE)
   meta.font = hfont(size=9, color=WHITE)
@@ -386,6 +448,18 @@ def build_workbook():
     cell.alignment = WRAP_ALIGN
   stakeholder.column_dimensions["A"].width = 28
   stakeholder.column_dimensions["B"].width = 90
+
+  sources = wb.create_sheet("Sources")
+  sources.merge_cells("A1:B1")
+  sources["A1"].value = "Source Documents Used for Verification"
+  sources["A1"].fill = hfill(DARK_BLUE)
+  sources["A1"].font = hfont(bold=True, size=12, color=WHITE)
+  sources["A1"].alignment = CENTER_ALIGN
+  for idx, (doc, detail) in enumerate(SOURCES, start=3):
+    sources.cell(row=idx, column=1, value=doc).font = hfont(bold=True)
+    sources.cell(row=idx, column=2, value=detail).alignment = WRAP_ALIGN
+  sources.column_dimensions["A"].width = 42
+  sources.column_dimensions["B"].width = 60
 
   wb.save(OUTPUT_PATH)
   print(f"Saved {OUTPUT_PATH}")
