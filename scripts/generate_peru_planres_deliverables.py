@@ -1044,6 +1044,10 @@ def build_word(path: Path) -> None:
     doc.save(path)
 
 
+BRANCH = "cursor/peru-planres-4p-index-d350"
+REPO_RAW = f"https://github.com/shivrain/Thinkswiss/raw/{BRANCH}"
+
+
 def main() -> None:
     excel = OUTPUT_DIR / "Peru_PLANRES_4P_Index_Coding.xlsx"
     word = OUTPUT_DIR / "Peru_PLANRES_English_Translation.docx"
@@ -1052,6 +1056,10 @@ def main() -> None:
     print(f"Created: {excel}")
     print(f"Created: {word}")
     print(f"Instruments: {len(INSTRUMENTS)}")
+    print()
+    print("Download links:")
+    print(f"  Excel: {REPO_RAW}/output/peru-planres/Peru_PLANRES_4P_Index_Coding.xlsx")
+    print(f"  Word:  {REPO_RAW}/output/peru-planres/Peru_PLANRES_English_Translation.docx")
 
 
 if __name__ == "__main__":
