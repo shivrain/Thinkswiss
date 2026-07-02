@@ -1,22 +1,22 @@
 # Thinkswiss
 
-## Peru — DS 002-2024-MINAM (PLANRES / Art. 9 Amendment)
+## Peru — Ley 32212 (DL 1278 & Law 26793 Solid-Waste Reform)
 
-Supreme decree amending Article 9 of the DL 1278 regulation to update the PLANRES national solid-waste plan framework, coded for the 4P Index.
+Broad congressional reform strengthening solid-waste management, coded for the 4P Index.
 
 ### Downloads
 
-- **4P Index coding (Excel):** [Peru_DS_002_2024_MINAM_4P_Index_Coding.xlsx](https://github.com/shivrain/Thinkswiss/raw/cursor/peru-ds-002-2024-4p-index-d350/output/peru-ds-002-2024-minam/Peru_DS_002_2024_MINAM_4P_Index_Coding.xlsx)
-- **English translation (Word):** [Peru_DS_002_2024_MINAM_English_Translation.docx](https://github.com/shivrain/Thinkswiss/raw/cursor/peru-ds-002-2024-4p-index-d350/output/peru-ds-002-2024-minam/Peru_DS_002_2024_MINAM_English_Translation.docx)
+- **4P Index coding (Excel):** [Peru_Ley_32212_4P_Index_Coding.xlsx](https://github.com/shivrain/Thinkswiss/raw/cursor/peru-ley-32212-4p-index-d350/output/peru-ley-32212/Peru_Ley_32212_4P_Index_Coding.xlsx)
+- **English translation (Word):** [Peru_Ley_32212_English_Translation.docx](https://github.com/shivrain/Thinkswiss/raw/cursor/peru-ley-32212-4p-index-d350/output/peru-ley-32212/Peru_Ley_32212_English_Translation.docx)
 
 ### Source
 
-- MINAM: https://www.gob.pe/institucion/minam/normas-legales/5425206-002-2024-minam
+- El Peruano: https://busquedas.elperuano.pe/dispositivo/NL/2356497-1
 
 ### Regenerate
 
 ```bash
-python3 scripts/generate_peru_ds002_2024_deliverables.py
+python3 scripts/generate_peru_ley32212_deliverables.py
 ```
 
 ### Format
