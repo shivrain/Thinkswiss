@@ -1,22 +1,22 @@
 # Thinkswiss
 
-## Peru — Ley 32212 (DL 1278 & Law 26793 Solid-Waste Reform)
+## Peru — DS 003-2025-MINAM (National Circular Economy Roadmap to 2030)
 
-Broad congressional reform strengthening solid-waste management, coded for the 4P Index.
+Supreme decree approving Peru's National Circular Economy Roadmap to 2030, coded for the 4P Index.
 
 ### Downloads
 
-- **4P Index coding (Excel):** [Peru_Ley_32212_4P_Index_Coding.xlsx](https://github.com/shivrain/Thinkswiss/raw/cursor/peru-ley-32212-4p-index-d350/output/peru-ley-32212/Peru_Ley_32212_4P_Index_Coding.xlsx)
-- **English translation (Word):** [Peru_Ley_32212_English_Translation.docx](https://github.com/shivrain/Thinkswiss/raw/cursor/peru-ley-32212-4p-index-d350/output/peru-ley-32212/Peru_Ley_32212_English_Translation.docx)
+- **4P Index coding (Excel):** [Peru_DS_003_2025_MINAM_4P_Index_Coding.xlsx](https://github.com/shivrain/Thinkswiss/raw/cursor/peru-ds-003-2025-4p-index-d350/output/peru-ds-003-2025-minam/Peru_DS_003_2025_MINAM_4P_Index_Coding.xlsx)
+- **English translation (Word):** [Peru_DS_003_2025_MINAM_English_Translation.docx](https://github.com/shivrain/Thinkswiss/raw/cursor/peru-ds-003-2025-4p-index-d350/output/peru-ds-003-2025-minam/Peru_DS_003_2025_MINAM_English_Translation.docx)
 
 ### Source
 
-- El Peruano: https://busquedas.elperuano.pe/dispositivo/NL/2356497-1
+- MINAM: https://www.gob.pe/institucion/minam/normas-legales/6507211-003-2025-minam
 
 ### Regenerate
 
 ```bash
-python3 scripts/generate_peru_ley32212_deliverables.py
+python3 scripts/generate_peru_ds003_2025_deliverables.py
 ```
 
 ### Format
