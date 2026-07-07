@@ -2,9 +2,10 @@
 
 ## Lei n.º 10/1999 — Lei de Base do Ambiente / Law No. 10/1999 — Basic Environmental Law
 
-`STP_Lei-10-1999_Basic-Environmental-Law_4P-Index.csv` contains the Plastic Pollution
-Policy Index (4P Index) coding of São Tomé and Príncipe's 1999 Basic Environmental Law
-(Framework Law, National Assembly), following the coding scheme in the task brief:
+`STP_Lei-10-1999_Basic-Environmental-Law_4P-Index.csv` (and the equivalent
+`.xlsx` workbook of the same name) contain the Plastic Pollution Policy Index (4P
+Index) coding of São Tomé and Príncipe's 1999 Basic Environmental Law (Framework Law,
+National Assembly), following the coding scheme in the task brief:
 
 - Columns A–O (policy-level) are identical across all rows.
 - Columns P–W (instrument-level) vary per row; one row per distinct policy instrument
