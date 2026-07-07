@@ -23,3 +23,17 @@ amendment has been identified. This is a general environmental framework law wit
 explicit reference to plastics; instruments were selected and scored under the
 plastics-relevance filter criteria (b) and (c) — see Column W for justification and
 flagged uncertainties on each row.
+
+## Full English translation
+
+`Lei_10-1999_Basic_Environmental_Law_EN_Translation.docx` contains a comprehensive,
+article-by-article English translation of the full text of Lei n.º 10/1999 — Lei de
+Base do Ambiente / Law No. 10/1999 — Basic Environmental Law, covering all 11 chapters
+and 67 articles (General Provisions; Fundamental Principles; Specific Principles;
+Objectives and Measures; Concepts; Environmental Components; Instruments and Mechanisms
+of Environmental Policy; Responsible Bodies; Rights and Duties of Citizens and NGOs;
+Ecological Offences; Additional and Transitional Provisions; Final Provisions), plus a
+translator's note flagging minor numbering inconsistencies present in the original
+Portuguese source. This is a working translation for policy-analysis purposes, not an
+official/certified legal translation — the original Portuguese text remains the sole
+authoritative version.
