@@ -10,10 +10,14 @@ coding scheme in the task brief:
 - Columns A–O (policy-level) are identical across all rows.
 - Columns P–W (instrument-level) vary per row; one row per distinct policy instrument
   that passes the plastics-relevance filter.
-- Columns O (`policy_score`) and V (`instrument_score`) are left as `[auto]` per the
-  instructions and are not computed manually.
+- Columns O (`policy_score`) and V (`instrument_score`) are calculated numeric values:
+  O = average(G, I, K, M, P) and V = average(P, T), computed per row (rounded to 3
+  decimal places).
+- All score columns (E, G, I, K, M, P, S, T, O, V) contain numbers only. Any
+  explanation of the instrument-type classification (Column P) is given at the start
+  of Column W (comments), e.g. "Instrument type: Regulatory (1)."
 - Wherever original-language (Portuguese) text is quoted, an English translation is
-  provided after a `/` separator, including for the policy name itself.
+  provided after a slash (/) separator, including for the policy name itself.
 
 This is an executive decree (approved by the Council of Ministers, promulgated by the
 President on 3 August 1999; no subsequent amendment identified) implementing Lei n.º
