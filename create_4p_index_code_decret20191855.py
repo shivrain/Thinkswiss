@@ -63,11 +63,8 @@ POLICY = {
         "control and support to territorial collectivities for waste collection and treatment — cross-cutting institutional mandate without "
         "plastic-specific measures.",
     ),
-    "policy_target": 0.50,
-    "policy_target_text": (
-        f"Art. 1: {q('veille environnementale, de lutte contre les pollutions et de protection de la nature', 'environmental monitoring, pollution control and nature protection')}; "
-        f"Art. 1: {q('aide les collectivités territoriales à faire face à la collecte des déchets et il en assure le traitement', 'helps territorial collectivities with waste collection and ensures its treatment')}."
-    ),
+    "policy_target": 0,
+    "policy_target_text": "",
     "policy_type": 0.75,
     "policy_type_justification": bi(
         "Décret présidentiel du 7 novembre 2019 fixant les attributions ministérielles (remplace le décret n° 2019-975). "
@@ -77,202 +74,122 @@ POLICY = {
     ),
     "policy_integration": 1.0,
     "policy_sectors_list": bi(
-        "environnement, développement durable, pollution, biodiversité, forêts, chasse, climat, collectivités territoriales, déchets, écotourisme",
-        "environment, sustainable development, pollution, biodiversity, forests, hunting, climate, local government, waste, ecotourism",
+        "waste management, municipalities, industry, fisheries, tourism, water, environment",
+        "waste management, municipalities, industry, fisheries, tourism, water, environment",
     ),
-    "policy_circularity": 0.25,
+    "policy_circularity": 0.50,
     "policy_lifecycle_phases_list": bi(
-        "collecte, traitement, gouvernance",
-        "collection, treatment, governance",
+        "disposal, environmental leakage",
+        "disposal, environmental leakage",
     ),
     "policy_budget": 0,
-    "policy_budget_text": (
-        f"No budget allocation in attributions decree; ministerial powers exercised through MEDD budget and programmes "
-        f"(DEEC, DREEC, SNDD secretariat, etc.)."
-    ),
+    "policy_budget_text": "",
 }
 
 INSTRUMENTS = [
     {
-        "instrument_type": 0.75,
-        "instrument_lifecycle_stage": "Governance",
+        "instrument_type": 0.20,
+        "instrument_lifecycle_stage": "Environmental leakage",
         "instrument_description": (
             f"Art. 1: MEDD {q('prépare et met en œuvre ladite politique en matière de veille environnementale, de lutte contre les pollutions et de protection de la nature, de la faune et de la flore', 'prepares and implements national policy on environmental monitoring, pollution control and protection of nature, fauna and flora')} "
             f"under Presidential authority."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.75,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            f"Art. 2: repeals Décret n° 2019-975 of 29 May 2019; Art. 3: MEDD executes decree; published JO. Superseded by later cabinet-reform attribution decrees."
+            f"Art. 1: MEDD explicitly designated to prepare and implement national environmental policy. "
+            f"No fines/penalties or monitoring requirements in this attributions decree. Superseded by later cabinet-reform attribution decrees."
         ),
         "comments": bi(
-            "Cadre attributions MEDD 2019 — abrogé par réorganisations gouvernementales ultérieures.",
-            "MEDD 2019 attributions framework — superseded by later government reorganisations.",
+            "Gouvernance ministérielle — P=0.20; abrogé par réorganisations gouvernementales ultérieures.",
+            "Ministerial governance — P=0.20; superseded by later government reorganisations.",
         ),
     },
     {
-        "instrument_type": 0.75,
-        "instrument_lifecycle_stage": "Governance",
+        "instrument_type": 0.20,
+        "instrument_lifecycle_stage": "Environmental leakage",
         "instrument_description": (
             f"Art. 1: {q('responsable, sous réserve des compétences dévolues aux collectivités territoriales, de la protection de l environnement', 'responsible, subject to powers of territorial collectivities, for environmental protection')}; "
             f"takes measures to {q('prévenir et lutter contre les pollutions de toute nature', 'prevent and combat pollution of all kinds')}; "
             f"ensures safety of potentially polluting installations."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.75,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            f"Ensures polluting activities do not compromise living environment and environmental quality; complements CGCT local waste competences."
+            f"Art. 1: MEDD designated as responsible authority for environmental protection and pollution prevention. "
+            f"Subject to local-government competences (reservation reduces unconditionality). No enforcement provisions in decree."
         ),
         "comments": bi(
-            "Protection environnement et pollutions — cadre indirect pour pollution plastique.",
-            "Environmental protection and pollution — indirect framework for plastic pollution.",
+            "Prévention pollutions — cadre indirect pollution plastique; T=0.25 (autorité désignée seulement).",
+            "Pollution prevention — indirect plastic-pollution framework; T=0.25 (designated authority only).",
         ),
     },
     {
-        "instrument_type": 0.75,
-        "instrument_lifecycle_stage": "Governance",
+        "instrument_type": 0.20,
+        "instrument_lifecycle_stage": "Production",
         "instrument_description": (
             f"Art. 1: for {q('établissements classés', 'classified facilities')}, MEDD conducts dossier review and signs individual acts in coordination with concerned ministries."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.75,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            f"Links to ICPE/regulatory framework (e.g. Décret 2001-282, NS standards); DEEC/DREEC implementation."
+            f"Art. 1: MEDD designated to instruct dossiers and sign individual acts for classified facilities. "
+            f"Operational permitting via subordinate ICPE framework (e.g. Décret 2001-282); no enforcement in this decree."
         ),
         "comments": bi(
-            "Établissements classés — industries plasturgie/recyclage soumises à autorisation.",
-            "Classified facilities — plastics manufacturing/recycling industries subject to permitting.",
+            "Établissements classés — plasturgie/recyclage indirectement concernés; P=0.20 coordination, pas réglementation.",
+            "Classified facilities — plastics manufacturing/recycling indirectly covered; P=0.20 coordination, not regulation.",
         ),
     },
     {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Collection",
+        "instrument_type": 0.20,
+        "instrument_lifecycle_stage": "Waste management",
         "instrument_description": (
             f"Art. 1: {q('aide les collectivités territoriales à faire face à la collecte des déchets et il en assure le traitement', 'helps territorial collectivities cope with waste collection and ensures its treatment')}."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.50,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            f"Support role to communes/cities under CGCT Art. 205 waste competence; does not replace local authority responsibilities."
+            f"Art. 1: MEDD designated to support municipalities on waste collection and ensure treatment. "
+            f"Multi-level waste governance (national–municipal); support role under CGCT Art. 205. No enforcement provisions."
         ),
         "comments": bi(
-            "Mandat déchets le plus pertinent pour plastiques — appui collecte/traitement aux communes.",
-            "Most waste-relevant mandate for plastics — support to communes for collection/treatment.",
+            "Instrument le plus pertinent plastiques — coordination déchets collectivités; passe filtre pertinence (c).",
+            "Most plastics-relevant instrument — municipal waste coordination; passes relevance filter (c).",
         ),
     },
     {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Governance",
+        "instrument_type": 0.20,
+        "instrument_lifecycle_stage": "Waste management",
         "instrument_description": (
             f"Art. 1: {q('appuie les initiatives des collectivités territoriales et des mouvements associatifs en matière d environnement', 'supports initiatives of territorial collectivities and civil-society movements on environment')}."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.50,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            f"Enables local environmental/waste programmes and NGO partnerships."
+            f"Art. 1: MEDD designated to support local-government and civil-society environmental initiatives. "
+            f"Enables communal waste/environment programmes; no enforcement or monitoring in decree."
         ),
         "comments": bi(
-            "Appui initiatives locales — cadre pour programmes déchets/plastiques communaux.",
-            "Local initiative support — framework for communal waste/plastic programmes.",
+            "Appui initiatives locales — cadre programmes déchets/plastiques communaux; pertinence borderline.",
+            "Local initiative support — framework for communal waste/plastic programmes; borderline relevance.",
         ),
     },
     {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Governance",
+        "instrument_type": 0.40,
+        "instrument_lifecycle_stage": "Consumption",
         "instrument_description": (
             f"Art. 1: charged with {q('développement de l éducation environnementale', 'development of environmental education')}."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.50,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            f"Supports awareness on pollution, waste and sustainable consumption."
+            f"Art. 1: MEDD designated to develop environmental education. "
+            f"Information/awareness mandate; no enforcement, monitoring or unconditional binding requirements in decree."
         ),
         "comments": bi(
-            "Éducation environnementale — sensibilisation déchets plastiques.",
-            "Environmental education — plastic-waste awareness.",
-        ),
-    },
-    {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Governance",
-        "instrument_description": (
-            f"Art. 1: manages {q('mécanisme de veille et de suivi des tendances de changement de climat et de modification de l état de l environnement', 'monitoring mechanism for climate-change trends and environmental state changes')}."
-        ),
-        "instrument_in_force": 0,
-        "instrument_implementation": 0.75,
-        "instrument_implementation_text": (
-            f"Supports national environmental reporting and climate policy (CDN, SNDD)."
-        ),
-        "comments": bi(
-            "Veille climat/environnement — suivi état de l'environnement.",
-            "Climate/environment monitoring — environmental state tracking.",
-        ),
-    },
-    {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Governance",
-        "instrument_description": (
-            f"Art. 1: preservation of fauna and flora; protects waterways from aquatic plant invasion; authority over "
-            f"{q('parcs nationaux et autres aires protégées', 'national parks and other protected areas')} with public access and high protection."
-        ),
-        "instrument_in_force": 0,
-        "instrument_implementation": 0.75,
-        "instrument_implementation_text": (
-            f"Also: marine flora protection, coastal/estuary erosion; hunting legislation; endangered species and anti-poaching."
-        ),
-        "comments": bi(
-            "Biodiversité et aires protégées — cadre indirect milieux marins/littoraux.",
-            "Biodiversity and protected areas — indirect marine/coastal framework.",
-        ),
-    },
-    {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Governance",
-        "instrument_description": (
-            f"Art. 1: {q('lutte contre la désertification et celle contre les feux de brousse', 'combat desertification and bush fires')}; "
-            f"applies soil protection and regeneration policy; promotes forestry economy with territorial collectivities, reforestation and rational forest use."
-        ),
-        "instrument_in_force": 0,
-        "instrument_implementation": 0.75,
-        "instrument_implementation_text": (
-            f"Water/soil conservation via retention basins and artificial lakes; aquaculture development with Fisheries/Agriculture ministries."
-        ),
-        "comments": bi(
-            "Forêts et sols — hors périmètre plastique direct.",
-            "Forests and soils — outside direct plastic scope.",
-        ),
-    },
-    {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Governance",
-        "instrument_description": (
-            f"Art. 1: represents Senegal at international technical meetings on {q('protection de l environnement, au développement durable, au climat et à la biodiversité', 'environment protection, sustainable development, climate and biodiversity')}; "
-            f"supervises Permanent Secretariat of National Commission on Sustainable Development (SNDD)."
-        ),
-        "instrument_in_force": 0,
-        "instrument_implementation": 0.75,
-        "instrument_implementation_text": (
-            f"Also: ecotourism development with concerned ministers; chairs Superior Council of Hunting and Fishing."
-        ),
-        "comments": bi(
-            "Représentation internationale et SNDD — gouvernance DD.",
-            "International representation and SNDD — SD governance.",
-        ),
-    },
-    {
-        "instrument_type": 0.75,
-        "instrument_lifecycle_stage": "Governance",
-        "instrument_description": (
-            f"Art. 2: {q('Le décret n° 2019-975 du 29 mai 2019 relatif aux attributions du Ministre de l Environnement et du Développement durable est abrogé', 'Decree No. 2019-975 of 29 May 2019 on MEDD powers is repealed')}."
-        ),
-        "instrument_in_force": 0,
-        "instrument_implementation": 1.0,
-        "instrument_implementation_text": (
-            f"2019-1855 was the operative MEDD attributions decree from 7 November 2019 until superseded by later reorganisation."
-        ),
-        "comments": bi(
-            "Remplace décret 2019-975 — chaîne d'abrogation attributions MEDD.",
-            "Replaces Decree 2019-975 — MEDD attributions repeal chain.",
+            "Éducation environnementale — P=0.40 information & voluntary; sensibilisation déchets plastiques borderline.",
+            "Environmental education — P=0.40 information & voluntary; plastic-waste awareness borderline.",
         ),
     },
 ]
