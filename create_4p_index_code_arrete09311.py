@@ -54,8 +54,8 @@ POLICY = {
     ),
     "policy_integration": 0.75,
     "policy_sectors_list": "industry, transport, environment, energy, waste management",
-    "policy_circularity": 1.0,
-    "policy_lifecycle_phases_list": "use, collection, disposal",
+    "policy_circularity": 0.75,
+    "policy_lifecycle_phases_list": "consumption, disposal, environmental leakage",
     "policy_budget": 0.5,
     "policy_budget_text": (
         "Annex 1: deposit required for collection and elimination approval applications; "
@@ -85,7 +85,7 @@ INSTRUMENTS = [
     },
     {
         "instrument_type": 1.0,
-        "instrument_lifecycle_stage": "Disposal",
+        "instrument_lifecycle_stage": "End of life",
         "instrument_description": (
             "Art. 3 §3-5: prohibited mixing of used oils with PCBs or hazardous waste, or adding water or "
             "foreign matter such as solvents, cleaning products, detergents, antifreeze or other fuels before "

@@ -77,30 +77,14 @@ def build_workbook():
         cell.fill = header_fill
         cell.alignment = Alignment(wrap_text=True, vertical="top")
 
-    # Row 2: exclusion note (not a scored instrument)
-    note_row = 2
-    ws.cell(row=note_row, column=1, value=POLICY["policy_name"])
-    ws.cell(row=note_row, column=2, value=POLICY["policy_url"])
-    ws.cell(row=note_row, column=3, value=POLICY["policy_year"])
-    ws.cell(row=note_row, column=4, value=POLICY["policy_objective"])
-    for col_idx in range(5, 15):
-        key = COLUMNS[col_idx - 1][1]
-        ws.cell(row=note_row, column=col_idx, value=POLICY.get(key, ""))
-    ws.cell(row=note_row, column=16, value=0)
-    ws.cell(row=note_row, column=23, value=(
-        "EXCLUDED: No instruments coded. Policy fails strict plastics relevance filter "
-        "(hydrocarbon marine pollution only; no plastics, EPR, bans, or municipal waste planning). "
-        "Code marine plastic provisions under POLMAR (Order 07022/2009) instead."
-    ))
+    # No instrument rows — policy fails plastics relevance filter.
+    # Policy metadata documented in generator docstring and PR; workbook contains headers only.
 
     widths = {"A": 48, "B": 52, "C": 10, "D": 52, "E": 12, "F": 60, "G": 10, "H": 52,
               "I": 14, "J": 40, "K": 14, "L": 36, "M": 12, "N": 52, "O": 12, "P": 14,
               "Q": 22, "R": 60, "S": 14, "T": 18, "U": 52, "V": 14, "W": 52}
     for col_letter, width in widths.items():
         ws.column_dimensions[col_letter].width = width
-    for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
-        for cell in row:
-            cell.alignment = Alignment(wrap_text=True, vertical="top")
     ws.freeze_panes = "A2"
     wb.save(OUTPUT)
     print(f"Saved {OUTPUT} (0 instrument rows — excluded per plastics filter)")

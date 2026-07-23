@@ -39,12 +39,8 @@ POLICY = {
         "and NS 05-062 compliance — addressing hazardous components (lead, mercury) often combined with plastic "
         "casings in waste electrical equipment, without plastic-specific measures."
     ),
-    "policy_target": 0.75,
-    "policy_target_text": (
-        "Authorization conditions include ICPE operating permit with prior environmental assessment; "
-        "compliance with Chapter 2 of NS 05-062 on atmospheric pollution; "
-        "waste management per Article L 30 of the Environmental Code."
-    ),
+    "policy_target": 0,
+    "policy_target_text": "",
     "policy_type": 0.75,
     "policy_type_justification": (
         "Executive decree adopted by the President of the Republic on 16 September 2010, implementing the "
@@ -53,16 +49,16 @@ POLICY = {
     ),
     "policy_integration": 0.75,
     "policy_sectors_list": "industry, waste management, environment, mining, health",
-    "policy_circularity": 1.0,
-    "policy_lifecycle_phases_list": "use, collection, recycling, disposal",
+    "policy_circularity": 0.75,
+    "policy_lifecycle_phases_list": "consumption, recycling, disposal",
     "policy_budget": 0,
-    "policy_budget_text": "No explicit budget, fee or economic instrument in the decree.",
+    "policy_budget_text": "",
 }
 
 INSTRUMENTS = [
     {
         "instrument_type": 1.0,
-        "instrument_lifecycle_stage": "Disposal",
+        "instrument_lifecycle_stage": "Waste management",
         "instrument_description": (
             "Art. 1: it is prohibited for any natural or legal person to import, collect, transport, recycle, "
             "store, handle, treat or eliminate lead from used batteries and other sources, as well as mercury "
@@ -101,7 +97,7 @@ INSTRUMENTS = [
     },
     {
         "instrument_type": 0.80,
-        "instrument_lifecycle_stage": "Disposal",
+        "instrument_lifecycle_stage": "Waste management",
         "instrument_description": (
             "Art. 3: operators must manage waste in accordance with Article L 30 of the Environmental Code "
             "(ecologically rational hazardous waste management)."
