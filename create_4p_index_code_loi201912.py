@@ -32,10 +32,8 @@ POLICY = {
         "local household-waste collection and street-sweeping taxes funding municipal waste services "
         "including plastic fractions. No plastic-specific measures."
     ),
-    "policy_target": 1,
-    "policy_target_text": (
-        "Art. 195 bis(1): minimum CEL allocation not below FCFA 12,000,000 per commune per year."
-    ),
+    "policy_target": 0,
+    "policy_target_text": "",
     "policy_type": 1.0,
     "policy_type_justification": (
         "Amending law adopted by National Assembly 29 June 2019, promulgated 8 July 2019. "

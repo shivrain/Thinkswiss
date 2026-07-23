@@ -39,16 +39,13 @@ POLICY = {
         "to plastic-waste proliferation, the 0-30 micron bag law and opportunities for plastic-waste "
         "valorisation/recycling."
     ),
-    "policy_target": 0.75,
-    "policy_target_text": (
-        "§II.2.2.1: plastic-waste proliferation is symptomatic of persistent bad consumption practices; "
-        "its eradication remains a priority; §III Programme 3: combat pollution, nuisances and adverse "
-        "climate-change effects."
-    ),
-    "policy_type": 0.50,
+    "policy_target": 0,
+    "policy_target_text": "",
+    "policy_type": 0.25,
     "policy_type_justification": (
         "Sector policy letter validated December 2015 for the 2016-2020 period. Strategic orientation and "
-        "ministerial planning document (≠1.0 law, ≠0.75 order/decree)."
+        "ministerial planning document with aspirational commitments but no quantifiable plastic targets "
+        "(≠0.50 plan with targets, ≠0.75 order/decree, ≠1.0 law)."
     ),
     "policy_integration": 1.0,
     "policy_sectors_list": (
@@ -56,77 +53,76 @@ POLICY = {
         "local government, industry"
     ),
     "policy_circularity": 0.50,
-    "policy_lifecycle_phases_list": "production, consumption, collection, recycling, disposal",
-    "policy_budget": 0.25,
+    "policy_lifecycle_phases_list": "production, consumption, recycling, disposal",
+    "policy_budget": 0.5,
     "policy_budget_text": (
-        "§II.2.3.1(c): MEDD budget fell from FCFA 31.25 billion (2011) to ~FCFA 22 billion (2015); "
-        "implementation via DPPD budget-programme framework; no dedicated plastic-waste budget line."
+        "§II.2.3.1(c): MEDD budget fell from FCFA 31.25 billion (2011) to approximately FCFA 22 billion "
+        "(2015); implementation via DPPD budget-programme framework; no dedicated plastic-waste budget line."
     ),
 }
 
 INSTRUMENTS = [
     {
-        "instrument_type": 0.75,
-        "instrument_lifecycle_stage": "Disposal",
+        "instrument_type": 0.40,
+        "instrument_lifecycle_stage": "Environmental leakage",
         "instrument_description": (
             "§II.2.2.1: plastic-waste proliferation is symptomatic of persistent bad consumption practices, "
             "low preparedness of responsible structures and absence of a real strategy; its eradication "
             "remains a priority."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.50,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            "Policy expects Law banning 0-30 micron plastic bags to help; no standalone plastic-waste strategy "
-            "in LPSEDD (+0.25 authority via ministerial planning); DPPD operationalisation (+0.25 monitoring). "
-            "Period expired 2020."
+            "Policy expects Law banning 0-30 micron plastic bags to help (+0.25 authority via ministerial planning). "
+            "Aspirational priority only — no binding obligation. Period expired 2020."
         ),
-        "comments": "Most explicit plastic mention — priority to eradicate plastic waste.",
+        "comments": "Most explicit plastic mention — aspirational priority to eradicate plastic waste.",
     },
     {
-        "instrument_type": 0.75,
+        "instrument_type": 0.40,
         "instrument_lifecycle_stage": "Production",
         "instrument_description": (
             "§II.2.2.1: entry into force of the law prohibiting manufacture, distribution and use of plastic "
             "bags between 0 and 30 microns should help address plastic-waste proliferation."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.50,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            "§II.2.3.1(b): plastic-bag law passed as part of legal reform (+0.25 authority); "
-            "coastal law in adoption (+0.25 monitoring). Period expired 2020."
+            "§II.2.3.1(b): plastic-bag law passed as part of legal reform (+0.25 authority). "
+            "Informational reference only — not an operative instrument in LPSEDD. Period expired 2020."
         ),
-        "comments": "Reference to Law 2015-09 (thin bags) — direct plastic production/distribution link.",
+        "comments": "Reference to Law 2015-09 (thin bags) — informational, not a regulatory instrument.",
     },
     {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Valorisation",
+        "instrument_type": 0.40,
+        "instrument_lifecycle_stage": "Recycling",
         "instrument_description": (
             "§II.2.3.1(c): opportunities in valorisation and recycling of plastic waste, alongside ecotourism, "
             "forestry and renewables, to complement corporate social responsibility."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.25,
+        "instrument_implementation": 0,
         "instrument_implementation_text": (
-            "Identified as economic opportunity only; no quantified recycling targets or EPR framework in LPSEDD. "
-            "Period expired 2020."
+            "Identified as economic opportunity only; no quantified recycling targets, EPR framework or "
+            "binding obligation in LPSEDD. Period expired 2020."
         ),
-        "comments": "Only explicit mention of plastic-waste recycling.",
+        "comments": "Only explicit mention of plastic-waste recycling — voluntary/aspirational.",
     },
     {
-        "instrument_type": 0.50,
-        "instrument_lifecycle_stage": "Collection",
+        "instrument_type": 0.20,
+        "instrument_lifecycle_stage": "Waste management",
         "instrument_description": (
             "§II.2.2.1: living-environment management requires salubrity, adequate pollution and nuisance "
             "management, disaster-risk management and support for waste collection and treatment; diagnostic "
             "notes weak sorting, collection, transport and valorisation performance."
         ),
         "instrument_in_force": 0,
-        "instrument_implementation": 0.50,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
             "§III Programme 3 OS2: improve living-environment quality through rational pollution management "
-            "(+0.25 authority); absence of filiere approach noted (+0.25 monitoring). Period expired 2020."
+            "(+0.25 authority). Planning orientation only — period expired 2020."
         ),
-        "comments": "Living-environment orientation — waste collection/treatment including plastics.",
+        "comments": "Living-environment governance orientation — waste collection/treatment including plastics.",
     },
 ]
 

@@ -103,7 +103,7 @@ INSTRUMENTS = [
         ),
     },
     {
-        "instrument_type": 1.0,
+        "instrument_type": 0.20,
         "instrument_lifecycle_stage": "Production",
         "instrument_description": (
             "Order No. 9470, Arts. 1-7: accreditation to carry out environmental impact study activities may "
@@ -121,7 +121,8 @@ INSTRUMENTS = [
             "Accreditation valid 5 years."
         ),
         "comments": (
-            "Qualifies consultancy firms conducting EIAs for plastics plants and waste-treatment facilities."
+            "Governance instrument qualifying consultancy firms conducting EIAs for plastics plants and "
+            "waste-treatment facilities."
         ),
     },
 ]

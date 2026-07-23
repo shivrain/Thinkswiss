@@ -63,7 +63,7 @@ POLICY = {
     "policy_sectors_list": (
         "local government, sanitation, environment, local governance, local public finance"
     ),
-    "policy_circularity": 0.75,
+    "policy_circularity": 0.50,
     "policy_lifecycle_phases_list": "disposal, recycling",
     "policy_budget": 0.5,
     "policy_budget_text": (

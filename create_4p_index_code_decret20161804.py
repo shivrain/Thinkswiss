@@ -35,12 +35,8 @@ POLICY = {
         "control, net-mesh rules and marine environment protection — relevant to synthetic-polymer fishing "
         "gear and ghost-gear reduction, without plastic marine litter-specific measures."
     ),
-    "policy_target": 0.75,
-    "policy_target_text": (
-        "Art. 25: ban on drift gillnets for shrimp fishing in all Senegalese waters; "
-        "Art. 35: ban on devices obstructing mesh or reducing selective action; "
-        "Art. 37: Minister may require selective gear to preserve resources and the marine environment."
-    ),
+    "policy_target": 0,
+    "policy_target_text": "",
     "policy_type": 0.75,
     "policy_type_justification": (
         "Implementing decree adopted on 22 November 2016 to apply Law No. 2015-18. "
@@ -50,19 +46,16 @@ POLICY = {
     "policy_sectors_list": (
         "maritime fisheries, artisanal fishing, industrial fishing, marine environment, maritime surveillance"
     ),
-    "policy_circularity": 0.50,
-    "policy_lifecycle_phases_list": "use, disposal, marine environment",
+    "policy_circularity": 0.75,
+    "policy_lifecycle_phases_list": "consumption, disposal, environmental leakage",
     "policy_budget": 0,
-    "policy_budget_text": (
-        "No dedicated budget allocation in decree; licensing fees governed separately under Law 2015-18 Art. 64. "
-        "Enforcement via fisheries surveillance agents and observer programme (Ch. 6)."
-    ),
+    "policy_budget_text": "",
 }
 
 INSTRUMENTS = [
     {
         "instrument_type": 1.0,
-        "instrument_lifecycle_stage": "Use",
+        "instrument_lifecycle_stage": "Consumption",
         "instrument_description": (
             "Art. 25: prohibits use of drift gillnets for shrimp fishing in all Senegalese waters, "
             "alongside beach-seine restrictions in specified zones and nets encircling rock-fish habitats."
@@ -78,7 +71,7 @@ INSTRUMENTS = [
     },
     {
         "instrument_type": 1.0,
-        "instrument_lifecycle_stage": "Use",
+        "instrument_lifecycle_stage": "Consumption",
         "instrument_description": (
             "Art. 35: for all fishing gear types, it is prohibited to use means or devices obstructing mesh "
             "or reducing selective action (with limited trawl protection-panel exception)."
@@ -93,21 +86,23 @@ INSTRUMENTS = [
         "comments": "Ban on selectivity-reducing devices — complements Law 2015-18 monofilament net ban.",
     },
     {
-        "instrument_type": 0.75,
-        "instrument_lifecycle_stage": "Marine environment",
+        "instrument_type": 0.20,
+        "instrument_lifecycle_stage": "Environmental leakage",
         "instrument_description": (
             "Art. 37: Fisheries Minister may take necessary measures on use of any device or rigging that "
             "destroys natural habitats to ensure preservation of resources and the marine environment; "
             "may promote or require selective gear for biodiversity and stock management."
         ),
-        "instrument_in_force": 1,
-        "instrument_implementation": 0.50,
+        "instrument_in_force": 0,
+        "instrument_implementation": 0.25,
         "instrument_implementation_text": (
-            "Art. 23: Minister may supplement conservation measures by order (+0.25 authority); "
-            "Art. 42: temporary zone closures possible (+0.25 monitoring). "
-            "No article-specific penalty for marine litter."
+            "Art. 23: Minister may supplement conservation measures by order (+0.25 authority). "
+            "Enabling power only — no mandatory obligation or subordinate order operationalising Art. 37."
         ),
-        "comments": "Marine environment and habitat protection — framework for anti-pollution/gear measures.",
+        "comments": (
+            "Enabling power ('may') for marine habitat/gear measures — not in force unless operationalised "
+            "by subordinate order (Rule 12)."
+        ),
     },
 ]
 

@@ -58,7 +58,7 @@ POLICY = {
     "policy_sectors_list": (
         "sanitation, urban planning, local government, environment, health, industry"
     ),
-    "policy_circularity": 0.75,
+    "policy_circularity": 0.50,
     "policy_lifecycle_phases_list": "disposal, environmental leakage",
     "policy_budget": 0.5,
     "policy_budget_text": (

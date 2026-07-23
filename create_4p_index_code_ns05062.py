@@ -54,16 +54,13 @@ POLICY = {
     "policy_circularity": 0.75,
     "policy_lifecycle_phases_list": "production, disposal, environmental leakage",
     "policy_budget": 0,
-    "policy_budget_text": (
-        "No explicit budget, fee or economic instrument in the standard. Monitoring and measurement "
-        "costs are borne by the operator (Ch. V, §5)."
-    ),
+    "policy_budget_text": "",
 }
 
 INSTRUMENTS = [
     {
         "instrument_type": 1.0,
-        "instrument_lifecycle_stage": "Disposal",
+        "instrument_lifecycle_stage": "End of life",
         "instrument_description": (
             "§8.2: open burning of tyres, plastics and any other compound containing chemical products is prohibited."
         ),
@@ -100,7 +97,7 @@ INSTRUMENTS = [
     },
     {
         "instrument_type": 1.0,
-        "instrument_lifecycle_stage": "Disposal",
+        "instrument_lifecycle_stage": "End of life",
         "instrument_description": (
             "§8.1: incineration or thermal decomposition of waste is authorised only in installations "
             "technologically designed for that purpose; Annex II §J applies. "

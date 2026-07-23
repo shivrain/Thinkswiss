@@ -35,8 +35,8 @@ POLICY = {
     ),
     "policy_target": 1,
     "policy_target_text": (
-        "Art. 2: thickness below 30 microns prohibited; Art. 3: bags ≥30 microns may not be distributed free; "
-        "Art. 10: production offence — FCFA 10,000,000 to 20,000,000 fine and 3–6 months imprisonment."
+        "Art. 2: plastic bags with thickness below 30 microns are prohibited; "
+        "Art. 3: plastic bags with thickness equal to or above 30 microns may not be distributed or offered free."
     ),
     "policy_type": 1.0,
     "policy_type_justification": (

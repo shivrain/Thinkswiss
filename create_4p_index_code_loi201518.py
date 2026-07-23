@@ -35,12 +35,8 @@ POLICY = {
         "and fishing-gear control — notably nylon monofilament/multimonofilament nets — relevant to "
         "plastic fishing gear and ghost-gear reduction, without plastic marine litter-specific measures."
     ),
-    "policy_target": 0.75,
-    "policy_target_text": (
-        "Art. 66: ban on gillnets made from nylon monofilament or multimonofilament elements; "
-        "Art. 68: mandatory registration and marking of artisanal fishing vessels and gear; "
-        "Art. 125: prohibited gear confiscated and destroyed."
-    ),
+    "policy_target": 0,
+    "policy_target_text": "",
     "policy_type": 1.0,
     "policy_type_justification": (
         "Maritime Fisheries Code adopted by the National Assembly on 30 June 2015 and promulgated on "
@@ -51,20 +47,19 @@ POLICY = {
     "policy_sectors_list": (
         "maritime fisheries, artisanal fishing, industrial fishing, marine environment, maritime trade"
     ),
-    "policy_circularity": 0.50,
-    "policy_lifecycle_phases_list": "use, disposal, marine environment",
-    "policy_budget": 0.25,
+    "policy_circularity": 0.75,
+    "policy_lifecycle_phases_list": "production, consumption, disposal, environmental leakage",
+    "policy_budget": 0.5,
     "policy_budget_text": (
         "Art. 64: fee for permits and authorisations (amount set by joint ministerial order); "
-        "Arts. 123-127: criminal fines up to FCFA 30,000,000 for serious industrial fishing offences; "
-        "no dedicated budget allocation for marine litter or gear recovery."
+        "Arts. 123-127: criminal fines up to FCFA 30,000,000 for serious industrial fishing offences."
     ),
 }
 
 INSTRUMENTS = [
     {
         "instrument_type": 1.0,
-        "instrument_lifecycle_stage": "Use",
+        "instrument_lifecycle_stage": "Consumption",
         "instrument_description": (
             "Art. 66: import, sale, purchase, possession and use of gillnets made from nylon monofilament "
             "or multimonofilament elements are prohibited except by special derogation."
@@ -80,8 +75,8 @@ INSTRUMENTS = [
         "comments": "Direct ban on nylon (plastic polymer) nets — main explicit link to marine plastics/ghost gear.",
     },
     {
-        "instrument_type": 0.75,
-        "instrument_lifecycle_stage": "Use",
+        "instrument_type": 1.0,
+        "instrument_lifecycle_stage": "Production",
         "instrument_description": (
             "Art. 68: all artisanal fishing vessels belonging to nationals are registered and marked under "
             "ministerial rules; same for foreign residents' vessels. Art. 33(k): regulatory measures on "
@@ -94,11 +89,14 @@ INSTRUMENTS = [
             "Arts. 84-85: agents may inspect fishing gear on board or have gear removed from water "
             "(+0.25 monitoring); Decree 2016-1804 Arts. 56-58: vessel marking specifications (+0.25 enforcement)."
         ),
-        "comments": "Gear traceability and marking — relevant for identifying and recovering abandoned gear.",
+        "comments": (
+            "Mandatory gear registration and marking — regulatory traceability for identifying and recovering "
+            "abandoned gear."
+        ),
     },
     {
         "instrument_type": 1.0,
-        "instrument_lifecycle_stage": "Disposal",
+        "instrument_lifecycle_stage": "End of life",
         "instrument_description": (
             "Art. 125(a),(e): very serious offences include use of prohibited fishing gear or methods and "
             "use of devices reducing mesh opening below the minimum or reducing selective action; "
