@@ -19,8 +19,9 @@ justification.
 | 2 | Waste Management National Policy, 2079 (2022) | 2022 | Policy (0.25) | 0.625 | [.md](nepal-waste-management-national-policy-2079-2022.md) · [.csv](nepal-waste-management-national-policy-2079-2022.csv) · [.xlsx](nepal-waste-management-national-policy-2079-2022.xlsx) |
 | 3 | Solid Waste Management Act, 2068 (2011, as amended) | 2019 | Legislation (1.0) | 1.0 | [.md](nepal-solid-waste-management-act-2068-2011.md) · [.csv](nepal-solid-waste-management-act-2068-2011.csv) · [.xlsx](nepal-solid-waste-management-act-2068-2011.xlsx) |
 | 4 | The Sixteenth Plan (F.Y. 2024/25–2028/29) | 2024 | Plan w/ targets (0.50) | 0.75 | [.md](nepal-sixteenth-plan-2024-25-2028-29.md) · [.csv](nepal-sixteenth-plan-2024-25-2028-29.csv) · [.xlsx](nepal-sixteenth-plan-2024-25-2028-29.xlsx) |
+| 5 | Environmental Management Framework (EMF) for the School Sector Reform Plan/Program | 2012 | Plan w/ targets (0.50) | 0.8125 | [.md](nepal-emf-school-sector-program.md) · [.csv](nepal-emf-school-sector-program.csv) · [.xlsx](nepal-emf-school-sector-program.xlsx) |
 
-**29 instrument-level rows in total** across the four policies (8 + 6 + 10 + 5).
+**33 instrument-level rows in total** across the five policies (8 + 6 + 10 + 5 + 4).
 
 ## Combined / master files
 
@@ -47,6 +48,7 @@ re-verified against these files.
   operationalised in any of the other three documents).
 - **Most directly plastics-specific provisions found:**
   - Solid Waste Management Act, 2068, §38(ण)/§39(10) — the Gazette-notice power to ban "excessive-waste-generating goods," exercised in practice for thin plastic bags.
-  - Environment Protection Regulation, 2077, Schedule 2, Industry sector, items 41 & 43 — the only provisions across all four documents that name "प्लाष्टिक" (plastic) explicitly.
+  - Environment Protection Regulation, 2077, Schedule 2, Industry sector, items 41 & 43 — the only provisions in that document naming "प्लाष्टिक" (plastic) explicitly.
   - The Sixteenth Plan, Ch. 7 & 13 — "discourage the use of plastic materials and prohibit burning plastics"; "control plastic items"; "displacing plastic products."
+  - Environmental Management Framework (School Sector Program) — "Ban use of plastic products in schools," a direct, sector-specific (education) plastic ban embedded in an infrastructure-safeguard framework.
 - **Recommended follow-up document** (not sourced/coded in this exercise, but identified during research): the Ministry of Forests and Environment's **प्लाष्टिक झोला (नियमन तथा नियन्त्रण) निर्देशिका, २०८२** ("Plastic Bags (Regulation and Control) Directive, 2082 / 2025-26"), available at https://mofe.gov.np/content/348/plastic-bags--regulation-and-control--guidelines--2082/ — this is Nepal's most recent and most directly plastics-specific legal instrument and would substantially strengthen a future iteration of this index.
