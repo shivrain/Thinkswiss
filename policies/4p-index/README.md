@@ -19,9 +19,9 @@ justification.
 | 2 | Waste Management National Policy, 2079 (2022) | 2022 | Policy (0.25) | 0.625 | [.md](nepal-waste-management-national-policy-2079-2022.md) · [.csv](nepal-waste-management-national-policy-2079-2022.csv) · [.xlsx](nepal-waste-management-national-policy-2079-2022.xlsx) |
 | 3 | Solid Waste Management Act, 2068 (2011, as amended) | 2019 | Legislation (1.0) | 1.0 | [.md](nepal-solid-waste-management-act-2068-2011.md) · [.csv](nepal-solid-waste-management-act-2068-2011.csv) · [.xlsx](nepal-solid-waste-management-act-2068-2011.xlsx) |
 | 4 | The Sixteenth Plan (F.Y. 2024/25–2028/29) | 2024 | Plan w/ targets (0.50) | 0.75 | [.md](nepal-sixteenth-plan-2024-25-2028-29.md) · [.csv](nepal-sixteenth-plan-2024-25-2028-29.csv) · [.xlsx](nepal-sixteenth-plan-2024-25-2028-29.xlsx) |
-| 5 | Environmental Management Framework (EMF) for the School Sector Reform Plan/Program | 2012 | Plan w/ targets (0.50) | 0.8125 | [.md](nepal-emf-school-sector-program.md) · [.csv](nepal-emf-school-sector-program.csv) · [.xlsx](nepal-emf-school-sector-program.xlsx) |
+| 5 | Environmental Management Framework for School Sector Reform Program (SSRP) | 2015 | Aspirational strategy (0.25) | 0.4375 | [.csv](nepal-emf-ssrp-2015.csv) · [.xlsx](nepal-emf-ssrp-2015.xlsx) |
 
-**33 instrument-level rows in total** across the five policies (8 + 6 + 10 + 5 + 4).
+**34 instrument-level rows in total** across the five policies (8 + 6 + 10 + 5 + 5).
 
 ## Combined / master files
 
@@ -33,6 +33,21 @@ justification.
 Original source PDFs, OCR transcripts and extracted text for every policy are archived under
 [`sources/`](sources/) for full auditability — every quotation used in the coding can be independently
 re-verified against these files.
+
+## Policy 5 — sourcing note
+
+The *Environmental Management Framework for School Sector Reform Program (SSRP)* was sourced directly
+from the URL requested: https://www.doe.gov.np/assets/uploads/files/febc6a8f5678ba863d9ea8648d905511.pdf
+(Nepal's Department of Education). The 69-page PDF is a clean, text-native document (no OCR needed;
+extracted directly with `pdftotext -layout`), dated **February 2015** on its own cover page — itself
+described internally as an update of an original May-2009 DOE-authored EMF for the same program (per
+Section 2.6.4.1: "The performance status review of EMF document (drafted in 2009)..."), so per Coding
+Rule 2 ("use the most recent version") this policy is coded with **policy_year = 2015**. Unlike the other
+four Nepali policies coded in this index, its plastics-relevant mitigation measures use recommendatory
+("should") rather than mandatory ("shall/must") language, so most of its instruments are coded as
+**not in force** — see [`nepal-emf-ssrp-2015.csv`](nepal-emf-ssrp-2015.csv) / [`.xlsx`](nepal-emf-ssrp-2015.xlsx)
+for full detail and [`sources/emf-ssrp-2015-nepal-source.pdf`](sources/emf-ssrp-2015-nepal-source.pdf) for
+the archived source.
 
 ## Cross-cutting notes
 

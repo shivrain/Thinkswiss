@@ -1,0 +1,3052 @@
+Environmental Management Framework
+               For
+School Sector Reform Program (SSRP)
+              Nepal
+
+
+
+
+              Feb 2015
+Acronyms
+     BPEP        Basic & Primary Education Project
+     CM          Compliance Monitoring
+     DEO         District Education Office
+     DOE         Department of Education
+     DPs         Development Partners
+     EA          Environmental Assessment
+     EfA         Education for All
+     EIA         Environmental Impact Assessment
+     EMF         Environmental Management Framework
+     EMP         Environmental Management Plan
+     EPR         Environmental Protection Rules
+     GoN         Government of Nepal
+     IEE         Initial Environmental Examination
+     NEGFSIFMN   National Environmental Guidelines for School Improvement and
+                 Facility Management in Nepal
+     NEPAP       National Environmental Policy & Action Plan
+     PIM         Program Implementation Manual
+     PSS         Physical Services Section
+     SESP        Secondary Education Support Program
+     SMC         School Management Committee
+     SSRP        School Sector Reform Plan
+Executive Summary
+School Sector Reform Plan and Construction Works
+Physical infrastructure development of schools and District Education Offices (DEO) constitutes
+an important activity in School Sector Reform Plan (SSRP). Potential environmental issues in
+SSRP are mainly limited to impacts from construction related works and sites. These, for
+example, are construction of administrative buildings, schools & hostels, buildings, library &
+laboratory blocks, construction of new class rooms & rehabilitation of existing class rooms,
+provisions of toilets & water supply.
+
+Environmental Assessment (EA)
+
+The DOE, in the process of preparing this Environmental Management Framework (EMF), has
+undertaken an EA for SSRP (Chapter - II). The EA was based on a series of reviews of
+construction works undertaken in the Basic & Primary Education Project (BPEP II), Secondary
+Education Support Program (SESP), Education for All (EFA) including field visits and
+consultation with stakeholders with respect to practices related to school physical facility
+improvement, and operation and maintenance of facilities. The EA concluded that SSRP’s
+Environmental concerns are related to actions/activities under physical infrastructure.
+
+Environmental issues in SSRP are mainly limited to potential impacts from building construction
+works and sites. These issues relate to school site selection and planning (appropriateness of sites,
+orientations of buildings considering climatic factors, and use of appropriate design standards,
+ensuring supply of safe drinking water (e.g. arsenic-free groundwater in Terai), proper sanitation
+(school latrine and waste management at school), and appropriate classroom conditions (e.g. light,
+ventilation, temperature, noise). Location of the school or its facilities in risky or sensitive spots
+such as in flood-prone/risk, or landslide risk areas, is also a concern besides risks from
+earthquakes as Nepal is in a high earthquake risk zone.
+
+Minor and localized impacts may arise from construction/upgrading of small scale administrative
+buildings or school blocks or new/additional classrooms or may be related to providing facilities
+such as drinking water and sanitation as well as to their operation and maintenance. Since the
+individual works under SSRP are small, environmental issues are assessed to be small and
+localized. No large, significant and/or irreversible impact is anticipated. Even cost sharing types
+of schools, DEO financed schools and laboratory buildings fall into the category of small to
+medium type construction which doesn’t require specific environmental assessment from GON
+and DPs perspectives. Substantial experiences has been gained from BPEP II, SESP, and EFA to
+manage these issues.
+
+The EA, therefore, concluded that the SSRP is not likely to present severe environmental risks
+and/ or highly significant potential adverse impacts in its area of influence. Nevertheless, as the
+project activities include civil works the EA policy (OP4.01) and IP Policy (4.10) of the World
+Bank has been triggered to ensure sustainability of resources and no negative impacts on
+environment during construction and rehabilitation of education units made out of financial
+support from the World Bank. The project has been categorized as category “B” project.
+Simultaneously, in order to manage the minor and localized impacts GON has prepared an
+Environmental Management Framework for SSRP: the EMF has been updated based on the
+implementation experiences.
+
+
+
+Environmental Management Framework (EMF)
+The findings of the EA were used to prepare Environmental Management Framework (EMF) for
+SSRP. This has incorporated the experiences of the other projects such as EFA, emerging lessons
+and updating the National Environmental Guidelines for School Improvement and Facility
+Management in Nepal.
+
+The EMF is intended to be used as a practical tool during program formulation, design,
+implementation, and monitoring. The EMF defines simplified steps, procedures and guidelines or
+criteria and/or standards to be used while planning and developing schools’ physical infrastructure
+under SSRP. These, for example, are related to screening, preparation of simple environmental
+management and mitigation plan. It describes the steps involved in identifying and mitigating the
+potential adverse environmental impacts of activities. Hence, EMF in SSRP will ensure the
+environmentally friendly design and construction of school physical facilities and other
+educational infrastructures by meeting safeguard policies of the GON. Salient features of the EMF
+are:
+   SSRP activities, in general, do not require formal environmental assessment such as
+       Environmental Impact Assessment (EIA) or Initial Environmental Examination (IEE).
+       However, each SSRP physical infrastructure activity (school improvement activities as well
+       as DEO administrative buildings) will be subject to environmental screening and if required
+       EMP will be prepared.
+   At the school level, each participating school will utilize the EMF while preparing the
+       School Improvement Plan (SIP) to consider all the environmental and social issues while
+       planning, designing and construction of education buildings .
+   Emphasize effective use of already accepted policy and standards such as National
+       Environmental Guidelines for School Improvement and Facility Management in Nepal;
+       structural and disaster safety of buildings, Public Work Directives, 2002, child- and gender-
+       friendly design and construction, inclusive design and constructions for disables, design
+       guidelines for school buildings construction from environmental perspective (Annex - IX)
+       etc.
+                   Recommendations of environmental screening and EMP will be incorporated in
+                 the plan, design and contract documents. Monitoring of the construction activities
+                 will be done by technical personals (environmental specialist, civil engineers,
+                 overseers) from DEO/ DOE or local NGOs. In addition, annual monitoring of
+                 ESMF performance will also be done by hiring Independent consultant.
+
+              The regular monitoring system of the DOE will also include indicators and
+               monitoring mechanisms as specified in the EMF. There will be monitoring during
+               pre-construction, construction and operational phases. DEO will take lead on the
+               capacity building of the school management committees (SMCs) through periodic
+               interactions and orientations to the committees, service providers/design
+               consultant as well as supervision consultant for the monitoring and supervision of
+               construction activities including the environmental and social safeguard
+               compliance.
+
+  
+
+
+
+Institutional Arrangements, Roles and Responsibilities for EMF implementation
+
+The Department of Education (DOE), District Education Office (DEO) and School Management
+Committee (SMC) are the main implementing agencies. The roles and responsibilities of these
+    agencies for implementing EMF with respect to planning, construction, and operation of
+    associated facilities have been assigned in the EMF. The School Improvement Plan (SIP) will
+    incorporate the EMF requirements at school level. The school construction will be managed by
+    communities. Some of EMF requirements would have already been incorporated in the School
+    Building Design and Construction Manual and other manuals developed by DOE. The following
+    paragraph presents highlights of the roles and responsibilities of difference agencies:
+       DEO will conduct a preliminary survey of environmental conditions of the school and its
+          surrounding area as part of the physical survey of schools.
+       The proposed school improvement activities as well as administrative buildings will be
+          subject to environmental screening which will be followed by preparation of EMP only if
+          required. This will be done by the DEO.
+       The DOE/DEO ensures incorporation of EMF’s planning and design guidelines and
+          provisions (Annex – 9) into SIP. EMP will be prepared for activates such as the
+          construction of district education offices, if required, following the screening process..
+          EMP will be prepared by the DOE and included as a part of the contract document.
+       The Environmental Officer at DOE/PSS will check/ verify random screening and samples
+          of the SIP, and all screening of district education offices. Incorporation of EMP in
+          design/tender documents will be checked by the Environmental Officer of the DOE.
+       The DEO regularly monitors/supervises implementation of the environmental works in the
+          schools and reports to DOE. DOE/ PSS Environmental Officer will prepare consolidated
+          report on environmental works. DOE/PSS and the relevant district DEO visits randomly
+          selected samples of schools on four-monthly basis to check environmental compliance as
+          outlined in the EMF. Findings of this will feed into government’s quarterly portfolio review
+          meeting.
+       .
+   DoE will provide overall environmental oversight in implementing EMF, organize awareness/
+    orientations, manage environmental monitoring etc.. Annual GON and DPs joint review of SSRP
+    will also cover implementation of the EMF. The field level monitoring will be carried out by
+    DEO. Sub project site specific level monitoring will be conducted by DEO at regular basis and by
+    DOE at an intermittent basis. Independent evaluation of EMF performance will be done hiring
+    independent consultant
+
+    Capacity Building
+
+    Capacity building at different levels (DOE, DEO, and SMC) is necessary in order to implement
+    the EMF successfully. The suggested capacity strengthening measures, for example, include: i)
+    providing environmental competency/human-resources, ii) training, orientation and awareness
+    activities on environmental planning and management of school and school-facilities, and iii)
+    mechanisms for coordination and for accessing specific environmental services e.g. water-quality
+    testing, climate responsive school building construction etc.
+
+    In consideration of increasing workload envisaged for implementation of the EMF and the non-
+    existence of environmental competency at centre, GoN/MOE will a assign a engineer/technical
+    person / environmental officer at DOE to look after the EMF activities for SSRP. The Officer will
+    be responsible for implementation of the EMF and its provisions, including compliance checking,
+    facilitation, coordination and ensuring dissemination, orientations and capacity buildings
+    activities. Additional human resources or agency will be hired, if necessary, in order to
+    effectively implement the EMF. In addition, DEO will develop and implement an EMF training,
+    orientation and awareness program targeting to SMC, DEO, other district level partners as well as
+    service providers (including engineering design team).
+
+    EMF Dissemination and Disclosure
+
+    GON will disclose the EMF on their web sites (MOE as well as DOE), and will also place the
+    reports in pubic places for wider dissemination. Upon approval of EMF by MOE, the DOE will
+publish the document in Nepali language. The Nepali version of EMF will be circulated to DEOs
+and SMCs through the Program Implementation Manual (PIM). The document will be widely
+circulated to DOE, DEO, collaborating INGOs/NGOs. Through regular orientation program, DOE
+will disseminate EMF to engineers/sub engineers, district education officers, design consultant
+and other partners.
+                                 Table of Contents
+Chapter I - General                                                                  1
+  1.1 Environmental Management Framework (EMF)                                       1
+  1.2 School Sector Reform Plan (SSRP)                                               1
+  1.3 EMF in SSRP                                                                    1
+  1.4 The Need for EMF in SSRP                                                       1
+  1.5 Physical Infrastructure Development Activities in SSRP                         2
+Chapter II - Environmental Assessment                                                6
+  2.1 Methodology Used to Prepare EMF                                                 6
+  2.2 Policy, Legal, and Institutional Framework for Environmental Management         7
+    2.2.1 Review of Nepal’s National Environmental Policies                           7
+    2.2.2 Review of Environmental Laws                                                8
+    2.2.3 Other Related Legislations & Guidelines of the Government of Nepal          9
+    2.2.4 Policy for the Improvement of School Facilities                             9
+  2.3 Summary of Provisions that are Applicable to SSRP Activities                    9
+  2.4 Review of Safeguard Measures                                                   11
+  2.5    Environmental Issues and Its Significance for Infrastructure Development under
+  SSRP 12
+  2.6 Past Experiences                                                               14
+    2.6.1 .Components of NEGSIFMN that Worked                                        14
+    2.6.2 Components of NEGSIFMN that did not Work                                   15
+    2.6.3 Innovative Approaches                                                      15
+    2.6.4 Lessons Learned                                                            16
+  2.8 Existing Capacity Assessment for the Implementation of EMF                     17
+Chapter III - Environmental Management Framework (EMF)                              19
+  3.1 An Overview of Environmental Steps in SSRP                                    19
+  3.2 Mitigation                                                                    19
+  3.3 Implementation of Mitigation Measures                                         22
+  3.4 Capacity Development                                                          25
+  3.5 Integration of EMF into regular programs:                                     25
+  3.6 Disclosure                                                                    26
+Annexes                                                                             27
+  Annex 1 - School Selection Criteria                                              27
+  Annex 2 - Chronology of Consultation Meetings                                    28
+  Annex 3 - List of Persons Contacted                                              29
+  Annex 4 - Summary of Observations from the Field Visit                           32
+  Annex 5 - Suggestions from Experts                                               35
+  Annex 6 - Government’s Effort towards School Physical Facilities Development
+  through various programs (update up to 2007/2008)                                36
+  Annex 7 – DOE Policy                                                             37
+  Annex 8 - Environmental Screening                                                39
+  Annex 9 - The Design Guideline for School Buildings Construction from Environmental
+  Perspective                                                                      41
+  Annex 10 - Laboratory Checklist from Environmental Perspective                   57
+  Annex 11 - Land Acquisition and Resettlement                                     59
+References                                                                          61
+Chapter I - General
+
+1.1 Environmental Management Framework (EMF)
+The Government of Nepal has set a goal of creating environmental frameworks for enabling
+environmental conditions, healthier learning environment in the Nepalese school campuses, but
+without affecting public health, surrounding environment and communities adversely in the
+construction and operation of the school physical facilities and other educational infrastructures.
+
+1.2 School Sector Reform Plan (SSRP)
+The concept of an integrated grades 1 to 12 school system has been under consideration in Nepal from
+the 1980s till the Three Year Interim Plan (2007-10). The process of developing and implementing the
+integrated school system was initiated as an early as 1989 with the enactment of the Higher Secondary
+Education Act. The need for structural adjustment to the integrated school system was further
+emphasized by Basic and Primary Education Master Plan (1997).
+
+The achievements and experiences gain from the implementation of the EFA sub sector approach and
+the Secondary Education Support Program (SESP) have encouraged the GON to demonstrate a
+commitment to embark on School Sector Reform (SSR) with grades 1-12 as an integrated school
+system in the phased manner from 2009/2010 onwards.
+
+In February 2007, a Concept Paper on SSR was endorsed by the Education Policy Committee. The
+Concept Paper provided general directions for policy changes and served as the basis for preparation
+of SSR core documents. As a preparation for an integrated SSR, the core document has clearly spelled
+out the policy and strategy options for SSR implementation. The preparation activities of SSR will
+include development of an accelerated implementation/transition plan, illustrating the activities to
+generate knowledge and to develop local level planning capacity for systemic readiness and
+resilience.
+
+1.3 EMF in SSRP
+The Environmental Management Framework (EMF) is developed to ensure that environmental issues
+are dealt by in a proper and efficient manner meeting all the legal compliance requirements of GON,
+and development partners supported SSRP in Nepal.
+
+The EMF will provide an environmental screening process, outline the typical mitigation measures
+and estimate corresponding budget and capacity building measures for the implementation of SSRP.
+The EMF is intended to be used as a practical tool during program formulation, design,
+implementation, and monitoring. It describes the steps involved in identifying and mitigating the
+potential adverse environmental impacts of activities. EMF ensures the protection of human health,
+environmental sustainability, and welfare of affected community.
+
+Hence the EMF in SSRP will ensure environmentally friendly design and construction of school
+physical facilities and other educational infrastructures. In addition, EMF will also safeguard the
+environmental policy of the GON.
+
+1.4 The Need for EMF in SSRP
+EFA through DOE has set the module for the development and implementation of National
+Environmental Guidelines (NEG) to ensure that the school improvement and facility management
+under the program meet acceptable national and international norms. This guideline deals with the
+environmental issues associated with the planning, construction, and operational stages of the school
+physical facilities and other educational infrastructures, including monitoring the implementation.
+                                                  1
+Similarly, it is very pertinent to develop, building on the lessons and experiences of the NEG
+implementation, a comprehensive new version of environmental guideline in the form of an
+Environmental Management Framework, which fits into the objectives of SSR. The lessons learned
+from the past efforts in implementation of environmental management sector in schools and on the
+ground implementation of activities through EFA shall be assessed and used in an improved and
+scientific fashion in SSR while meeting its objectives.
+
+This EMF has been developed by the Ministry of Education of the Government of Nepal especially
+for the proposed operation to ensure due diligence, to avoid any environmental degradation issues.
+The purpose of this framework also includes assisting the implementing agency in screening all the
+sub projects for their likely environmental impacts, identifying suitable mitigation measures and
+implementation of these measures though an environmental management plan.
+
+1.5 Physical Infrastructure Development Activities in SSRP
+One of the main activities of the SSRP is physical infrastructure development of schools and District
+Education Offices. The EMF is directly related with the physical infrastructure activities of SSRP.
+Under the physical infrastructure component of SSRP, the following activities are envisioned;
+
+1. Construction of administration buildings (Construction of District Education Office building, total
+   = 20 nos.)
+2. Construction of school and hostel building for disables (Total = 100 nos)
+3. Construction of library and laboratory (Total = 300 nos)
+4. New classroom construction (Total = 19500 nos). Out of this, 75% will be built under the regular
+   modality and 25% by additional contribution (cost sharing basis)
+5. External environmental improvement (construction of girls toilet, boys toilet, water supply)
+6. Classroom rehabilitation (Total = 13000 nos).
+
+The implementation of EFA 2004-09 has been a remarkable experience and achievement’ for the
+Ministry of Education (MOE) of Nepal. Encouraged by these achievements, the Government has
+decided to enter into a new phase of program implementation. The SSR is a response to the
+aspirations of the people and to emerging challenges the education system of Nepal is facing. The
+SSR should be viewed as a combination of affirmative actions and policy changes towards attaining
+the EFA goals by 2015, and be seen as a commitment towards ensuring quality of education to meet
+the local and global needs.
+
+Table 1.1: Implementation Mechanism for Physical Infrastructure Development
+
+S.N.     Activity           Implementation Mechanism                Responsibility   Timeframe   Indicators
+
+1.     Classroom      School Selection                                                           School
+       Construction                                                                              selection
+                       Physical Survey of Schools                   DOE/PSS                     criteria is
+                        Technical staff of DEO will use the                                      given in
+                        standard format developed by EOE &                                       annex I
+                        conduct a survey of overall school in
+                        the district
+
+                       Preparation of School Physical
+                        Facilities Improvement Plan (SPIP)
+                        SMC will prepare SPIP. This includes
+                        activities to be performed in schools,          DEO
+                        estimated cost to perform such
+                        activities and contribution of schools in
+                                                      2
+S.N.   Activity         Implementation Mechanism                Responsibility   Timeframe   Indicators
+
+                    such activities
+
+                   Analysis of Education Data                      SMC
+                    Insert date on Education Management
+                    Information System (EMIS) & analyze
+                    educational indicators
+
+                  Prioritization of Schools Selection            DEO/PSS
+                                                                 DEO
+                  Based on educational indicators given in
+                  Annex – I school are prioritized for
+                  support
+
+                  Program Setting
+
+                  The whole school approach concept shall
+                  be followed in order to completely
+                  include all the facilities for school & get
+                  approved from DEO. The approval of
+                  DEO/AREA officer is required prior the
+                  expenses of such construction budget by
+                  the school.
+
+                  Preparation of Cost Estimates
+
+                  Prepare cost estimates of each individual
+                  components of school physical facilities
+                  and getting approval from DEO. The
+                  district rates & GoN norms should be
+                  followed in cost estimates. The cost
+                  should include the contribution from
+                  school & program.
+
+                  Agreement with School
+
+                  Based on the cost estimate & indicating
+                  the clear cut responsibilities of local
+                  community an agreement is signed
+                  between DEO & SMC. The name of
+                  schools & list of activities/programs to be
+                  conducted in such schools, DEO will
+                  arrange technicians
+
+                  Release of Funds to Schools
+
+                  Upon technical clearance for construction
+                  of such selected schools, the fund will be
+                  released to respective schools.
+
+                  Expenditure by School is tied with
+                  work Progress
+
+
+                                                   3
+S.N.     Activity          Implementation Mechanism                 Responsibility   Timeframe   Indicators
+
+                     Based on progress of work, the fund will
+                     be released/spent by the school.
+
+                     Documentation
+
+                     DEO shall prepare a documentation
+                     related to construction of school (i.e.
+                     Physical survey form, agreement,
+                     evaluation document, measurement book,
+                     report). Each 2 sets of documents are
+                     prepared. One set will be retained at
+                     school & another set shall be forwarded
+                     to DEO.
+
+                     Supervision of Construction Works
+
+                     DEOs will assign technical personnel
+                     (Engineer/Sub Engineer) to supervise &
+                     monitor construction activities in schools.
+                     For this, there is also a practice of
+                     utilizing technicians through
+                     NGOs/INGOs as per the MOU.
+
+                     Construction should Comply with
+                     Agreement
+
+                     Construction should comply with clauses
+                     of agreement. The breach of contract, sub
+                     standard work & delay could subject to
+                     legal action by DEO to chairman of SMC
+                     & personnel involved.
+
+                      The cost allocated for new classroom
+                        construction is inclusive of 5 sets of
+                        furniture.
+                      The new classroom should have black
+                        board of size (8'X4').
+                      There should be provision for RAMP
+                        to wheel chair users.
+2.     Support to    1. Mechanisms same as 1                         DOE            II & III
+       School        2. Other Requirements                           DEO            Trimester
+       Water            a. Water Availability for drinking &         SMC
+       Supply
+                           sanitation.                               Community
+                        b. Tube well should be at least 15m
+       System as a         from soak pit or septic tank.
+       part of          c. The fencing of school & external
+       improving           environment improvement is
+       external            entirely the responsibility of school.
+       environment
+
+3.     Separate      1. implementation Mechanism same as 1           DOE/PSS
+       Toilet for    2. Other Requirements                           DEO
+       Boys &           a. The boys & girls toilet should            SMC
+
+                                                      4
+S.N.     Activity          Implementation Mechanism              Responsibility   Timeframe    Indicators
+
+       Girls               maintain a distance                    Community
+                        b. Construction of RAMP for wheel
+                           chair users
+                        c. Availability of water in school for
+                           water supply & sanitation purposes
+                        d. Other requirements as of no. 2
+4.     Construction    Based on DOEs design/drawing the         DoE/PSS          I, II, III
+       of District      cost estimates shall be prepared. The                     Trimester
+       Education        norms shall follow district & GoN. The
+       Office           procurement of work shall follow as
+                        per procurement guidelines of GoN.       DEO
+       Building
+                        The tender document shall be prepared.
+       (Including       1 set of tender document should be
+       furniture)       sent to DoE/PSS.
+                       Publish tender notice
+                       Evaluate the bids
+                       Agreement with bidders. A copy shall
+                        be forwarded to DoE/PSS
+                       Under the close supervision of
+                        technician construction work should be
+                        done
+
+
+
+
+                                                    5
+Chapter II - Environmental Assessment
+
+2.1 Methodology Used to Prepare EMF
+The present EMF was prepared based on the following methodologies:
+
+1. Review of existing literatures including the following:
+
+a. Plan, policies, and programs of MOE/DOE related to the improvement of school physical
+   facilities
+b. Environmental Protection Act (1997), Environmental Protection Regulations (1997)
+c. National plan, policies in education sector in Nepal, Self Governance Act, Educational Act and
+   Regulations
+d. EMIS format and data collection procedure
+e. Study reports (basic design, EFA reports including core document and Environmental
+   Assessment, SESP core documents-2008)
+f.   Implementation status review report of EMF and other safeguard documents.
+g. Alternative design of classrooms, guidelines for the development of school facilities under EFA
+   including standard, type-designs and technologies used in different geographical regions and
+   climatic conditions in Nepal.
+h. National Environmental Guidelines for School Improvement and Facility Management in Nepal,
+   2004.
+i.   Other reports and documents as found suitable by the DOE for the preparation of above
+     framework
+j. Practices under BPEP II and EFA with respect to the construction and rehabilitation of
+   classrooms.
+k. Practices under EFA related to the school physical facilities improvement including but not
+   limited to drinking water supply and sanitation, play grounds, compound protection, drainage,
+   solid waste disposal, landscaping with greenery
+k. Current practices of Operation and Maintenance (O& M) of buildings, water supply, drainage,
+   sanitary facilities, sports facilities, school compound and other utilities including funding for O &
+   M of facilities
+l.   The environmental safeguard policies of SSRP development partners
+m. Consultations were carried out with central, district and local stakeholders with regard to
+   environmental considerations to be included in SSRP.
+n. Field visit for getting the perception of stakeholders and observe “on the ground” activities
+   accomplished in EFA with respect to implementation status of Environmental Guidelines
+   prepared under EFA with particular reference to its dissemination, training of personnel,
+   institutional set up, monitoring framework, and revisions of designs and construction practices.
+   Based on the analysis, specific and realistic actions will be recommended for improvement while
+   implementing the SSR. The recommendations are accompanied by appropriate and practical
+   formats that can be used during implementation and monitoring of SSRP. The lessons learned,
+   lacunae and useful measures that could be replicated in SSR shall be assessed and used invariably
+   in Environmental Management Framework for SSR.
+        The chronology of consultative meetings held were given in annex II
+                                                   6
+       The discussions were also held with experts and the concerned staff of DOE, relevant
+        organizations working in education sector in Nepal. The list of persons/institutions contacted
+        during the preparation of EMF is given in annex III
+       The observation from the field visits are listed in annex IV
+       Summary of stakeholders feedbacks on environmental issues related to SSRP are listed in
+        annex V.
+
+2.2 Policy, Legal, and Institutional Framework for Environmental
+Management
+In this section the policies, legal and institutional framework for environmental management in Nepal
+are summarized including national legislations.
+
+2.2.1 Review of Nepal’s National Environmental Policies
+National Policies: Development planning exercise, which was started in mid 1950 in Nepal focused
+on natural resources utilization agriculture production, sanitation, and sewerage facilities and
+infrastructure development. Only in 1970s the need for the integration of environment aspects in
+development planning was realized. Since then efforts are being made to ensure that environmental
+policies and programs will be an integral part of national planning.
+
+The Sixth Plan (1980-85) adopted policies and programs on land use, soil conservation, and
+watershed management, development and management of national parks and wildlife reserves. The
+policy focus was on the implementation of the integrated development programs, environmental
+studies of development projects and control of air, and water pollution in the early 1980s. Exports of
+forest products were banned in 1980s.
+
+Subsequently, environment was recognized in Seventh Plan (1985-1990) as an important aspect to be
+integrated into every development projects. Some important measures were undertaken for
+environmental protection and management. Importance of public participation in the decision making
+process, and the role of women and non-governmental organizations were also emphasized for the
+management of environment. The Eighth Plan (1992-97) re-enforced to sustainable economic growth,
+and poverty alleviation. The Plan emphasizes the need for internalizing the Environmental Impact
+Assessment system particularly in economic development plans and programs. A National
+Environmental Policy and Action Plan (NEPAP) were prepared in 1993 to facilitate the integration of
+the environment aspects in development process. His Majesty’s Government of Nepal’s (HMG)
+environmental policy was also clearly spelled out in NEPAP. There are five main aims of HMG’s
+environmental policy:
+
+   To manage physical resources in an efficient and sustainable manner
+   To balance development efforts and environmental conservation for sustainable fulfillment of the
+    basic needs of the people
+   To safeguard national heritage
+   To mitigate the adverse environmental impacts of development projects and human actions
+   To integrate environment and development through appropriate institutions, adequate legislations
+    and economic instruments, and sufficient public resources.
+
+During this period, master plans for irrigation and livestock were also prepared. Environmental
+aspects in the policies of hydropower, irrigation and industry were incorporated. The Agriculture
+Prospective Plan was prepared and implementation started. The Ninth Plan (1997-2002) was
+formulated to identify system for ensuring maximum participation of general public in environmental
+decision making process, fixation of environmental standards, establishments of strong environmental
+                                                   7
+information and management system, implementation of international treaties, engagement of NGOs
+and INGOs in environmental sector, initiation of environmental health programs etc.
+
+According to the Eighth Plan, causes for air, water and land related pollution was supposed to be
+investigated through on-the spot observation and management mitigation plans. In this regard
+emphases were laid on adopting technology required to minimizing waste and neutralizing it.
+However pollution control program launched during this period included limited assessment studies
+of existing situations in the areas of solid waste along with other sectors: water, air, noise, etc.
+Utilization of appropriate technologies still needs to be developed in the areas of solid wastes along
+with other areas. Research on the cause of air, soil, and water related problems still need to be
+investigated and analyzed to prepare indicators and action oriented guidelines for the utilization.
+
+The solid waste aspect has been mentioned in the Ninth Plan. The Plan includes: consideration for the
+engagement of NGOs and private sector for the management of solid waste, emphasis for composting
+for municipal wastes, setting norms and standards in this field and its strict implementation in every
+municipalities and capacity building of local municipalities for handling solid waste related issues.
+
+Though the development plans recognized the adverse environmental deterioration and importance of
+various remedial measures, the policy lacks the most needed coordination, flexibility, and
+responsiveness as regard to the solid waste related issues.
+
+Similarly in the Tenth Plan objectives are set up for environment conservation that is indirectly related
+to school environment and addressed:
+
+   To take into account that sustainable development exists through the inter relationship between
+    environment conservation and economic development; emphasize conservation, security, re-
+    establishment and sustainable utilization of natural environment.
+   Promoting sustainable development by controlling pollution and amassing public participation in
+    a campaign to create a clean and beautiful rural environment.
+
+
+The main strategies in the area of environmental management in Tenth Plan are (i) internalization of
+environmental concerns into development projects and programs (ii) fixation and implementation of
+national environmental standards (iii) forging partnership with local institutions, NGOs and private
+sector in awareness campaign (iv) preparation of action plan and implementation of international
+environmental treaties and conventions. The main policies are (i) capacity development of local
+institutions in environmental management (ii) promotion of women participation in environmental
+management at national as well as at local level (iii) encourage scientific research and development to
+develop environmentally friendly technologies and (iv) develop appropriate legal and fiscal
+mechanism to manage and control industrial pollution. The main program is Environmental
+Conservation Program.
+
+2.2.2 Review of Environmental Laws
+2.2.2.1 The Constitution of Kingdom of Nepal 1990
+Article 26(4) embodies following policy mandates: “The state shall give priority to protection of the
+environment and also to the prevention of its further damage due to physical development activities
+by increasing the awareness of the general public about environmental cleanliness and the state shall
+make arrangements for the special protection of the rare wildlife, the forest and the vegetation.”
+
+With the above provisions, some constitutional responsibilities and duties have been vested upon the
+State for safeguarding the environment against its further damage due to physical development
+activities. (Pant, 1998)
+
+                                                   8
+2.2.2.2 The Environmental Protection Act 1997
+In order to give effect to constitutional mandates special “Environmental Protection Act 1997”
+(enforced from June 24, 1997) and “Environmental Protection Rules 1997 (enforced from June 26,
+1996) have brought into existence. These Act and Rules have made provision dealing with pollution
+control, EIA, IEE, conservation of national heritage etc.
+
+Section 24 empowers the GON to frame rules including for matters relating to sources of pollution,
+standards, prevention and control of pollution. There are also several sectoral Acts related to
+environment.
+
+
+2.2.3 Other Related Legislations & Guidelines of the Government of Nepal
+2.2.3.1 Local Self Governance Act (1999), Local Self Governance Rule (2000): The Local
+Self Governance Act has been enacted to provide greater political, administrative and financial
+autonomy to local bodies and facilitate community participation at the local bodies and community
+participation at local level. In accordance with the Act, local bodies have been formed at three levels:
+Village of Development Committee (VDC) at village level, Municipality at town level, District
+Development Committee (DDC) at district level. The Act empowers these local bodies to formulate
+and implement periodical and annual plans within their own jurisdiction.
+
+2.2.3.2 Forest Act (1993), Forest Regulations (1995): The use of forest land is subject to forest
+act and regulations. The school projects need to comply with the provisions of forest law when it
+requires the use of forest land.
+
+2.2.3.3 Public Work Directives, 2002. The directives provide general guidance pertaining to public works
+including construction of buildings. These include procedures and requirements related to: environmental
+assessment; social assessment; earthquake-related considerations in infrastructure pprojects; occupational
+health and safety; environmental management in civil/construction works; and specific sectoral procedures
+to be followed.
+
+2.2.4 Policy for the Improvement of School Facilities
+
+The Government of Nepal’s effort towards school physical facilities development though various
+programs till date is presented in Annex –VI. The DOE has joined hands with INGO/NGO in quality
+supervision for the construction of school physical facilities. Out of 75 districts, in 32 districts
+INGO/NGO is active in providing quality supervision of the construction of school physical facilities.
+Among those are the Save the children Norway are working in 20 districts, Plan International in 6
+districts, Room to read in 3 districts, Save the Children (US) in 2 districts, and Save the Children
+Japan in 1 district. The DOE policy for the design and construction of school buildings are presented
+in Annex-VII.
+
+
+2.3 Summary of Provisions that are Applicable to SSRP Activities
+
+The environmental issues in SSRP were not anticipated to be grave. No large scale, significant/or
+irreversible impact is anticipated. The environmental review has identified several small scales &
+local environmental potentially associated with the program activities.
+According to Environmental Protection Regulation (EPR 97), there are two levels of environmental
+assessment, namely, IEE & EIA. Schedule 1 of EPR lists projects that require IEE & schedule 2 lists
+projects that require EIA. There criteria are based on the nature of size of the project & its cost. In
+
+                                                    9
+addition, the EPR also list environmentally sensitive areas, where any proposal, regardless of the size
+& cost will require & EIA.
+Since the nature of activities under SSRP doesn't trigger any national or international environmental
+screening requirements, a workable environmental manager plan has been proposed in EMF for
+SSRP. While preparing the SIP, all the environmental issues related with improvement program will
+be identified so that these issues will be internalize in the planning, design, and construction as per the
+EMF which will be followed by preparation of EMPs. However, sub-projects activities like
+construction of annex buildings, laboratory and toilets etc. will undergo a screening to determine the
+type and severity of the impacts and EMPs will be accordingly prepared if required. For identifying
+the key issues, environmental screening has been prepared Annex – VIII which can be customized
+for both aforementioned tasks Based on the screening, a workable environment
+management/mitigation activity has been tailored.
+
+
+
+
+                                                    10
+2.4 Review of Safeguard Measures
+The following paragraph analyses safeguard measures assessed by different development partners.
+The assessment also reveals status of the safeguard in relation SSR Plan implementation.
+
+
+S.N. Development Partners                                Safeguard Policies
+1.   International             EA policy OP 4.07 is triggered. According to this SSRP has been
+     Development               categorized as Environmental Category B Project. Thus in case of
+     Association (IDA)         SSRP, environmental impacts due to program activities and likely to
+                               include loss of vegetation, soil erosion, water pollution, air
+                               pollution, health impacts are children, proper sanitation measures
+                               must be fully identified & appropriate mitigation measures clearly
+                               defined & cost to be incorporated into program's overall budget.
+2.    Aus AID                  The SSRP falls under scenario 1 of environmental marker set by
+                               Aus AID, which states no significant environmental impact. The
+                               monitoring of Unexpected environmental impacts should be
+                               incorporated into activity's monitoring & evaluation process.
+3.    EU                       The liability for environmental damage falls into three categories
+                               namely; protected species & natural habitats, water & soil. The
+                               SSRP activities won't trigger any negative implications in above
+                               three categories.
+4.    ADB                      The SSRP falls under category C (unlikely to have significant
+                               environmental impacts). No environmental assessment is required
+                               for category C projects although their environmental implications
+                               nevertheless need to be reviewed.
+5     UNICEF                   Helping schools provide supplies, safe water and sanitation. Water,
+                               sanitation and hygiene are crucial to getting and keeping girls in
+                               school, as they bear the brunt of unhygienic or non-existent latrines.
+                               The lack of clean and separate sanitation facilities in schools
+                               discourages many girls from attending school full time and forces
+                               some of them to drop out altogether, particularly as they approach
+                               adolescence and the onset of menstruation. Lack of water in the
+                               household also keeps girls away, as they are usually the ones
+                               designated to walk long distances to fetch the household’s water
+                               supplies. And children of both sexes are sapped of nutrients, energy
+                               and the ability to learn if they are infected with water-borne
+                               parasites. This issue has been well addressed in EMF of SSRP.
+6     FINLAND                  Emphasize the importance of environmental considerations in all
+                               activities with a view to forestalling threats, and creating conditions
+                               conducive to prosperity based on the sustainable use of natural
+                               resources;
+                                support environmental programmes and the development of
+                                   environmental administration;
+                                take into account the principles of sustainable development in
+                                   supporting agricultural and forestry programmes;
+
+                                               11
+S.N. Development Partners                                     Safeguard Policies
+                                        support developing countries in fulfilling their environmental
+                                         obligations; and
+                                        Practice and further develop procedures emphasizing the
+                                         independent decision-making authority and participation of the
+                                         partner in cooperation and relevant interest groups.
+
+
+The SSRP is not likely to present any perceived environmental risks and potential adverse impacts in
+its area of influence. Hence, the nature of activities under SSRP doesn't trigger any national or DP's
+specific environmental assessment requirements.
+
+2.5 Environmental Issues and Its Significance for Infrastructure
+Development under SSRP
+Environmental Assessment (EA) is a process whose breadth, depth, and type of analysis depend on
+the nature, scale and potential environmental impacts of the proposed program. For SSRP, EA takes
+in account the environmental issues highlighted above below.
+
+The SSRP is not likely to present risks and potential adverse environmental impacts in its area of
+influence. However, the associated risks posed by seismic hazards should be given due consideration
+during planning of SSRP activities as well as to the risks of floods, landslides, fire etc. Thus in the
+case of SSRP, the environmental and social issues addressed below have been categorized and the
+appropriate mitigation measures and its implementation arrangements, capacity building programs
+associated with it are clearly elaborated in EMF. Multi hazard risks should be addressed
+appropriately.
+
+This EMF has been designed to address such environmental and social issues at the planning,
+construction and operational stages under the physical infrastructure development activities of SSRP
+
+ S.N       Environmental Issues              Significance                      Remarks
+  1.   Slope stability and land slides        Moderate      Schools in mountain and hill region of
+                                                            Nepal fall on slopes. Poor site selection for
+                                                            school building construction lead to
+                                                            instability, and lead high cost on account of
+                                                            earth retaining structures.
+  2.   Location of school and                  Moderate     This is very important as it determines
+       orientation                                          magnitude, natural heating, and lighting
+                                                            available inside the building. Orientations
+                                                            should be based on the climate type of the
+                                                            place where school facilities are planned
+
+  3.   Sanitation                              Moderate     Adequate sanitation facility in school
+                                                            (toilets, personal hygiene practices) should
+                                                            be encouraged.
+  4.   Water Quantity/Quality                  Moderate     An easily accessible water supply that
+                                                            provides sufficient safe water to meet
+                                                            school needs. Schools in Nepal are found
+                                                            using sources like protected springs, dug
+                                                            wells, boreholes, and piped water supply.
+                                                            The problem of arsenic contamination in
+                                                            ground water in schools of Terai should be
+                                                    12
+S.N       Environmental Issues        Significance                     Remarks
+                                                     given special attention.
+5.    Wastes                            Low to       Solid waste should be disposed of properly.
+                                       moderate      Key strategies for improving solid waste
+                                                     management and disposal are to minimize
+                                                     the waste by schools and to recycle waste
+                                                     whenever possible.
+6.    Day Lighting and windows         Moderate      Poor indoor lighting in classroom can have
+                                                     many harmful effects on health and well
+                                                     being of teachers and students.
+7.    Pollution (Air, Water, and        Low to       The air, water and noise pollution issues
+      Noise)                           moderate      during the construction and operation
+                                                     phases of the school and administration
+                                                     building construction should be addressed.
+
+                                                     The air pollution caused by old school
+                                                     buses is a subject of concern and need
+                                                     attention for regular repair and
+                                                     replacement. The air pollution caused by
+                                                     vehicular movement in school areas is
+                                                     another issue to be considered. Proper
+                                                     speed control measures and air pollution
+                                                     control measures shall be incorporated.
+
+                                                     In many schools, teaching-learning activity
+                                                     in one class room disturbs the other class
+                                                     room(s) (because class room designs are
+                                                     inappropriate from noise consideration).
+8.    Ventilation systems              Moderate      The poor ventilation in schools may lead to
+                                                     respiratory problems, and easier
+                                                     transmission of infectious diseases.
+                                                     Constructing schools with sufficient
+                                                     number of windows may improve
+                                                     ventilation.
+9.    Seismic Hazard                     High        Earthquake safe school and administrative
+                                                     building should be encouraged.
+10.   Natural Hazards (storm, wind,   Moderate to    Maximum care should be taken during
+      Thunder, Hail stone etc)          High         design of structures and emergency
+                                                     planning measures should be integrated.
+11.   Drainage and flood              Moderate to    Drainage management should be an integral
+      management                        High         part of construction of schools.
+                                                     Construction of schools in flood plain areas
+                                                     shall be given special attention. Necessary
+                                                     control, emergency measures should be an
+                                                     integral part of the program.
+12.   Health and Hygiene               Moderate      The health and hygiene education and
+                                                     practices offered in schools was felt to be
+                                                     inadequate.
+13.   Construction materials use       Moderate      The use of local materials should be
+                                                     encouraged.
+                                                     Avoid use of wood in construction of
+                                                     schools in Terai. Special attention should
+                                                     be given to control deforestation.
+                                            13
+    S.N       Environmental Issues           Significance                      Remarks
+                                                             The quarrying of sand from River should be
+                                                             limited to avoid any negative
+                                                             environmental impacts. Local quarrying of
+                                                             stone and other raw materials should be
+                                                             within limit not jeopardizing the local
+                                                             environment.
+                                                             Design and implementation of climate
+                                                             friendly school building construction.
+    14.   Laboratory safety and               Moderate       The laboratory safety and hazardous waste
+          hazardous waste                                    management in majority school laboratories
+                                                             in Nepal is poor. So, it is advisable that all
+                                                             recipient schools for the laboratory under
+                                                             SSRP should the checklist included in
+                                                             annex of this EMF.
+    15.   Safeguarding the school             Moderate       To define school land, to safeguard
+          facilities                                         students, school buildings and resources, to
+                                                             prevent entry of animals to limit the public
+                                                             access to public access to school and for
+                                                             various safety and security purpose, fencing
+                                                             of school is essential.
+    16.   Class room temperature              Moderate       In hot climate, e.g. in Tarai plain area,
+                                                             using GI sheet roof in school means
+                                                             subjecting school kids to high temperatures.
+                                                             Innovative ways need to be looked at to
+                                                             address this issue.
+
+
+
+2.6 Past Experiences
+
+2.6.1 .Components of NEGSIFMN that Worked
+The school building design and construction standard developed by the DOE has incorporated the
+standards and good practices prescribed in NEGSIFMN. This standard has clearly spelled out that all
+the construction should follow the National Building Code, and child friendly constructions. This has
+been reflected in their guiding principal, which states “Child friendly (well lighted and well
+ventilated), seismically resistant, aesthetically pleasing school maximizing the use of local
+construction material and resources with no adverse effect on environment like deforestation, and
+having low maintenance requirements.”
+
+In program implementation guideline prepared by the DOE (2007-2008), the following aspects of
+NEGSIFMN have been incorporated in component 1 annex of the above manual.
+
+     The school must meet the drinking water quantity/quality standards.
+     The distance of 15 meter must be maintained between the septic tank and tube well.
+     The school boundary/fencing wall should be constructed by the school from their own source to
+      make the school safe.
+     Provision of Rs 1 lakh has been allocated for the construction of separate toilet for boys and girls
+     The guideline has discouraged the use of “timber” in Terai and promotion of steel tubular truss.
+     The provision of ramp in classrooms and toilet for disable students.
+
+The following aspects were improved during the period through the intervention of NEGSIFMN.
+
+                                                    14
+   The awareness has been raised regarding the arsenic contamination in wells of Terai Schools and
+    safe drinking water.
+   Promotion of hygiene awareness programs in schools
+   Separate construction of girls toilet
+   The partnership with INGO/NGO for the effective monitoring in school physical facilities
+    construction.
+   The environmentally friendly design guidelines for the construction of school under EFA are very
+    useful. In SSRP, this aspect is also recommended for inclusion through EMF see Annex IX.
+
+2.6.2 Components of NEGSIFMN that did not Work
+There are several components of NEGSIFMN that were less successful during EFA. However, even
+failures can teach valuable lessons. Some of the aspects that didn’t work in NEGSIFMN are explained
+below.
+
+Integration of NEGSIFMN in planning process i.e. School Improvement Plan (SIP) was missing. The
+capacity building activities for the implementation of NEGSIFMN was spelled out in the document
+but failed to incorporate it in the project cycle in EFA. The non allocation of budget and program for
+the implementation of NEGSIFM were some of the shortcomings. Due to this reason, the proper
+dissemination of NEGSIFMN and its implementation couldn’t take place in EFA.
+
+The research and development aspect in alternative of school design, selection of construction
+material was also found missing.
+
+2.6.3 Innovative Approaches
+Some of the innovative approaches so far being adopted by DOE are highlighted below.
+    Alternative designs prepared with the use of local materials (22 type model, compressed
+       stabilized earth blocks (CSEB) model under approval).
+    The community must get an approval from the Department of Urban Development and
+       Building Construction (DUDBC) for their own designs.
+    Trainings were provided to engineers and sub engineers for earthquake safe design and
+       construction.
+    Provided orientation to SMC, teachers and masons on construction quality.
+    Construction of physical facilities through community participation (at least 25% community
+       participation)
+    Design of RCC school building is available and school willing to construct such RCC
+       building (through cost sharing provision) is selected. For the construction of such building
+       DOE shall allocate Rs. 825000.00 per scheme.
+    DOE has a provision for the construction of separate toilet for boys and girls (Rs. 100,000.00
+       per school) has been allocated under this scheme.
+    In order to improve the water supply system in schools, DOE has allocated Rs. 10000.00 for
+       the improvement of school water supply systems
+    Bardiya District Education Office in collaboration with MS Nepal, and BASE Bardiya built
+       tow pilot models of the new design in Bardiya districts. The blocks/bricks are produced using
+       Compressed Stabilized Earth Block (CSEB). The design is based on climate responsive (also
+       called bio-climate) principles to nationally maintain a relatively comfortable temperature in
+       all seasons. The research and development is ongoing regarding this technology.
+    DOE has pilot tested Carbon Fiber UPVC roofing in schools. This roofing material is easy to
+       fix, inflammable, acid/alkali erode proof, sound and heat insulation properties. The detail
+       technical and financial feasibility is yet to be done by DOE prior its use in schools.
+
+
+                                                 15
+         In order to establish good water quality system in schools, DOE has collaborated with
+          Department of Water Supply and Sewerage and UNICEF in improving water supply systems
+          in schools
+         As agreed with DOE some INGO/NGOs have provided technical support for school building
+          construction in 32 districts.
+
+2.6.4 Lessons Learned
+2.6.4.1 Performance Review
+The performance status review of EMF document (drafted in 2009) and its compliance for SSRP
+was conducted through random sampling of schools funded through SSRP. The findings indicated
+that the provisions, process and procedures in the existing EMF are adequate to address all the
+pertaining environmental issues which arise during the construction activities. On the other hand, the
+main challenge is associated with insufficient program monitoring from DOE/DEO, partly due to
+inadequate technical human resources, budget and institutional arrangements. The environmental
+screening, the first step to identifying the potential concerns as spelled out in the EMF, was found to
+be missing in a few subproject activities of schools.
+
+NEGSIFMN
+The development of NEGSIFMN was an innovative approach.
+Clearly defining and specifying the coverage, contents, and applicable standards of such components
+in EMF would eliminate the issues in SSRP. The extended and revised version of NEGSIFMN would
+definitely overcome such lacunas in meeting the overall objectives of SSRP. Considering these, the
+positive aspects of NEGSIFMN should be maximized and the shortcomings in EFA should be
+overcome through the application of the EMF under SSRP. These aspects are dealt with under the
+capacity building for implementing the EMF in SSRP.
+
+2.7 MECHANISMS FOR IMPLEMENTATION OF EMF IN SSRP
+
+S.N.                   Activities                     Responsibilities                   Remarks
+1.   Preparation of EMF,  Its Approval, Circulation
+     & Incorporation in Program
+1.1 Approval of EMF for SSRP                        MoE
+1.2 Printing, Publication of EMF in Nepali & its DoE                        DOE provides EMF guidelines to
+     wider circulation                                                      DEOs for implementation
+1.3 Dissemination of EMF through Program            DoE/DEO                 DoE will ensure that stakeholders
+     Implementation Manual (PIM)                                            e.g. DEO, SMC and others
+                                                                            understands the EMF requirements
+                                                                            and EMF provisions are followed
+                                                                            while planning and implementation
+                                                                            of School Physical Improvement
+                                                                            programs (SPIP) and DEO Office
+                                                                            buildings.
+1.4   Incorporation of EMF aspects in SIP            DEO/ SMC               DoE will ensure that EMF is an
+                                                                            integral part of decision making for
+                                                                            SSRP activities.
+
+1.5   Dissemination of EMF through regular              DoE/ DEO/ Partner   Engineers, Sub-Engineers and
+      orientation programs organized for Engineers, INGOs                   Partner INGO's representatives are
+      Sub-Engineers, District Education Officers,                           involved in exercises on how to
+      I/NGOs and other partners working in                                  incorporate EMF provisions in
+      collaboration with DoE.                                               planning and implementing SIP
+2     Environmental Assessment & Management
+2.1   No special EA is required as construction
+      activities are of very small threshold, i.e. less
+                                                      16
+S.N.                      Activities                  Responsibilities                   Remarks
+       than NRs 825,000.00
+2.2    Environmental Screening of sub-project       DEO                     Prepare EMP if required
+       activities
+2.3    Incorporate EMF requirements in SIP          DOE                     Follow approved EMP
+       preparation guidelines
+2.4    Utilize EMP requirements in school           SMC
+       construction, as spelled out in SIP
+2.5    For DEO Building Construction in             DEO                     Clauses in tender document should
+       Corporation of EMP Aspects in contract                               be clearly defined
+       document
+3.     Monitoring & Auditing
+       a. Field Level Monitoring                    DEO (as an integral     Checks screening report &
+        During implementation                      part of ASIP            incorporation of EMPs
+        Four monthly, feeding into government's    monitoring system) a    recommendations into subproject,
+           quarterly portfolio review meeting       dedicated technical     field implementation, & record
+                                                    person preferable ,     keeping also check progress report
+        Site visited to representation samples
+       b. Sub Project Level Monitoring              By DEO at regular       Keeps updated records of the
+        During pre-construction, construction &    basis & DoE by          mitigation works undertaken
+           operation stages                         intermittent & as
+        Regularly                                  cross check             Report to DoE/PSS
+                                                    Prepare status report
+                                                    challenges, obstacles
+                                                    faced
+       c. Compliance Audit                          DOE, Central Level      Verifies overall compliance to
+        During Implementation                      Team (As an integral    EMF & other env. & social
+        Annually                                   part of overall         safeguard requirements
+                                                    program
+                                                    implementation
+                                                    audit)
+                                                    Visits random
+                                                    representative
+4      Annul Reporting & Feedback                   DoE (DoE) reports       DoE will conduct an annual
+        Interactions/Workshops                     status on the ground    interaction to replicate the best
+        Reports                                    reality, &              practices & to avoid/ mitigate
+                                                    recommendations for     obstacles problem
+                                                    improvement to
+                                                    MoE)
+
+2.8 Existing Capacity Assessment for the Implementation of EMF
+
+S.N. Organization/                                     Existing Capacity
+       Agency
+                           Knowledge/Expe           Manpower                 Budget             Logistics
+                            rience of Env.
+                                Mgmt
+
+1       MOE                         X                     X                     X                   X
+
+2       DOE                                           Engineer
+                                                       assigned
+                                    √                 additional                X                   X
+                                                   environmental
+                                                   tasks, over and
+                                                        above
+                                                     17
+S.N. Organization/                                   Existing Capacity
+       Agency
+                         Knowledge/Expe           Manpower               Budget          Logistics
+                          rience of Env.
+                              Mgmt
+
+                                                  engineering
+                                                     tasks.
+
+3     DEO                                           Engineer
+                                                    assigned
+                                                   additional
+                                                environmental
+                                  X                                        X                 X
+                                                tasks, over and
+                                                     above
+                                                  engineering
+                                                     tasks.
+
+4     SMC                         X                     X                  X                 X
+
+Note: X: Lack of capacity, √: Adequate capacity
+
+The physical services section of the DOE is taking responsibility for the physical infrastructure related
+activities since BPEP II. This responsibility of DOE has been continued for SSRP as well.
+
+DOE based on pre set district targeting criteria allocates program and budget to all 75 DEOs. DEOs
+based on pre set school selection criteria allocate program and budget to recipient school. Schools are
+fully responsible to implement the program under the technical supervision of DEO.
+
+The DOE, DEO has very limited technical staff, hardly sufficient to run their annual programs. There
+is no environmental specialist at any tiers (neither at MOE, nor at DOE or DEO) . An environmental
+specialist was hired earlier by DOE( Physical service section) to provide environmental oversight and
+for coordination of environmental activities for all infrastructure works executed by DOE. But as of
+now, there is a civil engineer who has been assigned for this job and now needs to provide overall
+environmental oversight, coordination and help implement the EMF for SSRP. The officer should
+also be responsible in mainstreaming the environmental best practices, emerging lessons & innovative
+ideas, and coordinate/facilitate environmental management through various schools and DEOs in the
+country.
+
+Similarly, the SMC and schools also do not have access to environmental manpower and knowledge
+to deal with issues related to environment mentioned in NEGSIFMIN and EMF of SSRP. Their
+capacity in terms of manpower and resources is required in order to implement EMF in SSRP.
+Therefore, provision for dedicated technical person, preferably an environmental specialist in the
+DEO or in the team of service providers needs to be made for monitoring the construction activities
+at the local level..
+
+.
+
+
+
+
+                                                   18
+Chapter III - Environmental Management Framework (EMF)
+
+3.1 An Overview of Environmental Steps in SSRP
+The EMF has been developed by the Ministry of Education, Nepal for the SSRP in order to ensure
+due diligence and to avoid any environmental degradation issues. The purpose of this framework
+includes assisting the SSRP implementing agency DOE in dealing with issues related to
+environmental impacts, identifying suitable mitigation measures and implementation of these
+measures through an environmental management plan.
+
+3.1.1 Environmental Assessment (EAs)
+
+Considering the nature and magnitude of potential environmental impacts from relatively limited small
+scale construction, renovation, refurbishing construction work and other associated components of SSRP,
+the proposed operation is to be classified as category “B”.
+The SSRP is not likely to present any perceived environmental risks and potential adverse impacts in
+its area of influence. Hence, the nature of activities under SSRP doesn't trigger any national or
+international extensive environmental requirements. The SSRP, as a whole, doesn’t require any
+environmental clearance. However, in order to manage the minor and localized impacts GON has
+suggested developing a screening and preparation of EMP for schools. The proposed EA suggests the
+following steps;
+
+3.1.2. Integration of EMF in SIP
+
+The provision made in EMF will be well integrated in the SIP to address the key environmental
+issues. The integration of EMF in the School Master Plan/School Improvement Plan (SIP) will be one
+of the criteria for selecting the school by DEO. EMF provides an essential link between the impacts
+predicted and mitigation measures specified. EMPs/mitigation measures will be included in the
+design, contract and bidding documents for implementation. Sample design Guidelines for
+constructing environmentally friendly school building from Environmental Perspective is given in
+Annex - 9.
+The EMP should include the following: i) a site map showing environmental features of the school
+and its surroundings, ii) concise description of the environmental risks/ concerns relevant to the
+school, and proposed SIP as well as potential solution to the risks/ problems identified (summarize
+these in a table).
+
+3.1.3 Environmental screening for sub projects
+
+For any sub project activities which will involve infrastructure construction, renovation/refurbishing,
+construction works, district level offices and institutions meeting the eligibility criteria will use a
+checklist (Annex - 8) for screening to identify issues and environmental impacts related with sub-
+projects.
+
+The screening process will be followed by drafting mitigation measures or preparation of EMPs if
+required accordingly.
+
+
+
+3.2 Mitigation
+The EMP identifies site-specific, cost-effective and detailed measures that will reduce the identified
+adverse environmental impacts to acceptable levels. The plan should include compensatory measures
+                                                  19
+if mitigation measures are not feasible, cost-effective, or sufficient. Examples of the environmental
+mitigation measures that may be appropriate to SSRP are shown in table below. The specific EMP
+must have its own mitigation measures that are appropriate to the issues/ risks/ difficulties identified
+through the process of screening and EMP preparation.
+
+Environmental Mitigation Measures
+
+    Category             Potential Problem                       Appropriate Mitigation Measures
+
+Slope stability    Landslide or other forms of        Geological/geomorphologic considerations shall be
+                   mass instability on the slopes     incorporated in design
+
+                                                      Civil engineering structures and bio-engineering
+                                                      measures used.
+
+                                                      Measures taken to avoid undercutting of slope toes.
+
+                                                      Quarrying prohibited in river beds, where flood discharge
+                                                      is significant
+
+                   Development of erosion or          Check dams and bio-engineering measures used as
+                   gullying in school premises        necessary
+
+Spoil disposal     High volume of water/spoil         Minimize spoil by balancing cut and fill wherever
+                                                      possible in school building construction
+
+Water              Water logging, poor drainage       Proper drainage management, Improve and increase slope
+Management                                            drainage measures
+
+Water              Sub standard or inadequate         Ensure that enough drinking water is supplied to school.
+Quality/Quantity   drinking water provided to         School shall request the drinking water supply system
+                   students                           construction/repair budget from the program.
+
+                                                      Regular testing of drinking water at least 2 times a year is
+                                                      recommended
+
+                                                      In schools of Terai, arsenic detection in ground water is
+                                                      recommended. The arsenic monitoring and mitigation
+                                                      plan suggested in EFA shall be continued
+
+Land acquisition   Land transfer will be completed    Resettlement and or land acquisition problems are not
+and resettlement   through registration, with land    anticipated in SSRP. The DoE will not do any
+                   title vested in the School,        involuntary land acquisition. All donations and purchases
+                                                      will be voluntary. DoE will not only ensure that any land
+                   Leasing of land or rights of use   donations are fully voluntary, but also that such donations
+                   of land for schools will be duly   do not involve physical displacement or any significant
+                   documented                         adverse impacts upon incomes of the donor household.
+                                                      All voluntary land transactions will meet the criteria as
+                                                      mentioned in annex VI.
+
+Plants             Trees being removed in school      Felled trees replaced, using the same species if
+                   premises                           appropriate.
+
+                                                      Trees planted wherever land is available.
+
+Quarries and       Pollution, disturbance and         Construct bunds to screen noise and dust.
+borrow pits for    danger from quarry operations
+obtaining                                             Enforce access restrictions.
+construction
+                   Safety risks from abandoned        Quarries made safe by re-grading slopes and installing
+                                                      20
+    Category            Potential Problem                       Appropriate Mitigation Measures
+
+materials         quarries or borrow pits            structures as necessary.
+
+                  Land seriously disturbed or lost   Quarry and borrow areas rehabilitated to productive
+                  from production                    plantations using bio-engineering techniques.
+
+                  Quarries continue to be used by    Unauthorized quarrying stopped, where necessary by
+                  unauthorized persons               working with the District Development Committee.
+
+Stone crushing    Dust and noise pollution           Spray water in crusher machine, Use it in off hours of
+                                                     schools. The facilities should be away from school
+                                                     premises.
+
+Air and noise     Dust generated from                If water is available, the road surface can be sprayed on a
+pollution         construction works, and            frequent schedule.
+                  approach roads to school
+
+                  Air pollution generated due to     Old school buses should be regularly phased out. Regular
+                  old school buses                   repair and maintenance of vehicles. Traffic sign should
+                                                     be kept mentioning “School Zone”, Speed control
+                  Dust and noise generated by        measures bumps etc should be kept
+                  vehicles passing by schools
+
+                  Noise during construction of       Work schedule to minimize disturbance.
+                  schools
+
+Social issues
+
+                  Local people excluded from         Designs incorporate methods within the skills of local
+                  project activities                 people.
+
+                                                     Contractors encouraged using local labor wherever
+                                                     possible.
+
+                  Promises were made to local        Checks to ensure that the promises are fulfilled; if they
+                  people during feasibility and      prove to be not possible, reasonable alternatives must be
+                  planning phases                    negotiated.
+
+Solid waste       Spreading of waste, pungent        Proper solid waste management system should be
+management        smell, deterioration of            introduced in schools which includes segregation of
+                  aesthetics                         waste, and its proper disposal. The environmentally
+                                                     friendly management measures like composting should
+                                                     be encouraged. Awareness regarding the management of
+                                                     solid waste, discouraging use of plastic products etc
+                                                     should be promoted in schools The use of recycled
+                  Use batteries, laboratory          materials should be promoted.
+Hazardous waste   chemicals etc
+                                                     Safe disposal of hazardous waste should be encouraged.
+
+
+
+Health and        Unhealthy living condition in      Promote health measures in schools. (hand washing
+hygiene, and      schools, disease                   facilities, safe disposal of human excreta, availability of
+food safety                                          water, etc). The norms prescribed for toilet by
+                                                     NEGSIFMIN should be followed.
+
+Water             Lack of quantity of water, poor    Water conservation measures should be incorporated in
+                                                     21
+    Category            Potential Problem                     Appropriate Mitigation Measures
+
+Conservation      sanitation                       schools such as (efficient and rational use of water,
+                                                   incorporation of rain water harvesting systems in schools)
+
+Energy            Use of non energy efficient      Use energy efficient systems in schools, the natural
+Efficiency        bulbs, and equipments in         lighting and orientation of school building should be
+                  schools                          integral part of design. Use of renewable energy like
+                                                   solar should be promoted in schools
+
+School safety     Theft, burglary, damage of       Adequate fencing of schools is required. The windows of
+                  physical facilities              classrooms should be secured by “grill” for any kind of
+                                                   trespassing by students and outsiders.
+
+Construction      Deforestation                    The use of wood for the construction of school physical
+materials                                          facilities in Terai has been banned. The innovativeness to
+                                                   avoid use in hills and mountains should be integrated in
+Use of Wood                                        schools.
+
+                                                   The recycled materials to reduce use of raw materials.
+
+                                                   The use of local materials as much as possible
+
+Material                                           The new innovations should be integrated in design for
+specifications                                     making schools more child and environmentally friendly.
+
+School safety      Damages to school properties    Incorporate safety measures during design of physical
+                   and possible human casualties   facilities
+(Fire, earthquake, of different scale
+hail stone,                                        Create awareness about natural calamities to teachers and
+thunder storm                                      students
+etc)
+
+
+
+
+3.3 Implementation of Mitigation Measures
+ a) Program Design: The mitigation measures should be integrated in the design of the program
+itself. Such a step will enhance the mitigation measures in terms of specific mitigation measures in
+terms of specific mitigation design, cost estimation of the mitigation measure, and specific
+implementation criteria. The mitigation measures integration in the design phase will also help in
+strengthening the benefits and sustainability of the program. b) Implementation Modality: Most
+of physical construction works (new classroom construction, rehabilitation of old classrooms etc) are
+directly done through SMC. So, it is important to develop the capacity of SMC in environmental
+monitoring and mitigation. The SMC should ensure that monitoring and mitigation components as
+spelled out in EMP are properly carried out. The construction of DEO building and other structures
+when tendered out by DOE/DEO, then the project contractor should be bound by the parameters
+identified in the environmental and social assessment pertaining to specific mitigation measures in the
+contract.
+
+ c) Bill of Quantities: The tender instruction to bidders should explicitly mention the site specific
+mitigation measures to be performed, the materials to be used, waste disposal areas, as well other site
+specific environmental requirements.
+
+                                                   22
+d) Allocation of the budget for the building should be as per the design based on geographical
+setting, remoteness and transportation cost of materials instead of lump sum rates which usually omits
+the environmental cost.
+
+
+d) Supervision and Monitoring: The purpose of supervision is to make sure that specific
+mitigation parameters identified in the environmental assessment and as bound by the contract is
+satisfactorily implemented. In addition, monitoring is necessary such that the mitigation measures are
+actually put into practice.
+e) Environmental monitoring during project implementation should include systematic assessment of
+key environmental indicators that determine the degree of environmental impacts of the project and
+effectiveness of mitigation measures. Such information enables the GON/MOE and the DPs to
+evaluate the success of mitigation as part of project supervision, and allows specifies the type of
+monitoring with linkages to the impacts assessed in the EA report and the mitigation described in the
+EMF.
+
+The monitoring of the construction activities should be done by technical personals (environmental
+specialist, civil engineers, overseers) from DEO/DoE and or NGOs.
+
+
+Monitoring activities for project are divided in three types
+
+1. Pre Construction Monitoring
+2. Construction Phase Monitoring
+3. Operation Phase Monitoring
+
+
+Pre Construction Monitoring
+
+                                               Types of
+                                                                  Monitoring
+S.N.     Indicators of Monitoring         Monitoring/ Method                     Responsibility
+                                                                  Frequency
+                                            of Monitoring
+ 1.    Printing, Publication &            Direct Observation          Once             DoE
+       Distribution of EMF to All
+       Stakeholders (DoE, DEO,
+       SMC)
+ 2.    Full-time Environmental            Evidence                    Once            MoE
+       Officer in place at DoE
+                                                                                       DoE
+ 3.    Integrating EMF in SIP/            Review of                   Once            DEO
+       drafting of EMPs                   Documents/site
+                                          observation
+ 4.    Incorporation EMP in Design,       Review of contract          Once             DoE
+       Tender Document                    documents/Direct
+                                          Observation
+  5    Screening of sub                   Review of contract        Periodic           DoE
+       projects/drafting of mitigation    documents/Direct
+       measures/or EMPs accordingly       Observation
+
+
+
+
+                                                   23
+Construction Phase Monitoring
+
+                                        Types of Monitoring/      Monitoring
+S.N.   Indicators of Monitoring                                                  Responsibility
+                                        Method of Monitoring      Frequency
+
+ 1.    Drinking Water Quality            Sampling, lab             Annual            SMC
+                                          testing &                              Note: DEO
+                                          comparison with                        shall coordinate
+                                          generic standards                      with district
+                                                                                 Dept. of water
+                                         For Arsenic, testing
+                                                                                 supply &
+                                          follow protocols                       sanitation,
+                                          mentioned in EFA                       NGO, INGOs
+                                          document                               working in
+                                                                                 water &
+                                                                                 sanitation
+                                                                                 sectors.
+ 2.    Transportation of                CM/Direct Observation       Regular           SMC
+       construction material in                                     during
+       covered contains and safe                                  construction
+       loading & unloading of
+       construction materials.
+ 3.    Water sprinkling in dusty        CM/Direct Observation     Every Day           SMC
+       construction area & access
+       earthen roads
+ 4.    Stockpiling of excavated         CM/Direct Observation      Everyday           SMC
+       materials
+ 5.    Reuse of excavated materials     CM/Direct Observation      Everyday           SMC
+ 6.    Solid waste segregation          CM/Direct Observation      Everyday           SMC
+       disposal
+ 7.    Encroachment of forest           CM/Direct Observation       During         DEO/SMC
+                                                                  construction
+                                                                   once in 3
+                                                                    months
+ 8.    Quarry & Borrow Pits             Direct Observation         Quarterly       DEO/SMC
+
+Operation Phase Monitoring
+                                                Types of
+                                                                  Monitoring
+S.N.     Indicators of Monitoring         Monitoring/ Method                     Responsibility
+                                                                  Frequency
+                                             of Monitoring
+ 1.    Preparation of monitoring          Records/Documents         Monthly           DOE
+       reports
+ 2.    Drinking water quality             Samples taken from       Quarterly          DEO
+                                          different points,
+       Arsenic testing and mitigation     source, delivery         Bi Annual          DOE
+                                          points
+                                          Laboratory testing
+ 3.    Number of orientation and          Number of orientation     Regular        DOE/DEO
+       training                           and trainings
+                                          conducted
+ 4.    Impact audit                       Compliance with           Annual         DOE/DEO
+                                          EMF
+
+                                                  24
+3.4 Capacity Development
+As noted in Section 2.8, environmental capacity is generally very weak at all levels (MOE, DOE,
+DEO and SMC). MOE, DOE, DEO, and SMC capacity, therefore, needs to be strengthened so that
+they can take up the responsibilities assigned to them. The engineers assigned for oversight of
+environmental issues from Physical service section of DOE needs to be trained for
+monitoring/coordination/compliance of environmental issues related to SSRP projects GON will
+implement capacity strengthening measures, such as: i) providing environmental
+competency/human-resources, ii) training, orientation and awareness activities on environmental
+planning and management of school and school-facilities, and iii) mechanism for coordination and for
+accessing specific environmental services e.g. water-quality testing, climate responsive school
+building construction etc.
+
+If necessary, specific EMF recommends specific, targeted training for the staff, contractors, SMCs to
+ensure the implementation of environmental recommendations. In addition, the EMF when necessary
+also provides specific recommendations for operational arrangements to carry out mitigation and
+monitoring measures. In order to implement the EMF, following is the minimum capacity building
+necessary.
+
+The capacity development program is designed based on the existing capacity need assessment of the
+SSRP implementing partners/entities. This has included as one of the sub component under SSRP
+overall capacity development program.
+
+Capacity Development and Training Program for EMF in SSRP
+
+S. No.             Particular of Activities                           Remarks
+         EMF translation to Nepali, Printing &
+  1.
+         Publication
+  2.     Technical Strengthening of DOE
+                                                    In order to safeguard environmental concerns
+         2.1 Recruitment of full-time Environmental
+                                                    GON will recruit a separate environmental
+         Officer
+                                                    officer at DOE
+              Capacity Building Program to
+                 MOE, DOE, (Training, Research
+                 & Development)                     Detail Capacity Building Program will be
+  3.                                                Developed by DOE as per need for EMF
+              Monitoring & Supervision             Implementation
+                 Arrangements for DOE, DEO etc)
+
+
+The overall capacity building plan, which forms part of the SSR Plan, will incorporate capacity
+development for construction, maintenance and rehabilitation related works including the capacity in
+EMF implementation.
+
+3.5 Integration of EMF into regular programs:
+
+The EMP should be site specific and detailed in its description of individual mitigation and
+monitoring measures and its assignment of institutional responsibilities. It must integrated into
+program’s overall planning, design, budget, and implementation. The EMP must be prepared if SSRP
+sub component has to be constructed through tendering.
+
+                                                     25
+3.6 Disclosure
+The revised EMF will be shared by the MOE with concerned stakeholders After the incorporation of
+comments and approval from the Bank , this will be translated in Nepali version, printed in several
+copies and distributed to relevant stakeholders. The revised EMF will be posted in official web site of
+MOE and Bank’s infoshop.
+
+
+
+
+                                                  26
+Annexes
+
+Annex 1 - School Selection Criteria
+1. 1st Phase: Evaluate all the district level school
+    The Schools destroyed by wind, fire, landslides, earthquakes & other natural calamities which
+  required new construction.
+    The school whose classroom is borrowed by resource centre
+    Community managed schools
+    Schools running special programs
+    Based on different educational indicators like enrollment of dalit students (X), enrollment of girl
+  students (Y) ratio of grade 5 to grade 1 students (Z)
+    Index = 0.4x + 0.3y + 0.3z
+    The school with highest index will get the highest priority & low index as lowest priority.
+
+
+2. 2nd Phase
+                                                   No of classroom in primary level
+
+    Adequacy of classroom =
+                                                   Total no of classes running in primary level
+
+                                                               (including sections)
+
+    If, ACR < 1, then construction of new classroom & furniture could be provided
+                                          Area of all the classrooms in primary level (m2)
+
+    Classroom Pressure =
+                                                Total no of students in primary level
+
+    If CP<0.75 m2, then construction of new classroom & furniture could be provided.
+
+
+                                  Total no of students in primary level
+
+    Student Density =
+
+                                  Total no of classroom in primary level
+
+    If SD>50, In Kathmandu & Terai new classroom & furniture could be provided
+    If SD>45, New classroom & furniture could be provided in hilly region
+    If SD>40, New classroom & furniture could be provided in mountain region
+
+
+
+
+                                                       27
+Annex 2 - Chronology of Consultation Meetings
+1. Consultation meeting held with DOE/PSS, Kathmandu – Date: 2 April 2009
+2. Consultation meeting held at Tanahu District – 17 April 2009
+   a. Shree Satyadevi Lower Secondary School, Bharwa – 5, Tanahu.
+   b. Shree Pabitra Higher Secondary School, Bandipur – 1, Nahala
+   c. Bishnu Secondary School, Nahala, Tanahu
+   d. District Education Office, Tanahu
+   e. Hoste Hainse Child Development Society, Damauli, Tanahu
+3. Consultation Meetings Held in Palpa District – 19 April, 2009
+   a. Joint Movement for Children (JMC)
+   b. Adarsha Secondary School, Deurali VDC
+   c. Bhairav Janta Higher Secondary School, Bhairavsthan
+   d. Adarsha Higher Secondary School, Deurali
+   e. Saraswoti Higher Secondary School, Kharsyauli, Palpa
+4. Consultation Meeting Held in Pokhara – April 20, 2009
+   a. DEO Office, Bagar, Pokhara
+   b. Sanskrit Secondary School, Bagar
+   c. Bal Mandir Secondary School, Nadipur, Pokhara - 3
+
+
+
+
+                                                28
+Annex 3 - List of Persons Contacted
+Local Stakeholders
+
+S.N.             Name/Position                          Organization                  Remarks
+
+1.     Mr. Damber Bdr. Gurung (Head       Satyawati Devi Lower Secondary School
+       Master)                            Bhansar, Tanahu
+
+       Mr. Asha B. Lama, SMC, Chairman
+
+2.     Mr. Bishwo Raj Adhikari Asst.      Shree Pawitra Higher Secondary School,
+       Head Master                        Bandipur – 1, Nahala, Tanahu
+
+3.     Mr. Ram Saran Adhikari             Nahala
+
+4.     Mr. Min Prasad Nepal, Head Sir     Adarsha Ma. Vi. Laguwa, Deusali
+
+5.     Mr. Hari Prasad Gyawali            Adarsha Ma. Vi. Laguwa, Deusali
+
+6.     Mr. Narayan Dhakal                 Laguwa, Deurali
+
+7.     Mr. Rishi Ram Dhakal, Teacher      Palpa
+
+8.     Mr. Min Prasad Dhakal, Teacher     Palpa
+
+9.     Mr. Kul Bdr. Kunwar                Palpa
+
+10.    Mr. Krishna P. Nepal, Teacher      Palpa
+
+11.    Mr. Bhim Khanal, Educationist      Palpa
+
+12.    Mr. Tika Khanal                    Palpa
+
+13.    Mr. Lava Pandey                    Palpa
+
+14.    Mr. Binod Kunwar, Educationist     Palpa
+
+15.    Mr. Dil Bdr. Khanal, Guardian      Palpa
+
+16.    Mr. Punam G.M., Guardian           Palpa
+
+17.    Mr. Saroj P. Nepal, Head Sir       Adarsha Higher Secondary School, Deurali
+
+18.    Mr. Devi P. Adhikari, Guardian     Deurali
+
+19.    Mr. Moti Raj Adhikari, Teacher
+
+20.    Mr. Bishnu P. Khanal, SMC,         Shree Saraswoti H. S. School, Kharsyauli,
+       Chairman                           Palpa
+
+21.    Mr. Hira Dhar Acharya, Principal   Shree Saraswoti H. S. School, Kharsyauli,
+
+
+                                              29
+                                           Palpa
+
+22.    Mr. Damodar Bastola, Headmaster     Shree Sanskrit H. S. School, Bagar,
+                                           Pokhara
+
+23.    Mr. Cheej Man Gurung, Chairman,     Shree Sanskrit H. S. School, Bagar,
+       SMC                                 Pokhara
+
+24.    Mr. Bishnu Adhikari, Teacher        Shree Sanskrit H. S. School, Bagar,
+                                           Pokhara
+
+25.    Mr. Atma Ram Bastola, Teacher       Shree Sanskrit H. S. School, Bagar,
+                                           Pokhara
+
+26.    Mr. Prem Raj Gautam, Educationist   Pokhara
+
+27.    Mr. Govinda P. Adhikari,            Pokhara
+       Educationist
+
+28.    Mr. Sushil Basnet, Head Sir         Bal Mandir S. S., Nadipul, Pokhara
+
+
+
+List of District Level Stakeholders Contacted
+
+S.N.               Name                    Organization/Address                  Position
+
+1.     Mr. Prem Poudel                 DEO, Tanahu                       DEO
+
+2.     Mr. Hem P. Acharya              DEO, Pokhara                      Asst. DEO
+
+3.     Mr. Ghanashyam Adhikari         DEO, Pokhara                      Program Officer
+
+4.     Mr. Kulananda Chaudhari         DEO, Pokhara                      Overseer
+
+5.     Mr. Dinesh K. Yadav             DEO, Pokhara                      Overseer
+
+6.     Mr. Chet Bdr. Thapa             Hoste – Hainse Child              Program Coordinator
+                                       Development Society, Tanahu
+
+7.
+
+8.     Mr. Chandra Mishre              Save The Children Norway for      Engineer
+                                       DEO School Supervision, Palpa
+
+9.     Mr. Rudra Masarang              Save The Children, Norway,        Program Officer
+                                       Palpa
+
+10.    Mr.Hari Krishna Sharma          Save The Children, Norway,        Officer
+                                       Palpa
+
+11.    Mr. Ashbir Saru                 Save The Children, Norway,        Officer
+
+                                                30
+                                  Palpa
+
+12.    Mr. Ganesh Shrestha        Gorkha Foundation, Gorkha          Manager
+
+
+
+List of Experts Consulted
+
+S.N.             Name                 Organization                   Position
+
+1.     Mr.   Lava Dev Awasthi   Ministry of Education     Joint Secretary
+
+2.     Mr. Arjun Bhandari       MoE                       Joint Secretary
+
+3.     Mr. Mahasram Sharma      DoE                       Director General
+
+4.     Mr. Lekh Nath Poudel     MoE                       Under Secretary
+
+5.     Mr. Prakash Raj Pande    DOE                       Director
+
+6.     Mr. Hari Prasad Lamsal   DOE, Program and Budget   Director
+
+7.     Mr. Shambhu P. Upreti    DoE/PSS                   Senior Div. Engineer
+
+8.     Mr. Yuba Raj Poudel      DoE/PSS                   S.D. Engineer
+
+9.     Mr. Uddhav Nepal         DoE/PSS                   Engineer
+
+10.    Mr. V. Sundararaman      World Bank
+
+11.    Mr. Mohan Aryal          World Bank
+
+12.    Mr. Drona Ghimire        World Bank                Environment Specialist
+
+13.    Mr. Shiva L. Bhusal      Embassy of Denmark
+
+14.    Mr. Ujjwal Man Shakya    Innovative Creators (P)   Architect
+                                Ltd.
+
+15.    Mr. Sonam Wangchuk       MS Nepal
+
+
+
+
+                                             31
+Annex 4 - Summary of Observations from the Field Visit
+
+
+School Selection Criteria
+
+Most of the schools/SMCs visited during this study period were not satisfied with the school support
+selection criteria practiced by GON. They felt that the school selection for support should be based on
+the proper need assessment of individual school rather than generic mechanism developed by DOE.
+Some of the very old and structurally unsafe school should be include under the priority for support.
+Some of the schools situated in urban areas with ample spaces could rent their space or building to
+generate financial resources. Such schools were even found dependent to GON funding rather than
+being innovative. Such schools should be encouraged to explore the sustainable means on using their
+available resources to funds for academic purposes.
+
+Financial Support
+
+Most of the schools visited during the study have shown dissatisfaction over the amount of financial
+support being allocated through GON for the construction of classrooms. The cost of the construction
+material and labor is very high which doesn’t match with cost allocated for classroom construction.
+The amount of Rs. 10000.00 allocated for improvement in water supply system of school is
+inadequate.
+
+For 4 roomed RCC building constructed in schools through cost sharing mechanisms (LAGAT
+approach), the DOE has allocated a budget of Rs. 825000.00. Due to the shortage of areas, schools are
+attracted towards this approach. Lessons learned from some of the schools with this kind of recipient
+have clearly shown that the amount allocated is not enough and school needs to plunge in some
+money on their own to complete the building. This circumstances has created financial crunches in
+schools.
+
+Construction Materials Used
+
+Though schools are using locally available construction materials (sand, gravel, wood etc) for
+construction of classrooms, most of the sites visited were found using substandard materials. The sand
+used was not found of high quality, it was found mixed with soil. The different sizes and shapes of
+gravel were found used in the construction. In two of the sites visited, unseasoned wood in found used
+in practice.
+
+The use of wood in hilly areas has been limited to window and doors. However, instead of using
+tubular iron poles as support, some of the schools were found using wooden post and support. The
+water is not available in some of the schools visited.
+
+Design and Drawings
+
+The typical design provided by DOE has been followed. There is lack of technical understanding with
+regards to technical specifications provided by DEOs among the masons, bar benders, and other
+technicians in schools situation in rural settings. In some schools, innovativeness in construction has
+been seen. During the construction, spaces for books corner (by providing inner buttress) , visible red
+stitch band of brick to show earthquake friendly design in construction, well planned landscaping in
+
+
+                                                  32
+limited spaces, smooth edged stone masonry wall construction, installation of rain water harvesting
+system, use of cement concrete pillar in construction to avoid wood etc.
+
+School safety:
+
+Most of the schools visited were found unsafe as there are no restrictions to enter into the school
+premises. Due to this toilet doors, water faucet, classroom doors, windows are found broken, wall
+paintings inside the school are also observed. In some schools, there is no iron grill in windows
+resulting in burglary and damage of structure by external means.
+
+Though external school improvement is school safety falls under the jurisdiction of school and SMC,
+very little attention has been paid in this aspect.
+
+School Environment (Orientation, Water supply, sanitation, ventilation, solid waste
+management)
+
+Orientation: The orientation of school building is satisfactory some exceptions.
+
+Water supply: The amount allocated for water supply improvement is inadequate. Majority of
+schools don’t have water supply systems. Even in schools with water supply system are not properly
+functioning. Water quality is not satisfactory.
+
+Sanitation: Litters were found scattered in most of the schools visited. Except few schools, sanitation
+measures were found sub standard. It is due to scarcity of water and habits of students. In addition, the
+number of toilets proposed in EFA is grossly neglected.
+
+Drainage: Majority of schools don’t have proper drainage system.
+
+Solid waste management: 80% of the school visited doesn’t have any kind of solid waste
+management system.
+
+Dust: Due to barren land, lack of vegetation, school grounds are dusty and prone to dust pollution
+
+Noise: The schools visited have CGI sheet roof. This is unsuitable from climatic considerations. The
+SMC and school teacher, student informed that during summer season, classroom with CGI roof
+would be extremely hot and making teaching-learning uncomfortable and even torturous for students.
+During rainy season CGI roof creates noise making teaching-learning impossible. Noise related
+problem is also observed in two adjacent classes, due to thin non acoustic nature of walls.
+
+Electricity as a backup energy: Majority of schools don’t have electric supply.
+
+School sites: Few schools are in landslide prone areas and by the bank of River, and in ridge.
+
+Fencing and external environment: Note satisfactory in majority of schools.
+
+Monitoring Mechanism
+
+The DEO does monitoring of school construction activities in 43 districts. In remaining 32 districts,
+the DOE has signed an agreement with INGOs/NGOs . During the field visit, it was observed that
+both the mechanism have pros and cons.
+
+
+                                                   33
+In direct DEO monitoring system, there are no incentives to school inspector so they are not
+motivated to go for monitoring of school construction activities. In majority of hilly and mountainous
+region, schools are sparse and the number of personnel, logistics required is found to be inadequate.
+
+The monitoring through NGO/INGO is functioning satisfactorily. It was observed in some schools
+they are in impression that this kind of monitoring is not related to DEO. There is no regular
+coordination meeting and interaction among NGO/INGO monitoring team and DEO.
+
+Suggestions and Recommendations:
+
+    1. The school shall be designed to be relatively more comfortable in all seasons.
+
+    2. The selection of environmentally friendly and cost effective technology should be gradually
+       introduced by DOE.
+
+    3. The use of timber in Terai should be restricted and its use in hilly and mountainous areas
+       should be limited to frame of doors and windows. In hills and mountains also this should be
+       gradually phased out.
+
+    4. Encouragement of use of local materials has to be tied with quality and monitoring system.
+
+    5. The school construction monitoring should be regularize and frequent.
+
+    6. The DEO should arrange incentives for their school inspectors in order make the monitoring
+       effective.
+
+
+
+
+                                                 34
+Annex 5 - Suggestions from Experts
+
+
+  1. The lessons learned from EFA in implementation of NEGSIFMN should be reviewed (what
+     worked during EFA and What didn’t work should be mentioned)
+
+  2. The implementation modality, and roles and responsibilities of DOE, DEO, SMC, NGO, and
+     community should be clearly spelled out.
+
+  3. The innovativeness and environmentally friendly technology should be gradually introduced
+     in school construction.
+
+  4. The environmental requirements in SSRP should be clearly spelled out including the type of
+     environmental screening (if required)
+
+  5. The R&D in climate responsive building construction has to be an integral part of SSRP.
+
+  6. The linkages with other organizations working in similar field should be established.
+
+  7. At district level DEO should work in collaboration with other line agencies like (DWSSO,
+     DOUDBC, etc)
+
+  8. The partnership approach with INGO/ NGOs, CBOs should be continued.
+
+  9. The capacity building measures for the implementation of EMF in SSRP at different agencies
+     responsible for SSRP implementation should be assessed.
+
+  10. The DOE has suggested to tie EMF of SSRP with field reality and in consistent with the
+      improvements in the existing practices and it has to be implemented based on “ground
+      reality”. Non achievable and very ambitious thing should not be included in the EMF.
+
+
+
+
+                                               35
+Annex 6 - Government’s Effort towards School Physical Facilities
+Development through various programs (update up to 2007/2008)
+
+
+S. No.        Programs             New       Rehabilitation   Toilet &       Maintenance
+                                Classroom    of Classrooms     Water          Training
+                                                              Supply
+
+  1      SERDP (1981)                 941             1,170
+
+  2      PEP (1985-1990)              951             1,047
+
+  3      EAARRP (1988-              15,578                0              0             0
+         1996)
+
+  4      PEDP ( 1990)                2,392                0              0             0
+
+  5      BPEP – I (1993-            11,154            7,122         191            4,854
+         1998)
+
+  6      BPEP – II (1999-            5,392           10,794       5,093            4,860
+         2004)
+
+  7      EFA (2004 – 2009)          18,000            5,810       3,495                0
+
+  8      JICA (1994 – 2006)          8,028                0       1,747                0
+
+  9      Others                      4,284            2,217              0             0
+
+                        Total       66,720           28,160      10,526            9,714
+
+
+
+
+                                             36
+Annex 7 – DOE Policy
+
+
+    A. DOE Policy for Improvement of School Physical Facilities
+                    (Classrooms, Toilet & WS)
+
+
+   Decentralization (Construction through Community)
+     o   Need Identification through community
+     o   Program implementation through Community
+     o   Ensuring ownership & thereby ensuring sustainability of the created facilities
+
+
+   Collaboration with I/INGOs – (Out of 75 Districts – 32 Districts – SCNN-
+    20, Plan International-6, Room to Read – 3, SCUS-2, SCJ-1)
+     o   Harmonization
+     o   Quality Supervision
+     o   Involvement of Social Mobilization
+     o   Better Transparency (Public Audit)
+     o   Effective in awareness Raising
+
+
+
+
+                                              37
+  B. DOE Policy on Design & Construction of School Building
+ Structural Safety of buildings
+   o   Design and construction as per National Building Code
+   o   Safe against Earthquake and strong storms
+   o   Construction supervision by qualified Engineers/Sub-Engineers.
+
+
+
+ Child-friendly design & construction
+   o   Classrooms (0.75 sqm per children, T:50, H:45, M:35 students per classroom)
+   o   Furniture (Floor seating for grade 1 and 2)
+   o   Water supply facilities
+   o   Separate toilets for girls & boys
+
+
+
+ Environment-friendly design & construction
+   o Enforcement of National Environmental Guidelines for School Improvement and
+     Facility Management in Nepal
+
+
+ Inclusive design & construction for disables
+   o   Ramp construction for wheel chair movement
+   o   One bigger door in every classroom & toilet for wheel chair movement
+
+
+
+ Community contribution in facility development
+   o   Creates ownership feeling
+   o   Ensure sustainability of the created facilities
+   o   Ensure regular repair & maintenance
+
+
+
+
+                                              38
+Annex 8 - Environmental Screening
+
+Checklist
+Medium/Area                   Screening Question                   Yes   No   Possible (-ve)
+                                                                                Impact
+Slope Stability      Are there any landslides or other forms
+                      of mass instability on the slopes?
+                     Is there erosion or gully development?
+Spoil Disposal       Can spoil be reduced?
+                     Is spoil being tipped away from
+                      designated areas?
+                     Is spoil falling or being washed on to
+                      farmland?
+Water                Are slope drainage designs adequate?
+Management           Are drainage outfalls unprotected
+                      against scour and erosions?
+                     Is there any disruption of drinking or
+                      irrigation water supplies?
+Land Use             Has there been any loss of land for
+                      which       landowner       should    be
+                      compensated?
+Plants and           Are large numbers of trees being
+wildlife              removed?
+                     Is any form of wildlife being
+                      disturbed?
+Stone crushing       Is the project operating stone crushing?
+and?
+
+Hazardous             Is there project using any type of
+Materials              hazardous material (e.g. bitumen,
+                       cement      paint,   explosive     fuels,
+                       lubricants etc)
+                   Laboratory chemicals
+Dust               Is dust generated from construction
+                       works or by construction traffic?
+Renovation        Will construction, renovation work disturb
+                  other academic activities?
+Noise             Are there increased traffic noise from
+                  construction and transportation of vehicles
+                  and machinery?
+Water supply      Will it temporarily stop water supply and
+and sanitation    sanitation system?
+Ecosystem         Will the renovation work have any indirect
+                  impact on environment and ecosystem?
+Surface water     Does construction of pit latrines, septic
+                  tanks and soak ways could cause seepage
+                  of contaminated water into aquifers
+Ground water      Is there any pollution of Ground water
+                  from improper practice by SSRP school
+                                                 39
+                  construction activities?
+Laboratory            Are there pollution from laboratory      Applicable to
+safety and                waste disposal                        schools    with
+hazardous waste       Injuries from poor chemical              recipient    of
+                          handling                              laboratory
+                                                                support under
+                                                                SSRP
+Health and              Are there any issues related to
+Safety                   health and safety issues?
+Social Issues           Does construction involve local
+                         people, skills and material?
+                        Does contractor have grievance
+                         addressing mechanism?
+                        Does project built up rapport with
+                         local people and community?
+                        Are there conflicts between project
+                         and the local people?
+Use of                  Does construction material
+construction             (prescribed) have lowest
+materials                environmental impact?
+Material                Use of locally available suitable
+specification            material, practices of reduce reuse,
+                         recycle of materials during
+                         construction.
+
+
+
+
+                                               40
+Annex 9 - The Design Guideline for School Buildings Construction from
+Environmental Perspective
+
+6.1 Background
+
+The technical-fix for achieving a healthy environmental solution depends on different
+variables. This chapter proposes the practically achievable options through the
+understanding of different combinations of those variables.
+A host of interrelated considerations-from site design to transportation issues-factor into the creation
+of a "high-performance" environmentally friendly school. To effectively integrate environmentally
+friendly strategies, these options must be evaluated together from a whole school building perspective
+early in the design process. To do this, school will required to form a team of players from the
+community and school to work in collaboration with design team. The school design team must have
+expertise in integrating energy and environmental considerations into school design. Inputs from all
+stakeholders factor into good functional design to ensure the environmentally friendly construction of
+school.
+
+The following list provides basic information about some key elements to consider when designing a
+high performance environmentally friendly school building. District education office and Department
+of Education include these elements in their Request for Qualifications (RFQ) or Request for
+Proposals (RFP) for design professionals. Once a design team is selected, comprehensive design
+guidelines available through Department of Education can provide the team with detailed information
+on the following strategies.
+
+6.2 Commitment and Motivation
+
+There is no doubt that the single most important factor in achieving environmentally friendly school is
+the presence of committed and informed people. The emphasis should be given on the commitment.
+People are often well aware of the health risks and the theories of contamination but do not act on that
+knowledge.
+
+There is no simple formula for making people committed. However, recognizing and valuing people’s
+effort, and ensuring that there is sufficient scope for their own decision-making and creativity can go a
+long way towards encouraging sustained commitment. This point is particularly important since, it
+argues against standard designs.
+
+The success of efforts in promoting environmentally friendly school relies on the awareness and
+commitment of the community to want such a program and to ensure that it is maintained within the
+community. The collective recognition and understanding of the problem by families and community
+members can help to bring about support and action for ongoing efforts to influence behaviors and
+conditions that will improve the environmental situation in school
+
+
+
+
+                                                   41
+           Community commitment is strengthened/marked by
+
+                Acknowledgement of the importance of the problem from education,
+                 environment and other groups
+                Allocating local resources, e.g. public money for incorporating
+                 environmentally friendly products in schools
+                Combining the program with other programs in the community, such as
+                 primary health care and sanitary environment
+                Ongoing efforts to attract media attention
+                Involving existing councils, school committee, organizations such as
+                 women's group, NGO, Eco clubs etc
+                Use of both problem solving as well as environment promoting approaches to
+                 improve school environment
+
+
+6.2.1 Supportive school policies/practices: Development of supportive school policies and
+practices related to environmental improvement is improvement to make a program sustainable. For
+example; regulations for improving and maintaining adequate sanitary facilities and a safe water
+supply at school are essential. Also, collaboration and coordination between the education and
+environment sectors, and between the school and the community are important requirements for
+success.
+
+
+                             Examples of supportive policies and regulations
+
+              Required periodic coordination between environment and education authorities at
+               local, district, and national levels
+              Rules about cleanliness for students and personnel, and about the proper use of
+               latrines and water supply facilities
+              Rules about keeping the school environment clean
+
+
+
+                                Examples of supportive practices in schools
+
+              School curriculum includes environment/environment preservation
+              Proper use of hygienic toilets/latrines
+              Regular cleaning of toilets/latrines
+              Existence and use of proper hand washing facilities
+              Safe food and water
+              Formation of eco clubs, environmental awareness campaigns in schools
+              Teacher's training on environment related subjects
+              School/community projects and outreach
+
+
+6.3 School Building Siting
+
+6.3.1 Orientation: School building orientation is very important as it determines magnitude, natural
+heating, and lighting available inside the building. Orientations are based on the climate type of the
+
+
+                                                    42
+place where school facilities are planned. In Nepal three geo-zones are available viz: Terai, Mountain,
+and Hill. The orientation of school building in each of the above type is described below.
+
+
+
+Terai Region
+Arrange the school buildings in such a way
+that the prevailing winds can be used in
+cooling rooms.
+
+The school buildings should be oriented
+facing between West to North. In case, the
+building can’t be avoided facing East, West
+or South, evergreen trees have to be planted
+to prevent direct sunlight entering the
+building.
+
+Orientation criteria sometimes are influenced
+by the change in the school timing. For
+instance, during the summer in some parts of
+the Terai, there is a practice of conducting
+the classes early in the morning (6.30 hrs to
+10.30 hrs with no break); in such a particular
+case North or North-East facing causes
+direct glare in the class rooms; other side of
+the coin is that in such a case and when the
+site does not permit the ideal orientation,
+orientating the classrooms towards West-
+West-South supported by other measures
+may be permitted.
+
+Mountain Region
+
+In the mountain region, making use of sun to
+heat the rooms is a good design concept.
+Therefore, building orientation should be
+between East and West. One-way to
+blocking the seeping winter wind is to plant
+trees in the direction of the prevailing wind.
+Hill Area
+
+It is advisable to provide deciduous trees and
+at the same time allow winter sun to heat up
+the buildings.
+
+
+
+Understanding the location and the surroundings including the contour is very important for
+developing the Master Plan. A building that looks good and fits well at one site may not necessarily
+                                                43
+look good at another site. Poor site selection for school buildings can lead to high costs on account of
+earth retaining structures. A careful study of the terrain can easily help to reduce this as shown in
+the illustration and table. For any given location, a site that results in the minimum cut height “h”
+should be selected.
+
+6.2.2 Site Selection and Planning: Both, site selection and site planning have a major input on the
+relative "greening" of any school facility being planned. Site selection for school includes such issues
+as transportation and travel distances for students, impacts on wildlife corridors, and impact on the
+hydrology. Decisions that school make during the site planning will impact the immediate natural
+community as well as the school building, energy consumption and student comfort. Good site
+planning minimizes site clearing; preservation of existing vegetation may provide a low maintenance
+landscape and avoids supplemental irrigation. Mature stands of native vegetation in school compound
+often provide the desired energy conserving shade and wind control that would otherwise required
+years to develop for expensive new plantings. Thoughtful placement of a school building on a site
+promotes energy conservation by taking advantage of natural site features such as topography,
+sunlight, shade and breezes.
+
+While selecting the site or laying the school building, it is very important to note of features like
+religious objects, protected forests, river, stream, landslides etc. within and around the site. These are
+additional factors that need attention apart from other factors.
+
+It goes without saying that school building should protect its occupants from rain, wind, sun and
+snow. But it need only offer, as much protection is necessary. A classroom of a standard requirement
+in mountain regions may be quite unnecessary and inappropriate in a tarsi region. Schools should be
+designed to prevent extremes of temperatures inside classrooms.
+
+6.2.3 Approximation for earth cutting and retaining wall The Site Development
+Requirements form the Perspective of Earth Cutting, Filling, and Retaining Wall
+Structures:
+
+Schools in mountain and hill region of Nepal fall on slopes. Poor site selection for school buildings
+can lead high cost on account of earth retaining structures. A careful study of terrain can easily help to
+reduce this as illustrated in the table. For any given location, a site that results in the minimum cut
+height “h’ should be selected.
+
+                                                          Small Multipurpose Large
+                                                          hall
+                                                                             Multipurpose hall
+
+                                             Angle        B      H      SL       B       H        SL
+
+                                             5            19.7   1.72   19.78    24.3    2.13     24.39
+
+                                             10           19.7   3.47   19.97    24.3    4.28     24.63
+
+                                             15           19.7   5.26   20.32    24.3    6.49     25.07
+
+                                             20           19.7   7.17   20.97    24.3    8.85     25.86
+
+
+                                                     44
+                                              25          19.7   9.18    21.72     24.3      11.32   26.79
+
+                                              30          19.7   11.37   22.73     24.3      14.02   28.04
+
+
+
+
+Large multipurpose hall
+
+
+
+
+        B          H          SL                                 Academic buildings
+        24.3       2.13       24.39                  Angle       B         H         SL
+        24.3       4.28       24.63                   5          11.7      1.02      11.74
+        24.3       6.49       25.07                  10          11.7      2.06      11.86
+        24.3       8.85       25.86                  15          11.7      3.12      12.07
+        24.3       11.32      26.79                  20          11.7      4.26      12.45
+        24.3       14.02      28.04                  25          11.7      5.45      12.90
+
+                                                     30          11.7      6.75      13.50
+
+
+
+This table will help to guide during the site selection and site development.
+
+The following illustrations show some of the real site situations. The Master Pan may not show the
+full details of earth cut and fill and wall construction. The site engineers can refer to these illustrations
+to find optimal solutions.
+
+
+
+Site situations and earth cutting
+
+
+
+
+                                                     45
+Here the ground is at 50 slopes and it is cut to
+fit the building. As such, no retaining wall is
+required if the cut surface is riveted with
+vegetation.
+
+
+
+In this case, the building is placed with
+minimum disturbance to the ground. This is
+possible if the slope of the ground is less
+than 50. However, some filling may be
+required to bring the rooms in one level.
+
+
+
+Between 100 and 150 slopes, massive
+retaining wall is not necessary. Study the
+topography of the site and go for low height
+retaining or gabion wall. If the ground is not
+loose or marshy, the heights of these walls
+can be of half the cut height. The upper half
+height can be manipulated as per the table
+given depending on the angle of repose. If a
+gabion wall is built, cover the top of the
+walls with good soil and plant greenery for
+beautification.
+
+For a grade between 150-200, the height of
+the retaining wall can be approximately 2/3
+rd
+   of the cut. However, as the ground
+becomes steeper to 200, this rule-of-thumb
+may not be applicable. In this case, follow
+the illustration given below.
+
+In such a situation, a split retention wall is
+used. When this type of wall is built, it
+should be ensured that the active resultant
+force of the upper retaining wall falls on
+middle third of the lower wall foundation.
+
+
+
+
+Here, the left half of the building falls on a
+steep slope as compared to right hand side
+half. In such a situation, one option can be
+the use of combined single and split
+retention wall or adopt the cut and fill
+                                                   46
+ method on the left portion, and only cut
+ method on the right. However, before
+ making the decisions, economic advantages
+ have to be considered.
+
+
+
+Here the ground is at 50 slopes and it is cut to fit the building. As such, no retaining wall is required if
+the cut surface is riveted with vegetation.
+
+In this case, the building is placed with minimum disturbance to the ground. This is possible if the
+slope of the ground is less than 50. However, some filling may be required to bring the rooms in one
+level.
+
+Between 100 and 150 slopes, massive retaining wall is not necessary. Study the topography of the site
+and go for low height retaining or gabion wall. If the ground is not loose or marshy, the heights of
+these walls can be of half the cut height. The upper half height can be manipulated as per the table
+given depending on the angle of repose. If a gabion wall is built, cover the top of the walls with good
+soil and plant greenery for beautification.
+
+For a grade between 150-200, the height of the retaining wall can be approximately 2/3 rd of the cut.
+However, as the ground becomes steeper to 200, this rule-of-thumb may not be applicable. In this
+case, follow the illustration given below.
+
+In such a situation, a split retention wall is used. When this type of wall is built, it should be ensured
+that the active resultant force of the upper retaining wall falls on middle third of the lower wall
+foundation.
+
+Here, the left half of the building falls on a steep slope as compared to right hand side half. In such a
+situation, one option can be the use of combined single and split retention wall or adopt the cut and
+fill method on the left portion, and only cut method on the right. However, before making the
+decisions, economic advantages have to be considered.
+
+Both site selection and site planning have a major input on the relative "greening" of any school
+facility being planned. Site selection for school includes such issues as transportation and travel
+distances for students, impacts on wildlife corridors, and impact on the hydrology. Decisions that
+school make during the site planning will impact the immediate natural community as well as the
+school building, energy consumption and student comfort. Good site planning minimizes site clearing;
+preservation of existing vegetation may provide a low maintenance landscape and avoids
+supplemental irrigation. Mature stands of native vegetation in school compound often provide the
+desired energy conserving shade and wind control that would otherwise required years to develop for
+expensive new plantings. Thoughtful placement of a school building on a site promotes energy
+conservation by taking advantage of natural site features such as topography, sunlight, shade and
+breezes.
+
+While selecting the site or laying the school building, it is very important to note of features like
+religious objects, protected forests, river, stream, landslides etc. within and around the site. These are
+additional factors that need attention apart from other factors.
+
+
+                                                    47
+6.3 Day Lighting and Windows
+
+Poor indoor lighting in classroom can have many harmful effects on health and well being of teachers
+and students. A poorly lit classroom can lead to eyesight problems. Poor lighting within the classroom
+can also make students feel more depressed. Generally, these problems can be remediate by adding
+windows to the classroom to increase the amount of natural light, however because of different
+climatic condition of Nepal, window selection should be based where facility is planned. Increasing
+natural light is also important for classroom cleanliness; if a classroom is dark, it is more difficult to see dust and
+dirt and thus more difficult to clean properly.
+
+Increased use of daylight helps to reduce electric lighting usage, and avoiding the heat generated by
+lighting fixtures. High performance windows with low e-glazing also help to minimize heat gain in
+warmer months and heat loss in colder.
+
+It was noted that in Terai of Nepal, people try to increase ventilation, which may result in a teacher
+standing against the glare from an open window. In mountain, because of cold, the tendency is to
+build small window resulting in dark classrooms.
+
+An alternative to large windows is the perforated screen wall. This is a solid masonry wall punctured
+by numerous closely spaced holes through which light can filter. If the wall is built of bricks the
+perforation effect can be achieved by simply leaving spaces between the bricks at regular intervals. If
+it is made of concrete (or earth-cement) blocks, special moulds can be used to produce blocks with
+decorative holes. Where masonry is not used for construction, or where there do exist large window
+openings, other kinds of screens can be created, for example using horizontal bamboos.
+
+
+
+
+ A perforated window is an alternative to a window opening in                 A louvered window could provide glare-
+ warm climates. It provides security and relatively even                      free light at the front of classroom
+ distribution of light.
+
+The advantages of perforated screen wall are that it provides security and a relatively even distribution
+of light. The disadvantages are that it does not protect against wind, cold and dust, and classroom
+(particularly if large) can remain rather dark unless the internal walls are also light colored. Care must
+be taken to orient the building so that direct sunlight does not penetrate the screen wall, since this will
+almost certainly lead to glare.
+
+
+
+                                                         48
+In mountains, where small windows are necessary to reduce heat loss, it makes sense to maximize the
+light which light that can enter through a small opening. A roof light lets in considerably more light
+than a window of equal size in a wall. A provision of sky light in CGI roof is found in schools in
+mountain. This arrangement helps to bring more light into the center of the classroom, which is often
+poorly served by wall windows. However, care has to be taken to avoid direct sunlight falling onto
+desks.
+
+It is also important to make the best use of any light once it has entered the room. Untreated mud-and
+dung plaster on the walls, for instance will make a room relatively dark. The underside of a thatched
+roof will absorb lot of light. The level of light can be dramatically increased with a light colored
+ceiling and lime wash on the walls. These can also reduce glare by ensuring that light is reflected from
+all directions. In addition, adoption of matt-finished blackboard and regular repainting it can be
+relatively cheap way of mitigating the impact of poor lighting.
+
+6.4 Renewable Energy Systems
+
+Use of solar and wind technologies with battery storage can provide emergency power supply, or a
+source of steady power. Renewable energy system in school can increase maintenance requirements,
+but they also reduce utility costs.
+
+Some schools located in hills of Nepal have no electricity. So for the lighting and other purposes like
+operation of basic science equipment, computer, it is very necessary to find alternative means of
+electricity. So renewable energy could become an important element for meeting school energy
+demand.
+
+In mountains of Nepal, majority of children don’t take shower because of unavailability of hot water.
+Even school with necessary infrastructure and other facilities lacks this facility. Introducing solar
+technologies for water heating purposes could solve this problem.
+
+6.5 Ventilation Systems
+
+Adequate school ventilation is important. The poor ventilation in schools can lead to
+respiratory problems, and make tuberculosis and easier transmission of infectious diseases.
+Constructing schools with a sufficient number of windows may improve ventilation.
+Alternatively, schools can be constructed using bricks with holes drilled through them ("air-
+bricks"), which allow fresh air to circulate within the classroom.
+
+Using the whole-building approach, school designers can factor in energy saving choices that
+reduce heating and cooling loads.
+
+6.6 School Sanitation
+
+The high incidence of disease, particularly among children is largely attributed to unsafe drinking
+water, poor personal hygiene practices and unsanitary environment. Each and every school should
+have adequate safe water supply system and sanitation facility. But majority of rural schools in Nepal
+neither have proper water supply nor sanitation system, particularly toilets.
+6.6.1 General Criteria for Hygienic Facilities and Safe Water Supply in School: There are many
+methods that can be used to provide hygienic sanitation facilities and a safe water supply at school.
+
+                                                  49
+The principles and criteria involved in the selection of appropriate methods stipulate that those chosen
+should be:
+
+
+
+           Technically and environmentally sound
+           Financially affordable
+           Socially and culturally acceptable
+           Reliant on labor and resources available in the community
+           Simple to install, operate and maintain
+           Easily accessible by the students
+           Related to reducing public health problems that are perceived as priorities within the
+            community
+
+
+
+
+6.7 Drinking Water
+A "safe water supply" is a source of water that is not contaminated by dirt, bacteria, parasites, or
+anything else that could cause contamination.
+
+To promote school health an easily accessible water supply should be available that provides
+sufficient safe water to meet school needs. School water needs, can be estimated by questioning
+stakeholders of school about their daily water use. If this is not possible, minimum water need should
+be calculated. To ensure that the water is potable, either the water supply should be protected or the
+water should be treated before use. Often, unprotected water sources such as springs, traditional wells
+and ponds, can be improved and this may be preferable to constructing new supplies. However,
+unprotected sources are open to contamination and pose a potential health risk. School environmental
+health program should therefore promote the use of protected drinking water source.
+
+Some countries have set minimum standards for the supply of safe drinking water to pupils. For
+instance, in Viet Nam, every school is supposed to provide 0.33 liters of boiled water per pupil per
+day in summer and 0.1 liters in winter.
+
+Characteristics of low-risk water sources
+
+   The water source is fully enclosed or protected (capped) and no surface water can run directly
+    into it.
+   People do not step into the water while collecting it.
+   Latrines are located as far away as possible (minimum 15 meters away) from the water source
+    and preferably not on higher ground. If there are community concerns about this, expert advice should be
+    sought
+   Solid waste pits, animal excreta and other pollution sources are located as far as possible from the
+    water source.
+   There is no stagnant water within 5 meters of the water source
+   If wells are used, the collection buckets are kept clean and off the ground or a hand pump is used.
+
+
+The water source protection technique is mentioned in annex 2.
+
+
+                                                    50
+Checklist for schools considering water supply improvements
+
+
+
+   Have stakeholders of school been fully consulted about the type of water supply?
+   Have stakeholders of school had previous experiences with water supply improvements and have
+    these been relayed to the relevant agency?
+   How will the water supply be managed to ensure that it is reasonably accessible to everyone in
+    the school?
+   What are the long-term financial implications of the choice of water supply?
+   Can the school afford to pay expected operation and maintenance cost?
+   What spare parts are required and how often should they be replaces?
+   Who will be trained to operate and maintain the water supply?
+   Will the quality of the water be tested?
+
+
+Among the many types of water sources schools in Nepal are found using the sources like protected
+springs, dug wells, boreholes, and piped water supply.
+
+
+
+6.7.1 The Available Types of Water Sources in Nepalese Schools
+
+6.7.1.1 Protected Springs: A spring is where underground water flows to the surface. Springs may
+occur when the water table meets the ground surface, these are called gravity springs. In some cases,
+ground water is held under pressure and spring come to the surface because of a natural break in the
+rock, or because a shallow excavation is made. Springs can make very good water supplies provided
+they are properly protected against contamination. If springs are found above the school, they can feed
+a pipe system for providing water close to school. When a spring is at the same or lower level than the
+school, it can still be protected, but greater care is needed and it is unlikely that water will flow
+through the pipe system by gravity. The first step in deciding whether a spring should be protected is
+to determine whether it provides enough water for expected number of students. Measuring the time it
+takes for the spring to fill a bucket of known volume easily does this.
+
+6.7.1.2 Dug wells: Dug wells are usually shallow wells dug by hand, although some may be quite
+deep, and they are often lined with bricks. However, unless artesian water is tapped, many dug wells
+go dry or have every little water in dry periods because it is difficult to sink wells below the water
+table without using more sophisticated techniques.
+
+6.7.1.3 Boreholes: Boreholes are narrow holes drilled into the ground that tap into groundwater.
+Generally as the borehole is drilled, a lining of plastic, steel or iron is sunk to protect the hole from
+collapse. The lining has slots in the bottom of section to allow entering the borehole and gravel is
+placed around the bottom of lining to improve flow and provide filtration. The top few meters around
+the borehole should be sealed using concrete, and a concrete apron is cast around the top of the
+borehole to prevent surface water from flowing into the lined shaft. A stand is usually cast into the
+apron to provide a stable base for the pump. Once the borehole is completed it should be cleaned with
+chlorine and the pump installed. Majority of schools in hill and tarsi of Nepal are using boreholes with
+handpumps. Boreholes usually provide good quality water, but the water sometimes contains harmful
+chemicals, such as fluoride and arsenic, or nuisance chemicals such as iron, etc. The school should
+                                                   51
+carry out chemical analysis of water in a regular interval as discussed under the monitoring protocol
+of this guideline.
+
+6.7.1.4 Piped water supply: Many schools in Nepal have piped water systems. These piped water
+systems are often small and rely on community management. Most piped water supplies include
+storage tanks so that water is always available, even when demand is heaviest. Such tanks are usually
+necessary because the rate of water use at peak times of the day in school is greater than the average
+rate of use throughout the day. The tanks also provide emergency storage in the event of a breakdown.
+Piped system in a school requires regular maintenance. Pipe leaks likely to be used heavily by student.
+As a result, the taps are more likely to break and will need frequent replacement. One-way of dealing
+with these issues is to give someone in the school responsibility for school taps and making repairs.
+To prevent the accumulation of stagnant water around school taps, school could build a concrete
+“apron” at the base of taps and include a drain and soakage pit.
+
+Another problem with piped systems is that students do not consider the impact of how much water
+they use, and may not think it is important to turn off the tap after use. When there is a lot of water,
+this may not have negative consequences. However, where the amount of water available is limited,
+there will be shortage of water. Schools with piped water systems should thus be aware of these
+impacts of their water use and good water use should be promoted.
+
+need to be repaired rapidly to prevent water loss, and to prevent surface water from entering
+the pipes and contaminating the supply. Also taps are
+
+6.8 Rainwater harvesting scheme in schools
+
+Although rainwater can be a good source of water for drinking and other purposes in school, it may be
+seasonal, and it is often difficult for a school to rely on rainwater alone. This technology could be
+used in conjunction with other available sources of water. Schools for their own use could collect
+rainwater. If the rainwater is to be used for drinking purpose it is better to collect it from a roof, rather
+than from a ground catchments where it may become contaminated. Ground catchments are more
+appropriate for use in garden and watering of grounds.
+
+Using roofs to collect rainwater is relatively easy and a lot of water can be collected. For example; 50
+mm of rainfall on a 4-m2 roof yields 200 liters of water. All that is required are gutters around the
+roof that discharge into a collection tank. The roofing material is important and hard surfaces, such as
+iron sheets or tiles. Hard surfaces are also easier to keep clean and are less likely to have insects and
+animals living in them.
+
+Any roof used to collect rainwater for human consumption must be thoroughly cleaned at the start of
+the rainy period. Birds and animals may leave faeces on the roof and these can be a source of
+pathogens. There should be a system for diverting the flow of water in gutters away from the tank, so
+that the first rain (which are more likely to pick up contamination from the roof) are not collected. A
+small filter may be added to the top of the collection tank as an added protection. The tank should also
+be cleaned every year and any silt or algal matter removed. After cleaning and before use, the tank
+should be scrubbed using a chlorine solution (bleach).
+
+Water should be drawn from a tap at the base of the tank, rather than with a bucket, which may
+contaminate the water. It is better not to bury the collection tank, even partially, since contaminated
+
+                                                     52
+water from the soil can enter the tank. Covering the tank is also essential for preventing contamination
+of the water and for reducing opportunities for disease vectors to breed.
+
+Protection of above mentioned water sources that could be used in a school in Nepal is a matter of
+discussion in this guideline. The protection measures for different water sources are highlighted in
+
+
+6.9 School Water Treatment and Safe Handling of Water
+
+The best option for improving the school water quality is to treat water in the school by filtering,
+chlorinating, boiling or leaving the water to settle. Individual school could select the options as
+appropriate. These options are discussed in more detail in following sections.
+
+6.9.1 Boiling: Bringing water to a rolling boil (20 minutes) will destroy pathogens in the water and
+make it safe to drink.
+
+6.9.2 Candle filters: Candle filters are hollow, porous ceramic cartridges, commonly found used in
+schools of Nepal. Although they do not filter out all pathogens, they remove the larger ones such as
+protozoa, worms, and bacteria (but not viruses). Ceramic candles need careful maintenance and
+should be cleaned and boiled at least once a week, even if they are not clogged. If a candle filter
+becomes clogged, it should be scrubbed under running water with a stiff brush free of soap. To reduce
+the risk that water will pass through a candle without being filtered, such as through small crack,
+candle filters should be regularly inspected and replaced if necessary.
+
+6.9.3 Chlorination: This will kill most bacteria and some viruses. Since that taste of chlorine
+disappears when water is left in open containers, very small lump of bleaching powder can be added
+to a 20-liter water container and the mix left to stand for at least 30 minutes. After this time, if a faint
+smell of chlorine can be detected in the water, it should be low –risk and palatable to drink. Chlorine
+should only be added to clear water otherwise the dirt in the water would absorb it. Other
+disinfections systems that have been developed for treating water, particularly through the use of solar
+radiation. This technology is commonly known as “SODIS” in Nepal. This is effective in treating
+water, although this may take longer than chlorine disinfections.
+
+Frequently water collected from a communal point and transported back to school for use becomes
+contaminated because of poor handling. Stakeholders of school should therefore be aware of the risks
+of contaminating the water and how it can be prevented.
+
+6.10 Water Conservagtion:
+
+Although it is important that students use enough water for good hygiene, in areas where water is
+scarce it is also important not to waste water. As mentioned above, piped water supplies are
+particularly vulnerable to wastage, if they are not properly managed, the surrounding community of
+school may suffer water shortages. Most piped water systems leak and need to be checked regularly
+and repaired as soon as faults are discovered. Taps should be turned off immediately after use and
+students discouraged from playing with taps.
+
+Key Points
+
+   Functional water pints providing adequate supplies of safe water are rarely found in schools
+   Hand washing facilities are very rarely observed in schools
+                                                    53
+  Although environment and hygiene education forms part of curricula in Nepal, teachers have
+   usually not received adequate training in those areas
+ Other environmental issues weigh heavily on the school community, disposal of solid waste and
+   repairs to school buildings, inadequate infrastructures to support basic environmental practices.
+The methods of protecting different water sources used in schools are shown in annex 2
+
+6.11 Sanitation Facilities:
+
+Safe disposal of excreta, so that it doesn't contaminate the environment, water, food, or hands is
+essential for ensuring a healthy school environment and for protecting personal health. This can be
+accomplished in many ways, some requiring water, others requiring little or none. Regardless of
+method, the safe disposal of human faeces in school is one of the principal ways of breaking the
+faecal-oral disease transmission cycle. Sanitation is therefore a critical barrier to disease transmission.
+One reason why latrines are often out of order in Nepalese schools is that they are frequently
+inappropriately designed for use by children to use. Latrines in Nepalese schools vary in design from
+communal three to six hole latrines served in schools in Sindhupalchowk, to simple pit latrines. The
+number of latrines available/observed in schools during the field visit was without exception
+insufficient to meet the needs of students, particularly at time of peak usage such as break. The
+situation contrasts with the standards generally accepted within the health, environment and education
+sectors, which are shown in box discussed below.
+
+The provision of one latrine for approximately thirty pupils is generally recommended, if urinals are also
+available. This represents one latrine for every twenty girls and one for every forty boys.
+
+When planning the number of latrines for a school, certain issues should be considered:
+
+   Are separate urinals available for boys? If so, fewer latrines will be needed.
+   What is the proportion of boys to girls? If urinals are available, boys need fewer latrines.
+   Are children allowed to leave the classroom during classes to use the latrine? If not, the pressure on
+    latrines at break/recreational time will great and more latrines will be required.
+   Do all children have breaks from classes at the same time? If so more latrines will be required.
+    Could breaks be staggered?
+
+6.12 Drainage:
+
+The planning and implementation of proper drainage system is very important. The following
+guidelines must be considered for drainage designing and in its construction.
+
+   The design should be as simple s possible considering for future development
+   Generally, if the drains are not wider than 150X 150 mm, it can be left open but any drain bigger
+    than 150 mm should be covered.
+   Drains carrying off surface water can be open or covered
+   In both the cases, silt traps at appropriate distances should be provided. However, if there is
+    sudden level difference created by walls or land profiles, two silt traps may be required
+   General rule of thumb is to provide silt traps at every 20 meters intervals for easy cleaning.
+   All drainage should be self-cleaning and should function at minimum running maintenance costs.
+   The main collection drain should always be covered or laid under ground.
+   Normal roof drains are 150X100 mm at 5% slope. The slope and depth will increase as the roof
+    drain reaches the outlet of the collecting drain.
+
+
+                                                    54
+   Minimum size recommended for the collecting drain is 300 X250 mm and should be covered with
+    concrete slab with perforation to take in surface runoff waters
+   The depth of the collecting drain will depend on the local and distance from the sub-drains, such
+    as roof drain, retaining wall drains, etc.
+   While collecting and discharging surface waters, it should not cause public nuisance or pose
+    danger to health and property.
+   Beside the roof drains, it is an advantage and desirous to construct surface water drains around the
+    school buildings, playgrounds, open spaces etc to prevent flooding during the monsoon.
+   It is not advisable to seal off the manhole and inspection chamber with concrete completely if
+    intermediate ventilation is not provided. This will cause cracks of pipes, disintegration of joints
+    etc
+   Any drain provided around or within the courtyard must be concealed.
+
+6.13 Technologies for excreta disposal in school
+
+The off set latrine system is economic, easy in design, could be constructed with local available
+materials and easy to built and maintain for schools. Though the choice of technology to be adopted
+                                                               for toilet purely depends on the
+                                                               water availability, budget, soil type
+                                                               etc. This particular type is found
+                                                               very useful to recommend as
+                                                               standard design in Nepal.
+
+                                                                  This latrine do not require periodic
+                                                                  emptying, once a pit is full it is
+                                                                  sealed and a new pit is dug. The
+                                                                  feacal matter is left to decompose in
+                                                                  dry conditions for at least two years,
+                                                                  the contents can be safely and the pit
+                                                                  reused. These latrines could also be
+                                                                  designed to allow faecal matter to
+                                                                  compost and be reused in
+                                                                  agriculture. Other designs that could
+                                                                  be incorporated are two alternating
+pits, reducing the need for new pits. As shown in design, ventilation is installed to remove odor and
+flies, basic and locally available materials could be used. Mostly the toilets constructed in Nepal were
+problem of chocking; students throw carelessly all the solid waste (paper, plastics etc) in toilet
+resulting in blocking the trap. As per the standard, the number of toilet required for each school will
+be calculated, and the toilet is proposed in series as shown above. The urinals could be built to reduce
+the number of toilets required emptied manually
+
+One main reason for poor maintenance of the school toilets was due to separate toilets for staff and
+student usages. These arrangements create less emphasis and inadequate monitoring of student's toilet.
+This was observed even in one of those schools where there was plenty of water available for
+maintaining the toilet. It is suggested that in order to improve the sanitary condition of toilet, and to
+gain students confidence towards cleanliness, all the stakeholders of school should share toilets.
+
+
+
+
+                                                   55
+For a school latrine to function properly it must be maintained and cleaned on a daily basis.
+Somebody must have specific responsibility for this and compliance must be checked. Groups of
+school children might do the cleaning in rotation.
+
+
+
+
+                                             56
+Annex 10 - Laboratory Checklist from Environmental Perspective
+
+
+
+S. No.                        Screening Question                     Yes   No   Remarks
+
+  1.     Will the research academic work be laboratory based? [ If
+         the answer of question 1 is No, then go to question 4]
+
+  2.     Does the laboratory have
+
+          i     environment, health and safety protocol or
+                guidelines?
+
+          ii    adequate fire safety provision?
+
+         iii    safety provision for gas cylinder handling?
+
+         iv     proper waste disposal facilities?
+
+          v     adequate liquid waste management facilities?
+
+         vi     proper storage facilities for hazardous chemicals,
+                pesticides etc?
+
+         vii    adequate ventilation system?
+
+         viii   first-aid facilities?
+
+         ix     emergency exit facilities?
+
+          x     trained professional to guide the
+                researchers/students about safety procedures?
+
+  3.     Will the laboratory based research work
+
+          i     produce hazardous waste materials?
+
+          ii    generate infectious waste?
+
+         iii    cause significant emissions of gas harmful to ions
+                of gas harmful to health?
+
+         iv     generate liquid waste?
+
+          v     cause any major noise?
+
+                                                    57
+S. No.                      Screening Question                       Yes   No   Remarks
+
+  4.     Will the research work require interventions at field
+         level?
+
+  5.     Will the field based research work
+
+          i     located at or near an environmentally sensitive
+                area?
+
+          ii    discharge any liquid waste in the environment?
+
+         iii    discharge large quantities of waste/used water?
+
+         iv     generate hazardous waste?
+
+          v     Impair downstream water quality?
+
+         vi     have any possible degradation in land and
+                ecosystem?
+
+         vii    cause local air pollution from any plants/system
+                operation?
+
+         viii   generate excessive noise and/or dust?
+
+  6.     Will medical, biophysical or clinical research be
+         conducted using human subjects?
+
+  7.     Will the project have any indirect impact on environment
+         and ecosystem?
+
+  8.     Will the research work involve permission or clearance of
+         any government department or agency?
+
+  9.     Will future expansion or implementation of research
+         finding cause any major environment problem?
+
+
+
+
+                                                   58
+Annex 11 - Land Acquisition and Resettlement
+Based on the findings of the Social Assessment Team’ review of the EFA, Resettlement and or land
+acquisition problems are not anticipated in SSRP. However, there is always risk of exploitation and
+marginalization of Dalits, Women, marginalized and endangered Janjatis 1 and other vulnerable
+groups by dominant groups. Nepalese society remains semi-feudal in character and the caste
+hierarchy, though officially illegal, remains very much in play in the rural areas. In order to ensure
+that the Dalits, Women, marginalized and endangered Janjatis and other vulnerable groups are not
+further marginalized in the course of development, it is recommended that the following approach be
+incorporated into the procedures for financing new classrooms or other school infrastructure of
+schools established during the SSRP period.
+
+Rules of taking possession of land
+
+Experience of implementing EFA reveals that Resettlement and or land acquisition problems are not
+anticipated in SSRP. The DoE will not do any involuntary land acquisition. All donations and
+purchases will be voluntary. DoE will not only ensure that any land donations are fully voluntary, but
+also that such donations do not involve physical displacement or any significant adverse impacts upon
+incomes of the donor household. All voluntary land transactions will meet the following criteria:
+
+       (i) The land in question will be free of squatters, encroachers or other claims.
+       (ii) Verification of the Voluntary nature of land donations in each case through formal public
+             hearing.
+       (iii) Land transfer will be completed through registration, with land title vested in the School; and
+       (iv) Leasing of land or rights of use of land for schools will be duly documented.
+       (v) Program Implementation Guidelines will include the principles of land acquisition described
+             in this document.
+       (vi) For any government building to be constructed under SSRP the land will be purchased from
+             the open market. The DoE already has established practices in this regard and will follow the
+             procedures while acquisition of land.
+
+       Procedure for school
+
+       Land Revenue office is responsible for land administration and registration of all types land in
+       Nepal. The Survey Offices prepare land record through cadastral mapping. Major three types of
+       land ownership are in practice i) registered private land, ii) registered public land and iii) un-
+       registered (but cadastral mapped) government land (Ailani).
+
+       Normally the community approach to the land owner for contribution of land to the school. In this
+       case either individual donate land free of cost or can ask for payment. To arrange the cash
+       requirement there is practice that community people contribute cash to the school and school will
+       make payment against the land take. These procedures are normally completed following willing
+       sell or willing buy procedure of land administration.
+
+
+
+
+1
+    As per NEFIn classification.
+
+                                                      59
+DEO will arrange for a public hearing when the schools established during the period of SSRP
+seeks grants for construction as per Rule XXXX. This public hearing shall verify the information
+provided in the land assessment data sheet. Minutes of the meeting will be made available at
+DEO office. If grievances/claims raised during public meeting are not settled during the public
+hearing the funds will not be granted to the school.
+
+All land transactions will be subject to registration (as per market transactions) under the
+ownership of the School that is involved in the project and will be done only after ensuring that
+new school infrastructure or additional classroom construction will indeed be built in that
+particular piece of land.
+
+A grievance redress mechanism will be in place to hear complaints regarding land acquisition.
+
+and SMC are using the Ailani land for the establishment of the school. Such types of
+land are used by the schools with the communities or local body consent. In case of land
+requirement from the individual or group of people, school
+
+Sample Formats
+
+Land Acquisition assessment data sheet (to be used to record all land acquired for the schools)
+
+
+    a) Location map
+
+
+
+
+                                              60
+              b) Land/ assets acquired
+              Plot Area, Area,         Description Date of               Previous owner         Name      Method of acquisition   Previous use (choose
+              No. local Sq.Ft          of assets in acquisition          (choose one of the     of the    (choose one of the      one of the following:
+                   unit    equivalent the land, if (year,                following:             owner†    following: donation,    barren land, farm
+                                       any          month,               Individual/                      sell-                   land, squatter,
+                                                    day)                 Government/                      purchase/lease/rights   describe in case of
+                                                                         Public)                          of use                  other uses)
+
+
+
+
+c) Documentary proofs of land ownership or rights of use. (Notarized or witnessed statements)
+
+
+
+
+   †
+       Provide name of the office in case of the government and name of the VDC in case of the public land.
+References
+
+1. Green Schools to Promote 'Education for All' in Nepal, Sonam Wangchuk, MS Nepal, 2009
+2. Manual of School Building Construction In Hilly and Terai Region, Department of
+   Education/Nepal, 2008
+3. Design of RCC School Building (Four room Two and Three Storied) at Urban Areas,
+   Department of Education/Nepal, 2008
+4. Environmental & Social Management Framework (ESMF) Rural Access Improvement and
+   Decentralization Project (RAIDP), Nepal, 2004
+5. Program Implementation Document, Ministry of Education, Nepal, 2008
+6. National Environmental Guidelines for School Improvement & Facility Management in
+   Nepal, Department of Education, Nepal, 2004
+7. Core Document, School Sector Reform, Ministry of Education, Government of Nepal, 2008
+8. Environmental Management Framework, Higher Education Quality Enhancement Project,
+   Bangladesh
+9. Environmental Protection Act 1996, Environmental Protection Regulation 1997
+10. Forest Act, 1992
+11. GoN, Tenth Plan, NPC
+
+
+
+
+                                            61
+
