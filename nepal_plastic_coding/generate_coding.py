@@ -12,8 +12,9 @@ research team (see MASTER_LIST below), one row per ID from NPL_1 to NPL_32,
 in order. Only four interviews have source material (notes/transcripts)
 available so far and are therefore fully coded: NPL_1 (Department of
 Environment), NPL_2 (Former Minister Ganesh Shah), NPL_3 (KTM Municipal
-Office / Kathmandu Metropolitan City) and NPL_7 (Rural Self-Reliance
-Development Center / RSCT). The remaining 28 rows are explicit placeholders
+Office / Kathmandu Metropolitan City), NPL_4 (Mayor of Dhulikhel Municipality)
+and NPL_7 (Rural Self-Reliance Development Center / RSCT). The remaining 27
+rows are explicit placeholders
 (Country/ID/best-guess Actortype/Notes only, all substantive variables NA)
 reserving the correct ID until their interview material is supplied.
 
@@ -677,7 +678,140 @@ ktm.update({
              "(Q3b onward in the notes, and the full PEGO/KTM Municipal Office transcript).",
 })
 
-INTERVIEWS = [doe, ganesh, rsct, ktm]
+# --- NPL_4: Dhulikhel Municipality - Mayor Ashok Kumar Byanju Shrestha ------
+dhulikhel = blank_row()
+dhulikhel.update({
+    "Country": "Nepal",
+    "ID": "NPL_4",
+    "Actortype": "loc_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "rivers, forests, agriculture (agricultural fields), roadsides, ponds, "
+               "health (plastic dangerous for the environment and human health), "
+               "tourism/healthy-city image (WHO-declared healthy/LDCT town but lacking "
+               "waste management)",
+    NPF_VICTIMS_COL: "rivers, forests, agricultural fields, ponds and the broader "
+                     "environment; human health (plastic described as dangerous for "
+                     "environment and health); Dhulikhel's reputation as a WHO-declared "
+                     "healthy/low-density clean town",
+    "NPF_villains": "travelers on the Araniko and BP highways who throw plastic and "
+                    "garbage; the national/federal government (concerned but lacking "
+                    "action-oriented programmes, never monitoring locally, collapsed "
+                    "Solid Waste Management Commission, controlling public land needed for "
+                    "landfills); weak enforcement allowing markets to sell banned thin "
+                    "plastic despite 20/40-micron rules; residents who understand waste "
+                    "harms but refuse to host treatment/landfill facilities nearby",
+    "NPF_hero": "Dhulikhel Municipality (LAPA project, green clubs, model ward, plastic "
+               "budget); NGOs and social workers eager to collaborate; Kathmandu "
+               "University; school- and community-based green clubs; women's handicraft "
+               "groups repurposing plastic (small scale)",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_prov_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_students": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_households": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_students": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_civil_society": "yes",
+    "Tar_households": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "1,2",
+    "Discretion": "As an autonomous local government the mayor/municipality sets policy "
+                 "through the municipal board, allocates its own plastic-management budget "
+                 "(NPR 1.7 million plus an additional NPR 10 lakh this year), selects a "
+                 "model ward, negotiates PPP/contract/MoU arrangements with private "
+                 "waste-to-energy partners, and declares the final price for plastic sold "
+                 "by private actors.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_RD": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_upcycling": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"The government is declaring the 20 micron, 40 micron "
+                                 "plastic only used by the people. But if you want to go to "
+                                 "the market area, there are many kinds of plastic\"; "
+                                 "\"Before also we had the Soil Waste Management Act and the "
+                                 "Soil Waste Management Commission. But the commission has "
+                                 "already collapsed\"; \"20 years ago I was a deputy mayor "
+                                 "of this town. I never saw the ministry people MONITOR here\"; "
+                                 "\"the national government is also concerned about this "
+                                 "sector. But we don't have proper action oriented "
+                                 "activities.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_upcycling": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_RD": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Some women's groups and small-scale handicraft "
+                                          "producers already repurpose plastic into goods, "
+                                          "offering a local tradition of upcycling that "
+                                          "could be scaled with clearer procedures and "
+                                          "bylaws.",
+    "Notes": "Master list label: \"4. Mayor Dhulikhel/ Ashok Kumar Byanju Shrestha\", "
+             "affiliation: Dhulikhel Municipality (Mayor's Office). Interviewee: Ashok "
+             "Kumar Byanju Shrestha, Mayor of Dhulikhel Municipality. Location: "
+             "Dhulikhel. Interview date: 22 June 2025 (2:55pm-3:40pm), Kathmandu "
+             "interview no. 4. Coded from both the interview guideline notes and the full "
+             "verbatim transcript. A mayor's team member was also present and contributed "
+             "additional remarks on policy fragmentation and constitutional "
+             "responsibilities. Data-quality note: the source notes/transcript refer to "
+             "\"NASA\" working on a national plastic-collection programme; this is "
+             "treated as a national agency/programme name as stated in the source (not "
+             "the US space agency) and coded accordingly. \"LDCT\" in the notes is "
+             "interpreted as Low-Density Clean Town per the mayor's WHO-related "
+             "remarks.",
+})
+
+INTERVIEWS = [doe, ganesh, rsct, ktm, dhulikhel]
 
 # ---------------------------------------------------------------------------
 # 3. EXPLANATIONS (long format) - quote/reasoning behind each coded value.
@@ -1560,11 +1694,292 @@ ktm_expl = {
     "Tar_science": "NA - not mentioned as a target group for future measures.",
 }
 
-EXPLANATIONS = {"NPL_1": doe_expl, "NPL_2": ganesh_expl, "NPL_7": rsct_expl, "NPL_3": ktm_expl}
+dhulikhel_expl = {
+    "Actortype": "Ashok Kumar Byanju Shrestha is the Mayor of Dhulikhel Municipality, a "
+                 "local government body; coded as loc_government.",
+    "Problem_awareness_pop": "\"Lack of awareness\" is listed explicitly among "
+                             "implementation challenges (Q6 notes); the mayor also "
+                             "states that \"first of all we need a household awareness and "
+                             "management system\" and that in some places \"people do not "
+                             "have technically sound\" knowledge.",
+    "Problem_concerndness": "\"How concerned are you? Very concerned\" (Q1 notes); the "
+                            "municipal council and board have raised plastic concerns "
+                            "\"so many times\"; this year the municipality allocated "
+                            "dedicated budget for plastic management.",
+    "Problem_littering": "Plastics are visible \"in the region nowadays, most of the "
+                         "agriculture sector and some rivers and some roadside and some "
+                         "forest areas\"; travelers on the Araniko and BP highways "
+                         "\"throw plastics and so much garbage.\"",
+    "Problem_consumption": "\"In Nepal we have a lot of internally and externally. Plastic "
+                           "is used by people, some industries, and some business sectors\" "
+                           "- widespread plastic use across households, industries and "
+                           "businesses.",
+    "Problem_recycling": "\"At the municipal level we don't have that type of manpower and "
+                         "NGO properly who are working in that area\" for recycling; no "
+                         "Dhopur Recycler or operating plastic-recycling company currently "
+                         "in Dhulikhel; nearby pipe/water-tank factories exist but local "
+                         "recycling capacity is absent.",
+    "Problem_waste_mgmt": "\"Plastic and some garbage is already, we don't have a "
+                          "management system\"; \"all kinds of the garbage is going to the "
+                          "landfill side\"; landfill sites are not managed technically "
+                          "even in Kathmandu Metropolitan City.",
+    "Problem_alternatives": "The municipality is \"finding alternative ways, collection and "
+                            "relative some new goods from the plastics\" and exploring "
+                            "alternatives, but the mayor's team states \"properly we don't "
+                            "have how to manage, how to sell, how to produce, how to "
+                            "recycle for the plastic. We don't have proper laws\" - "
+                            "indicating viable alternatives/procedures are still lacking.",
+    "Problem_waste_segregation": "\"We have so many problems about segregating the garbage\"; "
+                                 "household-level segregation is named as a first priority "
+                                 "(\"segregating the household waste\").",
+    "Impacts": "Agricultural fields, rivers, roadsides and forest areas littered with "
+               "plastic; plastic described as \"very dangerous for the environment and "
+               "human health\"; WHO has declared Dhulikhel a healthy/LDCT town but the "
+               "lack of a waste-management system undermines this achievement.",
+    NPF_VICTIMS_COL: "Rivers, forests, agricultural fields, ponds and the broader natural "
+                     "environment are visibly polluted; human health is implicated "
+                     "(\"dangerous for the environment and human health\"); and "
+                     "Dhulikhel's hard-won healthy-city/LDCT status is undermined by "
+                     "unmanaged plastic waste.",
+    "NPF_villains": "Highway travelers on the Araniko and BP highways who discard plastic "
+                    "and garbage; the federal/national government (\"concerned\" but "
+                    "without \"proper action oriented activities\", never monitoring "
+                    "locally, collapsed Solid Waste Management Commission, controlling "
+                    "public land needed for landfills); markets that continue selling all "
+                    "types of plastic despite 20/40-micron restrictions; and residents "
+                    "who understand waste harms but \"nobody agrees on giving the place\" "
+                    "for treatment/landfill facilities.",
+    "NPF_hero": "Dhulikhel Municipality itself (LAPA project, green clubs, model ward, "
+               "dedicated plastic budget, Environment and Disaster Management Unit); NGOs "
+               "and social workers \"want to collaborate\"; Kathmandu University; "
+               "school/community green clubs; and women's handicraft groups repurposing "
+               "plastic (small scale).",
+    "Coordination_sectoral": "The municipality works across sectors (energy-efficient "
+                             "city, carbon neutrality, green city) and with diverse "
+                             "partners (private sector, NGOs, Kathmandu University, "
+                             "Dhulikhel Hospital, Bill & Melinda Gates Foundation, UCLG, "
+                             "SPARC), but repeatedly stresses that \"we need to "
+                             "collaborate\" because it lacks technical capacity alone.",
+    "Coordination_levels": "\"Dhulikhel Municipality and the provincial and the federal "
+                           "government, we can't work together nowadays\"; limited "
+                           "coordination with higher levels despite constitutional local "
+                           "autonomy; District Coordination Committee lacks mandate/budget "
+                           "for inter-municipal waste cooperation.",
+    "Unclear_responsibilities": "Mayor's team: \"the government has already managed some "
+                                "policies, some laws. But who is the responsibility?\"; "
+                                "Solid Waste Management Commission \"has already collapsed\" "
+                                "and responsibility is \"throwing\" onto local governments "
+                                "without capacity; ministry approves acts but "
+                                "implementation/monitoring rests entirely on municipalities.",
+    "Res_nat_government": "National government is \"concerned about this sector\"; "
+                          "previously ran a plastic-collection programme (referred to as "
+                          "\"NASA\" in the source); approves acts and controls public land "
+                          "for landfill sites.",
+    "Res_prov_government": "Provincial government \"is prioritizing this area\" with a "
+                           "small project in Hetauda; historically supported private-sector/"
+                           "NGO recycling projects there.",
+    "Res_loc_government": "\"Constitutionally, all this kind of responsibility is on "
+                          "municipal government\" - sanitation, waste management, "
+                          "wastewater treatment and environmental protection; Dhulikhel "
+                          "runs waste-management activities, green clubs, model ward and "
+                          "plastic-budget programmes.",
+    "Res_students": "Kathmandu University students have interned with the municipality "
+                    "and professors have worked on joint initiatives; school-based green "
+                    "clubs are being established for community plastic work.",
+    "Res_private_sector": "Private waste-management/waste-to-energy company (MoU signed, "
+                          "also works with Dharan Metropolitan City); PPP, contract and "
+                          "MoU-based engagement models for waste management.",
+    "Res_civil_society": "NGOs, social organizations and the LAPA project partner with "
+                         "the municipality on plastic reduction/recycling/reuse; Bill & "
+                         "Melinda Gates Foundation, UCLG and SPARC support fecal-sludge/"
+                         "wastewater work.",
+    "Res_edu_institutions": "Kathmandu University (within the municipality) provides "
+                            "environmental expertise and has supported municipal "
+                            "initiatives; students and professors have collaborated.",
+    "Res_private_companies": "Tushithani Hotel operates its own wastewater treatment "
+                             "plant; nearby municipalities host pipe/water-tank "
+                             "manufacturers that buy recycled plastic; a private "
+                             "recycling company previously operated in Dhulikhel.",
+    "Cul_nat_government": "Federal government lacks \"proper action oriented activities\"; "
+                          "ministry officials have never monitored Dhulikhel in 20+ years; "
+                          "Solid Waste Management Commission collapsed; controls public "
+                          "land so municipalities cannot manage landfill sites without "
+                          "federal permission; provides insufficient technical/financial "
+                          "support despite constitutional local responsibility.",
+    "Cul_loc_government": "The municipality acknowledges its own gaps: \"the municipal "
+                          "government does not have technical manpower\"; landfill site "
+                          "not managed with adequate technical knowledge (\"technically "
+                          "we do not have knowledge\").",
+    "Cul_households": "Highway travelers (not only locals) discard plastic; in some areas "
+                      "people \"do not have technically sound\" waste-management knowledge; "
+                      "residents understand waste harms but resist hosting facilities.",
+    "Tar_nat_government": "Three things needed \"to support from the federal government: "
+                          "technical equipment related and some budget\" plus "
+                          "infrastructure; federal government should strengthen DCC "
+                          "coordination with budget and technical assistance.",
+    "Tar_loc_government": "Inter-municipal collaboration proposed with 2nd, 3rd and 4th "
+                          "neighbouring municipalities for joint waste/plastic management; "
+                          "municipal Environment and Disaster Management Unit is the focal "
+                          "point for programmes.",
+    "Tar_students": "School-based green clubs are being established; Kathmandu University "
+                    "students have been mobilised through internships and professor "
+                    "collaborations.",
+    "Tar_private_sector": "\"Private sector... we need to collaborate... they have a "
+                          "management system, they are technically sound\"; waste-to-energy "
+                          "company and PPP/contract/MoU models are central to future plans.",
+    "Tar_civil_society": "NGOs and INGOs are key partners for this year's plastic "
+                         "activities (\"the municipal government also wants to work "
+                         "together with the NGO and the INGO for the plastic related\").",
+    "Tar_households": "Household awareness, segregation and 3Rs are named as the first "
+                      "priority (\"first of all we need a household awareness and "
+                      "management system\").",
+    "Tar_edu_institutions": "Kathmandu University and school green clubs are explicit "
+                            "partners; one ward is being developed as a model for plastic "
+                            "reduction with community education.",
+    "Tar_private_companies": "Hotels and industries will be regulated by forthcoming "
+                              "bylaws requiring their own wastewater treatment; private "
+                              "waste-to-energy and recycling companies are sought as "
+                              "implementation partners.",
+    "Actor_role": "The mayor/municipal board formulates policy (green city priorities, "
+                 "plastic budget, model ward, bylaws - role 1) and the municipality "
+                 "directly implements programmes through its Environment and Disaster "
+                 "Management Unit, green clubs, NGO partnerships and private-sector MoUs "
+                 "(role 2).",
+    "Discretion": "\"It's the sole right of the municipal government\" to allocate budget; "
+                  "the municipal board decides policy and then an action plan is "
+                  "formulated; the municipality sets \"the final price\" for plastic "
+                  "sold by private actors and chooses among PPP, contract and MoU models.",
+    "Monitoring": "Mayor: in 20 years as deputy mayor and now as mayor, ministry officials "
+                  "have never come to monitor (\"I never saw the ministry people MONITOR "
+                  "here\"); weak enforcement of micron restrictions implies absent "
+                  "monitoring of markets.",
+    "Financial_resources": "Waste management \"according to money... that was a lack of "
+                           "budget\"; municipality has only a small plastic budget (~NPR "
+                           "1.7 million plus NPR 10 lakh) and must seek federal/provincial/"
+                           "international support for larger projects.",
+    "Research": "LAPA project with Indian colleagues \"developing one technology to reduce "
+               "plastic\"; a Detailed Project Report (DPR) for Dhulikhel's waste-management "
+               "system has been prepared.",
+    "Infrastructure": "\"Technically in Nepal we don't have technical machines and other "
+                      "things\"; no local plastic recycler (Dhopur Recycler absent); "
+                      "landfill site exists but lacks technical management knowledge; "
+                      "waste-to-energy infrastructure planned via private partner.",
+    "Capacity": "\"We needed more manpower and technical assistance\"; two types of "
+               "capacity needed - community/household awareness and segregation, and "
+               "technical personnel directly working in the field.",
+    "Enforcement": "20/40-micron restrictions exist \"but if you want to go to the market "
+                   "area, there are many kinds of plastic\"; mayor's team notes policies "
+                   "exist on paper but implementation remains weak.",
+    "Pol_epr": "Extended producer responsibility is not mentioned anywhere in this "
+              "interview.",
+    "Pol_awareness": "Green clubs (school- and community-based), community collaboration "
+                     "with social workers, and household-awareness programmes are active "
+                     "or planned policy tools.",
+    "Pol_education": "Two types of capacity/education named: household awareness and "
+                     "segregation, and technical education for personnel; model ward "
+                     "action-oriented programme launched this year.",
+    "Pol_RD": "LAPA project developing technology to reduce plastic with Indian "
+              "colleagues working in Dhulikhel.",
+    "Pol_ban": "Earlier government notification restricting 20-micron and 40-micron "
+              "plastic use (\"I think 10 years ago\").",
+    "Pol_subsitutes": "Municipality is \"finding alternative ways\" and making \"new goods "
+                      "from the plastics\"; green-city and carbon-neutrality policies "
+                      "frame broader substitution/reduction efforts.",
+    "Pol_upcycling": "Women's groups and handicraft producers repurpose plastic into "
+                     "products; municipality aims to collect plastic and \"make new goods.\"",
+    "Pol_recycling": "This year's budget focuses on \"reducing the plastic, recycling the "
+                     "plastic, and reuse the plastic\" in collaboration with NGOs and the "
+                     "LAPA project.",
+    "Pol_waste_collection": "Plastic collection through green-club/community initiatives "
+                            "and NGO partnerships is part of the current year's policy and "
+                            "budget.",
+    "Pol_effectiveness": "Existing micron restrictions are widely ignored in markets; "
+                         "Solid Waste Management Commission has collapsed; national "
+                         "government lacks action-oriented programmes; ministry never "
+                         "monitors local implementation despite approving acts.",
+    "Pol_effectiveness_example": "See Pol_effectiveness - quoted directly in the "
+                                 "Coded_Data cell.",
+    "Sol_lead_agency": "Environment and Disaster Management Unit of the municipality is "
+                       "the focal point; \"policy level we are deciding from our municipal "
+                       "board. Then after you will find out the action plan.\"",
+    "Sol_responsibilities": "Calls for clearer procedures/bylaws for managing, selling, "
+                            "producing and recycling plastic; federal government should "
+                            "provide technical support while respecting constitutional "
+                            "local autonomy over sanitation.",
+    "Sol_awareness": "Household awareness and 3Rs/segregation named as the most important "
+                     "first step.",
+    "Sol_segregation": "\"Segregating the household waste\" and household management "
+                       "system proposed before broader waste solutions.",
+    "Sol_upcycling": "Scale up women's-group/handicraft plastic repurposing with clearer "
+                     "procedures and bylaws.",
+    "Sol_recycling": "Continue and expand NGO/municipal collaboration on reducing, "
+                     "recycling and reusing plastic; learn from Hetauda's provincially "
+                     "supported model.",
+    "Sol_education": "Both household/community education and technical training for waste "
+                     "personnel are proposed.",
+    "Sol_capacity": "More manpower and technical capacity (community awareness plus "
+                    "technical personnel); federal technical equipment and budget support.",
+    "Sol_RD": "Continue LAPA technology development for plastic reduction.",
+    "Sol_finance": "Municipal plastic budget (~NPR 1.7 million + NPR 10 lakh); seek "
+                   "federal/provincial/international funding for larger projects; "
+                   "strengthen DCC with budget for inter-municipal cooperation.",
+    "Sol_infrastructure": "Waste-to-energy (CNG/biogas) via private partner (DPR "
+                           "prepared); improved landfill technical management; shared "
+                           "regional facilities with neighbouring municipalities.",
+    "Sol_subsitutes": "Green-city initiative, alternative product creation from collected "
+                      "plastic, and promotion of non-plastic alternatives through green "
+                      "clubs.",
+    "Sol_enforcement": "Implied need to enforce existing micron restrictions and new "
+                       "bylaws once prepared (markets currently sell all plastic types).",
+    "Sol_monitoring": "Federal ministry should monitor and support, not only approve acts; "
+                      "DCC could monitor/coordinate inter-municipal cooperation if given "
+                      "mandate and resources.",
+    "Traditions to build on (free-hand)": "\"Some women groups and some handicrafts "
+                                          "products people are using plastic for some "
+                                          "goods\" - a small but existing local practice "
+                                          "of repurposing plastic that could be built on.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_science": "NA - no researchers or scientific institutions are described as "
+                   "currently responsible for mitigating plastic pollution; Kathmandu "
+                   "University is coded under Res_edu_institutions.",
+    "Res_households": "NA - households are discussed as needing awareness/education and "
+                      "as contributors to littering, not as currently responsible actors "
+                      "for mitigation.",
+    "Cul_prov_government": "NA - provincial government is mentioned as prioritising the "
+                             "issue (Hetauda project) but not blamed for the current "
+                             "plastic-pollution situation.",
+    "Cul_students": "NA - students are not mentioned as contributing to the problem.",
+    "Cul_private_sector": "NA - private waste actors are presented as needed partners, "
+                          "not as culprits.",
+    "Cul_civil_society": "NA - NGOs and social organisations are presented positively as "
+                         "collaborators.",
+    "Cul_science": "NA - not mentioned as contributing to the problem.",
+    "Cul_edu_institutions": "NA - Kathmandu University is presented as a supportive "
+                             "partner, not a culprit.",
+    "Cul_private_companies": "NA - private companies (hotels, manufacturers) are "
+                             "discussed as partners or regulated entities, not as "
+                             "polluters.",
+    "Tar_prov_government": "NA - provincial government is mentioned as a potential "
+                           "funding partner (Hetauda example) but not as a primary target "
+                           "group for mitigation measures.",
+    "Tar_civil_society": "NGOs and INGOs are named as key partners and focus areas for "
+                         "this year's plastic activities (\"the municipal government also "
+                         "wants to work together with the NGO and the INGO for the plastic "
+                         "related\").",
+    "Tar_science": "NA - not mentioned as a target group for future measures.",
+}
+
+EXPLANATIONS = {
+    "NPL_1": doe_expl,
+    "NPL_2": ganesh_expl,
+    "NPL_3": ktm_expl,
+    "NPL_4": dhulikhel_expl,
+    "NPL_7": rsct_expl,
+}
 
 # ---------------------------------------------------------------------------
 # 3b. MASTER INTERVIEW LIST (full 32-interview numbering supplied by the
-#     research team). Only NPL_1, NPL_2, NPL_3 and NPL_7 have source
+#     research team). NPL_1, NPL_2, NPL_3, NPL_4 and NPL_7 have source
 #     material (interview notes/transcripts) provided so far and are fully
 #     coded above; all other IDs are included as placeholder rows (Country/
 #     ID/Actortype/Notes filled in from the master list, every substantive
@@ -1573,7 +1988,13 @@ EXPLANATIONS = {"NPL_1": doe_expl, "NPL_2": ganesh_expl, "NPL_7": rsct_expl, "NP
 #     completed coding - they exist purely to reserve the correct ID/row
 #     and are clearly flagged as such in their 'Notes' cell.
 # ---------------------------------------------------------------------------
-CODED_ROWS = {"NPL_1": doe, "NPL_2": ganesh, "NPL_3": ktm, "NPL_7": rsct}
+CODED_ROWS = {
+    "NPL_1": doe,
+    "NPL_2": ganesh,
+    "NPL_3": ktm,
+    "NPL_4": dhulikhel,
+    "NPL_7": rsct,
+}
 
 # (id, label as given by the research team, affiliation, inferred Actortype)
 MASTER_LIST = [
@@ -1612,13 +2033,15 @@ MASTER_LIST = [
 ]
 
 NAMES = {iid: f"{label} - {affil}" for iid, label, affil, _ in MASTER_LIST}
-# Fill in the fuller descriptive names for the four fully-coded interviews.
+# Fill in the fuller descriptive names for the five fully-coded interviews.
 NAMES["NPL_1"] = ("Department of Environment - Deepak Diwali, Deputy Director, Pollution "
                    "Control (air & plastics), Kathmandu (Interview no. 5, 23 June 2025)")
 NAMES["NPL_2"] = ("Former Minister, Government of Nepal - Ganesh Shah, Kathmandu "
                    "(21 June 2025)")
 NAMES["NPL_3"] = ("Kathmandu Metropolitan City (KMC), Solid Waste Management Office - "
                    "Municipality Officer(s), Kathmandu (23 June)")
+NAMES["NPL_4"] = ("Dhulikhel Municipality - Mayor Ashok Kumar Byanju Shrestha, "
+                   "Dhulikhel (22 June 2025, Kathmandu interview no. 4)")
 NAMES["NPL_7"] = ("Rural Self-Reliance Development Center / RSCT (savings-and-credit "
                    "cooperative network, urban plastics programme)")
 
@@ -1809,9 +2232,9 @@ readme_lines = [
      "order follow exactly the variable list supplied by the research team.", False),
     ("", False),
     ("IMPORTANT - which rows are actually coded:", True),
-    ("  Only 4 of the 32 rows are coded from real interview material (notes and/or "
-     "transcripts) that has been provided so far: NPL_1, NPL_2, NPL_3 and NPL_7 (see "
-     "below). The remaining 28 rows are PLACEHOLDERS: they reserve the correct ID, Country "
+    ("  Only 5 of the 32 rows are coded from real interview material (notes and/or "
+     "transcripts) that has been provided so far: NPL_1, NPL_2, NPL_3, NPL_4 and NPL_7 (see "
+     "below). The remaining 27 rows are PLACEHOLDERS: they reserve the correct ID, Country "
      "and a best-guess Actortype (inferred only from the short affiliation label supplied "
      "by the research team, e.g. \"Household\" -> households), but every substantive "
      "variable is left as NA because no interview notes/transcript for that respondent has "
@@ -1840,6 +2263,11 @@ readme_lines = [
      "and were excluded from this row's coding (see its 'Notes' cell for detail). This "
      "interview was numbered NPL_4 in an earlier version of this workbook; it has been "
      "renumbered to NPL_3 per the research team's master list.", False),
+    ("  4. NPL_4 - Mayor of Dhulikhel Municipality, Ashok Kumar Byanju Shrestha, "
+     "Dhulikhel (22 June 2025, 2:55pm-3:40pm; Kathmandu interview no. 4). Coded from "
+     "both the interview guideline notes and the full verbatim transcript. A member of "
+     "the mayor's team also contributed additional remarks on policy fragmentation and "
+     "constitutional responsibilities.", False),
     ("  7. NPL_7 - Rural Self-Reliance Development Center (RSCT), a savings-and-credit "
      "cooperative network (est. 1991) that recently expanded into urban plastics work; per "
      "the master list, the interviewee is Narayan Nirola. Coded from the hand-written "
@@ -1847,7 +2275,7 @@ readme_lines = [
      "then NPL_2, then NPL_3 in earlier versions of this workbook as other interviews were "
      "added; it has now been renumbered to NPL_7 per the research team's master list.", False),
     ("", False),
-    ("Placeholder (not yet coded) interviews: NPL_4, NPL_5, NPL_6, NPL_8-NPL_32 - see the "
+    ("Placeholder (not yet coded) interviews: NPL_5, NPL_6, NPL_8-NPL_32 - see the "
      "master numbering list below and each row's 'Notes' cell in 'Coded_Data'.", False),
     ("", False),
     ("Sheets in this workbook:", True),
@@ -1868,8 +2296,8 @@ readme_lines = [
      "'Coded_Data'.", False),
     ("", False),
     ("Colour key (interview -> row colour): fully-coded interviews (NPL_1, NPL_2, NPL_3, "
-     "NPL_7) use a stronger/brighter tint of their colour; the 28 not-yet-coded placeholder "
-     "interviews use a paler, greyed-down tint of their colour so they are visually "
+     "NPL_4, NPL_7) use a stronger/brighter tint of their colour; the 27 not-yet-coded "
+     "placeholder interviews use a paler, greyed-down tint of their colour so they are "
      "distinguishable as \"pending\" at a glance. Colours are spread evenly across the "
      "colour wheel in master-list order (NPL_1 through NPL_32) so adjacent IDs are easy to "
      "tell apart.", False),
@@ -1882,12 +2310,12 @@ readme_lines = [
 ] + [
     ("", False),
     ("Coding conventions:", True),
-    ("  - 'yes' / 'no' / 'NA': for the 4 fully-coded interviews, NA means the topic was not "
+    ("  - 'yes' / 'no' / 'NA': for the 5 fully-coded interviews, NA means the topic was not "
      "addressed in that interview (no evidence either way); 'no' is only used where the "
      "interviewee explicitly said the item is not an issue / not in place (e.g. Pol_epr = "
-     "no for all four coded interviews, since each explicitly states extended producer "
-     "responsibility does not yet exist in Nepal). For the 28 placeholder interviews, NA "
-     "means no source material has been provided yet (see above).", False),
+     "no for all five coded interviews where EPR was discussed or clearly absent). For the "
+     "27 placeholder interviews, NA means no source material has been provided yet (see "
+     "above).", False),
     ("  - Free-hand fields (Impacts, NPF_victims/villains/hero, Discretion, "
      "Pol_effectiveness_example, 'Traditions to build on') contain short descriptive text "
      "derived directly from the interview content, or 'NA' if not discussed/not yet coded.", False),
