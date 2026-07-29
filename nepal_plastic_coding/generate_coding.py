@@ -9,14 +9,15 @@ on, and Notes).
 
 The workbook covers the FULL 32-interview master numbering supplied by the
 research team (see MASTER_LIST below), one row per ID from NPL_1 to NPL_32,
-in order. Six interviews have source material (notes/transcripts)
+in order. Seven interviews have source material (notes/transcripts)
 available so far and are therefore fully coded: NPL_1 (Department of
 Environment), NPL_2 (Former Minister Ganesh Shah), NPL_3 (KTM Municipal
 Office / Kathmandu Metropolitan City), NPL_4 (Mayor of Dhulikhel Municipality),
-NPL_5 (Doco Recyclers) and NPL_7 (Rural Self-Reliance Development Center /
-RSCT). The remaining 26 rows are explicit placeholders
-(Country/ID/best-guess Actortype/Notes only, all substantive variables NA)
-reserving the correct ID until their interview material is supplied.
+NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant Owner) and NPL_7
+(Rural Self-Reliance Development Center / RSCT). The remaining 25 rows are
+explicit placeholders (Country/ID/best-guess Actortype/Notes only, all
+substantive variables NA) reserving the correct ID until their interview
+material is supplied.
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
@@ -953,7 +954,126 @@ doco.update({
              "interview and is reflected here.",
 })
 
-INTERVIEWS = [doe, ganesh, rsct, ktm, dhulikhel, doco]
+# --- NPL_6: Dhulikhel Hotel/Restaurant Owner - Swasti Byanju ------------------
+hotel = blank_row()
+hotel.update({
+    "Country": "Nepal",
+    "ID": "NPL_6",
+    "Actortype": "private_companies",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "environment (foul smell, visible accumulation, pollution of surroundings, "
+               "aesthetics/litter, ~100-year degradation), health (limited detailed "
+               "knowledge but hospital/medical waste including needles and syringes in "
+               "dumping areas), agriculture (leachate affecting wards 2 and 3, downstream "
+               "Panchkhal), water (drinking water no longer pure in affected areas; river "
+               "dumping in Khurkot/Sindhuli road), aquatic life/fish (ocean plastic "
+               "impacts cited), inter-municipal conflict (downstream Panchkhal affected)",
+    NPF_VICTIMS_COL: "downstream communities and farmers (Panchkhal, wards 2 and 3 — "
+                     "leachate, water and agriculture impacts), families and local "
+                     "community, environment and aquatic life, and Dhulikhel Municipality "
+                     "itself (major issues from the dumping site)",
+    "NPF_villains": "national and municipal government (lack of strict policy/enforcement, "
+                    "budget not allocated, dumping mismanaged for 15+ years, projects "
+                    "announced but never followed up); the wider public (everyone is "
+                    "aware but still uses plastic; awareness without behavioural change); "
+                    "shops/markets still supplying goods in plastic despite ban discussions; "
+                    "upstream dumping affecting downstream areas without regard for others",
+    "NPF_hero": "Dankhuta's \"Waste into Money\" model (zero plastics, segregated "
+               "buildings, park on former dump); ward 7 shopkeeper litter-collection rule "
+               "keeping Dhulikhel streets clean; waste collectors who pick plastic; "
+               "Chitwan large recycling unit; individuals making personal efforts (e.g. "
+               "using alternative bags, household bag collection for reuse); Kathmandu "
+               "mayor cited as example of political will improving waste management",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_households": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_households": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As a hotel owner the interviewee has limited discretion: personally uses "
+                 "non-polythene shopping bags, consolidates items into fewer bags, collects "
+                 "plastic bags at home for family reuse, and rolls shampoo sachets to reduce "
+                 "waste, but at the hotel can only bag all waste together for municipal "
+                 "collection — the only option available.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_clean_up": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"Beat the Plastic\" on World Environment Day had mayor and "
+                                 "KU student participation \"but in practice nothing has "
+                                 "changed. Same work has been repeating\"; \"We keep hearing "
+                                 "that a project will start soon — it's been 3 years already\"; "
+                                 "\"When I go shopping... they are plastic\" for vegetables "
+                                 "despite a ministry notice to ban plastic; \"waste here is not "
+                                 "properly minimized, it's almost zero\" recycling in Dhulikhel; "
+                                 "\"currently, it seems the budget itself is not being "
+                                 "allocated.\"",
+
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Thokodi — traditional newspaper paper bags made and "
+                                          "sold in shops (practised in the past, now largely "
+                                          "gone); paper bags distributed to households; cloth/"
+                                          "cotton bags (respondent received an organic cloth bag "
+                                          "as a gift and noted such bags should be made locally).",
+    "Notes": "Master list label: \"6. Restaurant and Hotel Owner Dhulikhel_Combined\", "
+             "affiliation: Dhulikhel Hotel / Restaurant. Interviewee: Mr. Swasti Byanju, "
+             "hotel owner, Dhulikhel. Location: Dhulikhel. Interview date: 22 June 2025 "
+             "(Kathmandu interview no. 3; transcript file labelled \"June 22 (Part 1 ENG)\"). "
+             "Interviewers: PEGO, Ram Devi (translator/local), Deep, Swasti Byanju (local "
+             "collaborator — also contributed the Dankhuta \"Waste into Money\" example in "
+             "the transcript). Coded from both the interview guideline notes and the full "
+             "verbatim transcript. The respondent is not personally aware of specific "
+             "national plastic policies (\"No. I don't\") but describes ministry ban notices "
+             "and municipal measures as relayed by the interview team.",
+})
+
+INTERVIEWS = [doe, ganesh, rsct, ktm, dhulikhel, doco, hotel]
 
 # ---------------------------------------------------------------------------
 # 3. EXPLANATIONS (long format) - quote/reasoning behind each coded value.
@@ -2335,18 +2455,203 @@ doco_expl = {
                    "measures.",
 }
 
+hotel_expl = {
+    "Actortype": "Mr. Swasti Byanju is a hotel/restaurant owner in Dhulikhel; coded as "
+                 "private_companies per the master list (hotels/shops/restaurants).",
+    "Problem_awareness_pop": "\"Everyone is aware of the plastic, but still uses it\"; "
+                             "\"they are very aware. But as I said there's a lack of policy "
+                             "and lack of awareness\"; notes state awareness exists but "
+                             "\"behavioral change is lacking.\"",
+    "Problem_awareness_pol": "\"There is no certain policy to make this happen\"; \"there is "
+                            "no end policy\"; notes cite \"lack of policy\" and \"policy gaps\" "
+                            "alongside weak implementation.",
+    "Problem_concerndness": "\"I'm very concerned about this\" — both personally and for "
+                            "the hotel business; notes state \"Very concerned, both as a "
+                            "private person and as a business owner.\"",
+    "Problem_littering": "Plastic pollution visible \"everywhere on the streets\"; waste "
+                         "thrown into \"rivers, ditches, or open areas\"; dumping directly "
+                         "into rivers with tractors (Khurkot, Sindhuli road).",
+    "Problem_consumption": "Lifestyles changed — \"everything now comes packaged in plastic\"; "
+                           "even remote villages (2–3 days' travel) show noodle/biscuit "
+                           "wrappers; plastic bags are only a small portion of overall "
+                           "plastic use (clothes, electronics, shampoo sachets, etc.).",
+    "Problem_recycling": "\"Waste here is not properly minimized, it's almost zero\" "
+                         "recycling in Dhulikhel; only reusable items picked at the dumping "
+                         "site while the rest is dumped.",
+    "Problem_waste_mgmt": "15+ years of mismanaged local dumping site; no proper segregation, "
+                          "transfer stations or environmentally safe landfill; hospital/KU "
+                          "waste mixed into general dumps; inter-municipal conflict with "
+                          "downstream Panchkhal.",
+    "Problem_alternatives": "Paper bags, thokodi and cloth bags are discussed as needed "
+                            "substitutes but are not widely available — \"when I was a child\" "
+                            "newspaper bags were sold in shops \"but nowadays it's totally "
+                            "closed.\"",
+    "Problem_waste_segregation": "Notes and transcript repeatedly cite lack of household and "
+                                 "hotel-level segregation; municipality should run separate "
+                                 "collection after source segregation.",
+    "Impacts": "Foul smell on the way to the municipality office and toward Panchkhal; "
+               "leachate affecting agriculture in wards 2 and 3; undrinkable water; hospital "
+               "waste (needles, syringes) in dumps; aesthetic problems (birds, litter); "
+               "ocean plastic impacts on fish cited; 100-year plastic degradation mentioned.",
+    NPF_VICTIMS_COL: "Downstream Panchkhal (agricultural, water-scarce area), farmers in "
+                     "wards 2 and 3, families and the local community, the environment, "
+                     "and Dhulikhel Municipality facing major issues from the dumping site.",
+    "NPF_villains": "Government at national and municipal levels (no strict/enforced policy, "
+                    "budget not allocated, 15-year dumping mismanagement, stalled projects); "
+                    "the public (aware but not acting); shops still using plastic; upstream "
+                    "dumping without regard for downstream communities.",
+    "NPF_hero": "Dankhuta \"Waste into Money\" model; ward 7 shopkeeper litter rule; plastic "
+               "waste collectors; Chitwan recycling unit; personal efforts (alternative bags, "
+               "household bag reuse); Kathmandu mayor as example of will + budget.",
+    "Coordination_sectoral": "Ministry of Forest and Environment / Department of Environment "
+                             "formulate policy while municipalities implement — but "
+                             "coordination and implementation are weak.",
+    "Coordination_levels": "Central budget \"has not been able to\" reach the local level; "
+                           "national policy without local implementation fails; problems "
+                           "differ at national, municipal and ward levels.",
+    "Unclear_responsibilities": "Roles known in principle (mayor/municipality + citizens) "
+                                "but \"coordination and implementation are weak\"; "
+                                "respondent personally \"don't know\" specific national "
+                                "policies.",
+    "Res_nat_government": "Ministry of Forest and Environment / Department of Environment "
+                          "formulate policy and issued ban notice; national government "
+                          "responsible for enforcement and budget allocation.",
+    "Res_loc_government": "Municipality (Mirvan post collection), mayor holds budget and "
+                          "formulates/manages waste — \"in a major way they are responsible.\"",
+    "Res_private_sector": "\"Those men who collect the plastic are also a very important part "
+                          "of this thing\"; waste collectors and recyclers must be integrated.",
+    "Res_households": "\"We are also responsible for this\"; citizens should use alternative "
+                      "bags and collect plastic for reuse/recycling.",
+    "Res_private_companies": "Hotels and businesses must manage waste and hand it to "
+                             "municipal collection; shopkeepers responsible under ward 7 "
+                             "litter rule.",
+    "Cul_nat_government": "No strict binding national policy; ministry ban notice not "
+                          "enforced (vegetables still sold in plastic); national plans "
+                          "\"did not go through\" or are not enforced.",
+    "Cul_loc_government": "Budget not allocated for waste management; dumping mismanaged "
+                          "for 15 years; projects announced but no follow-up for years; "
+                          "recycling \"almost zero.\"",
+    "Cul_households": "\"No one likes plastic, but... everyone is using plastic\"; awareness "
+                      "without behavioural change.",
+    "Cul_private_companies": "Plastic \"comes from every shop\"; shops still supply goods in "
+                             "plastic packaging.",
+    "Tar_nat_government": "National-level binding policy with budget allocation (at least 5% "
+                          "of waste-management budget for plastic); enforcement from "
+                          "government level down.",
+    "Tar_loc_government": "Mayor must prioritise dumping, allocate 2–10% of municipal "
+                          "budget, organise segregation/collection/landfill management.",
+    "Tar_households": "Large-scale awareness to \"every person in every house\"; household "
+                      "paper-bag distribution in initial transition period.",
+    "Tar_private_sector": "Waste collectors/recyclers must be integrated into systematic "
+                          "management; Chitwan-style recycling requires municipal "
+                          "coordination.",
+    "Tar_private_companies": "Ban plastic in every shop; mandate paper/cloth bags; hotels "
+                             "should segregate waste before municipal handover.",
+    "Actor_role": "As a hotel/restaurant owner the interviewee is primarily a target of "
+                 "future plastic/waste policies (shop/hotel bans, segregation requirements, "
+                 "awareness campaigns aimed at businesses and households) rather than a "
+                 "policy formulator or municipal implementer — coded as role 4.",
+    "Discretion": "Limited operational discretion: uses non-polythene bags when shopping, "
+                  "consolidates purchases into fewer bags, family collects bags for reuse, "
+                  "but at the hotel can only bag all waste together for municipal pickup.",
+    "Monitoring": "Campaigns like \"Beat the Plastic\" happen but \"nothing has changed\"; "
+                  "good ward-level initiatives lack \"strong monitoring\" and long-term "
+                  "results; projects announced with no follow-up for years.",
+    "Financial_resources": "\"Currently, it seems the budget itself is not being allocated\"; "
+                           "central budget exists but has not reached the local level; need "
+                           "separate compulsory budget line (2–10% of municipal budget).",
+    "Infrastructure": "No proper segregation areas, separate collection, transfer stations "
+                      "or environmentally safe landfill sites despite 40 years of discussion "
+                      "(Daika, Japanese team, ADB, World Bank).",
+    "Capacity": "Municipality lacks organisation to send segregated waste to Chitwan "
+               "recycling unit; manpower and policy transfer needed from well-managed "
+               "models.",
+    "Enforcement": "Strict policies needed \"in a strict way\"; national ban discussed but "
+                   "shops still give vegetables in plastic; open dumping into rivers "
+                   "continues.",
+    "Pol_epr": "Extended producer responsibility is not mentioned anywhere in this interview.",
+    "Pol_awareness": "\"Beat the Plastic\" programme on World Environment Day; clean-up "
+                     "campaigns in Dhulikhel; calls for large-scale household awareness.",
+    "Pol_education": "Awareness campaigns should target women/housewives who do shopping; "
+                     "education on side effects of plastic to every household.",
+    "Pol_ban": "Ministry of Forest and Environment / Department of Environment \"issued a "
+              "notice to ban the plastic\"; national ban plans discussed but not consistently "
+              "implemented.",
+    "Pol_clean_up": "Ward 7 rule requiring shopkeepers to collect litter in front of their "
+                    "shops; municipality collects next day; clean-up campaigns started in "
+                    "Dhulikhel.",
+    "Pol_waste_collection": "Municipal collection (Mirvan post); ward 7 dustbin system where "
+                            "each shop has a bin and municipality picks up daily.",
+    "Pol_effectiveness": "Limited effectiveness — campaigns and events but \"nothing changes "
+                         "in practice\"; Dhulikhel cleaner than Kathmandu in some respects "
+                         "due to ward 7 rule but recycling near zero and dumping site "
+                         "unresolved for 15 years.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in the Coded_Data "
+                                 "cell.",
+    "Sol_awareness": "\"Campaigns to raise awareness are more important than funding\"; show "
+                     "side effects to every household; target women/housewives.",
+    "Sol_segregation": "Segregation at source (household and hotel level) before municipal "
+                       "collection; designated segregation areas and separate collection.",
+    "Sol_recycling": "Replicate Dankhuta and Chitwan models; integrate waste collectors; "
+                     "mayor should focus on recycling — \"even just 2% of the annual budget "
+                     "could start something meaningful.\"",
+    "Sol_education": "Embed waste management in education from young age; company/community "
+                     "awareness especially for women.",
+    "Sol_finance": "Allocate fixed percentage of municipal budget (2%, 5%, 6% or 10%); "
+                   "national level at least 5% of waste-management budget for plastic; "
+                   "separate compulsory budget line.",
+    "Sol_infrastructure": "Designated segregation areas, transfer stations, environmentally "
+                           "safe landfill sites; decentralised facilities adapted to local "
+                           "budget and capacity.",
+    "Sol_subsitutes": "Ban plastic in shops; mandate paper bags and cloth bags; distribute "
+                     "paper bags to every household in initial phase; revive thokodi.",
+    "Sol_enforcement": "Strict policies with real enforcement; national-level binding policy "
+                       "requiring budget allocation — \"unless the government enforces "
+                       "policies at the national level... otherwise its quite difficult.\"",
+    "Sol_monitoring": "Policies must have follow-up and monitoring, not just announcements; "
+                      "continuous campaigns not one-off events.",
+    "Traditions to build on (free-hand)": "Grandfathers made and sold thokodi (newspaper "
+                                          "paper bags) in shops; paper bags and locally made "
+                                          "cloth/cotton bags as alternatives to polythene.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_students": "NA - KU students participated in Beat the Plastic but students are not "
+                    "described as currently responsible actors for mitigation.",
+    "Res_prov_government": "NA - provincial government is not mentioned.",
+    "Res_civil_society": "NA - NGOs are not described as currently responsible actors "
+                         "(SAFEC study cited only as heard-about example).",
+    "Res_science": "NA - researchers are not described as currently responsible actors.",
+    "Res_edu_institutions": "NA - Kathmandu University mentioned only in campaign "
+                            "participation, not as a responsible mitigation actor.",
+    "Cul_prov_government": "NA - not mentioned.",
+    "Cul_students": "NA - not mentioned as contributing to the problem.",
+    "Cul_private_sector": "NA - waste collectors are presented as important partners/heroes, "
+                          "not culprits.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - KU hospital waste in dumps implicates institutions but "
+                             "coded under waste-management failure rather than as a "
+                             "separate culprit category.",
+    "Tar_prov_government": "NA - not mentioned as a target group.",
+    "Tar_students": "NA - not named as a primary target group (education is household/general).",
+    "Tar_civil_society": "NA - not named as a target group.",
+    "Tar_edu_institutions": "NA - schools not named as a primary policy target in this "
+                            "interview.",
+    "Tar_science": "NA - research needs mentioned but scientists not named as target group.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
     "NPL_3": ktm_expl,
     "NPL_4": dhulikhel_expl,
     "NPL_5": doco_expl,
+    "NPL_6": hotel_expl,
     "NPL_7": rsct_expl,
 }
 
 # ---------------------------------------------------------------------------
 # 3b. MASTER INTERVIEW LIST (full 32-interview numbering supplied by the
-#     research team). NPL_1, NPL_2, NPL_3, NPL_4, NPL_5 and NPL_7 have source
+#     research team). NPL_1, NPL_2, NPL_3, NPL_4, NPL_5, NPL_6 and NPL_7 have source
 #     material (interview notes/transcripts) provided so far and are fully
 #     coded above; all other IDs are included as placeholder rows (Country/
 #     ID/Actortype/Notes filled in from the master list, every substantive
@@ -2361,6 +2666,7 @@ CODED_ROWS = {
     "NPL_3": ktm,
     "NPL_4": dhulikhel,
     "NPL_5": doco,
+    "NPL_6": hotel,
     "NPL_7": rsct,
 }
 
@@ -2401,7 +2707,7 @@ MASTER_LIST = [
 ]
 
 NAMES = {iid: f"{label} - {affil}" for iid, label, affil, _ in MASTER_LIST}
-# Fill in the fuller descriptive names for the six fully-coded interviews.
+# Fill in the fuller descriptive names for the seven fully-coded interviews.
 NAMES["NPL_1"] = ("Department of Environment - Deepak Diwali, Deputy Director, Pollution "
                    "Control (air & plastics), Kathmandu (Interview no. 5, 23 June 2025)")
 NAMES["NPL_2"] = ("Former Minister, Government of Nepal - Ganesh Shah, Kathmandu "
@@ -2412,6 +2718,8 @@ NAMES["NPL_4"] = ("Dhulikhel Municipality - Mayor Ashok Kumar Byanju Shrestha, "
                    "Dhulikhel (22 June 2025, Kathmandu interview no. 4)")
 NAMES["NPL_5"] = ("Doco Recyclers - Private Sector waste-management/recycling company, "
                    "Kathmandu Valley (23 June 2025)")
+NAMES["NPL_6"] = ("Dhulikhel Hotel/Restaurant - Mr. Swasti Byanju, hotel owner, "
+                   "Dhulikhel (22 June 2025, Kathmandu interview no. 3)")
 NAMES["NPL_7"] = ("Rural Self-Reliance Development Center / RSCT (savings-and-credit "
                    "cooperative network, urban plastics programme)")
 
@@ -2602,9 +2910,9 @@ readme_lines = [
      "order follow exactly the variable list supplied by the research team.", False),
     ("", False),
     ("IMPORTANT - which rows are actually coded:", True),
-    ("  Only 6 of the 32 rows are coded from real interview material (notes and/or "
-     "transcripts) that has been provided so far: NPL_1, NPL_2, NPL_3, NPL_4, NPL_5 and "
-     "NPL_7 (see below). The remaining 26 rows are PLACEHOLDERS: they reserve the correct "
+    ("  Only 7 of the 32 rows are coded from real interview material (notes and/or "
+     "transcripts) that has been provided so far: NPL_1, NPL_2, NPL_3, NPL_4, NPL_5, "
+     "NPL_6 and NPL_7 (see below). The remaining 25 rows are PLACEHOLDERS: they reserve "
      "and a best-guess Actortype (inferred only from the short affiliation label supplied "
      "by the research team, e.g. \"Household\" -> households), but every substantive "
      "variable is left as NA because no interview notes/transcript for that respondent has "
@@ -2643,6 +2951,10 @@ readme_lines = [
      "2025). Two respondents in the transcript (names not given). Coded from both the "
      "interview guideline notes and the full verbatim transcript. Note: Q4a/Q4b "
      "ministry-template content in the notes was excluded (see Notes cell).", False),
+    ("  6. NPL_6 - Dhulikhel Hotel/Restaurant Owner, Mr. Swasti Byanju, Dhulikhel "
+     "(22 June 2025; Kathmandu interview no. 3). Coded from both the interview guideline "
+     "notes and the full verbatim transcript. Swasti Byanju (local collaborator) also "
+     "contributed the Dankhuta waste-management example in the transcript.", False),
     ("  7. NPL_7 - Rural Self-Reliance Development Center (RSCT), a savings-and-credit "
      "cooperative network (est. 1991) that recently expanded into urban plastics work; per "
      "the master list, the interviewee is Narayan Nirola. Coded from the hand-written "
@@ -2650,7 +2962,7 @@ readme_lines = [
      "then NPL_2, then NPL_3 in earlier versions of this workbook as other interviews were "
      "added; it has now been renumbered to NPL_7 per the research team's master list.", False),
     ("", False),
-    ("Placeholder (not yet coded) interviews: NPL_6, NPL_8-NPL_32 - see the "
+    ("Placeholder (not yet coded) interviews: NPL_8-NPL_32 - see the "
      "master numbering list below and each row's 'Notes' cell in 'Coded_Data'.", False),
     ("", False),
     ("Sheets in this workbook:", True),
@@ -2671,7 +2983,7 @@ readme_lines = [
      "'Coded_Data'.", False),
     ("", False),
     ("Colour key (interview -> row colour): fully-coded interviews (NPL_1, NPL_2, NPL_3, "
-     "NPL_4, NPL_5, NPL_7) use a stronger/brighter tint of their colour; the 26 "
+     "NPL_4, NPL_5, NPL_6, NPL_7) use a stronger/brighter tint of their colour; the 25 "
      "not-yet-coded placeholder interviews use a paler, greyed-down tint of their colour so "
      "distinguishable as \"pending\" at a glance. Colours are spread evenly across the "
      "colour wheel in master-list order (NPL_1 through NPL_32) so adjacent IDs are easy to "
@@ -2685,10 +2997,10 @@ readme_lines = [
 ] + [
     ("", False),
     ("Coding conventions:", True),
-    ("  - 'yes' / 'no' / 'NA': for the 6 fully-coded interviews, NA means the topic was not "
+    ("  - 'yes' / 'no' / 'NA': for the 7 fully-coded interviews, NA means the topic was not "
      "addressed in that interview (no evidence either way); 'no' is only used where the "
      "interviewee explicitly said the item is not an issue / not in place (e.g. Pol_epr = "
-     "no for all coded interviews where EPR was discussed or clearly absent). For the 26 "
+     "no for all coded interviews where EPR was discussed or clearly absent). For the 25 "
      "placeholder interviews, NA means no source material has been provided yet (see "
      "above).", False),
     ("  - Free-hand fields (Impacts, NPF_victims/villains/hero, Discretion, "
