@@ -1,45 +1,50 @@
 """
-Generates a codebook-based qualitative coding of four Nepal plastic-pollution
-governance interviews into a single Excel workbook, strictly following the
+Generates a codebook-based qualitative coding of the Nepal plastic-pollution
+governance interview set into a single Excel workbook, strictly following the
 exact column list supplied by the research team (Country, ID, Actortype, all
 Problem_*, Impacts, NPF victims/villains/hero, Governance/coordination
 variables, Res_/Cul_/Tar_ actor grids, Actor_role, Discretion,
 implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
-Sheets produced:
-  1. Read_Me            - scope, sources, coding conventions
-  2. Codebook            - variable dictionary matching the Coded_Data columns
-  3. Coded_Data          - wide-format matrix: one row per interview, one
-                           column per COLUMNS entry (exact order/spelling as
-                           supplied)
-  4. Coding_Explanations - long-format table (ID | Variable | Value |
-                           Evidence / Explanation) documenting the
-                           quote/observation behind every coded (non-NA) value
+The workbook covers the FULL 32-interview master numbering supplied by the
+research team (see MASTER_LIST below), one row per ID from NPL_1 to NPL_32,
+in order. Only four interviews have source material (notes/transcripts)
+available so far and are therefore fully coded: NPL_1 (Department of
+Environment), NPL_2 (Former Minister Ganesh Shah), NPL_3 (KTM Municipal
+Office / Kathmandu Metropolitan City) and NPL_7 (Rural Self-Reliance
+Development Center / RSCT). The remaining 28 rows are explicit placeholders
+(Country/ID/best-guess Actortype/Notes only, all substantive variables NA)
+reserving the correct ID until their interview material is supplied.
 
-Interviews coded (Nepal):
-  - NPL_1: Department of Environment (DoE), Government of Nepal - Deepak
-    Diwali, Deputy Director, Pollution Control (air & plastics), Kathmandu.
-    Labelled "Interview no. 5" in the project's internal running order, but
-    ID'd here as NPL_1 per the research team's instruction. Coded from the
-    interview notes AND the full verbatim transcript (PEGO / ENV DEP dialogue).
-  - NPL_2: Former Minister, Government of Nepal - Ganesh Shah, Kathmandu.
-    Coded from the interview guideline notes AND the full verbatim transcript
-    (21 June 2025).
-  - NPL_3: RSCT, a Nepali savings-and-credit cooperative network (est. 1991)
-    that recently expanded into urban plastics work. Coded from the
-    hand-written interview notes only (no transcript available). (Originally
-    ID'd NPL_2 before the Ganesh Shah interview was added and assigned NPL_2
-    by the research team; RSCT was renumbered to NPL_3 to keep IDs unique.)
-  - NPL_4: Kathmandu Metropolitan City (KMC) Solid Waste Management Office -
-    unnamed municipal officer(s), Kathmandu (23 June). Coded from both the
-    interview guideline notes and the full verbatim transcript.
+Sheets produced:
+  1. Read_Me            - scope, sources, coding conventions, full master
+                           numbering list, colour key
+  2. Codebook            - variable dictionary matching the Coded_Data columns
+  3. Coded_Data          - wide-format matrix: one row per interview (NPL_1
+                           through NPL_32, in order), one column per COLUMNS
+                           entry (exact order/spelling as supplied). Each
+                           interview's row is filled with its own colour.
+  4. Coding_Explanations - long-format table (ID | Variable | Value |
+                           Evidence / Explanation). The columns the research
+                           team asked to always document (NPF_victims/
+                           villains/hero, all Res_/Cul_/Tar_ actor-grid
+                           columns, Actor_role, Discretion, Capacity,
+                           Pol_effectiveness, Pol_effectiveness_example)
+                           always get a row for every interview, even when
+                           the value is NA (explaining why). Other columns
+                           are documented wherever a specific explanation was
+                           written for a fully-coded interview. Rows use the
+                           same colour as their interview in Coded_Data.
 
 Coding conventions:
-  - yes / no / NA -> NA means the topic was not addressed in that interview
-    (absence of evidence); "no" is only used when the interviewee explicitly
-    indicated the item is not an issue / not currently in place.
-  - Free-hand fields contain short descriptive text, or "NA" if not discussed.
+  - yes / no / NA -> for fully-coded interviews, NA means the topic was not
+    addressed in that interview (absence of evidence); "no" is only used
+    when the interviewee explicitly indicated the item is not an issue / not
+    currently in place. For placeholder interviews, NA means no source
+    material has been supplied yet.
+  - Free-hand fields contain short descriptive text, or "NA" if not
+    discussed/not yet coded.
   - Actor_role: 1 = formulation/policy actor, 2 = managerial/organisational
     implementer, 3 = street-level implementer, 4 = target group (comma
     separated if more than one applies).
@@ -453,11 +458,11 @@ ganesh.update({
              "notes and the full verbatim transcript.",
 })
 
-# --- NPL_3: RSCT --------------------------------------------------------------
+# --- NPL_7: Rural Self-Reliance Development Center (RSCT) -------------------
 rsct = blank_row()
 rsct.update({
     "Country": "Nepal",
-    "ID": "NPL_3",
+    "ID": "NPL_7",
     "Actortype": "civil_society",
 
     "Problem_awareness_pop": "yes",
@@ -522,19 +527,22 @@ rsct.update({
                                           "to finance and organise community-level plastic "
                                           "waste management, as RSCT itself has already begun "
                                           "doing in urban areas.",
-    "Notes": "Affiliation: RSCT, a savings-and-credit cooperative network (est. 1991), "
-             "originally focused on poverty-alleviation microfinance for rural communities in "
-             "Nepal, now also working on urban plastics. Interviewee name and precise location "
-             "not specified in the source notes (RSCT's own remarks reference Chitwan "
-             "district). Coded from interview notes only (short bullet-point answers); no "
-             "full transcript available for this interview.",
+    "Notes": "Master list label: \"7. Rural Self-Reliance Development Center/ Narayan "
+             "Nirola\". Affiliation: RSCT / Rural Self-Reliance Development Center, a "
+             "savings-and-credit cooperative network (est. 1991), originally focused on "
+             "poverty-alleviation microfinance for rural communities in Nepal, now also "
+             "working on urban plastics. Interviewee name in the source notes is not given "
+             "directly (RSCT's own remarks reference Chitwan district); per the research "
+             "team's master interview list the interviewee is Narayan Nirola. Coded from "
+             "interview notes only (short bullet-point answers); no full transcript "
+             "available for this interview.",
 })
 
-# --- NPL_4: Kathmandu Metropolitan City (KMC) Municipal Office --------------
+# --- NPL_3: Kathmandu Metropolitan City (KMC) Municipal Office --------------
 ktm = blank_row()
 ktm.update({
     "Country": "Nepal",
-    "ID": "NPL_4",
+    "ID": "NPL_3",
     "Actortype": "loc_government",
 
     "Problem_awareness_pop": "no",
@@ -648,10 +656,11 @@ ktm.update({
                                           "wealthier groups; the interviewee agreed government "
                                           "subsidies for producers of such alternatives could "
                                           "help scale this practice.",
-    "Notes": "Affiliation: Kathmandu Metropolitan City (KMC), Solid Waste Management "
-             "Office/Department (municipal/local government level). Interviewee name(s) not "
-             "given; the transcript suggests at least two KMC staff were present (\"our "
-             "ma'am has answered...\"). Location: Kathmandu. Interview date: 23 June (year "
+    "Notes": "Master list label: \"3. KTM Municipal Office\", affiliation \"Kathmandu "
+             "Metropolitan City - Environment / Solid Waste Management Division\". "
+             "Interviewee name(s) not given; the transcript suggests at least two KMC staff "
+             "were present (\"our ma'am has answered...\"). Location: Kathmandu. Interview "
+             "date: 23 June (year "
              "not stated on this document, but consistent with the other Nepal interviews "
              "conducted around 21-23 June 2025). Coded from both the interview guideline "
              "notes and the full verbatim transcript. Data-quality note: the bullet list "
@@ -835,6 +844,48 @@ doe_expl = {
                                           "existing local example under the solutions "
                                           "discussion, suggesting an existing municipal "
                                           "practice that could be replicated elsewhere.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - not mentioned. The interview discusses national (DoE/Chief "
+                           "Secretary committee), local government and private/NGO actors, "
+                           "but does not describe any role for provincial (state) government "
+                           "in mitigating plastic pollution.",
+    "Res_students": "NA - not mentioned. Students/schools are referenced only as recipients "
+                    "of existing education (\"in education kids are taught about it\"), not "
+                    "as an actor bearing responsibility to mitigate plastic pollution.",
+    "Res_science": "NA - not mentioned. No researchers/scientific institutions are described "
+                   "as currently responsible for mitigating plastic pollution in this "
+                   "interview.",
+    "Res_households": "NA - not mentioned as a currently responsible actor; households "
+                      "appear in this interview mainly as a culprit (habits/price-"
+                      "sensitivity) and as a future target group, not as an actor already "
+                      "exercising mitigation responsibility.",
+    "Res_private_companies": "NA - not explicitly described. Private manufacturing/retail "
+                             "companies appear in this interview mainly as culprits (continued "
+                             "production of non-compliant plastics) rather than as actors "
+                             "currently exercising responsibility to mitigate pollution.",
+    "Cul_nat_government": "NA - not explicitly blamed. The interviewee presents DoE/national "
+                          "government primarily as the actor driving bans, monitoring and "
+                          "planned subsidies (i.e. as part of the solution), rather than as a "
+                          "culprit for the bad situation.",
+    "Cul_prov_government": "NA - not mentioned. Provincial government is not discussed in "
+                           "this interview at all.",
+    "Cul_loc_government": "NA - not explicitly blamed. Local government is described as a "
+                          "responsible/implementing actor (waste collection, market "
+                          "monitoring) but is not directly blamed for the pollution problem.",
+    "Cul_students": "NA - not mentioned as contributing to the problem.",
+    "Cul_civil_society": "NA - not mentioned as contributing to the problem; NGOs are "
+                         "described positively as running recovery facilities and awareness "
+                         "campaigns.",
+    "Cul_science": "NA - not mentioned as contributing to the problem.",
+    "Cul_edu_institutions": "NA - not mentioned as contributing to the problem.",
+    "Tar_prov_government": "NA - not mentioned as a target group for future measures.",
+    "Tar_students": "NA - not explicitly named as a target group in this interview (schools "
+                    "are mentioned only via \"education\" and \"edu_institutions\", not "
+                    "students as individuals).",
+    "Tar_civil_society": "NA - not mentioned as a target group for future measures; NGOs are "
+                         "framed as current implementing partners rather than as a group "
+                         "whose behaviour future policy should target.",
+    "Tar_science": "NA - not mentioned as a target group for future measures.",
 }
 
 rsct_expl = {
@@ -927,6 +978,52 @@ rsct_expl = {
                                           "locally rooted cooperative financing tradition "
                                           "that has already been repurposed for plastics "
                                           "work and could be scaled further.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "NPF_villains": "Coded NA - the notes do not name a specific culprit/villain actor; only "
+                    "general public ignorance and unreleased government funds are referenced "
+                    "as contributing factors, without a clearly personified \"bad guy\".",
+    "NPF_hero": "Coded NA - no specific actor is described as the one committed to solving "
+               "the problem in these short notes (RSCT describes its own broader "
+               "organisational activities but does not frame itself, or anyone else, as a "
+               "narrative \"hero\" of the plastics story specifically).",
+    "Res_nat_government": "NA - not mentioned as currently responsible; national government "
+                          "appears in these notes mainly via the (unreleased) earmarked-funds "
+                          "issue, coded instead under Cul_nat_government.",
+    "Res_prov_government": "NA - provincial/state government is not mentioned anywhere in "
+                           "these notes.",
+    "Res_students": "NA - students/schools are not mentioned in these notes at all.",
+    "Res_science": "NA - researchers are not mentioned as a currently responsible actor "
+                   "(only a general call for \"more research\" as a future need, captured "
+                   "under Research/Sol_RD).",
+    "Res_edu_institutions": "NA - schools/universities are not mentioned in these notes.",
+    "Res_private_companies": "NA - hotels/shops/manufacturers are not mentioned in these "
+                             "notes; the only private actor discussed is the waste-collector "
+                             "incentive scheme, captured under Res_private_sector.",
+    "Cul_prov_government": "NA - provincial government is not mentioned in these notes.",
+    "Cul_loc_government": "NA - not explicitly blamed; the notes attribute the "
+                          "unreleased-funds problem to \"they\" (interpreted as a governing/"
+                          "funding authority, coded under Cul_nat_government) without "
+                          "specifying local government.",
+    "Cul_students": "NA - not mentioned.",
+    "Cul_private_sector": "NA - waste collectors are described positively (recipients of the "
+                          "300 rupee/month incentive), not as culprits.",
+    "Cul_civil_society": "NA - not mentioned as contributing to the problem.",
+    "Cul_science": "NA - not mentioned.",
+    "Cul_edu_institutions": "NA - not mentioned.",
+    "Cul_private_companies": "NA - not mentioned; no specific companies are blamed in these "
+                             "short notes.",
+    "Tar_nat_government": "NA - not explicitly named as a target group for future measures "
+                          "in these notes.",
+    "Tar_prov_government": "NA - not mentioned.",
+    "Tar_students": "NA - not mentioned as a target group in these notes.",
+    "Tar_civil_society": "NA - not mentioned as a target group; RSCT discusses itself as an "
+                         "implementer rather than identifying other civil-society groups as "
+                         "future targets.",
+    "Tar_science": "NA - not mentioned as a target group.",
+    "Tar_edu_institutions": "NA - not mentioned as a target group in these notes.",
+    "Tar_private_companies": "NA - not mentioned as a target group; the only private actor "
+                             "discussed as a target is waste collectors, captured under "
+                             "Tar_private_sector.",
 }
 
 ganesh_expl = {
@@ -1169,6 +1266,36 @@ ganesh_expl = {
                                           "interviewee explicitly frames reduce/reuse of "
                                           "existing bags as an extension of these older, "
                                           "lower-waste habits.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_students": "NA - not mentioned as a currently responsible actor; students appear "
+                    "only indirectly via general references to education/human-resource "
+                    "development as a future need.",
+    "Res_households": "NA - not described as currently responsible for mitigation; "
+                      "households appear mainly as consumers whose habits need to change "
+                      "(captured under Cul_households and Tar_households).",
+    "Cul_prov_government": "NA - provincial government is not discussed as a culprit; the "
+                           "interview's governance criticism focuses on unclear federal/"
+                           "local division of authority and political instability at the "
+                           "national level, captured under Cul_nat_government.",
+    "Cul_loc_government": "NA - local government is described positively as an emerging "
+                          "responsible actor (increasingly setting collection rules) rather "
+                          "than being blamed for the pollution problem.",
+    "Cul_students": "NA - not mentioned as contributing to the problem.",
+    "Cul_civil_society": "NA - not mentioned as contributing to the problem; NGOs/"
+                         "associations (e.g. the Solid Waste Management Association) are "
+                         "presented as responsible/positive actors.",
+    "Cul_science": "NA - not mentioned as contributing to the problem; researchers are "
+                   "presented positively (e.g. drafting EPR modalities, cataloguing plastic "
+                   "categories).",
+    "Cul_edu_institutions": "NA - not mentioned as contributing to the problem.",
+    "Tar_students": "NA - not explicitly named as a distinct target group; the interview "
+                    "discusses building human-resource capacity and public awareness "
+                    "broadly, without singling out students/schools as their own target "
+                    "category (unlike, e.g., the KTM Municipal Office interview).",
+    "Tar_civil_society": "NA - not mentioned as a target group for future measures; NGOs/"
+                         "associations are discussed as current implementing partners.",
+    "Tar_edu_institutions": "NA - not explicitly named as a target group for future measures "
+                            "in this interview.",
 }
 
 ktm_expl = {
@@ -1401,18 +1528,161 @@ ktm_expl = {
                                           "instead of plastic ones - as an existing, if "
                                           "underused and costly (20 rupees/piece), "
                                           "alternative practice.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_students": "NA - not mentioned as a currently responsible actor; students are "
+                    "discussed only as a future target group via the education-system "
+                    "proposal (captured under Tar_students).",
+    "Res_science": "NA - no researchers/scientific institutions are described as currently "
+                   "responsible for mitigating plastic pollution in this interview (the "
+                   "ambiguous Q3a research-collaboration bullets were excluded from this "
+                   "row's coding - see Notes).",
+    "Res_households": "NA - households are not described as currently exercising "
+                      "responsibility; they are discussed as a culprit (convenience-driven "
+                      "plastic use) and future target group instead.",
+    "Res_edu_institutions": "NA - schools/universities are not described as currently active "
+                            "on plastic waste management in this interview; embedding waste "
+                            "management in the curriculum is discussed only as a future "
+                            "solution (captured under Sol_education/Tar_edu_institutions).",
+    "Cul_prov_government": "NA - provincial government is mentioned only as a hoped-for "
+                           "future collaborator on land access, not blamed for the current "
+                           "situation.",
+    "Cul_students": "NA - not mentioned as contributing to the problem.",
+    "Cul_civil_society": "NA - not mentioned as contributing to the problem; the NGO partner "
+                         "(DoCoRecyclers) is presented positively.",
+    "Cul_science": "NA - not mentioned as contributing to the problem.",
+    "Cul_edu_institutions": "NA - not mentioned as contributing to the problem.",
+    "Tar_nat_government": "NA - national government is discussed as a needed collaborator "
+                          "(land access, coordination) rather than as a target whose "
+                          "behaviour a mitigation measure should change.",
+    "Tar_prov_government": "NA - similarly discussed as a needed collaborator/coordination "
+                           "partner rather than a target group of mitigation measures.",
+    "Tar_civil_society": "NA - not mentioned as a target group for future measures.",
+    "Tar_science": "NA - not mentioned as a target group for future measures.",
 }
 
-EXPLANATIONS = {"NPL_1": doe_expl, "NPL_2": ganesh_expl, "NPL_3": rsct_expl, "NPL_4": ktm_expl}
-NAMES = {
-    "NPL_1": "Department of Environment - Deepak Diwali, Deputy Director, Pollution "
-             "Control (air & plastics), Kathmandu (Interview no. 5, 23 June 2025)",
-    "NPL_2": "Former Minister, Government of Nepal - Ganesh Shah, Kathmandu "
-             "(21 June 2025)",
-    "NPL_3": "RSCT (savings-and-credit cooperative network, urban plastics programme)",
-    "NPL_4": "Kathmandu Metropolitan City (KMC), Solid Waste Management Office - "
-             "Municipality Officer(s), Kathmandu (23 June)",
-}
+EXPLANATIONS = {"NPL_1": doe_expl, "NPL_2": ganesh_expl, "NPL_7": rsct_expl, "NPL_3": ktm_expl}
+
+# ---------------------------------------------------------------------------
+# 3b. MASTER INTERVIEW LIST (full 32-interview numbering supplied by the
+#     research team). Only NPL_1, NPL_2, NPL_3 and NPL_7 have source
+#     material (interview notes/transcripts) provided so far and are fully
+#     coded above; all other IDs are included as placeholder rows (Country/
+#     ID/Actortype/Notes filled in from the master list, every substantive
+#     variable left as NA) so the workbook's structure and numbering match
+#     the full study design. Placeholder rows must NOT be treated as
+#     completed coding - they exist purely to reserve the correct ID/row
+#     and are clearly flagged as such in their 'Notes' cell.
+# ---------------------------------------------------------------------------
+CODED_ROWS = {"NPL_1": doe, "NPL_2": ganesh, "NPL_3": ktm, "NPL_7": rsct}
+
+# (id, label as given by the research team, affiliation, inferred Actortype)
+MASTER_LIST = [
+    ("NPL_1", "1. Environmental Department/ Deepak Diwal", "Department of Environment", "nat_government"),
+    ("NPL_2", "2. Former Minister/ Ganesh Shah", "Former Minister, Government of Nepal", "nat_government"),
+    ("NPL_3", "3. KTM Municipal Office", "Kathmandu Metropolitan City - Environment / Solid Waste Management Division", "loc_government"),
+    ("NPL_4", "4. Mayor Dhulikhel/ Ashok Kumar Byanju Shrestha", "Dhulikhel Municipality (Mayor's Office)", "loc_government"),
+    ("NPL_5", "5. Private Sector/ Doco Recyclers", "Doco Recyclers", "private_sector"),
+    ("NPL_6", "6. Restaurant and Hotel Owner Dhulikhel_Combined", "Dhulikhel Hotel / Restaurant", "private_companies"),
+    ("NPL_7", "7. Rural Self-Reliance Development Center/ Narayan Nirola", "Rural Self-Reliance Development Center", "civil_society"),
+    ("NPL_8", "8. Urban Development Ministry/ Kamal Adhikar", "Ministry of Urban Development, Government of Nepal", "nat_government"),
+    ("NPL_9", "9. Dhulikhel Ward no.1", "Dhulikhel Municipality - Ward No. 1", "loc_government"),
+    ("NPL_10", "10. Dhulikhel Ward no.7", "Dhulikhel Municipality - Ward No. 7", "loc_government"),
+    ("NPL_11", "11. Private Sector Contractor/ SafaUrja Utpadan", "Safa Urja Utpadan", "private_sector"),
+    ("NPL_12", "12. Ministry for Urban Planning", "Ministry of Urban Development", "nat_government"),
+    ("NPL_13", "13. Creasion", "Center for Research and Sustainable Development in Nepal", "civil_society"),
+    ("NPL_14", "14. Hotel Silent Park/ Rajesh Aryal", "Hotel Silent Park", "private_companies"),
+    ("NPL_15", "15. Kathmandu Metropolitan City/ Suna Maya Margen", "Kathmandu Metropolitan City - Environment Division / Public Education & Inspection", "loc_government"),
+    ("NPL_16", "16. Kathmandu Ward no.6", "Kathmandu Metropolitan City - Ward No. 6", "loc_government"),
+    ("NPL_17", "17. Kathmandu Ward no.7/ Mr. Romy Prasad Shrestha", "Kathmandu Metropolitan City - Ward No. 7", "loc_government"),
+    ("NPL_18", "18. Nepal Waste Manager", "Nepal Waste Management", "private_sector"),
+    ("NPL_19", "19. TAAN Trekking Association", "TAAN Trekking Association", "civil_society"),
+    ("NPL_20", "20. Chitwan Environmental Officer", "Municipal Environmental Office", "loc_government"),
+    ("NPL_21", "21. Dhulikhel Household no.1", "Household", "households"),
+    ("NPL_22", "22. Dhulikhel Household no.2", "Household", "households"),
+    ("NPL_23", "23. Dhulikhel Shopowner no.3", "Shopowner", "private_companies"),
+    ("NPL_24", "24. Dhulikhel Household no.4", "Household", "households"),
+    ("NPL_25", "25. Dhulikhel Household no.5", "Household", "households"),
+    ("NPL_26", "26. Dhulikhel Restaurant no.6", "Restaurant", "private_companies"),
+    ("NPL_27", "27. Dhulikhel Household out of town no.7", "Household", "households"),
+    ("NPL_28", "28. Chitwan Ward", "Local Government (Municipality level)", "loc_government"),
+    ("NPL_29", "29. Kathmandu Former UNEP member no.8", "Former UNDP & UNEP member", "civil_society"),
+    ("NPL_30", "30. Kathmandu Household Ward23 no.9", "Household woman", "households"),
+    ("NPL_31", "31. Kathmandu Shopowner Babinasa no.10", "Shopowner in Babinasa", "private_companies"),
+    ("NPL_32", "32. Chisapani Tour Guide", "Local tour guide", "private_companies"),
+]
+
+NAMES = {iid: f"{label} - {affil}" for iid, label, affil, _ in MASTER_LIST}
+# Fill in the fuller descriptive names for the four fully-coded interviews.
+NAMES["NPL_1"] = ("Department of Environment - Deepak Diwali, Deputy Director, Pollution "
+                   "Control (air & plastics), Kathmandu (Interview no. 5, 23 June 2025)")
+NAMES["NPL_2"] = ("Former Minister, Government of Nepal - Ganesh Shah, Kathmandu "
+                   "(21 June 2025)")
+NAMES["NPL_3"] = ("Kathmandu Metropolitan City (KMC), Solid Waste Management Office - "
+                   "Municipality Officer(s), Kathmandu (23 June)")
+NAMES["NPL_7"] = ("Rural Self-Reliance Development Center / RSCT (savings-and-credit "
+                   "cooperative network, urban plastics programme)")
+
+
+def placeholder_row(iid, label, affiliation, actortype):
+    row = blank_row()
+    row.update({
+        "Country": "Nepal",
+        "ID": iid,
+        "Actortype": actortype,
+        "Notes": f"PLACEHOLDER ROW - not yet coded. Master list entry: \"{label}\", "
+                 f"affiliation: \"{affiliation}\". No interview notes or transcript for "
+                 f"this respondent have been provided to the coder yet; Actortype above is "
+                 f"a best-guess classification based on the affiliation label only. All "
+                 f"other variables are left as NA pending the actual interview material. "
+                 f"Do not interpret the NA values in this row as findings - they simply "
+                 f"reflect that this interview has not been coded yet.",
+    })
+    return row
+
+
+ALL_ROWS = {}
+for iid, label, affiliation, actortype in MASTER_LIST:
+    if iid in CODED_ROWS:
+        ALL_ROWS[iid] = CODED_ROWS[iid]
+    else:
+        ALL_ROWS[iid] = placeholder_row(iid, label, affiliation, actortype)
+
+INTERVIEWS = [ALL_ROWS[iid] for iid, _, _, _ in MASTER_LIST]
+
+# ---------------------------------------------------------------------------
+# 3c. Columns for which an explanation must ALWAYS be recorded (per the
+#     research team's explicit instruction), even when the coded value is
+#     NA. For fully-coded interviews without a specific reason already
+#     written above, and for all placeholder interviews, a clear fallback
+#     explanation is generated below.
+# ---------------------------------------------------------------------------
+ALWAYS_EXPLAIN_COLUMNS = [
+    "NPF_victims", "NPF_villains", "NPF_hero",
+    "Res_nat_government", "Res_prov_government", "Res_loc_government", "Res_students",
+    "Res_private_sector", "Res_civil_society", "Res_science", "Res_households",
+    "Res_edu_institutions", "Res_private_companies",
+    "Cul_nat_government", "Cul_prov_government", "Cul_loc_government", "Cul_students",
+    "Cul_private_sector", "Cul_civil_society", "Cul_science", "Cul_households",
+    "Cul_edu_institutions", "Cul_private_companies",
+    "Tar_nat_government", "Tar_prov_government", "Tar_loc_government", "Tar_students",
+    "Tar_private_sector", "Tar_civil_society", "Tar_science", "Tar_households",
+    "Tar_edu_institutions", "Tar_private_companies",
+    "Actor_role", "Discretion", "Capacity", "Pol_effectiveness", "Pol_effectiveness_example",
+]
+
+PLACEHOLDER_EXPLANATION = ("No interview notes or transcript have been provided for this "
+                            "respondent yet, so this variable could not be coded and is left "
+                            "as NA. This is a data-availability gap, not a coding judgement.")
+
+
+def get_explanation(iid, var, value):
+    expl = EXPLANATIONS.get(iid)
+    if expl and var in expl:
+        return expl[var]
+    if iid not in CODED_ROWS:
+        return PLACEHOLDER_EXPLANATION
+    return f"NA - not addressed in this interview (no mention found for {var})."
+
 
 # ---------------------------------------------------------------------------
 # 4. BUILD WORKBOOK
@@ -1436,6 +1706,37 @@ def style_header_row(ws, row, ncols):
         cell.border = BORDER
 
 
+# ---------------------------------------------------------------------------
+# 4a. One distinct colour per interview, used to fill each interview's rows
+#     in both Coded_Data and Coding_Explanations so interviews are easy to
+#     tell apart visually. Colours are spread evenly around the HSL colour
+#     wheel; fully-coded interviews get a slightly stronger tint, while
+#     not-yet-coded placeholder interviews get a light grey-tinted version
+#     so they read as visually "unfinished".
+# ---------------------------------------------------------------------------
+import colorsys
+
+
+def make_color_map(ids, coded_ids):
+    n = len(ids)
+    colors = {}
+    for i, iid in enumerate(ids):
+        hue = i / n
+        if iid in coded_ids:
+            # Fully-coded interviews: clearly saturated, distinct colours.
+            r, g, b = colorsys.hls_to_rgb(hue, 0.78, 0.65)
+        else:
+            # Placeholder (not-yet-coded) interviews: very pale, low-saturation
+            # tint of the same hue, so they read as "pending" at a glance.
+            r, g, b = colorsys.hls_to_rgb(hue, 0.95, 0.35)
+        colors[iid] = "{:02X}{:02X}{:02X}".format(int(r * 255), int(g * 255), int(b * 255))
+    return colors
+
+
+ALL_IDS = [iid for iid, _, _, _ in MASTER_LIST]
+COLOR_MAP = make_color_map(ALL_IDS, set(CODED_ROWS.keys()))
+
+
 # --- Sheet: Codebook (matches Coded_Data columns exactly) ---
 ws1 = wb.active
 ws1.title = "Codebook"
@@ -1456,11 +1757,15 @@ ws2 = wb.create_sheet("Coded_Data")
 ws2.append(COLUMNS)
 style_header_row(ws2, 1, len(COLUMNS))
 for interview in INTERVIEWS:
+    iid = interview["ID"]
+    row_fill = PatternFill(start_color=COLOR_MAP[iid], end_color=COLOR_MAP[iid], fill_type="solid")
     ws2.append([interview.get(c, "NA") for c in COLUMNS])
     r = ws2.max_row
     for c in range(1, len(COLUMNS) + 1):
-        ws2.cell(row=r, column=c).alignment = WRAP
-        ws2.cell(row=r, column=c).border = BORDER
+        cell = ws2.cell(row=r, column=c)
+        cell.alignment = WRAP
+        cell.border = BORDER
+        cell.fill = row_fill
 for i in range(1, len(COLUMNS) + 1):
     ws2.column_dimensions[get_column_letter(i)].width = 22
 ws2.column_dimensions["B"].width = 10  # ID
@@ -1472,15 +1777,20 @@ ws3.append(["ID", "Interview / Source", "Variable", "Coded value", "Evidence / E
 style_header_row(ws3, 1, 5)
 for interview in INTERVIEWS:
     iid = interview["ID"]
-    expl = EXPLANATIONS[iid]
+    expl = EXPLANATIONS.get(iid, {})
+    row_fill = PatternFill(start_color=COLOR_MAP[iid], end_color=COLOR_MAP[iid], fill_type="solid")
     for var in COLUMNS:
-        if var in expl:
+        must_explain = var in ALWAYS_EXPLAIN_COLUMNS
+        if must_explain or var in expl:
             value = interview.get(var, "NA")
-            ws3.append([iid, NAMES[iid], var, value, expl[var]])
+            explanation = get_explanation(iid, var, value)
+            ws3.append([iid, NAMES[iid], var, value, explanation])
             r = ws3.max_row
             for c in range(1, 6):
-                ws3.cell(row=r, column=c).alignment = WRAP
-                ws3.cell(row=r, column=c).border = BORDER
+                cell = ws3.cell(row=r, column=c)
+                cell.alignment = WRAP
+                cell.border = BORDER
+                cell.fill = row_fill
 ws3.column_dimensions["A"].width = 10
 ws3.column_dimensions["B"].width = 34
 ws3.column_dimensions["C"].width = 30
@@ -1493,47 +1803,94 @@ ws4 = wb.create_sheet("Read_Me", 0)
 readme_lines = [
     ("Nepal Plastic Pollution Governance - Interview Coding", True),
     ("", False),
-    ("This workbook applies the supplied codebook (see 'Codebook' sheet) to four interview "
-     "sources from the 'Plastic Pollution Governance in Nepal' project. Column names and "
-     "order in 'Coded_Data' follow exactly the variable list supplied by the research team.", False),
+    ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
+     "interview list. 'Coded_Data' has one row for every ID in the research team's full "
+     "32-interview master numbering (NPL_1-NPL_32), in that exact order. Column names and "
+     "order follow exactly the variable list supplied by the research team.", False),
+    ("", False),
+    ("IMPORTANT - which rows are actually coded:", True),
+    ("  Only 4 of the 32 rows are coded from real interview material (notes and/or "
+     "transcripts) that has been provided so far: NPL_1, NPL_2, NPL_3 and NPL_7 (see "
+     "below). The remaining 28 rows are PLACEHOLDERS: they reserve the correct ID, Country "
+     "and a best-guess Actortype (inferred only from the short affiliation label supplied "
+     "by the research team, e.g. \"Household\" -> households), but every substantive "
+     "variable is left as NA because no interview notes/transcript for that respondent has "
+     "been supplied yet. Each placeholder row's 'Notes' cell is explicitly marked "
+     "\"PLACEHOLDER ROW - not yet coded\", and in 'Coding_Explanations' every one of the "
+     "columns the research team asked to always document (see below) carries an explicit "
+     "explanation stating that no source material is available yet - this is a "
+     "data-availability gap, not a finding of \"no\" or \"not mentioned\". Please send the "
+     "remaining interview notes/transcripts to have those rows properly coded.", False),
+    ("", False),
+    ("Fully-coded interviews:", True),
     ("  1. NPL_1 - Department of Environment (DoE), Deepak Diwali, Deputy Director, "
      "Pollution Control (air & plastics), Kathmandu. Labelled \"Interview no. 5\" in the "
      "project's internal running order (23 June 2025), but coded here as NPL_1 per the "
-     "research team's instruction. Coded from both the interview notes and the full "
+     "research team's master numbering. Coded from both the interview notes and the full "
      "verbatim transcript.", False),
     ("  2. NPL_2 - Former Minister, Government of Nepal, Ganesh Shah, Kathmandu (21 June "
      "2025). Coded from both the interview guideline notes and the full verbatim "
-     "transcript, per the research team's instruction to use ID NPL_2 for this interview.", False),
-    ("  3. NPL_3 - RSCT: a savings-and-credit cooperative network (est. 1991) that recently "
-     "expanded into urban plastics work. Coded from the hand-written interview notes only "
-     "(no transcript available). RSCT was originally ID'd NPL_2 in an earlier version of "
-     "this workbook; it was renumbered to NPL_3 once the research team assigned NPL_2 to "
-     "the Ganesh Shah interview, to keep IDs unique.", False),
-    ("  4. NPL_4 - Kathmandu Metropolitan City (KMC), Solid Waste Management Office - "
-     "unnamed municipal officer(s), Kathmandu (23 June). Coded from both the interview "
-     "guideline notes and the full verbatim transcript. Note: the Q3a bullet notes in the "
-     "source document describing a multi-city (Kathmandu/Pokhara) dry-waste operation with "
-     "UNDP training and a Bhaktapur awareness campaign appear to belong to a different, "
-     "unrelated interview accidentally included in the same file, and were excluded from "
-     "this row's coding (see the 'Notes' cell for NPL_4 in Coded_Data for detail).", False),
+     "transcript.", False),
+    ("  3. NPL_3 - KTM Municipal Office / Kathmandu Metropolitan City - Environment / Solid "
+     "Waste Management Division, unnamed municipal officer(s), Kathmandu (23 June). Coded "
+     "from both the interview guideline notes and the full verbatim transcript. Note: the "
+     "Q3a bullet notes in the source document describing a multi-city (Kathmandu/Pokhara) "
+     "dry-waste operation with UNDP training and a Bhaktapur awareness campaign appear to "
+     "belong to a different, unrelated interview accidentally included in the same file, "
+     "and were excluded from this row's coding (see its 'Notes' cell for detail). This "
+     "interview was numbered NPL_4 in an earlier version of this workbook; it has been "
+     "renumbered to NPL_3 per the research team's master list.", False),
+    ("  7. NPL_7 - Rural Self-Reliance Development Center (RSCT), a savings-and-credit "
+     "cooperative network (est. 1991) that recently expanded into urban plastics work; per "
+     "the master list, the interviewee is Narayan Nirola. Coded from the hand-written "
+     "interview notes only (no transcript available). This interview was numbered NPL_1, "
+     "then NPL_2, then NPL_3 in earlier versions of this workbook as other interviews were "
+     "added; it has now been renumbered to NPL_7 per the research team's master list.", False),
+    ("", False),
+    ("Placeholder (not yet coded) interviews: NPL_4, NPL_5, NPL_6, NPL_8-NPL_32 - see the "
+     "master numbering list below and each row's 'Notes' cell in 'Coded_Data'.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix (one row per interview, one column per codebook "
-     "variable, including a free-hand 'Notes' column) with the coded values.", False),
-    ("  - Coding_Explanations: long-format table giving the quote/observation used to "
-     "justify every non-NA code in Coded_Data (one row per Interview x Variable).", False),
+    ("  - Coded_Data: wide-format matrix, one row per interview (NPL_1-NPL_32, in order), "
+     "one column per codebook variable, including a free-hand 'Notes' column. Each "
+     "interview's row is filled with a distinct colour (see 'Colour key' below) so "
+     "interviews are easy to tell apart at a glance.", False),
+    ("  - Coding_Explanations: long-format table giving the quote/observation (or, for "
+     "placeholder interviews, the reason no evidence exists yet) behind each coded value, "
+     "one row per Interview x Variable. As requested, the following columns ALWAYS have an "
+     "explanation row for every interview, even when the value is NA: NPF_victims, "
+     "NPF_villains, NPF_hero, all Res_/Cul_/Tar_ actor-grid columns, Actor_role, "
+     "Discretion, Capacity, Pol_effectiveness and Pol_effectiveness_example. Other columns "
+     "are documented only where a specific, non-obvious explanation was written for a "
+     "fully-coded interview. Rows are colour-matched to the same interview colour used in "
+     "'Coded_Data'.", False),
+    ("", False),
+    ("Colour key (interview -> row colour): fully-coded interviews (NPL_1, NPL_2, NPL_3, "
+     "NPL_7) use a stronger/brighter tint of their colour; the 28 not-yet-coded placeholder "
+     "interviews use a paler, greyed-down tint of their colour so they are visually "
+     "distinguishable as \"pending\" at a glance. Colours are spread evenly across the "
+     "colour wheel in master-list order (NPL_1 through NPL_32) so adjacent IDs are easy to "
+     "tell apart.", False),
+    ("", False),
+    ("Full master numbering supplied by the research team:", True),
+] + [
+    (f"  {iid.replace('NPL_', '')}. {label.split('. ', 1)[1] if '. ' in label else label} "
+     f"-> {iid} -> {affil}", False)
+    for iid, label, affil, _ in MASTER_LIST
+] + [
     ("", False),
     ("Coding conventions:", True),
-    ("  - 'yes' / 'no' / 'NA': NA means the topic was not addressed in that interview (no "
-     "evidence either way). 'no' is only used where the interviewee explicitly said the "
-     "item is not an issue / not in place (e.g. Pol_epr = no for all three interviews, "
-     "since each explicitly states extended producer responsibility does not yet exist in "
-     "Nepal).", False),
+    ("  - 'yes' / 'no' / 'NA': for the 4 fully-coded interviews, NA means the topic was not "
+     "addressed in that interview (no evidence either way); 'no' is only used where the "
+     "interviewee explicitly said the item is not an issue / not in place (e.g. Pol_epr = "
+     "no for all four coded interviews, since each explicitly states extended producer "
+     "responsibility does not yet exist in Nepal). For the 28 placeholder interviews, NA "
+     "means no source material has been provided yet (see above).", False),
     ("  - Free-hand fields (Impacts, NPF_victims/villains/hero, Discretion, "
      "Pol_effectiveness_example, 'Traditions to build on') contain short descriptive text "
-     "derived directly from the interview content, or 'NA' if not discussed.", False),
+     "derived directly from the interview content, or 'NA' if not discussed/not yet coded.", False),
     ("  - Actor_role: 1 = formulation/policy actor, 2 = managerial/organisational "
      "implementer, 3 = street-level implementer, 4 = target group (comma-separated if more "
      "than one applies), derived from what the interview describes the interviewee's "
@@ -1548,7 +1905,7 @@ readme_lines = [
      "first-person phrasing (\"we have... directives...\", \"Department of Environment is "
      "regularly monitoring...\") match the Department of Environment notes and transcript "
      "almost verbatim. These paragraphs were therefore treated as additional corroborating "
-     "evidence for the DoE interview (NPL_1), not for RSCT (NPL_3), and coded accordingly.", False),
+     "evidence for the DoE interview (NPL_1), not for RSCT (NPL_7), and coded accordingly.", False),
 ]
 for text, bold in readme_lines:
     ws4.append([text])
@@ -1561,3 +1918,4 @@ ws4.column_dimensions["A"].width = 130
 wb.save(OUT_PATH)
 print(f"Workbook written to {OUT_PATH}")
 print(f"Columns: {len(COLUMNS)}")
+print(f"Interviews: {len(INTERVIEWS)} (coded: {len(CODED_ROWS)}, placeholder: {len(INTERVIEWS) - len(CODED_ROWS)})")
