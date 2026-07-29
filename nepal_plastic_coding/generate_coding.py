@@ -1,5 +1,5 @@
 """
-Generates a codebook-based qualitative coding of three Nepal plastic-pollution
+Generates a codebook-based qualitative coding of four Nepal plastic-pollution
 governance interviews into a single Excel workbook, strictly following the
 exact column list supplied by the research team (Country, ID, Actortype, all
 Problem_*, Impacts, NPF victims/villains/hero, Governance/coordination
@@ -31,6 +31,9 @@ Interviews coded (Nepal):
     hand-written interview notes only (no transcript available). (Originally
     ID'd NPL_2 before the Ganesh Shah interview was added and assigned NPL_2
     by the research team; RSCT was renumbered to NPL_3 to keep IDs unique.)
+  - NPL_4: Kathmandu Metropolitan City (KMC) Solid Waste Management Office -
+    unnamed municipal officer(s), Kathmandu (23 June). Coded from both the
+    interview guideline notes and the full verbatim transcript.
 
 Coding conventions:
   - yes / no / NA -> NA means the topic was not addressed in that interview
@@ -527,7 +530,144 @@ rsct.update({
              "full transcript available for this interview.",
 })
 
-INTERVIEWS = [doe, ganesh, rsct]
+# --- NPL_4: Kathmandu Metropolitan City (KMC) Municipal Office --------------
+ktm = blank_row()
+ktm.update({
+    "Country": "Nepal",
+    "ID": "NPL_4",
+    "Actortype": "loc_government",
+
+    "Problem_awareness_pop": "no",
+    "Problem_concerndness": "NA",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+    "Problem_import": "yes",
+
+    "Impacts": "visual pollution (described as \"the biggest problem\"), drainage/sewer "
+               "blockage, riverbank and roadside litter, open dumping (due to lack of land "
+               "for proper storage/sorting), microplastics, wildlife (plastics found in "
+               "animal excreta), tourism (visual pollution affecting the city's image)",
+    NPF_VICTIMS_COL: "rivers and riverbanks, drainage/sewer systems, wildlife (plastic found "
+                     "in excreta), the visual/tourism image of Kathmandu, and neighbouring "
+                     "communities near landfill/transfer sites who bear the burden of other "
+                     "municipalities' waste",
+    "NPF_villains": "plastic manufacturers who keep producing bags below 40 microns despite "
+                    "the ban, and importers bringing banned bags/plastic flowers in from "
+                    "neighbouring countries; residents who oppose siting any waste/recovery "
+                    "facility near their homes (NIMBY-style \"public opposition\"); and, to a "
+                    "lesser degree, consumers who keep choosing cheap single-use plastic out "
+                    "of convenience despite being aware of its harms",
+    "NPF_hero": "Kathmandu Metropolitan City's own solid waste management office (formalising "
+               "private-sector partnerships across seven clusters, drafting new regulations, "
+               "planning micron-threshold increases); DoCoRecyclers (the NGO partner "
+               "collecting/processing recyclables in Cluster 7); UNDP (technical/financial "
+               "partner for mechanised recovery and storage systems); and department stores "
+               "that have voluntarily stopped giving out plastic bags",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_prov_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_private_sector": "yes",
+    "Cul_households": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_loc_government": "yes",
+    "Tar_students": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_households": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "1,2",
+    "Discretion": "As an autonomous local government, Kathmandu Metropolitan City drafts its "
+                 "own regulations (e.g. the new solid waste management regulation enabling "
+                 "formal cluster-based partnerships with private actors) and independently "
+                 "negotiates MoUs/terms with private and NGO partners (e.g. the DoCoRecyclers "
+                 "agreement in Cluster 7, the UNDP MoU for mechanised recovery/storage), "
+                 "showing considerable discretion in how it organises implementation.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_import": "no",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"Plastic bags below 40 microns have already been banned "
+                                 "in Kathmandu Metropolitan City, and also nationally... But "
+                                 "on the ground, the reality is very different. Plastics "
+                                 "below 40 microns are still widely available, and plastic "
+                                 "flowers are commonly found. The main issue lies in "
+                                 "implementation... enforcement is weak\"; \"there's been no "
+                                 "full assessment [of the micron ban]... it's not fully "
+                                 "operational\"; \"we also try to ban the single use of "
+                                 "plastic, but it's very hard for us to achieve that goal.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_epr": "yes",
+    "Sol_awareness": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_ban": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "When asked directly, the interviewee initially "
+                                          "said no specific tradition came to mind, but then "
+                                          "described \"lobti\" - leaf plates used at some "
+                                          "Kathmandu community festivals instead of plastic "
+                                          "plates. Effective at cutting plastic use at large "
+                                          "gatherings, but costly (~20 rupees/piece vs. much "
+                                          "cheaper plastic), so currently only used by "
+                                          "wealthier groups; the interviewee agreed government "
+                                          "subsidies for producers of such alternatives could "
+                                          "help scale this practice.",
+    "Notes": "Affiliation: Kathmandu Metropolitan City (KMC), Solid Waste Management "
+             "Office/Department (municipal/local government level). Interviewee name(s) not "
+             "given; the transcript suggests at least two KMC staff were present (\"our "
+             "ma'am has answered...\"). Location: Kathmandu. Interview date: 23 June (year "
+             "not stated on this document, but consistent with the other Nepal interviews "
+             "conducted around 21-23 June 2025). Coded from both the interview guideline "
+             "notes and the full verbatim transcript. Data-quality note: the bullet list "
+             "under Q3a (\"2017; dry waste management...situated in Kathmandu and "
+             "Pokhara...UNDP skill development training in Pokhara, 400 participants... "
+             "Awareness campaigns Bhaktapur... research on policy framework in collaboration "
+             "with a UK university\") describes a multi-city private/NGO recycling and "
+             "research operation, not Kathmandu Metropolitan City's own government office "
+             "(a single-city municipal authority would not itself be based in Pokhara or run "
+             "a campaign in Bhaktapur, a separate metropolitan city). This content appears to "
+             "belong to a different interview accidentally included in the same document and "
+             "was therefore excluded from this row's coding; the coding instead relies on the "
+             "content that is clearly attributable to the Kathmandu Metropolitan City office "
+             "(Q3b onward in the notes, and the full PEGO/KTM Municipal Office transcript).",
+})
+
+INTERVIEWS = [doe, ganesh, rsct, ktm]
 
 # ---------------------------------------------------------------------------
 # 3. EXPLANATIONS (long format) - quote/reasoning behind each coded value.
@@ -1030,13 +1170,242 @@ ganesh_expl = {
                                           "lower-waste habits.",
 }
 
-EXPLANATIONS = {"NPL_1": doe_expl, "NPL_2": ganesh_expl, "NPL_3": rsct_expl}
+ktm_expl = {
+    "Actortype": "The interviewee(s) work for Kathmandu Metropolitan City's Solid Waste "
+                "Management Office, a municipal/local government body; coded as "
+                "loc_government.",
+    "Problem_awareness_pop": "\"Most of the people are very well aware about the impact of "
+                             "plastic pollution... they know about the microplastic, they "
+                             "know about the harmful impact... Still, they choose to use the "
+                             "plastic because it is very convenient.\" Unlike other Nepal "
+                             "interviews, this respondent explicitly says awareness is "
+                             "already high and the barrier is convenience/habit, not "
+                             "ignorance - hence coded 'no' (lack of awareness was not "
+                             "identified as the problem).",
+    "Problem_littering": "\"Most of the plastic is multi-layer plastic, which is thrown "
+                         "riverside, bank of the river, corridor, drainage\"; \"visible litter"
+                         "\" is a recurring theme.",
+    "Problem_consumption": "\"They don't have the habit of taking the cloth bag wherever we "
+                           "go\" and continued preference for cheap single-use plastic over "
+                           "costlier reusable alternatives (e.g. leaf plates) reflect ongoing "
+                           "excessive single-use consumption.",
+    "Problem_recycling": "\"Multi-layer plastic has no value and is often left behind\"; "
+                         "\"cherry picking\" by collectors (Q3b notes) means only valuable "
+                         "plastics get collected/recycled, leaving low-value plastic "
+                         "unmanaged.",
+    "Problem_waste_mgmt": "Extensive description of structural waste-management gaps: no "
+                          "space to sort/store waste in the city, waste has to be trucked to "
+                          "a landfill in another district, and \"lack of infrastructure to "
+                          "manage, collect, recycle\" (Q3b notes).",
+    "Problem_alternatives": "\"The plastics are so much cheaper\"; leaf plates (lobti) \"cost "
+                            "20rs per piece, that is very costly\" and are only used by "
+                            "wealthier groups - explicit statement that affordable "
+                            "alternatives are lacking.",
+    "Problem_waste_segregation": "\"Lack of the land, we cannot separate, collect [or store] "
+                                 "in storage\" - segregation is explicitly hampered by space "
+                                 "constraints.",
+    "Problem_import": "\"Plastic companies continue to produce bags below 40 microns, and we "
+                      "also import such plastic products - including plastic flowers - from "
+                      "neighboring countries\" - explicit statement that imports undermine "
+                      "the existing ban.",
+    "Impacts": "\"The biggest problem is visual pollution\"; \"due to the plastic problem, "
+               "all the drainage is blockage\"; plastic thrown \"riverside, bank of the "
+               "river\"; microplastics and plastics \"in the excreta of wildlife\" (per "
+               "research cited by the interviewee); visual pollution linked to tourism and "
+               "lifestyle.",
+    NPF_VICTIMS_COL: "Rivers/riverbanks and drainage systems (blocked and littered), "
+                     "wildlife (plastic found in excreta), the city's visual/tourism "
+                     "appeal, and neighbouring districts/communities that host the "
+                     "Bancharedanda landfill or the Dakshinkali debris-dumping site without "
+                     "being responsible for managing them.",
+    "NPF_villains": "\"Plastic companies... are still producing the plastic that is less "
+                    "than 40 micron\" and imported plastic bags/flowers \"from neighboring "
+                    "countries\" undermine the ban; \"public opposition\" to siting any "
+                    "recovery facility nearby (\"no one wants waste on their side\"); and "
+                    "consumers who \"still choose to use plastic because it's convenient\" "
+                    "despite being aware of the harms.",
+    "NPF_hero": "Kathmandu Metropolitan City's own office (drafting new solid waste "
+               "regulation, formalising 7 cluster-based private-sector partnerships, "
+               "planning micron increases and subsidies); DoCoRecyclers (the NGO partner "
+               "in Cluster 7); UNDP (MoU for mechanised plastic recovery/storage); and "
+               "department stores that \"no longer provide plastic bags\".",
+    "Coordination_sectoral": "\"Uncertain which Department should look after\" plastic waste "
+                             "at the national level (Q5 notes); \"lack of coordination of the "
+                             "stakeholders\" (Q3b notes); \"no clear coordination with local "
+                             "communities\".",
+    "Coordination_levels": "\"If land is under the jurisdiction of the national government, "
+                           "it will be very difficult for the local government to reach out "
+                           "to that land\"; explicit call for \"better coordination with both "
+                           "the national and provincial government.\"",
+    "Unclear_responsibilities": "\"Gov Nepal; uncertain which Department should look after\" "
+                                "plastic waste (Q5 notes) - explicit statement of unclear "
+                                "institutional ownership at the national level.",
+    "Res_nat_government": "The Ministry of Forest and Environment has drafted a national "
+                          "policy (under revision) and the Department of Environment is "
+                          "named; central government's help is also invoked for land "
+                          "identification.",
+    "Res_prov_government": "\"The central or provincial governments could help us identify "
+                           "suitable locations within the city or valley for plastic "
+                           "recovery and management facilities\" - explicit responsibility "
+                           "role assigned to provincial government.",
+    "Res_loc_government": "\"The Solid Waste Management Act of 2068 clearly assigns the "
+                          "responsibility for managing solid waste to the local level... "
+                          "our office and the metropolitan city are responsible for "
+                          "managing plastic waste.\"",
+    "Res_private_sector": "DoCoRecyclers and other registered private actors now formally "
+                          "collect and process recyclable waste in KMC's seven clusters "
+                          "under signed MoUs.",
+    "Res_civil_society": "DoCoRecyclers is explicitly described as \"a local NGO\" that "
+                         "collects recyclable waste under an MoU with the municipality.",
+    "Cul_nat_government": "Land needed for waste facilities \"is under the jurisdiction of "
+                          "the national government\" making it \"very difficult for the "
+                          "local government to reach out to that land\"; the national policy "
+                          "revision remains stalled/unclear (\"I do not know exactly\").",
+    "Cul_loc_government": "The interviewee acknowledges enforcement gaps under the "
+                          "municipality's own remit: \"there's been no full assessment [of "
+                          "the ban]\"; \"we also try to ban the single use of plastic, but "
+                          "it's very hard for us to achieve that goal.\"",
+    "Cul_private_sector": "\"Cherry picking\" by collectors (Q3b notes) - only valuable "
+                          "plastics are collected, leaving low-value/multi-layer plastic "
+                          "behind to accumulate in rivers/dumpsites.",
+    "Cul_households": "\"Public opposition\" to hosting any waste facility nearby (\"no one "
+                      "wants waste on their side\"); continued convenience-driven plastic "
+                      "use despite awareness of harms; \"people are not taking it very "
+                      "seriously\" (Q3b notes).",
+    "Cul_private_companies": "\"Plastic companies, they are still producing the plastic that "
+                             "is less than 40 micron\"; plastic bags and plastic flowers "
+                             "\"also being imported from neighboring countries\" despite the "
+                             "ban.",
+    "Tar_loc_government": "\"Implementing partners/monitoring should [be] the municipality "
+                          "-> they should be made accountable\" (Q9 notes) - the "
+                          "municipality itself is named as a target for accountability.",
+    "Tar_students": "\"As young as you can catch them; waste management should be in the "
+                    "education system\" (Q10 follow-up) - explicit call to target children/"
+                    "students through the curriculum.",
+    "Tar_private_sector": "\"Waste managers\" explicitly listed as a target group for future "
+                          "policy (Q9 notes).",
+    "Tar_households": "\"Focus reduce plastic consumers\" (Q9 notes); consumers/shoppers "
+                      "targeted via cloth-bag requirements at department stores.",
+    "Tar_edu_institutions": "Tied to the same call to embed waste management \"in the "
+                            "education system\", implicating schools as a target for future "
+                            "policy/curriculum change.",
+    "Tar_private_companies": "\"Producers (EPR)\" explicitly listed as a target group (Q9 "
+                             "notes); plastic industry also targeted for micron-threshold "
+                             "subsidies to encourage compliance.",
+    "Actor_role": "Kathmandu Metropolitan City both formulates its own local rules (\"we can "
+                 "have our own legal code and formulate our own rules and regulations\", "
+                 "e.g. the new solid waste management regulation - role 1) and directly "
+                 "manages implementation (cluster-based MoUs, transfer stations, subsidy "
+                 "planning - role 2), so both are coded.",
+    "Discretion": "\"Kathmandu Metropolitan City is a local government, so we can create our "
+                  "own laws and regulations. We also manage our own facilities\"; the "
+                  "cluster-based MoU with DoCoRecyclers (negotiated terms, payment amount) "
+                  "further shows discretion in implementation design.",
+    "Monitoring": "\"There is no assessment of [the micron ban]... fully not [in] "
+                  "operation[al]\" - explicit statement that current measures are not being "
+                  "monitored/evaluated.",
+    "Financial_resources": "Q10 notes call for \"collection chains; recycling facilities -> "
+                           "financing\" and the interview highlights ongoing reliance on "
+                           "donor/partner funding (UNDP, DoCoRecyclers' annual payment) to "
+                           "sustain and expand operations.",
+    "Research": "\"There's been no full assessment\" of the effectiveness of the micron "
+               "increases; \"even if we increase it to 100 microns, we're unsure if that "
+               "would be beneficial\" - explicit knowledge/evaluation gap.",
+    "Infrastructure": "\"Land is the biggest challenge... lack of infrastructure to manage, "
+                      "collect, recycle\"; \"we lack... technology and recycling "
+                      "infrastructure\"; no space within the city for a transfer station or "
+                      "material recovery facility.",
+    "Capacity": "\"Technology transfer, do not reinvent the wheel\" (Q10 notes) signals a "
+               "technical/knowledge capacity gap that external partners are expected to "
+               "help fill.",
+    "Enforcement": "\"On paper, the legal provisions are very well-written. But in practice, "
+                   "enforcement is weak\"; plastic companies and importers continue supplying "
+                   "banned products despite the rules.",
+    "Pol_epr": "\"First policy EPR\" is listed among future/needed solutions (Q8), and \"EPR "
+              "should be introduced\" (Q6 notes) - both frame EPR as not yet in place.",
+    "Pol_import": "No dedicated import-control mechanism is described; instead the "
+                  "interviewee states banned bags/flowers \"are also being imported from "
+                  "neighboring countries\" unchecked, indicating the absence of an "
+                  "effective import regulation.",
+    "Pol_ban": "\"Plastic bags below 40 microns have already been banned in Kathmandu "
+              "Metropolitan City, and also nationally. Plastic flowers have also been "
+              "banned.\"",
+    "Pol_subsitutes": "\"If you visit department stores... you'll notice they no longer "
+                      "provide plastic bags. Shoppers have to buy cloth bags. Our office "
+                      "also produces and occasionally distributes cloth bags.\"",
+    "Pol_recycling": "DoCoRecyclers \"collect recyclable waste from that cluster and "
+                     "transport it to our Deku transfer station\" under a formal, ongoing "
+                     "MoU with the municipality.",
+    "Pol_waste_collection": "Extensive existing collection system: city divided into 7 "
+                            "clusters by ward, MoUs with registered private actors, waste "
+                            "transported to Bancharedanda landfill, debris collection "
+                            "arrangement with Dakshinkali Municipality.",
+    "Pol_effectiveness": "\"On the ground, the reality is very different\"; \"the main issue "
+                         "lies in implementation... enforcement is weak\"; \"there's been no "
+                         "full assessment\" of the micron-threshold policy; \"it's very hard "
+                         "for us to achieve that goal\" (regarding the single-use plastic "
+                         "ban).",
+    "Sol_lead_agency": "\"There is the need of a body, guiding governing body\"; \"important "
+                       "missing link is implementing body\" (Q6 notes) - explicit call for "
+                       "establishing/clarifying a lead implementing agency.",
+    "Sol_responsibilities": "Tied to the same call for a guiding/implementing body, plus the "
+                            "explicit proposal that municipalities \"should be made "
+                            "accountable\" (Q9 notes) as part of a clearer division of roles.",
+    "Sol_epr": "\"First policy EPR\" listed as the top future policy priority (Q8 notes); "
+              "\"producers (EPR)\" named as a target group (Q9).",
+    "Sol_awareness": "\"As young as you can catch them; waste management should be in the "
+                     "education system; Reduce ignorance\" (Q10 follow-up) calls for future "
+                     "awareness/education efforts.",
+    "Sol_recycling": "\"Processing treatment/recycling\" listed as a needed future policy "
+                     "focus (Q8 notes); \"policies to export recycling produces\" (Q10 notes).",
+    "Sol_education": "\"Waste management should be in the education system\" (Q10 "
+                     "follow-up) - explicit proposed solution.",
+    "Sol_capacity": "\"Technology transfer, do not reinvent the wheel\" (Q10 notes) proposes "
+                    "building capacity via external knowledge/technology transfer rather "
+                    "than developing everything from scratch.",
+    "Sol_ban": "Plan to progressively raise the minimum plastic thickness standard (\"we "
+              "plan to increase it to 75 microns - possibly [beyond]... previously it was "
+              "20 microns, then upgraded to 40, and now the goal is 75 microns\") as a "
+              "strengthened ban/standard going forward.",
+    "Sol_finance": "\"Subsidies should be provided to the plastic industry, especially to "
+                   "increase plastic thickness\"; \"government subsidizing companies "
+                   "producing alternatives\" endorsed as \"perhaps\" a good opportunity; "
+                   "Q10 notes call for \"financing\" for collection chains and recycling "
+                   "facilities.",
+    "Sol_infrastructure": "\"If we get the land, we can [establish an] MRF... recycle\"; "
+                          "call for national/provincial government help \"to identify "
+                          "suitable locations... for plastic recovery and management "
+                          "facilities\"; UNDP MoU for \"mechanized plastic recovery and "
+                          "storage systems.\"",
+    "Sol_subsitutes": "\"Government subsidizing companies producing alternatives is a good "
+                      "opportunity - Yes, perhaps\", discussed in relation to scaling up "
+                      "leaf-plate (lobti) style alternatives that are currently too "
+                      "expensive for widespread use.",
+    "Sol_enforcement": "\"Regular field inspections are needed\" - explicit proposed "
+                       "enforcement solution to address the currently weak enforcement of "
+                       "the micron ban.",
+    "Sol_monitoring": "Tied to the same call for \"regular field inspections\" and the "
+                      "acknowledged lack of assessment of policy effectiveness, implying a "
+                      "need for stronger ongoing monitoring going forward.",
+    "Traditions to build on (free-hand)": "When first asked directly about traditional "
+                                          "practices (in a Bhutan-comparison framing), the "
+                                          "interviewee said \"No.\" But later, when the "
+                                          "question was revisited, described \"lobti\" - leaf "
+                                          "plates used in some Kathmandu community festivals "
+                                          "instead of plastic ones - as an existing, if "
+                                          "underused and costly (20 rupees/piece), "
+                                          "alternative practice.",
+}
+
+EXPLANATIONS = {"NPL_1": doe_expl, "NPL_2": ganesh_expl, "NPL_3": rsct_expl, "NPL_4": ktm_expl}
 NAMES = {
     "NPL_1": "Department of Environment - Deepak Diwali, Deputy Director, Pollution "
              "Control (air & plastics), Kathmandu (Interview no. 5, 23 June 2025)",
     "NPL_2": "Former Minister, Government of Nepal - Ganesh Shah, Kathmandu "
              "(21 June 2025)",
     "NPL_3": "RSCT (savings-and-credit cooperative network, urban plastics programme)",
+    "NPL_4": "Kathmandu Metropolitan City (KMC), Solid Waste Management Office - "
+             "Municipality Officer(s), Kathmandu (23 June)",
 }
 
 # ---------------------------------------------------------------------------
@@ -1118,7 +1487,7 @@ ws4 = wb.create_sheet("Read_Me", 0)
 readme_lines = [
     ("Nepal Plastic Pollution Governance - Interview Coding", True),
     ("", False),
-    ("This workbook applies the supplied codebook (see 'Codebook' sheet) to three interview "
+    ("This workbook applies the supplied codebook (see 'Codebook' sheet) to four interview "
      "sources from the 'Plastic Pollution Governance in Nepal' project. Column names and "
      "order in 'Coded_Data' follow exactly the variable list supplied by the research team.", False),
     ("  1. NPL_1 - Department of Environment (DoE), Deepak Diwali, Deputy Director, "
@@ -1134,6 +1503,13 @@ readme_lines = [
      "(no transcript available). RSCT was originally ID'd NPL_2 in an earlier version of "
      "this workbook; it was renumbered to NPL_3 once the research team assigned NPL_2 to "
      "the Ganesh Shah interview, to keep IDs unique.", False),
+    ("  4. NPL_4 - Kathmandu Metropolitan City (KMC), Solid Waste Management Office - "
+     "unnamed municipal officer(s), Kathmandu (23 June). Coded from both the interview "
+     "guideline notes and the full verbatim transcript. Note: the Q3a bullet notes in the "
+     "source document describing a multi-city (Kathmandu/Pokhara) dry-waste operation with "
+     "UNDP training and a Bhaktapur awareness campaign appear to belong to a different, "
+     "unrelated interview accidentally included in the same file, and were excluded from "
+     "this row's coding (see the 'Notes' cell for NPL_4 in Coded_Data for detail).", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
