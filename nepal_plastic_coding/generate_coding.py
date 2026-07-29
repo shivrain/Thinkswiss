@@ -1,9 +1,9 @@
 """
-Generates a codebook-based qualitative coding of two Nepal plastic-pollution
+Generates a codebook-based qualitative coding of three Nepal plastic-pollution
 governance interviews into a single Excel workbook, strictly following the
-exact column list supplied by the research team (Coder, Country, ID,
-Actortype, all Problem_*, Impacts, NPF victims/villains/hero, Governance/
-coordination variables, Res_/Cul_/Tar_ actor grids, Actor_role, Discretion,
+exact column list supplied by the research team (Country, ID, Actortype, all
+Problem_*, Impacts, NPF victims/villains/hero, Governance/coordination
+variables, Res_/Cul_/Tar_ actor grids, Actor_role, Discretion,
 implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
@@ -23,9 +23,14 @@ Interviews coded (Nepal):
     Labelled "Interview no. 5" in the project's internal running order, but
     ID'd here as NPL_1 per the research team's instruction. Coded from the
     interview notes AND the full verbatim transcript (PEGO / ENV DEP dialogue).
-  - NPL_2: RSCT, a Nepali savings-and-credit cooperative network (est. 1991)
+  - NPL_2: Former Minister, Government of Nepal - Ganesh Shah, Kathmandu.
+    Coded from the interview guideline notes AND the full verbatim transcript
+    (21 June 2025).
+  - NPL_3: RSCT, a Nepali savings-and-credit cooperative network (est. 1991)
     that recently expanded into urban plastics work. Coded from the
-    hand-written interview notes only (no transcript available).
+    hand-written interview notes only (no transcript available). (Originally
+    ID'd NPL_2 before the Ganesh Shah interview was added and assigned NPL_2
+    by the research team; RSCT was renumbered to NPL_3 to keep IDs unique.)
 
 Coding conventions:
   - yes / no / NA -> NA means the topic was not addressed in that interview
@@ -47,10 +52,10 @@ OUT_PATH = "/workspace/nepal_plastic_coding/Nepal_Plastic_Governance_Coding.xlsx
 # 1. EXACT COLUMN LIST (as supplied by the research team) + descriptions
 #    used both for Coded_Data headers and the Codebook reference sheet.
 # ---------------------------------------------------------------------------
-NPF_VICTIMS_COL = "human, wildlife, aquatic life"  # = NPF_victims, header kept verbatim
+NPF_VICTIMS_COL = "NPF_victims"
 
 COLUMNS = [
-    "Coder", "Country", "ID", "Actortype",
+    "Country", "ID", "Actortype",
     "Problem_awareness_pop", "Problem_awareness_pol", "Problem_concerndness",
     "Problem_littering", "Problem_consumption", "Problem_recycling",
     "Problem_waste_mgmt", "Problem_production", "Problem_alternatives",
@@ -83,7 +88,6 @@ COLUMNS = [
 ]
 
 DESCRIPTIONS = {
-    "Coder": "Name/initials of the person who carried out this coding (fill in per your team's protocol).",
     "Country": "Country name",
     "ID": "InterviewID: ISO_Nr",
     "Actortype": "nat_government, prov_government, loc_government, students, private_sector, "
@@ -210,12 +214,9 @@ def blank_row():
     return {c: "NA" for c in COLUMNS}
 
 
-CODER_NAME = "AI-assisted draft coding (Cursor Agent) - please verify"
-
 # --- NPL_1: Department of Environment - Deepak Diwali -----------------------
 doe = blank_row()
 doe.update({
-    "Coder": CODER_NAME,
     "Country": "Nepal",
     "ID": "NPL_1",
     "Actortype": "nat_government",
@@ -316,12 +317,144 @@ doe.update({
              "notes and the full verbatim transcript (PEGO / ENV DEP dialogue).",
 })
 
-# --- NPL_2: RSCT --------------------------------------------------------------
-rsct = blank_row()
-rsct.update({
-    "Coder": CODER_NAME,
+# --- NPL_2: Former Minister - Ganesh Shah ------------------------------------
+ganesh = blank_row()
+ganesh.update({
     "Country": "Nepal",
     "ID": "NPL_2",
+    "Actortype": "nat_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_waste_segregation": "yes",
+    "Problem_import": "yes",
+
+    "Impacts": "soil contamination (microplastics, reduced moisture, crop yields), water "
+               "pollution (rivers, drinking water, irrigation water, organic fertiliser), "
+               "air pollution (burning of plastic, carcinogenic smoke), drainage/sewer "
+               "blockage, aquatic life/fisheries, visible litter in urban and rural areas, "
+               "agriculture, health (unsafe practices such as hot food in thin plastic bags, "
+               "unlabelled/low-grade bottled water), microplastics generally",
+    NPF_VICTIMS_COL: "the general public/consumers (unlabelled, low-quality plastics and "
+                     "unsafe water practices), poor and rural communities (burning plastic "
+                     "for fuel, historically child \"kathe\" waste-pickers), farmers and "
+                     "agricultural land (microplastics/moisture loss reducing crop yields), "
+                     "rivers and aquatic life (Bagmati and Chitwan-area rivers, fish, people "
+                     "who fish/fetch water there)",
+    "NPF_villains": "manufacturers/importers who do not label or disclose the type of "
+                    "plastic used (\"many bottles do not even display the company name\"; "
+                    "no clarity on PET vs. other polymers); the absence of Extended Producer "
+                    "Responsibility, which lets producers externalise disposal costs; "
+                    "widespread public habits/overuse (single-use bags per item, plastic "
+                    "khada/folders handed out at events, hot food in plastic, single-use "
+                    "tableware); and successive governments' political instability and weak "
+                    "enforcement of the existing 40-micron ban",
+    "NPF_hero": "informal and semi-formalising waste pickers/collectors and the ~78 "
+               "registered private waste companies (Solid Waste Management Association); "
+               "grassroots/people-led initiatives such as the Bagmati Cleaning Movement; "
+               "innovation projects like PLEASE (Institute of Engineering) and Bio-Camp "
+               "(upcycling multilayer plastic into boards/flowerpots); and the interviewee "
+               "himself as a former Minister/scientist pushing for EPR, research and "
+               "science diplomacy",
+
+    "Relevance_international_pol": "yes",
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_prov_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_science": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_private_sector": "yes",
+    "Cul_households": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_prov_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_science": "yes",
+    "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "1",
+    "Discretion": "NA (Actor_role = 1, formulation/policy actor - the interviewee speaks as "
+                 "a former Minister and science-diplomacy advocate shaping policy direction, "
+                 "not as a day-to-day implementer, so the discretion field - which applies to "
+                 "roles 2/3 - is not applicable).",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_import": "no",
+    "Pol_ban": "yes",
+    "Pol_clean_up": "yes",
+    "Pol_upcycling": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"Nepal banned plastics thinner than 40 microns ten years "
+                                 "ago, but the ban has never been enforced\"; \"Weak "
+                                 "enforcement (e.g., ban on plastics <40 microns exist on "
+                                 "paper but is ignored)\"; \"there is no act, because officers "
+                                 "cannot act without strict laws, bylaws, and guidelines. So, "
+                                 "there is none.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_epr": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_upcycling": "yes",
+    "Sol_recycling": "yes",
+    "Sol_capacity": "yes",
+    "Sol_RD": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Use of leaf plates (pat/banana leaves) instead of "
+                                          "plastic at large community feasts (bhoj); carrying "
+                                          "a cotton bag or plain towel to market instead of "
+                                          "taking a new plastic bag per item; reusing a "
+                                          "plastic bag two or three times before sending it "
+                                          "for recycling rather than discarding it after a "
+                                          "single use.",
+    "Notes": "Affiliation: Former Minister, Government of Nepal (created Nepal's Department "
+             "of Environment ~15 years ago); also active internationally in Global Plastics "
+             "Treaty negotiations/science diplomacy (UN meeting in Korea, regional meeting in "
+             "Colombo) and in the UNOPS-supported PLEASE project. Interviewee: Ganesh Shah. "
+             "Location: Kathmandu. Interview date: 21 June 2025. Two associations named in "
+             "the interview: Nepal Plastic Foundation (also referred to as \"Nepal Plus "
+             "Foundation\" in the transcript - likely the same organisation, a manufacturers' "
+             "CSR consortium) and the Solid Waste Management Association of Nepal (~78-79 "
+             "registered private waste companies). Coded from both the interview guideline "
+             "notes and the full verbatim transcript.",
+})
+
+# --- NPL_3: RSCT --------------------------------------------------------------
+rsct = blank_row()
+rsct.update({
+    "Country": "Nepal",
+    "ID": "NPL_3",
     "Actortype": "civil_society",
 
     "Problem_awareness_pop": "yes",
@@ -394,7 +527,7 @@ rsct.update({
              "full transcript available for this interview.",
 })
 
-INTERVIEWS = [doe, rsct]
+INTERVIEWS = [doe, ganesh, rsct]
 
 # ---------------------------------------------------------------------------
 # 3. EXPLANATIONS (long format) - quote/reasoning behind each coded value.
@@ -655,11 +788,255 @@ rsct_expl = {
                                           "work and could be scaled further.",
 }
 
-EXPLANATIONS = {"NPL_1": doe_expl, "NPL_2": rsct_expl}
+ganesh_expl = {
+    "Actortype": "Ganesh Shah is a Former Minister of the Government of Nepal who created "
+                "the Department of Environment; he speaks throughout as a former national "
+                "policymaker/science-diplomacy actor, hence coded as national government.",
+    "Problem_awareness_pop": "\"People in Nepal do not really [k]now what is eco-friendly "
+                             "and what is not\"; \"there is not much awareness about "
+                             "plastics\"; \"Most people think of 'plastic' only as plastic "
+                             "bags, ignoring other forms\"; explicit and repeated.",
+    "Problem_awareness_pol": "\"I have raised this point many times with bureaucrats and "
+                             "politicians\" (implying persistent gaps in their "
+                             "understanding); officials distribute plastic khada/folders at "
+                             "official events without recognising the irony; the government "
+                             "\"does not even know\" specifications when importing plastic "
+                             "materials, and lacks testing labs to identify polymer types.",
+    "Problem_concerndness": "\"Very concerned, plastic waste is increasing, with both "
+                            "visible and invisible forms (microplastics) contaminating "
+                            "soil, water, and air\" - explicit high concern.",
+    "Problem_littering": "\"visible litter in urban and rural areas\"; the Environment "
+                         "Protection Act's fines for \"discarding waste on the street\"; "
+                         "government notices such as \"Don't dump here\", \"Penalty for "
+                         "littering\".",
+    "Problem_consumption": "\"even a customer buying only three or four tablets still "
+                           "receives a fresh plastic bag\"; \"one plastic bag for one item... "
+                           "another bag for a second item\"; officials handing out \"dozens, "
+                           "even hundreds\" of plastic khada/folders - excessive/needless "
+                           "single-use consumption repeatedly highlighted.",
+    "Problem_recycling": "Only high-value plastics (e.g. PET bottles) are systematically "
+                         "collected and resold; firms like Kalishishi \"collect high-value "
+                         "paper, plastic, and bottles... then sell them without processing\", "
+                         "i.e. genuine recycling/processing (vs. raw resale) remains limited "
+                         "and mostly informal.",
+    "Problem_waste_mgmt": "\"Lack of a specific, comprehensive plastics policy, only a "
+                          "general Environment Protection Act exists\"; \"there is no act, "
+                          "because officers cannot act without strict laws, bylaws, and "
+                          "guidelines\"; management described as resting on ad hoc informal "
+                          "practice rather than governance.",
+    "Problem_waste_segregation": "\"Households rarely sort everything\"; segregation is "
+                                 "listed among background notes and only partially practiced "
+                                 "(families set aside milk pouches because they have resale "
+                                 "value, not as systematic segregation).",
+    "Problem_import": "\"We should know exactly what kinds of polymers are entering the "
+                      "country\"; \"We lack testing laboratories of this type\"; \"Imports "
+                      "keep arriving from abroad\" with no capacity to verify or regulate "
+                      "what type of plastic (granules, pipes, packaging) is being imported.",
+    "Impacts": "Clogging of drains/sewers; long-term persistence of litter in rivers and "
+               "landscapes; microplastics in soil reducing moisture and possibly crop "
+               "yields; microplastics in rivers, irrigation water and organic fertiliser; "
+               "unsafe/unlabelled bottled and jar water (E. coli contamination found in a "
+               "study cited by the interviewee); open burning of plastic linked to carcinogen "
+               "exposure and air pollution; aquatic life and fisheries affected by river "
+               "pollution.",
+    NPF_VICTIMS_COL: "Consumers/public health (unlabelled low-grade plastics, unsafe "
+                     "bottled/jar water); poor and rural communities (burning plastic for "
+                     "fuel; historically child \"kathe\" waste-pickers); farmers/agricultural "
+                     "land (soil moisture and crop-yield impacts); rivers, fisheries and "
+                     "aquatic life around the Bagmati and Chitwan confluence area.",
+    "NPF_villains": "Manufacturers/bottlers who do not disclose polymer type or company "
+                    "name (\"many bottles do not even display the company name\"); the "
+                    "absence of Extended Producer Responsibility, letting producers avoid "
+                    "end-of-life costs; entrenched public habits (single bag per item, "
+                    "plastic khada/folders at events, hot food in thin bags); and political "
+                    "instability/weak enforcement that leaves the 40-micron ban unimplemented.",
+    "NPF_hero": "The informal-to-semi-formal waste-picker/collector economy and the ~78 "
+               "registered firms under the Solid Waste Management Association; grassroots "
+               "movements such as the Bagmati Cleaning Movement (a people's initiative later "
+               "joined by government); innovation projects PLEASE (Institute of Engineering) "
+               "and Bio-Camp (upcycling multilayer plastics); and the interviewee himself, "
+               "advocating EPR, research and international science diplomacy.",
+    "Relevance_international_pol": "Extensive discussion of the UN Global Plastics Treaty "
+                                   "negotiations (Korea meeting, regional meeting in "
+                                   "Colombo), \"international agencies... amplifying regional "
+                                   "voices, and that external momentum is pushing our "
+                                   "government to draft legislation and commit to the treaty.\"",
+    "Coordination_sectoral": "Confusion between different bodies both called \"Department of "
+                             "Environment\" (one under the executive, one under Parliament); "
+                             "calls for \"technical cooperation between manufacturers and "
+                             "waste managers\" imply this cooperation does not yet exist.",
+    "Coordination_levels": "\"No clear division of authority between federal, provincial, "
+                           "and local levels\"; \"We must decide whether certain authority "
+                           "should go to provincial or local governments. All of this remains "
+                           "in transition.\"",
+    "Unclear_responsibilities": "\"Unclear division of roles between levels of government\" "
+                                "listed explicitly as a main challenge; \"an upside-down "
+                                "sequence compared with most countries\" (policy is meant to "
+                                "flow top-down, but in Nepal informal/local actors led first "
+                                "and federal government is only now catching up).",
+    "Res_nat_government": "Federal government is described as conducting the plastics "
+                          "assessment, publishing notices/bans, and should own EPR and "
+                          "import-testing responsibilities going forward.",
+    "Res_prov_government": "\"Provincial government should coordinate among municipalities\" "
+                           "- explicitly assigned a responsibility role.",
+    "Res_loc_government": "\"It is slowly going to the local government\"; \"Inspection, "
+                          "monitoring, and evaluation should be carried out by local "
+                          "government\"; local governments increasingly set collection rules.",
+    "Res_private_sector": "Private collection/recycling companies (\"birth and growth of "
+                          "collectors, selling, recycling\"), the Solid Waste Management "
+                          "Association, and ~78-79 registered firms are central responsible "
+                          "actors in the current system.",
+    "Res_civil_society": "The Bagmati Cleaning Movement began as \"a people's initiative\" "
+                         "led by citizens (including the interviewee) before government "
+                         "involvement.",
+    "Res_science": "The PLEASE project's academic component was run by the Institute of "
+                  "Engineering, cataloguing 8-9 scientific categories of plastic; a "
+                  "researcher is drafting EPR modalities for Nepal.",
+    "Res_edu_institutions": "Institute of Engineering (PLEASE project) and the Central "
+                            "Department of Environmental Science are named as active, "
+                            "responsible technical/academic contributors.",
+    "Res_private_companies": "The Nepal Plastic Foundation, described as a manufacturers' "
+                             "CSR consortium, and hotels that now store/sort bottles for "
+                             "collection are named as engaged private-company actors.",
+    "Cul_nat_government": "\"There is no act, because officers cannot act\"; political "
+                          "instability (\"chief ministers, prime ministers, and even "
+                          "environment ministers change frequently\") and weak enforcement "
+                          "of the 40-micron ban are attributed to government failure.",
+    "Cul_private_sector": "Firms such as Kalishishi \"collect high-value paper, plastic, and "
+                          "bottles... then sell them without processing\", i.e. cherry-pick "
+                          "profitable materials rather than managing the full waste stream.",
+    "Cul_households": "\"Public perception that waste management is solely a government "
+                      "responsibility, with little citizen engagement\"; overuse of "
+                      "single-use items, burning of household waste including plastic, "
+                      "buying bottled water without checking plastic type.",
+    "Cul_private_companies": "\"Many bottles do not even display the company name\"; low "
+                             "quality/unlabelled plastics in packaging; no Extended Producer "
+                             "Responsibility for products like mobile phones, wires and "
+                             "cables that embed large volumes of plastic.",
+    "Tar_nat_government": "\"Federal: coordination; implement EPR; should support research, "
+                          "regulate what kind of plastics are imported\" (Q9 answer).",
+    "Tar_prov_government": "Proposed role: \"provincial government should coordinate among "
+                           "municipalities\" as part of the future decentralised framework.",
+    "Tar_loc_government": "\"By local gov: inspection\" (Q9 answer); \"Inspection, "
+                          "monitoring, and evaluation should be carried out by local "
+                          "government.\"",
+    "Tar_private_sector": "\"Technical cooperation with waste collectors; and the "
+                          "manufactur[ers], plus informal sector\" explicitly named as "
+                          "groups that need to be brought into a coordinated future policy.",
+    "Tar_science": "\"Should support research\" (Q9, re: federal government's role) and an "
+                  "extended discussion of research priorities (air pollution from burning, "
+                  "plastics in water, plastics in soil) positions the research/science "
+                  "community as a target for future support.",
+    "Tar_households": "The proposed public-awareness campaign (\"people should understand "
+                      "where plastic is appropriate\"; \"first priority is public awareness "
+                      "about when to use or refuse plastic\") directly targets households/"
+                      "consumers.",
+    "Tar_private_companies": "\"Regulate what kind of plastics are imported\" and the call "
+                             "for manufacturers to specify/label polymer types both make "
+                             "private companies/importers/manufacturers an explicit future "
+                             "policy target.",
+    "Actor_role": "As a Former Minister who created the Department of Environment and who "
+                 "continues to shape policy discourse via international science diplomacy "
+                 "and advocacy for EPR/a lead agency, the interviewee's role in this "
+                 "interview is that of a formulation/policy actor (role 1), not a current "
+                 "day-to-day implementer.",
+    "Monitoring": "\"the ban has never been enforced\"; future solution explicitly proposes "
+                  "that \"Inspection, monitoring, and evaluation should be carried out by "
+                  "local government\", implying this is currently inadequate.",
+    "Financial_resources": "\"Limited technical capacity... Lack of resources, manpower, and "
+                           "technical infrastructure\" listed explicitly among the main "
+                           "implementation barriers.",
+    "Research": "\"We still lack rigorous scientific research\"; \"More research is needed "
+               "on the impact of plastics pollution / waste burning / microplastics\" stated "
+               "explicitly, with three concrete research gaps identified (air, water, soil).",
+    "Infrastructure": "\"Limited technical capacity (e.g., no testing labs for imported "
+                      "plastic materials)\"; \"We lack testing laboratories of this type\" - "
+                      "explicit infrastructure gap.",
+    "Capacity": "\"Limited technical capacity\"; \"Human Resources development -> "
+               "capacity-building\" listed as a needed response to a current capacity gap.",
+    "Enforcement": "\"Weak enforcement (e.g., ban on plastics <40 microns exist on paper but "
+                   "is ignored)\" stated explicitly as a main challenge.",
+    "Pol_epr": "\"Nepal must begin formulating EPR\"; \"a young researcher is drafting EPR "
+              "modalities\" - explicitly framed as not yet in place, only in development.",
+    "Pol_import": "No dedicated import-regulation regime is described; instead the "
+                  "interviewee stresses Nepal currently \"do[es] not have that capacity\" to "
+                  "even know what polymer types are being imported, and calls for import "
+                  "regulation/testing labs as a future need.",
+    "Pol_ban": "\"Nepal banned plastics thinner than 40 microns ten years ago\" - an existing "
+              "(if unenforced) ban.",
+    "Pol_clean_up": "The Bagmati Cleaning Movement is an ongoing/established clean-up "
+                    "initiative (\"we first led the effort ourselves, removing and gathering "
+                    "plastic waste... gradually a government office became involved\"), as is "
+                    "the PLEASE project's bottle collection around the Chitwan river "
+                    "confluence.",
+    "Pol_upcycling": "Bio-Camp \"gathers multilayer pouches... to produce plastic 'plywood' "
+                     "boards\" and other entrepreneurs \"make flowerpots for nurseries from "
+                     "similar mixed plastics\" - active, existing upcycling activity.",
+    "Pol_recycling": "An established (if largely informal/semi-formal) collection-to-"
+                     "recycling value chain exists: collectors, balers, and processors "
+                     "handling PET bottles and other valuable plastics; \"increasingly, "
+                     "recycling and up-cycling\" among the ~78 registered private firms.",
+    "Pol_waste_collection": "Extensive existing collection system described: historical "
+                            "informal waste-pickers, now ~78-79 licensed firms under the "
+                            "Solid Waste Management Association, competitive tenders in "
+                            "Kathmandu Valley, hotels sorting bottles for pickup.",
+    "Pol_effectiveness": "\"the ban has never been enforced\"; \"there is no act, because "
+                         "officers cannot act without strict laws\"; ministries \"promise "
+                         "that policies, programmes, bylaws, and guidelines are 'coming "
+                         "soon'\" - a clear, repeated statement of policy ineffectiveness.",
+    "Sol_lead_agency": "\"Who will be the main agency?\"; \"The main question, first of all, "
+                       "is which agency will be the lead body. That agency must oversee the "
+                       "act.\" - explicit call to establish a lead agency.",
+    "Sol_responsibilities": "\"Most responsibilities should be decentralized. Inspection, "
+                            "monitoring, and evaluation should be carried out by local "
+                            "government. The federal government should provide overarching "
+                            "guidance, while provincial government should coordinate among "
+                            "municipalities\" - explicit proposed division of responsibilities.",
+    "Sol_epr": "\"Implement Extended Producer Responsibility (EPR) nationwide\" listed "
+              "repeatedly as a top priority solution.",
+    "Sol_awareness": "\"Launch sustained public-awareness campaigns on correct plastic use\"; "
+                     "\"A nationwide public-awareness campaign is urgently needed\".",
+    "Sol_segregation": "\"Waste segregation skills\" listed under technical capacity "
+                       "building; \"people should learn how to separate plastics correctly\".",
+    "Sol_upcycling": "\"Learn from and expand successful pilot projects like PLEASE and "
+                     "Bio-Camp\" (Bio-Camp being an upcycling initiative) proposed as a "
+                     "model to scale up.",
+    "Sol_recycling": "\"Strengthen cooperation between manufacturers, waste collectors, and "
+                     "recyclers\" proposed to expand/formalise the recycling value chain.",
+    "Sol_capacity": "\"Build technical capacity (labs, trained workforce, waste segregation "
+                    "skills)\"; \"Human Resources development -> capacity-building\" "
+                    "explicitly proposed.",
+    "Sol_RD": "\"Promote research on plastic pollution impacts (air, water, soil, health)\"; "
+             "three specific research priorities proposed (burning/air pollution, water "
+             "contamination, soil/agriculture).",
+    "Sol_infrastructure": "\"The federal government should establish [testing laboratories] "
+                          "for large imports of plastic materials, granules, or pipes\" - "
+                          "explicit infrastructural solution proposed.",
+    "Sol_subsitutes": "\"Use of leaf plates (pat leaves, banana leaves) at feasts. Cotton/"
+                      "towel bags for shopping. Encouraging reuse of plastic bags before "
+                      "recycling\" - concrete substitute-based solutions proposed, rooted in "
+                      "tradition.",
+    "Sol_enforcement": "\"Public education and strict enforcement are essential\" - explicit "
+                       "call to strengthen enforcement of existing/future bans.",
+    "Sol_monitoring": "\"Inspection, monitoring, and evaluation should be carried out by "
+                      "local government\" - explicit proposed solution assigning monitoring "
+                      "responsibility.",
+    "Traditions to build on (free-hand)": "\"Traditionally we carried cotton bags. Or we "
+                                          "used a simple towel\"; \"Non-plastic plates were "
+                                          "biodegradable leaves or banana[-leaf]... part of "
+                                          "our culture long before plastics\"; the "
+                                          "interviewee explicitly frames reduce/reuse of "
+                                          "existing bags as an extension of these older, "
+                                          "lower-waste habits.",
+}
+
+EXPLANATIONS = {"NPL_1": doe_expl, "NPL_2": ganesh_expl, "NPL_3": rsct_expl}
 NAMES = {
     "NPL_1": "Department of Environment - Deepak Diwali, Deputy Director, Pollution "
              "Control (air & plastics), Kathmandu (Interview no. 5, 23 June 2025)",
-    "NPL_2": "RSCT (savings-and-credit cooperative network, urban plastics programme)",
+    "NPL_2": "Former Minister, Government of Nepal - Ganesh Shah, Kathmandu "
+             "(21 June 2025)",
+    "NPL_3": "RSCT (savings-and-credit cooperative network, urban plastics programme)",
 }
 
 # ---------------------------------------------------------------------------
@@ -711,9 +1088,8 @@ for interview in INTERVIEWS:
         ws2.cell(row=r, column=c).border = BORDER
 for i in range(1, len(COLUMNS) + 1):
     ws2.column_dimensions[get_column_letter(i)].width = 22
-ws2.column_dimensions["A"].width = 30  # Coder
-ws2.column_dimensions["C"].width = 10  # ID
-ws2.freeze_panes = "D2"
+ws2.column_dimensions["B"].width = 10  # ID
+ws2.freeze_panes = "C2"
 
 # --- Sheet: Coding_Explanations (long format) ---
 ws3 = wb.create_sheet("Coding_Explanations")
@@ -742,7 +1118,7 @@ ws4 = wb.create_sheet("Read_Me", 0)
 readme_lines = [
     ("Nepal Plastic Pollution Governance - Interview Coding", True),
     ("", False),
-    ("This workbook applies the supplied codebook (see 'Codebook' sheet) to two interview "
+    ("This workbook applies the supplied codebook (see 'Codebook' sheet) to three interview "
      "sources from the 'Plastic Pollution Governance in Nepal' project. Column names and "
      "order in 'Coded_Data' follow exactly the variable list supplied by the research team.", False),
     ("  1. NPL_1 - Department of Environment (DoE), Deepak Diwali, Deputy Director, "
@@ -750,40 +1126,47 @@ readme_lines = [
      "project's internal running order (23 June 2025), but coded here as NPL_1 per the "
      "research team's instruction. Coded from both the interview notes and the full "
      "verbatim transcript.", False),
-    ("  2. NPL_2 - RSCT: a savings-and-credit cooperative network (est. 1991) that recently "
+    ("  2. NPL_2 - Former Minister, Government of Nepal, Ganesh Shah, Kathmandu (21 June "
+     "2025). Coded from both the interview guideline notes and the full verbatim "
+     "transcript, per the research team's instruction to use ID NPL_2 for this interview.", False),
+    ("  3. NPL_3 - RSCT: a savings-and-credit cooperative network (est. 1991) that recently "
      "expanded into urban plastics work. Coded from the hand-written interview notes only "
-     "(no transcript available).", False),
+     "(no transcript available). RSCT was originally ID'd NPL_2 in an earlier version of "
+     "this workbook; it was renumbered to NPL_3 once the research team assigned NPL_2 to "
+     "the Ganesh Shah interview, to keep IDs unique.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
     ("  - Coded_Data: wide-format matrix (one row per interview, one column per codebook "
-     "variable, including 'Coder' and free-hand 'Notes' columns) with the coded values.", False),
+     "variable, including a free-hand 'Notes' column) with the coded values.", False),
     ("  - Coding_Explanations: long-format table giving the quote/observation used to "
      "justify every non-NA code in Coded_Data (one row per Interview x Variable).", False),
     ("", False),
     ("Coding conventions:", True),
     ("  - 'yes' / 'no' / 'NA': NA means the topic was not addressed in that interview (no "
      "evidence either way). 'no' is only used where the interviewee explicitly said the "
-     "item is not an issue / not in place (e.g. Pol_epr = no for both interviews, since "
-     "both explicitly state extended producer responsibility does not exist in Nepal).", False),
-    ("  - Free-hand fields (Impacts, the NPF victims/villains/hero columns, Discretion, "
+     "item is not an issue / not in place (e.g. Pol_epr = no for all three interviews, "
+     "since each explicitly states extended producer responsibility does not yet exist in "
+     "Nepal).", False),
+    ("  - Free-hand fields (Impacts, NPF_victims/villains/hero, Discretion, "
      "Pol_effectiveness_example, 'Traditions to build on') contain short descriptive text "
      "derived directly from the interview content, or 'NA' if not discussed.", False),
     ("  - Actor_role: 1 = formulation/policy actor, 2 = managerial/organisational "
      "implementer, 3 = street-level implementer, 4 = target group (comma-separated if more "
      "than one applies), derived from what the interview describes the interviewee's "
-     "organisation as actually doing - not simply from their actor type.", False),
-    ("  - 'Coder' is currently filled with a placeholder noting this is an AI-assisted "
-     "draft; please replace with the responsible human coder's name/initials per your "
-     "project protocol.", False),
+     "organisation/role as actually doing - not simply from their actor type. Ganesh Shah "
+     "(NPL_2) is coded as role 1 (formulation/policy actor), reflecting his role as a "
+     "former Minister and policy/science-diplomacy advocate rather than a current "
+     "day-to-day implementer; Discretion is therefore marked NA for that row, as the field "
+     "only applies to roles 2/3.", False),
     ("", False),
     ("Note on source material: a block of longer, polished paragraph-style quotes appeared "
      "under the RSCT question list in the original material, but the content and "
      "first-person phrasing (\"we have... directives...\", \"Department of Environment is "
      "regularly monitoring...\") match the Department of Environment notes and transcript "
      "almost verbatim. These paragraphs were therefore treated as additional corroborating "
-     "evidence for the DoE interview (NPL_1), not for RSCT (NPL_2), and coded accordingly.", False),
+     "evidence for the DoE interview (NPL_1), not for RSCT (NPL_3), and coded accordingly.", False),
 ]
 for text, bold in readme_lines:
     ws4.append([text])
