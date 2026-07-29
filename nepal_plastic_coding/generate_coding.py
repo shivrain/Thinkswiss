@@ -577,6 +577,7 @@ ktm.update({
     "Res_loc_government": "yes",
     "Res_private_sector": "yes",
     "Res_civil_society": "yes",
+    "Res_private_companies": "yes",
 
     "Cul_nat_government": "yes",
     "Cul_loc_government": "yes",
@@ -1257,6 +1258,11 @@ ktm_expl = {
                           "under signed MoUs.",
     "Res_civil_society": "DoCoRecyclers is explicitly described as \"a local NGO\" that "
                          "collects recyclable waste under an MoU with the municipality.",
+    "Res_private_companies": "\"If you visit department stores in our city... you'll notice "
+                             "they no longer provide plastic bags. Shoppers have to buy "
+                             "cloth bags\" - private retail companies already exercising "
+                             "responsibility by voluntarily discontinuing single-use plastic "
+                             "bags.",
     "Cul_nat_government": "Land needed for waste facilities \"is under the jurisdiction of "
                           "the national government\" making it \"very difficult for the "
                           "local government to reach out to that land\"; the national policy "
