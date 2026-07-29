@@ -460,7 +460,7 @@ ganesh.update({
              "notes and the full verbatim transcript.",
 })
 
-# --- NPL_7: Rural Self-Reliance Development Center (RSCT) -------------------
+# --- NPL_7: Rural Self-Reliance Development Center (RSDC/RSCT) --------------
 rsct = blank_row()
 rsct.update({
     "Country": "Nepal",
@@ -468,76 +468,128 @@ rsct.update({
     "Actortype": "civil_society",
 
     "Problem_awareness_pop": "yes",
-    "Problem_concerndness": "medium",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
     "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
     "Problem_waste_mgmt": "yes",
     "Problem_production": "yes",
     "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
 
-    "Impacts": "air pollution (open burning), drainage/sewer blockage, dumping sites "
-               "(landfills), health (indoor air pollution from burning)",
-    NPF_VICTIMS_COL: "general public/urban residents (health effects of burning), local "
-                     "environment in Chitwan district",
-    "NPF_villains": "NA (no specific actor named; general public ignorance and lack of "
-                    "political will/fund disbursement referenced instead)",
-    "NPF_hero": "NA (not explicitly named)",
+    "Impacts": "air pollution (open burning of plastic, indoor air pollution from burning "
+               "MLP wrappers), drainage/sewer blockage, landfills/dumping sites (designed "
+               "for ~20 years but half-filled in ~3 years), freshwater rivers polluted "
+               "(rivers used as dumping sites), microplastics (Chitwan lake; salt cited), "
+               "health (burning impacts; PET bottles reused despite health warnings), "
+               "aquatic life (fertility impacts from microplastics/contamination), persistent "
+               "environmental degradation (plastics do not degrade easily)",
+    NPF_VICTIMS_COL: "people who burn plastic at home (especially those who remain indoors "
+                     "and suffer indoor air pollution), aquatic life and freshwater "
+                     "ecosystems, communities relying on contaminated rivers/lakes, and the "
+                     "general public who know plastic is harmful but do not grasp the full "
+                     "extent of health and environmental risks",
+    "NPF_villains": "plastic producers and manufacturers (highly influential — \"100%\" — "
+                    "using money to influence policy); unlicensed private waste-collection "
+                    "companies (operate without municipal registration/licence, earn from "
+                    "household fees and recovered materials, influence local government — "
+                    "e.g. Sawman under Neximac); local governments (do not implement own "
+                    "policies such as segregated-waste fee reductions, freeze earmarked "
+                    "environment budgets, lack political will, allow unlicensed collectors); "
+                    "households/public (ignorant of extent of harm, NIMBY syndrome, mix "
+                    "waste despite segregation options, reuse PET bottles against labels)",
+    "NPF_hero": "RSDC/RSCT and its cooperative waste-collection model (Budhanilkantha pilot "
+               "— cooperative collects segregated waste and benefits households); "
+               "multi-stakeholder cooperation (government, private sector, NGOs); exposure "
+               "visits that changed ward-chair attitudes; Extended Producer Responsibility "
+               "(EPR) as a key proposed policy tool; leaders who \"genuinely care about "
+               "people\"",
 
     "Coordination_sectoral": "yes",
     "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
 
+    "Res_nat_government": "yes",
     "Res_loc_government": "yes",
     "Res_private_sector": "yes",
     "Res_civil_society": "yes",
+    "Res_households": "yes",
+    "Res_private_companies": "yes",
 
-    "Cul_nat_government": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_private_sector": "yes",
     "Cul_households": "yes",
+    "Cul_private_companies": "yes",
 
+    "Tar_nat_government": "yes",
     "Tar_loc_government": "yes",
     "Tar_private_sector": "yes",
     "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+    "Tar_civil_society": "yes",
 
     "Actor_role": "2,3",
-    "Discretion": "RSCT designs its own bottom-up cooperative loan/fund mechanisms across "
-                 "its 200+ member cooperatives and recently redirected this model to urban "
-                 "plastics work, indicating discretion in programme design.",
+    "Discretion": "RSDC independently designed and scaled its Swabalamban (self-reliance) "
+                 "two-tier cooperative model since 1991, recently piloting the same approach "
+                 "for urban WASH/plastics in Budhanilkantha — establishing cooperatives, "
+                 "waste-segregation points, exposure visits, and household engagement without "
+                 "waiting for government directives.",
 
     "Monitoring": "yes",
     "Financial_resources": "yes",
     "Research": "yes",
     "Infrastructure": "no",
     "Capacity": "yes",
+    "Enforcement": "yes",
 
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_ban": "yes",
+    "Pol_recycling": "yes",
     "Pol_waste_collection": "yes",
     "Pol_effectiveness": "yes",
-    "Pol_effectiveness_example": "\"Fund is there; they don't release the funds\" / \"Two "
-                                 "funds: ear-marked; free to use (if you don't use it it will "
-                                 "be frozen)\" - illustrates how earmarked funds go unused, "
-                                 "undermining policy effectiveness; also \"Implementation is "
-                                 "always the problem: monitoring\" and \"Policies are there\" "
-                                 "(but not enforced).",
+    "Pol_effectiveness_example": "\"We always miss on implementation. That is our biggest "
+                                 "challenge\"; Budhanilkantha policy to reduce the ~NPR 300 "
+                                 "monthly waste-collection fee for households that segregate "
+                                 "waste \"is not implemented\"; \"nobody is monitoring\" the "
+                                 "20–40 micron plastic-bag rule (only occasional DoE checks); "
+                                 "earmarked environmental budgets (e.g. NPR 1 crore) are "
+                                 "\"frozen\" year after year because municipalities produce "
+                                 "no action plan and do not spend them.",
 
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_epr": "yes",
     "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
     "Sol_capacity": "yes",
     "Sol_RD": "yes",
     "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
     "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
 
-    "Traditions to build on (free-hand)": "RSCT's existing bottom-up, grassroots cooperative "
-                                          "fund/loan model (built since 1991 through a "
-                                          "two-tier structure of 200+ member cooperatives "
-                                          "governed by a general assembly) could be adapted "
-                                          "to finance and organise community-level plastic "
-                                          "waste management, as RSCT itself has already begun "
-                                          "doing in urban areas.",
+    "Traditions to build on (free-hand)": "RSDC's Swabalamban two-tier cooperative savings-and-"
+                                          "loan model (200+ cooperatives since 1991, governed "
+                                          "by a general assembly) already adapted for urban "
+                                          "plastic/waste management in Budhanilkantha; rural "
+                                          "practice of reusing plastic bags many times (vs. "
+                                          "urban single-use); long-term aspiration to revive "
+                                          "indigenous practices such as bringing one's own cup "
+                                          "when visiting others.",
     "Notes": "Master list label: \"7. Rural Self-Reliance Development Center/ Narayan "
-             "Nirola\". Affiliation: RSCT / Rural Self-Reliance Development Center, a "
-             "savings-and-credit cooperative network (est. 1991), originally focused on "
-             "poverty-alleviation microfinance for rural communities in Nepal, now also "
-             "working on urban plastics. Interviewee name in the source notes is not given "
-             "directly (RSCT's own remarks reference Chitwan district); per the research "
-             "team's master interview list the interviewee is Narayan Nirola. Coded from "
-             "interview notes only (short bullet-point answers); no full transcript "
-             "available for this interview.",
+             "Nirola\", affiliation: Rural Self-Reliance Development Center (RSCT/RSDC — "
+             "the transcript uses \"Rural Self-Reliance Development Centre\" / RSDC). "
+             "Interviewee: Narayan Nirola, project coordinator (Respondent 1); a second "
+             "RSDC staff member with WASH/academic background also contributed substantially "
+             "(Respondent 2). Internal project label: \"Interview no. 4\". Location: "
+             "Kathmandu (interview); project work discussed in Budhanilkantha Municipality. "
+             "Interview date: 23 June 2025 (12:52pm–1:30pm). Coded from both the interview "
+             "guideline notes and the full verbatim transcript.",
 })
 
 # --- NPL_3: Kathmandu Metropolitan City (KMC) Municipal Office --------------
@@ -1285,141 +1337,208 @@ doe_expl = {
 }
 
 rsct_expl = {
-    "Actortype": "RSCT is described as a savings-and-credit cooperative network (\"Based on "
-                "that cooperative; two tier cooperative; More than 200 cooperative\") "
-                "originally focused on poverty alleviation, now also working on urban "
-                "plastics - classified as civil society/cooperative sector rather than "
-                "government or private business.",
-    "Problem_awareness_pop": "\"In general they know; [but] they don't know the extent of "
-                             "it\" and \"Public is ignorant\" - population has only partial "
-                             "awareness of the plastic pollution problem.",
-    "Problem_concerndness": "The interviewee acknowledges the problem exists and is "
-                            "generally known (\"In general they know\") but stresses the "
-                            "extent is under-appreciated, and no strong emotional or urgent "
-                            "language is used - rated as medium concern.",
-    "Problem_littering": "\"Blocking sewer systems\" implies discarded/littered plastic "
-                         "accumulating in drainage systems.",
-    "Problem_waste_mgmt": "\"Land-fills are already [full]\"; \"Blocking sewer systems\"; "
-                          "\"It's burned - air pollution\" collectively describe inadequate "
-                          "waste management.",
-    "Problem_production": "\"Lots of plastics are produced\" - explicit mention of high "
-                          "upstream production volumes.",
-    "Problem_alternatives": "\"R&D - alternatives are needed\" implies current alternatives "
-                            "are insufficient.",
-    "Impacts": "Derived from: landfills (dumping sites), blocked sewers (drainage blockage), "
-               "burning of plastic causing air pollution, and indoor health effects of "
-               "burning (\"can impact health by burning; indoor\").",
-    "Coordination_sectoral": "\"Stakeholders are not collaborating; they do not coordinate\" "
-                             "- explicit statement of poor cross-actor collaboration.",
-    "Coordination_levels": "Same quote (\"they do not coordinate\") combined with \"so it "
-                           "stops at major[levels]\" suggests breakdowns between government "
-                           "levels, not only sectors.",
-    "Res_loc_government": "The described funding/facility system (earmarked funds, "
-                          "facilities) is administered at a sub-national level, and \"it "
-                          "stops at major\" implies responsibility sits with government "
-                          "below the national tier.",
-    "Res_private_sector": "The 300 rupee/month incentive scheme is paid to \"waste "
-                          "collectors\", who are private-sector actors central to "
-                          "implementation.",
-    "Res_civil_society": "RSCT itself, a cooperative/NGO-type organisation, has taken on "
-                         "plastics work in urban areas, i.e. it sees itself as (partly) "
-                         "responsible.",
-    "Cul_nat_government": "\"Fund is there; they don't release the funds\" implicates a "
-                          "governing authority (fund holder) in stalling implementation.",
-    "Cul_households": "\"Public is ignorant\" attributes part of the problem to household/ "
-                      "population behaviour and lack of awareness.",
-    "Tar_loc_government": "Local-level bodies administer the waste-collector incentive "
-                          "scheme and facilities described, making them a natural target "
-                          "for future measures.",
-    "Tar_private_sector": "Waste collectors are directly targeted by the existing 300 "
-                          "rupee/month incentive and would remain a target of future policy.",
-    "Tar_households": "The 300 rupee/month scheme is conditional on \"the household reduce "
-                      "[waste]\", explicitly targeting households.",
-    "Actor_role": "RSCT coordinates a network of 200+ member cooperatives (organisational/ "
-                 "managerial role = 2) while also directly running grassroots urban "
-                 "plastics activities (street-level role = 3).",
-    "Discretion": "RSCT's cooperative model was self-designed bottom-up (\"Bottom-up and "
-                 "grassroot fund to give loan\") and it independently chose to redirect this "
-                 "model toward plastics work, indicating discretion.",
-    "Monitoring": "\"Implementation is always the problem: monitoring\" - monitoring is "
-                 "explicitly named as a recurring implementation failure.",
-    "Financial_resources": "\"Fund is there; they don't release the funds\"; \"Two funds: "
-                           "ear-marked; free to use (if you don't use it will be frozen)\" - "
-                           "funds exist on paper but are not effectively available/used.",
-    "Research": "\"Not much research on effects of plastics\" and the closing remark \"More "
-               "research is needed\" both point to a research gap.",
-    "Infrastructure": "\"Facility is there (at least in this [case])\" - explicitly states "
-                      "infrastructure/facilities are available, i.e. not lacking.",
-    "Capacity": "\"Lack of how to act\" describes implementers/communities not knowing how "
-               "to act - a capacity gap.",
-    "Pol_waste_collection": "\"300 Rupees per month for waste collectors, if the household "
-                            "reduce[s]\" describes an active local waste-collection/"
-                            "incentive scheme.",
-    "Pol_effectiveness": "\"Implementation is always the problem\" combined with the "
-                         "earmarked-funds example shows existing policies are not "
-                         "translating into effective action.",
-    "Sol_awareness": "\"There is a need of communication\" is offered as a way forward, i.e. "
-                     "more awareness/communication work.",
-    "Sol_capacity": "The same \"lack of how to act\" problem is paired with an implicit call "
-                    "to build the capacity/know-how to act.",
-    "Sol_RD": "\"R&D - alternatives are needed\" is explicitly proposed as a way forward.",
-    "Sol_finance": "The funds/disbursement problem identified above implies a needed "
-                  "solution of ensuring earmarked funds are actually released and used.",
-    "Sol_subsitutes": "Tied to the R&D need for \"alternatives\", i.e. viable substitute "
-                      "products are called for.",
-    "Traditions to build on (free-hand)": "RSCT's own background (\"Established in 1991\"; "
-                                          "\"Bottom-up and grassroot fund to give loan\"; "
-                                          "\"More than 200 cooperative[s]\"; \"Governed by "
-                                          "general assembly\") describes a long-standing, "
-                                          "locally rooted cooperative financing tradition "
-                                          "that has already been repurposed for plastics "
-                                          "work and could be scaled further.",
+    "Actortype": "Rural Self-Reliance Development Centre (RSDC/RSCT) is an NGO/cooperative "
+                 "network established in 1991, now piloting urban WASH and plastic-waste "
+                 "management; coded as civil_society.",
+    "Problem_awareness_pop": "\"People know that plastic affects them but they don't have a "
+                             "deep understanding\"; PET bottles labelled single-use are "
+                             "reused for water/milk/oil; burning plastic is assumed safe if "
+                             "\"a bit far from my house\"; public described as \"ignorant\" "
+                             "of waste-management practices.",
+    "Problem_awareness_pol": "Ward-level officials are supportive but \"the mayor has not yet "
+                            "understood or internalized it\"; local government does not "
+                            "implement its own segregated-waste fee-reduction policy despite "
+                            "knowing unlicensed collectors operate.",
+    "Problem_concerndness": "Plastic described as a \"huge problem\" in growing cities, a "
+                            "global concern (Great Pacific Garbage Patch cited), with "
+                            "landfills half-filled in three years instead of twenty; RSDC "
+                            "has launched its first project fully focused on WASH/plastics.",
+    "Problem_littering": "Plastic \"is everywhere around us\" in main cities; rivers in "
+                         "Kathmandu and other cities \"have become a dumping site\"; plastic "
+                         "clogs sewer systems.",
+    "Problem_consumption": "High per-capita plastic production (ADB 2013 data cited); "
+                           "plastics \"have become an inseparable part of our lives\"; urban "
+                           "areas trend toward single-use disposal.",
+    "Problem_recycling": "Cooperative model recovers and sells segregated waste, but "
+                         "earnings are minimal (\"a huge amount of plastic becomes only one "
+                         "kilogramme\"); municipal incentive policy for segregators is not "
+                         "implemented.",
+    "Problem_waste_mgmt": "Landfills designed for ~20 years half-filled in ~3 years; "
+                          "policies exist but \"we always miss on implementation\"; "
+                          "stakeholders not working in a coordinated way.",
+    "Problem_production": "\"Lots of plastic being produced per capita in the context of "
+                          "Nepal\" (ADB 2013 report referenced).",
+    "Problem_alternatives": "R&D needed for alternatives such as plant-based plastic bags "
+                            "(only 20–30 NPR/kg price difference cited); cannot aim for "
+                            "zero plastic production.",
+    "Problem_waste_segregation": "Households mix everything for the morning garbage truck "
+                                 "despite segregation points and vendors; no financial "
+                                 "incentive because the NPR 300/month fee is unchanged "
+                                 "whether households segregate or not.",
+    "Impacts": "Indoor air pollution from burning MLP wrappers; blocked sewers; rapidly "
+               "filling landfills; river pollution harming aquatic life; microplastics in "
+               "Chitwan lake and even salt; persistent environmental accumulation.",
+    NPF_VICTIMS_COL: "People suffering indoor air pollution from burning plastic; aquatic "
+                     "life and freshwater ecosystems; communities drinking contaminated "
+                     "water; public with only superficial awareness of plastic harms.",
+    "NPF_villains": "Influential plastic producers/manufacturers; unlicensed private waste "
+                    "collectors (Sawman/Neximac) who profit from fees and recyclables while "
+                    "doing minimal real conservation work; local governments that fail to "
+                    "implement policies, freeze budgets, and tolerate unlicensed operators; "
+                    "ignorant/NIMBY households.",
+    "NPF_hero": "RSDC and its cooperative segregation/collection model; multi-stakeholder "
+               "engagement; exposure visits changing local leaders' mindsets; EPR as the "
+               "key proposed policy solution; genuine leaders committed to people.",
+    "Coordination_sectoral": "\"All the stakeholders related to this plastic waste management "
+                             "are not working properly... not working in a coordinated way\"; "
+                             "government, public, private collectors and NGOs not aligned.",
+    "Coordination_levels": "Ward officials support the programme but municipal leadership "
+                           "does not prioritise it; federal earmarked environmental budgets "
+                           "not released or spent by local government.",
+    "Unclear_responsibilities": "Local government \"doesn't even know who is collecting waste "
+                                "in their jurisdiction\" and has no list of waste-management "
+                                "organisations; unlicensed private companies operate despite "
+                                "Solid Waste Management Act 2011 registration requirements.",
+    "Res_nat_government": "National level sets policy frameworks; draft EPR policy exists; "
+                          "Department of Environment occasionally monitors plastic-bag rules.",
+    "Res_loc_government": "Budhanilkantha Municipality responsible for waste policy "
+                          "implementation, fee rules, licensing collectors, and spending "
+                          "environmental budgets.",
+    "Res_private_sector": "Private companies (not government) collect household waste for "
+                          "~NPR 300/month across the municipality.",
+    "Res_civil_society": "RSDC runs the Budhanilkantha pilot, establishing cooperatives and "
+                         "waste-segregation points; cooperatives collect segregated waste.",
+    "Res_households": "Households generate waste and can segregate/recover materials for "
+                      "sale; project works with 100+ households.",
+    "Res_private_companies": "Plastic producers and private waste-collection companies are "
+                             "named as key actors in the value chain (should be licensed "
+                             "under Solid Waste Management Act 2011).",
+    "Cul_loc_government": "Does not implement segregated-waste fee-reduction policy; freezes "
+                          "earmarked environmental budgets; lacks political will and "
+                          "ownership; allows unlicensed collectors; mayor has not "
+                          "internalised the programme.",
+    "Cul_private_sector": "Unlicensed waste collectors operate with municipal tacit approval; "
+                          "Sawman/Neximac groups claim conservation work but \"it's mostly "
+                          "just talk\"; companies compete for contracts with political "
+                          "favouritism.",
+    "Cul_households": "Public \"ignorant\" of proper waste management; NIMBY syndrome "
+                      "(want clean surroundings but oppose nearby collection points); mix "
+                      "waste despite available segregation options.",
+    "Cul_private_companies": "Producers are \"100%\" influential, \"us[ing] money\" to shape "
+                             "policy; producing and selling creates the problem without "
+                             "end-of-life responsibility.",
+    "Tar_nat_government": "Enact and enforce EPR legislation (currently only a draft).",
+    "Tar_loc_government": "Implement existing policies (fee reductions for segregated waste), "
+                          "release frozen budgets, license and oversee private collectors, "
+                          "prioritise plastics within environmental spending.",
+    "Tar_private_sector": "Private waste collectors must register, act responsibly, raise "
+                          "awareness, and engage communities rather than only collecting "
+                          "fees.",
+    "Tar_households": "Households should segregate waste, stop burning plastic, and participate "
+                      "in cooperative collection/recycling models.",
+    "Tar_private_companies": "Plastic producers/importers must be held accountable through "
+                             "EPR; waste-collection companies must be licensed and regulated.",
+    "Tar_civil_society": "Cooperatives and community groups should be supported as local "
+                         "collection/recycling partners (RSDC model).",
+    "Actor_role": "RSDC both organises cooperatives, segregation points and municipal "
+                 "engagement (managerial implementer — role 2) and works directly with "
+                 "100+ households on the ground (street-level implementer — role 3).",
+    "Discretion": "RSDC independently designed the Swabalamban cooperative model, chose to "
+                  "pilot it for urban plastics/WASH, established local cooperatives and "
+                  "segregation infrastructure, and organised exposure visits — all without "
+                  "being mandated by government.",
+    "Monitoring": "20–40 micron bag rule is \"not regular\" monitoring (only occasional DoE "
+                  "checks on Facebook); implementation and policy compliance broadly "
+                  "unmonitored.",
+    "Financial_resources": "Earmarked environmental budgets exist but are frozen year after "
+                           "year because municipalities produce no action plans; \"fund is "
+                           "there\" but not released or used.",
+    "Research": "\"There are not many research papers\" on plastic health/environment "
+               "impacts in Nepal; \"we don't have evidence-based information\" — localized "
+               "data needed to convince decision-makers.",
+    "Infrastructure": "In the project area, waste-segregation points and vendors buying "
+                      "segregated materials already exist — the barrier is lack of "
+                      "incentives and political will, not absence of basic facilities "
+                      "(though NIMBY still blocks new collection-centre siting).",
+    "Capacity": "Local-government environmental staff lack motivation (fixed salaries "
+               "regardless of performance); communities and officials \"don't know how "
+               "to proceed\" without exposure and evidence; communication and localized "
+               "know-how are missing.",
+    "Enforcement": "20–40 micron plastic-bag rule not regularly enforced; Solid Waste "
+                   "Management Act 2011 licensing requirement for private collectors "
+                   "ignored in Budhanilkantha.",
+    "Pol_epr": "\"There is a draft policy on this in Nepal, but it hasn't been enacted yet\" "
+              "— EPR described as essential but not yet in force.",
+    "Pol_awareness": "Project-based NGO awareness efforts; private collector associations "
+                     "(Sawman) claim to run awareness/training but actual work is minimal.",
+    "Pol_ban": "Regulation requiring plastic bags of at least 20–40 microns exists on paper.",
+    "Pol_recycling": "RSDC cooperative collects segregated household waste and sells "
+                     "recyclables to vendors.",
+    "Pol_waste_collection": "~NPR 300/month household fee to private collectors; municipal "
+                            "policy to reduce fee if waste is segregated (not implemented).",
+    "Pol_effectiveness": "Policies exist at national and local levels but implementation is "
+                         "\"very weak\"; segregated-waste incentives not applied; budgets "
+                         "frozen; monitoring absent.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in the Coded_Data "
+                                 "cell.",
+    "Sol_lead_agency": "Need leaders who \"genuinely care about people\" and multi-stakeholder "
+                       "cooperation rather than single-actor solutions.",
+    "Sol_responsibilities": "Enact EPR; register/license private collectors; clarify which "
+                            "organisations operate in each municipality.",
+    "Sol_epr": "\"Extended Producer Responsibility (EPR) is key... EPR is essential\" — top "
+              "proposed policy solution.",
+    "Sol_awareness": "Communication and exposure visits to show working models; awareness "
+                     "campaigns for all stakeholders including government officials.",
+    "Sol_segregation": "Household source segregation with financial incentives (reduced "
+                       "collection fees) and cooperative collection.",
+    "Sol_recycling": "Integrate cooperatives, vendors and recyclers into municipal systems; "
+                     "minimize plastic use but manage remaining waste properly.",
+    "Sol_education": "Evidence-based, localized education to show households the extent of "
+                     "harm and practical alternatives.",
+    "Sol_capacity": "Exposure visits and localized evidence to build municipal and community "
+                    "capacity; motivate bureaucrats beyond fixed salaries.",
+    "Sol_RD": "R&D for plant-based plastic bags and other affordable alternatives (20–30 "
+              "NPR/kg price gap cited).",
+    "Sol_finance": "Use existing earmarked environmental budgets rather than letting them "
+                   "freeze; practical household incentives (reduced waste fees).",
+    "Sol_infrastructure": "Waste-to-energy technologies with minimal pollution; "
+                           "segregation points and transfer systems (adapted to local "
+                           "capacity, not imported expensive foreign models).",
+    "Sol_subsitutes": "Promote plant-based and other affordable alternative products through "
+                      "R&D and policy support.",
+    "Sol_enforcement": "Register and license private waste collectors per Solid Waste "
+                       "Management Act 2011; regular monitoring of micron-thickness rules.",
+    "Sol_monitoring": "Regular government monitoring of plastic-bag rules and private "
+                      "collector compliance, not occasional checks.",
+    "Traditions to build on (free-hand)": "RSDC's 1991 Swabalamban cooperative savings model "
+                                          "(200+ cooperatives, two-tier structure); rural "
+                                          "reuse of plastic bags many times; aspiration to "
+                                          "revive bringing one's own cup when visiting others.",
     # --- Explanations for otherwise-NA values in the "always explain" column set ---
-    "NPF_villains": "Coded NA - the notes do not name a specific culprit/villain actor; only "
-                    "general public ignorance and unreleased government funds are referenced "
-                    "as contributing factors, without a clearly personified \"bad guy\".",
-    "NPF_hero": "Coded NA - no specific actor is described as the one committed to solving "
-               "the problem in these short notes (RSCT describes its own broader "
-               "organisational activities but does not frame itself, or anyone else, as a "
-               "narrative \"hero\" of the plastics story specifically).",
-    "Res_nat_government": "NA - not mentioned as currently responsible; national government "
-                          "appears in these notes mainly via the (unreleased) earmarked-funds "
-                          "issue, coded instead under Cul_nat_government.",
-    "Res_prov_government": "NA - provincial/state government is not mentioned anywhere in "
-                           "these notes.",
-    "Res_students": "NA - students/schools are not mentioned in these notes at all.",
-    "Res_science": "NA - researchers are not mentioned as a currently responsible actor "
-                   "(only a general call for \"more research\" as a future need, captured "
-                   "under Research/Sol_RD).",
-    "Res_edu_institutions": "NA - schools/universities are not mentioned in these notes.",
-    "Res_private_companies": "NA - hotels/shops/manufacturers are not mentioned in these "
-                             "notes; the only private actor discussed is the waste-collector "
-                             "incentive scheme, captured under Res_private_sector.",
-    "Cul_prov_government": "NA - provincial government is not mentioned in these notes.",
-    "Cul_loc_government": "NA - not explicitly blamed; the notes attribute the "
-                          "unreleased-funds problem to \"they\" (interpreted as a governing/"
-                          "funding authority, coded under Cul_nat_government) without "
-                          "specifying local government.",
-    "Cul_students": "NA - not mentioned.",
-    "Cul_private_sector": "NA - waste collectors are described positively (recipients of the "
-                          "300 rupee/month incentive), not as culprits.",
-    "Cul_civil_society": "NA - not mentioned as contributing to the problem.",
-    "Cul_science": "NA - not mentioned.",
-    "Cul_edu_institutions": "NA - not mentioned.",
-    "Cul_private_companies": "NA - not mentioned; no specific companies are blamed in these "
-                             "short notes.",
-    "Tar_nat_government": "NA - not explicitly named as a target group for future measures "
-                          "in these notes.",
-    "Tar_prov_government": "NA - not mentioned.",
-    "Tar_students": "NA - not mentioned as a target group in these notes.",
-    "Tar_civil_society": "NA - not mentioned as a target group; RSCT discusses itself as an "
-                         "implementer rather than identifying other civil-society groups as "
-                         "future targets.",
-    "Tar_science": "NA - not mentioned as a target group.",
-    "Tar_edu_institutions": "NA - not mentioned as a target group in these notes.",
-    "Tar_private_companies": "NA - not mentioned as a target group; the only private actor "
-                             "discussed as a target is waste collectors, captured under "
-                             "Tar_private_sector.",
+    "Res_students": "NA - students are not described as currently responsible actors for "
+                    "mitigating plastic pollution.",
+    "Res_prov_government": "NA - provincial government is not mentioned in this interview.",
+    "Res_science": "NA - researchers are discussed only as a future need for localized "
+                   "evidence, not as current responsible actors.",
+    "Res_edu_institutions": "NA - schools/universities are not described as currently active "
+                            "on plastic waste management.",
+    "Cul_nat_government": "NA - national government is discussed mainly as policy-setter and "
+                          "budget allocator; the primary blame in this interview falls on "
+                          "local-government non-implementation and private actors rather "
+                          "than national policy design.",
+    "Cul_prov_government": "NA - provincial government is not mentioned.",
+    "Cul_students": "NA - not mentioned as contributing to the problem.",
+    "Cul_civil_society": "NA - NGOs/cooperatives (including RSDC itself) are presented as "
+                         "part of the solution, not the problem.",
+    "Cul_science": "NA - not blamed for the situation.",
+    "Cul_edu_institutions": "NA - not mentioned as culprits.",
+    "Tar_prov_government": "NA - provincial government is not mentioned as a target group.",
+    "Tar_students": "NA - youth/students are not named as a primary target group in this "
+                    "interview.",
+    "Tar_science": "NA - while localized research is called for, researchers are not named "
+                   "as a primary target group for mitigation measures.",
+    "Tar_edu_institutions": "NA - schools/universities are not named as a primary policy "
+                            "target.",
 }
 
 ganesh_expl = {
@@ -2720,8 +2839,8 @@ NAMES["NPL_5"] = ("Doco Recyclers - Private Sector waste-management/recycling co
                    "Kathmandu Valley (23 June 2025)")
 NAMES["NPL_6"] = ("Dhulikhel Hotel/Restaurant - Mr. Swasti Byanju, hotel owner, "
                    "Dhulikhel (22 June 2025, Kathmandu interview no. 3)")
-NAMES["NPL_7"] = ("Rural Self-Reliance Development Center / RSCT (savings-and-credit "
-                   "cooperative network, urban plastics programme)")
+NAMES["NPL_7"] = ("Rural Self-Reliance Development Center (RSDC/RSCT) - Narayan Nirola "
+                   "(project coordinator) + colleague, Kathmandu (23 June 2025)")
 
 
 def placeholder_row(iid, label, affiliation, actortype):
@@ -2955,12 +3074,11 @@ readme_lines = [
      "(22 June 2025; Kathmandu interview no. 3). Coded from both the interview guideline "
      "notes and the full verbatim transcript. Swasti Byanju (local collaborator) also "
      "contributed the Dankhuta waste-management example in the transcript.", False),
-    ("  7. NPL_7 - Rural Self-Reliance Development Center (RSCT), a savings-and-credit "
-     "cooperative network (est. 1991) that recently expanded into urban plastics work; per "
-     "the master list, the interviewee is Narayan Nirola. Coded from the hand-written "
-     "interview notes only (no transcript available). This interview was numbered NPL_1, "
-     "then NPL_2, then NPL_3 in earlier versions of this workbook as other interviews were "
-     "added; it has now been renumbered to NPL_7 per the research team's master list.", False),
+    ("  7. NPL_7 - Rural Self-Reliance Development Center (RSDC/RSCT), Narayan Nirola "
+     "(project coordinator) and a WASH-specialist colleague, Kathmandu (23 June 2025, "
+     "12:52pm–1:30pm; internal interview no. 4). NGO/cooperative network (est. 1991) "
+     "piloting urban plastic/waste management in Budhanilkantha. Coded from both the "
+     "interview guideline notes and the full verbatim transcript.", False),
     ("", False),
     ("Placeholder (not yet coded) interviews: NPL_8-NPL_32 - see the "
      "master numbering list below and each row's 'Notes' cell in 'Coded_Data'.", False),
@@ -3015,12 +3133,9 @@ readme_lines = [
      "day-to-day implementer; Discretion is therefore marked NA for that row, as the field "
      "only applies to roles 2/3.", False),
     ("", False),
-    ("Note on source material: a block of longer, polished paragraph-style quotes appeared "
-     "under the RSCT question list in the original material, but the content and "
-     "first-person phrasing (\"we have... directives...\", \"Department of Environment is "
-     "regularly monitoring...\") match the Department of Environment notes and transcript "
-     "almost verbatim. These paragraphs were therefore treated as additional corroborating "
-     "evidence for the DoE interview (NPL_1), not for RSCT (NPL_7), and coded accordingly.", False),
+    ("Note on source material: an earlier version of this workbook coded NPL_7 from short "
+     "bullet-point notes only. That row has now been fully recoded from the complete "
+     "interview guideline notes and verbatim transcript supplied for this respondent.", False),
 ]
 for text, bold in readme_lines:
     ws4.append([text])
