@@ -9,12 +9,12 @@ on, and Notes).
 
 The workbook covers the FULL 32-interview master numbering supplied by the
 research team (see MASTER_LIST below), one row per ID from NPL_1 to NPL_32,
-in order. Only four interviews have source material (notes/transcripts)
+in order. Six interviews have source material (notes/transcripts)
 available so far and are therefore fully coded: NPL_1 (Department of
 Environment), NPL_2 (Former Minister Ganesh Shah), NPL_3 (KTM Municipal
-Office / Kathmandu Metropolitan City), NPL_4 (Mayor of Dhulikhel Municipality)
-and NPL_7 (Rural Self-Reliance Development Center / RSCT). The remaining 27
-rows are explicit placeholders
+Office / Kathmandu Metropolitan City), NPL_4 (Mayor of Dhulikhel Municipality),
+NPL_5 (Doco Recyclers) and NPL_7 (Rural Self-Reliance Development Center /
+RSCT). The remaining 26 rows are explicit placeholders
 (Country/ID/best-guess Actortype/Notes only, all substantive variables NA)
 reserving the correct ID until their interview material is supplied.
 
@@ -811,7 +811,149 @@ dhulikhel.update({
              "remarks.",
 })
 
-INTERVIEWS = [doe, ganesh, rsct, ktm, dhulikhel]
+# --- NPL_5: Doco Recyclers (Private Sector) -----------------------------------
+doco = blank_row()
+doco.update({
+    "Country": "Nepal",
+    "ID": "NPL_5",
+    "Actortype": "private_sector",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+    "Problem_import": "yes",
+
+    "Impacts": "soil (plastic beneath farmland, reduced water/nutrient absorption), water "
+               "(rivers polluted with plastic layers beneath soil), agriculture (decreased "
+               "yield/productivity), air pollution (dioxin and furan from open burning), "
+               "health (carcinogenic gases), microplastics (SAFEC study at Everest base "
+               "camp cited), drainage/sewer blockage, dumping sites/landfills/leachate, "
+               "aesthetics, wildlife/livestock (cows eating plastics in notes)",
+    NPF_VICTIMS_COL: "farmers and agricultural productivity, human health (from toxic "
+                     "burning emissions), rivers and aquatic ecosystems, soil, and society "
+                     "as a whole (\"plastics is affected whole society\")",
+    "NPF_villains": "plastic producers, importers and brand owners operating without "
+                    "extended producer responsibility; the national government "
+                    "(fragmented/uncoordinated policies, no apex body, weak enforcement "
+                    "of the 40-micron ban); households and the wider public (talk about "
+                    "pollution but take little action, burn waste including in government "
+                    "backyards); informal scrap collectors who cherry-pick high-value "
+                    "fractions and leave low-value/multi-layer plastics unmanaged",
+    "NPF_hero": "Doco Recyclers and other private waste-management companies (MRFs, "
+               "collection chains, consulting with municipalities); proposed national "
+               "apex coordinating body; formal private-sector partners working with "
+               "municipalities (e.g. KMC dry-waste inventory survey)",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_science": "yes",
+    "Res_households": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_private_sector": "yes",
+    "Cul_households": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_students": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_households": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "2",
+    "Discretion": "Doco Recyclers designs its own clientele-based collection model, "
+                 "operates two MRFs with in-house sorting/processing flows, chooses "
+                 "research and consulting partnerships (UNDP, GIZ, universities), and "
+                 "develops municipal waste frameworks independently of government "
+                 "directives.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_import": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_RD": "yes",
+    "Pol_ban": "yes",
+    "Pol_upcycling": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"Even if we have... 40 micron has been banned... But if "
+                                 "you go everywhere, you can find the plastics of below 40 "
+                                 "micron\"; \"around 600 tonnes of plastic waste is generated "
+                                 "in Nepal every day. But the management is going for hardly "
+                                 "20 to 30 tonnes per day\"; \"fragmented policies that "
+                                 "municipalities bring on themselves. If they cannot "
+                                 "implement still, they have there in the policy\"; \"We were "
+                                 "not engaged in this draft [Solid Waste Act]. They did not "
+                                 "consult with us... this draft was incomplete and it's old "
+                                 "fashioned.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_epr": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_upcycling": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_RD": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Using natural leaves (e.g. banana leaves) instead "
+                                          "of plastic packaging, and carrying bags made from "
+                                          "cotton or towels instead of plastic bags - "
+                                          "traditional alternatives that could reduce plastic "
+                                          "use while connecting to cultural heritage.",
+    "Notes": "Master list label: \"5. Private Sector/ Doco Recyclers\", affiliation: Doco "
+             "Recyclers (private waste-management/recycling company, est. 2017). "
+             "Interviewee: Doco Recyclers (two respondents in the transcript - Respondent 1 "
+             "and Respondent 2; individual names not given). Role: Private Sector. Location: "
+             "Kathmandu Valley (MRFs at Sanothimi and Salghari/Bhaktapur; expanding to "
+             "Pokhara). Interview date: 23 June 2025. Coded from both the interview "
+             "guideline notes and the full verbatim transcript. Associations mentioned in "
+             "the notes: Plastic Foundation Nepal and Solid Waste Management Association "
+             "(likely the Solid Waste Management Association of Nepal). Data-quality note: "
+             "the Q4a/Q4b blocks in the guideline notes (\"For ministry: What is new in "
+             "the planned act?\" / ministry confidence questions) contain ministry-interview "
+             "template content not spoken by Doco Recyclers in the transcript and were "
+             "excluded from this row's coding; the transcript confirms Doco was not "
+             "consulted on the draft Solid Waste Act but submitted online feedback calling "
+             "it \"incomplete\" and \"old fashioned.\" The Q3a bullet content about "
+             "Pokhara/UNDP training that was excluded from NPL_3 (KTM) belongs to this "
+             "interview and is reflected here.",
+})
+
+INTERVIEWS = [doe, ganesh, rsct, ktm, dhulikhel, doco]
 
 # ---------------------------------------------------------------------------
 # 3. EXPLANATIONS (long format) - quote/reasoning behind each coded value.
@@ -1969,17 +2111,242 @@ dhulikhel_expl = {
     "Tar_science": "NA - not mentioned as a target group for future measures.",
 }
 
+doco_expl = {
+    "Actortype": "Doco Recyclers is a private-sector waste-management and recycling company "
+                 "(dry waste and e-waste), operating material recovery facilities and "
+                 "collection chains; coded as private_sector.",
+    "Problem_awareness_pop": "\"People don't think this serious. Everyone talks about plastic "
+                             "pollution. But if I ask what you did yourself to reduce the "
+                             "plastic pollution, hardly you can find any answer\"; burning "
+                             "waste in government backyards despite knowing it is harmful; "
+                             "notes list \"awareness\" and \"habit\" as challenges.",
+    "Problem_awareness_pol": "\"The government of Nepal is still uncertain which ministries, "
+                            "and which department is going to look after this plastic waste "
+                            "management\"; \"Even they [Ministry of Forest and Environment] "
+                            "don't know what policy we should write, because MOE Urban "
+                            "development is writing one policy. Department of Environment is "
+                            "writing another policy\"; no apex body to guide the sector.",
+    "Problem_concerndness": "Notes state respondents express \"serious concern about the "
+                            "scale and impacts\" and that end-of-life management requires "
+                            "\"urgent policy and infrastructural interventions\"; transcript "
+                            "describes the problem as structural and pressing throughout.",
+    "Problem_littering": "Plastics found \"below my farmlands\", \"beneath the soil\" in "
+                         "rivers across Nepal, and in open dumping/landfill sites; notes "
+                         "mention aesthetics and unmanaged waste.",
+    "Problem_consumption": "\"We are used to live with the plastic\"; \"the problem started "
+                           "when we exploit using it excessively and forget the end-of-life "
+                           "management\"; policy should focus on reducing single-use plastic "
+                           "production and use.",
+    "Problem_recycling": "Only \"hardly 20 to 30 tonnes per day\" of ~600 tonnes generated "
+                         "are managed; low-value and multi-layer plastics (MLPs) lack "
+                         "recycling infrastructure and market; \"cherry picking\" leaves "
+                         "low-value fractions behind.",
+    "Problem_waste_mgmt": "Central theme: lack of policy incentives, collection value chain, "
+                          "infrastructure, investment and coordination; sanitary landfill, "
+                          "leachate and land-acquisition problems noted in the guideline.",
+    "Problem_production": "Future policy should focus on \"reducing the production and use "
+                          "of the single use plastics\"; producers/importers/brand owners "
+                          "put plastic into the market without end-of-life responsibility.",
+    "Problem_alternatives": "Shift to alternatives \"cannot be overnight\"; until then only "
+                            "end-of-life management is feasible; traditional leaf/cotton-bag "
+                            "alternatives exist but are not yet scaled as mainstream "
+                            "substitutes.",
+    "Problem_waste_segregation": "Notes list \"segregation at source\" as a main challenge; "
+                                 "proper collection value chain requires source segregation.",
+    "Problem_import": "Some plastic fractions are \"passed on to our neighboring country "
+                      "through illegal channels\"; federal government should \"regulate what "
+                      "kind of plastics are imported\" (Q9 notes).",
+    "Impacts": "Soil and water contamination reducing agricultural yield and nutrient/water "
+               "retention; open burning releasing carcinogenic dioxin and furan; "
+               "microplastics found at Everest base camp (SAFEC study cited); rivers, "
+               "farmland, landfills/leachate and drainage blockage.",
+    NPF_VICTIMS_COL: "Farmers (reduced crop production as rainwater/nutrients no longer "
+                     "absorbed by plastic-contaminated soil), human health (toxic burning "
+                     "emissions), rivers and soil ecosystems, and society broadly.",
+    "NPF_villains": "Producers/importers/brand owners without EPR; national government "
+                    "(uncoordinated ministries, no apex body, weak ban enforcement); "
+                    "public/households (inaction, open burning); informal scrap sector "
+                    "cherry-picking high-value plastics and abandoning low-value fractions.",
+    "NPF_hero": "Doco Recyclers and peer private waste-management firms running MRFs and "
+               "collection chains; the proposed national apex coordinating body; and "
+               "private-sector partners already working with municipalities (e.g. KMC "
+               "inventory survey).",
+    "Coordination_sectoral": "Ministry of Forest and Environment, Department of Environment "
+                             "and Ministry of Urban Development write separate policies "
+                             "without synchronization; \"everyone is working in different "
+                             "directions... Government is trying to move in another "
+                             "direction. Private is another direction.\"",
+    "Coordination_levels": "Fragmented municipal policies versus absent national plastic "
+                           "policy; lack of synergy between government, private sector, "
+                           "informal collectors and donor agencies.",
+    "Unclear_responsibilities": "\"There is no clear synchronization of who is going to "
+                                "look after what. And we don't have a body who can guide "
+                                "who can drive these all factors regarding to the plastic "
+                                "waste\"; solid waste folded into Municipal Solid Waste "
+                                "Management Act without plastic-specific clarity.",
+    "Res_nat_government": "National ministries (Environment, Urban Development) and "
+                          "Department of Environment are named as policy actors, though "
+                          "roles are unclear.",
+    "Res_loc_government": "Municipalities are \"one of the most important authorities\" with "
+                          "constitutional authority to prepare local guidelines; 753 "
+                          "municipalities should be accountable implementing partners.",
+    "Res_private_sector": "Doco Recyclers and other private waste-management companies handle "
+                          "collection, sorting, processing and consulting; formal and "
+                          "informal scrap collectors operate in the value chain.",
+    "Res_civil_society": "UNDP, GIZ and NGOs (e.g. SAFEC Centre microplastics study) "
+                         "partner on projects, training and research.",
+    "Res_science": "Universities and international institutions (e.g. Loughborough "
+                   "University UK) collaborate on EPR and end-of-life research.",
+    "Res_households": "Households are clients in Doco's collection chain and generate the "
+                      "waste stream that must be managed.",
+    "Res_edu_institutions": "Schools and universities host awareness/green-school camps and "
+                            "research partnerships with Doco.",
+    "Res_private_companies": "Institutions, embassies and hotels are collection clients; "
+                             "cement industry proposed as RDF destination for low-value "
+                             "plastic; producers/importers should bear EPR responsibility.",
+    "Cul_nat_government": "No incentive policy, no EPR, no apex body, weak enforcement of "
+                          "40-micron ban, and ministries writing conflicting policies.",
+    "Cul_loc_government": "Municipal plastic bans exist on paper but \"most of these "
+                          "policies are not implemented\" and municipalities \"do not monitor "
+                          "private waste collectors adequately.\"",
+    "Cul_private_sector": "Established informal/formal scrap systems engage in \"cherry "
+                          "picking\" of high-value plastics, leaving low-value/multi-layer "
+                          "fractions unmanaged.",
+    "Cul_households": "Public talks about pollution but takes little personal action; open "
+                      "burning of waste including in government backyards.",
+    "Cul_private_companies": "Producers, importers and brand owners place plastic on the "
+                             "market without end-of-life responsibility (no EPR).",
+    "Tar_nat_government": "Federal government should coordinate, implement EPR, support "
+                          "research and regulate plastic imports (Q9 notes).",
+    "Tar_loc_government": "\"753 total operations [municipalities] that should be making "
+                          "accountable\"; local government inspection role noted in Q9.",
+    "Tar_students": "\"It starts from young. As young you can catch them\"; waste management "
+                    "should be embedded in the education system.",
+    "Tar_private_sector": "Private waste-management companies should be incentivised as "
+                          "collection/processing actors in the EPR system.",
+    "Tar_households": "Public education needed, though reaching all 30 million people "
+                      "individually is impractical compared with targeting producers.",
+    "Tar_edu_institutions": "School curricula and facility visits (green-school camps) are "
+                            "proposed vehicles for awareness and behaviour change.",
+    "Tar_private_companies": "\"Producers either are manufacturers or they are importers or "
+                             "they are the brand owners. Everyone should be responsible\"; "
+                             "\"you can easily touch those thousand producer or 10,000 "
+                             "producers.\"",
+    "Actor_role": "Doco Recyclers is a managerial/organisational implementer (role 2): it "
+                 "operates MRFs, designs collection systems, runs consulting and awareness "
+                 "programmes, but does not formulate national policy.",
+    "Discretion": "The company chooses its clientele model, sorting grades, research "
+                  "partnerships and municipal consulting frameworks independently (e.g. "
+                  "UNDP Pokhara training design, KMC inventory survey, EPR policy research "
+                  "with Loughborough University).",
+    "Monitoring": "40-micron ban exists but plastics below the threshold are found "
+                  "\"everywhere\"; municipalities inadequately monitor private collectors; "
+                  "no systematic policy monitoring described.",
+    "Financial_resources": "Private entities \"lack confidence whether they will survive\" "
+                           "and will not invest without external project funding; "
+                           "financing needed for decentralised MRFs and collection chains.",
+    "Research": "Doco conducts multiple research projects and calls for more research on "
+               "burning impacts, microplastics in water and agriculture; notes list "
+               "life-cycle assessment and air/water/soil impacts as knowledge gaps.",
+    "Infrastructure": "No infrastructure to recycle/upcycle/dispose low-value plastics; "
+                        "need decentralised MRFs, recycling plants and RDF destinations.",
+    "Capacity": "\"Human Resources development - capacity-building\" listed in solutions; "
+               "private-sector capital and technical capacity must be strengthened.",
+    "Enforcement": "40-micron ban not enforced on the ground; burning should be penalised "
+                   "but people feel \"nobody is going to punish me.\"",
+    "Pol_epr": "\"We don't have policy for extended producer responsibility\"; actively "
+              "pushing DoE to adopt EPR for plastic packaging and e-waste.",
+    "Pol_import": "No effective import-control mechanism; some fractions exit through "
+                  "\"illegal channels\" to neighbouring countries.",
+    "Pol_awareness": "Doco runs awareness campaigns and green-school camps; notes describe "
+                     "project-based NGO/private awareness efforts rather than continuous "
+                     "government campaigns.",
+    "Pol_education": "School learning programmes and facility visits where students learn "
+                     "about waste processing and carbon footprint reduction.",
+    "Pol_RD": "Multiple research projects (UNDP skill development, MLP/low-value plastic "
+              "projects, EPR framework research with Loughborough University, NREP energy "
+              "efficiency study, KMC inventory survey).",
+    "Pol_ban": "Ban on single-use plastic bags below 40 microns was drafted/enacted "
+              "(respondents recall ~2016/four-to-five years ago); fragmented municipal "
+              "single-use plastic/cutlery bans also exist.",
+    "Pol_upcycling": "Paper-to-plant pencil upcycling project in Pokhara (UNDP training); "
+                     "community upcycling/recycling groups supported.",
+    "Pol_recycling": "Doco's core business: sorting plastics into 10-12 grades and supplying "
+                     "recyclers; World Bank-funded plastic recovery facility in Salghari.",
+    "Pol_waste_collection": "Own collection chain serving Kathmandu Valley institutions, "
+                            "households and embassies under a clientele model.",
+    "Pol_effectiveness": "Ban enforcement weak; only ~3-5% of daily plastic generation "
+                         "managed; policies fragmented, outdated and poorly monitored; draft "
+                         "Solid Waste Act criticised as incomplete.",
+    "Pol_effectiveness_example": "See Pol_effectiveness - quoted directly in the Coded_Data "
+                                 "cell.",
+    "Sol_lead_agency": "Repeated call to form an \"apex body\" as the guiding governing "
+                       "body for all waste/pollution management.",
+    "Sol_responsibilities": "EPR to assign producer/importer/brand-owner responsibility; "
+                            "clarify ministry roles; make municipalities accountable.",
+    "Sol_epr": "\"The first policy that should be coming is the extended producer "
+              "responsibility\"; EPR listed as \"very important\" in notes.",
+    "Sol_awareness": "Information campaigns and mandatory education from a young age; notes "
+                     "call for continuous awareness beyond project-based efforts.",
+    "Sol_segregation": "Segregation at source and proper collection value chain are "
+                       "foundational challenges requiring policy support.",
+    "Sol_upcycling": "Support community upcycling/recycling groups and low-value-plastic "
+                     "product development.",
+    "Sol_recycling": "Decentralised material recovery and recycling facilities in "
+                     "high-generation clusters; standardise recycled products to build "
+                     "markets.",
+    "Sol_education": "Embed waste management in school curricula; facility-based learning "
+                     "at MRFs.",
+    "Sol_capacity": "Human-resource development and capacity-building for waste collectors, "
+                    "manufacturers and municipalities.",
+    "Sol_RD": "More research on burning impacts, microplastics in rivers/drinking/"
+              "irrigation water and plastics in agricultural soil.",
+    "Sol_finance": "Monetary incentives for private collectors/processors; investment in "
+                   "decentralised collection and MRF infrastructure.",
+    "Sol_infrastructure": "Cluster-based MRFs, recycling plants, RDF/cement-industry "
+                           "co-processing for non-recyclables, and technology transfer.",
+    "Sol_subsitutes": "Gradual shift from single-use plastics to alternatives; revive "
+                      "leaf plates and cotton/towel bags.",
+    "Sol_enforcement": "Penalise open burning; enforce EPR and collection obligations "
+                       "through rules, guidelines and incentives.",
+    "Sol_monitoring": "Municipal corporations as implementing/monitoring partners; central "
+                      "government should hold municipalities accountable.",
+    "Traditions to build on (free-hand)": "Banana leaves instead of plastic packaging and "
+                                          "cotton or towel bags instead of plastic carry "
+                                          "bags - traditional practices noted in the "
+                                          "guideline and discussed in the traditions "
+                                          "follow-up.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_students": "NA - students participate in green-school camps but are not described "
+                    "as currently responsible actors for mitigating plastic pollution "
+                    "(captured under Tar_students for future education measures).",
+    "Res_prov_government": "NA - provincial government is not mentioned in this interview.",
+    "Cul_prov_government": "NA - provincial government is not mentioned or blamed.",
+    "Cul_students": "NA - students are not mentioned as contributing to the problem.",
+    "Cul_civil_society": "NA - NGOs and donors are presented as partners, not culprits.",
+    "Cul_science": "NA - researchers are not blamed for the situation.",
+    "Cul_edu_institutions": "NA - schools/universities are partners in awareness, not "
+                             "culprits.",
+    "Tar_prov_government": "NA - provincial government is not mentioned as a target group.",
+    "Tar_civil_society": "NA - NGOs are partners rather than primary policy targets in this "
+                         "interview.",
+    "Tar_science": "NA - while more research is called for, researchers/scientific "
+                   "institutions are not named as a primary target group for mitigation "
+                   "measures.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
     "NPL_3": ktm_expl,
     "NPL_4": dhulikhel_expl,
+    "NPL_5": doco_expl,
     "NPL_7": rsct_expl,
 }
 
 # ---------------------------------------------------------------------------
 # 3b. MASTER INTERVIEW LIST (full 32-interview numbering supplied by the
-#     research team). NPL_1, NPL_2, NPL_3, NPL_4 and NPL_7 have source
+#     research team). NPL_1, NPL_2, NPL_3, NPL_4, NPL_5 and NPL_7 have source
 #     material (interview notes/transcripts) provided so far and are fully
 #     coded above; all other IDs are included as placeholder rows (Country/
 #     ID/Actortype/Notes filled in from the master list, every substantive
@@ -1993,6 +2360,7 @@ CODED_ROWS = {
     "NPL_2": ganesh,
     "NPL_3": ktm,
     "NPL_4": dhulikhel,
+    "NPL_5": doco,
     "NPL_7": rsct,
 }
 
@@ -2033,7 +2401,7 @@ MASTER_LIST = [
 ]
 
 NAMES = {iid: f"{label} - {affil}" for iid, label, affil, _ in MASTER_LIST}
-# Fill in the fuller descriptive names for the five fully-coded interviews.
+# Fill in the fuller descriptive names for the six fully-coded interviews.
 NAMES["NPL_1"] = ("Department of Environment - Deepak Diwali, Deputy Director, Pollution "
                    "Control (air & plastics), Kathmandu (Interview no. 5, 23 June 2025)")
 NAMES["NPL_2"] = ("Former Minister, Government of Nepal - Ganesh Shah, Kathmandu "
@@ -2042,6 +2410,8 @@ NAMES["NPL_3"] = ("Kathmandu Metropolitan City (KMC), Solid Waste Management Off
                    "Municipality Officer(s), Kathmandu (23 June)")
 NAMES["NPL_4"] = ("Dhulikhel Municipality - Mayor Ashok Kumar Byanju Shrestha, "
                    "Dhulikhel (22 June 2025, Kathmandu interview no. 4)")
+NAMES["NPL_5"] = ("Doco Recyclers - Private Sector waste-management/recycling company, "
+                   "Kathmandu Valley (23 June 2025)")
 NAMES["NPL_7"] = ("Rural Self-Reliance Development Center / RSCT (savings-and-credit "
                    "cooperative network, urban plastics programme)")
 
@@ -2232,9 +2602,9 @@ readme_lines = [
      "order follow exactly the variable list supplied by the research team.", False),
     ("", False),
     ("IMPORTANT - which rows are actually coded:", True),
-    ("  Only 5 of the 32 rows are coded from real interview material (notes and/or "
-     "transcripts) that has been provided so far: NPL_1, NPL_2, NPL_3, NPL_4 and NPL_7 (see "
-     "below). The remaining 27 rows are PLACEHOLDERS: they reserve the correct ID, Country "
+    ("  Only 6 of the 32 rows are coded from real interview material (notes and/or "
+     "transcripts) that has been provided so far: NPL_1, NPL_2, NPL_3, NPL_4, NPL_5 and "
+     "NPL_7 (see below). The remaining 26 rows are PLACEHOLDERS: they reserve the correct "
      "and a best-guess Actortype (inferred only from the short affiliation label supplied "
      "by the research team, e.g. \"Household\" -> households), but every substantive "
      "variable is left as NA because no interview notes/transcript for that respondent has "
@@ -2268,6 +2638,11 @@ readme_lines = [
      "both the interview guideline notes and the full verbatim transcript. A member of "
      "the mayor's team also contributed additional remarks on policy fragmentation and "
      "constitutional responsibilities.", False),
+    ("  5. NPL_5 - Doco Recyclers, private-sector waste-management/recycling company "
+     "(dry waste and e-waste; MRFs at Sanothimi and Salghari), Kathmandu Valley (23 June "
+     "2025). Two respondents in the transcript (names not given). Coded from both the "
+     "interview guideline notes and the full verbatim transcript. Note: Q4a/Q4b "
+     "ministry-template content in the notes was excluded (see Notes cell).", False),
     ("  7. NPL_7 - Rural Self-Reliance Development Center (RSCT), a savings-and-credit "
      "cooperative network (est. 1991) that recently expanded into urban plastics work; per "
      "the master list, the interviewee is Narayan Nirola. Coded from the hand-written "
@@ -2275,7 +2650,7 @@ readme_lines = [
      "then NPL_2, then NPL_3 in earlier versions of this workbook as other interviews were "
      "added; it has now been renumbered to NPL_7 per the research team's master list.", False),
     ("", False),
-    ("Placeholder (not yet coded) interviews: NPL_5, NPL_6, NPL_8-NPL_32 - see the "
+    ("Placeholder (not yet coded) interviews: NPL_6, NPL_8-NPL_32 - see the "
      "master numbering list below and each row's 'Notes' cell in 'Coded_Data'.", False),
     ("", False),
     ("Sheets in this workbook:", True),
@@ -2296,8 +2671,8 @@ readme_lines = [
      "'Coded_Data'.", False),
     ("", False),
     ("Colour key (interview -> row colour): fully-coded interviews (NPL_1, NPL_2, NPL_3, "
-     "NPL_4, NPL_7) use a stronger/brighter tint of their colour; the 27 not-yet-coded "
-     "placeholder interviews use a paler, greyed-down tint of their colour so they are "
+     "NPL_4, NPL_5, NPL_7) use a stronger/brighter tint of their colour; the 26 "
+     "not-yet-coded placeholder interviews use a paler, greyed-down tint of their colour so "
      "distinguishable as \"pending\" at a glance. Colours are spread evenly across the "
      "colour wheel in master-list order (NPL_1 through NPL_32) so adjacent IDs are easy to "
      "tell apart.", False),
@@ -2310,11 +2685,11 @@ readme_lines = [
 ] + [
     ("", False),
     ("Coding conventions:", True),
-    ("  - 'yes' / 'no' / 'NA': for the 5 fully-coded interviews, NA means the topic was not "
+    ("  - 'yes' / 'no' / 'NA': for the 6 fully-coded interviews, NA means the topic was not "
      "addressed in that interview (no evidence either way); 'no' is only used where the "
      "interviewee explicitly said the item is not an issue / not in place (e.g. Pol_epr = "
-     "no for all five coded interviews where EPR was discussed or clearly absent). For the "
-     "27 placeholder interviews, NA means no source material has been provided yet (see "
+     "no for all coded interviews where EPR was discussed or clearly absent). For the 26 "
+     "placeholder interviews, NA means no source material has been provided yet (see "
      "above).", False),
     ("  - Free-hand fields (Impacts, NPF_victims/villains/hero, Discretion, "
      "Pol_effectiveness_example, 'Traditions to build on') contain short descriptive text "
