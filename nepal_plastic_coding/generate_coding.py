@@ -7,24 +7,20 @@ variables, Res_/Cul_/Tar_ actor grids, Actor_role, Discretion,
 implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
-The workbook covers the FULL 32-interview master numbering supplied by the
-research team (see MASTER_LIST below), one row per ID from NPL_1 to NPL_32,
-in order. Seven interviews have source material (notes/transcripts)
-available so far and are therefore fully coded: NPL_1 (Department of
-Environment), NPL_2 (Former Minister Ganesh Shah), NPL_3 (KTM Municipal
-Office / Kathmandu Metropolitan City), NPL_4 (Mayor of Dhulikhel Municipality),
-NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant Owner) and NPL_7
-(Rural Self-Reliance Development Center / RSCT). The remaining 25 rows are
-explicit placeholders (Country/ID/best-guess Actortype/Notes only, all
-substantive variables NA) reserving the correct ID until their interview
-material is supplied.
+The workbook contains one row per fully coded interview (currently NPL_1
+through NPL_8). Unfilled placeholder rows are not included. Interviews
+coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
+Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
+Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
+Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
+(Ministry of Urban Development).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
-  3. Coded_Data          - wide-format matrix: one row per interview (NPL_1
-                           through NPL_32, in order), one column per COLUMNS
+  3. Coded_Data          - wide-format matrix: one row per coded interview
+                           (NPL_1 through NPL_8, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -43,8 +39,7 @@ Coding conventions:
   - yes / no / NA -> for fully-coded interviews, NA means the topic was not
     addressed in that interview (absence of evidence); "no" is only used
     when the interviewee explicitly indicated the item is not an issue / not
-    currently in place. For placeholder interviews, NA means no source
-    material has been supplied yet.
+    currently in place.
   - Free-hand fields contain short descriptive text, or "NA" if not
     discussed/not yet coded.
   - Actor_role: 1 = formulation/policy actor, 2 = managerial/organisational
@@ -1125,7 +1120,142 @@ hotel.update({
              "and municipal measures as relayed by the interview team.",
 })
 
-INTERVIEWS = [doe, ganesh, rsct, ktm, dhulikhel, doco, hotel]
+# --- NPL_8: Ministry of Urban Development (MoUD) ------------------------------
+moud = blank_row()
+moud.update({
+    "Country": "Nepal",
+    "ID": "NPL_8",
+    "Actortype": "nat_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "rivers and canals (flow disturbed), drainage/sewer line blockage, "
+               "landfills/dumping sites (Bancharedanda/Bonsai centre designed for 20 years "
+               "but filled in 3–4 years), aesthetics/tourism, health (indirect microplastics "
+               "via livestock; meat, blood and liquids carried in black plastic bags), "
+               "agriculture (productivity decreasing), leachate/stench/flies at dumps, "
+               "inter-municipal/transboundary social conflict",
+    NPF_VICTIMS_COL: "households and the general public (public-health risks from carrying "
+                     "meat, blood and liquids in low-quality black plastic; customary "
+                     "practices now harmful under higher population density); communities "
+                     "near landfill/dumping sites (\"weak people\" facing health hazards, "
+                     "stench, flies, leachate); farmers/agriculture (productivity "
+                     "decreasing due to plastic); tourism and urban aesthetics (old cities "
+                     "and emerging towns facing nuisance); rivers and aquatic environments",
+    "NPF_villains": "the general public/households (convenience-driven plastic use, no "
+                    "source-segregation culture, indiscriminate disposal, historically "
+                    "throwing waste from doors/windows while expecting municipalities to "
+                    "clean up); plastic producers and the wider manufacturing/packaging "
+                    "industry (\"whole business\" — polluter's-pay principle exists but "
+                    "implementation is weak); municipalities that operate sanitary landfills "
+                    "as open dumping sites (Bancharedanda example deterring new sites) and "
+                    "dump waste across municipal boundaries; the historical policy "
+                    "stand-off framed as a \"war between people and policy makers\"",
+    "NPF_hero": "Ministry of Urban Development / central government (drafting the new Solid "
+               "Waste Management Act with EPR, PPP, burning ban, three-tier roles); "
+               "provincial/central support for landfill land acquisition; private sector "
+               "under PPP with sample municipal agreements; MoUD training centre and "
+               "planned municipal software system; circular-economy and source-segregation "
+               "approach; NGOs/researchers/experts invited to co-create policy",
+
+    "Relevance_international_pol": "yes",
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_prov_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_science": "yes",
+    "Res_households": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_households": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_loc_government": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+    "Tar_edu_institutions": "yes",
+
+    "Actor_role": "1",
+    "Discretion": "MoUD (cabinet-delegated authority) drafts the Solid Waste Management Act, "
+                 "regulations, PPP sample agreements, plastics guidelines, municipal "
+                 "monitoring software, and coordinates international donor partners — "
+                 "formulation/policy discretion at national level.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_ban": "yes",
+    "Pol_capacity": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Pre-2015 Solid Waste Management Act \"weaknesses in the "
+                                 "federal governance context\"; no specific national plastic "
+                                 "policy despite plastic being \"hazardous waste\" in "
+                                 "classification; Bancharedanda sanitary landfill operated "
+                                 "as a dumping site (20-year design filled in 3–4 years); "
+                                 "polluter's-pay principle used but \"weak in implementation\"; "
+                                 "respondent could not cite any assessment of the existing "
+                                 "40-micron ban notification.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_epr": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_RD": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Historical pet-to-khet (stomach-to-field) "
+                                          "sustainable cycle between consumption and land; "
+                                          "leaf plates instead of plastic; customary organic "
+                                          "waste practices that were harmless at low "
+                                          "population density; emerging household practice "
+                                          "of separate decomposable and non-decomposable "
+                                          "dustbins; new generation already disposing waste "
+                                          "properly in dustbins.",
+    "Notes": "Master list label: \"8. Urban Development Ministry/ Kamal Adhikar\", "
+             "affiliation: Ministry of Urban Development (MoUD), Government of Nepal. "
+             "Internal project label: \"Interview 2\". Interview date: 23 June 2025 "
+             "(10:55am–12:00pm). Participants: Kamal Adhikar (Senior Sociologist), "
+             "Nawaraj/Nawrag (Joint Secretary, 29 years in service), Senior Division "
+             "Engineer, and additional ministry staff (multiple voices in transcript: "
+             "UB, UB2, UB3–UB6). Coded from both the interview guideline notes and the "
+             "full verbatim transcript. NPF fields: victims, villains and hero are not "
+             "named using explicit NPF narrative labels in the interview, but all three "
+             "are clearly implied through attributed harms, blamed actors and proposed "
+             "problem-solvers (see Coding_Explanations). Draft Solid Waste Management Act "
+             "on MOUD website for consultation; separate plastics-only policy planned "
+             "after the act. \"EPI\" in transcript treated as EPR (extended producer "
+             "responsibility). Bonsai/Bancharedanda landfill name varies in transcript.",
+})
 
 # ---------------------------------------------------------------------------
 # 3. EXPLANATIONS (long format) - quote/reasoning behind each coded value.
@@ -2758,6 +2888,190 @@ hotel_expl = {
     "Tar_science": "NA - research needs mentioned but scientists not named as target group.",
 }
 
+moud_expl = {
+    "Actortype": "Interview conducted at the Ministry of Urban Development (MoUD), "
+                 "Government of Nepal — a national government ministry with cabinet-delegated "
+                 "authority to formulate solid-waste policy, acts and regulations.",
+    "Problem_awareness_pop": "Senior sociologist: public \"don't care about the future public "
+                             "health and environmental implications\"; people feel plastic "
+                             "bags are convenient; no culture of source segregation; waste "
+                             "traditionally thrown from doors/windows.",
+    "Problem_awareness_pol": "Local authorities confused about onboarding private sector, "
+                            "land acquisition and donor support; elected municipal leaders "
+                            "\"don't know the technical know-how about solid waste\" without "
+                            "MoUD backing.",
+    "Problem_concerndness": "\"Nepal government is very serious about this plastic waste\"; "
+                            "plastic is the majority component disturbing society in urban "
+                            "areas; Bagmati cleaning campaign running 10 years because "
+                            "plastic is the majority problem.",
+    "Problem_littering": "Plastic thrown \"everywhere... here and there, indiscriminately\"; "
+                         "rivers in Kathmandu and other cities used as dumping sites; waste "
+                         "at start/end of new municipalities and on riverbanks.",
+    "Problem_consumption": "\"The life of people is closely attached with the life of the "
+                           "plastic\"; consumeristic culture and modernization changed waste "
+                           "composition from organic to plastic.",
+    "Problem_recycling": "Circular economy promoted but requires source segregation; "
+                         "recycling clauses in policy but no dedicated plastic policy yet.",
+    "Problem_waste_mgmt": "Sanitary landfills operated as dumping sites (Bancharedanda filled "
+                          "in 3–4 years vs. 20-year design); inter-municipal waste conflicts.",
+    "Problem_production": "Discussion of producers across the \"whole business\" — plastic "
+                          "carriers, packaging, bottled water — and weak polluter's-pay "
+                          "implementation.",
+    "Problem_alternatives": "Separate plastics-only policy planned; R&D for plant-based bags "
+                            "(20–30 NPR/kg price gap); historical leaf plates vs. plastic.",
+    "Problem_waste_segregation": "\"The main challenge is the separation of the waste... "
+                                 "source segregation\"; without it plastic management is very "
+                                 "difficult.",
+    "Impacts": "Rivers/canals and sewer lines blocked; landfill lifespan collapse; tourism "
+               "aesthetics; agricultural productivity loss; public health from black-plastic "
+               "food packaging; leachate, stench and flies; social conflict.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "households/public (health risks from meat/blood/liquids in black "
+                     "plastic); communities near dumps (\"weak people\", leachate, flies); "
+                     "farmers (declining productivity); tourism/urban aesthetics; rivers and "
+                     "aquatic life. No FLAG needed — victims are implied through attributed "
+                     "harms.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "the general public (convenience, no segregation, indiscriminate "
+                    "disposal); producers/manufacturing \"whole business\" (polluter's pay "
+                    "weak); municipalities running landfills as dumps and cross-border "
+                    "dumping; the people-vs-policymaker \"war\". No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+               "MoUD/central government (new act, EPR, PPP, guidelines); provincial/"
+               "central landfill support; private sector under PPP; training centre and "
+               "municipal software; circular economy; NGOs/experts. Ministry partly "
+               "positions itself as the hero. No FLAG needed.",
+    "Relevance_international_pol": "SDG and human-rights frameworks integrated into act "
+                                   "formulation; foreign investment and international donor "
+                                   "partner coordination; foreign technology for SWM.",
+    "Coordination_sectoral": "Need multi-stakeholder engagement — government, private "
+                             "collectors, producers, cooperatives, communities; MoUD "
+                             "coordinates international donors.",
+    "Coordination_levels": "New act defines central, provincial and local roles; provincial/"
+                           "central help local government acquire landfill land; "
+                           "inter-municipal waste conflicts.",
+    "Unclear_responsibilities": "\"War between people and policy makers\" on who is "
+                                "responsible; local governments confused on private-sector "
+                                "onboarding, land and donors until act is promulgated.",
+    "Res_nat_government": "MoUD develops policies, acts, regulations and guidelines; "
+                          "coordinates international donor partners.",
+    "Res_prov_government": "Provincial government role defined in new act; helps acquire "
+                           "central landfill land when municipalities cannot.",
+    "Res_loc_government": "Constitutionally responsible under Local Self-Governance Act "
+                          "2016 for solid waste within municipal areas.",
+    "Res_private_sector": "Private companies collect household waste; PPP model with sample "
+                          "municipal agreements; foreign investors welcomed.",
+    "Res_science": "University people and researchers consulted in act formulation; "
+                   "welcomes expert/NGO ideas.",
+    "Res_households": "Households generate waste; source segregation is foundational.",
+    "Res_private_companies": "Producers/manufacturing industries across packaging and "
+                             "plastic products; commercial activities generate byproducts.",
+    "Cul_households": "Public perception prioritises convenience over environmental health; "
+                      "no segregation culture; NIMBY while still dumping waste.",
+    "Cul_loc_government": "Sanitary landfills operated as dumping sites; confusion and "
+                          "lack of political will at municipal leadership level.",
+    "Cul_private_companies": "Producers pollute but polluter's-pay \"weak in implementation\"; "
+                             "industries influential through money.",
+    "Tar_loc_government": "Municipalities must implement act, prepare concepts, manage "
+                          "regional sanitary landfills; need orientation and technical "
+                          "support from MoUD.",
+    "Tar_private_sector": "Private waste collectors must register and operate under PPP "
+                          "agreements; foreign/domestic investors targeted.",
+    "Tar_households": "Household habits must change (20–25 years cited for habit change); "
+                      "source segregation essential.",
+    "Tar_private_companies": "Producers/manufacturing industries to be engaged after act "
+                             "finalisation for extended producer/polluter responsibility.",
+    "Tar_edu_institutions": "University people consulted; training centre to develop "
+                            "orientation packages for municipalities.",
+    "Actor_role": "MoUD staff speak as national policy formulators (drafting the Solid Waste "
+                 "Management Act, regulations, guidelines, PPP templates — role 1). They do "
+                 "not describe themselves as street-level implementers.",
+    "Discretion": "MoUD chooses act content, PPP sample agreements, guideline scope, "
+                  "stakeholder consultation process, and municipal monitoring software "
+                  "design — significant policy-formulation discretion.",
+    "Monitoring": "No monitoring technology for segregation patterns; no assessment of "
+                  "40-micron ban cited; planned municipal software to track segregation, "
+                  "transport and disposal.",
+    "Financial_resources": "Land acquisition remains difficult; earmarked environmental "
+                           "budgets may go unused/frozen at local level; circular economy "
+                           "needs financial support.",
+    "Research": "Welcomes expert/NGO ideas and international evidence; lacks Nepal-specific "
+               "plastic impact studies; separate plastics policy in planning.",
+    "Infrastructure": "Landfill land procurement difficult (Land Acquisition Act separate); "
+                      "Bancharedanda deterrent effect; transfer stations exist in Kathmandu "
+                      "but landfill management failing.",
+    "Capacity": "Municipal elected leaders lack technical know-how; MoUD training centre "
+               "and orientation packages proposed; 20–25 years for habit change cited.",
+    "Enforcement": "Polluter's-pay weak; burning to be strictly prohibited in new act; "
+                   "private collectors currently unlicensed in practice.",
+    "Pol_epr": "EPR proposed in draft new act but \"hasn't been enacted yet\"; currently no.",
+    "Pol_awareness": "Bagmati cleaning campaign (~10 years); planned provincial/district "
+                     "consultations and orientations on the new act.",
+    "Pol_ban": "Government banned certain 10-micron plastics; new act strictly prohibits "
+              "burning any solid waste; heard plan to increase micron threshold to 100.",
+    "Pol_capacity": "Department of Urban Development and Building Construction training "
+                    "centre to develop orientation packages for municipalities.",
+    "Pol_recycling": "Segregation and recycling provisions in solid waste policy; circular "
+                     "economy as policy goal.",
+    "Pol_waste_collection": "Act covers collection, transportation and disposal; PPP opens "
+                            "door for private-sector collection.",
+    "Pol_effectiveness": "Pre-2015 act inadequate for federal system; no dedicated plastic "
+                         "policy; landfills mismanaged; polluter's-pay weak; ban impact "
+                         "unassessed.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "MoUD as central coordinating ministry; council of ministers approval "
+                       "path for donor partnerships.",
+    "Sol_responsibilities": "Clarify three-tier government roles in new act; EPR for "
+                            "producers; register private collectors.",
+    "Sol_epr": "EPR \"essential\" and proposed in draft act for those who generate plastic.",
+    "Sol_awareness": "Province/district consultations and orientations; not just publishing "
+                     "act on website.",
+    "Sol_segregation": "Source segregation as primary solution enabling circular economy.",
+    "Sol_recycling": "Circular economy and recycling after segregation; separate plastics "
+                     "policy later.",
+    "Sol_education": "Training/orientation packages via MoUD training centre; gather "
+                     "municipal feedback.",
+    "Sol_capacity": "Technical backstopping of municipalities; capacity development for "
+                    "equity and localization.",
+    "Sol_RD": "R&D for plant-based plastic alternatives; foreign technology investment.",
+    "Sol_finance": "PPP and foreign investment; provincial/central help for landfill land.",
+    "Sol_infrastructure": "Regional sanitary landfill sites covering multiple municipalities; "
+                          "waste-to-energy with minimal pollution mentioned.",
+    "Sol_enforcement": "Strict ban on burning solid waste with punishment in new act.",
+    "Sol_monitoring": "Planned municipal software tracking segregation, transport, disposal "
+                      "and landfill status.",
+    "Traditions to build on (free-hand)": "Pet-to-khet cycle; leaf plates; organic customary "
+                                          "waste practices at low population density; "
+                                          "separate household dustbins for decomposable vs. "
+                                          "non-decomposable waste.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_students": "NA - students not mentioned as currently responsible actors.",
+    "Res_civil_society": "NA - NGOs mentioned as policy contributors, not as current "
+                         "responsible mitigation actors (captured under NPF_hero as "
+                         "collaborators).",
+    "Res_edu_institutions": "NA - universities consulted on act drafting but not described "
+                            "as ongoing responsible actors.",
+    "Cul_nat_government": "NA - interviewees ARE the national government; past act weaknesses "
+                          "discussed but culpability attributed mainly to public, producers "
+                          "and local implementation gaps.",
+    "Cul_prov_government": "NA - provincial government not blamed; seen as future helper on "
+                           "land acquisition.",
+    "Cul_students": "NA - not mentioned.",
+    "Cul_private_sector": "NA - private waste collectors targeted for regulation, not blamed "
+                          "as primary culprits (contrast with producer industry).",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Tar_nat_government": "NA - interviewees are the national government setting policy, not "
+                          "a target group of their own measures.",
+    "Tar_prov_government": "NA - provincial government is a partner role, not a primary "
+                           "target group.",
+    "Tar_students": "NA - not named as a target group.",
+    "Tar_civil_society": "NA - NGOs welcomed as experts but not named as primary policy "
+                         "targets.",
+    "Tar_science": "NA - researchers consulted but not named as primary target group.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -2766,18 +3080,12 @@ EXPLANATIONS = {
     "NPL_5": doco_expl,
     "NPL_6": hotel_expl,
     "NPL_7": rsct_expl,
+    "NPL_8": moud_expl,
 }
 
 # ---------------------------------------------------------------------------
-# 3b. MASTER INTERVIEW LIST (full 32-interview numbering supplied by the
-#     research team). NPL_1, NPL_2, NPL_3, NPL_4, NPL_5, NPL_6 and NPL_7 have source
-#     material (interview notes/transcripts) provided so far and are fully
-#     coded above; all other IDs are included as placeholder rows (Country/
-#     ID/Actortype/Notes filled in from the master list, every substantive
-#     variable left as NA) so the workbook's structure and numbering match
-#     the full study design. Placeholder rows must NOT be treated as
-#     completed coding - they exist purely to reserve the correct ID/row
-#     and are clearly flagged as such in their 'Notes' cell.
+# 3b. Coded interview registry — only fully coded interviews are included in
+#     the workbook (no placeholder rows).
 # ---------------------------------------------------------------------------
 CODED_ROWS = {
     "NPL_1": doe,
@@ -2787,46 +3095,28 @@ CODED_ROWS = {
     "NPL_5": doco,
     "NPL_6": hotel,
     "NPL_7": rsct,
+    "NPL_8": moud,
 }
 
-# (id, label as given by the research team, affiliation, inferred Actortype)
-MASTER_LIST = [
-    ("NPL_1", "1. Environmental Department/ Deepak Diwal", "Department of Environment", "nat_government"),
-    ("NPL_2", "2. Former Minister/ Ganesh Shah", "Former Minister, Government of Nepal", "nat_government"),
-    ("NPL_3", "3. KTM Municipal Office", "Kathmandu Metropolitan City - Environment / Solid Waste Management Division", "loc_government"),
-    ("NPL_4", "4. Mayor Dhulikhel/ Ashok Kumar Byanju Shrestha", "Dhulikhel Municipality (Mayor's Office)", "loc_government"),
-    ("NPL_5", "5. Private Sector/ Doco Recyclers", "Doco Recyclers", "private_sector"),
-    ("NPL_6", "6. Restaurant and Hotel Owner Dhulikhel_Combined", "Dhulikhel Hotel / Restaurant", "private_companies"),
-    ("NPL_7", "7. Rural Self-Reliance Development Center/ Narayan Nirola", "Rural Self-Reliance Development Center", "civil_society"),
-    ("NPL_8", "8. Urban Development Ministry/ Kamal Adhikar", "Ministry of Urban Development, Government of Nepal", "nat_government"),
-    ("NPL_9", "9. Dhulikhel Ward no.1", "Dhulikhel Municipality - Ward No. 1", "loc_government"),
-    ("NPL_10", "10. Dhulikhel Ward no.7", "Dhulikhel Municipality - Ward No. 7", "loc_government"),
-    ("NPL_11", "11. Private Sector Contractor/ SafaUrja Utpadan", "Safa Urja Utpadan", "private_sector"),
-    ("NPL_12", "12. Ministry for Urban Planning", "Ministry of Urban Development", "nat_government"),
-    ("NPL_13", "13. Creasion", "Center for Research and Sustainable Development in Nepal", "civil_society"),
-    ("NPL_14", "14. Hotel Silent Park/ Rajesh Aryal", "Hotel Silent Park", "private_companies"),
-    ("NPL_15", "15. Kathmandu Metropolitan City/ Suna Maya Margen", "Kathmandu Metropolitan City - Environment Division / Public Education & Inspection", "loc_government"),
-    ("NPL_16", "16. Kathmandu Ward no.6", "Kathmandu Metropolitan City - Ward No. 6", "loc_government"),
-    ("NPL_17", "17. Kathmandu Ward no.7/ Mr. Romy Prasad Shrestha", "Kathmandu Metropolitan City - Ward No. 7", "loc_government"),
-    ("NPL_18", "18. Nepal Waste Manager", "Nepal Waste Management", "private_sector"),
-    ("NPL_19", "19. TAAN Trekking Association", "TAAN Trekking Association", "civil_society"),
-    ("NPL_20", "20. Chitwan Environmental Officer", "Municipal Environmental Office", "loc_government"),
-    ("NPL_21", "21. Dhulikhel Household no.1", "Household", "households"),
-    ("NPL_22", "22. Dhulikhel Household no.2", "Household", "households"),
-    ("NPL_23", "23. Dhulikhel Shopowner no.3", "Shopowner", "private_companies"),
-    ("NPL_24", "24. Dhulikhel Household no.4", "Household", "households"),
-    ("NPL_25", "25. Dhulikhel Household no.5", "Household", "households"),
-    ("NPL_26", "26. Dhulikhel Restaurant no.6", "Restaurant", "private_companies"),
-    ("NPL_27", "27. Dhulikhel Household out of town no.7", "Household", "households"),
-    ("NPL_28", "28. Chitwan Ward", "Local Government (Municipality level)", "loc_government"),
-    ("NPL_29", "29. Kathmandu Former UNEP member no.8", "Former UNDP & UNEP member", "civil_society"),
-    ("NPL_30", "30. Kathmandu Household Ward23 no.9", "Household woman", "households"),
-    ("NPL_31", "31. Kathmandu Shopowner Babinasa no.10", "Shopowner in Babinasa", "private_companies"),
-    ("NPL_32", "32. Chisapani Tour Guide", "Local tour guide", "private_companies"),
+# Master-list order for coded interviews only (NPL_1 through NPL_8).
+CODED_ORDER = [
+    "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8",
 ]
 
-NAMES = {iid: f"{label} - {affil}" for iid, label, affil, _ in MASTER_LIST}
-# Fill in the fuller descriptive names for the seven fully-coded interviews.
+# (id, label as given by the research team, affiliation)
+CODED_META = {
+    "NPL_1": ("1. Environmental Department/ Deepak Diwal", "Department of Environment"),
+    "NPL_2": ("2. Former Minister/ Ganesh Shah", "Former Minister, Government of Nepal"),
+    "NPL_3": ("3. KTM Municipal Office", "Kathmandu Metropolitan City - Environment / Solid Waste Management Division"),
+    "NPL_4": ("4. Mayor Dhulikhel/ Ashok Kumar Byanju Shrestha", "Dhulikhel Municipality (Mayor's Office)"),
+    "NPL_5": ("5. Private Sector/ Doco Recyclers", "Doco Recyclers"),
+    "NPL_6": ("6. Restaurant and Hotel Owner Dhulikhel_Combined", "Dhulikhel Hotel / Restaurant"),
+    "NPL_7": ("7. Rural Self-Reliance Development Center/ Narayan Nirola", "Rural Self-Reliance Development Center"),
+    "NPL_8": ("8. Urban Development Ministry/ Kamal Adhikar", "Ministry of Urban Development, Government of Nepal"),
+}
+
+NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
+# Fuller descriptive names for Coding_Explanations sheet.
 NAMES["NPL_1"] = ("Department of Environment - Deepak Diwali, Deputy Director, Pollution "
                    "Control (air & plastics), Kathmandu (Interview no. 5, 23 June 2025)")
 NAMES["NPL_2"] = ("Former Minister, Government of Nepal - Ganesh Shah, Kathmandu "
@@ -2841,40 +3131,16 @@ NAMES["NPL_6"] = ("Dhulikhel Hotel/Restaurant - Mr. Swasti Byanju, hotel owner, 
                    "Dhulikhel (22 June 2025, Kathmandu interview no. 3)")
 NAMES["NPL_7"] = ("Rural Self-Reliance Development Center (RSDC/RSCT) - Narayan Nirola "
                    "(project coordinator) + colleague, Kathmandu (23 June 2025)")
+NAMES["NPL_8"] = ("Ministry of Urban Development - Kamal Adhikar (Senior Sociologist), "
+                   "Nawaraj (Joint Secretary) + colleagues, Kathmandu (23 June 2025, "
+                   "Interview 2)")
 
-
-def placeholder_row(iid, label, affiliation, actortype):
-    row = blank_row()
-    row.update({
-        "Country": "Nepal",
-        "ID": iid,
-        "Actortype": actortype,
-        "Notes": f"PLACEHOLDER ROW - not yet coded. Master list entry: \"{label}\", "
-                 f"affiliation: \"{affiliation}\". No interview notes or transcript for "
-                 f"this respondent have been provided to the coder yet; Actortype above is "
-                 f"a best-guess classification based on the affiliation label only. All "
-                 f"other variables are left as NA pending the actual interview material. "
-                 f"Do not interpret the NA values in this row as findings - they simply "
-                 f"reflect that this interview has not been coded yet.",
-    })
-    return row
-
-
-ALL_ROWS = {}
-for iid, label, affiliation, actortype in MASTER_LIST:
-    if iid in CODED_ROWS:
-        ALL_ROWS[iid] = CODED_ROWS[iid]
-    else:
-        ALL_ROWS[iid] = placeholder_row(iid, label, affiliation, actortype)
-
-INTERVIEWS = [ALL_ROWS[iid] for iid, _, _, _ in MASTER_LIST]
+INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
 # ---------------------------------------------------------------------------
 # 3c. Columns for which an explanation must ALWAYS be recorded (per the
 #     research team's explicit instruction), even when the coded value is
-#     NA. For fully-coded interviews without a specific reason already
-#     written above, and for all placeholder interviews, a clear fallback
-#     explanation is generated below.
+#     NA.
 # ---------------------------------------------------------------------------
 ALWAYS_EXPLAIN_COLUMNS = [
     "NPF_victims", "NPF_villains", "NPF_hero",
@@ -2890,17 +3156,10 @@ ALWAYS_EXPLAIN_COLUMNS = [
     "Actor_role", "Discretion", "Capacity", "Pol_effectiveness", "Pol_effectiveness_example",
 ]
 
-PLACEHOLDER_EXPLANATION = ("No interview notes or transcript have been provided for this "
-                            "respondent yet, so this variable could not be coded and is left "
-                            "as NA. This is a data-availability gap, not a coding judgement.")
-
-
 def get_explanation(iid, var, value):
     expl = EXPLANATIONS.get(iid)
     if expl and var in expl:
         return expl[var]
-    if iid not in CODED_ROWS:
-        return PLACEHOLDER_EXPLANATION
     return f"NA - not addressed in this interview (no mention found for {var})."
 
 
@@ -2930,31 +3189,22 @@ def style_header_row(ws, row, ncols):
 # 4a. One distinct colour per interview, used to fill each interview's rows
 #     in both Coded_Data and Coding_Explanations so interviews are easy to
 #     tell apart visually. Colours are spread evenly around the HSL colour
-#     wheel; fully-coded interviews get a slightly stronger tint, while
-#     not-yet-coded placeholder interviews get a light grey-tinted version
-#     so they read as visually "unfinished".
+#     wheel.
 # ---------------------------------------------------------------------------
 import colorsys
 
 
-def make_color_map(ids, coded_ids):
+def make_color_map(ids):
     n = len(ids)
     colors = {}
     for i, iid in enumerate(ids):
         hue = i / n
-        if iid in coded_ids:
-            # Fully-coded interviews: clearly saturated, distinct colours.
-            r, g, b = colorsys.hls_to_rgb(hue, 0.78, 0.65)
-        else:
-            # Placeholder (not-yet-coded) interviews: very pale, low-saturation
-            # tint of the same hue, so they read as "pending" at a glance.
-            r, g, b = colorsys.hls_to_rgb(hue, 0.95, 0.35)
+        r, g, b = colorsys.hls_to_rgb(hue, 0.78, 0.65)
         colors[iid] = "{:02X}{:02X}{:02X}".format(int(r * 255), int(g * 255), int(b * 255))
     return colors
 
 
-ALL_IDS = [iid for iid, _, _, _ in MASTER_LIST]
-COLOR_MAP = make_color_map(ALL_IDS, set(CODED_ROWS.keys()))
+COLOR_MAP = make_color_map(CODED_ORDER)
 
 
 # --- Sheet: Codebook (matches Coded_Data columns exactly) ---
@@ -3024,25 +3274,12 @@ readme_lines = [
     ("Nepal Plastic Pollution Governance - Interview Coding", True),
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
-     "interview list. 'Coded_Data' has one row for every ID in the research team's full "
-     "32-interview master numbering (NPL_1-NPL_32), in that exact order. Column names and "
-     "order follow exactly the variable list supplied by the research team.", False),
+     "interview list. 'Coded_Data' contains one row per fully coded interview "
+     "(NPL_1 through NPL_8, in that order). Unfilled placeholder rows are not included. "
+     "Column names and order follow exactly the variable list supplied by the research team.",
+     False),
     ("", False),
-    ("IMPORTANT - which rows are actually coded:", True),
-    ("  Only 7 of the 32 rows are coded from real interview material (notes and/or "
-     "transcripts) that has been provided so far: NPL_1, NPL_2, NPL_3, NPL_4, NPL_5, "
-     "NPL_6 and NPL_7 (see below). The remaining 25 rows are PLACEHOLDERS: they reserve "
-     "and a best-guess Actortype (inferred only from the short affiliation label supplied "
-     "by the research team, e.g. \"Household\" -> households), but every substantive "
-     "variable is left as NA because no interview notes/transcript for that respondent has "
-     "been supplied yet. Each placeholder row's 'Notes' cell is explicitly marked "
-     "\"PLACEHOLDER ROW - not yet coded\", and in 'Coding_Explanations' every one of the "
-     "columns the research team asked to always document (see below) carries an explicit "
-     "explanation stating that no source material is available yet - this is a "
-     "data-availability gap, not a finding of \"no\" or \"not mentioned\". Please send the "
-     "remaining interview notes/transcripts to have those rows properly coded.", False),
-    ("", False),
-    ("Fully-coded interviews:", True),
+    ("Coded interviews:", True),
     ("  1. NPL_1 - Department of Environment (DoE), Deepak Diwali, Deputy Director, "
      "Pollution Control (air & plastics), Kathmandu. Labelled \"Interview no. 5\" in the "
      "project's internal running order (23 June 2025), but coded here as NPL_1 per the "
@@ -3079,48 +3316,39 @@ readme_lines = [
      "12:52pm–1:30pm; internal interview no. 4). NGO/cooperative network (est. 1991) "
      "piloting urban plastic/waste management in Budhanilkantha. Coded from both the "
      "interview guideline notes and the full verbatim transcript.", False),
-    ("", False),
-    ("Placeholder (not yet coded) interviews: NPL_8-NPL_32 - see the "
-     "master numbering list below and each row's 'Notes' cell in 'Coded_Data'.", False),
+    ("  8. NPL_8 - Ministry of Urban Development (MoUD), Kamal Adhikar (Senior Sociologist), "
+     "Nawaraj (Joint Secretary) and colleagues including a Senior Division Engineer, "
+     "Kathmandu (23 June 2025, 10:55am–12:00pm; internal interview no. 2). Coded from "
+     "both the interview guideline notes and the full verbatim transcript. NPF victims, "
+     "villains and hero are not named using explicit NPF narrative labels but are clearly "
+     "implied through attributed harms, blamed actors and proposed problem-solvers (see "
+     "Coding_Explanations).", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per interview (NPL_1-NPL_32, in order), "
-     "one column per codebook variable, including a free-hand 'Notes' column. Each "
-     "interview's row is filled with a distinct colour (see 'Colour key' below) so "
-     "interviews are easy to tell apart at a glance.", False),
-    ("  - Coding_Explanations: long-format table giving the quote/observation (or, for "
-     "placeholder interviews, the reason no evidence exists yet) behind each coded value, "
-     "one row per Interview x Variable. As requested, the following columns ALWAYS have an "
-     "explanation row for every interview, even when the value is NA: NPF_victims, "
-     "NPF_villains, NPF_hero, all Res_/Cul_/Tar_ actor-grid columns, Actor_role, "
-     "Discretion, Capacity, Pol_effectiveness and Pol_effectiveness_example. Other columns "
-     "are documented only where a specific, non-obvious explanation was written for a "
-     "fully-coded interview. Rows are colour-matched to the same interview colour used in "
-     "'Coded_Data'.", False),
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_8, in "
+     "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
+     "interview's row is filled with a distinct colour so interviews are easy to tell apart "
+     "at a glance.", False),
+    ("  - Coding_Explanations: long-format table giving the quote/observation behind each "
+     "coded value, one row per Interview x Variable. As requested, the following columns "
+     "ALWAYS have an explanation row for every interview, even when the value is NA: "
+     "NPF_victims, NPF_villains, NPF_hero, all Res_/Cul_/Tar_ actor-grid columns, "
+     "Actor_role, Discretion, Capacity, Pol_effectiveness and Pol_effectiveness_example. "
+     "For NPF fields, explanations explicitly note when victims/villains/hero are implied "
+     "rather than named, or FLAG when none are mentioned directly or even implied. Other "
+     "columns are documented only where a specific explanation was written. Rows are "
+     "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key (interview -> row colour): fully-coded interviews (NPL_1, NPL_2, NPL_3, "
-     "NPL_4, NPL_5, NPL_6, NPL_7) use a stronger/brighter tint of their colour; the 25 "
-     "not-yet-coded placeholder interviews use a paler, greyed-down tint of their colour so "
-     "distinguishable as \"pending\" at a glance. Colours are spread evenly across the "
-     "colour wheel in master-list order (NPL_1 through NPL_32) so adjacent IDs are easy to "
-     "tell apart.", False),
-    ("", False),
-    ("Full master numbering supplied by the research team:", True),
-] + [
-    (f"  {iid.replace('NPL_', '')}. {label.split('. ', 1)[1] if '. ' in label else label} "
-     f"-> {iid} -> {affil}", False)
-    for iid, label, affil, _ in MASTER_LIST
-] + [
+    ("Colour key: each interview (NPL_1 through NPL_8) has a distinct colour spread "
+     "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
-    ("  - 'yes' / 'no' / 'NA': for the 7 fully-coded interviews, NA means the topic was not "
-     "addressed in that interview (no evidence either way); 'no' is only used where the "
-     "interviewee explicitly said the item is not an issue / not in place (e.g. Pol_epr = "
-     "no for all coded interviews where EPR was discussed or clearly absent). For the 25 "
-     "placeholder interviews, NA means no source material has been provided yet (see "
-     "above).", False),
+    ("  - 'yes' / 'no' / 'NA': NA means the topic was not addressed in that interview "
+     "(no evidence either way); 'no' is only used where the interviewee explicitly said "
+     "the item is not an issue / not in place (e.g. Pol_epr = no where EPR is proposed "
+     "but not yet enacted).", False),
     ("  - Free-hand fields (Impacts, NPF_victims/villains/hero, Discretion, "
      "Pol_effectiveness_example, 'Traditions to build on') contain short descriptive text "
      "derived directly from the interview content, or 'NA' if not discussed/not yet coded.", False),
@@ -3148,4 +3376,4 @@ ws4.column_dimensions["A"].width = 130
 wb.save(OUT_PATH)
 print(f"Workbook written to {OUT_PATH}")
 print(f"Columns: {len(COLUMNS)}")
-print(f"Interviews: {len(INTERVIEWS)} (coded: {len(CODED_ROWS)}, placeholder: {len(INTERVIEWS) - len(CODED_ROWS)})")
+print(f"Interviews: {len(INTERVIEWS)} coded (NPL_1 through NPL_{len(INTERVIEWS)})")
