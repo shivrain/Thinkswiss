@@ -8,21 +8,21 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_13). Unfilled placeholder rows are not included. Interviews
+through NPL_14). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
 Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
 (Ministry of Urban Development), NPL_9 (Dhulikhel Ward Office), NPL_10
 (Dhulikhel Ward Chairman), NPL_11 (Safa Urja Utpadan), NPL_12 (Ministry for
-Urban Planning / MoUD), NPL_13 (Creasion).
+Urban Planning / MoUD), NPL_13 (Creasion), NPL_14 (Hotel Silent Park / Rajesh Aryal).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_13, in order), one column per COLUMNS
+                           (NPL_1 through NPL_14, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -1887,6 +1887,117 @@ creasion.update({
              "and Reuse/NRR (informal/unregistered). CAP project throughput figures in "
              "source (1 t/h input vs 10 t/h granules) appear inconsistent — retained as "
              "stated. NPF fields implied, not explicit.",
+})
+
+# --- NPL_14: Hotel Silent Park - Rajesh Aryal ---------------------------------
+silent_park = blank_row()
+silent_park.update({
+    "Country": "Nepal",
+    "ID": "NPL_14",
+    "Actortype": "private_companies",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "medium",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "wildlife and domestic animals (ingest salty plastic snack wrappers while "
+               "eating food), air pollution (burning plastics), visual pollution and "
+               "overflowing bins (wind and dogs/animals scatter uncollected waste), "
+               "aluminum foil food packaging (greater disposal problem than plastic because "
+               "recyclers do not collect it), tourism/safari area cleanliness",
+    NPF_VICTIMS_COL: "wildlife and domestic animals (ingesting plastic, especially salty "
+                     "snack wrappers); the local environment and air quality (burning "
+                     "plastics); the tourist/safari area and community when bins overflow and "
+                     "waste is scattered by wind and animals",
+    "NPF_villains": "the general public/hotels (laziness, low awareness, convenience — plastic "
+                    "bags given free at shops; irregular use of cloth bags); shops/"
+                    "organizations that give plastic bags at no cost; municipal collection "
+                    "system (irregular Eco-Green bottle pickup every 15–20 days; municipal "
+                    "trucks not on time — bins overflow); hotel sector (thousands of hotels "
+                    "in Chitwan with discussion but no continuous waste-management action); "
+                    "aluminum foil packaging widely used for food wrapping without recycling "
+                    "route",
+    "NPF_hero": "nature guides (trained not to litter, collect wrappers during safari walks); "
+               "park rangers and hotel associations (awareness/training); Eco-Green "
+               "(recycles plastic bottles); informal collectors buying bottles at NPR 10–15/kg; "
+               "safari dustbin system (compulsory bucket in vehicles); ward-level awareness "
+               "and designated street cleaners (proposed); elephant-dung cleaning teams as a "
+               "model (twice daily)",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_households": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_households": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+    "Tar_civil_society": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As a hotel operator Rajesh Aryal stores plastic bottles for Eco-Green "
+                 "recycling, separates other plastics for municipal trucks, empties bottles "
+                 "before disposal, and participates in hotel-association discussions — but "
+                 "has no authority over municipal collection schedules, ward enforcement, or "
+                 "thousands of other hotels' waste practices in Chitwan.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_clean_up": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Eco-Green collects bottles every 15–20 days but \"it's "
+                                 "irregular\" and \"this time it has been long since it has "
+                                 "collected\"; municipal dustbins provided but \"if collection "
+                                 "doesn't happen on time, wind spreads the waste\"; awareness "
+                                 "and cleanup programs exist \"occasionally\" but \"there's no "
+                                 "continuous action\" — Environment Day \"only one day, doesn't "
+                                 "continue beyond that\"; \"no notices\" from municipality on "
+                                 "plastic removal.",
+
+    "Sol_awareness": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_clean_up": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_enforcement": "yes",
+
+    "Traditions to build on (free-hand)": "Cloth/fiber bags instead of plastic shopping "
+                                          "bags; clay or cement pots instead of plastic "
+                                          "flower pots.",
+    "Notes": "Master list label: \"14. Hotel Silent Park/ Rajesh Aryal\", affiliation: Hotel "
+             "Silent Park. Interviewee: Rajesh Aryal. Location: Chitwan (Sauraha/safari "
+             "tourism area). Interview date: 26 June 2025. Interviewers: Ram Devi and Deep. "
+             "Coded from the verbatim transcript and field notes attributable to this "
+             "respondent. DATA-QUALITY NOTE: the structured theme notes at the top of the "
+             "source document (PLEASE/Bio-Camp pilot, EPR nationwide, Plast Foundation, "
+             "Solid Waste Management Association, comprehensive policy challenges, etc.) do "
+             "not appear in the Rajesh Aryal transcript and were excluded as likely belonging "
+             "to a different interview bundled in the same file. One bullet note states the "
+             "respondent is \"not so much concerned about plastics; more Aluminium foil\" — "
+             "coded as medium concern reflecting this nuance. NPF fields implied, not explicit.",
 })
 
 # ---------------------------------------------------------------------------
@@ -4411,6 +4522,112 @@ creasion_expl = {
     "Tar_edu_institutions": "NA - not named.",
 }
 
+silent_park_expl = {
+    "Actortype": "Rajesh Aryal is associated with Hotel Silent Park in Chitwan — coded as "
+                 "private_companies (hotel/tourism sector).",
+    "Problem_awareness_pop": "\"Ignorance and lack of awareness\"; people lazy; plastic bags "
+                             "given free at shops; cloth bags not used consistently.",
+    "Problem_concerndness": "Acknowledges plastic pollution everywhere, burning, animal "
+                            "ingestion and need for management, but one field note states "
+                            "greater concern about aluminum foil than plastic — coded medium.",
+    "Problem_littering": "Bins overflow when collection delayed; wind spreads waste; dogs/"
+                         "animals scatter it.",
+    "Problem_consumption": "\"Plastic is easy and fast\"; shoppers use free plastic bags "
+                           "instead of cloth.",
+    "Problem_recycling": "Eco-Green bottle collection irregular; aluminum foil not taken by "
+                         "recyclers.",
+    "Problem_waste_mgmt": "Collection system problematic — not on time; no continuous hotel/"
+                          "ward management programmes.",
+    "Problem_alternatives": "Cloth/fiber bags and clay/cement pots cited as alternatives.",
+    "Problem_waste_segregation": "Bottles stored separately for Eco-Green; wrappers via "
+                                 "municipal trucks; bottles emptied before disposal.",
+    "Impacts": "Animal ingestion, burning air pollution, bin overflow, aluminum foil "
+               "disposal gap, tourism area.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "wildlife/domestic animals; environment/air; tourist area/community when "
+                     "waste spreads. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "lazy/unaware public; free plastic-bag distribution; irregular municipal/"
+                    "Eco-Green collection; hotels without continuous management. No FLAG "
+                    "needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: nature "
+               "guides, park rangers, hotel associations, Eco-Green, informal bottle "
+               "collectors, safari dustbin system, proposed ward cleaners. No FLAG needed.",
+    "Coordination_sectoral": "Hotel associations, NGOs, park rangers and nature guides "
+                             "coordinate awareness; Eco-Green and municipality split "
+                             "collection roles.",
+    "Coordination_levels": "Municipal trucks vs private Eco-Green vs informal collectors; "
+                           "ward enforcement proposed.",
+    "Res_loc_government": "Municipal trucks collect bags/wrappers; dustbins provided.",
+    "Res_private_sector": "Eco-Green recycles bottles; informal collectors buy PET.",
+    "Res_civil_society": "NGOs, park rangers, hotel associations train nature guides.",
+    "Res_households": "Store and separate waste at home.",
+    "Res_private_companies": "Thousands of Chitwan hotels generate waste; hotel association "
+                             "discussions.",
+    "Cul_households": "Laziness, ignorance, convenience, free plastic bags.",
+    "Cul_loc_government": "No municipal notices; irregular collection; streets not cleaned "
+                          "regularly.",
+    "Cul_private_companies": "Hotels discuss but lack continuous waste-management action.",
+    "Tar_loc_government": "Ward should launch awareness campaigns, enforce rules, provide "
+                          "dustbins, designate street cleaners.",
+    "Tar_households": "Use cloth bags; reduce plastic attachment.",
+    "Tar_private_companies": "Hotel business community could form cleanliness committee "
+                             "(rickshaw collection ~NPR 50,000/month proposed).",
+    "Tar_civil_society": "Nature guides and hotel associations for sustained training.",
+    "Actor_role": "Hotel operator describing personal and sector waste practices as a "
+                 "target group of policies (role 4), not a policy formulator or primary "
+                 "implementer.",
+    "Discretion": "Stores bottles for Eco-Green, separates waste for municipal collection, "
+                  "empties bottles — limited to own hotel/household practices.",
+    "Monitoring": "No municipal notices or rules observed; irregular programme monitoring.",
+    "Financial_resources": "Hotel committee rickshaw collection (~NPR 50,000/month) proposed; "
+                           "bottle monetary value (NPR 10–15/kg) drives informal collection.",
+    "Infrastructure": "Dustbins provided but overflow; safari vehicle buckets compulsory; "
+                      "need designated street cleaners.",
+    "Capacity": "No designated street cleaners (unlike elephant-dung teams); awareness "
+               "programmes lack continuity.",
+    "Enforcement": "No municipal enforcement notices; ward strict rules proposed.",
+    "Pol_epr": "EPR not mentioned.",
+    "Pol_awareness": "Occasional programmes by NGOs, hotel associations, park rangers — not "
+                     "continuous.",
+    "Pol_clean_up": "Environment Day one-day events; safari dustbin rule; elephant-dung "
+                    "teams twice daily.",
+    "Pol_recycling": "Eco-Green bottle collection.",
+    "Pol_waste_collection": "Municipal trucks for wrappers/bags; irregular schedules.",
+    "Pol_effectiveness": "Irregular collection and awareness; no continuous action.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_awareness": "Ward awareness campaigns to reduce negligence.",
+    "Sol_subsitutes": "Cloth/fiber bags; clay/cement pots.",
+    "Sol_clean_up": "Designated street cleaners; daily collection like elephant-dung teams.",
+    "Sol_education": "Sustained nature-guide and hotel-association training.",
+    "Sol_capacity": "Train population through hotel association/NGO programmes.",
+    "Sol_finance": "Hotel committee fund for rickshaw waste collection.",
+    "Sol_infrastructure": "Ward dustbins; safari vehicle buckets.",
+    "Sol_enforcement": "Ward strict rule enforcement proposed.",
+    "Traditions to build on (free-hand)": "Cloth bags; clay/cement pots instead of plastic.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Relevance_international_pol": "NA - not mentioned.",
+    "Unclear_responsibilities": "NA - not explicitly discussed.",
+    "Res_nat_government": "NA - not named as responsible actor in this interview.",
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_science": "NA - not mentioned.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Cul_nat_government": "NA - not blamed.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - Eco-Green/informal collectors portrayed positively.",
+    "Cul_civil_society": "NA - NGOs/guides portrayed as heroes.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Tar_nat_government": "NA - not named as target group.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_private_sector": "NA - informal collectors positive; hotel committee proposed.",
+    "Tar_science": "NA - not named.",
+    "Tar_edu_institutions": "NA - not named.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -4425,6 +4642,7 @@ EXPLANATIONS = {
     "NPL_11": safaurja_expl,
     "NPL_12": moud12_expl,
     "NPL_13": creasion_expl,
+    "NPL_14": silent_park_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -4445,12 +4663,13 @@ CODED_ROWS = {
     "NPL_11": safaurja,
     "NPL_12": moud12,
     "NPL_13": creasion,
+    "NPL_14": silent_park,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_13).
+# Master-list order for coded interviews only (NPL_1 through NPL_14).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
-    "NPL_10", "NPL_11", "NPL_12", "NPL_13",
+    "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -4468,6 +4687,7 @@ CODED_META = {
     "NPL_11": ("11. Private Sector Contractor/ SafaUrja Utpadan", "Safa Urja Utpadan"),
     "NPL_12": ("12. Ministry for Urban Planning", "Ministry of Urban Development"),
     "NPL_13": ("13. Creasion", "Center for Research and Sustainable Development in Nepal"),
+    "NPL_14": ("14. Hotel Silent Park/ Rajesh Aryal", "Hotel Silent Park"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -4499,6 +4719,8 @@ NAMES["NPL_12"] = ("Ministry of Urban Development / Ministry for Urban Planning 
                     "policy official(s), Kathmandu (PEGO interview)")
 NAMES["NPL_13"] = ("Creasion - Recycling and waste-management CSO, Chitwan area "
                     "(23 June 2025, ~5:15pm)")
+NAMES["NPL_14"] = ("Hotel Silent Park - Rajesh Aryal, Chitwan/Sauraha tourism area "
+                    "(26 June 2025)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -4640,7 +4862,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_13, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_14, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -4698,15 +4920,15 @@ readme_lines = [
     ("  11. NPL_11 - Safa Urja Utpadan, private waste-management contractor, Khaireni/"
      "Chitwan. Coded from notes and transcript.", False),
     ("  12. NPL_12 - Ministry for Urban Planning / MoUD. Coded from notes and transcript.", False),
-    ("  13. NPL_13 - Creasion, recycling and waste-management CSO (Center for Research and "
-     "Sustainable Development in Nepal). Interview date: 23 June 2025 (~5:15pm). Coded "
-     "from guideline notes and field notes (no full verbatim transcript). NPF fields "
-     "implied.", False),
+    ("  13. NPL_13 - Creasion, recycling CSO. Coded from notes and field notes.", False),
+    ("  14. NPL_14 - Hotel Silent Park, Rajesh Aryal, Chitwan (26 June 2025). Coded from "
+     "transcript; policy-theme notes at top of source file excluded (different interview). "
+     "NPF fields implied.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_13, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_14, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -4720,7 +4942,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_13) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_14) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
