@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_20). Unfilled placeholder rows are not included. Interviews
+through NPL_21). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -20,14 +20,14 @@ Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
 (Kathmandu Ward No. 6), NPL_17 (Kathmandu Ward No. 7 / Romy Prasad Shrestha), NPL_18
 (dry waste management practitioner / consultant & researcher), NPL_19 (TAAN /
 Trekking Agencies' Association of Nepal), NPL_20 (municipality Environment Officer,
-Chitwan area).
+Chitwan area), NPL_21 (ordinary person / citizen, unnamed).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_20, in order), one column per COLUMNS
+                           (NPL_1 through NPL_21, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -2825,6 +2825,89 @@ env_officer.update({
              "interpreter Deep). Overlap with NPL_11 (Safa Urja Utpadan — same contractor, same "
              "area) but distinct municipal-government perspective. Q4a/Q4b ministry follow-ups "
              "blank. NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_21: Ordinary person / citizen (unnamed) ------------------------------
+ordinary_person = blank_row()
+ordinary_person.update({
+    "Country": "Nepal",
+    "ID": "NPL_21",
+    "Actortype": "households",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "health (burning plastics is \"very bad for the health\" — main health "
+               "impact cited; plastic itself not harmful unless burned), visual/aesthetic "
+               "pollution, blocked pipes/drainage, and contaminated agricultural plots; "
+               "environment (plastics are non-biodegradable)",
+    NPF_VICTIMS_COL: "people exposed to burning plastics (health); agricultural plots "
+                     "contaminated by plastic waste; drainage/pipe infrastructure blocked "
+                     "by litter; and residents affected by visual/aesthetic pollution",
+    "NPF_villains": "households/the public (\"people know the rules but do not follow "
+                    "them\"; no information on single-use vs other plastic types; read a "
+                    "little about plastic then forget; continue using plastic because it is "
+                    "\"very convenient\"); and government (spreads information but \"do not "
+                    "enforce\" and \"there is not monitoring\"; past plastic ban \"did not "
+                    "work\")",
+    "NPF_hero": "local government imposing regulation (ward, mayor and ministry); separate "
+               "waste-collection vehicles for different waste streams to enable segregation; "
+               "and traditional alternatives (paper bags and baskets — though plastic is "
+               "more convenient)",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_households": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_households": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As an ordinary resident the interviewee is concerned about plastic "
+                 "pollution but continues to use plastic because it is convenient; puts "
+                 "out mixed wet and dry waste for the municipality's daily collection "
+                 "vehicle with no household segregation — and has no authority to change "
+                 "enforcement, monitoring or the collection system (separate vehicles "
+                 "would need to be provided by local government).",
+
+    "Monitoring": "yes",
+    "Infrastructure": "yes",
+    "Enforcement": "yes",
+
+    "Pol_ban": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Ban of black plastic bags exists and \"there was a ban of "
+                                 "plastics some years ago, but it did not work\"; daily "
+                                 "municipal collection vehicle takes mixed waste to landfill "
+                                 "but \"there are not further policies\"; wet and dry waste "
+                                 "mixed at household level with no segregation.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_segregation": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_subsitutes": "yes",
+
+    "Traditions to build on (free-hand)": "Traditionally paper bags and baskets were used to "
+                                          "carry goods, but plastic is \"much more convenient.\"",
+    "Notes": "Master list label: \"21. Ordinary person (unnamed)\", affiliation: ordinary "
+             "person/citizen. Interviewee name not given. Interview date: 17 February 2026. "
+             "Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. Consent given; no "
+             "recording. Coded from structured interview guideline/field notes only (no "
+             "verbatim transcript). Q3 (main challenges) not asked separately — integrated in "
+             "Q2 notes. Q6 and Q6 follow-up not asked (enforcement/monitoring gap noted in "
+             "passing). Q9 (target groups) not asked. Q10 not asked (infrastructure for "
+             "separate collection mentioned under solutions). NPF fields implied, not explicit.",
 })
 
 
@@ -6325,6 +6408,88 @@ env_officer_expl = {
     "Tar_science": "NA - not named.",
 }
 
+ordinary_person_expl = {
+    "Actortype": "Interviewee described as \"ordinary person\" — coded as households.",
+    "Problem_awareness_pop": "\"They have no information about single use and other types of "
+                             "the plastic\"; \"People read a little about the plastic and then "
+                             "forget about it.\"",
+    "Problem_concerndness": "\"Yes, concerned about plastic pollution\" — but also notes "
+                            "plastic is \"very convenient to use.\"",
+    "Problem_littering": "Visual pollution/aesthetic effects cited as an impact.",
+    "Problem_consumption": "Plastic is \"very convenient to use\" despite environmental concern.",
+    "Problem_waste_mgmt": "Daily collection to landfill but no household segregation; wet and "
+                          "dry waste mixed.",
+    "Problem_alternatives": "Traditionally paper bags and baskets were used but plastic is "
+                            "more convenient.",
+    "Problem_waste_segregation": "\"Not segregated at household level, i.e. also wet and dry "
+                                 "waste are mixed together.\"",
+    "Impacts": "Health (burning), visual pollution, blocked drainage, contaminated "
+               "agricultural plots, non-biodegradability.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "health from burning; agricultural plots; drainage; residents from visual "
+                     "pollution. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "public/households (non-compliance, convenience); government (weak "
+                    "enforcement/monitoring). No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: local "
+               "government regulation; separate collection vehicles; traditional paper bags/"
+               "baskets. No FLAG needed.",
+    "Res_nat_government": "Ministry mentioned alongside ward and mayor as needing to impose "
+                          "regulation.",
+    "Res_loc_government": "\"Local government\" responsible for managing plastics/waste.",
+    "Res_households": "Households produce mixed waste and do not segregate at source.",
+    "Cul_nat_government": "\"Govt. spreads the information, but they do not enforce, there is "
+                          "not monitoring\"; past ban did not work.",
+    "Cul_households": "\"People know the rules but do not follow them\"; limited information "
+                      "and forgetfulness; convenience-driven plastic use.",
+    "Tar_nat_government": "Ministry named as part of actors who should impose regulation.",
+    "Tar_loc_government": "\"Local government has to impose the regulation, i.e. the ward, "
+                          "mayor and the ministry.\"",
+    "Actor_role": "Ordinary citizen as target group / affected resident (role 4).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "No monitoring of waste/plastic rules cited.",
+    "Infrastructure": "Separate vehicles for different waste types needed to enable "
+                      "segregation.",
+    "Enforcement": "Government spreads information but does not enforce.",
+    "Pol_ban": "Ban of black plastic bags; earlier plastics ban \"some years ago\" that "
+               "did not work.",
+    "Pol_waste_collection": "Municipality-organised daily collection vehicle picks up waste "
+                            "and drops at landfill.",
+    "Pol_effectiveness": "Past ban ineffective; only basic collection in place.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Local government (ward, mayor, ministry) should impose regulation.",
+    "Sol_segregation": "Different vehicles for different wastes would make segregation easier.",
+    "Sol_infrastructure": "Better waste collection infrastructure with separate streams.",
+    "Sol_enforcement": "Regulation needs to be imposed by local government.",
+    "Sol_subsitutes": "Traditional paper bags and baskets as alternatives to plastic.",
+    "Traditions to build on (free-hand)": "Paper bags and baskets traditionally used.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_private_sector": "NA - not mentioned.",
+    "Res_civil_society": "NA - not mentioned.",
+    "Res_science": "NA - not mentioned.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Res_private_companies": "NA - not mentioned.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - local government portrayed as responsible actor to strengthen.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_private_sector": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Tar_households": "NA - not named as policy target (local government emphasised).",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_private_companies": "NA - not named.",
+    "Capacity": "NA - not discussed as an implementation barrier.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -6346,6 +6511,7 @@ EXPLANATIONS = {
     "NPL_18": waste_practitioner_expl,
     "NPL_19": taan_expl,
     "NPL_20": env_officer_expl,
+    "NPL_21": ordinary_person_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -6373,13 +6539,14 @@ CODED_ROWS = {
     "NPL_18": waste_practitioner,
     "NPL_19": taan,
     "NPL_20": env_officer,
+    "NPL_21": ordinary_person,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_20).
+# Master-list order for coded interviews only (NPL_1 through NPL_21).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
-    "NPL_19", "NPL_20",
+    "NPL_19", "NPL_20", "NPL_21",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -6409,6 +6576,7 @@ CODED_META = {
     "NPL_19": ("19. TAAN Trekking Association", "Trekking Agencies' Association of Nepal (TAAN)"),
     "NPL_20": ("20. Municipality Environment Officer (Chitwan area)",
                "Local government - Environment Officer"),
+    "NPL_21": ("21. Ordinary person (unnamed)", "Ordinary person / citizen"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -6458,6 +6626,8 @@ NAMES["NPL_19"] = ("TAAN (Trekking Agencies' Association of Nepal) - President (
 NAMES["NPL_20"] = ("Municipality Environment Officer (unnamed), small Chitwan-area municipality "
                     "(Safa Urja contractor; Ratnanagar/Kalika/Khaireni/Rapti context; interview "
                     "date not stated)")
+NAMES["NPL_21"] = ("Ordinary person / citizen (unnamed), Nepal (17 February 2026; interviewers: "
+                    "Ram Devi, Marlene Kammerer, Anastasiia; no recording)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -6599,7 +6769,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_20, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_21, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -6682,11 +6852,15 @@ readme_lines = [
     ("  20. NPL_20 - Municipality Environment Officer (unnamed), small Chitwan-area municipality. "
      "Coded from integrated guideline notes and verbatim transcript (Marlene Kammerer/Ram Devi/"
      "Deep). Safa Urja contractor; overlap with NPL_11.", False),
+    ("  21. NPL_21 - Ordinary person / citizen (unnamed), Nepal (17 February 2026). "
+     "Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. Consent given; no recording. "
+     "Coded from structured guideline/field notes only. Q3, Q6, Q9 and Q10 not fully asked.",
+     False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_20, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_21, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -6700,7 +6874,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_20) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_21) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
