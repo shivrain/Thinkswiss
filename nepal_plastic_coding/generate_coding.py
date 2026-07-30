@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_17). Unfilled placeholder rows are not included. Interviews
+through NPL_18). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -17,14 +17,15 @@ Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
 (Dhulikhel Ward Chairman), NPL_11 (Safa Urja Utpadan), NPL_12 (Ministry for
 Urban Planning / MoUD), NPL_13 (Creasion), NPL_14 (Hotel Silent Park /
 Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
-(Kathmandu Ward No. 6), NPL_17 (Kathmandu Ward No. 7 / Romy Prasad Shrestha).
+(Kathmandu Ward No. 6), NPL_17 (Kathmandu Ward No. 7 / Romy Prasad Shrestha), NPL_18
+(dry waste management practitioner / consultant & researcher).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_17, in order), one column per COLUMNS
+                           (NPL_1 through NPL_18, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -2431,6 +2432,135 @@ shrestha.update({
              "references (Panchkal, Ward No. 8 landfill) parallel other ward interviews in the "
              "Dhulikhel area. Q9 (target groups) and Theme C level-difference follow-up were "
              "blank in source notes. NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_18: Dry waste management practitioner / consultant & researcher ----
+waste_practitioner = blank_row()
+waste_practitioner.update({
+    "Country": "Nepal",
+    "ID": "NPL_18",
+    "Actortype": "private_sector",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "NA",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "low-value and multi-layer plastics discarded at riverbanks and dump sites "
+               "when they lack market value; broader environmental pollution from unmanaged "
+               "plastic fractions left outside the profitable recycling stream",
+    NPF_VICTIMS_COL: "rivers and riverbank/dump-site environments where plastics with little "
+                     "or no market value are discarded; communities and ecosystems affected by "
+                     "unmanaged low-value plastic fractions; the public affected by inadequate "
+                     "end-of-life management rather than plastic use alone",
+    "NPF_villains": "plastic producers without extended producer responsibility; informal/"
+                    "formal scrap collectors engaging in \"cherry-picking\" (only high-value "
+                    "plastics collected, low-value fractions left behind); the national "
+                    "government (unclear lead department, no dedicated plastic mandate, no "
+                    "coordinating/implementing body, fragmented policies); key decision-makers "
+                    "and the public who do not take plastic pollution seriously enough; and "
+                    "poorly coordinated stakeholders (government, private sector, communities, "
+                    "donors) working in isolation",
+    "NPF_hero": "the interviewee's own dry-waste management practice (sorting plastics into "
+               "grades for downstream recyclers since 2017); UNDP-funded training and "
+               "consulting (Pokhara, ~400 participants, multilayer-plastic focus); Bhaktapur "
+               "awareness campaigns; UK-university policy research on household product "
+               "end-of-life management; municipalities as key local implementers; waste "
+               "managers needing formal support; and proposed EPR, sector incentives, and "
+               "processing facilities for low-value plastics",
+
+    "Relevance_international_pol": "yes",
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_science": "yes",
+    "Res_households": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_private_sector": "yes",
+    "Cul_households": "yes",
+    "Cul_loc_government": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_students": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_households": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "2",
+    "Discretion": "The interviewee operates dry-waste sorting and grade-based handoff to "
+                 "downstream recyclers, designs UNDP-funded training programmes (including "
+                 "multilayer-plastic projects in Pokhara), runs Bhaktapur awareness campaigns, "
+                 "consults for UNDP on waste management, and conducts UK-university policy "
+                 "research — but has limited influence over national policy architecture, "
+                 "which department should lead, or sector-wide incentives/infrastructure.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_RD": "yes",
+    "Pol_ban": "yes",
+    "Pol_upcycling": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"Largely ineffective\": planned single-use plastics ban "
+                                 "above 40 microns discussed nationally but \"not been fully "
+                                 "implemented/enforced\"; \"very few national-level policies "
+                                 "in place\"; municipalities develop their own policies "
+                                 "resulting in a \"fragmented and uneven policy landscape\" "
+                                 "without shared framework or resources.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_epr": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_upcycling": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_RD": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"18. Dry waste management practitioner/ consultant "
+             "(unnamed)\", affiliation: dry waste management practitioner; consultant and "
+             "researcher (Kathmandu & Pokhara). Interviewee name not given. Active in dry "
+             "waste management since 2017 (~8 years). Interview date not stated in source "
+             "notes. Coded from structured guideline/field notes only (Theme A Q1/Q2 on "
+             "plastic problem/concern and visible effects were blank; Q4a/Q4b ministry "
+             "template questions blank; Theme C level-difference follow-up blank). "
+             "DATA-QUALITY NOTE: this content matches the Q3a bullet list previously "
+             "excluded from NPL_3 (KTM Municipal Office) as belonging to a different "
+             "respondent; thematically overlaps NPL_5 (Doco Recyclers) on EPR, cherry-picking "
+             "and multilayer plastics but coded here as a separate unnamed practitioner/"
+             "consultant interview per the research team. NPF fields implied, not explicit.",
 })
 
 
@@ -5563,6 +5693,129 @@ shrestha_expl = {
     "Tar_private_companies": "NA - not named separately from private sector.",
 }
 
+waste_practitioner_expl = {
+    "Actortype": "Dry waste management practitioner, consultant and researcher operating in "
+                 "Kathmandu and Pokhara since 2017 — coded as private_sector.",
+    "Problem_awareness_pop": "\"Plastic pollution is not taken seriously enough by key "
+                             "decision-makers and the public\"; follow-up calls to reduce "
+                             "public ignorance through education.",
+    "Problem_awareness_pol": "\"Lack of coherent policy\"; fragmented municipal policies "
+                            "without national framework; unclear which department should lead; "
+                            "no dedicated plastic-specific mandate.",
+    "Problem_concerndness": "NA - Theme A Q1 (is plastic a problem?) and concern follow-up "
+                            "were left blank in the source notes.",
+    "Problem_littering": "Plastics with little or no market value \"end up discarded at "
+                         "riverbanks and dump sites.\"",
+    "Problem_consumption": "Q9 targets consumers/households to reduce plastic consumption.",
+    "Problem_recycling": "No established value chain; cherry-picking leaves low-value plastics "
+                         "unaddressed; inadequate processing/recycling infrastructure.",
+    "Problem_waste_mgmt": "Inadequate infrastructure for collection, processing and recycling "
+                          "at scale; missing implementing/coordinating body.",
+    "Problem_production": "Producers face no EPR obligation for end-of-life plastics they "
+                          "put on the market.",
+    "Problem_waste_segregation": "Core practice is sorting collected plastics into different "
+                                 "grades — implies segregation is needed but value-chain gaps "
+                                 "limit effective downstream use.",
+    "Impacts": "Riverbanks and dump sites receiving discarded low-value/multi-layer plastics.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "riverbank/dump-site environments; communities/ecosystems; public "
+                     "affected by poor end-of-life management. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "producers without EPR; cherry-picking collectors; weak/fragmented national "
+                    "governance; unserious public/decision-makers; poor stakeholder "
+                    "coordination. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+               "practitioner/operator; UNDP; municipalities; waste managers; researchers; "
+               "proposed EPR and sector incentives. No FLAG needed.",
+    "Relevance_international_pol": "Policy research with a UK university; technology transfer "
+                                   "from countries that have solved these problems.",
+    "Coordination_sectoral": "\"Poor coordination among stakeholders — government, private "
+                             "sector, communities, and donors are not working in alignment.\"",
+    "Coordination_levels": "Unclear national lead department; municipalities acting in "
+                           "isolation; Department of Environment without clear coordination "
+                           "with local communities.",
+    "Unclear_responsibilities": "\"Uncertain which Department should look after\"; plastic "
+                                "governance subsumed under Municipal Solid Waste Management "
+                                "Act with no dedicated mandate.",
+    "Res_nat_government": "Government of Nepal — but unclear lead department.",
+    "Res_loc_government": "Municipalities are \"key actors\" bearing practical burden.",
+    "Res_private_sector": "Private sector participates; informal scrap collectors recover "
+                          "valuable plastics.",
+    "Res_civil_society": "Community groups worked with on multilayer plastic management.",
+    "Res_science": "UK-university collaboration on end-of-life policy research.",
+    "Res_households": "Consumers/households responsible for reducing consumption.",
+    "Res_edu_institutions": "Schools proposed for waste-management curriculum.",
+    "Res_private_companies": "Producers should bear EPR responsibility.",
+    "Cul_nat_government": "No dedicated governing/implementing body; no EPR; fragmented "
+                          "national policy.",
+    "Cul_private_sector": "\"Cherry-picking\" — only high-value plastics collected.",
+    "Cul_households": "Public/consumers not taking issue seriously enough.",
+    "Cul_loc_government": "Fragmented municipal policies without shared national framework.",
+    "Tar_nat_government": "Coherent national framework and coordination needed.",
+    "Tar_loc_government": "Municipalities should be primary implementing/monitoring body and "
+                          "made accountable.",
+    "Tar_students": "\"As young as you can catch them\"; embed waste management in education "
+                    "system.",
+    "Tar_private_sector": "Waste managers need formal support and recognition.",
+    "Tar_households": "Reduce plastic consumption at household/individual level.",
+    "Tar_edu_institutions": "Formal school curriculum for waste management.",
+    "Tar_private_companies": "Producers through EPR.",
+    "Actor_role": "Practitioner/consultant operating sorting systems, UNDP training, "
+                 "awareness campaigns and policy research — managerial/organisational "
+                 "implementer (2).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "SUP ban not fully enforced/monitored; no national monitoring framework.",
+    "Financial_resources": "Private sector hesitant to invest; sector lacks incentives and "
+                           "long-term viability confidence.",
+    "Research": "UK-university end-of-life policy research; UNDP consulting; multilayer-plastic "
+               "project focus.",
+    "Infrastructure": "Inadequate collection, processing and recycling infrastructure at scale.",
+    "Capacity": "Sector needs incentives, technology transfer and human-capacity building.",
+    "Enforcement": "Planned >40-micron SUP ban not fully implemented/enforced.",
+    "Pol_epr": "EPR \"has not been introduced in Nepal.\"",
+    "Pol_awareness": "Bhaktapur awareness campaigns on plastic reduction.",
+    "Pol_education": "UNDP skill development training (~400 participants, Pokhara); school "
+                     "curriculum proposed.",
+    "Pol_RD": "Policy research with UK university on household product end-of-life management.",
+    "Pol_ban": "Planned ban on single-use plastics above 40 microns discussed nationally.",
+    "Pol_upcycling": "UNDP training covered upcycling and paper upcycling.",
+    "Pol_recycling": "Interviewee sorts plastics into grades and passes to downstream recyclers.",
+    "Pol_waste_collection": "Collection chains discussed as needing financing.",
+    "Pol_effectiveness": "Largely ineffective — ban not enforced; fragmented municipal policies.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Dedicated guiding governing/implementing body needed (Ministry of "
+                       "Environment as natural candidate).",
+    "Sol_responsibilities": "Clarify national lead; make municipalities accountable.",
+    "Sol_epr": "\"Single most important first step\" — producers accountable for end-of-life.",
+    "Sol_awareness": "Bhaktapur campaigns; reduce public ignorance.",
+    "Sol_segregation": "Sorting into grades as part of value-chain solution.",
+    "Sol_upcycling": "Upcycling covered in UNDP training programmes.",
+    "Sol_recycling": "Invest in processing/treatment/recycling facilities, especially for "
+                     "low-value plastics.",
+    "Sol_education": "Waste management in formal school curriculum from early age.",
+    "Sol_capacity": "Technology transfer — \"do not reinvent the wheel.\"",
+    "Sol_RD": "Continued policy and end-of-life research.",
+    "Sol_finance": "Funding for collection chains and recycling facilities; sector incentives.",
+    "Sol_infrastructure": "Processing facilities for low-value plastics; collection-chain "
+                          "infrastructure.",
+    "Sol_enforcement": "Implement and monitor SUP ban; practical guidelines needed.",
+    "Sol_monitoring": "Municipalities as implementing/monitoring partners.",
+    "Traditions to build on (free-hand)": "NA - not discussed.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - students targeted via curriculum but not named as responsible actors.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_civil_society": "NA - community groups portrayed as partners.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - producers targeted via EPR, not primarily blamed as "
+                             "companies separate from production responsibility.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_civil_society": "NA - not named as primary target group.",
+    "Tar_science": "NA - researchers partners, not primary target group.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -5581,6 +5834,7 @@ EXPLANATIONS = {
     "NPL_15": margen_expl,
     "NPL_16": ktm_ward6_expl,
     "NPL_17": shrestha_expl,
+    "NPL_18": waste_practitioner_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -5605,12 +5859,13 @@ CODED_ROWS = {
     "NPL_15": margen,
     "NPL_16": ktm_ward6,
     "NPL_17": shrestha,
+    "NPL_18": waste_practitioner,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_17).
+# Master-list order for coded interviews only (NPL_1 through NPL_18).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
-    "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17",
+    "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -5635,6 +5890,8 @@ CODED_META = {
                "Kathmandu Metropolitan City - Ward No. 6"),
     "NPL_17": ("17. Kathmandu Ward no.7/ Romy Prasad Shrestha",
                "Ward No. 7 - Local governance, waste management"),
+    "NPL_18": ("18. Dry waste management practitioner/ consultant (unnamed)",
+               "Dry waste management practitioner; consultant & researcher (Kathmandu & Pokhara)"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -5677,6 +5934,8 @@ NAMES["NPL_16"] = ("Kathmandu Metropolitan City Ward No. 6 - ward-level solid wa
 NAMES["NPL_17"] = ("Kathmandu Ward No. 7 - Mr. Romy Prasad Shrestha, elected ward chairman "
                     "(five times), local governance/waste management, Kathmandu "
                     "(22 June 2025, 12:10pm–12:50pm; internal interview no. 2)")
+NAMES["NPL_18"] = ("Dry waste management practitioner / consultant & researcher (unnamed), "
+                    "Kathmandu & Pokhara (active since 2017; interview date not stated)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -5818,7 +6077,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_17, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_18, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -5892,11 +6151,14 @@ readme_lines = [
     ("  17. NPL_17 - Kathmandu Ward No. 7, Mr. Romy Prasad Shrestha (ward chairman, elected "
      "five times), Kathmandu (22 June 2025, 12:10pm–12:50pm; internal interview no. 2). "
      "Coded from structured guideline/field notes. Distinct from NPL_10.", False),
+    ("  18. NPL_18 - Dry waste management practitioner / consultant & researcher (unnamed), "
+     "Kathmandu & Pokhara (active since 2017). Coded from guideline/field notes. Content "
+     "matches Q3a bullets previously excluded from NPL_3; thematically overlaps NPL_5.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_17, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_18, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -5910,7 +6172,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_17) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_18) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
