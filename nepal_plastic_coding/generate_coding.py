@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_15). Unfilled placeholder rows are not included. Interviews
+through NPL_16). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -16,14 +16,15 @@ Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
 (Ministry of Urban Development), NPL_9 (Dhulikhel Ward Office), NPL_10
 (Dhulikhel Ward Chairman), NPL_11 (Safa Urja Utpadan), NPL_12 (Ministry for
 Urban Planning / MoUD), NPL_13 (Creasion), NPL_14 (Hotel Silent Park /
-Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen).
+Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
+(Kathmandu Ward No. 6).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_15, in order), one column per COLUMNS
+                           (NPL_1 through NPL_16, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -2173,6 +2174,134 @@ margen.update({
              "MRF challenges, Lapti tradition, UNDP MoU) but distinct respondent with "
              "emphasis on public education, composting and inspection rather than SWM office "
              "policy formulation. NPF fields implied, not explicit.",
+})
+
+# --- NPL_16: Kathmandu Metropolitan City - Ward No. 6 -----------------------
+ktm_ward6 = blank_row()
+ktm_ward6.update({
+    "Country": "Nepal",
+    "ID": "NPL_16",
+    "Actortype": "loc_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "plastics spread across water bodies and rivers; agricultural land (plastic "
+               "in fields reducing soil fertility); downstream areas affected when collected "
+               "waste is dumped and rain washes it downhill; health and environmental impacts "
+               "(raised as areas where public knowledge is currently limited); Panchkal open "
+               "sewerage noted in the locality",
+    NPF_VICTIMS_COL: "rivers and water bodies; farmers and agricultural land (soil fertility "
+                     "loss); downstream settlements below the dumping area when it rains; the "
+                     "general public (limited knowledge of health/environment impacts); and "
+                     "the local environment around Panchkal open sewerage",
+    "NPF_villains": "the general public/households (plastic chosen because it is \"affordable "
+                    "and easily available\"; alternatives not used because they are not "
+                    "\"available and accessible\"); national government (40-micron ban "
+                    "notification issued ~3–4 years ago but \"did not work\"; \"no regulatory "
+                    "mechanism in place\"; many policies on paper with weak implementation); "
+                    "and capacity gaps among local actors (\"people are not able to do "
+                    "management\")",
+    "NPF_hero": "the ward office as the front-line coordinator (\"it's our responsibility to "
+               "manage at ward level\"); community/hospital advocacy (1,000 paper bags "
+               "distributed with community to hospitals); a private waste-management company "
+               "currently collecting waste (proposed to be given clearer responsibility); a "
+               "single NGO that once worked on recycling (now absent); past household-level "
+               "\"punching plastics & hocking\" collection (~10 years ago); and proposed "
+               "pilot household committees (100–200 households) for segregation, recycling "
+               "and networking",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_households": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_households": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+    "Tar_civil_society": "yes",
+
+    "Actor_role": "3",
+    "Discretion": "The ward carries out advocacy and awareness campaigns, distributed 1,000 "
+                 "paper bags with the community to hospitals, and can propose pilot household "
+                 "committees (100–200 households) for segregation and recycling — but has "
+                 "\"no adhikar (authority/responsibility) to formulate rules and guidelines to "
+                 "manage plastics\", no ward-level budget (a private company manages waste), "
+                 "and cannot enforce the micron ban or control where/how collected waste is "
+                 "dumped (all ward waste goes to the Ward No. 8 landfill site).",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"Advocacy carried out on it but not sustainable, and not "
+                                 "working too well\" (paper-bag initiative); \"Nothing in "
+                                 "particular we have done\" about plastics in water bodies; "
+                                 "40-micron ban made ~3–4 years ago \"but did not working\"; "
+                                 "\"Many policies are in place, but implementation is lacking "
+                                 "properly\"; Q4 effectiveness follow-up not answered in "
+                                 "source notes.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_ban": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "\"Old times we did not have plastics. We need to "
+                                          "revive the old ways without plastics\" — paper "
+                                          "thungas, leaves and other natural materials for "
+                                          "carrying and packaging instead of plastic.",
+    "Notes": "Master list label: \"16. Kathmandu Ward no.6\", affiliation: Kathmandu "
+             "Metropolitan City - Ward No. 6 (ward-level solid waste management). "
+             "Interviewee name and specific role/title not given in source notes. Interview "
+             "date: 22 June 2025 (Sunday), 11:30am–12:30pm; internal Kathmandu interview "
+             "no. 1. Coded from interview guideline/field notes only (no full verbatim "
+             "transcript supplied). Data-quality notes: source header identifies Kathmandu "
+             "Ward No. 6, but contextual details (all 12 wards' waste going to a landfill in "
+             "Ward No. 8; Panchkal open sewerage; hospital paper-bag campaign) closely "
+             "parallel Dhulikhel ward interviews (NPL_9/NPL_10) — retained as labelled but "
+             "flagged here. Q4 effectiveness follow-up and Theme C level-difference follow-up "
+             "were blank. Hospital collaboration and paper-bag initiative described as not "
+             "sustainable/working well. NPF fields implied, not explicit.",
 })
 
 # ---------------------------------------------------------------------------
@@ -5018,6 +5147,149 @@ margen_expl = {
     "Tar_science": "NA - not named.",
 }
 
+ktm_ward6_expl = {
+    "Actortype": "Ward-level solid waste management respondent at Kathmandu Metropolitan City "
+                 "Ward No. 6 — coded as loc_government.",
+    "Problem_awareness_pop": "\"People are not comfortable use other options as its not "
+                             "available and accessible\"; \"Impacts and effects of plastic on "
+                             "environmental n health is needed. Less knowledge about this.\"",
+    "Problem_awareness_pol": "\"Problem at Source – budgetary and alternative sources. And no "
+                            "regulatory mechanism in place\"; \"Many policies are in place, "
+                            "but implementation is lacking properly.\"",
+    "Problem_concerndness": "\"It is a problem everywhere\"; \"Plastics all over water bodies "
+                            "and rivers. Nothing in particular we have done\"; hospital/"
+                            "paper-bag initiative \"not sustainable, and not working too well.\"",
+    "Problem_littering": "\"Plastics all over water bodies and rivers\"; waste dumped in one "
+                         "place and washed downstream when it rains.",
+    "Problem_consumption": "\"Plastic is affordable and easily available\"; \"Everything "
+                           "literally comes in plastics.\"",
+    "Problem_recycling": "\"Other recycling options need to be explored\"; \"Only once did an "
+                         "NGO work on this, and now there is none\"; past household "
+                         "\"punching plastics & hocking and collecting from hh level\" (~10 "
+                         "years ago).",
+    "Problem_waste_mgmt": "Waste gathered and collected twice a week then dumped in one place; "
+                          "hospital collaboration \"did not work\"; no ward dumping site; "
+                          "private company currently manages waste.",
+    "Problem_alternatives": "\"Need to alternative, lots of talk but nothing really happening "
+                            "to find other alternatives\"; people not comfortable without "
+                            "accessible substitutes.",
+    "Problem_waste_segregation": "\"No segregation at source, but there is segregation at the "
+                                 "dumping site.\"",
+    "Impacts": "Water bodies/rivers; agricultural land and soil fertility; downstream areas; "
+               "health/environment knowledge gap; Panchkal open sewerage.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "rivers/water bodies; farmers/agricultural land; downstream settlements; "
+                     "public health/environment. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "affordability-driven public; weak national regulation/enforcement; "
+                    "implementation gaps. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: ward "
+               "office; community/hospital paper-bag initiative; private waste company; past/"
+               "proposed NGO and household-committee pilots; traditional materials. No FLAG "
+               "needed.",
+    "Coordination_sectoral": "Attempted hospital collaboration on waste management; community "
+                             "paper-bag distribution; one NGO previously worked on recycling.",
+    "Coordination_levels": "\"We have no adhikar (authority/responsibility) – to formulate "
+                           "rules and guidelines to manage plastics\"; ward has no budget while "
+                           "a private company manages waste at municipal level.",
+    "Unclear_responsibilities": "\"It's everyone's responsibility\" alongside ward having no "
+                                "rule-making authority and policies existing on paper with "
+                                "weak implementation.",
+    "Res_nat_government": "40-micron plastics ban initiated with notification issued.",
+    "Res_loc_government": "\"It's our responsibility to manage at ward level\"; municipality/"
+                          "ward system gathers and dumps waste; private company contracted.",
+    "Res_private_sector": "Private company currently managing ward waste; proposed to be "
+                          "given clearer responsibility.",
+    "Res_civil_society": "One NGO once worked on recycling (now absent).",
+    "Res_households": "\"At the household level, we need to work from there to manage "
+                      "plastics\"; proposed 100–200 household pilot committees.",
+    "Res_private_companies": "Hospital has a waste-management unit with agreement on dumpsite/"
+                             "open-space deposit.",
+    "Cul_nat_government": "40-micron ban made ~3–4 years ago \"but did not working\"; \"no "
+                          "regulatory mechanism in place\"; implementation lacking.",
+    "Cul_loc_government": "Ward has no budget for waste management despite operational "
+                            "responsibility at ward level.",
+    "Cul_households": "Public chooses plastic because alternatives are unavailable/"
+                      "inaccessible and plastic is cheap.",
+    "Tar_nat_government": "Regulating plastics under 40 microns with enforcement.",
+    "Tar_loc_government": "Ward/municipal implementation; give private waste company clearer "
+                          "responsibility.",
+    "Tar_private_sector": "Private waste-management company should be given responsibility "
+                          "\"so they can better manage.\"",
+    "Tar_households": "Household-level management; pilot committees of 100–200 households.",
+    "Tar_private_companies": "Hospitals targeted in paper-bag advocacy; drinking-water bottles "
+                             "named for replacement.",
+    "Tar_civil_society": "NGO recycling work referenced — only one NGO worked before, needs "
+                         "enforcement/support to scale.",
+    "Actor_role": "Ward-level respondent describing grassroots advocacy, hospital/community "
+                 "paper-bag distribution and proposed household pilot committees — street-level "
+                 "implementer (role 3).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "Ban effectiveness questioned; implementation gaps; no assessment of impacts "
+                  "communicated to public.",
+    "Financial_resources": "\"Problem at Source – budgetary\"; \"At the ward level – there is "
+                           "no budget\"; paper-bag initiative not sustainable.",
+    "Research": "\"Impacts and effects of plastic on environmental n health is needed. Less "
+               "knowledge about this.\"",
+    "Infrastructure": "No ward dumping site; hospital lacks dumping site; open-space deposit "
+                      "and burning suggested but difficult due to volume; all ward waste goes "
+                      "to Ward No. 8 landfill.",
+    "Capacity": "\"Capacity – people are not able to do management.\"",
+    "Enforcement": "40-micron ban \"did not working\"; NGO recycling \"needs enforcement\"; "
+                   "implementation lacking.",
+    "Pol_epr": "Extended producer responsibility not mentioned.",
+    "Pol_awareness": "\"Advocacy/awareness is carried out at every level\"; ward paper-bag "
+                     "distribution to hospitals.",
+    "Pol_education": "\"Campaigns are carried out.\"",
+    "Pol_ban": "40-micron plastics ban initiated; notification issued ~3–4 years ago.",
+    "Pol_subsitutes": "1,000 paper bags distributed with community to hospitals; paper "
+                      "thungas, leaves and natural materials promoted.",
+    "Pol_recycling": "Segregation at dumping site; past NGO recycling work; household "
+                     "punching/hooking collection ~10 years ago.",
+    "Pol_waste_collection": "Waste gathered and collected twice a week, then dumped in one "
+                            "place.",
+    "Pol_effectiveness": "Awareness/paper-bag initiative not sustainable; ban ineffective; "
+                         "many policies on paper.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Pilot household committees (100–200 households) to coordinate "
+                       "segregation, recycling, processing and networking.",
+    "Sol_responsibilities": "Give private waste company clearer responsibility; clarify ward "
+                            "vs municipal roles.",
+    "Sol_awareness": "\"Awareness is necessary.\"",
+    "Sol_segregation": "Source segregation via household committees; segregation currently "
+                       "only at dumping site.",
+    "Sol_recycling": "Explore recycling options beyond a single NGO; revive household "
+                     "collection models.",
+    "Sol_education": "Public education on health/environment impacts of plastics.",
+    "Sol_capacity": "Build management capacity at ward and household levels.",
+    "Sol_ban": "Make 40-micron regulation work with enforcement.",
+    "Sol_finance": "Address budgetary constraints at source and ward level.",
+    "Sol_infrastructure": "Proper dumping/processing sites; replace open-space deposit/burning "
+                          "practices.",
+    "Sol_subsitutes": "Provide sustainable alternatives; revive paper thungas, leaves and "
+                      "natural materials; start by replacing drinking-water bottles.",
+    "Sol_enforcement": "Enforcement needed for ban and NGO recycling models.",
+    "Sol_monitoring": "Assess policy implementation and communicate plastic impacts.",
+    "Traditions to build on (free-hand)": "Pre-plastic practices; paper thungas, leaves and "
+                                          "natural materials.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_science": "NA - research need mentioned but no scientific actors named.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - private waste company portrayed as solution, not culprit.",
+    "Cul_civil_society": "NA - NGO absence noted but not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - hospitals discussed as partners, not blamed.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_science": "NA - not named.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -5034,6 +5306,7 @@ EXPLANATIONS = {
     "NPL_13": creasion_expl,
     "NPL_14": silent_park_expl,
     "NPL_15": margen_expl,
+    "NPL_16": ktm_ward6_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -5056,12 +5329,13 @@ CODED_ROWS = {
     "NPL_13": creasion,
     "NPL_14": silent_park,
     "NPL_15": margen,
+    "NPL_16": ktm_ward6,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_15).
+# Master-list order for coded interviews only (NPL_1 through NPL_16).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
-    "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15",
+    "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -5082,6 +5356,8 @@ CODED_META = {
     "NPL_14": ("14. Hotel Silent Park/ Rajesh Aryal", "Hotel Silent Park"),
     "NPL_15": ("15. Kathmandu Metropolitan City/ Suna Maya Margen",
                "Kathmandu Metropolitan City - Environment Division / Public Education & Inspection"),
+    "NPL_16": ("16. Kathmandu Ward no.6",
+               "Kathmandu Metropolitan City - Ward No. 6"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -5118,6 +5394,9 @@ NAMES["NPL_14"] = ("Hotel Silent Park - Rajesh Aryal, Chitwan/Sauraha tourism ar
 NAMES["NPL_15"] = ("Kathmandu Metropolitan City - Ms. Suna Maya Margen (30 years), "
                     "Environment Inspector, Public Education & Inspection, Kathmandu "
                     "(23 June 2025, internal interview no. 2)")
+NAMES["NPL_16"] = ("Kathmandu Metropolitan City Ward No. 6 - ward-level solid waste "
+                    "management respondent (name/role not given), Kathmandu "
+                    "(22 June 2025, 11:30am–12:30pm; internal interview no. 1)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -5259,7 +5538,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_15, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_16, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -5325,11 +5604,16 @@ readme_lines = [
      "Public Education), Kathmandu (23 June 2025, internal interview no. 2). Coded from "
      "interview guideline/field notes only (no full verbatim transcript). Overlaps thematically "
      "with NPL_3 (same municipality) but distinct respondent.", False),
+    ("  16. NPL_16 - Kathmandu Metropolitan City Ward No. 6, ward-level solid waste management "
+     "respondent (name/role not given), Kathmandu (22 June 2025, 11:30am–12:30pm; internal "
+     "interview no. 1). Coded from guideline/field notes only. Source notes flag possible "
+     "context overlap with Dhulikhel ward interviews (12 wards, Ward 8 landfill, Panchkal).",
+     False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_15, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_16, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -5343,7 +5627,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_14) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_16) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
