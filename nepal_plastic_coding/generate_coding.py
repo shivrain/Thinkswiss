@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_23). Unfilled placeholder rows are not included. Interviews
+through NPL_24). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -21,14 +21,15 @@ Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
 (dry waste management practitioner / consultant & researcher), NPL_19 (TAAN /
 Trekking Agencies' Association of Nepal), NPL_20 (municipality Environment Officer,
 Chitwan area), NPL_21 (ordinary person / citizen, unnamed), NPL_22 (ordinary person /
-citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed).
+citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed), NPL_24
+(graduated young man, mechanical engineering, unnamed).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_23, in order), one column per COLUMNS
+                           (NPL_1 through NPL_24, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3061,6 +3062,72 @@ shop_owner.update({
              "Q6 follow-up not asked. Q8 (future measures) not asked. Q10 not asked. Same "
              "interview date as NPL_21/NPL_22 but distinct retail-sector respondent. NPF "
              "fields implied, not explicit.",
+})
+
+
+# --- NPL_24: Graduated young man (mechanical engineering, unnamed) -----------
+young_graduate = blank_row()
+young_graduate.update({
+    "Country": "Nepal",
+    "ID": "NPL_24",
+    "Actortype": "science",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "medium",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+
+    "Impacts": "health (\"plastic is toxic, it affects health\") and environment (\"bad for "
+               "the environment\"; waste \"everywhere on the streets\")",
+    NPF_VICTIMS_COL: "public health (toxic plastics affecting health); the environment; and "
+                     "residents affected by street litter/waste accumulation",
+    "NPF_villains": "society-wide lack of awareness (\"no awareness in society\"; elderly "
+                    "people \"have no knowledge about plastics pollution\"); continued plastic "
+                    "use despite municipal anti-plastic messaging (\"everyone continues to use "
+                    "it\"); and inadequate school education (respondent \"was not taught about "
+                    "it at school\")",
+    "NPF_hero": "young people sharing information with elderly; schools and education "
+               "campaigns; municipal anti-plastic initiatives; and raising public awareness "
+               "(\"people need to be aware\")",
+
+    "Res_loc_government": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_students": "yes",
+    "Res_households": "yes",
+
+    "Cul_households": "yes",
+
+    "Tar_students": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_households": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As a recently graduated young man in mechanical engineering the "
+                 "interviewee is moderately concerned about street litter and plastic's "
+                 "health/environmental impacts but has no formal role in waste governance — "
+                 "can advocate awareness among elderly and peers but was not taught about "
+                 "plastic pollution at school and cannot implement municipal policies.",
+
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Municipalities' idea was not to use plastics, but "
+                                 "\"everyone continues to use it\" — awareness/education "
+                                 "measures ineffective so far; respondent was not taught "
+                                 "about plastic pollution at school.",
+
+    "Sol_awareness": "yes",
+    "Sol_education": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"24. Graduated young man (unnamed)\", affiliation: "
+             "graduated young man; area of expertise: mechanical engineering sphere. "
+             "Interviewee name not given. Interview date: 17 February 2026. Interviewers: "
+             "Ram Devi, Marlene Kammerer, Anastasiia. Consent given; no recording. Coded "
+             "from structured interview guideline/field notes only (no verbatim transcript). "
+             "Q5 (responsibility), Q6/Q6 follow-up, Q8 traditions follow-up and Q10 not asked. "
+             "Same interview date as NPL_21–NPL_23 but distinct young-educated-respondent "
+             "perspective. NPF fields implied, not explicit.",
 })
 
 
@@ -6788,6 +6855,65 @@ shop_owner_expl = {
     "Capacity": "NA - Q6 not asked; implementation barriers not discussed.",
 }
 
+young_graduate_expl = {
+    "Actortype": "Graduated young man in mechanical engineering sphere — coded as science.",
+    "Problem_awareness_pop": "\"No awareness in society\"; elderly people \"have no knowledge "
+                             "about plastics pollution.\"",
+    "Problem_concerndness": "\"A little bit concerned\" because waste is \"everywhere on the "
+                            "streets.\"",
+    "Problem_littering": "Waste \"everywhere on the streets.\"",
+    "Problem_consumption": "\"Everyone continues to use\" plastic despite municipal messaging.",
+    "Impacts": "Health (toxic plastics) and environment.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "health; environment; residents affected by street litter. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "societal lack of awareness; elderly knowledge gap; continued use; inadequate "
+                    "school education. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: young people; "
+               "schools; awareness campaigns; intergenerational knowledge sharing. No FLAG needed.",
+    "Res_loc_government": "Municipalities promoted idea not to use plastics.",
+    "Res_edu_institutions": "Schools should teach plastic pollution (respondent was not taught).",
+    "Res_students": "Young people should share information with elderly.",
+    "Res_households": "Elderly households lack knowledge.",
+    "Cul_households": "Elderly people lack knowledge about plastic pollution.",
+    "Tar_students": "\"Young people\" should be focus of future policies.",
+    "Tar_edu_institutions": "\"Schools\" named as policy focus.",
+    "Tar_households": "Elderly people targeted via young people's information-sharing.",
+    "Actor_role": "Young graduate as target group / awareness advocate (role 4).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Pol_awareness": "Municipalities' idea was not to use plastics.",
+    "Pol_education": "School education on plastic pollution absent for this respondent.",
+    "Pol_effectiveness": "Everyone continues to use plastic — municipal message ineffective.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_awareness": "\"People need to be aware.\"",
+    "Sol_education": "Young people should share information with elderly; schools as focus.",
+    "Traditions to build on (free-hand)": "NA - Q8 traditions follow-up not asked.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_nat_government": "NA - not mentioned.",
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_private_sector": "NA - not mentioned.",
+    "Res_civil_society": "NA - not mentioned.",
+    "Res_science": "NA - not named as formal responsible actor.",
+    "Res_private_companies": "NA - not mentioned.",
+    "Cul_nat_government": "NA - not blamed.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - municipality portrayed as trying but ineffective.",
+    "Cul_students": "NA - young people portrayed as solution, not cause.",
+    "Cul_private_sector": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - schools portrayed as needing strengthening, not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Tar_nat_government": "NA - not named.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_loc_government": "NA - not named as specific target.",
+    "Tar_private_sector": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Tar_private_companies": "NA - not named.",
+    "Capacity": "NA - Q6 not asked.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -6812,6 +6938,7 @@ EXPLANATIONS = {
     "NPL_21": ordinary_person_expl,
     "NPL_22": ordinary_person_2_expl,
     "NPL_23": shop_owner_expl,
+    "NPL_24": young_graduate_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -6842,13 +6969,14 @@ CODED_ROWS = {
     "NPL_21": ordinary_person,
     "NPL_22": ordinary_person_2,
     "NPL_23": shop_owner,
+    "NPL_24": young_graduate,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_23).
+# Master-list order for coded interviews only (NPL_1 through NPL_24).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
-    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23",
+    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -6881,6 +7009,7 @@ CODED_META = {
     "NPL_21": ("21. Ordinary person (unnamed)", "Ordinary person / citizen"),
     "NPL_22": ("22. Ordinary person (unnamed, 2nd respondent)", "Ordinary person / citizen"),
     "NPL_23": ("23. Shop owner (unnamed)", "Shop-owner / retailer"),
+    "NPL_24": ("24. Graduated young man (unnamed)", "Graduated young man / mechanical engineering"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -6937,6 +7066,9 @@ NAMES["NPL_22"] = ("Ordinary person / citizen (unnamed, 2nd respondent), Nepal (
                     "from NPL_21)")
 NAMES["NPL_23"] = ("Shop owner (unnamed), Nepal (17 February 2026; interviewers: Ram Devi, "
                     "Marlene Kammerer, Anastasiia; no recording)")
+NAMES["NPL_24"] = ("Graduated young man (unnamed), mechanical engineering sphere, Nepal "
+                    "(17 February 2026; interviewers: Ram Devi, Marlene Kammerer, Anastasiia; "
+                    "no recording)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -7078,7 +7210,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_23, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_24, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -7173,11 +7305,15 @@ readme_lines = [
      "Marlene Kammerer, Anastasiia. Consent given; no recording. Coded from guideline/field "
      "notes only. Black-bag ban; white/blue bags (3 NPR); customers request bags for home "
      "waste. Q6, Q8 and Q10 not asked.", False),
+    ("  24. NPL_24 - Graduated young man (unnamed), mechanical engineering sphere, Nepal (17 "
+     "February 2026). Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. Consent given; "
+     "no recording. Coded from guideline/field notes only. Awareness/education focus; young "
+     "people and schools as policy targets. Q5, Q6, Q8 traditions and Q10 not asked.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_23, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_24, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -7191,7 +7327,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_23) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_24) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
