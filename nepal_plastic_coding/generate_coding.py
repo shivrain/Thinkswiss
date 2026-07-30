@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_21). Unfilled placeholder rows are not included. Interviews
+through NPL_22). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -20,14 +20,15 @@ Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
 (Kathmandu Ward No. 6), NPL_17 (Kathmandu Ward No. 7 / Romy Prasad Shrestha), NPL_18
 (dry waste management practitioner / consultant & researcher), NPL_19 (TAAN /
 Trekking Agencies' Association of Nepal), NPL_20 (municipality Environment Officer,
-Chitwan area), NPL_21 (ordinary person / citizen, unnamed).
+Chitwan area), NPL_21 (ordinary person / citizen, unnamed), NPL_22 (ordinary person /
+citizen, unnamed — second respondent, same date).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_21, in order), one column per COLUMNS
+                           (NPL_1 through NPL_22, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -2908,6 +2909,91 @@ ordinary_person.update({
              "Q2 notes. Q6 and Q6 follow-up not asked (enforcement/monitoring gap noted in "
              "passing). Q9 (target groups) not asked. Q10 not asked (infrastructure for "
              "separate collection mentioned under solutions). NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_22: Ordinary person / citizen (unnamed, 2nd respondent) ---------------
+ordinary_person_2 = blank_row()
+ordinary_person_2.update({
+    "Country": "Nepal",
+    "ID": "NPL_22",
+    "Actortype": "households",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "low",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "livestock (animals eat plastics), health (burning plastics — smell and "
+               "coughing; air pollution from burning), contaminated agricultural plots, and "
+               "blocked pipes/drainage",
+    NPF_VICTIMS_COL: "livestock that ingest plastic waste; people affected by burning plastics "
+                     "(smell, coughing, air pollution); agricultural plots contaminated by "
+                     "plastic; and drainage/pipe infrastructure blocked by litter",
+    "NPF_villains": "households/residents (plastic is \"very convenient\" — buy and throw to "
+                    "dustbin; \"do not want to engage with the waste themselves\"; do not make "
+                    "compost); government (\"does not enforce\" and \"there is no monitoring\"; "
+                    "information about impacts \"not taught to people\"); and plastic producers "
+                    "(\"stop production\" suggested as solution)",
+    "NPF_hero": "local government enforcing regulation; stopping plastic production; strict "
+               "regulations for carrying plastic bags; awareness-raising about impacts; and "
+               "traditional/modern alternatives (paper bags, bamboo leaves/baskets, cloth bags "
+               "— used more often but not yet frequently)",
+
+    "Res_loc_government": "yes",
+    "Res_households": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_households": "yes",
+
+    "Tar_loc_government": "yes",
+    "Tar_nat_government": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As an ordinary resident the interviewee is \"not very concerned about "
+                 "pollution\" but recognises burning as a problem; uses plastic for "
+                 "convenience and throws it in the dustbin; does not segregate waste or make "
+                 "compost at home (segregation was abolished; residents \"don't want to "
+                 "engage with the waste themselves\") — and has no authority over municipal "
+                 "enforcement, production bans or monitoring.",
+
+    "Monitoring": "yes",
+    "Enforcement": "yes",
+
+    "Pol_awareness": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_recycling": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Campaign not to use plastics \"did not work well\"; daily "
+                                 "municipal waste pick-up in place but \"segregation was "
+                                 "abolished\"; municipality makes compost but residents do not "
+                                 "use it (no agricultural plots nearby) and \"do not make "
+                                 "compost themselves\"; overall \"measures are not very "
+                                 "effective so far.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_awareness": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_ban": "yes",
+    "Sol_subsitutes": "yes",
+
+    "Traditions to build on (free-hand)": "Traditionally paper bags and bamboo leaves/baskets "
+                                          "were used to carry goods, but plastic is \"much more "
+                                          "convenient\"; cloth bags exist today and are used "
+                                          "more often but \"not yet used frequently.\"",
+    "Notes": "Master list label: \"22. Ordinary person (unnamed, 2nd respondent)\", "
+             "affiliation: ordinary person/citizen. Interviewee name not given. Interview "
+             "date: 17 February 2026. Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. "
+             "Consent given; no recording. Coded from structured interview guideline/field "
+             "notes only (no verbatim transcript). Second ordinary-person interview on the same "
+             "date as NPL_21 — distinct respondent with lower personal concern and emphasis "
+             "on burning/livestock impacts. Q3 not asked separately. Q6 and Q6 follow-up not "
+             "asked (enforcement/monitoring and awareness gaps noted in passing). Q9 and Q10 "
+             "not asked. NPF fields implied, not explicit.",
 })
 
 
@@ -6490,6 +6576,83 @@ ordinary_person_expl = {
     "Capacity": "NA - not discussed as an implementation barrier.",
 }
 
+ordinary_person_2_expl = {
+    "Actortype": "Interviewee described as \"ordinary person\" — coded as households.",
+    "Problem_awareness_pop": "\"Information about the impacts is not taught to people -> need "
+                             "to increase awareness.\"",
+    "Problem_concerndness": "\"Not very concerned about pollution\" — though burning is "
+                            "recognised as a problem (smell, coughing).",
+    "Problem_littering": "Livestock eat plastics; blocked drainage pipes.",
+    "Problem_consumption": "Plastic is \"very convenient\" — buy and throw to dustbin.",
+    "Problem_recycling": "Municipality makes compost but residents do not use it; residents "
+                         "do not make compost themselves.",
+    "Problem_waste_mgmt": "Segregation abolished; residents do not engage with waste.",
+    "Problem_production": "\"Stop production\" suggested as future measure.",
+    "Problem_waste_segregation": "\"Segregation was abolished.\"",
+    "Impacts": "Livestock, burning/air pollution/health, agricultural plots, blocked drainage.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "livestock; health from burning; agricultural plots; drainage. No FLAG "
+                     "needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "households (convenience, non-engagement); government (no enforcement/"
+                    "monitoring, lack of education); producers (stop production). No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: local "
+               "government enforcement; production stop; strict bag rules; awareness; "
+               "traditional/modern bag alternatives. No FLAG needed.",
+    "Res_loc_government": "\"Local government\" responsible for managing plastics/waste.",
+    "Res_households": "Residents produce waste, use dustbins, but do not segregate or compost.",
+    "Cul_nat_government": "\"Govt. does not enforce, there is no monitoring\"; impacts not "
+                          "taught to people.",
+    "Cul_households": "Convenience-driven plastic use; \"don't want to engage with the waste "
+                      "themselves\"; do not make compost.",
+    "Tar_loc_government": "\"Local government has to enforce the regulation.\"",
+    "Tar_nat_government": "\"Stop production\" implies national-level production regulation.",
+    "Actor_role": "Ordinary citizen as target group / affected resident (role 4).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "\"There is no monitoring.\"",
+    "Enforcement": "Government does not enforce.",
+    "Pol_awareness": "Campaign not to use plastics.",
+    "Pol_waste_collection": "Daily waste pick-up from municipality.",
+    "Pol_recycling": "Municipality makes compost (unused by residents).",
+    "Pol_effectiveness": "Campaign did not work; segregation abolished; compost unused.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Local government must enforce regulation.",
+    "Sol_awareness": "Increase awareness about impacts (not currently taught).",
+    "Sol_enforcement": "Local government enforcement of regulation.",
+    "Sol_ban": "\"Stop production\" and strict regulations for carrying plastic bags.",
+    "Sol_subsitutes": "Paper bags, bamboo leaves/baskets, cloth bags (increasing but not "
+                      "frequent).",
+    "Traditions to build on (free-hand)": "Paper bags and bamboo leaves/baskets; cloth bags "
+                                          "today.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_nat_government": "NA - national government not named as formal responsible actor "
+                          "(only blamed for enforcement gap).",
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_private_sector": "NA - not mentioned.",
+    "Res_civil_society": "NA - not mentioned.",
+    "Res_science": "NA - not mentioned.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Res_private_companies": "NA - not mentioned.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - local government portrayed as actor to strengthen enforcement.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_private_sector": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Tar_households": "NA - not named as policy target (local government emphasised).",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_private_companies": "NA - not named.",
+    "Capacity": "NA - not discussed as an implementation barrier.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -6512,6 +6675,7 @@ EXPLANATIONS = {
     "NPL_19": taan_expl,
     "NPL_20": env_officer_expl,
     "NPL_21": ordinary_person_expl,
+    "NPL_22": ordinary_person_2_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -6540,13 +6704,14 @@ CODED_ROWS = {
     "NPL_19": taan,
     "NPL_20": env_officer,
     "NPL_21": ordinary_person,
+    "NPL_22": ordinary_person_2,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_21).
+# Master-list order for coded interviews only (NPL_1 through NPL_22).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
-    "NPL_19", "NPL_20", "NPL_21",
+    "NPL_19", "NPL_20", "NPL_21", "NPL_22",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -6577,6 +6742,7 @@ CODED_META = {
     "NPL_20": ("20. Municipality Environment Officer (Chitwan area)",
                "Local government - Environment Officer"),
     "NPL_21": ("21. Ordinary person (unnamed)", "Ordinary person / citizen"),
+    "NPL_22": ("22. Ordinary person (unnamed, 2nd respondent)", "Ordinary person / citizen"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -6628,6 +6794,9 @@ NAMES["NPL_20"] = ("Municipality Environment Officer (unnamed), small Chitwan-ar
                     "date not stated)")
 NAMES["NPL_21"] = ("Ordinary person / citizen (unnamed), Nepal (17 February 2026; interviewers: "
                     "Ram Devi, Marlene Kammerer, Anastasiia; no recording)")
+NAMES["NPL_22"] = ("Ordinary person / citizen (unnamed, 2nd respondent), Nepal (17 February 2026; "
+                    "interviewers: Ram Devi, Marlene Kammerer, Anastasiia; no recording; distinct "
+                    "from NPL_21)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -6769,7 +6938,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_21, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_22, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -6856,11 +7025,15 @@ readme_lines = [
      "Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. Consent given; no recording. "
      "Coded from structured guideline/field notes only. Q3, Q6, Q9 and Q10 not fully asked.",
      False),
+    ("  22. NPL_22 - Ordinary person / citizen (unnamed, 2nd respondent), Nepal (17 February "
+     "2026). Same interview team and date as NPL_21 but distinct respondent (lower personal "
+     "concern; burning/livestock impacts; segregation abolished). Coded from guideline/field "
+     "notes only.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_21, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_22, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -6874,7 +7047,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_21) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_22) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
