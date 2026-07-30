@@ -8,21 +8,22 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_14). Unfilled placeholder rows are not included. Interviews
+through NPL_15). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
 Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
 (Ministry of Urban Development), NPL_9 (Dhulikhel Ward Office), NPL_10
 (Dhulikhel Ward Chairman), NPL_11 (Safa Urja Utpadan), NPL_12 (Ministry for
-Urban Planning / MoUD), NPL_13 (Creasion), NPL_14 (Hotel Silent Park / Rajesh Aryal).
+Urban Planning / MoUD), NPL_13 (Creasion), NPL_14 (Hotel Silent Park /
+Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_14, in order), one column per COLUMNS
+                           (NPL_1 through NPL_15, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -2029,6 +2030,149 @@ silent_park.update({
              "aluminum foil than plastic at the hotel level; overall interview concern coded "
              "high given visible/invisible pollution and microplastic impacts in guideline "
              "notes. NPF fields implied, not explicit.",
+})
+
+# --- NPL_15: Kathmandu Metropolitan City - Suna Maya Margen -----------------
+margen = blank_row()
+margen.update({
+    "Country": "Nepal",
+    "ID": "NPL_15",
+    "Actortype": "loc_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+    "Problem_import": "yes",
+
+    "Impacts": "visual pollution (described as the biggest problem visually since 1998, "
+               "linked to tourists and lifestyle), drainage blockage and riverbank dumping, "
+               "rising share of low-value multi-layer plastics (8% rising to 15%), "
+               "microplastics impacts on health, environment and wildlife (raised as a public "
+               "knowledge gap)",
+    NPF_VICTIMS_COL: "rivers and riverbanks (dumping, drainage blockage), drainage/sewer "
+                     "systems, the visual environment and tourism image of Kathmandu, "
+                     "neighbouring municipalities/communities opposing MRF siting, wildlife "
+                     "and the broader environment (microplastics), and valley residents "
+                     "affected by inadequate processing capacity despite sufficient waste "
+                     "volumes",
+    "NPF_villains": "consumers and lifestyle/tourism-driven plastic use (visual pollution); "
+                    "multi-layer plastic producers/suppliers (low-value plastics with \"no "
+                    "value\" left behind); unregistered/informal private actors (KMC works "
+                    "only with registered private sector and explicitly does not work with "
+                    "the informal sector); residents who oppose MRF/waste facilities nearby "
+                    "(\"people don't want wastes everywhere\"); and uncertain import flows "
+                    "(\"import of plastics??\" raised as an open policy issue)",
+    "NPF_hero": "Kathmandu Metropolitan City (public education, composting programmes at "
+               "household/community/school levels, landfill site management for 23 "
+               "municipalities, riverbed debris excavation/transfer); registered private "
+               "partners under MoUs (Doko Recyclers collecting Cluster 7); UNDP (MoU for "
+               "plastics recovery and plastic study); department stores voluntarily "
+               "providing cloth bags instead of polythene; Newari festival traditions using "
+               "leaf plates (Lapti); and planned measures (action plan, producer subsidies, "
+               "single-use plastics ban, subsidised alternatives)",
+
+    "Relevance_international_pol": "yes",
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_prov_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_students": "yes",
+    "Res_private_sector": "yes",
+    "Res_households": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_households": "yes",
+    "Cul_private_sector": "yes",
+
+    "Tar_private_companies": "yes",
+    "Tar_households": "yes",
+    "Tar_students": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_nat_government": "yes",
+    "Tar_prov_government": "yes",
+
+    "Actor_role": "3",
+    "Discretion": "As an Environment Inspector focused on public education, Ms. Margen "
+                 "implements composting and plastics-reduction programmes at household, "
+                 "community and school levels and works within KMC's framework of MoUs with "
+                 "registered private partners (e.g. Doko Recyclers in Cluster 7) — but has "
+                 "limited discretion over land procurement (federal land authority), "
+                 "engagement with the informal sector (explicitly excluded), national policy "
+                 "revision timelines, or siting MRF facilities opposed by neighbouring "
+                 "municipalities.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_import": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_clean_up": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Ministry of Forest and Environment plastics policy \"not "
+                                 "implemented and currently under revision\"; KMC relies on "
+                                 "the Environment Act 2077 and Natural Resource Management "
+                                 "Act 2007 rather than a plastics-specific local ordinance; "
+                                 "single-use plastics ban is still at the planning stage; no "
+                                 "assessment yet of the 40-micron notification; sufficient "
+                                 "waste is collected but KMC cannot procure land for MRF/"
+                                 "processing — effectiveness limited by land, technology and "
+                                 "enforcement gaps.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_ban": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_clean_up": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Newari community festival practices that try to "
+                                          "minimise plastics by using leaf plates (Lapti) "
+                                          "instead of disposable plastic — effective "
+                                          "culturally but expensive, with cheaper plastic "
+                                          "alternatives still dominating unless subsidised.",
+    "Notes": "Master list label: \"15. Kathmandu Metropolitan City/ Suna Maya Margen\", "
+             "affiliation: Kathmandu Metropolitan City - Environment Division / Public "
+             "Education & Inspection. Interviewee: Ms. Suna Maya Margen (30 years), "
+             "Environment Inspector, Public Education. Interview date: 23 June 2025; "
+             "internal interview no. 2. Coded from interview guideline/field notes only "
+             "(no full verbatim transcript supplied). Data-quality notes: the follow-up on "
+             "concern level (Q1) and Q2 (visible effects) were left blank in the source; "
+             "ministry-template follow-ups Q4a/Q4b and Q4 effectiveness follow-up were also "
+             "blank. Overlap with NPL_3 (same municipality, Doko Recyclers Cluster 7, land/"
+             "MRF challenges, Lapti tradition, UNDP MoU) but distinct respondent with "
+             "emphasis on public education, composting and inspection rather than SWM office "
+             "policy formulation. NPF fields implied, not explicit.",
 })
 
 # ---------------------------------------------------------------------------
@@ -4687,6 +4831,193 @@ silent_park_expl = {
     "Tar_edu_institutions": "NA - not named.",
 }
 
+margen_expl = {
+    "Actortype": "Ms. Suna Maya Margen is an Environment Inspector in Kathmandu Metropolitan "
+                 "City's Environment Division (Public Education & Inspection) — coded as "
+                 "loc_government.",
+    "Problem_awareness_pop": "Follow-up Q10 asks what people need to learn more about "
+                             "(assessment of the 40-micron notification; microplastics "
+                             "impacts) — implying public knowledge gaps despite KMC's public "
+                             "education work.",
+    "Problem_awareness_pol": "Ministry of Forest and Environment plastics policy is \"not "
+                            "implemented and currently under revision\"; KMC has no direct "
+                            "plastics ordinance and instead relies on broader environment "
+                            "acts — indicating policy-framework gaps.",
+    "Problem_concerndness": "Plastic described as \"the biggest problem visually since 1998\" "
+                            "with rising multi-layer share (8% to 15%), riverbank dumping "
+                            "and drainage blockage. The explicit follow-up on concern level "
+                            "was left blank in the source notes, but the overall framing "
+                            "reflects high institutional concern.",
+    "Problem_littering": "\"Dumped at river-banks\"; drainage blockage; visual pollution.",
+    "Problem_consumption": "Visual pollution attributed to \"tourists\" and \"life-style\" — "
+                           "ongoing consumption patterns driving visible waste.",
+    "Problem_recycling": "\"8% and before now 15%\" multi-layer plastics with \"no value\" — "
+                         "low-value plastics not economically recycled.",
+    "Problem_waste_mgmt": "\"Sufficient waste but unable to procure land\"; lack of land/"
+                          "space within Kathmandu city; 23 municipalities in four districts "
+                          "dispose at KMC's landfill.",
+    "Problem_production": "Multi-layer plastic share rising (8% to 15%); future solutions "
+                          "include \"provide subsidies to producers\" — implying upstream "
+                          "production/composition is part of the problem.",
+    "Problem_alternatives": "\"Lapti\" leaf plates and other alternatives \"are expensive\"; "
+                            "\"alternatives are expensive\" relative to cheap plastic.",
+    "Problem_waste_segregation": "\"Lack of land, we can segregate (no space within the "
+                                 "Kathmandu city)\" — segregation hampered by space "
+                                 "constraints.",
+    "Problem_import": "\"Import of plastics??\" raised as an open policy question in future "
+                      "measures — suggesting imports may undermine domestic management.",
+    "Impacts": "See Coded_Data Impacts cell — visual pollution since 1998, drainage "
+               "blockage, riverbank dumping, multi-layer plastic share, microplastics.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "rivers/drainage systems, tourism/visual environment, neighbouring "
+                     "communities near proposed MRF sites, wildlife and public health "
+                     "(microplastics). No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "lifestyle/tourism consumers; multi-layer plastic producers; unregistered/"
+                    "informal sector (excluded from KMC partnerships); NIMBY opposition to "
+                    "waste facilities; possible plastic importers. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: KMC "
+               "(education, composting, landfill management, riverbed clean-up); Doko "
+               "Recyclers; UNDP; stores using cloth bags; Newari Lapti traditions; planned "
+               "subsidies and bans. No FLAG needed.",
+    "Relevance_international_pol": "UNDP donor partnership (MoU) for plastics recovery and "
+                                   "plastic study.",
+    "Coordination_sectoral": "KMC coordinates with registered private sector (MoUs), UNDP "
+                             "donor partner, and Mayors Forum (18 municipalities) on plastic "
+                             "and solid waste management.",
+    "Coordination_levels": "\"Land authority is with federal and implementation is by LG, "
+                           "its difficult for LG, better coordination and collaboration with "
+                           "provincial and district [needed]\"; central/provincial "
+                           "governments should help provide land within the metro city or "
+                           "valley.",
+    "Unclear_responsibilities": "Federal government holds land authority while local "
+                                "government must implement; ministry plastics policy under "
+                                "revision and not implemented — unclear national-local "
+                                "division of roles.",
+    "Res_nat_government": "Ministry of Forest and Environment (national plastics policy "
+                          "under revision); federal land authority.",
+    "Res_prov_government": "\"Central and provincial government provide [land] within metro "
+                           "city or in the valley\" — provincial role in land/support "
+                           "explicitly invoked.",
+    "Res_loc_government": "\"KTM city\" responsible; manages landfill site used by 23 "
+                          "municipalities in four districts; implements environment acts and "
+                          "solid waste management at city level.",
+    "Res_students": "Composting programmes run at school level — students/schools are "
+                    "implementation partners.",
+    "Res_private_sector": "Registered private sector engaged via MoUs (e.g. Doko Recyclers "
+                          "collecting Cluster 7); solid waste management provisions for "
+                          "private sector engagement.",
+    "Res_households": "Composting promoted at household level as part of KMC public "
+                      "education work.",
+    "Res_edu_institutions": "School-level composting programmes — schools as implementation "
+                            "sites.",
+    "Res_private_companies": "Department stores that provide cloth bags and do not give out "
+                             "polythene bags — retail companies exercising responsibility.",
+    "Cul_nat_government": "Land authority rests with federal government while local "
+                          "government must implement; national ministry policy \"not "
+                          "implemented and currently under revision.\"",
+    "Cul_households": "\"Public opposition – people don't want wastes everywhere\"; "
+                      "neighbouring municipalities oppose MRF facilities nearby.",
+    "Cul_private_sector": "Historical note that private-sector partners \"were not "
+                          "legalized\"; KMC now works only with registered private sector "
+                          "and not with the informal sector.",
+    "Tar_private_companies": "Q9: \"stores in Nepal but u get cloth bags and don't get "
+                              "plastics (polythene)\" — retailers/stores named as focus for "
+                              "future policy.",
+    "Tar_households": "Household composting programmes and public education on plastics "
+                      "imply households as a target group.",
+    "Tar_students": "School-level composting and education programmes target students.",
+    "Tar_edu_institutions": "Schools are explicit sites for composting and education "
+                            "programmes.",
+    "Tar_loc_government": "Better rules and regulation \"within our areas\"; MRF siting "
+                            "and implementation accountability at municipal level.",
+    "Tar_nat_government": "Central government should provide land and revise/implement "
+                          "national plastics policy; subsidies to producers.",
+    "Tar_prov_government": "Provincial government should help provide land and coordinate "
+                           "with local government.",
+    "Actor_role": "Environment Inspector conducting public education, composting programmes "
+                 "and ground-level implementation — street-level implementer (role 3).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "\"Assessment of the 40m notification\" needed — explicit monitoring/"
+                  "evaluation gap for existing ban.",
+    "Financial_resources": "Calls for subsidies to producers and to companies producing "
+                           "alternatives; donor support via UNDP MoU.",
+    "Research": "UNDP MoU includes \"plastic study\"; microplastics impacts need more "
+               "public knowledge.",
+    "Infrastructure": "\"Technology, recycling factory\" lacking; need MRF and land from "
+                      "central/provincial government.",
+    "Capacity": "Technology and recycling-factory capacity gaps explicitly named among "
+               "main challenges.",
+    "Enforcement": "\"Rules & regulation within our areas\" and need to assess 40-micron "
+                   "notification — implying enforcement/monitoring gaps.",
+    "Pol_epr": "Producer subsidies discussed but no extended producer responsibility "
+              "framework mentioned — coded no.",
+    "Pol_import": "Import of plastics raised only as an open question (\"import of "
+                  "plastics??\") with no effective import-control mechanism described.",
+    "Pol_awareness": "Interviewee's public-education role; KMC runs awareness-oriented "
+                     "programmes on plastics reduction and composting.",
+    "Pol_education": "Public education is the interviewee's field of work; composting "
+                     "education at household, community and school levels.",
+    "Pol_ban": "\"Single-use plastics ban — planning\" — ban under development, not yet "
+              "fully operational.",
+    "Pol_subsitutes": "Stores provide cloth bags instead of polythene; planned government "
+                      "subsidies for companies producing alternatives; Lapti leaf plates.",
+    "Pol_clean_up": "\"We did collaborated with wastes at debris near river beds "
+                    "(excavate and transfer)\" — active clean-up of riverbed debris.",
+    "Pol_recycling": "Doko Recyclers MoU collecting from Cluster 7; Mayors Forum provisions "
+                     "for plastic management.",
+    "Pol_waste_collection": "Cluster-based collection via registered private partners; "
+                            "landfill site management for 23 municipalities.",
+    "Pol_effectiveness": "National policy not implemented; ban only planning stage; no 40-m "
+                         "assessment; land/technology gaps limit effectiveness.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Better coordination between federal (land authority), provincial, "
+                       "district and local government; action plan referenced.",
+    "Sol_responsibilities": "Clarify federal land authority vs local implementation; "
+                            "Mayors Forum and ministry revision to assign roles.",
+    "Sol_awareness": "Continued public education on microplastics and 40-micron "
+                     "notification assessment.",
+    "Sol_segregation": "Segregation desired but blocked by lack of land/space — future "
+                       "solution requires land and MRF infrastructure.",
+    "Sol_recycling": "Recycling factory/technology and MRF needed.",
+    "Sol_education": "Public education on microplastics, health/environment/wildlife "
+                     "impacts and composting.",
+    "Sol_capacity": "Technology and recycling-factory capacity building.",
+    "Sol_ban": "Single-use plastics ban in planning.",
+    "Sol_finance": "Subsidies to producers; government subsidies for alternative-product "
+                   "companies; UNDP donor support.",
+    "Sol_infrastructure": "MRF and land provision by central/provincial government within "
+                          "metro city or valley.",
+    "Sol_subsitutes": "Subsidise companies producing alternatives; promote Lapti and cloth "
+                      "bags.",
+    "Sol_clean_up": "Riverbed debris excavation and transfer (ongoing collaborative work).",
+    "Sol_enforcement": "\"Rules & regulation within our areas\"; assess and enforce "
+                      "40-micron notification.",
+    "Sol_monitoring": "Assessment of 40-micron notification; plastic study with UNDP.",
+    "Traditions to build on (free-hand)": "Newari festival leaf plates (Lapti) — culturally "
+                                          "rooted plastic reduction but cost barrier.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_civil_society": "NA - Doko Recyclers coded under private sector; no NGOs/CSOs "
+                         "named as responsible actors.",
+    "Res_science": "NA - research needs mentioned but no scientific institutions named as "
+                   "responsible actors.",
+    "Cul_prov_government": "NA - provincial government portrayed as needed helper, not "
+                           "primarily blamed.",
+    "Cul_loc_government": "NA - interviewee represents KMC; municipality portrayed as "
+                           "implementer facing external constraints rather than primary "
+                           "culprit.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - schools are programme sites, not blamed.",
+    "Cul_private_companies": "NA - stores with cloth bags portrayed positively; importers "
+                             "only raised as open question.",
+    "Tar_private_sector": "NA - registered private partners discussed as collaborators "
+                          "rather than primary policy targets.",
+    "Tar_civil_society": "NA - not named as target group.",
+    "Tar_science": "NA - not named.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -4702,6 +5033,7 @@ EXPLANATIONS = {
     "NPL_12": moud12_expl,
     "NPL_13": creasion_expl,
     "NPL_14": silent_park_expl,
+    "NPL_15": margen_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -4723,12 +5055,13 @@ CODED_ROWS = {
     "NPL_12": moud12,
     "NPL_13": creasion,
     "NPL_14": silent_park,
+    "NPL_15": margen,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_14).
+# Master-list order for coded interviews only (NPL_1 through NPL_15).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
-    "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14",
+    "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -4747,6 +5080,8 @@ CODED_META = {
     "NPL_12": ("12. Ministry for Urban Planning", "Ministry of Urban Development"),
     "NPL_13": ("13. Creasion", "Center for Research and Sustainable Development in Nepal"),
     "NPL_14": ("14. Hotel Silent Park/ Rajesh Aryal", "Hotel Silent Park"),
+    "NPL_15": ("15. Kathmandu Metropolitan City/ Suna Maya Margen",
+               "Kathmandu Metropolitan City - Environment Division / Public Education & Inspection"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -4780,6 +5115,9 @@ NAMES["NPL_13"] = ("Creasion - Recycling and waste-management CSO, Chitwan area 
                     "(23 June 2025, ~5:15pm)")
 NAMES["NPL_14"] = ("Hotel Silent Park - Rajesh Aryal, Chitwan/Sauraha tourism area "
                     "(26 June 2025)")
+NAMES["NPL_15"] = ("Kathmandu Metropolitan City - Ms. Suna Maya Margen (30 years), "
+                    "Environment Inspector, Public Education & Inspection, Kathmandu "
+                    "(23 June 2025, internal interview no. 2)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -4921,7 +5259,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_14, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_15, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -4983,11 +5321,15 @@ readme_lines = [
     ("  14. NPL_14 - Hotel Silent Park, Rajesh Aryal, Chitwan (26 June 2025). Coded from "
      "full interview package (guideline policy themes and verbatim transcript). NPF fields "
      "implied.", False),
+    ("  15. NPL_15 - Kathmandu Metropolitan City, Ms. Suna Maya Margen (Environment Inspector, "
+     "Public Education), Kathmandu (23 June 2025, internal interview no. 2). Coded from "
+     "interview guideline/field notes only (no full verbatim transcript). Overlaps thematically "
+     "with NPL_3 (same municipality) but distinct respondent.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_14, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_15, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
