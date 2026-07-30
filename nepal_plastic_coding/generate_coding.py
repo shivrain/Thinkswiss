@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_18). Unfilled placeholder rows are not included. Interviews
+through NPL_19). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -18,14 +18,15 @@ Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
 Urban Planning / MoUD), NPL_13 (Creasion), NPL_14 (Hotel Silent Park /
 Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
 (Kathmandu Ward No. 6), NPL_17 (Kathmandu Ward No. 7 / Romy Prasad Shrestha), NPL_18
-(dry waste management practitioner / consultant & researcher).
+(dry waste management practitioner / consultant & researcher), NPL_19 (TAAN /
+Trekking Agencies' Association of Nepal).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_18, in order), one column per COLUMNS
+                           (NPL_1 through NPL_19, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -2561,6 +2562,148 @@ waste_practitioner.update({
              "respondent; thematically overlaps NPL_5 (Doco Recyclers) on EPR, cherry-picking "
              "and multilayer plastics but coded here as a separate unnamed practitioner/"
              "consultant interview per the research team. NPF fields implied, not explicit.",
+})
+
+# --- NPL_19: TAAN (Trekking Agencies' Association of Nepal) -----------------
+taan = blank_row()
+taan.update({
+    "Country": "Nepal",
+    "ID": "NPL_19",
+    "Actortype": "civil_society",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "environment and ecological systems (plastic harms \"all living and non-living "
+               "beings\"; trails and mountains above 3,000 m littered), wildlife (animals eat "
+               "plastic), health (side effects from plastic and from burning it), tourism and "
+               "national image (\"bad impression of the image of the whole country\"; trash "
+               "undermines visitors coming to see natural resources and mountains), Pokhara "
+               "Lakeside garbage management failures, and air pollution from open burning of "
+               "plastic waste",
+    NPF_VICTIMS_COL: "wildlife and mountain ecosystems; Nepal's tourism reputation and "
+                     "natural-resource image; communities and porters/guides (off-season "
+                     "unemployment; trails as workplace); the public affected by health impacts "
+                     "of plastic and burning; and Pokhara Lakeside residents/visitors facing "
+                     "inadequate garbage disposal options",
+    "NPF_villains": "domestic tourists who \"throw plastics out of the bus\"; plastic "
+                    "producers/factories (especially plastic-bag factories the interviewee "
+                    "says should be closed); junk-food/noodle/beer-bottle consumption on "
+                    "treks; the national government (policies exist but are not implemented, "
+                    "current act is old, no fines for plastic bags, lack of monitoring and "
+                    "willingness to enforce); people who burn plastic waste; and new road "
+                    "access making checkpoint/deposit enforcement harder in restricted areas "
+                    "(Upper Mustang, Manaslu)",
+    "NPF_hero": "TAAN and tourism entrepreneurs (minimize plastic use, train guides/porters, "
+               "collect trash above 3,000 m); Ethical Trekking (eco-friendly trekking model); "
+               "ACAP and local governments as partners; guides and porters in proposed paid "
+               "\"clean campaigns\"; mother groups and youth clubs (weekly cleanups); schools "
+               "banning junk food/noodles; Nepal Army and NTNC; Pokhara municipality "
+               "recycling-factory plans; Tourism Minister lake-cleaning campaign; and "
+               "traditional alternatives (Gurung Bhangra bags, leaf plates, dal bhat, metal "
+               "bottles)",
+
+    "Relevance_international_pol": "yes",
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_science": "yes",
+    "Res_households": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_households": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_students": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_households": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_private_companies": "yes",
+    "Tar_science": "yes",
+
+    "Actor_role": "2",
+    "Discretion": "As TAAN president (and Ethical Trekking operator), the interviewee runs "
+                 "guide/porter training programmes (~150 students), discourages trekker plastic-"
+                 "bottle use, coordinates with ACAP and local governments on trail cleanups, "
+                 "and launched association-wide campaigns (e.g. Pokhara lake cleaning with the "
+                 "Tourism Minister) — but cannot enforce national plastic policy, close plastic "
+                 "factories, fund off-season clean campaigns without external support, or "
+                 "control domestic-tourism littering nationwide.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_tax": "yes",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_clean_up": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"We have policies, but they are not implemented properly\"; "
+                                 "Upper Mustang/Manaslu garbage-listing and deposit system "
+                                 "exists but \"implementation is not easy\" (especially with "
+                                 "new roads); black plastics banned but plastic factories "
+                                 "remain; \"lack of monitoring and a lack of willingness to "
+                                 "implement policies\"; \"currently, there are no fines in Nepal "
+                                 "for using plastic bags, only monthly fees for trash "
+                                 "collection\"; \"if the law were strictly implemented, it could "
+                                 "be cured.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_clean_up": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Gurung Bhangra woven bags for carrying goods; leaf "
+                                          "plates and mud cups; copper plates at home; "
+                                          "promoting dal bhat (local vegetables/lentils, no "
+                                          "plastic packaging) over noodles/spaghetti in plastic; "
+                                          "metal bottles and treated/filtered water instead of "
+                                          "plastic bottles.",
+    "Notes": "Master list label: \"19. TAAN Trekking Association\", affiliation: Trekking "
+             "Agencies' Association of Nepal (TAAN), Pokhara. Interviewee name not given; "
+             "respondent is TAAN president (first elected without contest; former treasurer/"
+             "vice president) and founder/operator of Ethical Trekking. Also founded a self-"
+             "sustaining NGO/orphanage (closed 2019) — background narrative included in "
+             "transcript but plastic-governance coding focuses on TAAN/tourism role. "
+             "Interviewers: PEGO team. Interview date not stated. Coded from full verbatim "
+             "transcript. ~180 trekking companies in Pokhara; TAAN established 42 years ago. "
+             "Partners mentioned: ACAP, NTNC, Nepal Army, Tourism Minister. NPF fields implied, "
+             "not explicit.",
 })
 
 
@@ -5816,6 +5959,132 @@ waste_practitioner_expl = {
     "Tar_science": "NA - researchers partners, not primary target group.",
 }
 
+taan_expl = {
+    "Actortype": "Respondent is president of TAAN (Trekking Agencies' Association of Nepal), "
+                 "an industry association representing trekking agencies — coded as "
+                 "civil_society.",
+    "Problem_awareness_pop": "Domestic tourists \"throw plastics out of the bus\"; people "
+                             "\"don't have a culture of carrying shopping bags yet\"; nationwide "
+                             "school campaigns needed.",
+    "Problem_awareness_pol": "\"We have policies, but they are not implemented properly\"; "
+                            "current act \"quite old\"; lack of monitoring and willingness to "
+                            "implement.",
+    "Problem_concerndness": "\"As the president of TAAN, it really pains me to see trash and "
+                            "plastic everywhere\"; TAAN and trekking companies \"very aware\" of "
+                            "plastic issues.",
+    "Problem_littering": "Trash and plastic \"everywhere\" on trails and nationally; Pokhara "
+                         "Lakeside garbage problems; difficulty bringing all trail waste back "
+                         "down.",
+    "Problem_consumption": "Junk food, noodles, beer bottles and plastic bottles described "
+                           "as \"a massive problem\" on treks; domestic tourism consumption.",
+    "Problem_recycling": "TAAN works to promote recycling; Pokhara municipality planning "
+                         "recycling factories.",
+    "Problem_waste_mgmt": "Pokhara Lakeside — \"nowhere to throw\" garbage sometimes; villages "
+                          "bury or burn waste; trails above 3,000 m hard to manage.",
+    "Problem_production": "\"Close the factories that make plastic bags\"; government should "
+                          "\"totally ban plastic factories.\"",
+    "Problem_alternatives": "Discourage plastic bottles; filters/tablets for local water; "
+                            "metal bottles; traditional woven bags and leaf plates.",
+    "Problem_waste_segregation": "Need deposit/separation places with sheds so trash \"doesn't "
+                                 "fly away.\"",
+    "Impacts": "Environment, wildlife, health, burning, tourism/national image, Pokhara "
+               "Lakeside.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "wildlife; mountain ecosystems; tourism/national image; porters/guides; "
+                     "public health. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "domestic litterers; plastic factories; weak government enforcement; junk-"
+                    "food consumption; road access undermining checkpoints. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: TAAN, "
+               "Ethical Trekking, tourism sector, ACAP, local government, guides/porters, "
+               "schools, traditional alternatives. No FLAG needed.",
+    "Relevance_international_pol": "International trekking promotion (Europe); research needed "
+                                   "to affect government policy; tourism-dependent economy.",
+    "Coordination_sectoral": "TAAN works with stakeholders, local governments, ACAP, Nepal "
+                             "Army, NTNC, Tourism Minister, mother groups and youth clubs.",
+    "Coordination_levels": "National policies vs local implementation gaps; checkpoint deposit "
+                           "systems in restricted areas vs municipal collection in Pokhara.",
+    "Unclear_responsibilities": "Government should be strict but lacks monitoring/willingness; "
+                                "\"encourage the government to do its job now.\"",
+    "Res_nat_government": "Policies, bans, fines, factory regulation, strict implementation.",
+    "Res_loc_government": "Local governments trying \"their best\"; reward minimisers; recycling "
+                          "factory plans in Pokhara; black-plastic prohibitions.",
+    "Res_private_sector": "Trekking agencies, guides and porters responsible for trail trash.",
+    "Res_civil_society": "TAAN, mother groups, youth clubs running cleanups.",
+    "Res_science": "Research needed \"to affect government policy.\"",
+    "Res_households": "Public should carry own bags and reduce plastic consumption.",
+    "Res_edu_institutions": "Schools banning junk food; nationwide school campaigns proposed.",
+    "Res_private_companies": "Plastic-bag factories; trekking/tourism companies under TAAN.",
+    "Cul_nat_government": "Policies not implemented; old act; no bag fines; weak monitoring.",
+    "Cul_households": "Domestic tourism littering; no shopping-bag culture.",
+    "Cul_private_companies": "Plastic-bag factories should be closed; junk-food packaging.",
+    "Tar_nat_government": "Strict implementation, updated legislation, factory bans, fines.",
+    "Tar_loc_government": "Rewards for minimisers; garbage management (Pokhara); recycling "
+                          "infrastructure.",
+    "Tar_students": "Nationwide school campaigns; schools already banning junk food.",
+    "Tar_private_sector": "Guides/porters training and paid off-season clean campaigns.",
+    "Tar_households": "Reduce plastic consumption; adopt reusable bags.",
+    "Tar_edu_institutions": "School campaigns and junk-food bans.",
+    "Tar_private_companies": "Trekking agencies and plastic producers/factories.",
+    "Tar_science": "Research to inform government policy.",
+    "Actor_role": "TAAN president organising training (~150 guide/porter students), campaigns, "
+                 "stakeholder coordination and policy advocacy — managerial/organisational "
+                 "implementer (2).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "Lack of monitoring cited; checkpoint deposit system hard to enforce with "
+                  "roads.",
+    "Financial_resources": "Off-season porters need paid clean-campaign funding; economic "
+                           "support for remote mountain areas.",
+    "Research": "\"We need research like yours to affect government policy.\"",
+    "Infrastructure": "Deposit/separation sheds; Pokhara twice-weekly collection vs village "
+                      "bury/burn; planned recycling factory land.",
+    "Capacity": "Train guides/porters but need jobs in off-season to prevent migration.",
+    "Enforcement": "Deposit/checkpoint policy in Mustang/Manaslu; proposed fines and strict "
+                   "law implementation.",
+    "Pol_epr": "Extended producer responsibility not mentioned.",
+    "Pol_tax": "Monthly trash-collection fees in Pokhara (no fines for plastic bags).",
+    "Pol_awareness": "Lake-cleaning campaign with Tourism Minister; TAAN promotion campaigns.",
+    "Pol_education": "Guide/porter training for ~150 students on trash responsibility.",
+    "Pol_ban": "Black plastics prohibited/banned; proposes total plastic-factory ban; some "
+              "schools ban junk food.",
+    "Pol_subsitutes": "Water filters/tablets, metal bottles, traditional bags and leaf plates.",
+    "Pol_clean_up": "Lake cleanup; weekly mother-group/youth-club cleanups; collect trash "
+                    "above 3,000 m; proposed paid clean campaigns.",
+    "Pol_recycling": "TAAN promotes recycling; Pokhara municipality recycling-factory plans.",
+    "Pol_waste_collection": "Pokhara trucks twice weekly; Mustang/Manaslu garbage listing and "
+                            "deposit at checkpoints.",
+    "Pol_effectiveness": "Policies exist but poorly implemented/monitored.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Strict government implementation; TAAN/stakeholder coordination.",
+    "Sol_responsibilities": "Government strictness; municipalities accountable for garbage "
+                            "management.",
+    "Sol_awareness": "More campaigns nationwide, especially schools.",
+    "Sol_segregation": "Deposit places with sheds for separated trash.",
+    "Sol_recycling": "Pokhara recycling factories; promote recycling via TAAN.",
+    "Sol_education": "School campaigns; guide/porter training.",
+    "Sol_capacity": "Train and employ porters/guides in off-season clean campaigns.",
+    "Sol_finance": "Economic support/funding for remote-area clean campaigns.",
+    "Sol_infrastructure": "Segregation deposit sheds; municipal recycling facilities.",
+    "Sol_subsitutes": "Metal bottles, filters, Gurung Bhangra, leaf plates, dal bhat.",
+    "Sol_clean_up": "Paid off-season trail clean campaigns; lake and weekly community cleanups.",
+    "Sol_enforcement": "Strict law implementation; fines; checkpoint deposit system enforced.",
+    "Sol_monitoring": "Better monitoring and willingness to implement existing policies.",
+    "Traditions to build on (free-hand)": "Gurung Bhangra, leaf plates, mud/copper vessels, "
+                                          "dal bhat over packaged noodles.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - students targeted via schools but not named as responsible actors.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - local government portrayed as trying and planning recycling.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - trekking sector portrayed as relatively conscious; TAAN leads.",
+    "Cul_civil_society": "NA - CSOs portrayed as heroes (cleanups).",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - schools portrayed positively (junk-food bans).",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_civil_society": "NA - CSOs already active; not primary target framing.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -5835,6 +6104,7 @@ EXPLANATIONS = {
     "NPL_16": ktm_ward6_expl,
     "NPL_17": shrestha_expl,
     "NPL_18": waste_practitioner_expl,
+    "NPL_19": taan_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -5860,12 +6130,14 @@ CODED_ROWS = {
     "NPL_16": ktm_ward6,
     "NPL_17": shrestha,
     "NPL_18": waste_practitioner,
+    "NPL_19": taan,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_18).
+# Master-list order for coded interviews only (NPL_1 through NPL_19).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
+    "NPL_19",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -5892,6 +6164,7 @@ CODED_META = {
                "Ward No. 7 - Local governance, waste management"),
     "NPL_18": ("18. Dry waste management practitioner/ consultant (unnamed)",
                "Dry waste management practitioner; consultant & researcher (Kathmandu & Pokhara)"),
+    "NPL_19": ("19. TAAN Trekking Association", "Trekking Agencies' Association of Nepal (TAAN)"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -5936,6 +6209,8 @@ NAMES["NPL_17"] = ("Kathmandu Ward No. 7 - Mr. Romy Prasad Shrestha, elected war
                     "(22 June 2025, 12:10pm–12:50pm; internal interview no. 2)")
 NAMES["NPL_18"] = ("Dry waste management practitioner / consultant & researcher (unnamed), "
                     "Kathmandu & Pokhara (active since 2017; interview date not stated)")
+NAMES["NPL_19"] = ("TAAN (Trekking Agencies' Association of Nepal) - President (unnamed), "
+                    "Pokhara; also founder of Ethical Trekking (interview date not stated)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -6077,7 +6352,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_18, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_19, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -6154,11 +6429,14 @@ readme_lines = [
     ("  18. NPL_18 - Dry waste management practitioner / consultant & researcher (unnamed), "
      "Kathmandu & Pokhara (active since 2017). Coded from guideline/field notes. Content "
      "matches Q3a bullets previously excluded from NPL_3; thematically overlaps NPL_5.", False),
+    ("  19. NPL_19 - TAAN (Trekking Agencies' Association of Nepal), president (unnamed), "
+     "Pokhara; also Ethical Trekking founder. Coded from full verbatim transcript. Tourism/"
+     "trekking sector focus.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_18, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_19, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -6172,7 +6450,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_18) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_19) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
