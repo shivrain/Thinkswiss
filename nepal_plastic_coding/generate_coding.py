@@ -8,19 +8,19 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_8). Unfilled placeholder rows are not included. Interviews
+through NPL_9). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
 Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
-(Ministry of Urban Development).
+(Ministry of Urban Development), NPL_9 (Dhulikhel Ward Office).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_8, in order), one column per COLUMNS
+                           (NPL_1 through NPL_9, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -1255,6 +1255,138 @@ moud.update({
              "on MOUD website for consultation; separate plastics-only policy planned "
              "after the act. \"EPI\" in transcript treated as EPR (extended producer "
              "responsibility). Bonsai/Bancharedanda landfill name varies in transcript.",
+})
+
+# --- NPL_9: Dhulikhel Municipality - Ward Office (Ward No. 2 per transcript) --
+ward2 = blank_row()
+ward2.update({
+    "Country": "Nepal",
+    "ID": "NPL_9",
+    "Actortype": "loc_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "agriculture (plastic in farmlands, severely affected farmland fertility in "
+               "Ward No. 2), rivers and canals (blockages), health (plastic bottles; open "
+               "syringes along Panchkhal stream; medical/hazardous waste mismanagement), "
+               "lower settlements (dumping-site runoff due to topography), lifestyle "
+               "(everything packaged in plastic)",
+    NPF_VICTIMS_COL: "farmers and residents of Wards No. 2 and 3 (most affected by the Ward "
+                     "No. 8 dumping site; farmland fertility loss); lower settlements "
+                     "downstream of the dumping site; the general public/households "
+                     "(health risks from plastic use and waste, including syringe scavenging); "
+                     "rivers and agricultural environments in Ward No. 2",
+    "NPF_villains": "the general public/households (lack of awareness, casual plastic use, "
+                    "not following syringe-collection guidance); factories (resisted the "
+                    "micron-thickness ban, no follow-through); hotels, shops and restaurants "
+                    "(prioritised quick profits over cloth-bag and anti-plastic-container "
+                    "campaigns); the municipality (collects annual cleaning taxes but weak "
+                    "execution; no segregation in collection vehicles; unclear allocation of "
+                    "funds across 12 wards); people who collect syringes and other waste "
+                    "materials to sell",
+    "NPF_hero": "the ward office as first contact point and coordinator (Tol Sudhar Samiti "
+               "pilot projects, Environment Day rallies, awareness activities with limited "
+               "ward funds); Dhulikhel Hospital/nursing college (cloth-bag campaign — ~1,000 "
+               "bags to hotels/shops); former ETPC NGO (household waste collection); "
+               "Tribhuvan University (market-area development collaboration); researchers/"
+               "universities invited to support awareness and continue efforts",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_science": "yes",
+    "Res_households": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_households": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_loc_government": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_civil_society": "yes",
+    "Tar_science": "yes",
+    "Tar_nat_government": "yes",
+
+    "Actor_role": "3",
+    "Discretion": "The ward can coordinate grassroots activities through Tol Sudhar Samiti "
+                 "(~100–150 households per committee), run awareness activities from limited "
+                 "ward funds, act as first contact for NGO/researcher collaborations, and "
+                 "report problems to the municipality — but has no separate waste-management "
+                 "budget, no authority over municipal collection trucks, and no manpower or "
+                 "materials to segregate or manage waste independently.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_tax": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_clean_up": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "\"Policies exist only on paper; they are not implemented\"; "
+                                 "\"The local government collects annual cleaning taxes from us "
+                                 "yearly, but there's no effective execution\"; \"The government "
+                                 "tried to make a rule but couldn't enforce it\" (micron ban "
+                                 "introduced ~3–4 years ago but factories resisted); \"No, "
+                                 "everything collected in the vehicles goes together\" — no "
+                                 "source segregation in practice.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_clean_up": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Baskets made from paper or bamboo; meat wrapped "
+                                          "in straw bundles; large reusable cloth bags for "
+                                          "carrying goods; earlier practice of carrying items "
+                                          "in reusable bags before plastic became common.",
+    "Notes": "Master list label: \"9. Dhulikhel Ward no.1\", affiliation: Dhulikhel "
+             "Municipality - Ward No. 1. However, the transcript consistently identifies the "
+             "respondents' focal ward as Ward No. 2 (e.g. plastic in farmlands and rivers in "
+             "Ward No. 2; Wards 2 and 3 most affected by dumping site in Ward No. 8). "
+             "Interviewees: Ward Head (name not given), E, Deep and F (ward/municipal staff; "
+             "exact roles not fully identified). Interviewers: Ram Devi (Kathmandu University "
+             "researcher) and PEGO project team. Location: Dhulikhel. Coded from both the "
+             "interview guideline notes and the full verbatim transcript. NPF fields: victims, "
+             "villains and hero are not named using explicit NPF narrative labels but are "
+             "clearly implied (see Coding_Explanations). Hospital collaboration refers to "
+             "Dhulikhel Hospital; ETPC = Environment Tourism Committee (former NGO).",
 })
 
 # ---------------------------------------------------------------------------
@@ -3072,6 +3204,176 @@ moud_expl = {
     "Tar_science": "NA - researchers consulted but not named as primary target group.",
 }
 
+ward2_expl = {
+    "Actortype": "Interview conducted at the Dhulikhel Municipality ward office with the "
+                 "Ward Head and ward/municipal staff — coded as loc_government (ward-level "
+                 "local government).",
+    "Problem_awareness_pop": "\"People don't understand, they just collect and store waste, "
+                             "unaware of the consequences\"; \"People treat plastic casually\"; "
+                             "\"The biggest challenge is education. Until the community itself "
+                             "becomes aware, no matter how many programs we run, it won't work.\"",
+    "Problem_awareness_pol": "\"Policies exist only on paper; they are not implemented\"; "
+                            "ward lacks authority and resources to act on national/municipal "
+                            "rules; \"some matters fall under higher authorities, we haven't "
+                            "been able to act effectively.\"",
+    "Problem_concerndness": "\"It's a major problem\"; \"Plastic is creating severe problems "
+                            "here\"; \"Plastic has become a serious issue regarding waste\"; "
+                            "\"Plastic has severely affected farmland fertility.\"",
+    "Problem_littering": "Open syringes found along the Panchkhal stream; waste dumped at "
+                         "one site; dumping-site runoff affecting lower settlements.",
+    "Problem_consumption": "\"Everything now comes packaged in plastic\"; \"Plastic is "
+                           "convenient and cheap for just 1 rupee\"; even if households avoid "
+                           "bringing plastic home, food products always arrive in plastic "
+                           "packaging.",
+    "Problem_recycling": "Former ETPC NGO collected household waste but could not sustain "
+                         "operations; no systematic recycling at ward level.",
+    "Problem_waste_mgmt": "\"The implementation aspect is weak\"; waste collected twice a "
+                          "week and dumped at one site; ward tried hospital collaboration but "
+                          "\"couldn't succeed\"; no ward-level systematic framework.",
+    "Problem_production": "\"There's no monitoring of what kind of plastic is being produced "
+                          "or used\"; factories resisted the micron ban.",
+    "Problem_alternatives": "\"We don't have affordable alternatives\"; without alternatives "
+                            "\"it's difficult to stop its use.\"",
+    "Problem_waste_segregation": "\"No, everything collected in the vehicles goes together\"; "
+                                 "\"Exactly\" — no source segregation; \"Some segregation "
+                                 "happens later, but not properly.\"",
+    "Impacts": "Plastic in Ward No. 2 farmlands and rivers; canal blockages; farmland "
+               "fertility loss; health concerns (plastic bottles; syringes); dumping-site "
+               "runoff to lower settlements.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "farmers and residents of Wards 2 and 3 (dumping site in Ward 8); lower "
+                     "settlements affected by runoff; households/public facing health risks; "
+                     "rivers and agricultural land in Ward No. 2. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "unaware/casual public; factories resisting the ban; profit-prioritising "
+                    "hotels/restaurants/shops; municipality with weak implementation; syringe "
+                    "scavengers. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: ward "
+               "office (coordination, awareness, Tol Sudhar Samiti); hospital/nursing-college "
+               "cloth-bag campaign; ETPC; Tribhuvan University; researchers. Ward partly "
+               "positions itself and partners as problem-solvers despite limited capacity. "
+               "No FLAG needed.",
+    "Coordination_sectoral": "Ward coordinated with nursing college and Dhulikhel Hospital "
+                             "(cloth bags), ETPC (waste collection), Tol Sudhar Samiti "
+                             "(grassroots), Tribhuvan University (market development), and "
+                             "welcomes researcher collaboration.",
+    "Coordination_levels": "Waste management contracted at municipality level; ward reports "
+                           "problems to municipality but has no separate budget or authority; "
+                           "\"difficult to control from the ward level alone.\"",
+    "Unclear_responsibilities": "Ward says plastic management is within its responsibility "
+                                "but matters fall under higher authorities; residents pay "
+                                "municipal cleaning fees but \"we don't know exactly how funds "
+                                "are distributed among the 12 wards.\"",
+    "Res_nat_government": "National/municipal rules on micron-thickness bans cited.",
+    "Res_loc_government": "Municipality contracts waste management to a company, collects "
+                          "revenue and manages disposal; ward reports problems upward.",
+    "Res_private_sector": "Waste-management company contracted by municipality; private "
+                          "companies proposed to collect household waste for a fee.",
+    "Res_civil_society": "ETPC formerly collected waste; Tol Sudhar Samiti operates under "
+                         "ward guidance.",
+    "Res_science": "Researchers (Kathmandu University team) and Tribhuvan University "
+                   "collaboration welcomed.",
+    "Res_households": "\"Plastic originates from households\"; households should separate "
+                      "waste at home.",
+    "Res_edu_institutions": "Nursing college partnered on cloth-bag distribution; "
+                            "Tribhuvan University coordinating on market-area development.",
+    "Res_private_companies": "Hotels, shops and restaurants targeted in anti-plastic "
+                             "campaigns; businesses generate plastic waste.",
+    "Cul_nat_government": "\"The government tried to make a rule but couldn't enforce it\"; "
+                          "policies exist on paper only.",
+    "Cul_loc_government": "Municipality collects annual cleaning taxes but \"there's no "
+                          "effective execution\"; unclear fund allocation to wards; collection "
+                          "vehicles mix all waste.",
+    "Cul_households": "Public lacks awareness; people store waste without understanding "
+                      "consequences; historically throw waste expecting municipality to clean.",
+    "Cul_private_companies": "Restaurants continued serving food in plastic containers; "
+                             "businesses \"prioritized quick profits\"; campaigns could not "
+                             "continue.",
+    "Tar_loc_government": "Deep argues ward should implement rules like road building; "
+                          "municipality must improve execution.",
+    "Tar_private_sector": "Private companies could collect segregated waste from households "
+                          "for a fee.",
+    "Tar_households": "Awareness and household source segregation emphasised as essential.",
+    "Tar_private_companies": "Hotels, shops and restaurants were direct targets of the "
+                             "cloth-bag and anti-plastic-container campaigns.",
+    "Tar_edu_institutions": "Nursing college involved in distribution campaign; TU "
+                            "collaboration planned.",
+    "Tar_civil_society": "Tol Sudhar Samiti and NGOs suggested for pilot projects and "
+                         "awareness.",
+    "Tar_science": "Researchers invited to support and continue ward efforts after the study.",
+    "Tar_nat_government": "Strict policy enforcement of micron ban cited as one of three "
+                          "essentials alongside awareness and resources.",
+    "Actor_role": "Ward Head and staff describe grassroots coordination, Tol Sudhar Samiti "
+                 "guidance, awareness rallies and reporting to the municipality — typical "
+                 "street-level/local implementer role (3), not national policy formulation.",
+    "Discretion": "Ward can run awareness with limited funds and coordinate pilots through "
+                  "Tol Sudhar Samiti, but cannot control municipal trucks, segregation, "
+                  "dumping-site location (Ward 8) or waste-contractor operations.",
+    "Monitoring": "\"There's no monitoring of what kind of plastic is being produced or "
+                  "used\"; ban not enforced.",
+    "Financial_resources": "Ward receives no separate waste-management budget; lacks "
+                           "resources and manpower despite residents paying municipal "
+                           "cleaning fees.",
+    "Research": "Ward Head requests researcher suggestions to improve waste management; TU "
+               "collaboration discussed; researchers welcomed to continue efforts.",
+    "Infrastructure": "Ward has no own dumping site (site in Ward No. 8); topography causes "
+                      "runoff affecting Wards 2 and 3; hospital lacks own dumping site.",
+    "Capacity": "\"The ward lacks both resources and manpower\"; no right, manpower or "
+               "materials to manage waste separately.",
+    "Enforcement": "Micron ban and municipal rules not enforced; factories resisted; ward "
+                   "lacks authority to enforce.",
+    "Pol_epr": "Extended producer responsibility not mentioned.",
+    "Pol_awareness": "Environment Day rallies; cloth-bag campaign with nursing college; "
+                     "syringe-collection awareness ~8–10 years ago.",
+    "Pol_education": "\"The biggest challenge is education\"; awareness essential for long-"
+                     "term control.",
+    "Pol_tax": "Annual cleaning taxes/fees collected by the municipality from residents.",
+    "Pol_ban": "Plastics below a certain micron thickness banned (~3–4 years ago; 40 microns "
+              "referenced in discussion).",
+    "Pol_subsitutes": "Cloth-bag distribution campaign (~1,000 bags to hotels and shops).",
+    "Pol_clean_up": "Environment Day observed with rallies.",
+    "Pol_waste_collection": "Household waste collected twice a week by municipal contractor "
+                            "and dumped at one site.",
+    "Pol_effectiveness": "Implementation weak; policies on paper; ban not enforced; no "
+                         "segregation.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Ward as first contact point for collaborations; Tol Sudhar Samiti "
+                       "for neighbourhood pilots.",
+    "Sol_responsibilities": "Three essentials: public awareness, proper resources, strict "
+                            "policy enforcement.",
+    "Sol_awareness": "Awareness campaigns, Environment Day, cloth-bag distribution, "
+                     "researcher-supported awareness.",
+    "Sol_segregation": "Household source segregation and separate bins/cloth bags proposed.",
+    "Sol_education": "Community education emphasised as prerequisite for any programme.",
+    "Sol_capacity": "Technical and resource support needed for ward and municipal "
+                    "implementers.",
+    "Sol_finance": "Ward funds used for awareness; calls for clearer municipal budget "
+                   "allocation; private collection for a fee proposed.",
+    "Sol_infrastructure": "Separate bins at household level; ward lacks own disposal site.",
+    "Sol_subsitutes": "Cloth bags, bamboo/paper baskets, straw bundles for meat.",
+    "Sol_clean_up": "Environment Day rallies; small-scale ward activities.",
+    "Sol_enforcement": "Strict policy enforcement named as essential alongside awareness "
+                       "and resources.",
+    "Sol_monitoring": "Implied need to monitor plastic production and usage (currently "
+                      "absent).",
+    "Traditions to build on (free-hand)": "Bamboo/paper baskets, straw-wrapped meat, large "
+                                          "reusable cloth bags — pre-plastic carrying "
+                                          "practices.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - students not named as responsible actors (nursing college is an "
+                    "institution, coded under Res_edu_institutions).",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - private waste contractor not blamed; private collection "
+                          "proposed as solution.",
+    "Cul_civil_society": "NA - NGOs not blamed (ETPC lacked resources).",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Tar_prov_government": "NA - not named as target group.",
+    "Tar_students": "NA - not named as target group.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -3081,6 +3383,7 @@ EXPLANATIONS = {
     "NPL_6": hotel_expl,
     "NPL_7": rsct_expl,
     "NPL_8": moud_expl,
+    "NPL_9": ward2_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -3096,11 +3399,12 @@ CODED_ROWS = {
     "NPL_6": hotel,
     "NPL_7": rsct,
     "NPL_8": moud,
+    "NPL_9": ward2,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_8).
+# Master-list order for coded interviews only (NPL_1 through NPL_9).
 CODED_ORDER = [
-    "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8",
+    "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -3113,6 +3417,7 @@ CODED_META = {
     "NPL_6": ("6. Restaurant and Hotel Owner Dhulikhel_Combined", "Dhulikhel Hotel / Restaurant"),
     "NPL_7": ("7. Rural Self-Reliance Development Center/ Narayan Nirola", "Rural Self-Reliance Development Center"),
     "NPL_8": ("8. Urban Development Ministry/ Kamal Adhikar", "Ministry of Urban Development, Government of Nepal"),
+    "NPL_9": ("9. Dhulikhel Ward no.1", "Dhulikhel Municipality - Ward No. 1"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -3134,6 +3439,8 @@ NAMES["NPL_7"] = ("Rural Self-Reliance Development Center (RSDC/RSCT) - Narayan 
 NAMES["NPL_8"] = ("Ministry of Urban Development - Kamal Adhikar (Senior Sociologist), "
                    "Nawaraj (Joint Secretary) + colleagues, Kathmandu (23 June 2025, "
                    "Interview 2)")
+NAMES["NPL_9"] = ("Dhulikhel Municipality Ward Office - Ward Head + ward staff (E, Deep, F), "
+                   "Dhulikhel (Ward No. 2 per transcript; master list: Ward no. 1)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -3275,7 +3582,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_8, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_9, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -3323,11 +3630,15 @@ readme_lines = [
      "villains and hero are not named using explicit NPF narrative labels but are clearly "
      "implied through attributed harms, blamed actors and proposed problem-solvers (see "
      "Coding_Explanations).", False),
+    ("  9. NPL_9 - Dhulikhel Municipality Ward Office, Ward Head + ward staff (E, Deep, F), "
+     "Dhulikhel. Master list label: Ward no. 1; transcript focal ward: Ward No. 2. "
+     "Interviewers: Ram Devi (Kathmandu University) and PEGO team. Coded from both the "
+     "interview guideline notes and the full verbatim transcript.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_8, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_9, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -3341,7 +3652,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_8) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_9) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
