@@ -8,19 +8,20 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_9). Unfilled placeholder rows are not included. Interviews
+through NPL_10). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
 Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
-(Ministry of Urban Development), NPL_9 (Dhulikhel Ward Office).
+(Ministry of Urban Development), NPL_9 (Dhulikhel Ward Office), NPL_10
+(Dhulikhel Ward Chairman).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_9, in order), one column per COLUMNS
+                           (NPL_1 through NPL_10, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -1387,6 +1388,130 @@ ward2.update({
              "villains and hero are not named using explicit NPF narrative labels but are "
              "clearly implied (see Coding_Explanations). Hospital collaboration refers to "
              "Dhulikhel Hospital; ETPC = Environment Tourism Committee (former NGO).",
+})
+
+# --- NPL_10: Dhulikhel Municipality - Ward Chairman (Ward No. 3 per transcript) -
+ward7 = blank_row()
+ward7.update({
+    "Country": "Nepal",
+    "ID": "NPL_10",
+    "Actortype": "loc_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "rivers and riverbanks (Panchkhal area; Bagmati waste through pipelines; "
+               "\"no good river in Nepal\"), smell affecting residents daily (including near "
+               "the ward chairman's house), ecosystem described as \"already destroyed\", "
+               "dust and visual pollution (\"everywhere is dusty\"), tourism/national image "
+               "(embarrassment compared with Switzerland), waste still reaching rivers despite "
+               "collection efforts",
+    NPF_VICTIMS_COL: "local residents and downstream communities (daily smell, Panchkhal "
+                     "negative impacts); rivers and the broader environment/ecosystem; Nepal's "
+                     "national image (\"people call Nepal a beautiful country, like Switzerland, "
+                     "but everywhere is dusty\")",
+    "NPF_villains": "households/residents who leave plastic outside despite distributed "
+                    "containers, throw waste in forests, and fail to cooperate with "
+                    "segregation; the central/federal government (\"big gap\" with local "
+                    "government, slow progress, no master plans, draft act not reaching "
+                    "wards); pervasive plastic use in food packaging and single-use items "
+                    "without affordable systemic alternatives",
+    "NPF_hero": "the ward chairman personally (model zero-waste household behaviour, picks "
+               "up litter, organic diet); Dhulikhel Municipality (segregating plastic and "
+               "composting organic waste, transfer-station/landfill plan passed, contracting "
+               "waste collection); Bhutan cited as an awareness example; researchers to find "
+               "plastic alternatives; 2–4 workers separating recyclables at the dumping/refining "
+               "site; international donors on Bagmati (World Bank, ADB)",
+
+    "Relevance_international_pol": "yes",
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_households": "yes",
+    "Res_science": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_households": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_science": "yes",
+
+    "Actor_role": "3",
+    "Discretion": "As elected ward chairman (32 years, five terms) he supervises dumping sites, "
+                 "ran door-to-door container programmes, coordinates directly with the "
+                 "municipality on contractor arrangements, and requests land from the Nepal "
+                 "government — but has no formal ward-level waste-management staff, no separate "
+                 "ward budget (municipality contracts fund collection), and processing-company "
+                 "agreements were terminated.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_clean_up": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Door-to-door household containers \"wasn't enough\" because "
+                                 "people left plastic outside; processing-company agreements "
+                                 "\"were terminated\"; despite Sunday plastic collection and "
+                                 "refining (Rs 10–15/kg), \"even if there's a collection problem "
+                                 "here, it still ends up in the river\"; \"now there's a big gap "
+                                 "between the local and federal governments — they keep making "
+                                 "plans and talking, but progress is very slow.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_clean_up": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Baskets made from natural materials; paper bags "
+                                          "used for vegetables; cloth bags encouraged; "
+                                          "biodegradable vs. non-biodegradable household "
+                                          "separation promoted in recent 1–2 year efforts.",
+    "Notes": "Master list label: \"10. Dhulikhel Ward no.7\", affiliation: Dhulikhel "
+             "Municipality - Ward No. 7. Transcript identifies Ward No. 3 (land-ownership "
+             "request, transfer-station planning in Thakuri village) and Panchkhal-area "
+             "impacts. Interviewee: Ward Chairman/Ward Head (name not given), 32 years as "
+             "ward chairman (five terms). Also present: Ram Devi (Kathmandu University), "
+             "Deep and F. Location: Dhulikhel. Coded primarily from the full verbatim "
+             "transcript. DATA-QUALITY NOTE: the structured theme notes at the top of the "
+             "source document (Bio-Camp pilot, Plast Foundation Nepal, Solid Waste Management "
+             "Association, EPR nationwide, microplastics in fertilisers, Environmental "
+             "Protection Act without plastics policy, etc.) do not appear in this ward-head "
+             "transcript and were excluded as likely belonging to a different interview "
+             "accidentally bundled in the same file. NPF fields implied, not explicit.",
 })
 
 # ---------------------------------------------------------------------------
@@ -3374,6 +3499,160 @@ ward2_expl = {
     "Tar_students": "NA - not named as target group.",
 }
 
+ward7_expl = {
+    "Actortype": "Interview with the Dhulikhel Municipality ward chairman/ward head — "
+                 "coded as loc_government (ward-level elected local government).",
+    "Problem_awareness_pop": "Households left plastic outside despite distributed containers "
+                             "(\"they made bags and throw\"); waste thrown in forests; "
+                             "awareness improving but cooperation insufficient; Deep: "
+                             "\"people won't change as long as they aren't penalized.\"",
+    "Problem_awareness_pol": "\"Big gap between the local and federal governments\"; draft "
+                            "Waste Management Act on webpage but ward \"hasn't reached that "
+                            "stage yet\"; \"there are no master plans made\"; central "
+                            "government slow while municipality must act.",
+    "Problem_concerndness": "\"Plastic is a very harmful material\"; pollution \"spread "
+                            "everywhere\"; \"the ecosystem is already destroyed\"; rivers "
+                            "embarrass Nepal internationally.",
+    "Problem_littering": "Plastic spread everywhere; riverbanks covered ~20–30 years of "
+                         "dumping; sweepers collect and dump at open sites; waste thrown in "
+                         "forests despite highway cleaning.",
+    "Problem_consumption": "\"Plastic is used everywhere, in food packaging, drinking "
+                           "glasses, etc.\"; fast-food packaging plastics need alternatives.",
+    "Problem_recycling": "Some refining at Rs 10–15/kg and on-site separation by 2–4 "
+                         "workers, but processing-company agreements terminated; collection "
+                         "still ends in rivers.",
+    "Problem_waste_mgmt": "20–30 years of dumping; daily smell near residences; waste from "
+                          "Banepa and Okharpauwa; contractor system but gaps remain.",
+    "Problem_alternatives": "\"We also need alternatives to plastic, like the plastic used in "
+                            "fast food packaging\"; ward encourages cloth bags and natural "
+                            "materials but systemic alternatives lacking.",
+    "Problem_waste_segregation": "Sunday plastic collection exists but household "
+                                 "implementation weak; door-to-door container programme "
+                                 "insufficient; Deep proposes separate collection days per "
+                                 "waste type.",
+    "Impacts": "Panchkhal river impacts, daily smell, destroyed ecosystem, dusty landscape, "
+               "national-image harm, Bagmati pollution despite donor projects.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "local residents (smell); rivers/Panchkhal and broader environment; "
+                     "Nepal's international reputation. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "uncooperative households; slow/weak central government planning; "
+                    "pervasive plastic consumption. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: ward "
+               "chairman as personal model; Dhulikhel Municipality (segregation, transfer "
+               "station plan); Bhutan awareness example; researchers; site workers separating "
+               "recyclables; World Bank/ADB on Bagmati. No FLAG needed.",
+    "Relevance_international_pol": "Comparisons with Bhutan, Germany, Switzerland and the US; "
+                                   "World Bank and Asian Development Bank funding on Bagmati.",
+    "Coordination_sectoral": "Municipality contracts private collectors; ward coordinates "
+                             "with municipality; discussed refining with a company (agreements "
+                             "later terminated); 2–4 workers separate recyclables on site.",
+    "Coordination_levels": "\"Big gap between the local and federal governments\"; debate over "
+                           "whether central government or municipality should lead; ward "
+                           "reports to municipality as main authority.",
+    "Unclear_responsibilities": "RAM DEVI: central doesn't act, falls on municipality; ward "
+                                "head: state must be responsible OR municipality given full "
+                                "power — responsibility contested across levels.",
+    "Res_nat_government": "Restricts plastic beyond certain size; draft Waste Management Act; "
+                          "Bagmati projects with international donors.",
+    "Res_loc_government": "Municipality provides funds through contracts; Dhulikhel segregating "
+                          "plastic and composting; transfer-station plan passed.",
+    "Res_private_sector": "Contractors collect/refine/manage waste; private companies visit "
+                          "monthly; processing companies (agreements terminated).",
+    "Res_households": "Household containers and source separation expected; ward chairman "
+                      "models zero household waste.",
+    "Res_science": "\"Researchers will know how to solve the problem by finding "
+                   "alternatives.\"",
+    "Cul_nat_government": "\"They keep making plans and talking, but progress is very slow\"; "
+                          "no master plans; gap with local government.",
+    "Cul_households": "People left plastic outside despite containers; throw waste in forests.",
+    "Tar_nat_government": "\"The state has to be responsible — the central government must "
+                          "take charge\"; also calls for municipality to be given full power.",
+    "Tar_loc_government": "Municipality should make laws, set penalties and enforce them; "
+                          "Dhulikhel model like Dharan.",
+    "Tar_households": "Door-to-door awareness; household separation of biodegradable and "
+                      "non-biodegradable waste; Germany-style differentiated fees discussed.",
+    "Tar_private_sector": "Private companies should collect separately by waste type; "
+                          "contractor improvements suggested.",
+    "Tar_science": "Researchers to develop plastic alternatives.",
+    "Actor_role": "Long-serving elected ward chairman describing grassroots supervision, "
+                 "door-to-door programmes, dumping-site management and municipal coordination "
+                 "— street-level/local implementer (3).",
+    "Discretion": "Supervises dumping areas, distributed household containers, coordinates "
+                  "with municipality on contractors, requested Nepal-government land ownership "
+                  "in Ward No. 3 — but no formal ward waste staff or independent budget.",
+    "Monitoring": "\"Cannot monitor 24/7\"; people throw waste in forests when unobserved.",
+    "Financial_resources": "Land purchase for transfer station difficult (\"local people didn't "
+                           "give it freely\"); processing agreements terminated; municipality "
+                           "funds via contracts only.",
+    "Research": "Researchers expected to find alternatives to fast-food packaging plastics.",
+    "Infrastructure": "Transfer station and landfill planned (1–2 years); land in Thakuri "
+                      "village; access roads prepared in Ward No. 3; open dumping ~20–30 years.",
+    "Capacity": "No designated ward-level waste-management personnel; relies on municipal "
+               "contracts and 2–4 site workers.",
+    "Enforcement": "\"Enforcement is key. Lawmakers must make strict laws\"; penalties and "
+                   "differentiated fees (Germany Rs 200 vs 500 example) needed — "
+                   "\"just teaching won't be enough.\"",
+    "Pol_epr": "Extended producer responsibility not mentioned in transcript.",
+    "Pol_awareness": "Door-to-door programmes; Environment Day source collection and swap "
+                     "system; Bhutan-style public announcements cited.",
+    "Pol_education": "Awareness campaigns; municipal meetings on waste frequently.",
+    "Pol_ban": "\"The Nepal government restricts plastic use beyond a certain size.\"",
+    "Pol_subsitutes": "Cloth bags, natural-material baskets, paper bags promoted.",
+    "Pol_clean_up": "Sweepers collect plastic; highway cleaning; Environment Day activities.",
+    "Pol_recycling": "Plastic/paper/glass separated at site; refining at Rs 10–15/kg.",
+    "Pol_waste_collection": "Sunday plastic collection; monthly private-company visits; "
+                            "trucks whistle to signal collection.",
+    "Pol_effectiveness": "Container programme failed; agreements terminated; waste still "
+                         "reaches rivers; federal-local gap slows progress.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Central government must take charge OR municipality given full "
+                       "enforcement power.",
+    "Sol_responsibilities": "Clarify state vs municipal responsibility; elected ward "
+                            "representative accountable to voters.",
+    "Sol_awareness": "Door-to-door, Environment Day, Bhutan/Germany examples, public "
+                     "announcements on separation.",
+    "Sol_segregation": "Sunday plastic collection; biodegradable/non-biodegradable household "
+                       "bins; separate collection days proposed.",
+    "Sol_recycling": "On-site separation and refining; expand like Dharan/Dhulikhel "
+                     "municipal model.",
+    "Sol_education": "Awareness that separation reduces fees (Germany example).",
+    "Sol_capacity": "Designated personnel and formal ward-level contacts needed (currently "
+                    "none).",
+    "Sol_finance": "Differentiated fees for separated vs unseparated waste; municipality "
+                   "contract funding.",
+    "Sol_infrastructure": "Transfer station, landfill, access roads in Ward No. 3.",
+    "Sol_subsitutes": "Natural baskets, paper bags, cloth bags.",
+    "Sol_clean_up": "Source collection, highway and neighbourhood cleaning.",
+    "Sol_enforcement": "Strict laws, penalties, differentiated waste fees.",
+    "Sol_monitoring": "24/7 monitoring impossible — need systemic enforcement not just "
+                      "awareness.",
+    "Traditions to build on (free-hand)": "Natural-material baskets, paper bags for "
+                                          "vegetables, cloth bags, pre-plastic carrying "
+                                          "practices.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_civil_society": "NA - not mentioned as responsible actors.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Res_private_companies": "NA - private collectors coded under Res_private_sector.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - municipality portrayed partly as problem-solver (Dharan/Dhulikhel "
+                           "model), not primary culprit.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - contractors not blamed; processing agreements terminated but "
+                          "not framed as villain.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_private_companies": "NA - not named separately from private sector.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -3384,6 +3663,7 @@ EXPLANATIONS = {
     "NPL_7": rsct_expl,
     "NPL_8": moud_expl,
     "NPL_9": ward2_expl,
+    "NPL_10": ward7_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -3400,11 +3680,12 @@ CODED_ROWS = {
     "NPL_7": rsct,
     "NPL_8": moud,
     "NPL_9": ward2,
+    "NPL_10": ward7,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_9).
+# Master-list order for coded interviews only (NPL_1 through NPL_10).
 CODED_ORDER = [
-    "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
+    "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9", "NPL_10",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -3418,6 +3699,7 @@ CODED_META = {
     "NPL_7": ("7. Rural Self-Reliance Development Center/ Narayan Nirola", "Rural Self-Reliance Development Center"),
     "NPL_8": ("8. Urban Development Ministry/ Kamal Adhikar", "Ministry of Urban Development, Government of Nepal"),
     "NPL_9": ("9. Dhulikhel Ward no.1", "Dhulikhel Municipality - Ward No. 1"),
+    "NPL_10": ("10. Dhulikhel Ward no.7", "Dhulikhel Municipality - Ward No. 7"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -3441,6 +3723,8 @@ NAMES["NPL_8"] = ("Ministry of Urban Development - Kamal Adhikar (Senior Sociolo
                    "Interview 2)")
 NAMES["NPL_9"] = ("Dhulikhel Municipality Ward Office - Ward Head + ward staff (E, Deep, F), "
                    "Dhulikhel (Ward No. 2 per transcript; master list: Ward no. 1)")
+NAMES["NPL_10"] = ("Dhulikhel Municipality - Ward Chairman (32 years, five terms), "
+                    "Dhulikhel (Ward No. 3 per transcript; master list: Ward no. 7)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -3582,7 +3866,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_9, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_10, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -3634,11 +3918,17 @@ readme_lines = [
      "Dhulikhel. Master list label: Ward no. 1; transcript focal ward: Ward No. 2. "
      "Interviewers: Ram Devi (Kathmandu University) and PEGO team. Coded from both the "
      "interview guideline notes and the full verbatim transcript.", False),
+    ("  10. NPL_10 - Dhulikhel Municipality Ward Chairman (32 years, five terms), "
+     "Dhulikhel. Master list label: Ward no. 7; transcript focal ward: Ward No. 3 "
+     "(Thakuri village transfer-station planning). Interviewers: Ram Devi (Kathmandu "
+     "University), Deep and F. Coded from the verbatim transcript; structured theme notes "
+     "at the top of the source file (Bio-Camp, Plast Foundation, EPR policy content) "
+     "excluded as they do not appear in this transcript.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_9, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_10, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -3652,7 +3942,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_9) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_10) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
