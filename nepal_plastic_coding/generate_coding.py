@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_22). Unfilled placeholder rows are not included. Interviews
+through NPL_23). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -21,14 +21,14 @@ Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
 (dry waste management practitioner / consultant & researcher), NPL_19 (TAAN /
 Trekking Agencies' Association of Nepal), NPL_20 (municipality Environment Officer,
 Chitwan area), NPL_21 (ordinary person / citizen, unnamed), NPL_22 (ordinary person /
-citizen, unnamed — second respondent, same date).
+citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_22, in order), one column per COLUMNS
+                           (NPL_1 through NPL_23, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -2994,6 +2994,73 @@ ordinary_person_2.update({
              "on burning/livestock impacts. Q3 not asked separately. Q6 and Q6 follow-up not "
              "asked (enforcement/monitoring and awareness gaps noted in passing). Q9 and Q10 "
              "not asked. NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_23: Shop owner (unnamed) ---------------------------------------------
+shop_owner = blank_row()
+shop_owner.update({
+    "Country": "Nepal",
+    "ID": "NPL_23",
+    "Actortype": "private_companies",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "low",
+    "Problem_consumption": "yes",
+    "Problem_alternatives": "yes",
+
+    "Impacts": "environment (negative environmental impact acknowledged — \"the respondent "
+               "sees the problem but has no idea how to proceed with it\"; described as a "
+               "\"problem which is not a problem\" from the shopkeeper's practical "
+               "perspective)",
+    NPF_VICTIMS_COL: "the environment (negative impact acknowledged but not elaborated in "
+                     "detail); implicitly the wider community affected by plastic pollution",
+    "NPF_villains": "pervasive plastic packaging and supply chains (\"everything comes in "
+                    "plastic\" and it is \"not manageable to get things without it\"); "
+                    "customers/households who \"come and ask for plastic bags in a shop to "
+                    "manage their waste at home\"; and changed food culture (shift away from "
+                    "traditional packaging toward more plastic bags)",
+    "NPF_hero": "everyone sharing responsibility (\"everyone should be responsible\"); "
+               "regulated bag policy (ban on black bags; white and blue bags only); and "
+               "traditional alternatives (paper bags — women used to make bags themselves)",
+
+    "Res_households": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_households": "yes",
+
+    "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As a shop owner the interviewee is not very concerned about plastic "
+                 "pollution and sees it as practically unavoidable because \"everything comes "
+                 "in plastic\"; customers routinely ask for plastic bags to manage household "
+                 "waste; the shop complies with the black-bag ban by supplying only white and "
+                 "blue bags (3 NPR per blue bag) — but has no authority over production, "
+                 "national policy or customers' waste practices.",
+
+    "Pol_ban": "yes",
+    "Pol_tax": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Ban of black plastic bags in place; people are allowed to "
+                                 "use only white and blue bags (3 NPR for one blue bag). "
+                                 "Follow-up: \"People don't use dangerous black bags\" — "
+                                 "partially effective for the specific black-bag ban.",
+
+    "Sol_subsitutes": "yes",
+
+    "Traditions to build on (free-hand)": "Previously people used paper bags to carry each "
+                                          "item; women made bags themselves. Food culture "
+                                          "changed, therefore there are more plastic bags now.",
+    "Notes": "Master list label: \"23. Shop owner (unnamed)\", affiliation: shop-owner/retailer. "
+             "Interviewee name not given. Interview date: 17 February 2026. Interviewers: Ram "
+             "Devi, Marlene Kammerer, Anastasiia. Consent given; no recording. Coded from "
+             "structured interview guideline/field notes only (no verbatim transcript). Q6 and "
+             "Q6 follow-up not asked. Q8 (future measures) not asked. Q10 not asked. Same "
+             "interview date as NPL_21/NPL_22 but distinct retail-sector respondent. NPF "
+             "fields implied, not explicit.",
 })
 
 
@@ -6653,6 +6720,74 @@ ordinary_person_2_expl = {
     "Capacity": "NA - not discussed as an implementation barrier.",
 }
 
+shop_owner_expl = {
+    "Actortype": "Interviewee described as \"shop-owner\" — coded as private_companies.",
+    "Problem_awareness_pop": "Customers \"come and ask for plastic bags in a shop to manage "
+                             "their waste at home\" — implying household demand drives shop "
+                             "plastic-bag supply.",
+    "Problem_concerndness": "\"Respondent is not very concerned\"; describes it as a "
+                            "\"problem which is not a problem\" from a practical shopkeeper "
+                            "perspective.",
+    "Problem_consumption": "\"Everything comes in plastic\" and it is \"not manageable to get "
+                           "things without it.\"",
+    "Problem_alternatives": "No practical alternatives for shopkeeper to source goods without "
+                            "plastic packaging.",
+    "Impacts": "Negative environmental impact acknowledged but respondent \"has no idea how "
+               "to proceed.\"",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "the environment. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "plastic supply/packaging system; customers asking for bags; changed food "
+                    "culture. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: shared "
+               "responsibility (everyone); regulated white/blue bag policy; traditional paper "
+               "bags. No FLAG needed.",
+    "Res_households": "\"Everyone should be responsible\"; customers request plastic bags.",
+    "Res_loc_government": "Municipal/national bag policy (black ban, white/blue only) shapes "
+                          "shop practice.",
+    "Res_private_companies": "Shop owner supplies bags and sells packaged goods.",
+    "Cul_households": "Customers ask shop for plastic bags to manage home waste.",
+    "Tar_households": "\"Everyone should be responsible.\"",
+    "Tar_private_companies": "Retailers/shops implied as part of \"everyone.\"",
+    "Actor_role": "Shop owner as target group / retail actor (role 4).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Pol_ban": "Ban of black plastic bags.",
+    "Pol_tax": "3 NPR charge for one blue bag (price measure on permitted bags).",
+    "Pol_effectiveness": "Black-bag ban partially effective — people don't use \"dangerous "
+                         "black bags.\"",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_subsitutes": "Traditional paper bags; women used to make bags themselves.",
+    "Traditions to build on (free-hand)": "Paper bags; women making bags; food culture change "
+                                          "noted as driver of more plastic.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_nat_government": "NA - national government not named separately as responsible actor.",
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_private_sector": "NA - not mentioned separately from shop/private_companies.",
+    "Res_civil_society": "NA - not mentioned.",
+    "Res_science": "NA - not mentioned.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Cul_nat_government": "NA - not blamed.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - not blamed.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - shop owner not blamed; portrayed as constrained by supply "
+                             "and customer demand.",
+    "Tar_nat_government": "NA - not named.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_loc_government": "NA - not named as specific target.",
+    "Tar_students": "NA - not named.",
+    "Tar_private_sector": "NA - not named separately.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Tar_edu_institutions": "NA - not named.",
+    "Capacity": "NA - Q6 not asked; implementation barriers not discussed.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -6676,6 +6811,7 @@ EXPLANATIONS = {
     "NPL_20": env_officer_expl,
     "NPL_21": ordinary_person_expl,
     "NPL_22": ordinary_person_2_expl,
+    "NPL_23": shop_owner_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -6705,13 +6841,14 @@ CODED_ROWS = {
     "NPL_20": env_officer,
     "NPL_21": ordinary_person,
     "NPL_22": ordinary_person_2,
+    "NPL_23": shop_owner,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_22).
+# Master-list order for coded interviews only (NPL_1 through NPL_23).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
-    "NPL_19", "NPL_20", "NPL_21", "NPL_22",
+    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -6743,6 +6880,7 @@ CODED_META = {
                "Local government - Environment Officer"),
     "NPL_21": ("21. Ordinary person (unnamed)", "Ordinary person / citizen"),
     "NPL_22": ("22. Ordinary person (unnamed, 2nd respondent)", "Ordinary person / citizen"),
+    "NPL_23": ("23. Shop owner (unnamed)", "Shop-owner / retailer"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -6797,6 +6935,8 @@ NAMES["NPL_21"] = ("Ordinary person / citizen (unnamed), Nepal (17 February 2026
 NAMES["NPL_22"] = ("Ordinary person / citizen (unnamed, 2nd respondent), Nepal (17 February 2026; "
                     "interviewers: Ram Devi, Marlene Kammerer, Anastasiia; no recording; distinct "
                     "from NPL_21)")
+NAMES["NPL_23"] = ("Shop owner (unnamed), Nepal (17 February 2026; interviewers: Ram Devi, "
+                    "Marlene Kammerer, Anastasiia; no recording)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -6938,7 +7078,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_22, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_23, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -7029,11 +7169,15 @@ readme_lines = [
      "2026). Same interview team and date as NPL_21 but distinct respondent (lower personal "
      "concern; burning/livestock impacts; segregation abolished). Coded from guideline/field "
      "notes only.", False),
+    ("  23. NPL_23 - Shop owner (unnamed), Nepal (17 February 2026). Interviewers: Ram Devi, "
+     "Marlene Kammerer, Anastasiia. Consent given; no recording. Coded from guideline/field "
+     "notes only. Black-bag ban; white/blue bags (3 NPR); customers request bags for home "
+     "waste. Q6, Q8 and Q10 not asked.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_22, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_23, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -7047,7 +7191,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_22) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_23) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
