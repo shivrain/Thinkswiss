@@ -8,21 +8,21 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_12). Unfilled placeholder rows are not included. Interviews
+through NPL_13). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
 Owner), NPL_7 (Rural Self-Reliance Development Center / RSCT), NPL_8
 (Ministry of Urban Development), NPL_9 (Dhulikhel Ward Office), NPL_10
 (Dhulikhel Ward Chairman), NPL_11 (Safa Urja Utpadan), NPL_12 (Ministry for
-Urban Planning / MoUD).
+Urban Planning / MoUD), NPL_13 (Creasion).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_12, in order), one column per COLUMNS
+                           (NPL_1 through NPL_13, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -1770,6 +1770,123 @@ moud12.update({
              "Operation Act 2017 cited (NPL_8 referenced Self-Governance Act 2016). NPF "
              "fields implied, not explicit. Separate plastic waste management policy planned "
              "after Solid Waste Management Act.",
+})
+
+# --- NPL_13: Creasion (recycling / waste-management CSO) ----------------------
+creasion = blank_row()
+creasion.update({
+    "Country": "Nepal",
+    "ID": "NPL_13",
+    "Actortype": "civil_society",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+
+    "Impacts": "end-of-life plastic fate; micro- and nano-plastics (colored PET bottles "
+               "cannot be effectively reused — only transparent PET can; colored PET emits "
+               "significant microplastics when processed); health hazards from recycled "
+               "plastics in food-contact applications; carcinogenic emissions from poor "
+               "recycling sector practices (processing at 100–200°C); exploitation of "
+               "informal waste pickers (especially women) at landfills/dumpsites",
+    NPF_VICTIMS_COL: "informal waste pickers, particularly women selling PET from "
+                     "landfills/dumpsites for NPR 10 (vs NPR 25/kg formal rate) and facing "
+                     "intimidation/violence from intermediary \"mafias\"; the public exposed "
+                     "to unsafe recycled food-contact plastics and carcinogenic emissions "
+                     "from substandard recyclers; the environment from end-of-life plastics "
+                     "and microplastic release",
+    "NPF_villains": "intermediary \"mafias\" who threaten and assault waste pickers who do "
+                    "not sell to them; substandard recyclers with \"pathetic\" social and "
+                    "environmental standards (100–200°C processing, carcinogenic emissions); "
+                    "the scrap tax on PET at municipal level (raising raw-material and granule "
+                    "costs); virgin-plastic preference among Nepali consumers and businesses; "
+                    "bureaucratic barriers (Department of Industry registration, 60% export "
+                    "condition after year three, repeated LG approvals on relocation); national "
+                    "government for not consulting recyclers on solid waste policy (improving "
+                    "only gradually)",
+    "NPF_hero": "Creasion (recycling, downsizing, product conversion, safety-tested granules, "
+               "High-Effluent Treatment Plant recycling ~10,000 L water with no drainage "
+               "outflow); EU-funded plastic-recovery and entrepreneurship project; CAP "
+               "project (World Bank/UNOPS/SACEP) with sophisticated recycling technology; "
+               "municipal collaboration to identify and formalize informal collectors; Plus "
+               "Nepal and informal NRR associations; CSO trainings for sector coordination",
+
+    "Relevance_international_pol": "yes",
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_households": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_loc_government": "yes",
+    "Cul_households": "yes",
+    "Cul_private_sector": "yes",
+
+    "Tar_private_sector": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+    "Tar_civil_society": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "2",
+    "Discretion": "Creasion designs its own recycling and product-conversion processes, "
+                 "develops granule quality/safety standards and government-standard testing "
+                 "before market release, runs EU and CAP projects, collaborates with "
+                 "municipalities to identify informal collectors, and builds entrepreneur "
+                 "capacity — but faces constrained discretion on bureaucratic setup (Dept of "
+                 "Industry, LG approvals) and export/tax policy conditions.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_tax": "yes",
+    "Pol_recycling": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Scrap tax on PET at municipal level raised raw-material and "
+                                 "granule costs, making recycled products less competitive "
+                                 "than virgin plastic; social/environmental standards across "
+                                 "the broader recycling sector described as \"pathetic\" with "
+                                 "weak enforcement; Creasion \"not consulted\" on solid waste "
+                                 "management policy development (gradually being included); "
+                                 "national plastic-generation estimates (60,000 t/year; 27% "
+                                 "PET per World Bank) questioned as methodology unclear.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_awareness": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"13. Creasion\", affiliation: Center for Research and "
+             "Sustainable Development in Nepal (Creasion). Interviewee name not given. "
+             "Organization: recycling and waste-management CSO supporting informal waste "
+             "workers and entrepreneurs. Interview date: 23 June 2025 (~5:15pm). Coded from "
+             "interview guideline notes and bullet-point field notes (no full verbatim "
+             "transcript supplied). ~70 t/month PET capacity cited. Two known recycling "
+             "centers in Nepal mentioned. Associations: Plus Nepal (formal); Nepal Recycler "
+             "and Reuse/NRR (informal/unregistered). CAP project throughput figures in "
+             "source (1 t/h input vs 10 t/h granules) appear inconsistent — retained as "
+             "stated. NPF fields implied, not explicit.",
 })
 
 # ---------------------------------------------------------------------------
@@ -4181,6 +4298,119 @@ moud12_expl = {
     "Tar_edu_institutions": "NA - not named.",
 }
 
+creasion_expl = {
+    "Actortype": "Creasion is a civil-society/recycling organization (Center for Research and "
+                 "Sustainable Development in Nepal) operating plastic recycling facilities and "
+                 "supporting informal waste workers and entrepreneurs.",
+    "Problem_awareness_pop": "Most Nepali consumers/businesses prefer virgin over recycled "
+                             "plastic; unclear market demand for recycled granules.",
+    "Problem_awareness_pol": "Creasion not consulted on solid waste management policy "
+                            "(gradually being included); unclear national measurement "
+                            "methodology (60,000 t/year; 27% PET).",
+    "Problem_concerndness": "Organization works directly on plastic end-of-life, food-packaging "
+                            "safety, and microplastics — high operational concern.",
+    "Problem_recycling": "Only two recycling centers identified; colored PET not effectively "
+                         "recyclable; sector standards \"pathetic\"; virgin plastic displaces "
+                         "recycled granules for food contact.",
+    "Problem_waste_mgmt": "End-of-life plastic fate; informal pickers exploited; bureaucratic "
+                          "barriers to establishing/moving recycling industry.",
+    "Problem_production": "Virgin plastic preferred; 60% export condition after year three "
+                          "constrains recycler business models.",
+    "Problem_alternatives": "Need standardization of recycled granule quality and food-contact "
+                            "safety; recycled products could be cheaper without scrap tax.",
+    "Impacts": "Micro/nano plastics from colored PET; food-contact safety risks; carcinogenic "
+               "emissions from poor recyclers; informal picker exploitation.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "informal waste pickers (especially women); public exposed to unsafe "
+                     "recycled food plastics and emissions; environment from end-of-life "
+                     "plastics. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "intermediary mafias; substandard recyclers; scrap tax; virgin-plastic "
+                    "market preference; bureaucratic/export policy barriers; government "
+                    "consultation gaps. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: Creasion, "
+               "EU project, CAP/World Bank project, municipal formalization of informal "
+               "collectors, Plus Nepal/NRR associations. Organization positions itself as "
+               "primary problem-solver. No FLAG needed.",
+    "Relevance_international_pol": "EU-funded project; CAP project (World Bank, UNOPS, SACEP); "
+                                   "60% export condition from government.",
+    "Coordination_sectoral": "Collaboration with municipalities, informal/formal associations "
+                             "(Plus Nepal, NRR), CSO trainings.",
+    "Coordination_levels": "Department of Industry and local government approvals required "
+                           "for setup/relocation; municipal scrap tax.",
+    "Unclear_responsibilities": "Who buys recycled granules unclear with only two centers; "
+                                "policy consultation gap for private recyclers.",
+    "Res_nat_government": "Department of Industry (registration, utilities, export condition).",
+    "Res_loc_government": "LG approvals for industry setup; municipal scrap tax collection.",
+    "Res_private_sector": "Recycling entrepreneurs and formal/informal recycler associations.",
+    "Res_civil_society": "Creasion and CSO sector coordinating trainings and advocacy.",
+    "Res_households": "Consumer preference for virgin plastic affects market.",
+    "Res_private_companies": "Buyers of recycled vs virgin granules; food vs non-food "
+                             "applications.",
+    "Cul_nat_government": "Export conditionality; not consulting recyclers on policy; unclear "
+                          "data methodology.",
+    "Cul_loc_government": "Municipal scrap tax raising recycler costs.",
+    "Cul_households": "Virgin plastic preference limits recycled market.",
+    "Cul_private_sector": "Substandard recyclers with carcinogenic emissions; intermediary "
+                          "mafias exploiting pickers.",
+    "Tar_private_sector": "Recycling entrepreneurs need capacity-building and fair policy.",
+    "Tar_loc_government": "Municipal collaboration to formalize informal collectors.",
+    "Tar_households": "Consumer awareness on recycled vs virgin plastic.",
+    "Tar_civil_society": "CSO trainings; Plus Nepal and NRR as coordination channels.",
+    "Tar_private_companies": "Industry standards and food-contact safety compliance.",
+    "Actor_role": "Creasion operates recycling facilities, EU/CAP projects, entrepreneur "
+                 "capacity-building and municipal partnerships — managerial/organisational "
+                 "implementer (2).",
+    "Discretion": "Own processing standards, safety testing, water-recycling ATP, project "
+                  "design — but constrained by Dept of Industry/LG bureaucracy and tax/export "
+                  "rules.",
+    "Monitoring": "Weak sector standards enforcement; unclear national waste quantification.",
+    "Financial_resources": "Scrap tax raises costs; operating at competitive disadvantage "
+                           "vs virgin plastic; export condition after year 3.",
+    "Research": "Questions World Bank PET percentage methodology; developing own granule "
+               "standardization.",
+    "Infrastructure": "Bureaucratic hurdles for land, water, electricity on setup/relocation; "
+                      "ATP and CAP technology as infrastructure solutions.",
+    "Capacity": "Building entrepreneur and informal-collector capacity via EU/CAP projects.",
+    "Enforcement": "Sector social/environmental standards weakly enforced.",
+    "Pol_epr": "EPR not mentioned.",
+    "Pol_tax": "Scrap tax on PET bottles paid at municipal level.",
+    "Pol_recycling": "Creasion's recycling, downsizing and product-conversion operations.",
+    "Pol_effectiveness": "Tax undermines recycled competitiveness; weak standards; "
+                         "consultation gap.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Sector coordination via formal/informal associations and CSO "
+                       "trainings.",
+    "Sol_awareness": "Entrepreneur and informal-worker support programmes.",
+    "Sol_recycling": "High-quality granule production with safety testing; CAP technology.",
+    "Sol_education": "CSO trainings for formal and informal associations.",
+    "Sol_capacity": "EU project entrepreneurship support; CAP entrepreneur capacity-building.",
+    "Sol_finance": "Reconsider scrap tax and export conditionality.",
+    "Sol_infrastructure": "Streamline Dept of Industry/LG approval processes; ATP water "
+                          "recycling model.",
+    "Sol_enforcement": "Standardize and enforce social/environmental standards across "
+                       "recyclers.",
+    "Sol_monitoring": "Clearer national plastic-waste measurement methodology.",
+    "Traditions to build on (free-hand)": "NA - not discussed.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_science": "NA - research on methodology questioned but no science actors named.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_civil_society": "NA - CSOs portrayed as heroes.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - virgin preference coded under Cul_households/market.",
+    "Tar_nat_government": "NA - national level discussed as policy reform need but not "
+                          "primary target group in notes.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Tar_edu_institutions": "NA - not named.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -4194,6 +4424,7 @@ EXPLANATIONS = {
     "NPL_10": ward7_expl,
     "NPL_11": safaurja_expl,
     "NPL_12": moud12_expl,
+    "NPL_13": creasion_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -4213,12 +4444,13 @@ CODED_ROWS = {
     "NPL_10": ward7,
     "NPL_11": safaurja,
     "NPL_12": moud12,
+    "NPL_13": creasion,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_12).
+# Master-list order for coded interviews only (NPL_1 through NPL_13).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
-    "NPL_10", "NPL_11", "NPL_12",
+    "NPL_10", "NPL_11", "NPL_12", "NPL_13",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -4235,6 +4467,7 @@ CODED_META = {
     "NPL_10": ("10. Dhulikhel Ward no.7", "Dhulikhel Municipality - Ward No. 7"),
     "NPL_11": ("11. Private Sector Contractor/ SafaUrja Utpadan", "Safa Urja Utpadan"),
     "NPL_12": ("12. Ministry for Urban Planning", "Ministry of Urban Development"),
+    "NPL_13": ("13. Creasion", "Center for Research and Sustainable Development in Nepal"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -4264,6 +4497,8 @@ NAMES["NPL_11"] = ("Safa Urja Utpadan - Private waste-management contractor, Kha
                     "(Ratnanagar, Khaireni & Kalika municipalities)")
 NAMES["NPL_12"] = ("Ministry of Urban Development / Ministry for Urban Planning - MoUD "
                     "policy official(s), Kathmandu (PEGO interview)")
+NAMES["NPL_13"] = ("Creasion - Recycling and waste-management CSO, Chitwan area "
+                    "(23 June 2025, ~5:15pm)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -4405,7 +4640,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_12, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_13, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -4462,15 +4697,16 @@ readme_lines = [
      "Coded from verbatim transcript (theme notes at top of source file excluded).", False),
     ("  11. NPL_11 - Safa Urja Utpadan, private waste-management contractor, Khaireni/"
      "Chitwan. Coded from notes and transcript.", False),
-    ("  12. NPL_12 - Ministry for Urban Planning / Ministry of Urban Development (MoUD), "
-     "policy official(s) involved in solid waste act and regulation formulation. "
-     "Interviewer: PEGO team. Coded from notes and transcript. Substantively overlaps "
-     "NPL_8 (same ministry); coded independently. NPF fields implied.", False),
+    ("  12. NPL_12 - Ministry for Urban Planning / MoUD. Coded from notes and transcript.", False),
+    ("  13. NPL_13 - Creasion, recycling and waste-management CSO (Center for Research and "
+     "Sustainable Development in Nepal). Interview date: 23 June 2025 (~5:15pm). Coded "
+     "from guideline notes and field notes (no full verbatim transcript). NPF fields "
+     "implied.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_12, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_13, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -4484,7 +4720,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_12) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_13) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
