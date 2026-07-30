@@ -1897,52 +1897,69 @@ silent_park.update({
     "Actortype": "private_companies",
 
     "Problem_awareness_pop": "yes",
-    "Problem_concerndness": "medium",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
     "Problem_littering": "yes",
     "Problem_consumption": "yes",
     "Problem_recycling": "yes",
     "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
     "Problem_alternatives": "yes",
     "Problem_waste_segregation": "yes",
 
-    "Impacts": "wildlife and domestic animals (ingest salty plastic snack wrappers while "
-               "eating food), air pollution (burning plastics), visual pollution and "
-               "overflowing bins (wind and dogs/animals scatter uncollected waste), "
+    "Impacts": "wildlife and domestic animals (ingest salty plastic snack wrappers); air "
+               "pollution (burning plastics; poor communities use plastic as fire starters); "
+               "microplastics contaminating soil, water, air, rivers, irrigation water and "
+               "organic fertilisers (reducing soil moisture, potentially affecting crop "
+               "yields); health (low-quality packaging may leach chemicals; unsafe bottled "
+               "water/labelling practices); visual pollution and clogged drains/rivers; "
                "aluminum foil food packaging (greater disposal problem than plastic because "
-               "recyclers do not collect it), tourism/safari area cleanliness",
-    NPF_VICTIMS_COL: "wildlife and domestic animals (ingesting plastic, especially salty "
-                     "snack wrappers); the local environment and air quality (burning "
-                     "plastics); the tourist/safari area and community when bins overflow and "
-                     "waste is scattered by wind and animals",
-    "NPF_villains": "the general public/hotels (laziness, low awareness, convenience — plastic "
-                    "bags given free at shops; irregular use of cloth bags); shops/"
-                    "organizations that give plastic bags at no cost; municipal collection "
-                    "system (irregular Eco-Green bottle pickup every 15–20 days; municipal "
-                    "trucks not on time — bins overflow); hotel sector (thousands of hotels "
-                    "in Chitwan with discussion but no continuous waste-management action); "
-                    "aluminum foil packaging widely used for food wrapping without recycling "
-                    "route",
-    "NPF_hero": "nature guides (trained not to litter, collect wrappers during safari walks); "
-               "park rangers and hotel associations (awareness/training); Eco-Green "
-               "(recycles plastic bottles); informal collectors buying bottles at NPR 10–15/kg; "
-               "safari dustbin system (compulsory bucket in vehicles); ward-level awareness "
-               "and designated street cleaners (proposed); elephant-dung cleaning teams as a "
-               "model (twice daily)",
+               "recyclers do not collect it); tourism/safari area when bins overflow",
+    NPF_VICTIMS_COL: "wildlife and domestic animals; poor communities exposed to burning "
+                     "and fire-starter practices; farmers/agriculture (microplastics in soil "
+                     "reducing moisture and crop yields); the general public (chemical "
+                     "leaching, unsafe bottled water); the tourist/safari area and local "
+                     "community when collection fails and waste spreads",
+    "NPF_villains": "the general public/hotels (low awareness, laziness, convenience, free "
+                    "plastic bags, perception that waste management is solely government's "
+                    "responsibility); national government (no comprehensive plastics policy — "
+                    "only general Environmental Protection Act; weak enforcement of <40-micron "
+                    "ban; political instability delaying implementation); unclear "
+                    "federal/provincial/local authority division; municipal collection system "
+                    "(irregular Eco-Green and municipal trucks; bins overflow); hotel sector "
+                    "(thousands of Chitwan hotels with no continuous waste-management action); "
+                    "aluminum foil widely used without recycling route; heavy informal-sector "
+                    "reliance without formal integration",
+    "NPF_hero": "nature guides and park rangers (trained not to litter, collect wrappers on "
+               "safari); hotel associations and NGOs (awareness training); Eco-Green and "
+               "informal collectors (NPR 10–15/kg for bottles; informal sector collects ~99% "
+               "of valuable plastics from hotels); PLEASE and Bio-Camp pilot projects "
+               "(segregation, recycling/upcycling); Solid Waste Management Association and "
+               "Plast Foundation Nepal; safari dustbin system; proposed EPR nationwide and "
+               "ward-level designated street cleaners; elephant-dung cleaning teams as "
+               "operational model (twice daily)",
 
+    "Relevance_international_pol": "yes",
     "Coordination_sectoral": "yes",
     "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
 
+    "Res_nat_government": "yes",
+    "Res_prov_government": "yes",
     "Res_loc_government": "yes",
     "Res_private_sector": "yes",
     "Res_civil_society": "yes",
     "Res_households": "yes",
     "Res_private_companies": "yes",
 
+    "Cul_nat_government": "yes",
     "Cul_households": "yes",
     "Cul_loc_government": "yes",
     "Cul_private_companies": "yes",
 
+    "Tar_nat_government": "yes",
     "Tar_loc_government": "yes",
+    "Tar_private_sector": "yes",
     "Tar_households": "yes",
     "Tar_private_companies": "yes",
     "Tar_civil_society": "yes",
@@ -1951,53 +1968,67 @@ silent_park.update({
     "Discretion": "As a hotel operator Rajesh Aryal stores plastic bottles for Eco-Green "
                  "recycling, separates other plastics for municipal trucks, empties bottles "
                  "before disposal, and participates in hotel-association discussions — but "
-                 "has no authority over municipal collection schedules, ward enforcement, or "
-                 "thousands of other hotels' waste practices in Chitwan.",
+                 "has no authority over municipal collection schedules, national policy "
+                 "formulation, or thousands of other hotels' waste practices in Chitwan.",
 
     "Monitoring": "yes",
     "Financial_resources": "yes",
+    "Research": "yes",
     "Infrastructure": "yes",
     "Capacity": "yes",
     "Enforcement": "yes",
 
     "Pol_epr": "no",
     "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
     "Pol_clean_up": "yes",
+    "Pol_upcycling": "yes",
     "Pol_recycling": "yes",
     "Pol_waste_collection": "yes",
     "Pol_effectiveness": "yes",
-    "Pol_effectiveness_example": "Eco-Green collects bottles every 15–20 days but \"it's "
-                                 "irregular\" and \"this time it has been long since it has "
-                                 "collected\"; municipal dustbins provided but \"if collection "
-                                 "doesn't happen on time, wind spreads the waste\"; awareness "
-                                 "and cleanup programs exist \"occasionally\" but \"there's no "
-                                 "continuous action\" — Environment Day \"only one day, doesn't "
-                                 "continue beyond that\"; \"no notices\" from municipality on "
-                                 "plastic removal.",
+    "Pol_effectiveness_example": "Environmental Protection Act exists but no specific plastics "
+                                 "policy; <40-micron ban weakly enforced; federal government "
+                                 "assessing new plastics act but guidelines unclear; Eco-Green "
+                                 "bottle collection every 15–20 days but irregular; municipal "
+                                 "collection not on time (bins overflow); awareness/cleanup "
+                                 "programmes occasional — Environment Day \"only one day\"; "
+                                 "PLEASE/Bio-Camp pilots show promise but not yet scaled; "
+                                 "effectiveness limited by low enforcement, irregular "
+                                 "collection and inconsistent public awareness.",
 
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_epr": "yes",
     "Sol_awareness": "yes",
-    "Sol_subsitutes": "yes",
-    "Sol_clean_up": "yes",
+    "Sol_segregation": "yes",
+    "Sol_upcycling": "yes",
+    "Sol_recycling": "yes",
     "Sol_education": "yes",
     "Sol_capacity": "yes",
+    "Sol_RD": "yes",
     "Sol_finance": "yes",
     "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_clean_up": "yes",
     "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
 
-    "Traditions to build on (free-hand)": "Cloth/fiber bags instead of plastic shopping "
-                                          "bags; clay or cement pots instead of plastic "
-                                          "flower pots.",
+    "Traditions to build on (free-hand)": "Natural plates from banana leaves and pat leaves "
+                                          "during feasts; cotton or towel bags for shopping; "
+                                          "cloth/fiber bags and clay/cement pots instead of "
+                                          "plastic; reuse of plastics before recycling.",
     "Notes": "Master list label: \"14. Hotel Silent Park/ Rajesh Aryal\", affiliation: Hotel "
              "Silent Park. Interviewee: Rajesh Aryal. Location: Chitwan (Sauraha/safari "
              "tourism area). Interview date: 26 June 2025. Interviewers: Ram Devi and Deep. "
-             "Coded from the verbatim transcript and field notes attributable to this "
-             "respondent. DATA-QUALITY NOTE: the structured theme notes at the top of the "
-             "source document (PLEASE/Bio-Camp pilot, EPR nationwide, Plast Foundation, "
-             "Solid Waste Management Association, comprehensive policy challenges, etc.) do "
-             "not appear in the Rajesh Aryal transcript and were excluded as likely belonging "
-             "to a different interview bundled in the same file. One bullet note states the "
-             "respondent is \"not so much concerned about plastics; more Aluminium foil\" — "
-             "coded as medium concern reflecting this nuance. NPF fields implied, not explicit.",
+             "Coded from the full interview package: structured guideline notes (Themes A–D, "
+             "including national policy challenges, PLEASE/Bio-Camp pilots, EPR, informal "
+             "sector, Plast Foundation Nepal, Solid Waste Management Association) AND the "
+             "verbatim Rajesh Aryal transcript. One field bullet notes greater concern about "
+             "aluminum foil than plastic at the hotel level; overall interview concern coded "
+             "high given visible/invisible pollution and microplastic impacts in guideline "
+             "notes. NPF fields implied, not explicit.",
 })
 
 # ---------------------------------------------------------------------------
@@ -4523,108 +4554,136 @@ creasion_expl = {
 }
 
 silent_park_expl = {
-    "Actortype": "Rajesh Aryal is associated with Hotel Silent Park in Chitwan — coded as "
-                 "private_companies (hotel/tourism sector).",
-    "Problem_awareness_pop": "\"Ignorance and lack of awareness\"; people lazy; plastic bags "
-                             "given free at shops; cloth bags not used consistently.",
-    "Problem_concerndness": "Acknowledges plastic pollution everywhere, burning, animal "
-                            "ingestion and need for management, but one field note states "
-                            "greater concern about aluminum foil than plastic — coded medium.",
-    "Problem_littering": "Bins overflow when collection delayed; wind spreads waste; dogs/"
-                         "animals scatter it.",
-    "Problem_consumption": "\"Plastic is easy and fast\"; shoppers use free plastic bags "
-                           "instead of cloth.",
-    "Problem_recycling": "Eco-Green bottle collection irregular; aluminum foil not taken by "
-                         "recyclers.",
-    "Problem_waste_mgmt": "Collection system problematic — not on time; no continuous hotel/"
-                          "ward management programmes.",
-    "Problem_alternatives": "Cloth/fiber bags and clay/cement pots cited as alternatives.",
-    "Problem_waste_segregation": "Bottles stored separately for Eco-Green; wrappers via "
-                                 "municipal trucks; bottles emptied before disposal.",
-    "Impacts": "Animal ingestion, burning air pollution, bin overflow, aluminum foil "
-               "disposal gap, tourism area.",
+    "Actortype": "Rajesh Aryal, Hotel Silent Park, Chitwan tourism/hotel sector — coded as "
+                 "private_companies.",
+    "Problem_awareness_pop": "Low awareness of eco-friendly alternatives; ignorance and "
+                             "laziness; people do not reuse/recycle properly due to "
+                             "convenience; plastic bags given free at shops.",
+    "Problem_awareness_pol": "No comprehensive plastics policy (only Environmental Protection "
+                            "Act); federal assessing new act but guidelines unclear; unclear "
+                            "division of authority across three tiers.",
+    "Problem_concerndness": "Guideline notes: very concerned about visible litter and "
+                            "invisible microplastic contamination; transcript also flags "
+                            "aluminum foil as a particular hotel-level disposal concern.",
+    "Problem_littering": "Plastic everywhere urban and rural; bins overflow; wind and "
+                         "animals scatter waste; drains and rivers clogged.",
+    "Problem_consumption": "Plastic easy and fast; free bags at shops; widespread packaging.",
+    "Problem_recycling": "Eco-Green irregular; aluminum foil not collected by recyclers; "
+                         "informal sector collects 99% of valuable hotel plastics.",
+    "Problem_waste_mgmt": "Irregular municipal/Eco-Green collection; heavy informal-sector "
+                          "reliance without formal integration; political instability "
+                          "delays implementation.",
+    "Problem_production": "Upstream production and packaging implied in policy discussion; "
+                          "virgin plastic preference in food-contact applications.",
+    "Problem_alternatives": "Cloth bags, clay/cement pots, leaf plates promoted but "
+                            "awareness low.",
+    "Problem_waste_segregation": "Bottles stored for Eco-Green; wrappers via municipal trucks; "
+                                 "PLEASE/Bio-Camp demonstrate segregation pilots.",
+    "Impacts": "Animals, burning, microplastics (soil/water/air/crops), health/leaching, "
+               "drains, aluminum foil, tourism area.",
     NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
-                     "wildlife/domestic animals; environment/air; tourist area/community when "
-                     "waste spreads. No FLAG needed.",
+                     "animals; poor communities; farmers; public health; tourist/community "
+                     "areas. No FLAG needed.",
     "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
-                    "lazy/unaware public; free plastic-bag distribution; irregular municipal/"
-                    "Eco-Green collection; hotels without continuous management. No FLAG "
-                    "needed.",
+                    "unaware public; weak national policy/enforcement; unclear governance; "
+                    "irregular collection; hotels; aluminum foil use; informal sector "
+                    "exploitation without integration. No FLAG needed.",
     "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: nature "
-               "guides, park rangers, hotel associations, Eco-Green, informal bottle "
-               "collectors, safari dustbin system, proposed ward cleaners. No FLAG needed.",
-    "Coordination_sectoral": "Hotel associations, NGOs, park rangers and nature guides "
-                             "coordinate awareness; Eco-Green and municipality split "
-                             "collection roles.",
-    "Coordination_levels": "Municipal trucks vs private Eco-Green vs informal collectors; "
-                           "ward enforcement proposed.",
-    "Res_loc_government": "Municipal trucks collect bags/wrappers; dustbins provided.",
-    "Res_private_sector": "Eco-Green recycles bottles; informal collectors buy PET.",
-    "Res_civil_society": "NGOs, park rangers, hotel associations train nature guides.",
-    "Res_households": "Store and separate waste at home.",
-    "Res_private_companies": "Thousands of Chitwan hotels generate waste; hotel association "
-                             "discussions.",
-    "Cul_households": "Laziness, ignorance, convenience, free plastic bags.",
-    "Cul_loc_government": "No municipal notices; irregular collection; streets not cleaned "
+               "guides/rangers; PLEASE/Bio-Camp; Solid Waste Management Association; Plast "
+               "Foundation; Eco-Green; informal collectors; proposed EPR. No FLAG needed.",
+    "Relevance_international_pol": "UN plastic negotiations influence national policy "
+                                   "development.",
+    "Coordination_sectoral": "Solid Waste Management Association coordinates private "
+                             "operators; hotel associations, NGOs, park rangers; "
+                             "manufacturers/collectors/recyclers cooperation sought.",
+    "Coordination_levels": "Unclear federal/provincial/local roles; municipal vs Eco-Green vs "
+                           "informal collectors.",
+    "Unclear_responsibilities": "Division of authority between federal, provincial and local "
+                                "levels; public sees waste as only government's job.",
+    "Res_nat_government": "Federal government sets broad frameworks and assessments; new "
+                        "plastics act in development.",
+    "Res_prov_government": "Provincial level part of three-tier responsibility framework.",
+    "Res_loc_government": "Municipalities/metropolitan cities gradually taking responsibility; "
+                          "municipal trucks and dustbins.",
+    "Res_private_sector": "Semi-formal private companies; Eco-Green; informal pickers (~99% "
+                          "hotel plastics).",
+    "Res_civil_society": "Plast Foundation Nepal; NGOs training nature guides.",
+    "Res_households": "Source separation and proper disposal expected.",
+    "Res_private_companies": "Hotels (thousands in Chitwan); retailers/shops giving free bags.",
+    "Cul_nat_government": "No specific plastics policy; weak <40-micron enforcement; political "
+                          "instability.",
+    "Cul_households": "Low awareness, convenience, waste seen as government's job only.",
+    "Cul_loc_government": "Irregular collection; no municipal notices; streets not cleaned "
                           "regularly.",
-    "Cul_private_companies": "Hotels discuss but lack continuous waste-management action.",
-    "Tar_loc_government": "Ward should launch awareness campaigns, enforce rules, provide "
-                          "dustbins, designate street cleaners.",
-    "Tar_households": "Use cloth bags; reduce plastic attachment.",
-    "Tar_private_companies": "Hotel business community could form cleanliness committee "
-                             "(rickshaw collection ~NPR 50,000/month proposed).",
-    "Tar_civil_society": "Nature guides and hotel associations for sustained training.",
-    "Actor_role": "Hotel operator describing personal and sector waste practices as a "
-                 "target group of policies (role 4), not a policy formulator or primary "
-                 "implementer.",
-    "Discretion": "Stores bottles for Eco-Green, separates waste for municipal collection, "
-                  "empties bottles — limited to own hotel/household practices.",
-    "Monitoring": "No municipal notices or rules observed; irregular programme monitoring.",
-    "Financial_resources": "Hotel committee rickshaw collection (~NPR 50,000/month) proposed; "
-                           "bottle monetary value (NPR 10–15/kg) drives informal collection.",
-    "Infrastructure": "Dustbins provided but overflow; safari vehicle buckets compulsory; "
-                      "need designated street cleaners.",
-    "Capacity": "No designated street cleaners (unlike elephant-dung teams); awareness "
-               "programmes lack continuity.",
-    "Enforcement": "No municipal enforcement notices; ward strict rules proposed.",
-    "Pol_epr": "EPR not mentioned.",
-    "Pol_awareness": "Occasional programmes by NGOs, hotel associations, park rangers — not "
-                     "continuous.",
-    "Pol_clean_up": "Environment Day one-day events; safari dustbin rule; elephant-dung "
-                    "teams twice daily.",
-    "Pol_recycling": "Eco-Green bottle collection.",
-    "Pol_waste_collection": "Municipal trucks for wrappers/bags; irregular schedules.",
-    "Pol_effectiveness": "Irregular collection and awareness; no continuous action.",
+    "Cul_private_companies": "Hotels lack continuous waste-management action.",
+    "Tar_nat_government": "Coordination, EPR implementation, regulate imported plastics, "
+                          "support research.",
+    "Tar_loc_government": "Inspections, local enforcement, designated street cleaners, "
+                          "dustbins.",
+    "Tar_private_sector": "Semi-formal collectors, recyclers, hotel committees.",
+    "Tar_households": "Awareness, 3R/4R, proper disposal.",
+    "Tar_private_companies": "Hotels, small businesses, retailers.",
+    "Tar_civil_society": "Nature guides, park rangers, NGO training programmes.",
+    "Actor_role": "Hotel operator as target group (role 4) — describes ground-level hotel/"
+                 "tourism practices while interview also covers national policy themes.",
+    "Discretion": "Limited to own hotel waste-handling practices; no policy or municipal "
+                  "authority.",
+    "Monitoring": "Weak enforcement; limited testing-lab capacity nationally; no municipal "
+                  "notices locally.",
+    "Financial_resources": "Local governments face resource gaps; hotel committee rickshaw "
+                           "collection (~NPR 50,000/month) proposed; financial support for "
+                           "private collection initiatives.",
+    "Research": "Research needed on microplastics, burning impacts, agriculture and water "
+               "contamination.",
+    "Infrastructure": "Need dustbins, shredders, transfer stations; safari buckets; ward "
+                      "cleaners.",
+    "Capacity": "Limited technical capacity (testing labs); no designated street cleaners; "
+               "training needed for collectors and nature guides.",
+    "Enforcement": "Weak ban enforcement; ward strict rules proposed.",
+    "Pol_epr": "EPR proposed as future solution but not currently in place.",
+    "Pol_awareness": "Irregular campaigns; Environment Day one day only; nature-guide "
+                     "training.",
+    "Pol_education": "Training for waste collectors and nature guides.",
+    "Pol_ban": "<40-micron plastics ban weakly enforced.",
+    "Pol_subsitutes": "Cloth bags, clay/cement pots, leaf plates.",
+    "Pol_clean_up": "Environment Day; safari dustbin rule; elephant-dung teams.",
+    "Pol_upcycling": "Bio-Camp pilots (flowerpots, plastic boards).",
+    "Pol_recycling": "Eco-Green bottles; PLEASE/Bio-Camp segregation/recycling.",
+    "Pol_waste_collection": "Municipal trucks; informal sector; irregular schedules.",
+    "Pol_effectiveness": "Limited due to weak enforcement, irregular collection, policy gaps.",
     "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
-    "Sol_awareness": "Ward awareness campaigns to reduce negligence.",
-    "Sol_subsitutes": "Cloth/fiber bags; clay/cement pots.",
-    "Sol_clean_up": "Designated street cleaners; daily collection like elephant-dung teams.",
-    "Sol_education": "Sustained nature-guide and hotel-association training.",
-    "Sol_capacity": "Train population through hotel association/NGO programmes.",
-    "Sol_finance": "Hotel committee fund for rickshaw waste collection.",
-    "Sol_infrastructure": "Ward dustbins; safari vehicle buckets.",
-    "Sol_enforcement": "Ward strict rule enforcement proposed.",
-    "Traditions to build on (free-hand)": "Cloth bags; clay/cement pots instead of plastic.",
+    "Sol_lead_agency": "Clear three-tier responsibilities; Solid Waste Management "
+                       "Association coordination.",
+    "Sol_responsibilities": "Clarify federal/provincial/local roles.",
+    "Sol_epr": "Implement EPR nationwide.",
+    "Sol_awareness": "Sustained public-awareness campaigns; ward programmes.",
+    "Sol_segregation": "Household and hotel source segregation; scale PLEASE/Bio-Camp.",
+    "Sol_upcycling": "Scale Bio-Camp upcycling models.",
+    "Sol_recycling": "Strengthen formal recycling; integrate informal sector.",
+    "Sol_education": "3R/4R, lifecycle assessment, eco-friendly alternatives.",
+    "Sol_capacity": "Labs, trained workforce, segregation skills, nature-guide training.",
+    "Sol_RD": "Research on microplastics, burning, agriculture, water.",
+    "Sol_finance": "Support private collection initiatives; hotel committee funding.",
+    "Sol_infrastructure": "Dustbins, shredders, transfer stations.",
+    "Sol_subsitutes": "Leaf plates, cotton/towel bags, clay pots.",
+    "Sol_clean_up": "Designated street cleaners; daily collection model.",
+    "Sol_enforcement": "Local inspections; enforce bans.",
+    "Sol_monitoring": "Stronger enforcement and data systems.",
+    "Traditions to build on (free-hand)": "Banana/pat leaf plates; cotton/towel bags; clay "
+                                          "pots; reuse before recycle.",
     # --- Explanations for otherwise-NA values in the "always explain" column set ---
-    "Relevance_international_pol": "NA - not mentioned.",
-    "Unclear_responsibilities": "NA - not explicitly discussed.",
-    "Res_nat_government": "NA - not named as responsible actor in this interview.",
-    "Res_prov_government": "NA - not mentioned.",
     "Res_students": "NA - not mentioned.",
-    "Res_science": "NA - not mentioned.",
+    "Res_science": "NA - research called for but no science actors named as responsible.",
     "Res_edu_institutions": "NA - not mentioned.",
-    "Cul_nat_government": "NA - not blamed.",
-    "Cul_prov_government": "NA - not blamed.",
+    "Cul_prov_government": "NA - provincial level not blamed specifically.",
     "Cul_students": "NA - not blamed.",
-    "Cul_private_sector": "NA - Eco-Green/informal collectors portrayed positively.",
+    "Cul_private_sector": "NA - informal/private collectors largely portrayed positively.",
     "Cul_civil_society": "NA - NGOs/guides portrayed as heroes.",
     "Cul_science": "NA - not blamed.",
     "Cul_edu_institutions": "NA - not blamed.",
-    "Tar_nat_government": "NA - not named as target group.",
-    "Tar_prov_government": "NA - not named.",
+    "Tar_prov_government": "NA - not named as primary target group.",
     "Tar_students": "NA - not named.",
-    "Tar_private_sector": "NA - informal collectors positive; hotel committee proposed.",
-    "Tar_science": "NA - not named.",
+    "Tar_science": "NA - research support via federal govt, not science actors as targets.",
     "Tar_edu_institutions": "NA - not named.",
 }
 
@@ -4922,8 +4981,8 @@ readme_lines = [
     ("  12. NPL_12 - Ministry for Urban Planning / MoUD. Coded from notes and transcript.", False),
     ("  13. NPL_13 - Creasion, recycling CSO. Coded from notes and field notes.", False),
     ("  14. NPL_14 - Hotel Silent Park, Rajesh Aryal, Chitwan (26 June 2025). Coded from "
-     "transcript; policy-theme notes at top of source file excluded (different interview). "
-     "NPF fields implied.", False),
+     "full interview package (guideline policy themes and verbatim transcript). NPF fields "
+     "implied.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
