@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_19). Unfilled placeholder rows are not included. Interviews
+through NPL_20). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -19,14 +19,15 @@ Urban Planning / MoUD), NPL_13 (Creasion), NPL_14 (Hotel Silent Park /
 Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
 (Kathmandu Ward No. 6), NPL_17 (Kathmandu Ward No. 7 / Romy Prasad Shrestha), NPL_18
 (dry waste management practitioner / consultant & researcher), NPL_19 (TAAN /
-Trekking Agencies' Association of Nepal).
+Trekking Agencies' Association of Nepal), NPL_20 (municipality Environment Officer,
+Chitwan area).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_19, in order), one column per COLUMNS
+                           (NPL_1 through NPL_20, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -2704,6 +2705,126 @@ taan.update({
              "transcript. ~180 trekking companies in Pokhara; TAAN established 42 years ago. "
              "Partners mentioned: ACAP, NTNC, Nepal Army, Tourism Minister. NPF fields implied, "
              "not explicit.",
+})
+
+# --- NPL_20: Municipality Environment Officer (Chitwan area) ------------------
+env_officer = blank_row()
+env_officer.update({
+    "Country": "Nepal",
+    "ID": "NPL_20",
+    "Actortype": "loc_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "visual/aesthetic pollution (scattered noodle/chips/gutka packets — \"the most "
+               "obvious effect\"; reduces aesthetics for residents and tourism), environment "
+               "(non-biodegradable plastics persist in soil/farmlands; sub-40-micron and "
+               "black plastics visible in farmlands), and air/climate (burning plastics "
+               "releases gases contributing to global warming — limited locally; only 1–2 "
+               "burning complaints this year)",
+    NPF_VICTIMS_COL: "residents and local communities who want a clean environment; tourism/"
+                     "aesthetic appeal of the municipality; farmlands/soil where small plastic "
+                     "packets persist; and the broader environment affected by non-"
+                     "biodegradable litter",
+    "NPF_villains": "the public/households (inconsistent use of dustbins; littering despite "
+                    "bins; moderate but incomplete awareness); weak and flexible national/local "
+                    "laws with infrequent enforcement; plastic producers of banned sub-40-"
+                    "micron and black plastics (ban incomplete); and infrastructure/land gaps "
+                    "that leave municipalities dependent on private contractors dumping "
+                    "residual waste at riverbanks",
+    "NPF_hero": "the municipality (cloth-bag distribution, reduce/reuse/recycle campaigns, "
+               "dustbins, penalties under Natural Resource Protection Act, Environment & "
+               "Disaster budget); Safa Urja Utpadan (contracted collection, partial "
+               "segregation, recycling facilities and own land); proposed inter-municipal "
+               "integrated landfill/PPP (Ratnanagar, Kalika, Khaireni, Rapti); and promoted "
+               "alternatives (cloth/fiber bags, 3R/4R principles, shredders/green roads)",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_households": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_households": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+    "Tar_private_sector": "yes",
+
+    "Actor_role": "2",
+    "Discretion": "As a municipal Environment Officer, the interviewee oversees waste/plastic "
+                 "management operations, distributes cloth bags, runs awareness campaigns, "
+                 "allocates budget under Environment & Disaster, and contracts Safa Urja for "
+                 "collection — but is not involved in drafting the national Solid Waste "
+                 "Management bill, cannot acquire municipal landfill land, and relies on the "
+                 "private contractor for most collection, segregation and recycling.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_epr": "no",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "40-micron and black-plastic production bans exist but "
+                                 "\"enforcement is incomplete\" and bans are \"only partially "
+                                 "effective\"; dustbins placed \"at every corner\" but littering "
+                                 "continues; penalties under Natural Resource Protection Act "
+                                 "exist but laws are \"weak and flexible\" with infrequent "
+                                 "enforcement; Solid Waste Management bill recently sent to "
+                                 "Council of Ministers but officer not involved in drafting — "
+                                 "overall guidance exists but \"enforcement and awareness remain "
+                                 "weak.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"20. Municipality Environment Officer (Chitwan area)\", "
+             "affiliation: local government — Environment Officer (small municipality). "
+             "Interviewee name not given. Municipality described as small (one hospital, one "
+             "cinema hall, few restaurants). Location/context: Chitwan area — Safa Urja Utpadan "
+             "contracted for collection; neighbouring municipalities Ratnanagar, Kalika, "
+             "Khaireni and Rapti discussed for integrated landfill/PPP. Interviewers: Marlene "
+             "Kammerer (University of Bern), Ram Devi, Deep. Interview date not stated. Coded "
+             "from integrated structured guideline notes and full verbatim transcript (with "
+             "interpreter Deep). Overlap with NPL_11 (Safa Urja Utpadan — same contractor, same "
+             "area) but distinct municipal-government perspective. Q4a/Q4b ministry follow-ups "
+             "blank. NPF fields implied, not explicit.",
 })
 
 
@@ -6085,6 +6206,125 @@ taan_expl = {
     "Tar_civil_society": "NA - CSOs already active; not primary target framing.",
 }
 
+env_officer_expl = {
+    "Actortype": "Municipal Environment Officer in a small Chitwan-area municipality — "
+                 "coded as loc_government.",
+    "Problem_awareness_pop": "\"Public unawareness of proper disposal methods\"; dustbins "
+                             "provided but littering continues; \"whether their awareness level "
+                             "has not reached that point.\"",
+    "Problem_awareness_pol": "\"Weak enforcement; laws are broad and flexible\"; \"guidance "
+                            "exists but enforcement and awareness remain weak\"; officer not "
+                            "involved in drafting national SWM bill.",
+    "Problem_concerndness": "\"Officer is very concerned\"; \"Concerned very much\"; "
+                            "municipality launching campaigns and distributing cloth bags.",
+    "Problem_littering": "Visual pollution from scattered noodle/chips/gutka packets; "
+                         "dustbins at corners but people still litter.",
+    "Problem_consumption": "Small single-use packets (noodles, chips, Kurkure) with no reuse "
+                           "value persist in environment.",
+    "Problem_recycling": "Private contractor recycles most waste but technology gaps "
+                         "(shredders, advanced processing) remain.",
+    "Problem_waste_mgmt": "No municipal engineered landfill; municipality relies on private "
+                          "sector; residual waste dumped at riverbank.",
+    "Problem_production": "Production of plastics below 40 microns and black plastics banned "
+                          "but \"enforcement is incomplete.\"",
+    "Problem_alternatives": "\"Lack of proper alternatives for banned plastics\"; promotes "
+                            "cloth bags.",
+    "Problem_waste_segregation": "Safa Urja performs partial segregation with own machine; "
+                                 "municipality does not segregate directly.",
+    "Impacts": "Visual/aesthetic pollution; farmlands; environment; limited burning/global "
+               "warming.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "residents; tourists; farmlands/environment. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "public littering; weak enforcement; banned plastic production; land/"
+                    "infrastructure gaps. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+               "municipality; Safa Urja; cloth-bag/campaign measures; planned inter-"
+               "municipal PPP landfill. No FLAG needed.",
+    "Coordination_sectoral": "Municipality contracts Safa Urja; NGOs/private sector mentioned "
+                             "as shared responsibility; hospitals/businesses targeted.",
+    "Coordination_levels": "Follow-up: challenges differ — local operational/resource gaps vs "
+                           "federal policy clarity/coordination.",
+    "Unclear_responsibilities": "Responsibility shared among municipality, government and "
+                                "private sector/NGOs; national bill drafting not involving this "
+                                "officer.",
+    "Res_nat_government": "40-micron/black-plastic bans; Solid Waste Management bill; Natural "
+                          "Resource Protection Act penalties.",
+    "Res_loc_government": "Municipality oversees operations, dustbins, budget, campaigns, "
+                          "enforcement.",
+    "Res_private_sector": "Safa Urja contracted for collection, partial segregation, recycling.",
+    "Res_households": "Households must use dustbins and cloth bags; compliance varies.",
+    "Res_private_companies": "Safa Urja and small businesses/restaurants/hospital.",
+    "Cul_nat_government": "Weak/flexible laws; incomplete ban enforcement.",
+    "Cul_households": "Inconsistent dustbin use; littering; moderate awareness gaps.",
+    "Tar_nat_government": "Stronger laws and national policy clarity.",
+    "Tar_loc_government": "Municipal investment in infrastructure; integrated landfill "
+                          "planning.",
+    "Tar_households": "Primary target alongside small businesses.",
+    "Tar_private_companies": "Restaurants, cinema hall, hospital; autoclave disposal.",
+    "Tar_private_sector": "Safa Urja coordination; private sector central to collection.",
+    "Actor_role": "Environment Officer managing municipal campaigns, contractor oversight "
+                 "and local implementation — managerial/organisational implementer (2).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "Penalties for open dumping/burning; only 1–2 burning complaints this year.",
+    "Financial_resources": "Municipality budget under Environment & Disaster; minimal direct "
+                           "investment; private sector pays municipality; land acquisition "
+                           "problem.",
+    "Research": "NA - not mentioned as active research actor (interview is part of research "
+                "project).",
+    "Infrastructure": "No municipal landfill; lack of shredders/transfer stations; private "
+                      "sector has land and MRF.",
+    "Capacity": "Municipality can formulate local policy but implementation depends on public "
+               "compliance; technology gaps.",
+    "Enforcement": "Penalties exist but infrequent; bans partially effective.",
+    "Pol_epr": "Extended producer responsibility not mentioned.",
+    "Pol_awareness": "Municipality campaigns on reduction, reuse, recycling; cloth-bag "
+                     "distribution.",
+    "Pol_education": "Public awareness campaigns alongside laws.",
+    "Pol_ban": "Ban on production below 40 microns and black plastics.",
+    "Pol_subsitutes": "Cloth/fiber bags promoted and distributed.",
+    "Pol_recycling": "Safa Urja recycling facilities; reuse of shredded plastics.",
+    "Pol_waste_collection": "Municipality contracts Safa Urja for household collection.",
+    "Pol_effectiveness": "Bans and bins only partially effective; weak enforcement.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Inter-municipal integrated waste management/PPP landfill across "
+                       "neighbouring municipalities.",
+    "Sol_responsibilities": "Clarify roles between municipality and private contractor.",
+    "Sol_awareness": "Promote awareness alongside laws; 3R/4R principles.",
+    "Sol_segregation": "Improve segregation via private-sector facilities and public "
+                       "compliance.",
+    "Sol_recycling": "Shredders, recycling facilities, green roads, reuse of plastics.",
+    "Sol_education": "Awareness campaigns for citizen compliance.",
+    "Sol_capacity": "Technology transfer and shredder infrastructure.",
+    "Sol_finance": "Initial investment high but reduces costs over time; municipal budget "
+                   "limits.",
+    "Sol_infrastructure": "Landfills, transfer stations, shredders, common landfill across "
+                          "municipalities.",
+    "Sol_subsitutes": "Cloth bags; minimize plastic at source.",
+    "Sol_enforcement": "Stronger laws and stricter penalties.",
+    "Sol_monitoring": "Better enforcement of existing penalties and bans.",
+    "Traditions to build on (free-hand)": "NA - not discussed.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_civil_society": "NA - NGOs mentioned generally but not as formal responsible actors.",
+    "Res_science": "NA - not mentioned.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - municipality portrayed as active implementer.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - Safa Urja portrayed as central solution partner.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - businesses targeted for policy, not primarily blamed.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -6105,6 +6345,7 @@ EXPLANATIONS = {
     "NPL_17": shrestha_expl,
     "NPL_18": waste_practitioner_expl,
     "NPL_19": taan_expl,
+    "NPL_20": env_officer_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -6131,13 +6372,14 @@ CODED_ROWS = {
     "NPL_17": shrestha,
     "NPL_18": waste_practitioner,
     "NPL_19": taan,
+    "NPL_20": env_officer,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_19).
+# Master-list order for coded interviews only (NPL_1 through NPL_20).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
-    "NPL_19",
+    "NPL_19", "NPL_20",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -6165,6 +6407,8 @@ CODED_META = {
     "NPL_18": ("18. Dry waste management practitioner/ consultant (unnamed)",
                "Dry waste management practitioner; consultant & researcher (Kathmandu & Pokhara)"),
     "NPL_19": ("19. TAAN Trekking Association", "Trekking Agencies' Association of Nepal (TAAN)"),
+    "NPL_20": ("20. Municipality Environment Officer (Chitwan area)",
+               "Local government - Environment Officer"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -6211,6 +6455,9 @@ NAMES["NPL_18"] = ("Dry waste management practitioner / consultant & researcher 
                     "Kathmandu & Pokhara (active since 2017; interview date not stated)")
 NAMES["NPL_19"] = ("TAAN (Trekking Agencies' Association of Nepal) - President (unnamed), "
                     "Pokhara; also founder of Ethical Trekking (interview date not stated)")
+NAMES["NPL_20"] = ("Municipality Environment Officer (unnamed), small Chitwan-area municipality "
+                    "(Safa Urja contractor; Ratnanagar/Kalika/Khaireni/Rapti context; interview "
+                    "date not stated)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -6352,7 +6599,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_19, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_20, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -6432,11 +6679,14 @@ readme_lines = [
     ("  19. NPL_19 - TAAN (Trekking Agencies' Association of Nepal), president (unnamed), "
      "Pokhara; also Ethical Trekking founder. Coded from full verbatim transcript. Tourism/"
      "trekking sector focus.", False),
+    ("  20. NPL_20 - Municipality Environment Officer (unnamed), small Chitwan-area municipality. "
+     "Coded from integrated guideline notes and verbatim transcript (Marlene Kammerer/Ram Devi/"
+     "Deep). Safa Urja contractor; overlap with NPL_11.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_19, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_20, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -6450,7 +6700,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_19) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_20) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
