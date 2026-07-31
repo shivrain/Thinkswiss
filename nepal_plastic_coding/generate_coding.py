@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_24). Unfilled placeholder rows are not included. Interviews
+through NPL_25). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -22,14 +22,15 @@ Rajesh Aryal), NPL_15 (KTM Environment Inspector / Suna Maya Margen), NPL_16
 Trekking Agencies' Association of Nepal), NPL_20 (municipality Environment Officer,
 Chitwan area), NPL_21 (ordinary person / citizen, unnamed), NPL_22 (ordinary person /
 citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed), NPL_24
-(graduated young man, mechanical engineering, unnamed).
+(graduated young man, mechanical engineering, unnamed), NPL_25 (ordinary person /
+citizen, unnamed — 3rd respondent, same date).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_24, in order), one column per COLUMNS
+                           (NPL_1 through NPL_25, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3128,6 +3129,75 @@ young_graduate.update({
              "Q5 (responsibility), Q6/Q6 follow-up, Q8 traditions follow-up and Q10 not asked. "
              "Same interview date as NPL_21–NPL_23 but distinct young-educated-respondent "
              "perspective. NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_25: Ordinary person / citizen (unnamed, 3rd respondent) --------------
+ordinary_person_3 = blank_row()
+ordinary_person_3.update({
+    "Country": "Nepal",
+    "ID": "NPL_25",
+    "Actortype": "households",
+
+    "Problem_concerndness": "high",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "health (\"impact on health\"; \"different diseases appear\")",
+    NPF_VICTIMS_COL: "public health — people affected by diseases linked to plastic "
+                     "pollution",
+    "NPF_villains": "government (\"not much has been done yet by government\"); "
+                    "households/residents (\"people want to have a comfortable life\" with "
+                    "\"no wish to make efforts for segregation\"); and rising plastic "
+                    "consumption (more packaging, plastic bottles, diapers for babies and "
+                    "elderly people) — plastics that unlike other waste \"can[not] be "
+                    "decomposed\"",
+    "NPF_hero": "local government and mayor (responsible for waste management; daily "
+               "collection vehicle); religious/cultural norms prohibiting waste dumping near "
+               "saint places/temples; and municipal use of god monuments at open dumping "
+               "sites to deter littering",
+
+    "Res_loc_government": "yes",
+    "Res_households": "yes",
+    "Res_nat_government": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_households": "yes",
+
+    "Tar_loc_government": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As an ordinary resident the interviewee is very concerned about plastic's "
+                 "health impacts but relies on the municipality's daily collection vehicle "
+                 "and has \"no wish to make efforts for segregation\"; cannot influence "
+                 "government action beyond noting that \"not much has been done yet\" — "
+                 "comfort-oriented plastic use (packaging, bottles, diapers) continues.",
+
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_waste_collection": "yes",
+
+    "Sol_awareness": "yes",
+    "Sol_enforcement": "yes",
+
+    "Traditions to build on (free-hand)": "Religious/cultural taboo against throwing waste "
+                                          "near saint places (temples) — municipalities "
+                                          "strategically place god monuments at open dumping "
+                                          "sites. However, \"people don't want to return to "
+                                          "traditions\"; \"plastics make life more comfortable.\"",
+    "Notes": "Master list label: \"25. Ordinary person (unnamed, 3rd respondent)\", "
+             "affiliation: ordinary person/citizen. Interviewee name not given. Interview "
+             "date: 17 February 2026. Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. "
+             "Consent given; no recording. Coded from structured interview guideline/field "
+             "notes only (no verbatim transcript). Third ordinary-person interview on the same "
+             "date as NPL_21/NPL_22 — distinct respondent with high concern and health focus; "
+             "unique religious/cultural anti-littering mechanism (temples, god monuments). Q4 "
+             "effectiveness follow-up, Q6 level follow-up, Q9 and Q10 not asked. NPF fields "
+             "implied, not explicit.",
 })
 
 
@@ -6914,6 +6984,72 @@ young_graduate_expl = {
     "Capacity": "NA - Q6 not asked.",
 }
 
+ordinary_person_3_expl = {
+    "Actortype": "Interviewee described as \"ordinary person\" — coded as households.",
+    "Problem_concerndness": "\"Very much concerned.\"",
+    "Problem_consumption": "More plastics in packaging, plastic bottles; use of diapers by "
+                           "babies and elderly people.",
+    "Problem_recycling": "Plastics cannot be decomposed unlike some other waste.",
+    "Problem_waste_mgmt": "Government \"not much has been done yet\"; residents unwilling to "
+                          "segregate.",
+    "Problem_alternatives": "\"Plastics make life more comfortable\"; people don't want to "
+                            "return to traditions.",
+    "Problem_waste_segregation": "\"No wish to make efforts for segregation.\"",
+    "Impacts": "Health — \"different diseases appear.\"",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "public health/disease sufferers. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "government inaction; household comfort-seeking; rising plastic consumption "
+                    "(packaging, bottles, diapers). No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: local "
+               "government/mayor; daily collection; religious taboo at temples; god monuments "
+               "at dump sites. No FLAG needed.",
+    "Res_loc_government": "\"Local government; mayor\" responsible.",
+    "Res_households": "Households produce waste including diapers; unwilling to segregate.",
+    "Res_nat_government": "Government cited as not having done much yet.",
+    "Cul_nat_government": "\"Not much has been done yet by government.\"",
+    "Cul_households": "Comfort-oriented behaviour; no wish to segregate.",
+    "Tar_loc_government": "Local government/mayor named as responsible actor to strengthen.",
+    "Actor_role": "Ordinary citizen as target group (role 4).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Capacity": "Government has not done much; residents unwilling to segregate.",
+    "Enforcement": "Religious/cultural enforcement via saint places/temples and god monuments "
+                   "at open dumping sites.",
+    "Pol_waste_collection": "Daily municipal collection vehicle.",
+    "Sol_awareness": "Cultural/religious norms around saint places deter open dumping.",
+    "Sol_enforcement": "Municipal god monuments at open spaces to reduce littering.",
+    "Traditions to build on (free-hand)": "Temple/saint-place taboo against waste dumping; "
+                                          "god monuments — but people don't want to return to "
+                                          "older traditions.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_private_sector": "NA - not mentioned.",
+    "Res_civil_society": "NA - not mentioned.",
+    "Res_science": "NA - not mentioned.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Res_private_companies": "NA - not mentioned.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - local government portrayed as responsible/collection actor.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Tar_nat_government": "NA - not named as specific target.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_private_sector": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Tar_households": "NA - Q9 not asked.",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_private_companies": "NA - not named.",
+    "Pol_effectiveness": "NA - Q4 effectiveness follow-up not asked.",
+    "Pol_effectiveness_example": "NA - Q4 effectiveness follow-up not asked.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -6939,6 +7075,7 @@ EXPLANATIONS = {
     "NPL_22": ordinary_person_2_expl,
     "NPL_23": shop_owner_expl,
     "NPL_24": young_graduate_expl,
+    "NPL_25": ordinary_person_3_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -6970,13 +7107,14 @@ CODED_ROWS = {
     "NPL_22": ordinary_person_2,
     "NPL_23": shop_owner,
     "NPL_24": young_graduate,
+    "NPL_25": ordinary_person_3,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_24).
+# Master-list order for coded interviews only (NPL_1 through NPL_25).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
-    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24",
+    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -7010,6 +7148,7 @@ CODED_META = {
     "NPL_22": ("22. Ordinary person (unnamed, 2nd respondent)", "Ordinary person / citizen"),
     "NPL_23": ("23. Shop owner (unnamed)", "Shop-owner / retailer"),
     "NPL_24": ("24. Graduated young man (unnamed)", "Graduated young man / mechanical engineering"),
+    "NPL_25": ("25. Ordinary person (unnamed, 3rd respondent)", "Ordinary person / citizen"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -7069,6 +7208,9 @@ NAMES["NPL_23"] = ("Shop owner (unnamed), Nepal (17 February 2026; interviewers:
 NAMES["NPL_24"] = ("Graduated young man (unnamed), mechanical engineering sphere, Nepal "
                     "(17 February 2026; interviewers: Ram Devi, Marlene Kammerer, Anastasiia; "
                     "no recording)")
+NAMES["NPL_25"] = ("Ordinary person / citizen (unnamed, 3rd respondent), Nepal (17 February "
+                    "2026; interviewers: Ram Devi, Marlene Kammerer, Anastasiia; no recording; "
+                    "distinct from NPL_21/NPL_22)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -7210,7 +7352,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_24, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_25, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -7309,11 +7451,15 @@ readme_lines = [
      "February 2026). Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. Consent given; "
      "no recording. Coded from guideline/field notes only. Awareness/education focus; young "
      "people and schools as policy targets. Q5, Q6, Q8 traditions and Q10 not asked.", False),
+    ("  25. NPL_25 - Ordinary person / citizen (unnamed, 3rd respondent), Nepal (17 February "
+     "2026). Same interview team/date as NPL_21/NPL_22 but distinct (high concern, health/"
+     "diseases, diapers/packaging, religious taboo at temples, god monuments). Q4 "
+     "effectiveness, Q6 level follow-up, Q9 and Q10 not asked.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_24, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_25, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -7327,7 +7473,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_24) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_25) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
