@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_29). Unfilled placeholder rows are not included. Interviews
+through NPL_30). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -25,14 +25,15 @@ citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed)
 (graduated young man, mechanical engineering, unnamed), NPL_25 (ordinary person /
 citizen, unnamed — 3rd respondent, same date), NPL_26 (cafe workers, unnamed), NPL_27
 (school teacher, unnamed), NPL_28 (Sandip Regiment / two Chitwan-Sauraha respondents), NPL_29 (former UNDP/UNEP
-ecologist, Kathmandu household #1, unnamed).
+ecologist, Kathmandu household #1, unnamed), NPL_30 (household woman, Ward 23
+Basantpur/Kathmandu, unnamed).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_29, in order), one column per COLUMNS
+                           (NPL_1 through NPL_30, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3594,6 +3595,92 @@ undp_unep_ecologist.update({
              "#1\". Coded from integrated guideline notes and full verbatim transcript. Private "
              "recycling company \"Shinshira Acai\" mentioned (name uncertain). Q6/Q6 follow-up "
              "and Q9 not asked. NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_30: Household woman, Ward 23 Basantpur (unnamed) ----------------------
+basantpur_household = blank_row()
+basantpur_household.update({
+    "Country": "Nepal",
+    "ID": "NPL_30",
+    "Actortype": "households",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "medium",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "environment (plastic \"cannot be decomposed\" and \"is everywhere\"); visual "
+               "pollution (primary personal concern); air pollution (open burning in "
+               "localities); drainage/rivers (plastic clogs pipelines in rivers); and water "
+               "quality (city supply \"good\" but not universal; high iron, nitrate and "
+               "ammonium in water — respondent is a chemist running a private water-quality "
+               "lab in Kathmandu)",
+    NPF_VICTIMS_COL: "residents affected by visual pollution and open-burning air pollution; "
+                     "river/drainage systems clogged by plastic; water quality (iron, "
+                     "nitrate, ammonium); and the broader environment from non-decomposable "
+                     "plastic litter",
+    "NPF_villains": "neighbours/households (\"don't take care about the plastic\"; use bags "
+                    "and throw waste through windows; \"not much concerned\"); complacency "
+                    "enabled by daily municipal collection in Kathmandu (\"people don't really "
+                    "care\" where waste is collected every day); municipalities (past "
+                    "separate dry/wet collection \"not working anymore\"; uncertain whether "
+                    "segregated household waste is remixed); and lack of national policy "
+                    "awareness and viable alternatives (\"people are concerned, but no "
+                    "options\")",
+    "NPF_hero": "Kathmandu Metropolitan City/metropolitan office (restart separate household "
+               "collection and management; responsible for policy and support); household "
+               "awareness not to litter; resumed municipal dry/wet segregation; national "
+               "government policy; and local clubs (past initiatives, though not "
+               "sustainable)",
+
+    "Res_loc_government": "yes",
+    "Res_nat_government": "yes",
+    "Res_households": "yes",
+
+    "Tar_loc_government": "yes",
+    "Tar_nat_government": "yes",
+    "Tar_households": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As a household woman in Ward 23 Basantpur the interviewee is concerned "
+                 "about plastic pollution (especially visual pollution and burning) and tries "
+                 "to segregate waste at home, but neighbours are careless, discussions with "
+                 "family/friends are rare, and she is unsure whether the municipality remixed "
+                 "segregated waste after separate collection stopped — she also works as a "
+                 "chemist in a private water-quality lab but has no authority over municipal "
+                 "policy or neighbours' behaviour.",
+
+    "Infrastructure": "yes",
+
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Past municipal practice of separate dry/wet collection on "
+                                 "different days \"not working anymore\" (reason uncertain — "
+                                 "households may not have separated properly or municipality "
+                                 "couldn't handle it); respondent has \"no idea\" about "
+                                 "national policies/campaigns; in Kathmandu daily collection "
+                                 "reduces public concern compared with areas without collection.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"30. Household woman, Ward 23 Basantpur (unnamed)\", "
+             "affiliation: household woman, Ward 23 Basantpur, Kathmandu. Interviewee name "
+             "not given. Also a chemist with a private water-quality laboratory in Kathmandu. "
+             "Interview date: 18 February 2026. Interviewers: Deep, Marlene Kammerer, "
+             "Anastasiia. Consent given; recording. Coded from structured interview "
+             "guideline/field notes only (no full verbatim transcript in source). Q5, Q6 "
+             "and Q6 follow-up not asked. Q8 traditions follow-up not asked. Extra questions "
+             "from Deep on ward-level awareness and Kathmandu water quality included. Main "
+             "insight: daily municipal collection in Kathmandu reduces household concern vs "
+             "areas without collection. NPF fields implied, not explicit.",
 })
 
 
@@ -7772,6 +7859,79 @@ undp_unep_ecologist_expl = {
     "Research": "NA - not discussed.",
 }
 
+basantpur_household_expl = {
+    "Actortype": "Household woman, Ward 23 Basantpur — coded as households (also chemist/water-"
+                 "quality lab professional).",
+    "Problem_awareness_pop": "Neighbours don't care; rare discussions; throw waste through "
+                             "windows; \"people are concerned, but no options.\"",
+    "Problem_concerndness": "Respondent concerned (especially visual pollution) but neighbours "
+                            "\"not much concerned\" — medium overall.",
+    "Problem_littering": "Visual pollution; neighbours throw waste through windows.",
+    "Problem_consumption": "Plastic cheap and convenient; available at every shop.",
+    "Problem_recycling": "Plastic cannot be decomposed.",
+    "Problem_waste_mgmt": "Uncertain if municipality mixes segregated waste; daily collection "
+                          "breeds complacency.",
+    "Problem_alternatives": "No viable options for concerned residents.",
+    "Problem_waste_segregation": "Households try to separate but past municipal separate "
+                                 "collection stopped working.",
+    "Impacts": "Visual pollution, air pollution (burning), river pipeline clogging, water "
+               "quality, non-decomposition.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+                     "Coded_Data. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+                    "Coded_Data. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+               "Coded_Data. No FLAG needed.",
+    "Res_loc_government": "Metropolitan city responsible for collection and management.",
+    "Res_nat_government": "Policy needed from government.",
+    "Res_households": "Households should segregate and not litter.",
+    "Tar_loc_government": "Metropolitan office named as responsible for future policies.",
+    "Tar_nat_government": "Need of policy from government.",
+    "Tar_households": "People need awareness not to throw plastics everywhere.",
+    "Actor_role": "Household resident / target group (role 4).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Infrastructure": "Municipality should restart separate household collection.",
+    "Pol_waste_collection": "Daily municipal collection in Kathmandu; past separate dry/wet "
+                            "days.",
+    "Pol_effectiveness": "Separate collection no longer working; national policies unknown.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted in Coded_Data cell.",
+    "Sol_lead_agency": "Metropolitan city.",
+    "Sol_awareness": "People need awareness not to litter.",
+    "Sol_segregation": "Municipality to restart separate household collection.",
+    "Traditions to build on (free-hand)": "NA - Q8 traditions follow-up not asked.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Unclear_responsibilities": "NA - metropolitan city identified as responsible.",
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_private_sector": "NA - not mentioned.",
+    "Res_civil_society": "NA - local clubs mentioned but not formal responsible actors.",
+    "Res_science": "NA - respondent is chemist but not named as institutional actor.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Res_private_companies": "NA - not mentioned.",
+    "Cul_nat_government": "NA - national policy gap noted but not blamed.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - municipality criticised for ending segregation but portrayed "
+                          "as solution actor.",
+    "Cul_households": "NA - neighbours blamed; respondent portrayed as concerned segregator.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_private_sector": "NA - not named.",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_private_companies": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Capacity": "NA - Q6 not asked.",
+    "Monitoring": "NA - Q6 not asked.",
+    "Financial_resources": "NA - Q10 emphasises responsibility more than finance.",
+    "Research": "NA - water-quality professional background noted but not as research actor.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -7802,6 +7962,7 @@ EXPLANATIONS = {
     "NPL_27": school_teacher_expl,
     "NPL_28": sandip_regiment_expl,
     "NPL_29": undp_unep_ecologist_expl,
+    "NPL_30": basantpur_household_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -7838,14 +7999,15 @@ CODED_ROWS = {
     "NPL_27": school_teacher,
     "NPL_28": sandip_regiment,
     "NPL_29": undp_unep_ecologist,
+    "NPL_30": basantpur_household,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_29).
+# Master-list order for coded interviews only (NPL_1 through NPL_30).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
     "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25", "NPL_26", "NPL_27",
-    "NPL_28", "NPL_29",
+    "NPL_28", "NPL_29", "NPL_30",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -7885,6 +8047,8 @@ CODED_META = {
     "NPL_28": ("28. Sandip Regiment", "Chitwan/Sauraha — two respondents (R1 & R2)"),
     "NPL_29": ("29. Former UNDP/UNEP ecologist (Kathmandu household #1)",
                "Former UNDP and UNEP member / ecologist"),
+    "NPL_30": ("30. Household woman, Ward 23 Basantpur (unnamed)",
+               "Household woman, Ward 23 Basantpur / chemist (water-quality lab)"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -7957,6 +8121,9 @@ NAMES["NPL_28"] = ("Sandip Regiment — two respondents (R1 & R2), Chitwan/Saura
 NAMES["NPL_29"] = ("Former UNDP/UNEP ecologist (unnamed), Kathmandu household #1 (18 February "
                     "2026; interviewers: Deep, Marlene Kammerer, Anastasiia; recording; NTNC/"
                     "UNDP/UNEP career)")
+NAMES["NPL_30"] = ("Household woman (unnamed), Ward 23 Basantpur, Kathmandu (18 February 2026; "
+                    "chemist, private water-quality lab; interviewers: Deep, Marlene Kammerer, "
+                    "Anastasiia; recording)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -8098,7 +8265,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_29, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_30, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -8216,11 +8383,14 @@ readme_lines = [
      "2026). Ecologist; NTNC, UNDP, UNEP career. Ban without alternatives, no segregation, "
      "private recycling enterprises, waste-to-wealth, municipal tax incentives. Q6 and Q9 not "
      "asked.", False),
+    ("  30. NPL_30 - Household woman (unnamed), Ward 23 Basantpur, Kathmandu (18 February 2026). "
+     "Chemist/water-quality lab. Visual pollution, burning, failed dry/wet segregation, daily "
+     "collection complacency. Q5, Q6 and Q8 traditions not asked.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_29, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_30, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -8234,7 +8404,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_29) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_30) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
