@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_28). Unfilled placeholder rows are not included. Interviews
+through NPL_29). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -24,14 +24,15 @@ Chitwan area), NPL_21 (ordinary person / citizen, unnamed), NPL_22 (ordinary per
 citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed), NPL_24
 (graduated young man, mechanical engineering, unnamed), NPL_25 (ordinary person /
 citizen, unnamed — 3rd respondent, same date), NPL_26 (cafe workers, unnamed), NPL_27
-(school teacher, unnamed), NPL_28 (Sandip Regiment / two Chitwan-Sauraha respondents).
+(school teacher, unnamed), NPL_28 (Sandip Regiment / two Chitwan-Sauraha respondents), NPL_29 (former UNDP/UNEP
+ecologist, Kathmandu household #1, unnamed).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_28, in order), one column per COLUMNS
+                           (NPL_1 through NPL_29, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3473,6 +3474,126 @@ sandip_regiment.update({
              "answered — emergent targets (retailers, households, hotels, students) coded from "
              "transcript. New Waste Management Bill: municipal-level consultation noted. NPF "
              "fields implied, not explicit.",
+})
+
+
+# --- NPL_29: Former UNDP/UNEP ecologist (Kathmandu household #1, unnamed) ------
+undp_unep_ecologist = blank_row()
+undp_unep_ecologist.update({
+    "Country": "Nepal",
+    "ID": "NPL_29",
+    "Actortype": "science",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "high",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "aquatic and terrestrial environments (plastic everywhere — \"eyesore\" and "
+               "hazard); soil/agriculture (6–7 plastic pieces per garden pit; plastic in "
+               "tilled/ploughed soil; ~0.5 kg plastic in 50 kg cow dung — cows ingest plastic "
+               "through grazing/fodder); marine life (animals entangled; food web affected); "
+               "and human health (micro- and nano-plastics in blood vessels; concern for own "
+               "health, offspring and future generations) — framed as one of the planetary "
+               "crises",
+    NPF_VICTIMS_COL: "human health and future generations (micro/nano-plastics in blood "
+                     "vessels; concern for family and children); agricultural systems and "
+                     "livestock (cows ingesting plastic through fodder); aquatic and marine "
+                     "ecosystems and food webs; and soil/garden environments heavily littered "
+                     "with plastic",
+    "NPF_villains": "the cheap-plastic economy (plastic is \"one of the cheapest commodities\" "
+                    "— \"as long as things are cheap, people will continue\" using it); "
+                    "government policies that ban without alternatives (1990s/2018 single-use "
+                    "plastic ban introduced \"abruptly\" leaving ban \"in limbo\"); municipal "
+                    "bodies that only collect waste to landfill without environmental "
+                    "consciousness; households throwing all waste together with no segregation; "
+                    "and lack of affordable alternatives (cloth bags ~40 NPR vs free plastic "
+                    "bags in shops)",
+    "NPF_hero": "conscious individual/household behaviour (minimalist approach, four Rs, "
+               "carry-your-own-bag, \"act locally\"); municipalities/wards with pragmatic "
+               "collection, segregation infrastructure, incentive mechanisms (tax/tariff "
+               "reductions for segregating, tree planting, rainwater harvesting); federal "
+               "government as strategic policy-making/enabling body; private sector and young "
+               "entrepreneurs (two/three segregation/recycling companies — e.g. \"Shinshira "
+               "Acai\"; waste-to-wealth enterprises generating employment); NGOs/organisations "
+               "driving awareness; school-level education for children; and affordable "
+               "alternatives that reduce (not fully replace) plastic to manageable levels "
+               "(\"solutions are always in dilutions\")",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_households": "yes",
+    "Res_civil_society": "yes",
+    "Res_private_companies": "yes",
+    "Res_edu_institutions": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_households": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_edu_institutions": "yes",
+
+    "Actor_role": "1",
+    "Discretion": "Former UNDP (2000–2019) and UNEP (2019–2024) professional with ecology "
+                 "background and 49 years in conservation/development (also NTNC protected-"
+                 "areas work, BSc biology teaching) — speaks both as Kathmandu household "
+                 "resident segregating waste for municipal collection and as a policy expert "
+                 "advocating federal strategic guidance, municipal enforcement/incentives and "
+                 "regulated private-sector waste-to-wealth models; currently freelancing after "
+                 "UNEP project ended June 2024.",
+
+    "Financial_resources": "yes",
+    "Infrastructure": "yes",
+    "Enforcement": "yes",
+
+    "Pol_ban": "yes",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Ministry of Environment single-use plastic ban (1990s and "
+                                 "2018) introduced without alternatives — \"in limbo\"; cloth "
+                                 "bags (~40 NPR) used only by \"very few\" educated people; "
+                                 "Kathmandu: \"no segregation at all\" — all waste in one "
+                                 "bag/bucket; municipal bodies only \"collect them and put it "
+                                 "in a landfill\"; awareness campaigns driven by private "
+                                 "actors/NGOs/young generation, \"not the government\".",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"29. Former UNDP/UNEP ecologist (Kathmandu household #1)\", "
+             "affiliation: former UNDP and UNEP member. Interviewee name not given. Interview "
+             "date: 18 February 2026. Interviewers: Deep, Marlene Kammerer, Anastasiia. "
+             "Consent given; recording. Background: ecologist; taught BSc biology (late 1980s); "
+             "~14 years NTNC protected areas (Chitwan, Bardia); UNDP from 2000 (biodiversity, "
+             "climate, livelihood, wetlands); UNEP 2019–2024 ecosystem-based adaptation "
+             "project; freelancing from June 2024. Transcript labelled \"Household Kathmandu "
+             "#1\". Coded from integrated guideline notes and full verbatim transcript. Private "
+             "recycling company \"Shinshira Acai\" mentioned (name uncertain). Q6/Q6 follow-up "
+             "and Q9 not asked. NPF fields implied, not explicit.",
 })
 
 
@@ -7558,6 +7679,99 @@ sandip_regiment_expl = {
     "Tar_science": "NA - not named.",
 }
 
+undp_unep_ecologist_expl = {
+    "Actortype": "Former UNDP/UNEP member with ecology background — coded as science.",
+    "Problem_awareness_pop": "Family/friends \"are aware, but they do not have options\" and "
+                             "\"no choice.\"",
+    "Problem_concerndness": "Very concerned; worries about health of family and children.",
+    "Problem_consumption": "Cheap and easy to use; shopping convenience; \"as long as it's "
+                           "cheap people will continue to use it.\"",
+    "Problem_recycling": "No segregation; problem transferred from household to landfill.",
+    "Problem_waste_mgmt": "Municipal bodies only collect to landfill without environmental "
+                          "consciousness.",
+    "Problem_production": "Single-use plastic bans without alternatives.",
+    "Problem_alternatives": "No good alternative to fully replace plastic; cloth bags costly "
+                            "(~40 NPR).",
+    "Problem_waste_segregation": "Kathmandu: \"no segregation at all\"; all waste in one bag.",
+    "Impacts": "Aquatic/terrestrial, soil, agriculture, marine food web, micro/nano-plastics, "
+               "health — see Coded_Data.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+                     "Coded_Data. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+                    "Coded_Data. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+               "Coded_Data. No FLAG needed.",
+    "Coordination_sectoral": "Government, municipalities, wards and private sector must work "
+                             "hand-in-hand.",
+    "Coordination_levels": "Federal strategic role vs municipal pragmatic day-to-day "
+                           "implementation.",
+    "Res_nat_government": "Strategic policy-making and enabling environment.",
+    "Res_loc_government": "Municipalities/wards responsible for collection, enforcement, "
+                          "incentives.",
+    "Res_private_sector": "Segregation/recycling companies; waste-to-wealth enterprises.",
+    "Res_households": "Solution starts at household level.",
+    "Res_civil_society": "NGOs/organisations driving awareness (not government).",
+    "Res_private_companies": "Private companies need profit motive and regulation.",
+    "Res_edu_institutions": "School-level education for children.",
+    "Cul_nat_government": "Ban-only policies without alternatives; enforcement without "
+                          "enabling environment.",
+    "Cul_households": "Not segregating; transferring problem to landfill.",
+    "Tar_nat_government": "Strategic guidance and private-sector incentives.",
+    "Tar_loc_government": "Municipal pragmatic approaches, investment, enforcement.",
+    "Tar_households": "Conscious minimalist behaviour; segregation.",
+    "Tar_private_sector": "Regulated waste-to-wealth with government incentives.",
+    "Tar_edu_institutions": "School-level education central.",
+    "Actor_role": "Former international development/conservation policy professional (role 1).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Financial_resources": "Municipal tax/tariff incentives; government incentives for private "
+                           "sector.",
+    "Infrastructure": "Segregation points, incinerators, diversified sorting plants.",
+    "Enforcement": "Municipal strict enforcement with incentive mechanisms.",
+    "Pol_ban": "1990s/2018 single-use plastic ban — in limbo.",
+    "Pol_awareness": "Private/NGO/young-generation campaigns; not government-led.",
+    "Pol_education": "Education important; school-level nurturing.",
+    "Pol_subsitutes": "Cloth bags as partial alternative.",
+    "Pol_recycling": "Private segregation/recycling companies.",
+    "Pol_waste_collection": "Municipal collection to landfill.",
+    "Pol_effectiveness": "Ban ineffective; no segregation; landfill-only municipal response.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted in Coded_Data cell.",
+    "Sol_lead_agency": "Federal strategic + municipal pragmatic + private sector.",
+    "Sol_responsibilities": "Household, ward, municipality, federal, private sector roles "
+                          "clarified.",
+    "Sol_awareness": "Awareness campaigns and education.",
+    "Sol_segregation": "Household and municipal segregation infrastructure.",
+    "Sol_recycling": "Four Rs; private recycling enterprises.",
+    "Sol_education": "School-level education for children.",
+    "Sol_finance": "Tax/tariff reductions as household incentives.",
+    "Sol_infrastructure": "Segregation points, incinerators, sorting plants.",
+    "Sol_subsitutes": "Affordable alternatives reducing (not replacing) plastic.",
+    "Sol_enforcement": "Municipal strict enforcement with incentives.",
+    "Traditions to build on (free-hand)": "NA - not discussed.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Unclear_responsibilities": "NA - roles clearly differentiated (federal strategic, local "
+                                "implementing).",
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - children as learners via schools, not formal responsible actors.",
+    "Res_science": "NA - respondent is science actor but not named as institutional responsible "
+                   "party.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - municipality criticised for landfill-only approach but "
+                          "portrayed as key solution actor.",
+    "Cul_private_sector": "NA - portrayed positively with regulation.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - portrayed as solution channel.",
+    "Cul_science": "NA - not blamed.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - children via schools, not named as policy target group.",
+    "Tar_private_companies": "NA - subsumed under private sector target.",
+    "Tar_civil_society": "NA - not named as target.",
+    "Tar_science": "NA - not named.",
+    "Capacity": "NA - Q6 not asked.",
+    "Monitoring": "NA - Q6 not asked.",
+    "Research": "NA - not discussed.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -7587,6 +7801,7 @@ EXPLANATIONS = {
     "NPL_26": cafe_workers_expl,
     "NPL_27": school_teacher_expl,
     "NPL_28": sandip_regiment_expl,
+    "NPL_29": undp_unep_ecologist_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -7622,14 +7837,15 @@ CODED_ROWS = {
     "NPL_26": cafe_workers,
     "NPL_27": school_teacher,
     "NPL_28": sandip_regiment,
+    "NPL_29": undp_unep_ecologist,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_28).
+# Master-list order for coded interviews only (NPL_1 through NPL_29).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
     "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25", "NPL_26", "NPL_27",
-    "NPL_28",
+    "NPL_28", "NPL_29",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -7667,6 +7883,8 @@ CODED_META = {
     "NPL_26": ("26. Cafe workers (unnamed)", "Cafe workers"),
     "NPL_27": ("27. School teacher (unnamed)", "Teacher at school"),
     "NPL_28": ("28. Sandip Regiment", "Chitwan/Sauraha — two respondents (R1 & R2)"),
+    "NPL_29": ("29. Former UNDP/UNEP ecologist (Kathmandu household #1)",
+               "Former UNDP and UNEP member / ecologist"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -7736,6 +7954,9 @@ NAMES["NPL_27"] = ("School teacher (unnamed), Nepal (17 February 2026; interview
 NAMES["NPL_28"] = ("Sandip Regiment — two respondents (R1 & R2), Chitwan/Sauraha tourism area "
                     "near Chitwan National Park (verbatim transcript; AI translation from "
                     "Nepali; affiliation/date not stated)")
+NAMES["NPL_29"] = ("Former UNDP/UNEP ecologist (unnamed), Kathmandu household #1 (18 February "
+                    "2026; interviewers: Deep, Marlene Kammerer, Anastasiia; recording; NTNC/"
+                    "UNDP/UNEP career)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -7877,7 +8098,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_28, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_29, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -7991,11 +8212,15 @@ readme_lines = [
      "Chitwan National Park. Full verbatim transcript (AI translation). Safa Urja PPP "
      "(Kalika/Ratnanagar/Khaireni), Creasion, tourism/hotel sector, household sticker scheme. "
      "Overlap with NPL_11, NPL_13, NPL_14, NPL_20. Q4a not known; Q9 not answered.", False),
+    ("  29. NPL_29 - Former UNDP/UNEP ecologist (unnamed), Kathmandu household #1 (18 February "
+     "2026). Ecologist; NTNC, UNDP, UNEP career. Ban without alternatives, no segregation, "
+     "private recycling enterprises, waste-to-wealth, municipal tax incentives. Q6 and Q9 not "
+     "asked.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_28, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_29, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -8009,7 +8234,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_28) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_29) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
