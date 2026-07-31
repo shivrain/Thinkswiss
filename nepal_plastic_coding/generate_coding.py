@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_27). Unfilled placeholder rows are not included. Interviews
+through NPL_28). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -24,14 +24,14 @@ Chitwan area), NPL_21 (ordinary person / citizen, unnamed), NPL_22 (ordinary per
 citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed), NPL_24
 (graduated young man, mechanical engineering, unnamed), NPL_25 (ordinary person /
 citizen, unnamed — 3rd respondent, same date), NPL_26 (cafe workers, unnamed), NPL_27
-(school teacher, unnamed).
+(school teacher, unnamed), NPL_28 (Sandip Regiment / two Chitwan-Sauraha respondents).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_27, in order), one column per COLUMNS
+                           (NPL_1 through NPL_28, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3334,6 +3334,145 @@ school_teacher.update({
              "volunteers may be needed to share information. Q3 integrated (no collection); "
              "Q4/Q4 follow-up and Q6/Q6 follow-up not asked. Q8 traditions, Q9 and Q10 not "
              "asked. Same interview date as NPL_21–NPL_26. NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_28: Sandip Regiment — two Chitwan/Sauraha respondents -----------------
+sandip_regiment = blank_row()
+sandip_regiment.update({
+    "Country": "Nepal",
+    "ID": "NPL_28",
+    "Actortype": "loc_government",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "agriculture (plastic accumulates in farmland; monsoon carries waste onto "
+               "agricultural land reducing productivity; ploughed soil reveals buried "
+               "plastic; soil fertility and biodiversity reduced), wildlife and aquatic life "
+               "(crocodiles, fish, wild animals ingest plastic; domestic dogs consume waste), "
+               "rivers/streams/forests (wind-blown litter into natural habitats), environment/"
+               "ecosystems (long-term non-decomposition; \"severe environmental problem\"), "
+               "and health (ultimately threatens human health through air, water, agriculture)",
+    NPF_VICTIMS_COL: "agricultural land and farmers (reduced productivity and soil quality); "
+                     "wildlife, aquatic animals and domestic animals (ingestion/blockage); "
+                     "rivers, forests and ecosystems; and human health and future generations "
+                     "affected by environmental degradation",
+    "NPF_villains": "households/public (haphazard use; single-use and throw-away behaviour; "
+                    "no segregation; choose plastic bags for convenience despite awareness; "
+                    "careless dumping; winter household burning); weak enforcement of existing "
+                    "laws (\"rarely enforced effectively\"; regulations not communicated to "
+                    "communities); federal/provincial governments assigning responsibilities "
+                    "without resources; lack of financial/technical resources and modern "
+                    "recycling infrastructure; inadequate landfill sites (waste dumped in "
+                    "forests); retailers/hotels not mandatorily reducing plastic; and "
+                    "over-reliance on private sector making people careless",
+    "NPF_hero": "local governments/municipalities (segregation regulations, awareness "
+               "campaigns, Local Government Operation Act enforcement, household green/yellow/"
+               "red sticker scheme proposed, ward-level programmes); Safa Urja Utpadan and "
+               "integrated PPP across Kalika, Ratnanagar and Khaireni municipalities (21 "
+               "tractors/day from Ratnanagar); schools/colleges/NGOs (awareness classes, "
+               "reusable bag distribution); stricter enforcement with substantial fines "
+               "(Ratnanagar NPR 10,000 littering penalty); retailers using paper wrapping; "
+               "reusable/cloth bags and thicker reusable/recyclable plastics; Creasion and "
+               "expanding recycling sector; leaf plates, paper cups and traditional paper "
+               "bags; and behaviour change at individual level",
+
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+    "Unclear_responsibilities": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_prov_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_households": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+    "Res_students": "yes",
+
+    "Cul_nat_government": "yes",
+    "Cul_prov_government": "yes",
+    "Cul_households": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_prov_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+    "Tar_private_companies": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_students": "yes",
+    "Tar_private_sector": "yes",
+
+    "Actor_role": "2",
+    "Discretion": "Two Chitwan/Sauraha respondents (R1 with detailed municipal-policy "
+                 "knowledge; R2 with ward-level community proposal experience) discuss "
+                 "implementation, enforcement, PPP financing and household-rating schemes — "
+                 "but affiliation/role not stated in source materials; they describe municipal "
+                 "consultations and ward programmes without confirming formal elected or "
+                 "appointed office.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Research": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Awareness relatively high in tourism area but \"awareness "
+                                 "alone is not enough\" — behaviour change lags; <40-micron "
+                                 "ban \"not very successful\"; household segregation "
+                                 "\"encouraged but not in practice\"; positive results "
+                                 "visible (less mixed waste, more composting) but \"still "
+                                 "considerable room for improvement\"; Ratnanagar littering "
+                                 "fine and PPP with Safa Urja show partial progress (less "
+                                 "landfill accumulation, 21 tractors/day) but enforcement and "
+                                 "financing model remain weak.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_responsibilities": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_capacity": "yes",
+    "Sol_finance": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_monitoring": "yes",
+
+    "Traditions to build on (free-hand)": "Paper bags (shopkeepers historically packed goods "
+                                          "in paper); leaf plates and paper cups still used "
+                                          "in some places; reusable cloth shopping bags; "
+                                          "storing food in reusable containers at home.",
+    "Notes": "Master list label: \"28. Sandip Regiment\", interviewee name field: \"Sandip "
+             "regiments\" (spelling as in source). Two respondents (R1 and R2) from Chitwan "
+             "tourism area near Chitwan National Park (Sauraha region). Affiliation/role, "
+             "interview date and interviewer names not stated in source. Coded from integrated "
+             "structured guideline notes and full verbatim transcript (translated from Nepali "
+             "using AI tools). Overlap with NPL_11 (Safa Urja), NPL_13 (Creasion), NPL_14 "
+             "(Hotel Silent Park/Sauraha tourism) and NPL_20 (Chitwan municipal Environment "
+             "Officer/Kalika-Ratnanagar-Khaireni PPP). Q4a: not known. Q4b blank. Q9 not "
+             "answered — emergent targets (retailers, households, hotels, students) coded from "
+             "transcript. New Waste Management Bill: municipal-level consultation noted. NPF "
+             "fields implied, not explicit.",
 })
 
 
@@ -7321,6 +7460,104 @@ school_teacher_expl = {
     "Pol_effectiveness_example": "NA - Q4 not asked.",
 }
 
+sandip_regiment_expl = {
+    "Actortype": "Two Chitwan/Sauraha respondents with detailed local-governance knowledge — "
+                 "coded as loc_government (affiliation/role not stated in source).",
+    "Problem_awareness_pop": "Lack of awareness on environmental consequences; awareness high "
+                             "in tourism area but behaviour lags; legal awareness at community "
+                             "level weak.",
+    "Problem_awareness_pol": "Regulations exist but not communicated clearly; many officials "
+                            "unfamiliar with practical implementation of Local Government "
+                            "Operation Act (2017).",
+    "Problem_concerndness": "\"I am concerned about the pollution\"; \"real problem in Nepal.\"",
+    "Problem_littering": "Careless throwing; wind carries waste to farmland, rivers, forests.",
+    "Problem_consumption": "Haphazard use; maximum during monsoon; single-use throw-away.",
+    "Problem_recycling": "Insufficient funding, equipment, infrastructure; access limited "
+                         "despite Creasion and other facilities.",
+    "Problem_waste_mgmt": "Not proper management; system not properly established.",
+    "Problem_production": "Ban on plastic use and <40-micron bags discussed.",
+    "Problem_alternatives": "Reusable/recyclable thicker plastics; cloth and paper bags.",
+    "Problem_waste_segregation": "Encouraged but not in practice; people do not separate at "
+                                 "source.",
+    "Impacts": "Agriculture, wildlife, rivers, health, ecosystems — see Coded_Data cell.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+                     "Coded_Data. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+                    "Coded_Data. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED — see "
+               "Coded_Data. No FLAG needed.",
+    "Coordination_sectoral": "Sauraha cooperation solid waste programme; hotels, schools, NGOs, "
+                             "Safa Urja PPP across three municipalities.",
+    "Coordination_levels": "Challenges differ by municipality, ward and federal level since "
+                           "federalism.",
+    "Unclear_responsibilities": "Federal/provincial assign responsibilities without resources; "
+                                "communities unaware of legal provisions.",
+    "Res_nat_government": "Federal policies and planned Waste Management Bill.",
+    "Res_prov_government": "Provincial policies on paper.",
+    "Res_loc_government": "Municipality primary implementer; mayor and officials.",
+    "Res_private_sector": "Safa Urja contracted for collection/recycling.",
+    "Res_households": "Each household member responsible.",
+    "Res_edu_institutions": "Schools run awareness campaigns.",
+    "Res_private_companies": "Hotels, retailers, shopkeepers.",
+    "Res_students": "Younger generations targeted in awareness.",
+    "Cul_nat_government": "Policies on paper but rarely enforced; insufficient resources "
+                          "passed down.",
+    "Cul_prov_government": "Same implementation/resource gap as federal level.",
+    "Cul_households": "Convenience-driven behaviour; no segregation; careless dumping.",
+    "Cul_private_companies": "Retailers/hotels not mandatorily reducing plastic.",
+    "Tar_nat_government": "Central-level banning policy and alternatives needed.",
+    "Tar_prov_government": "Provincial-level policy cited in solutions.",
+    "Tar_loc_government": "Municipality must fulfill responsibilities; enforcement.",
+    "Tar_households": "Behaviour change priority; household rating scheme.",
+    "Tar_private_companies": "Retailers (paper wrapping); hotels/tourism businesses.",
+    "Tar_edu_institutions": "School-level awareness campaigns.",
+    "Tar_students": "Younger generations in awareness campaigns.",
+    "Tar_private_sector": "Safa Urja PPP model to be reviewed/strengthened.",
+    "Actor_role": "Local-governance/community informants discussing implementation (role 2).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "Government cannot monitor every aspect; depends on public attention.",
+    "Financial_resources": "Lack of funding for equipment, protective gear, transport; waste "
+                           "collection NPR 66 lakh increasing 10%/year; PPP financing contested.",
+    "Research": "Need modern recycling equipment and scientific infrastructure.",
+    "Infrastructure": "Improved landfill sites; designated municipal land; dumping in forests.",
+    "Capacity": "Local governments lack financial/technical resources.",
+    "Enforcement": "Laws rarely enforced; need stricter fines and consequences.",
+    "Pol_awareness": "Regular school campaigns; Sauraha cooperation programme; positive local "
+                     "attitude.",
+    "Pol_education": "Schools, colleges, organisations run awareness classes.",
+    "Pol_ban": "Ban on plastic use; <40-micron ban; littering fine NPR 10,000 Ratnanagar.",
+    "Pol_subsitutes": "Reusable bags distributed; paper bags encouraged.",
+    "Pol_recycling": "Safa Urja PPP; Creasion cited; segregation for recycling.",
+    "Pol_waste_collection": "21 tractors/day Ratnanagar; segregated waste collected.",
+    "Pol_effectiveness": "Partial progress but awareness-behaviour gap persists.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted in Coded_Data cell.",
+    "Sol_lead_agency": "Municipal/provincial/central coordinated banning and alternatives.",
+    "Sol_responsibilities": "Clarify household, school, shopkeeper responsibilities.",
+    "Sol_awareness": "Ward-level awareness; behaviour change priority.",
+    "Sol_segregation": "Household source separation; green/yellow/red sticker scheme.",
+    "Sol_recycling": "Modern equipment; Safa Urja expansion; thicker reusable plastics.",
+    "Sol_education": "School campaigns; younger generations.",
+    "Sol_capacity": "Technical infrastructure and equipment.",
+    "Sol_finance": "Dedicated municipal/ward budgets; PPP subsidies; NPR 66 lakh collection.",
+    "Sol_infrastructure": "Improved landfill sites; designated waste land.",
+    "Sol_subsitutes": "Cloth bags, paper bags, leaf plates, reusable containers.",
+    "Sol_enforcement": "Stricter fines; immediate legal consequences for dumping.",
+    "Sol_monitoring": "Household inspection and rating system.",
+    "Traditions to build on (free-hand)": "Paper bags, leaf plates, paper cups, cloth bags.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_students": "Schools/students active in awareness — coded yes above.",
+    "Res_civil_society": "NA - NGOs mentioned as partners but not formal responsible actors.",
+    "Res_science": "NA - not mentioned.",
+    "Cul_loc_government": "NA - municipality portrayed as willing but under-resourced.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - Safa Urja portrayed as partner; financing debated not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - schools portrayed positively.",
+    "Tar_civil_society": "NA - not named as target.",
+    "Tar_science": "NA - not named.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -7349,6 +7586,7 @@ EXPLANATIONS = {
     "NPL_25": ordinary_person_3_expl,
     "NPL_26": cafe_workers_expl,
     "NPL_27": school_teacher_expl,
+    "NPL_28": sandip_regiment_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -7383,13 +7621,15 @@ CODED_ROWS = {
     "NPL_25": ordinary_person_3,
     "NPL_26": cafe_workers,
     "NPL_27": school_teacher,
+    "NPL_28": sandip_regiment,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_27).
+# Master-list order for coded interviews only (NPL_1 through NPL_28).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
     "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25", "NPL_26", "NPL_27",
+    "NPL_28",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -7426,6 +7666,7 @@ CODED_META = {
     "NPL_25": ("25. Ordinary person (unnamed, 3rd respondent)", "Ordinary person / citizen"),
     "NPL_26": ("26. Cafe workers (unnamed)", "Cafe workers"),
     "NPL_27": ("27. School teacher (unnamed)", "Teacher at school"),
+    "NPL_28": ("28. Sandip Regiment", "Chitwan/Sauraha — two respondents (R1 & R2)"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -7492,6 +7733,9 @@ NAMES["NPL_26"] = ("Cafe workers (unnamed), Nepal (17 February 2026; interviewer
                     "Marlene Kammerer, Anastasiia; no recording)")
 NAMES["NPL_27"] = ("School teacher (unnamed), Nepal (17 February 2026; interviewers: Ram Devi, "
                     "Marlene Kammerer, Anastasiia; no recording)")
+NAMES["NPL_28"] = ("Sandip Regiment — two respondents (R1 & R2), Chitwan/Sauraha tourism area "
+                    "near Chitwan National Park (verbatim transcript; AI translation from "
+                    "Nepali; affiliation/date not stated)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -7633,7 +7877,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_27, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_28, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -7743,11 +7987,15 @@ readme_lines = [
     ("  27. NPL_27 - School teacher (unnamed), Nepal (17 February 2026). Interviewers: Ram "
      "Devi, Marlene Kammerer, Anastasiia. No waste collection; monthly plastic burning; "
      "school education for children. Q4, Q6, Q8 traditions, Q9 and Q10 not asked.", False),
+    ("  28. NPL_28 - Sandip Regiment, two respondents (R1 & R2), Chitwan/Sauraha near "
+     "Chitwan National Park. Full verbatim transcript (AI translation). Safa Urja PPP "
+     "(Kalika/Ratnanagar/Khaireni), Creasion, tourism/hotel sector, household sticker scheme. "
+     "Overlap with NPL_11, NPL_13, NPL_14, NPL_20. Q4a not known; Q9 not answered.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_27, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_28, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -7761,7 +8009,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_27) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_28) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
