@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_25). Unfilled placeholder rows are not included. Interviews
+through NPL_26). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -23,14 +23,14 @@ Trekking Agencies' Association of Nepal), NPL_20 (municipality Environment Offic
 Chitwan area), NPL_21 (ordinary person / citizen, unnamed), NPL_22 (ordinary person /
 citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed), NPL_24
 (graduated young man, mechanical engineering, unnamed), NPL_25 (ordinary person /
-citizen, unnamed — 3rd respondent, same date).
+citizen, unnamed — 3rd respondent, same date), NPL_26 (cafe workers, unnamed).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_25, in order), one column per COLUMNS
+                           (NPL_1 through NPL_26, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3198,6 +3198,74 @@ ordinary_person_3.update({
              "unique religious/cultural anti-littering mechanism (temples, god monuments). Q4 "
              "effectiveness follow-up, Q6 level follow-up, Q9 and Q10 not asked. NPF fields "
              "implied, not explicit.",
+})
+
+
+# --- NPL_26: Cafe workers (unnamed) --------------------------------------------
+cafe_workers = blank_row()
+cafe_workers.update({
+    "Country": "Nepal",
+    "ID": "NPL_26",
+    "Actortype": "private_companies",
+
+    "Problem_concerndness": "medium",
+    "Problem_littering": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+
+    "Impacts": "visual/aesthetic pollution (\"it doesn't look nice\"), air pollution (smog "
+               "after burning — \"that's the only effect they know\"), animals, water and "
+               "agriculture (\"plants cannot grow up\")",
+    NPF_VICTIMS_COL: "animals, water bodies and agriculture (plants cannot grow); residents "
+                     "affected by visual pollution and smog from burning plastics",
+    "NPF_villains": "government (\"does not enforce\" and \"there is no monitoring\"; national "
+                    "anti-plastic campaign \"did not work well\"); lack of plastics collection "
+                    "infrastructure; and continued plastic production/consumption",
+    "NPF_hero": "local government enforcing regulation; plastics collection centers; dustbins "
+               "everywhere; alternative plastic products; and stopping plastic production",
+
+    "Res_loc_government": "yes",
+
+    "Cul_nat_government": "yes",
+
+    "Tar_loc_government": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As cafe workers the interviewees are concerned about plastic pollution "
+                 "(mainly smog from burning and visual impacts) but have limited knowledge of "
+                 "broader effects; operate in the food-service sector with no authority over "
+                 "national campaigns, enforcement, collection-centre infrastructure or "
+                 "production bans — rely on local government action.",
+
+    "Monitoring": "yes",
+    "Infrastructure": "yes",
+    "Enforcement": "yes",
+
+    "Pol_awareness": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Campaign not to use plastics \"all over Nepal\" but \"it did "
+                                 "not work well\" — measures \"not very effective so far\"; "
+                                 "government \"does not enforce\" and \"there is no "
+                                 "monitoring.\"",
+
+    "Sol_lead_agency": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_infrastructure": "yes",
+    "Sol_recycling": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_ban": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"26. Cafe workers (unnamed)\", affiliation: cafe workers. "
+             "General information lists interviewee name as \"Cafe\" (likely cafe name or "
+             "placeholder; individual names not given). Interview date: 17 February 2026. "
+             "Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. Consent given; no "
+             "recording. Coded from structured interview guideline/field notes only (no "
+             "verbatim transcript). Q6 not asked (enforcement/monitoring gap noted in "
+             "passing). Q8 traditions follow-up, Q9 and Q10 not asked. Same interview date "
+             "as NPL_21–NPL_25. NPF fields implied, not explicit.",
 })
 
 
@@ -7050,6 +7118,76 @@ ordinary_person_3_expl = {
     "Pol_effectiveness_example": "NA - Q4 effectiveness follow-up not asked.",
 }
 
+cafe_workers_expl = {
+    "Actortype": "Cafe workers — coded as private_companies (food-service sector).",
+    "Problem_concerndness": "\"They are concerned\" but smog from burning is \"the only effect "
+                            "they know\" — moderate concern with limited knowledge.",
+    "Problem_littering": "\"It doesn't look nice\" — visual/aesthetic impact.",
+    "Problem_recycling": "Need to \"create plastics collection centers.\"",
+    "Problem_waste_mgmt": "Collection-centre infrastructure gap identified.",
+    "Problem_production": "\"Stop producing plastics\" suggested as solution.",
+    "Problem_alternatives": "\"Alternative plastic products\" suggested.",
+    "Impacts": "Visual pollution, smog from burning, animals, water, agriculture (plants "
+               "cannot grow).",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "animals; water; agriculture; residents (visual/smog). No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "government (weak enforcement/monitoring, ineffective campaign); lack of "
+                    "collection infrastructure; continued production. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: local "
+               "government; collection centers; dustbins; alternatives; production stop. No "
+               "FLAG needed.",
+    "Res_loc_government": "\"Local government\" responsible.",
+    "Cul_nat_government": "\"Govt. does not enforce, there is no monitoring\"; campaign "
+                          "ineffective.",
+    "Tar_loc_government": "\"Local government has to enforce the regulation\"; local "
+                          "government \"in charge.\"",
+    "Actor_role": "Cafe workers as target group / food-service sector (role 4).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "\"There is no monitoring.\"",
+    "Infrastructure": "Need plastics collection centers; dustbins everywhere.",
+    "Enforcement": "Government does not enforce.",
+    "Pol_awareness": "Campaign not to use plastics all over Nepal.",
+    "Pol_effectiveness": "Campaign \"did not work well\"; measures not very effective.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted directly in Coded_Data cell.",
+    "Sol_lead_agency": "Local government enforcement.",
+    "Sol_enforcement": "Local government must enforce regulation.",
+    "Sol_infrastructure": "Set up dustbins everywhere; plastics collection centers.",
+    "Sol_recycling": "Plastics collection centers.",
+    "Sol_subsitutes": "Alternative plastic products.",
+    "Sol_ban": "Stop producing plastics.",
+    "Traditions to build on (free-hand)": "NA - Q8 traditions follow-up not asked.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_nat_government": "NA - not named as formal responsible actor.",
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_private_sector": "NA - not mentioned separately.",
+    "Res_civil_society": "NA - not mentioned.",
+    "Res_science": "NA - not mentioned.",
+    "Res_households": "NA - not mentioned.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Res_private_companies": "NA - cafe workers are respondents, not named as responsible actors.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - local government portrayed as actor to strengthen.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_households": "NA - not blamed.",
+    "Cul_private_sector": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Tar_nat_government": "NA - not named.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_private_sector": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Tar_households": "NA - Q9 not asked.",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_private_companies": "NA - not named.",
+    "Capacity": "NA - Q6 not asked.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -7076,6 +7214,7 @@ EXPLANATIONS = {
     "NPL_23": shop_owner_expl,
     "NPL_24": young_graduate_expl,
     "NPL_25": ordinary_person_3_expl,
+    "NPL_26": cafe_workers_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -7108,13 +7247,14 @@ CODED_ROWS = {
     "NPL_23": shop_owner,
     "NPL_24": young_graduate,
     "NPL_25": ordinary_person_3,
+    "NPL_26": cafe_workers,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_25).
+# Master-list order for coded interviews only (NPL_1 through NPL_26).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
-    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25",
+    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25", "NPL_26",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -7149,6 +7289,7 @@ CODED_META = {
     "NPL_23": ("23. Shop owner (unnamed)", "Shop-owner / retailer"),
     "NPL_24": ("24. Graduated young man (unnamed)", "Graduated young man / mechanical engineering"),
     "NPL_25": ("25. Ordinary person (unnamed, 3rd respondent)", "Ordinary person / citizen"),
+    "NPL_26": ("26. Cafe workers (unnamed)", "Cafe workers"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -7211,6 +7352,8 @@ NAMES["NPL_24"] = ("Graduated young man (unnamed), mechanical engineering sphere
 NAMES["NPL_25"] = ("Ordinary person / citizen (unnamed, 3rd respondent), Nepal (17 February "
                     "2026; interviewers: Ram Devi, Marlene Kammerer, Anastasiia; no recording; "
                     "distinct from NPL_21/NPL_22)")
+NAMES["NPL_26"] = ("Cafe workers (unnamed), Nepal (17 February 2026; interviewers: Ram Devi, "
+                    "Marlene Kammerer, Anastasiia; no recording)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -7352,7 +7495,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_25, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_26, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -7455,11 +7598,15 @@ readme_lines = [
      "2026). Same interview team/date as NPL_21/NPL_22 but distinct (high concern, health/"
      "diseases, diapers/packaging, religious taboo at temples, god monuments). Q4 "
      "effectiveness, Q6 level follow-up, Q9 and Q10 not asked.", False),
+    ("  26. NPL_26 - Cafe workers (unnamed), Nepal (17 February 2026). Interviewers: Ram "
+     "Devi, Marlene Kammerer, Anastasiia. Consent given; no recording. Coded from "
+     "guideline/field notes only. Collection centres, anti-plastic campaign, dustbins, "
+     "alternatives. Q6, Q8 traditions, Q9 and Q10 not asked.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_25, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_26, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -7473,7 +7620,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_25) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_26) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
