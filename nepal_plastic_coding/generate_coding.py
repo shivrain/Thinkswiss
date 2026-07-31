@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_30). Unfilled placeholder rows are not included. Interviews
+through NPL_31). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -26,14 +26,14 @@ citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed)
 citizen, unnamed — 3rd respondent, same date), NPL_26 (cafe workers, unnamed), NPL_27
 (school teacher, unnamed), NPL_28 (Sandip Regiment / two Chitwan-Sauraha respondents), NPL_29 (former UNDP/UNEP
 ecologist, Kathmandu household #1, unnamed), NPL_30 (household woman, Ward 23
-Basantpur/Kathmandu, unnamed).
+Basantpur/Kathmandu, unnamed), NPL_31 (shop owner Babinasa, Kathmandu).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_30, in order), one column per COLUMNS
+                           (NPL_1 through NPL_31, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3681,6 +3681,81 @@ basantpur_household.update({
              "from Deep on ward-level awareness and Kathmandu water quality included. Main "
              "insight: daily municipal collection in Kathmandu reduces household concern vs "
              "areas without collection. NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_31: Shop owner Babinasa (Kathmandu) -----------------------------------
+babinasa_shop = blank_row()
+babinasa_shop.update({
+    "Country": "Nepal",
+    "ID": "NPL_31",
+    "Actortype": "private_companies",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_concerndness": "medium",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "health and air pollution (open burning of plastics is \"the worst\"; concern "
+               "about health effects and lack of awareness despite being a \"well-known "
+               "problem\")",
+    NPF_VICTIMS_COL: "public health (health effects and air pollution from open burning of "
+                     "plastics); residents affected when uncollected plastic remains on "
+                     "streets",
+    "NPF_villains": "the public (\"no one cares about plastics\"; lack of awareness); absence "
+                    "of a management system (\"well-known problem, but no management system\"); "
+                    "weak/non-existent government restrictions and laws; and households/shops "
+                    "throwing mixed waste on the street with no segregation",
+    "NPF_hero": "strict government laws and restrictions (\"only way to control it\"); public "
+               "awareness; municipalities; people taking responsibility; cloth and paper bag "
+               "alternatives; shop owners in the area collecting plastics for pickup; and "
+               "minimising risk through better management (cannot fully avoid plastics)",
+
+    "Res_loc_government": "yes",
+    "Res_nat_government": "yes",
+    "Res_households": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_households": "yes",
+    "Cul_nat_government": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+
+    "Actor_role": "4",
+    "Discretion": "As shop owner Babinasa in Kathmandu the interviewee is concerned about "
+                 "plastic pollution (health, air pollution from burning) but does not know "
+                 "other options; throws mixed waste on the street for daily municipal "
+                 "collection with no segregation; local shop owners collect plastics for "
+                 "someone to pick up — but has no authority to impose strict laws or change "
+                 "broader public behaviour.",
+
+    "Enforcement": "yes",
+
+    "Pol_awareness": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Respondent has \"no idea\" about current policies; has seen "
+                                 "campaigns/posters \"time to time\" but describes no "
+                                 "effective management system — \"well-known problem, but no "
+                                 "management system\"; would impose very strict government "
+                                 "laws if in power.",
+
+    "Sol_awareness": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_subsitutes": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"31. Shop owner Babinasa (Kathmandu)\", affiliation: shop "
+             "owner, Babinasa area, Kathmandu. Interviewee name: Babinasa (spelling as in "
+             "source). Interview date: 18 February 2026. Interviewers: Deep, Marlene "
+             "Kammerer, Anastasiia. Consent given; no recording. Coded from structured "
+             "interview guideline/field notes only (no verbatim transcript). Q3, Q6 and Q8 "
+             "not asked. Q5 phrased as \"If you were in power, what would you do?\" Distinct "
+             "from NPL_23 (Feb 17 shop owner). NPF fields implied, not explicit.",
 })
 
 
@@ -7932,6 +8007,73 @@ basantpur_household_expl = {
     "Research": "NA - water-quality professional background noted but not as research actor.",
 }
 
+babinasa_shop_expl = {
+    "Actortype": "Shop owner Babinasa, Kathmandu — coded as private_companies.",
+    "Problem_awareness_pop": "\"No one cares about plastics\"; lack of awareness; \"well-known "
+                             "problem, but no management system.\"",
+    "Problem_concerndness": "Respondent concerned (health, air pollution) but notes public "
+                            "apathy — medium.",
+    "Problem_littering": "If not collected, plastic on streets; throws waste on street.",
+    "Problem_consumption": "Cannot avoid plastics; need to minimise risk.",
+    "Problem_waste_mgmt": "No management system despite well-known problem.",
+    "Problem_alternatives": "Doesn't know any other options.",
+    "Problem_waste_segregation": "\"No segregation, just one waste together.\"",
+    "Impacts": "Health and air pollution; open burning worst.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: health/"
+                     "air-quality sufferers. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: public "
+                    "apathy; no management system; weak laws. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: strict "
+               "government laws; awareness; municipalities; cloth/paper bags. No FLAG needed.",
+    "Res_loc_government": "Municipalities named as responsible.",
+    "Res_nat_government": "Government should make strict rules.",
+    "Res_households": "People named as responsible.",
+    "Res_private_companies": "Shop owners collect plastics in the area.",
+    "Cul_households": "No one cares; throws mixed waste on street.",
+    "Cul_nat_government": "Laws not strict enough; no effective management.",
+    "Tar_nat_government": "Strict government rules needed.",
+    "Tar_loc_government": "Municipalities responsible.",
+    "Tar_households": "Public awareness; people responsible.",
+    "Actor_role": "Shop owner as target group / retail actor (role 4).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Enforcement": "Strict laws seen as only way to control plastic.",
+    "Pol_awareness": "Campaigns/posters seen from time to time.",
+    "Pol_effectiveness": "No idea about policies; no management system.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted in Coded_Data cell.",
+    "Sol_awareness": "Public awareness.",
+    "Sol_enforcement": "Very strict government restrictions/laws.",
+    "Sol_subsitutes": "Cloth and paper bags.",
+    "Traditions to build on (free-hand)": "NA - not discussed.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Unclear_responsibilities": "NA - government, municipalities and people named.",
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - not mentioned.",
+    "Res_private_sector": "NA - subsumed under shop owners/private_companies.",
+    "Res_civil_society": "NA - not mentioned.",
+    "Res_science": "NA - not mentioned.",
+    "Res_edu_institutions": "NA - not mentioned.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - municipality portrayed as responsible actor.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - shop owners portrayed as partial collectors.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - not blamed.",
+    "Cul_private_companies": "NA - respondent is shop owner; portrayed as concerned actor.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - not named.",
+    "Tar_private_sector": "NA - not named.",
+    "Tar_edu_institutions": "NA - not named.",
+    "Tar_private_companies": "NA - not named as policy target.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Capacity": "NA - Q6 not asked.",
+    "Monitoring": "NA - Q6 not asked.",
+    "Financial_resources": "NA - not discussed.",
+    "Research": "NA - not discussed.",
+    "Infrastructure": "NA - not discussed.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -7963,6 +8105,7 @@ EXPLANATIONS = {
     "NPL_28": sandip_regiment_expl,
     "NPL_29": undp_unep_ecologist_expl,
     "NPL_30": basantpur_household_expl,
+    "NPL_31": babinasa_shop_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -8000,14 +8143,15 @@ CODED_ROWS = {
     "NPL_28": sandip_regiment,
     "NPL_29": undp_unep_ecologist,
     "NPL_30": basantpur_household,
+    "NPL_31": babinasa_shop,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_30).
+# Master-list order for coded interviews only (NPL_1 through NPL_31).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
     "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25", "NPL_26", "NPL_27",
-    "NPL_28", "NPL_29", "NPL_30",
+    "NPL_28", "NPL_29", "NPL_30", "NPL_31",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -8049,6 +8193,7 @@ CODED_META = {
                "Former UNDP and UNEP member / ecologist"),
     "NPL_30": ("30. Household woman, Ward 23 Basantpur (unnamed)",
                "Household woman, Ward 23 Basantpur / chemist (water-quality lab)"),
+    "NPL_31": ("31. Shop owner Babinasa (Kathmandu)", "Shop owner, Babinasa area, Kathmandu"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -8124,6 +8269,8 @@ NAMES["NPL_29"] = ("Former UNDP/UNEP ecologist (unnamed), Kathmandu household #1
 NAMES["NPL_30"] = ("Household woman (unnamed), Ward 23 Basantpur, Kathmandu (18 February 2026; "
                     "chemist, private water-quality lab; interviewers: Deep, Marlene Kammerer, "
                     "Anastasiia; recording)")
+NAMES["NPL_31"] = ("Shop owner Babinasa, Kathmandu (18 February 2026; interviewers: Deep, "
+                    "Marlene Kammerer, Anastasiia; no recording)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -8265,7 +8412,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_30, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_31, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -8386,11 +8533,14 @@ readme_lines = [
     ("  30. NPL_30 - Household woman (unnamed), Ward 23 Basantpur, Kathmandu (18 February 2026). "
      "Chemist/water-quality lab. Visual pollution, burning, failed dry/wet segregation, daily "
      "collection complacency. Q5, Q6 and Q8 traditions not asked.", False),
+    ("  31. NPL_31 - Shop owner Babinasa, Kathmandu (18 February 2026). Open burning, no "
+     "segregation, strict laws needed, cloth/paper bags. Q3, Q6 and Q8 not asked. Distinct from "
+     "NPL_23.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_30, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_31, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -8404,7 +8554,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_30) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_31) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
