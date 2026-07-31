@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_26). Unfilled placeholder rows are not included. Interviews
+through NPL_27). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -23,14 +23,15 @@ Trekking Agencies' Association of Nepal), NPL_20 (municipality Environment Offic
 Chitwan area), NPL_21 (ordinary person / citizen, unnamed), NPL_22 (ordinary person /
 citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed), NPL_24
 (graduated young man, mechanical engineering, unnamed), NPL_25 (ordinary person /
-citizen, unnamed — 3rd respondent, same date), NPL_26 (cafe workers, unnamed).
+citizen, unnamed — 3rd respondent, same date), NPL_26 (cafe workers, unnamed), NPL_27
+(school teacher, unnamed).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_26, in order), one column per COLUMNS
+                           (NPL_1 through NPL_27, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3266,6 +3267,73 @@ cafe_workers.update({
              "verbatim transcript). Q6 not asked (enforcement/monitoring gap noted in "
              "passing). Q8 traditions follow-up, Q9 and Q10 not asked. Same interview date "
              "as NPL_21–NPL_25. NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_27: School teacher (unnamed) ------------------------------------------
+school_teacher = blank_row()
+school_teacher.update({
+    "Country": "Nepal",
+    "ID": "NPL_27",
+    "Actortype": "edu_institutions",
+
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+
+    "Impacts": "health (\"burning has much impact on human health\" — monthly plastic burning "
+               "because no collection and plastics are not compostable), and livestock "
+               "(\"life stock eats plastics\")",
+    NPF_VICTIMS_COL: "human health (from monthly plastic burning); livestock that ingest "
+                     "plastic waste; and the teacher's household/community lacking waste "
+                     "collection",
+    "NPF_villains": "absence of waste collection (\"no waste collection at all\"; \"they do not "
+                    "have pick-up\" forcing monthly burning of non-compostable plastics with "
+                    "large volume); continued plastic production (shutting down production "
+                    "seen as desirable but \"impossible\"); and insufficient education "
+                    "(\"children need to be taught about it\")",
+    "NPF_hero": "community members; local government enforcing regulation; higher authorities; "
+               "cloth bags (\"carry around cloth bags\"); school-based education for children; "
+               "volunteers sharing information; and plastic-free areas (seen as desirable "
+               "but \"impossible\")",
+
+    "Res_loc_government": "yes",
+    "Res_nat_government": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_households": "yes",
+
+    "Tar_loc_government": "yes",
+    "Tar_edu_institutions": "yes",
+    "Tar_households": "yes",
+
+    "Actor_role": "3",
+    "Discretion": "As a school teacher the interviewee is very concerned about plastic pollution "
+                 "and can teach children and mobilise community awareness, but personally must "
+                 "burn plastics monthly because there is no municipal pick-up and plastics "
+                 "cannot be composted (organic waste is composted for an agricultural plot) — "
+                 "cannot enforce regulation, shut production or establish plastic-free zones.",
+
+    "Infrastructure": "yes",
+
+    "Sol_awareness": "yes",
+    "Sol_education": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_ban": "yes",
+
+    "Traditions to build on (free-hand)": "NA",
+    "Notes": "Master list label: \"27. School teacher (unnamed)\", affiliation: teacher at "
+             "school. Interviewee name not given. Interview date: 17 February 2026. "
+             "Interviewers: Ram Devi, Marlene Kammerer, Anastasiia. Consent given; no "
+             "recording. Coded from structured interview guideline/field notes only (no "
+             "verbatim transcript). Informal discussion noted: children need to be taught; "
+             "volunteers may be needed to share information. Q3 integrated (no collection); "
+             "Q4/Q4 follow-up and Q6/Q6 follow-up not asked. Q8 traditions, Q9 and Q10 not "
+             "asked. Same interview date as NPL_21–NPL_26. NPF fields implied, not explicit.",
 })
 
 
@@ -7188,6 +7256,71 @@ cafe_workers_expl = {
     "Capacity": "NA - Q6 not asked.",
 }
 
+school_teacher_expl = {
+    "Actortype": "Teacher at school — coded as edu_institutions.",
+    "Problem_concerndness": "\"Very much concerned.\"",
+    "Problem_littering": "Livestock eat plastics.",
+    "Problem_recycling": "Plastics not compostable; must be burned monthly (large volume).",
+    "Problem_waste_mgmt": "\"No waste collection at all\"; no pick-up service.",
+    "Problem_production": "Shutting down production suggested but seen as \"impossible.\"",
+    "Problem_alternatives": "Cloth bags suggested; plastic-free area desired but \"impossible.\"",
+    "Problem_waste_segregation": "Organic waste composted for agricultural plot; plastics "
+                                 "separated and burned.",
+    "Impacts": "Health from burning; livestock ingesting plastics.",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "human health; livestock; community without collection. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "absence of collection infrastructure; continued production; inadequate "
+                    "school education. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: community "
+               "members; local government; higher authorities; cloth bags; school education; "
+               "volunteers. No FLAG needed.",
+    "Res_loc_government": "\"Local government\" responsible.",
+    "Res_nat_government": "\"Higher authorities\" responsible.",
+    "Res_edu_institutions": "Teacher role; informal note that children need to be taught.",
+    "Res_households": "\"Community members\" cited in solutions.",
+    "Tar_loc_government": "\"Local government has to enforce the regulation\"; local government "
+                          "\"in charge.\"",
+    "Tar_edu_institutions": "Children need to be taught; volunteers to share information.",
+    "Tar_households": "Community members as solution actors.",
+    "Actor_role": "School teacher as street-level educator/awareness actor (role 3).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Infrastructure": "No waste collection/pick-up forces monthly burning.",
+    "Sol_awareness": "Community members; volunteers sharing information.",
+    "Sol_education": "Children need to be taught about plastic pollution.",
+    "Sol_enforcement": "Local government must enforce regulation.",
+    "Sol_subsitutes": "Carry around cloth bags.",
+    "Sol_ban": "Plastic-free area and shutting down production (seen as impossible).",
+    "Traditions to build on (free-hand)": "NA - Q8 traditions follow-up not asked.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Res_prov_government": "NA - not mentioned.",
+    "Res_students": "NA - children mentioned as learners, not formal responsible actors.",
+    "Res_private_sector": "NA - not mentioned.",
+    "Res_civil_society": "NA - volunteers mentioned informally but not as formal actors.",
+    "Res_science": "NA - not mentioned.",
+    "Res_private_companies": "NA - not mentioned.",
+    "Cul_nat_government": "NA - higher authorities named as responsible, not blamed.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - local government portrayed as actor to strengthen.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_households": "NA - community portrayed as solution partner.",
+    "Cul_private_sector": "NA - not blamed.",
+    "Cul_civil_society": "NA - not blamed.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - schools portrayed as needing to teach, not blamed.",
+    "Cul_private_companies": "NA - not blamed.",
+    "Tar_nat_government": "NA - not named as specific target.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - children as learners, not named as policy target group.",
+    "Tar_private_sector": "NA - not named.",
+    "Tar_civil_society": "NA - not named.",
+    "Tar_science": "NA - not named.",
+    "Tar_private_companies": "NA - not named.",
+    "Capacity": "NA - Q6 not asked.",
+    "Pol_effectiveness": "NA - Q4 not asked.",
+    "Pol_effectiveness_example": "NA - Q4 not asked.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -7215,6 +7348,7 @@ EXPLANATIONS = {
     "NPL_24": young_graduate_expl,
     "NPL_25": ordinary_person_3_expl,
     "NPL_26": cafe_workers_expl,
+    "NPL_27": school_teacher_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -7248,13 +7382,14 @@ CODED_ROWS = {
     "NPL_24": young_graduate,
     "NPL_25": ordinary_person_3,
     "NPL_26": cafe_workers,
+    "NPL_27": school_teacher,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_26).
+# Master-list order for coded interviews only (NPL_1 through NPL_27).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
-    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25", "NPL_26",
+    "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25", "NPL_26", "NPL_27",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -7290,6 +7425,7 @@ CODED_META = {
     "NPL_24": ("24. Graduated young man (unnamed)", "Graduated young man / mechanical engineering"),
     "NPL_25": ("25. Ordinary person (unnamed, 3rd respondent)", "Ordinary person / citizen"),
     "NPL_26": ("26. Cafe workers (unnamed)", "Cafe workers"),
+    "NPL_27": ("27. School teacher (unnamed)", "Teacher at school"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -7353,6 +7489,8 @@ NAMES["NPL_25"] = ("Ordinary person / citizen (unnamed, 3rd respondent), Nepal (
                     "2026; interviewers: Ram Devi, Marlene Kammerer, Anastasiia; no recording; "
                     "distinct from NPL_21/NPL_22)")
 NAMES["NPL_26"] = ("Cafe workers (unnamed), Nepal (17 February 2026; interviewers: Ram Devi, "
+                    "Marlene Kammerer, Anastasiia; no recording)")
+NAMES["NPL_27"] = ("School teacher (unnamed), Nepal (17 February 2026; interviewers: Ram Devi, "
                     "Marlene Kammerer, Anastasiia; no recording)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
@@ -7495,7 +7633,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_26, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_27, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -7602,11 +7740,14 @@ readme_lines = [
      "Devi, Marlene Kammerer, Anastasiia. Consent given; no recording. Coded from "
      "guideline/field notes only. Collection centres, anti-plastic campaign, dustbins, "
      "alternatives. Q6, Q8 traditions, Q9 and Q10 not asked.", False),
+    ("  27. NPL_27 - School teacher (unnamed), Nepal (17 February 2026). Interviewers: Ram "
+     "Devi, Marlene Kammerer, Anastasiia. No waste collection; monthly plastic burning; "
+     "school education for children. Q4, Q6, Q8 traditions, Q9 and Q10 not asked.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_26, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_27, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -7620,7 +7761,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_26) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_27) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
