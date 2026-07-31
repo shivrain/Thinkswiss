@@ -8,7 +8,7 @@ implementation-issue variables, Pol_* / Sol_* variables, Traditions to build
 on, and Notes).
 
 The workbook contains one row per fully coded interview (currently NPL_1
-through NPL_31). Unfilled placeholder rows are not included. Interviews
+through NPL_32). Unfilled placeholder rows are not included. Interviews
 coded: NPL_1 (Department of Environment), NPL_2 (Former Minister Ganesh
 Shah), NPL_3 (KTM Municipal Office), NPL_4 (Mayor of Dhulikhel
 Municipality), NPL_5 (Doco Recyclers), NPL_6 (Dhulikhel Hotel/Restaurant
@@ -26,14 +26,15 @@ citizen, unnamed — second respondent, same date), NPL_23 (shop owner, unnamed)
 citizen, unnamed — 3rd respondent, same date), NPL_26 (cafe workers, unnamed), NPL_27
 (school teacher, unnamed), NPL_28 (Sandip Regiment / two Chitwan-Sauraha respondents), NPL_29 (former UNDP/UNEP
 ecologist, Kathmandu household #1, unnamed), NPL_30 (household woman, Ward 23
-Basantpur/Kathmandu, unnamed), NPL_31 (shop owner Babinasa, Kathmandu).
+Basantpur/Kathmandu, unnamed), NPL_31 (shop owner Babinasa, Kathmandu), NPL_32
+(Furinji Sherpa, trekking guide, Khumbu Pasang Lhamu).
 
 Sheets produced:
   1. Read_Me            - scope, sources, coding conventions, full master
                            numbering list, colour key
   2. Codebook            - variable dictionary matching the Coded_Data columns
   3. Coded_Data          - wide-format matrix: one row per coded interview
-                           (NPL_1 through NPL_31, in order), one column per COLUMNS
+                           (NPL_1 through NPL_32, in order), one column per COLUMNS
                            entry (exact order/spelling as supplied). Each
                            interview's row is filled with its own colour.
   4. Coding_Explanations - long-format table (ID | Variable | Value |
@@ -3756,6 +3757,131 @@ babinasa_shop.update({
              "interview guideline/field notes only (no verbatim transcript). Q3, Q6 and Q8 "
              "not asked. Q5 phrased as \"If you were in power, what would you do?\" Distinct "
              "from NPL_23 (Feb 17 shop owner). NPF fields implied, not explicit.",
+})
+
+
+# --- NPL_32: Furinji Sherpa — trekking guide (Khumbu Pasang Lhamu) ------------
+furinji_sherpa = blank_row()
+furinji_sherpa.update({
+    "Country": "Nepal",
+    "ID": "NPL_32",
+    "Actortype": "private_companies",
+
+    "Problem_awareness_pop": "yes",
+    "Problem_awareness_pol": "yes",
+    "Problem_concerndness": "high",
+    "Problem_littering": "yes",
+    "Problem_consumption": "yes",
+    "Problem_recycling": "yes",
+    "Problem_waste_mgmt": "yes",
+    "Problem_production": "yes",
+    "Problem_alternatives": "yes",
+    "Problem_waste_segregation": "yes",
+    "Problem_import": "yes",
+
+    "Impacts": "mountains/high Himalaya (snow-covered peaks becoming \"plastic hubs\" with "
+               "tents and plastic above ~8,400 m; very difficult to bring waste back down), "
+               "environment and nature (\"very harmful\"), animals, and human health (diseases "
+               "linked to plastic — compared to cancer; symptoms already visible in Kathmandu)",
+    NPF_VICTIMS_COL: "the mountains and high-altitude natural environment (including "
+                     "Sagarmatha/Everest region); wildlife/animals; human health (respondent, "
+                     "family, offspring and Kathmandu residents facing plastic-linked "
+                     "diseases); and local mountain communities whose livelihoods depend on "
+                     "clean peaks",
+    "NPF_villains": "international climbers and tourists (carry tents, cooking equipment "
+                    "and large amounts of plastic; leave/throw waste on mountains); lack of "
+                    "public education (locals throw plastic anywhere); limited government "
+                    "resources for high-altitude cleanup; single-use plastic economy (difficult "
+                    "to reuse after first use); and burning as default disposal in most "
+                    "places",
+    "NPF_hero": "SPCC/Sagarmatha Pollution Control Committee (garbage deposit system, "
+               "sustainable waste-management policy, school/community collection); Khumbu "
+               "Pasang Lhamu Rural Municipality (weekly collection, segregation, plane "
+               "transport Lukla–Kathmandu, cloth-bag distribution, non-plastic packaging "
+               "policy pending); local community club (weekly clean-ups, reuse of junk-food "
+               "plastic into baskets/mats); reuse/recycle centre (decorative shapes, "
+               "jewellery); trekking-agency garbage deposit (~US$500 refunded with National "
+               "Park/SPCC garbage paper); foreign tourists contributing to recycle centre; "
+               "and clothing bags as traditional/modern alternative",
+
+    "Relevance_international_pol": "yes",
+    "Coordination_sectoral": "yes",
+    "Coordination_levels": "yes",
+
+    "Res_nat_government": "yes",
+    "Res_loc_government": "yes",
+    "Res_private_sector": "yes",
+    "Res_civil_society": "yes",
+    "Res_households": "yes",
+    "Res_edu_institutions": "yes",
+    "Res_private_companies": "yes",
+
+    "Cul_households": "yes",
+    "Cul_private_companies": "yes",
+
+    "Tar_nat_government": "yes",
+    "Tar_loc_government": "yes",
+    "Tar_households": "yes",
+    "Tar_private_sector": "yes",
+    "Tar_private_companies": "yes",
+
+    "Actor_role": "3",
+    "Discretion": "As a trekking guide from Khumbu Pasang Lhamu Rural Municipality and "
+                 "member of a local community club, Furinji Sherpa organises weekly clean-ups, "
+                 "segregates household waste, contributes to SPCC-supported collection and "
+                 "reuse initiatives, and advocates for mountain protection — but cannot enforce "
+                 "national policies, control international climbers' waste, or fund high-"
+                 "altitude cleanup without government/National Park/SPCC systems.",
+
+    "Monitoring": "yes",
+    "Financial_resources": "yes",
+    "Infrastructure": "yes",
+    "Capacity": "yes",
+    "Enforcement": "yes",
+
+    "Pol_tax": "yes",
+    "Pol_awareness": "yes",
+    "Pol_education": "yes",
+    "Pol_ban": "yes",
+    "Pol_subsitutes": "yes",
+    "Pol_clean_up": "yes",
+    "Pol_recycling": "yes",
+    "Pol_waste_collection": "yes",
+    "Pol_effectiveness": "yes",
+    "Pol_effectiveness_example": "Khumbu system relatively advanced (household segregation, "
+                                 "village staff, weekly municipal collection, plane to "
+                                 "Kathmandu, reuse centre, SPCC school collection) but "
+                                 "high peaks still littered; non-plastic packaging policy "
+                                 "\"pending\" (maybe 3–4 years); national separation/export of "
+                                 "cans/glass to India but plastic reuse/recycling limited; "
+                                 "~60–70% of friends concerned but 30–40% not; burning still "
+                                 "common outside club initiatives.",
+
+    "Sol_lead_agency": "yes",
+    "Sol_awareness": "yes",
+    "Sol_segregation": "yes",
+    "Sol_recycling": "yes",
+    "Sol_education": "yes",
+    "Sol_enforcement": "yes",
+    "Sol_subsitutes": "yes",
+    "Sol_finance": "yes",
+    "Sol_clean_up": "yes",
+    "Sol_upcycling": "yes",
+
+    "Traditions to build on (free-hand)": "Clothing/cloth bags (municipality distributing "
+                                          "4–5 per household; ~50% reduction in plastic bags "
+                                          "in village); women making handy baskets and mats "
+                                          "from junk-food plastic (noodles, biscuits); reuse "
+                                          "centre turning waste into decorative mountain/"
+                                          "grassland shapes.",
+    "Notes": "Master list label: \"32. Furinji Sherpa, trekking guide\", affiliation: "
+             "trekking guide; home: Khumbu Pasang Lhamu Rural Municipality (Everest region). "
+             "Interview date: 19 February 2026. Interviewers: Marlene Kammerer, Anastasiia. "
+             "Consent given; recording. Coded from integrated structured guideline notes and "
+             "full verbatim transcript. SPCC (Sagarmatha Pollution Control Committee) Nepal "
+             "cited. Garbage deposit ~US$500 for trekking agencies. Overlap with NPL_19 "
+             "(TAAN/trekking sector). Q5, Q6 and Q9–Q10 not asked. NPF fields implied, not "
+             "explicit.",
 })
 
 
@@ -8074,6 +8200,146 @@ babinasa_shop_expl = {
     "Infrastructure": "NA - not discussed.",
 }
 
+furinji_sherpa_expl = {
+    "Actortype": "Furinji Sherpa is a trekking guide from Khumbu Pasang Lhamu Rural Municipality — "
+                 "coded as private_companies (tour guides per codebook).",
+    "Problem_awareness_pop": "\"Most important, our public, people are not educated\"; \"they can "
+                             "throw the plastic everywhere\"; lack of public education cited as "
+                             "main challenge.",
+    "Problem_awareness_pol": "\"In government, I have really no good idea about the plastic "
+                            "management\"; non-plastic packaging policy \"still not a success\" "
+                            "and \"decision is pending\" (maybe 3–4 years).",
+    "Problem_concerndness": "\"One of the massive problem in Nepal\"; \"we are a bit worried\"; "
+                            "personally from mountain regions and very concerned about reuse/"
+                            "recycling difficulty.",
+    "Problem_littering": "International climbers/tourists \"throw it everywhere, like mountains\"; "
+                         "locals throw plastic \"every place\"; trash above 8,400 m.",
+    "Problem_consumption": "Climbers carry tents, cooking equipment and \"so many plastics\"; "
+                           "single-use — \"one time we use, next time it's very difficult to "
+                           "reuse.\"",
+    "Problem_recycling": "Reuse/recycling \"very challenging\"; most places plastic is \"only "
+                         "burning\"; limited reuse beyond local club initiatives.",
+    "Problem_waste_mgmt": "High peaks hard to clean; government trying but \"very hardest task\"; "
+                          "Khumbu system (collection, plane transport) vs national gaps.",
+    "Problem_production": "Large amounts of plastic carried on treks (tents, cooking, packaging) "
+                          "imply high consumption/production upstream on mountains.",
+    "Problem_alternatives": "Difficult to reuse; clothing bags and local basket-making as partial "
+                            "alternatives; municipality distributing cloth bags.",
+    "Problem_waste_segregation": "Households separate plastic/cans, usable/non-usable, wet waste; "
+                                 "municipality and trash-management centre also separate.",
+    "Problem_import": "International climbers \"from all over the world\"; cans/glass sent to "
+                      "India for recycling; foreign tourists bring concepts and contribute to "
+                      "recycle centre.",
+    "Impacts": "Mountains, environment, animals, health (cancer-like diseases; symptoms in "
+               "Kathmandu).",
+    NPF_VICTIMS_COL: "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                     "mountains/high Himalaya; wildlife/animals; human health (respondent, "
+                     "family, Kathmandu residents); mountain communities. No FLAG needed.",
+    "NPF_villains": "NOT named in explicit NPF narrative language, but clearly IMPLIED: "
+                    "international climbers/tourists; uneducated public; limited government "
+                    "resources; single-use economy; burning. No FLAG needed.",
+    "NPF_hero": "NOT named in explicit NPF narrative language, but clearly IMPLIED: SPCC, "
+               "Khumbu municipality, community club, reuse centre, trekking-agency deposit "
+               "system, foreign tourists, cloth bags. No FLAG needed.",
+    "Relevance_international_pol": "International climbers; waste exported to India for "
+                                   "recycling; foreign tourists contributing ideas and to "
+                                   "recycle centre.",
+    "Coordination_sectoral": "SPCC, municipality, National Park, trekking agencies, community "
+                             "club, reuse centre and national government interact on waste "
+                             "management.",
+    "Coordination_levels": "Village staff → trash-management centre → plane Lukla–Kathmandu; "
+                           "national collection/separation vs local Khumbu system.",
+    "Res_nat_government": "Government tries to collect/separate waste; transport cans/glass to "
+                          "India; attempting high-mountain cleanup.",
+    "Res_loc_government": "Khumbu Pasang Lhamu Rural Municipality collects weekly, separates, "
+                          "sends to Kathmandu; cloth-bag distribution; non-plastic packaging "
+                          "focus.",
+    "Res_private_sector": "Trash-management centre staff; village waste collectors; reuse/"
+                          "recycle centre.",
+    "Res_civil_society": "SPCC Nepal (sustainable waste-management policy, school/community "
+                         "collection); local community club (weekly clean-ups).",
+    "Res_households": "Households segregate waste; community club members collect.",
+    "Res_edu_institutions": "\"Even in the school level\" — SPCC-supported school/village "
+                            "garbage collection.",
+    "Res_private_companies": "Trekking agencies pay ~US$500 garbage deposit; must return "
+                             "garbage paper from National Park/SPCC.",
+    "Cul_households": "\"Our public, people are not educated\"; throw plastic everywhere.",
+    "Cul_private_companies": "International climbers/tourists leave tents and plastic on "
+                             "mountains; trekking waste hard to bring back down.",
+    "Tar_nat_government": "Government must \"make a good policy about how to reuse and how to "
+                          "use about the plastic.\"",
+    "Tar_loc_government": "Municipality distributing cloth bags; non-plastic packaging policy.",
+    "Tar_households": "Public needs proper information on disadvantages of plastic; education "
+                      "target.",
+    "Tar_private_sector": "Trekking agencies subject to garbage deposit; clean-up responsibility.",
+    "Tar_private_companies": "Trekking agencies must pay deposit and return garbage paper; "
+                             "fines for littering should apply to tourists and locals.",
+    "Actor_role": "Trekking guide and community-club member organising weekly clean-ups, "
+                 "segregation and SPCC-supported collection — street-level implementer (3).",
+    "Discretion": "See Coded_Data Discretion cell.",
+    "Monitoring": "High-altitude cleanup extremely difficult to monitor; deposit system checked "
+                  "via garbage paper at Kathmandu head office.",
+    "Financial_resources": "\"Our sources are very limited\"; high-altitude cleanup \"very "
+                           "hardest task\" because resources scarce.",
+    "Infrastructure": "No road access — waste transported by plane Lukla–Kathmandu; remote "
+                      "high-altitude terrain.",
+    "Capacity": "Limited resources and extreme terrain make cleanup and reuse difficult.",
+    "Enforcement": "Garbage deposit (~US$500) for trekking agencies; proposes fines for "
+                   "littering; but much waste still on peaks.",
+    "Pol_tax": "Trekking-agency garbage deposit (~US$500), refunded when garbage paper "
+               "presented.",
+    "Pol_awareness": "Municipality focus on non-plastic packaging; respondent proposes more "
+                     "public information.",
+    "Pol_education": "Public education lacking; tourist ideas spread to locals in touristic area.",
+    "Pol_ban": "Municipality trying non-plastic packaging/bags (pending decision).",
+    "Pol_subsitutes": "Cloth/clothing bags distributed (4–5 per household); reuse baskets/mats.",
+    "Pol_clean_up": "Weekly community-club clean-up programme; SPCC school/village collection; "
+                    "government attempting high-mountain cleanup.",
+    "Pol_recycling": "Reuse centre; cans/glass to India; local reuse of cans into balls/baskets.",
+    "Pol_waste_collection": "Municipality weekly collection; village staff; plane transport to "
+                            "Kathmandu.",
+    "Pol_effectiveness": "Khumbu relatively advanced but peaks still littered; national policy "
+                         "unclear; non-plastic packaging pending; burning common.",
+    "Pol_effectiveness_example": "See Pol_effectiveness — quoted in Coded_Data cell.",
+    "Sol_lead_agency": "Government needs clear lead policy on plastic use/reuse.",
+    "Sol_awareness": "\"Most important thing is we have to give proper information for the "
+                     "public.\"",
+    "Sol_segregation": "Household and municipal segregation already practised; should expand.",
+    "Sol_recycling": "More recycle/reuse processes instead of burning; reuse centre model.",
+    "Sol_education": "Educate public about disadvantages of plastic.",
+    "Sol_enforcement": "High fines for littering for everyone — locals and tourists.",
+    "Sol_subsitutes": "Cloth bags; women making baskets/mats from junk-food plastic.",
+    "Sol_finance": "Garbage deposit system for trekking agencies (existing model to strengthen).",
+    "Sol_clean_up": "Weekly community clean-ups; SPCC collection; government high-mountain "
+                    "cleanup.",
+    "Sol_upcycling": "Women make baskets and mats from noodle/biscuit plastic; reuse centre "
+                     "makes decorative shapes/jewellery.",
+    "Traditions to build on (free-hand)": "Clothing bags; local basket/mat-making from junk-food "
+                                          "plastic; reuse-centre crafts.",
+    # --- Explanations for otherwise-NA values in the "always explain" column set ---
+    "Unclear_responsibilities": "NA - multiple actors named (government, municipality, SPCC, "
+                                "households, trekking agencies) without explicit confusion.",
+    "Res_prov_government": "NA - provincial government not mentioned.",
+    "Res_students": "NA - schools mentioned via SPCC but students not named as responsible "
+                    "actors.",
+    "Res_science": "NA - not mentioned.",
+    "Cul_nat_government": "NA - government portrayed as trying but resource-limited, not primary "
+                          "culprit.",
+    "Cul_prov_government": "NA - not blamed.",
+    "Cul_loc_government": "NA - municipality portrayed positively.",
+    "Cul_students": "NA - not blamed.",
+    "Cul_private_sector": "NA - waste collectors portrayed as part of solution.",
+    "Cul_civil_society": "NA - SPCC and community club portrayed as heroes.",
+    "Cul_science": "NA - not blamed.",
+    "Cul_edu_institutions": "NA - schools portrayed positively via SPCC.",
+    "Tar_prov_government": "NA - not named.",
+    "Tar_students": "NA - Q9 not asked.",
+    "Tar_civil_society": "NA - CSOs already active; not primary target framing.",
+    "Tar_science": "NA - not named.",
+    "Tar_edu_institutions": "NA - Q9 not asked (schools active via SPCC but not policy target).",
+    "Research": "NA - not discussed.",
+}
+
 EXPLANATIONS = {
     "NPL_1": doe_expl,
     "NPL_2": ganesh_expl,
@@ -8106,6 +8372,7 @@ EXPLANATIONS = {
     "NPL_29": undp_unep_ecologist_expl,
     "NPL_30": basantpur_household_expl,
     "NPL_31": babinasa_shop_expl,
+    "NPL_32": furinji_sherpa_expl,
 }
 
 # ---------------------------------------------------------------------------
@@ -8144,14 +8411,15 @@ CODED_ROWS = {
     "NPL_29": undp_unep_ecologist,
     "NPL_30": basantpur_household,
     "NPL_31": babinasa_shop,
+    "NPL_32": furinji_sherpa,
 }
 
-# Master-list order for coded interviews only (NPL_1 through NPL_31).
+# Master-list order for coded interviews only (NPL_1 through NPL_32).
 CODED_ORDER = [
     "NPL_1", "NPL_2", "NPL_3", "NPL_4", "NPL_5", "NPL_6", "NPL_7", "NPL_8", "NPL_9",
     "NPL_10", "NPL_11", "NPL_12", "NPL_13", "NPL_14", "NPL_15", "NPL_16", "NPL_17", "NPL_18",
     "NPL_19", "NPL_20", "NPL_21", "NPL_22", "NPL_23", "NPL_24", "NPL_25", "NPL_26", "NPL_27",
-    "NPL_28", "NPL_29", "NPL_30", "NPL_31",
+    "NPL_28", "NPL_29", "NPL_30", "NPL_31", "NPL_32",
 ]
 
 # (id, label as given by the research team, affiliation)
@@ -8194,6 +8462,7 @@ CODED_META = {
     "NPL_30": ("30. Household woman, Ward 23 Basantpur (unnamed)",
                "Household woman, Ward 23 Basantpur / chemist (water-quality lab)"),
     "NPL_31": ("31. Shop owner Babinasa (Kathmandu)", "Shop owner, Babinasa area, Kathmandu"),
+    "NPL_32": ("32. Furinji Sherpa, trekking guide", "Trekking guide; Khumbu Pasang Lhamu Rural Municipality"),
 }
 
 NAMES = {iid: f"{label} - {affil}" for iid, (label, affil) in CODED_META.items()}
@@ -8271,6 +8540,9 @@ NAMES["NPL_30"] = ("Household woman (unnamed), Ward 23 Basantpur, Kathmandu (18 
                     "Anastasiia; recording)")
 NAMES["NPL_31"] = ("Shop owner Babinasa, Kathmandu (18 February 2026; interviewers: Deep, "
                     "Marlene Kammerer, Anastasiia; no recording)")
+NAMES["NPL_32"] = ("Furinji Sherpa, trekking guide, Khumbu Pasang Lhamu Rural Municipality "
+                    "(19 February 2026; interviewers: Marlene Kammerer, Anastasiia; "
+                    "consent given; recording)")
 
 INTERVIEWS = [CODED_ROWS[iid] for iid in CODED_ORDER]
 
@@ -8412,7 +8684,7 @@ readme_lines = [
     ("", False),
     ("This workbook applies the supplied codebook (see 'Codebook' sheet) to the Nepal "
      "interview list. 'Coded_Data' contains one row per fully coded interview "
-     "(NPL_1 through NPL_31, in that order). Unfilled placeholder rows are not included. "
+     "(NPL_1 through NPL_32, in that order). Unfilled placeholder rows are not included. "
      "Column names and order follow exactly the variable list supplied by the research team.",
      False),
     ("", False),
@@ -8536,11 +8808,15 @@ readme_lines = [
     ("  31. NPL_31 - Shop owner Babinasa, Kathmandu (18 February 2026). Open burning, no "
      "segregation, strict laws needed, cloth/paper bags. Q3, Q6 and Q8 not asked. Distinct from "
      "NPL_23.", False),
+    ("  32. NPL_32 - Furinji Sherpa, trekking guide, Khumbu Pasang Lhamu Rural Municipality "
+     "(19 February 2026). Everest-region mountain plastic, SPCC garbage deposit (~US$500), "
+     "weekly municipal collection by plane to Kathmandu, community-club clean-ups, cloth bags, "
+     "women's basket reuse. Overlap with NPL_19. Q5, Q6 and Q9–Q10 not asked.", False),
     ("", False),
     ("Sheets in this workbook:", True),
     ("  - Codebook: the variable dictionary, listed in the exact same order as the columns "
      "in 'Coded_Data'.", False),
-    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_31, in "
+    ("  - Coded_Data: wide-format matrix, one row per coded interview (NPL_1-NPL_32, in "
      "order), one column per codebook variable, including a free-hand 'Notes' column. Each "
      "interview's row is filled with a distinct colour so interviews are easy to tell apart "
      "at a glance.", False),
@@ -8554,7 +8830,7 @@ readme_lines = [
      "columns are documented only where a specific explanation was written. Rows are "
      "colour-matched to the same interview colour used in 'Coded_Data'.", False),
     ("", False),
-    ("Colour key: each interview (NPL_1 through NPL_31) has a distinct colour spread "
+    ("Colour key: each interview (NPL_1 through NPL_32) has a distinct colour spread "
      "evenly across the colour wheel so adjacent IDs are easy to tell apart.", False),
     ("", False),
     ("Coding conventions:", True),
